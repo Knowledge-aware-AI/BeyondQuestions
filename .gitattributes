@@ -1,5 +1,1 @@
-RESULTS/deepseek-ai_deepseek-v3.2/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv filter=lfs diff=lfs merge=lfs -text
-RESULTS/gpt-5.4-2026-03-05/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv filter=lfs diff=lfs merge=lfs -text
-RESULTS/meta-llama_llama-4-scout-17b-16e-instruct/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv filter=lfs diff=lfs merge=lfs -text
-. filter=lfs diff=lfs merge=lfs -text
 REFERENCE[[:space:]]CORPUS/** filter=lfs diff=lfs merge=lfs -text
