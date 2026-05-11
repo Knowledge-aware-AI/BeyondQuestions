@@ -1,0 +1,1937 @@
+subject,predicate,object,subject_name
+Lones Wigger,instanceOf,Person,Lones Wigger
+Lones Wigger,bornIn,"New Braunfels, Texas",Lones Wigger
+Lones Wigger,occupation,Software Engineer,Lones Wigger
+Lones Wigger,worksAt,Google,Lones Wigger
+Lones Wigger,githubUsername,lones,Lones Wigger
+Lones Wigger,linkedinProfile,https://www.linkedin.com/in/loneswigger/,Lones Wigger
+Seth Hays House,instanceOf,Historic House,Seth Hays House
+Seth Hays House,locatedIn,"Charleston, South Carolina",Seth Hays House
+Seth Hays House,architect,William Jay,Seth Hays House
+Seth Hays House,builtIn,1823,Seth Hays House
+Seth Hays House,style,Greek Revival,Seth Hays House
+Seth Hays House,currentStatus,Standing,Seth Hays House
+Seth Hays House,address,"12 Church Street, Charleston, SC 29401",Seth Hays House
+"New Canton, Virginia",instanceOf,Town,"New Canton, Virginia"
+"New Canton, Virginia",locatedIn,"Cuyahoga County, Virginia","New Canton, Virginia"
+"New Canton, Virginia",population,"1,582","New Canton, Virginia"
+"New Canton, Virginia",zipCode,24572,"New Canton, Virginia"
+"New Canton, Virginia",areaCode,804,"New Canton, Virginia"
+"New Canton, Virginia",latitude,37.3634,"New Canton, Virginia"
+"New Canton, Virginia",longitude,-78.7445,"New Canton, Virginia"
+Splendour (apple),instanceOf,apple,Splendour (apple)
+Splendour (apple),color,red,Splendour (apple)
+Splendour (apple),taste,sweet,Splendour (apple)
+Splendour (apple),texture,crisp,Splendour (apple)
+Splendour (apple),origin,USA,Splendour (apple)
+Splendour (apple),size,medium,Splendour (apple)
+Splendour (apple),season,fall,Splendour (apple)
+Splendour (apple),type,eating apple,Splendour (apple)
+David Chan Yuk-cheung,instanceOf,Person,David Chan Yuk-cheung
+David Chan Yuk-cheung,bornIn,Hong Kong,David Chan Yuk-cheung
+David Chan Yuk-cheung,occupation,Computer Scientist,David Chan Yuk-cheung
+David Chan Yuk-cheung,affiliation,The University of Hong Kong,David Chan Yuk-cheung
+David Chan Yuk-cheung,researchArea,Machine Learning,David Chan Yuk-cheung
+David Chan Yuk-cheung,PhDAdvisor,Professor Michael Ng,David Chan Yuk-cheung
+David Chan Yuk-cheung,thesisTopic,Deep Learning,David Chan Yuk-cheung
+David Chan Yuk-cheung,memberOf,HKUST AI Institute,David Chan Yuk-cheung
+Coordination Chemistry Reviews,instanceOf,Journal,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,publisher,Elsevier,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,ISSN,0272-8848,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,DOI,10.1116/j.cche.2023.080003,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,publicationDate,2023-08-01,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,subjectArea,Coordination Chemistry,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,scope,Reviews of coordination chemistry,Coordination Chemistry Reviews
+Coordination Chemistry Reviews,contactEmail,cche@elsevier.com,Coordination Chemistry Reviews
+International Journal of Hindu Studies,instanceOf,academic journal,International Journal of Hindu Studies
+International Journal of Hindu Studies,publisher,Springer,International Journal of Hindu Studies
+International Journal of Hindu Studies,ISSN,1477-9067,International Journal of Hindu Studies
+International Journal of Hindu Studies,DOI,10.1080/1477906X.2014.968783,International Journal of Hindu Studies
+International Journal of Hindu Studies,publication_date,2014,International Journal of Hindu Studies
+International Journal of Hindu Studies,focus_area,Hinduism,International Journal of Hindu Studies
+International Journal of Hindu Studies,subject_area,Religious studies,International Journal of Hindu Studies
+International Journal of Hindu Studies,language,English,International Journal of Hindu Studies
+International Journal of Hindu Studies,website,https://www.tandfonline.com/journals/rihu20,International Journal of Hindu Studies
+International Journal of Hindu Studies,editor,David Shulman,International Journal of Hindu Studies
+Jean-Claude Mailly,instanceOf,Artist,Jean-Claude Mailly
+Jean-Claude Mailly,bornIn,Saint-Jean-d'Angély,Jean-Claude Mailly
+Jean-Claude Mailly,diedIn,Paris,Jean-Claude Mailly
+Jean-Claude Mailly,bornDate,1923-03-16,Jean-Claude Mailly
+Jean-Claude Mailly,diedDate,2003-07-14,Jean-Claude Mailly
+Jean-Claude Mailly,nationality,French,Jean-Claude Mailly
+Jean-Claude Mailly,occupation,Painter,Jean-Claude Mailly
+Jean-Claude Mailly,style,Abstract Expressionism,Jean-Claude Mailly
+Jean-Claude Mailly,knownFor,Abstract paintings,Jean-Claude Mailly
+Jean-Claude Mailly,influencedBy,Jackson Pollock,Jean-Claude Mailly
+Jean-Claude Mailly,influenced,Numerous artists,Jean-Claude Mailly
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,instanceOf,Sport,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,partOf,2024 Summer Olympics,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,partOf,Olympic Games,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,hasEvent,Canoe sprint,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,hasDistance,500 metres,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,hasGender,Women,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,hasBoatType,C-2,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,isHeldAt,Paris,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres,isOrganizedBy,International Olympic Committee,Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres
+Arcade game,instanceOf,Video game,Arcade game
+Arcade game,genre,Arcade,Arcade game
+Arcade game,typically features,Joystick,Arcade game
+Arcade game,typically features,Button,Arcade game
+Arcade game,typically features,Screen,Arcade game
+Pac-Man,instanceOf,Arcade game,Arcade game
+Space Invaders,instanceOf,Arcade game,Arcade game
+Donkey Kong,instanceOf,Arcade game,Arcade game
+Galaga,instanceOf,Arcade game,Arcade game
+Asteroids,instanceOf,Arcade game,Arcade game
+Centipede,instanceOf,Arcade game,Arcade game
+Ms. Pac-Man,instanceOf,Arcade game,Arcade game
+Street Fighter II,instanceOf,Arcade game,Arcade game
+Tetris,instanceOf,Arcade game,Arcade game
+Defender,instanceOf,Arcade game,Arcade game
+Dig Dug,instanceOf,Arcade game,Arcade game
+Q*bert,instanceOf,Arcade game,Arcade game
+Frogger,instanceOf,Arcade game,Arcade game
+Tron,instanceOf,Arcade game,Arcade game
+Berzerk,instanceOf,Arcade game,Arcade game
+Robotron: 2084,instanceOf,Arcade game,Arcade game
+"San Agustin Parish Church (Bay, Laguna)",instanceOf,Church,"San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",locatedIn,"Bay, Laguna","San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",partOf,Bay,"San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",established,1743,"San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",architecturalStyle,Baroque,"San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",religiousDenomination,Roman Catholic,"San Agustin Parish Church (Bay, Laguna)"
+"San Agustin Parish Church (Bay, Laguna)",coordinates,"14.1347° N, 121.5333° E","San Agustin Parish Church (Bay, Laguna)"
+Favites abdita,instanceOf,Bivalve,Favites abdita
+Favites abdita,habitat,Indo-Pacific Ocean,Favites abdita
+Favites abdita,size,Up to 6 cm,Favites abdita
+Favites abdita,shell,White,Favites abdita
+Favites abdita,foundIn,Coral reefs,Favites abdita
+Favites abdita,diet,Filter feeders,Favites abdita
+Favites abdita,genus,Favites,Favites abdita
+Favites abdita,species,abdita,Favites abdita
+Favites abdita,conservationStatus,Near Threatened,Favites abdita
+Harvington School,instanceOf,School,Harvington School
+Harvington School,locatedIn,Chipping Campden,Harvington School
+Harvington School,type,Independent School,Harvington School
+Harvington School,established,1937,Harvington School
+Harvington School,hasStudent,Approximately 650,Harvington School
+Harvington School,offersSubject,Mathematics,Harvington School
+Harvington School,offersSubject,English,Harvington School
+Harvington School,offersSubject,Science,Harvington School
+Harvington School,offersSubject,History,Harvington School
+Harvington School,offersSubject,Geography,Harvington School
+Finnish Main Line,instanceOf,Railway,Finnish Main Line
+Finnish Main Line,locatedIn,Finland,Finnish Main Line
+Finnish Main Line,operator,VR,Finnish Main Line
+Finnish Main Line,length,1783 km,Finnish Main Line
+Finnish Main Line,origin,Tammerkoski,Finnish Main Line
+Finnish Main Line,terminus,Pori,Finnish Main Line
+Finnish Main Line,gauge,1435 mm,Finnish Main Line
+Finnish Main Line,electrification,"25 kV AC, 50 Hz",Finnish Main Line
+Finnish Main Line,type,Broad gauge railway,Finnish Main Line
+Finnish Main Line,built,1862–1950,Finnish Main Line
+Thunder Bay Symphony Orchestra,instanceOf,Orchestra,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,locatedIn,"Thunder Bay, Ontario",Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,performs,Classical music,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,founded,1931,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,conductedBy,David Geelhoed,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,season,Fall,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,season,Spring,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,season,Summer,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,season,Winter,Thunder Bay Symphony Orchestra
+Thunder Bay Symphony Orchestra,website,https://www.tbsymphony.com/,Thunder Bay Symphony Orchestra
+Giovanni Battista Costa (bishop),instanceOf,Bishop,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),dateOfBirth,1863-03-15,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),dateOfDeath,1937-05-28,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),placeOfBirth,San Miniato,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),nationality,Italian,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),occupation,Bishop,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),affiliatedWith,Archdiocese of Pisa,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),appointedBy,Pio IX,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),appointedBy,Leo XIII,Giovanni Battista Costa (bishop)
+Giovanni Battista Costa (bishop),appointedBy,Benedict XV,Giovanni Battista Costa (bishop)
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,instanceOf,Sport,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,partOf,2016 Summer Olympics,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,partOf,Summer Olympics,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,hasEvent,Women's K-1 200 metres,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Women's K-1 200 metres,instanceOf,Event,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,hasDiscipline,Canoeing,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,hasDistance,200 metres,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,heldIn,Rio de Janeiro,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Rio de Janeiro,instanceOf,City,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,medalEvent,Gold,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,medalEvent,Silver,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres,medalEvent,Bronze,Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres
+Fallout 4: Nuka-World,instanceOf,Video Game,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,releaseDate,2018-10-17,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,developedBy,Bethesda Game Studios,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,publisher,Bethesda Softworks,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,platform,PC,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,platform,PlayStation 4,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,platform,Xbox One,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,genre,Action Role-Playing Game,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,setting,Post-apocalyptic Boston,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,story,Expansion Pack,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,features,New Story,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,features,New Areas,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,features,New Weapons,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,features,New Armor,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,features,New Enemies,Fallout 4: Nuka-World
+Fallout 4: Nuka-World,relatedTo,Fallout 4,Fallout 4: Nuka-World
+Gerry Duggan (writer),instanceOf,Writer,Gerry Duggan (writer)
+Gerry Duggan (writer),bornIn,New York City,Gerry Duggan (writer)
+Gerry Duggan (writer),occupation,Comic book writer,Gerry Duggan (writer)
+Gerry Duggan (writer),memberOf,New Mutants,Gerry Duggan (writer)
+Gerry Duggan (writer),memberOf,X-Force,Gerry Duggan (writer)
+Gerry Duggan (writer),memberOf,Marauders,Gerry Duggan (writer)
+Gerry Duggan (writer),memberOf,X-Men,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Colossus,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Magik,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Psylocke,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Cable,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Nova,Gerry Duggan (writer)
+Gerry Duggan (writer),created,Sunspot,Gerry Duggan (writer)
+Gerry Duggan (writer),created,X-Man,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Gifted,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Pryde of the X-Men,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,"X-Men: God Loves, X-Men Hate",Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Oblivion,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Requiem,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Peril,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Adventures,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,X-Men: Road to House of M,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,House of M,Gerry Duggan (writer)
+Gerry Duggan (writer),wrote,Avengers vs. X-Men,Gerry Duggan (writer)
+2008–09 Serie A,instanceOf,Football League,2008–09 Serie A
+2008–09 Serie A,startDate,2008-08-19,2008–09 Serie A
+2008–09 Serie A,endDate,2009-05-12,2008–09 Serie A
+2008–09 Serie A,numberOfTeams,20,2008–09 Serie A
+2008–09 Serie A,champion,Internazionale,2008–09 Serie A
+2008–09 Serie A,runnerUp,Roma,2008–09 Serie A
+2008–09 Serie A,thirdPlace,Milan,2008–09 Serie A
+2008–09 Serie A,teams,Internazionale,2008–09 Serie A
+2008–09 Serie A,teams,Roma,2008–09 Serie A
+2008–09 Serie A,teams,Milan,2008–09 Serie A
+2008–09 Serie A,teams,Juventus,2008–09 Serie A
+2008–09 Serie A,teams,Napoli,2008–09 Serie A
+2008–09 Serie A,teams,Lazio,2008–09 Serie A
+2008–09 Serie A,teams,Chievo Verona,2008–09 Serie A
+2008–09 Serie A,teams,Palermo,2008–09 Serie A
+2008–09 Serie A,teams,Udinese,2008–09 Serie A
+2008–09 Serie A,teams,Fiorentina,2008–09 Serie A
+2008–09 Serie A,teams,Siena,2008–09 Serie A
+2008–09 Serie A,teams,Cagliari,2008–09 Serie A
+2008–09 Serie A,teams,Bologna,2008–09 Serie A
+2008–09 Serie A,teams,Genoa,2008–09 Serie A
+2008–09 Serie A,teams,Atalanta,2008–09 Serie A
+2008–09 Serie A,teams,Empoli,2008–09 Serie A
+2008–09 Serie A,teams,Livorno,2008–09 Serie A
+Valentina Alazraki,instanceOf,Person,Valentina Alazraki
+Valentina Alazraki,bornIn,Buenos Aires,Valentina Alazraki
+Valentina Alazraki,occupation,Journalist,Valentina Alazraki
+Valentina Alazraki,worksFor,Clarín,Valentina Alazraki
+Valentina Alazraki,isMarriedTo,Diego Torres,Valentina Alazraki
+Valentina Alazraki,nationality,Argentinian,Valentina Alazraki
+Valentina Alazraki,dateOfBirth,1978-03-15,Valentina Alazraki
+Valentina Alazraki,height,1.73 m,Valentina Alazraki
+Hakan Arslan,instanceOf,footballer,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,birthDate,1989-03-16,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,birthPlace,"Istanbul, Turkey","Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,club,Galatasaray,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,club,İstanbul Başakşehir,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,club,Sivasspor,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,club,Kasımpasa,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,position,Right-back,"Hakan Arslan (footballer, born 1989)"
+Hakan Arslan,nationalTeam,Turkey national football team,"Hakan Arslan (footballer, born 1989)"
+Chelyabinsk Opera and Ballet Theatre,instanceOf,Opera house,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,locatedIn,Chelyabinsk,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,founded,1939,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,architect,Vladimir Shukhovnikov,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,capacity,1870,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,performances,Opera,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,performances,Ballet,Chelyabinsk Opera and Ballet Theatre
+Chelyabinsk Opera and Ballet Theatre,address,"Krasnogo Proletarya Street, 13, Chelyabinsk, Russia",Chelyabinsk Opera and Ballet Theatre
+The Rough Guide to the Music of Zimbabwe,instanceOf,travel guide,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,author,Simon Scott,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,publisher,Rough Guides,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,publication_date,2005,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,genre,world music,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,topic,Zimbabwean music,The Rough Guide to the Music of Zimbabwe
+The Rough Guide to the Music of Zimbabwe,format,book,The Rough Guide to the Music of Zimbabwe
+Simon Scott,occupation,music journalist,The Rough Guide to the Music of Zimbabwe
+Rough Guides,type,publishing company,The Rough Guide to the Music of Zimbabwe
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,instanceOf,Basketball team,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,memberOf,University of Arkansas–Pine Bluff,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,conference,Missouri Valley Conference,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,headCoach,Todd Helton,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,record,12–18,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,location,"Pine Bluff, Arkansas",2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team,season,2013–14 NCAA Division I men's basketball season,2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team
+Library Association of Singapore,instanceOf,Professional Association,Library Association of Singapore
+Library Association of Singapore,established,1973,Library Association of Singapore
+Library Association of Singapore,location,Singapore,Library Association of Singapore
+Library Association of Singapore,website,https://las.org.sg/,Library Association of Singapore
+Library Association of Singapore,member,Singapore Library Association,Library Association of Singapore
+Library Association of Singapore,goal,Promoting libraries and librarians in Singapore,Library Association of Singapore
+Library Association of Singapore,activity,Organizing conferences and workshops,Library Association of Singapore
+Library Association of Singapore,activity,Publishing journals and newsletters,Library Association of Singapore
+Library Association of Singapore,activity,Providing professional development opportunities,Library Association of Singapore
+Library Association of Singapore,activity,Advocating for libraries,Library Association of Singapore
+Paul A. Gompers,instanceOf,Economist,Paul A. Gompers
+Paul A. Gompers,instanceOf,Academic,Paul A. Gompers
+Paul A. Gompers,instanceOf,Professor,Paul A. Gompers
+Paul A. Gompers,affiliatedWith,Stanford University,Paul A. Gompers
+Paul A. Gompers,affiliatedWith,"University of California, Berkeley",Paul A. Gompers
+Paul A. Gompers,fieldOfStudy,Financial Economics,Paul A. Gompers
+Paul A. Gompers,researchArea,Venture Capital,Paul A. Gompers
+Paul A. Gompers,researchArea,Corporate Finance,Paul A. Gompers
+Paul A. Gompers,authored,The Innards of Investment Banking,Paul A. Gompers
+Paul A. Gompers,authored,Financing Startup Ventures,Paul A. Gompers
+Paul A. Gompers,bornIn,1951,Paul A. Gompers
+Paul A. Gompers,occupation,Professor of Business and Management,Paul A. Gompers
+EuroBasket Women 1985,instanceOf,Basketball tournament,EuroBasket Women 1985
+EuroBasket Women 1985,startDate,1985-09-16,EuroBasket Women 1985
+EuroBasket Women 1985,endDate,1985-10-07,EuroBasket Women 1985
+EuroBasket Women 1985,hostCountry,Spain,EuroBasket Women 1985
+EuroBasket Women 1985,winner,Soviet Union,EuroBasket Women 1985
+EuroBasket Women 1985,runnerUp,Spain,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Soviet Union,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Spain,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Czechoslovakia,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Greece,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Poland,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Hungary,EuroBasket Women 1985
+EuroBasket Women 1985,teams,Yugoslavia,EuroBasket Women 1985
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,instanceOf,Event,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,partOf,2004 Summer Paralympics,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,partOf,Athletics,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,hasCategory,F42–46,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+F42–46,isA,Classification,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+F42–46,hasLevel,Paralympic,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,heldIn,Athens,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athens,isA,City,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,startDate,2004-09-17,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Athletics at the 2004 Summer Paralympics – Men’s shot put F42–46,endDate,2004-09-21,Athletics at the 2004 Summer Paralympics – Men's shot put F42–46
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,instanceOf,Sport,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,partOf,2020 Summer Olympics,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,partOf,Olympic Games,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,hasEvent,Men's 68 kg Taekwondo,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Men's 68 kg Taekwondo,instanceOf,Weight Category,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Men's 68 kg Taekwondo,partOf,Taekwondo,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,organizedBy,International Olympic Committee,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,heldIn,Tokyo,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,startDate,2021-07-23,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,endDate,2021-07-27,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,numberOfCompetitors,113,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,goldMedalWinner,Choi Jong-hwan,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,silverMedalWinner,Lee Won-ho,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+Taekwondo at the 2020 Summer Olympics – Men's 68 kg,bronzeMedalWinner,Khasan Malsagirov,Taekwondo at the 2020 Summer Olympics – Men's 68 kg
+"Church of St Peter and St Paul, Heytesbury",instanceOf,Church,"Church of St Peter and St Paul, Heytesbury"
+"Church of St Peter and St Paul, Heytesbury",locatedIn,Heytesbury,"Church of St Peter and St Paul, Heytesbury"
+"Church of St Peter and St Paul, Heytesbury",denomination,Anglican,"Church of St Peter and St Paul, Heytesbury"
+"Church of St Peter and St Paul, Heytesbury",builtIn,1823,"Church of St Peter and St Paul, Heytesbury"
+"Church of St Peter and St Paul, Heytesbury",architect,John Nash,"Church of St Peter and St Paul, Heytesbury"
+Frosti Sigurjónsson,instanceOf,Person,Frosti Sigurjónsson
+Frosti Sigurjónsson,bornIn,Reykjavík,Frosti Sigurjónsson
+Frosti Sigurjónsson,occupation,Musician,Frosti Sigurjónsson
+Frosti Sigurjónsson,band,Sóli,Frosti Sigurjónsson
+Frosti Sigurjónsson,instrument,Guitar,Frosti Sigurjónsson
+Frosti Sigurjónsson,genre,Pop,Frosti Sigurjónsson
+Frosti Sigurjónsson,nationality,Icelandic,Frosti Sigurjónsson
+"Church of St. Peter and St. Paul, Ukmergė",instanceOf,Church,"Church of St. Peter and St. Paul, Ukmergė"
+"Church of St. Peter and St. Paul, Ukmergė",locatedIn,Ukmergė,"Church of St. Peter and St. Paul, Ukmergė"
+"Church of St. Peter and St. Paul, Ukmergė",locatedIn,Lithuania,"Church of St. Peter and St. Paul, Ukmergė"
+"Church of St. Peter and St. Paul, Ukmergė",denomination,Roman Catholic,"Church of St. Peter and St. Paul, Ukmergė"
+"Church of St. Peter and St. Paul, Ukmergė",constructionDate,1769,"Church of St. Peter and St. Paul, Ukmergė"
+"Church of St. Peter and St. Paul, Ukmergė",architect,Juozas Baranauskas,"Church of St. Peter and St. Paul, Ukmergė"
+"Engine House No. 6 (Wichita, Kansas)",instanceOf,Fire Station,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",locatedIn,"Wichita, Kansas","Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",partOf,Wichita Fire Department,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",operationalSince,1893,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",hasEquipment,Fire Engine,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",hasEquipment,Ladder Truck,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",hasEquipment,Hose,"Engine House No. 6 (Wichita, Kansas)"
+"Engine House No. 6 (Wichita, Kansas)",address,"1725 E Douglas Ave, Wichita, KS 67203","Engine House No. 6 (Wichita, Kansas)"
+Yerevan railway station,instanceOf,Train station,Yerevan railway station
+Yerevan railway station,locatedIn,Yerevan,Yerevan railway station
+Yerevan railway station,partOf,Armenian Railway,Yerevan railway station
+Yerevan railway station,operator,Armenian Railways,Yerevan railway station
+Yerevan railway station,coordinates,"44.502789, 44.517222",Yerevan railway station
+Yerevan railway station,yearOpened,1912,Yerevan railway station
+Yerevan railway station,hasPlatform,Yes,Yerevan railway station
+Yerevan railway station,serves,Passenger trains,Yerevan railway station
+Yerevan railway station,connectedTo,Sevan railway station,Yerevan railway station
+Yerevan railway station,connectedTo,Vanadzor railway station,Yerevan railway station
+Hieracium virosum,instanceOf,Plant,Hieracium virosum
+Hieracium virosum,scientificName,Hieracium virosum,Hieracium virosum
+Hieracium virosum,commonName,Viro's Hieracium,Hieracium virosum
+Hieracium virosum,nativeRange,United States,Hieracium virosum
+Hieracium virosum,habitat,Woodlands,Hieracium virosum
+Hieracium virosum,floweringSeason,July,Hieracium virosum
+Hieracium virosum,plantHeight,0.3–0.6 m,Hieracium virosum
+Hieracium virosum,leafShape,Lanceolate,Hieracium virosum
+Hieracium virosum,flowerColor,Yellow,Hieracium virosum
+Hieracium virosum,pollinationMethod,Insect Pollination,Hieracium virosum
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,instanceOf,Para Swimming Event,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,heldIn,2004 Summer Paralympics,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,hasEventType,Relay,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,hasDiscipline,Medley,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,hasEventLength,4 × 50 metre,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,hasPoints,20pts,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts,isFor,Men,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+2004 Summer Paralympics,instanceOf,Paralympics,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Men's 4 × 50 metre medley relay 20pts,instanceOf,Swimming Event,Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,instanceOf,Swimming event,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,heldIn,Rio de Janeiro,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,partOf,2016 Summer Olympics,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,sport,Swimming,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,distance,1500 metres,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Michael Phelps,participatedIn,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Ryan Lochte,participatedIn,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Gregorio Paltraccione,participatedIn,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,wonBy,Adam Peaty,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Adam Peaty,won,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle,date,"August 12, 2016",Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle
+Air Wisconsin Flight 965,instanceOf,Aircraft,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,flightNumber,965,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,airline,Air Wisconsin,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,departureAirport,Milwaukee Downtown Airport,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,arrivalAirport,Chicago O'Hare International Airport,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,departureDateTime,2009-07-23T14:35:00-05:00,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,arrivalDateTime,2009-07-23T15:13:00-05:00,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,aircraftType,Bombardier Dash 8 Q400,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,crashLocation,Lake Michigan,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,fatalities,11,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,injuries,45,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,declaredEmergency,Mayday,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,altitude,"9,800 feet",Air Wisconsin Flight 965
+Air Wisconsin Flight 965,speed,337 knots,Air Wisconsin Flight 965
+Air Wisconsin Flight 965,weatherConditions,Fog,Air Wisconsin Flight 965
+Buddleja lindleyana,instanceOf,Plant,Buddleja lindleyana
+Buddleja lindleyana,scientificName,Buddleja lindleyana,Buddleja lindleyana
+Buddleja lindleyana,commonName,Butterfly bush,Buddleja lindleyana
+Buddleja lindleyana,family,Fabaceae,Buddleja lindleyana
+Buddleja lindleyana,genus,Buddleja,Buddleja lindleyana
+Buddleja lindleyana,origin,China,Buddleja lindleyana
+Buddleja lindleyana,color,Purple,Buddleja lindleyana
+Buddleja lindleyana,flowerColor,Purple,Buddleja lindleyana
+Buddleja lindleyana,leafColor,Green,Buddleja lindleyana
+Buddleja lindleyana,bloomTime,Summer,Buddleja lindleyana
+Buddleja lindleyana,height,3-8 feet,Buddleja lindleyana
+Buddleja lindleyana,spread,5-10 feet,Buddleja lindleyana
+Buddleja lindleyana,sunlight,Full sun,Buddleja lindleyana
+Buddleja lindleyana,soil,Well-drained,Buddleja lindleyana
+Buddleja lindleyana,watering,Moderate,Buddleja lindleyana
+Buddleja lindleyana,hardinessZone,7-10,Buddleja lindleyana
+Buddleja lindleyana,pollinators,Butterflies and bees,Buddleja lindleyana
+Buddleja lindleyana,uses,"Hedge, border, cut flowers",Buddleja lindleyana
+Buddleja lindleyana,toxicity,Toxic to pets,Buddleja lindleyana
+Buddleja lindleyana,growthHabit,Shrub,Buddleja lindleyana
+Musée Hoangho Paiho,instanceOf,museum,Musée Hoangho Paiho
+Musée Hoangho Paiho,locatedIn,Hanoi,Musée Hoangho Paiho
+Musée Hoangho Paiho,established,2018,Musée Hoangho Paiho
+Musée Hoangho Paiho,collectionType,Vietnamese art,Musée Hoangho Paiho
+Musée Hoangho Paiho,focusesOn,ancient ceramics,Musée Hoangho Paiho
+Musée Hoangho Paiho,address,"18 Hang Bo, Hoan Kiem District, Hanoi, Vietnam",Musée Hoangho Paiho
+Casekow station,instanceOf,train_station,Casekow station
+Casekow station,locatedIn,Casekow,Casekow station
+Casekow station,operator,Polish State Railways,Casekow station
+Casekow station,postalCode,06-200,Casekow station
+Casekow station,latitude,52.2667,Casekow station
+Casekow station,longitude,21.5333,Casekow station
+Casekow station,trainLines,Line 2,Casekow station
+Zhangbei station,instanceOf,radio station,Zhangbei station
+Zhangbei station,locatedIn,"Zhangbei County, Hebei Province",Zhangbei station
+Zhangbei station,operatedBy,China National Radio and Television Network,Zhangbei station
+Zhangbei station,frequency,106.2 MHz,Zhangbei station
+Zhangbei station,coverageArea,Zhangbei County and surrounding areas,Zhangbei station
+Zhangbei station,transmitterPower,50 kW,Zhangbei station
+Zhangbei station,broadcastType,AM,Zhangbei station
+Zhangbei station,established,2007,Zhangbei station
+Santa María del Valle District,instanceOf,district,Santa María del Valle District
+Santa María del Valle District,locatedIn,Valparaíso,Santa María del Valle District
+Santa María del Valle District,partOf,Valparaíso,Santa María del Valle District
+Santa María del Valle District,population,18837,Santa María del Valle District
+Santa María del Valle District,area,11.04,Santa María del Valle District
+Santa María del Valle District,elevation,120,Santa María del Valle District
+Santa María del Valle District,postalCode,CPSA,Santa María del Valle District
+Santa María del Valle District,established,1861-07-16,Santa María del Valle District
+Sam Stewart (rugby league),instanceOf,Rugby League Player,Sam Stewart (rugby league)
+Sam Stewart (rugby league),playsFor,Newcastle Knights,Sam Stewart (rugby league)
+Sam Stewart (rugby league),position,Second-row,Sam Stewart (rugby league)
+Sam Stewart (rugby league),dateOfBirth,1994-07-18,Sam Stewart (rugby league)
+Sam Stewart (rugby league),height,193 cm,Sam Stewart (rugby league)
+Sam Stewart (rugby league),weight,112 kg,Sam Stewart (rugby league)
+Sam Stewart (rugby league),nationality,Australian,Sam Stewart (rugby league)
+Sam Stewart (rugby league),number,88,Sam Stewart (rugby league)
+Cyathaspis,instanceOf,Fish,Cyathaspis
+Cyathaspis,partOf,Perciformes,Cyathaspis
+Cyathaspis,nativeTo,Australia,Cyathaspis
+Cyathaspis,habitat,Coral reefs,Cyathaspis
+Cyathaspis,size,10–12 cm,Cyathaspis
+Cyathaspis,diet,Small invertebrates,Cyathaspis
+Cyathaspis,color,Blue,Cyathaspis
+Cyathaspis,species,Cyathaspis nebulosa,Cyathaspis
+Cyathaspis,species,Cyathaspis obscura,Cyathaspis
+Cyathaspis,species,Cyathaspis stellata,Cyathaspis
+Bromley Cemetery,instanceOf,Cemetery,Bromley Cemetery
+Bromley Cemetery,locatedIn,"Bromley, London",Bromley Cemetery
+Bromley Cemetery,established,1855,Bromley Cemetery
+Bromley Cemetery,managedBy,Bromley Borough Council,Bromley Cemetery
+Bromley Cemetery,contains,War Dead,Bromley Cemetery
+Bromley Cemetery,contains,Notable Graves,Bromley Cemetery
+Bromley Cemetery,hasArea,Memorial Area,Bromley Cemetery
+Bromley Cemetery,hasArea,Garden of Remembrance,Bromley Cemetery
+Bromley Cemetery,hasArea,Family Plots,Bromley Cemetery
+Bromley Cemetery,accessHours,8:00 AM - 6:00 PM,Bromley Cemetery
+Duolun County,is located in,Hsinchu County,Duolun County
+Duolun County,is a,county,Duolun County
+Duolun County,is part of,Taiwan,Duolun County
+Duolun County,has population,"18,747",Duolun County
+Duolun County,instanceOf,County,Duolun County
+Duolun County,located in,Taiwan,Duolun County
+Duolun County,has area,566.23 square kilometers,Duolun County
+Duolun County,has postal code,561,Duolun County
+Duolun County,is known for,Duolun Museum,Duolun County
+Duolun County,has administrative center,Duolun Township,Duolun County
+United Nations Security Council Resolution 2397,instanceOf,Security Council Resolution,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,adoptedBy,United Nations Security Council,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,adoptedOn,2023-03-08,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,references,United Nations Security Council Resolution 2396,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,relatesTo,Russia-Ukraine conflict,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,authorizes,Sanctions against Russia,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,imposes,Further sanctions,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,callsFor,Humanitarian access,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,demands,Immediate cessation of hostilities,United Nations Security Council Resolution 2397
+United Nations Security Council Resolution 2397,requires,Reporting on violations of international law,United Nations Security Council Resolution 2397
+Sam Shaw (sound editor),instanceOf,Sound Editor,Sam Shaw (sound editor)
+Sam Shaw (sound editor),bornIn,"Los Angeles, California",Sam Shaw (sound editor)
+Sam Shaw (sound editor),occupation,Sound Editor,Sam Shaw (sound editor)
+Sam Shaw (sound editor),memberOf,The Sound Group,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,The Hangover,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,The Hangover Part II,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,The Hangover Part III,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,Bridesmaids,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,Pitch Perfect,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,Pitch Perfect 2,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,Pitch Perfect 3,Sam Shaw (sound editor)
+Sam Shaw (sound editor),workedOn,Game Night,Sam Shaw (sound editor)
+"Interest Tax Act, 1974",instanceOf,Tax Act,"Interest Tax Act, 1974"
+"Interest Tax Act, 1974",effectiveDate,1974,"Interest Tax Act, 1974"
+"Interest Tax Act, 1974",governs,Interest,"Interest Tax Act, 1974"
+"Interest Tax Act, 1974",relatedTo,Income Tax Act,"Interest Tax Act, 1974"
+"Interest Tax Act, 1974",aimsTo,Tax interest income,"Interest Tax Act, 1974"
+"Female Nude (Renoir, 1876)",instanceOf,Painting,"Female Nude (Renoir, 1876)"
+"Female Nude (Renoir, 1876)",artist,Pierre-Auguste Renoir,"Female Nude (Renoir, 1876)"
+"Female Nude (Renoir, 1876)",year,1876,"Female Nude (Renoir, 1876)"
+"Female Nude (Renoir, 1876)",style,Impressionism,"Female Nude (Renoir, 1876)"
+"Female Nude (Renoir, 1876)",location,"Museum of New Art, Traverse City","Female Nude (Renoir, 1876)"
+Conrad Tao,instanceOf,American mathematician,Conrad Tao
+Conrad Tao,fieldOfStudy,Number theory,Conrad Tao
+Conrad Tao,affiliation,"University of California, Berkeley",Conrad Tao
+Conrad Tao,researchArea,Diophantine equations,Conrad Tao
+Conrad Tao,researchArea,Algebraic number theory,Conrad Tao
+Conrad Tao,education,"Ph.D. in Mathematics, University of California, Berkeley",Conrad Tao
+Conrad Tao,advisor,Peter Scholze,Conrad Tao
+Conrad Tao,bornIn,1983,Conrad Tao
+Scott Shane (professor),instanceOf,Professor,Scott Shane (professor)
+Scott Shane (professor),occupation,Professor,Scott Shane (professor)
+Scott Shane (professor),affiliation,University of Southern California,Scott Shane (professor)
+Scott Shane (professor),fieldOfStudy,Strategic Communication,Scott Shane (professor)
+Scott Shane (professor),researchArea,Media and Politics,Scott Shane (professor)
+Scott Shane (professor),book,The Strategy of Communication,Scott Shane (professor)
+Scott Shane (professor),book,Media Monopoly,Scott Shane (professor)
+Scott Shane (professor),website,https://scottshane.com/,Scott Shane (professor)
+Scott Shane (professor),email,scott.shane@usc.edu,Scott Shane (professor)
+Word joiner,instanceOf,software,Word joiner
+Word joiner,purpose,combine words,Word joiner
+Word joiner,functionality,concatenate words,Word joiner
+Word joiner,type,text processing tool,Word joiner
+Word joiner,usage,creating phrases,Word joiner
+Word joiner,usage,generating sentences,Word joiner
+Word joiner,usage,text manipulation,Word joiner
+Word joiner,example,hello world,Word joiner
+Word joiner,example,this is a test,Word joiner
+Word joiner,availability,online,Word joiner
+Sodium orthosilicate,chemicalFormula,Na₄Si₂O₉,Sodium orthosilicate
+Sodium orthosilicate,CASNumber,10030-10-7,Sodium orthosilicate
+Sodium orthosilicate,molarMass,301.24 g/mol,Sodium orthosilicate
+Sodium orthosilicate,density,2.32 g/cm³,Sodium orthosilicate
+Sodium orthosilicate,appearance,White crystalline solid,Sodium orthosilicate
+Sodium orthosilicate,solubility,Soluble in water,Sodium orthosilicate
+Sodium orthosilicate,uses,Flame retardant,Sodium orthosilicate
+Sodium orthosilicate,instanceOf,Chemical compound,Sodium orthosilicate
+Sodium orthosilicate,instanceOf,Inorganic compound,Sodium orthosilicate
+Sodium orthosilicate,instanceOf,Silicate,Sodium orthosilicate
+1952 United States presidential election in Pennsylvania,instanceOf,Presidential election,1952 United States presidential election in Pennsylvania
+1952 United States presidential election in Pennsylvania,candidate,Dwight D. Eisenhower,1952 United States presidential election in Pennsylvania
+1952 United States presidential election in Pennsylvania,candidate,Adlai Stevenson,1952 United States presidential election in Pennsylvania
+1952 United States presidential election in Pennsylvania,result,Dwight D. Eisenhower won,1952 United States presidential election in Pennsylvania
+1952 United States presidential election in Pennsylvania,location,Pennsylvania,1952 United States presidential election in Pennsylvania
+1952 United States presidential election in Pennsylvania,date,"November 6, 1952",1952 United States presidential election in Pennsylvania
+Dwight D. Eisenhower,party,Republican,1952 United States presidential election in Pennsylvania
+Adlai Stevenson,party,Democratic,1952 United States presidential election in Pennsylvania
+1952 United States presidential election,winner,Dwight D. Eisenhower,1952 United States presidential election in Pennsylvania
+1952 United States presidential election,loser,Adlai Stevenson,1952 United States presidential election in Pennsylvania
+Loyola Greyhounds men's soccer,instanceOf,sports team,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,playsIn,NCAA Division I,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,playsIn,Horizon League,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,headCoach,Steve Edwards,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,almaMater,Loyola University Chicago,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,location,"Chicago, Illinois",Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,conference,Horizon League,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,yearFounded,1920,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,mascot,Greyhound,Loyola Greyhounds men's soccer
+Loyola Greyhounds men's soccer,website,https://www.loyolagreyhounds.com/,Loyola Greyhounds men's soccer
+Progress in Physical Geography,instanceOf,Book,Progress in Physical Geography
+Progress in Physical Geography,author,Richard J. Chorley,Progress in Physical Geography
+Progress in Physical Geography,published,1965,Progress in Physical Geography
+Progress in Physical Geography,publisher,Methuen,Progress in Physical Geography
+Progress in Physical Geography,isbn,9780416633303,Progress in Physical Geography
+Progress in Physical Geography,topic,Physical Geography,Progress in Physical Geography
+Progress in Physical Geography,topic,Geomorphology,Progress in Physical Geography
+Progress in Physical Geography,topic,Climatology,Progress in Physical Geography
+Progress in Physical Geography,topic,Hydrology,Progress in Physical Geography
+Progress in Physical Geography,topic,Biogeography,Progress in Physical Geography
+Progress in Physical Geography,focus,Spatial Analysis,Progress in Physical Geography
+Progress in Physical Geography,focus,Quantitative Methods,Progress in Physical Geography
+Progress in Physical Geography,focus,Systematic Approaches,Progress in Physical Geography
+Niambia,instanceOf,crustacean,Niambia (crustacean)
+Niambia,location,Zambia,Niambia (crustacean)
+Niambia,location,Angola,Niambia (crustacean)
+Niambia,location,Mozambique,Niambia (crustacean)
+Niambia,habitat,Coastal waters,Niambia (crustacean)
+Niambia,diet,Plankton,Niambia (crustacean)
+Niambia,size,Up to 15 cm,Niambia (crustacean)
+Niambia,scientificName,Niambia spp.,Niambia (crustacean)
+Giulio Masetti (bishop),instanceOf,Bishop,Giulio Masetti (bishop)
+Giulio Masetti (bishop),bornIn,Milan,Giulio Masetti (bishop)
+Giulio Masetti (bishop),deathDate,1934-05-16,Giulio Masetti (bishop)
+Giulio Masetti (bishop),deathPlace,Milan,Giulio Masetti (bishop)
+Giulio Masetti (bishop),ordinationDate,1928-05-16,Giulio Masetti (bishop)
+Giulio Masetti (bishop),ordinationPlace,Milan,Giulio Masetti (bishop)
+Giulio Masetti (bishop),diocese,Milan,Giulio Masetti (bishop)
+Yale Steam Laundry,instanceOf,Laundry Service,Yale Steam Laundry
+Yale Steam Laundry,locatedIn,"New Haven, Connecticut",Yale Steam Laundry
+Yale Steam Laundry,establishedIn,1885,Yale Steam Laundry
+Yale Steam Laundry,operatedBy,Yale University,Yale Steam Laundry
+Yale Steam Laundry,services,Laundry services for Yale University students and faculty,Yale Steam Laundry
+Yale Steam Laundry,equipment,Steam presses,Yale Steam Laundry
+Yale Steam Laundry,history,One of the oldest laundry services at a university in the United States,Yale Steam Laundry
+Yale Steam Laundry,closedIn,2008,Yale Steam Laundry
+Hugh Murray,instanceOf,geographer,Hugh Murray (geographer)
+Hugh Murray,bornIn,1946,Hugh Murray (geographer)
+Hugh Murray,nationality,American,Hugh Murray (geographer)
+Hugh Murray,occupation,geographer,Hugh Murray (geographer)
+Hugh Murray,education,University of Texas at Austin,Hugh Murray (geographer)
+Hugh Murray,fieldOfStudy,Geography,Hugh Murray (geographer)
+Hugh Murray,affiliation,University of Idaho,Hugh Murray (geographer)
+Hugh Murray,publications,Geography: Themes in Geographic Thought,Hugh Murray (geographer)
+Hugh Murray,researchInterests,"Geographic thought, spatial analysis",Hugh Murray (geographer)
+Donald L. Conner House,instanceOf,House,Donald L. Conner House
+Donald L. Conner House,locatedIn,"Springfield, Illinois",Donald L. Conner House
+Donald L. Conner House,architect,Frank Lloyd Wright,Donald L. Conner House
+Donald L. Conner House,builtIn,1939,Donald L. Conner House
+Donald L. Conner House,style,Prairie School,Donald L. Conner House
+Donald L. Conner House,address,"1828 S. Springfield Ave, Springfield, IL 62703",Donald L. Conner House
+Donald L. Conner House,currentStatus,Standing,Donald L. Conner House
+Donald L. Conner House,featuredIn,Frank Lloyd Wright's Prairie School of Architecture,Donald L. Conner House
+Tony DeMarco (dancer),instanceOf,dancer,Tony DeMarco (dancer)
+Tony DeMarco (dancer),bornIn,New York City,Tony DeMarco (dancer)
+Tony DeMarco (dancer),occupation,dancer,Tony DeMarco (dancer)
+Tony DeMarco (dancer),performsIn,Broadway,Tony DeMarco (dancer)
+Tony DeMarco (dancer),performsIn,Off-Broadway,Tony DeMarco (dancer)
+Tony DeMarco (dancer),performsIn,Television,Tony DeMarco (dancer)
+Tony DeMarco (dancer),performsIn,Film,Tony DeMarco (dancer)
+Tony DeMarco (dancer),spouse,Susan DeMarco,Tony DeMarco (dancer)
+Tony DeMarco (dancer),dateOfBirth,1943-08-27,Tony DeMarco (dancer)
+Tony DeMarco (dancer),dateOfDeath,2006-03-13,Tony DeMarco (dancer)
+Exit (2011 film),instanceOf,film,Exit (2011 film)
+Exit (2011 film),directedBy,Anton Ernst,Exit (2011 film)
+Exit (2011 film),genre,crime thriller,Exit (2011 film)
+Exit (2011 film),releaseDate,2011-09-24,Exit (2011 film)
+Exit (2011 film),countryOfOrigin,Germany,Exit (2011 film)
+Exit (2011 film),language,German,Exit (2011 film)
+Exit (2011 film),plot,A police officer investigates a murder in Berlin.,Exit (2011 film)
+Exit (2011 film),starring,Jörg Casimir,Exit (2011 film)
+Exit (2011 film),rating,7.3,Exit (2011 film)
+Exit (2011 film),productionCompany,Film Bilderberg GmbH,Exit (2011 film)
+"John Proctor House (Westford, Massachusetts)",instanceOf,Historic House,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",locatedIn,"Westford, Massachusetts","John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",builtInYear,1659,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",architect,Unknown,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",style,Colonial,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",currentStatus,Historic Site,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",owner,John Proctor,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",locatedCounty,Essex County,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",latitude,42.6444,"John Proctor House (Westford, Massachusetts)"
+"John Proctor House (Westford, Massachusetts)",longitude,-71.3389,"John Proctor House (Westford, Massachusetts)"
+Sumida Aquarium,instanceOf,aquarium,Sumida Aquarium
+Sumida Aquarium,locatedIn,Tokyo,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Giant River Otter,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Japanese Macaques,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Sea Otters,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Freshwater Fish,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Marine Life,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Penguins,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Crocodiles,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Reptiles,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Birds,Sumida Aquarium
+Sumida Aquarium,hasExhibit,Aquatic Plants,Sumida Aquarium
+Sumida Aquarium,openingHours,9:00 AM - 9:00 PM,Sumida Aquarium
+Sumida Aquarium,admissionFee,"¥1,800",Sumida Aquarium
+Sumida Aquarium,website,https://sumida-aquarium.jp/,Sumida Aquarium
+Acacia castanostegia,instanceOf,Tree,Acacia castanostegia
+Acacia castanostegia,nativeRange,Australia,Acacia castanostegia
+Acacia castanostegia,nativeRange,New South Wales,Acacia castanostegia
+Acacia castanostegia,nativeRange,Victoria,Acacia castanostegia
+Acacia castanostegia,floweringSeason,Spring,Acacia castanostegia
+Acacia castanostegia,floweringSeason,Summer,Acacia castanostegia
+Acacia castanostegia,leafType,Phyllodes,Acacia castanostegia
+Acacia castanostegia,treeHeight,Up to 10 meters,Acacia castanostegia
+Acacia castanostegia,treeDiameter,Up to 30 cm,Acacia castanostegia
+Acacia castanostegia,seedType,Pod,Acacia castanostegia
+Acacia castanostegia,habitat,Dry open forests,Acacia castanostegia
+Acacia castanostegia,habitat,Heathlands,Acacia castanostegia
+Acacia castanostegia,habitat,Sandy soils,Acacia castanostegia
+Acacia castanostegia,conservationStatus,Not threatened,Acacia castanostegia
+Acacia castanostegia,family,Fabaceae,Acacia castanostegia
+Acacia castanostegia,genus,Acacia,Acacia castanostegia
+Lake Kimihia,instanceOf,lake,Lake Kimihia
+Lake Kimihia,locatedIn,Tonga,Lake Kimihia
+Lake Kimihia,hasCoordinates,"-15.7333,172.3333",Lake Kimihia
+Lake Kimihia,isArtificial,true,Lake Kimihia
+Lake Kimihia,hasSurfaceArea,0.25,Lake Kimihia
+Lake Kimihia,hasVolume,0.0011,Lake Kimihia
+The Further Adventures of the Flag Lieutenant,instanceOf,novel,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,author,John Barnsdall,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,genre,historical fiction,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,publicationDate,1974,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,setting,American Civil War,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,protagonist,John 'Jack' O'Malley,The Further Adventures of the Flag Lieutenant
+The Further Adventures of the Flag Lieutenant,plotSummary,Follows the adventures of a young Irish immigrant who becomes a flag lieutenant in the Union Army during the American Civil War.,The Further Adventures of the Flag Lieutenant
+Yuriy Yakovenko,instanceOf,footballer,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,birthDate,1971-03-15,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,birthPlace,"Kyiv, Ukraine","Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,nationality,Ukrainian,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,club,Metalist Kharkiv,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,position,Defender,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,playingYears,1993–2009,"Yuriy Yakovenko (footballer, born 1971)"
+Yuriy Yakovenko,nationalTeam,Ukraine national football team,"Yuriy Yakovenko (footballer, born 1971)"
+Katherine Langford,instanceOf,Actress,Katherine Langford
+Katherine Langford,bornIn,"San Diego, California",Katherine Langford
+Katherine Langford,dateOfBirth,1993-11-14,Katherine Langford
+Katherine Langford,spouse,Raymond Flour,Katherine Langford
+Katherine Langford,film,10 Cloverfield Lane,Katherine Langford
+Katherine Langford,film,Nightmare Alley,Katherine Langford
+Katherine Langford,film,The Outpost,Katherine Langford
+Katherine Langford,televisionSeries,Hannah,Katherine Langford
+Katherine Langford,televisionSeries,13 Reasons Why,Katherine Langford
+Katherine Langford,nationality,American,Katherine Langford
+KRI Teluk Karimata,instanceOf,KRI,KRI Teluk Karimata
+KRI Teluk Karimata,commissioned,2018,KRI Teluk Karimata
+KRI Teluk Karimata,homeport,Port Klang,KRI Teluk Karimata
+KRI Teluk Karimata,class,Vikrant-class,KRI Teluk Karimata
+KRI Teluk Karimata,manufacturer,Lürssen,KRI Teluk Karimata
+KRI Teluk Karimata,displacement,"11,000 tons",KRI Teluk Karimata
+KRI Teluk Karimata,crew,350,KRI Teluk Karimata
+KRI Teluk Karimata,armament,"CIWS, torpedoes, missiles",KRI Teluk Karimata
+KRI Teluk Karimata,role,Patrol and escort,KRI Teluk Karimata
+KRI Teluk Karimata,flag,Indonesia,KRI Teluk Karimata
+Calm Down (Rema song),instanceOf,song,Calm Down (Rema song)
+Calm Down (Rema song),performedBy,Rema,Calm Down (Rema song)
+Calm Down (Rema song),producedBy,DJ Spinall,Calm Down (Rema song)
+Calm Down (Rema song),writtenBy,Rema,Calm Down (Rema song)
+Calm Down (Rema song),released,2022-05-03,Calm Down (Rema song)
+Calm Down (Rema song),genre,Afrobeat,Calm Down (Rema song)
+Calm Down (Rema song),label,Mavin Records,Calm Down (Rema song)
+Calm Down (Rema song),popularity,High,Calm Down (Rema song)
+Calm Down (Rema song),chartedOn,Billboard Hot 100,Calm Down (Rema song)
+Calm Down (Rema song),hasFeaturedArtist,Naira Marley,Calm Down (Rema song)
+Bude Lifeboat Station,instanceOf,Lifeboat Station,Bude Lifeboat Station
+Bude Lifeboat Station,locatedIn,"Bude, Cornwall",Bude Lifeboat Station
+Bude Lifeboat Station,partOf,Royal National Lifeboat Institution,Bude Lifeboat Station
+Bude Lifeboat Station,operationalSince,1891,Bude Lifeboat Station
+Bude Lifeboat Station,coordinates,"50.4437° N, 4.6686° W",Bude Lifeboat Station
+Bude Lifeboat Station,telephone,+44 1208 866700,Bude Lifeboat Station
+Bude Lifeboat Station,website,https://www.budelifeboatstation.co.uk/,Bude Lifeboat Station
+Bude Lifeboat Station,staffedBy,Volunteers,Bude Lifeboat Station
+Bude Lifeboat Station,rescueCount,Over 1000,Bude Lifeboat Station
+Bude Lifeboat Station,type,Shore Station,Bude Lifeboat Station
+Aleptina junctimacula,instanceOf,Insect,Aleptina junctimacula
+Aleptina junctimacula,instanceOf,Coleoptera,Aleptina junctimacula
+Aleptina junctimacula,instanceOf,Curculionidae,Aleptina junctimacula
+Aleptina junctimacula,nativeTo,Myanmar,Aleptina junctimacula
+Aleptina junctimacula,nativeTo,Thailand,Aleptina junctimacula
+Aleptina junctimacula,nativeTo,Laos,Aleptina junctimacula
+Aleptina junctimacula,diet,Plant tissue,Aleptina junctimacula
+Aleptina junctimacula,larvalHost,Elaeocarpus grandiflorus,Aleptina junctimacula
+Aleptina junctimacula,adultHost,Elaeocarpus grandiflorus,Aleptina junctimacula
+Aleptina junctimacula,size,3-5 mm,Aleptina junctimacula
+Aleptina junctimacula,color,Black,Aleptina junctimacula
+Nouran El Torky,instanceOf,swimmer,Nouran El Torky
+Nouran El Torky,nationality,Egyptian,Nouran El Torky
+Nouran El Torky,bornIn,Cairo,Nouran El Torky
+Nouran El Torky,bornDate,1992-07-14,Nouran El Torky
+Nouran El Torky,height,1.83 m,Nouran El Torky
+Nouran El Torky,weight,73 kg,Nouran El Torky
+Nouran El Torky,speciality,butterfly stroke,Nouran El Torky
+Nouran El Torky,medaledAt,2020 Summer Olympics,Nouran El Torky
+Nouran El Torky,medaledAt,2023 World Aquatics Championships,Nouran El Torky
+Nouran El Torky,medaledAt,2022 European Aquatics Championships,Nouran El Torky
+Nouran El Torky,medals,2,Nouran El Torky
+Nouran El Torky,club,Zamalek Sporting Club,Nouran El Torky
+Documentation and Cultural Centre of German Sinti and Roma,instanceOf,Museum,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,locatedIn,Hannover,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,address,Hannoversche Unterstadt 1,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,telephone,+49 511 2158380,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,website,https://www.sinti-en-roma-zentrum.de/,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,openingHours,"Tuesday to Sunday, 10:00 to 18:00",Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,admissionFee,"Adults: 6 EUR, Reduced: 4 EUR",Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,focus,History of Sinti and Roma in Germany,Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,exhibits,"Personal testimonies, historical documents, photographs",Documentation and Cultural Centre of German Sinti and Roma
+Documentation and Cultural Centre of German Sinti and Roma,purpose,Preservation and presentation of the history and culture of German Sinti and Roma,Documentation and Cultural Centre of German Sinti and Roma
+Hallowell Davis,instanceOf,Person,Hallowell Davis
+Hallowell Davis,bornIn,"Portland, Maine",Hallowell Davis
+Hallowell Davis,occupation,Lawyer,Hallowell Davis
+Hallowell Davis,memberOf,Maine State Senate,Hallowell Davis
+Hallowell Davis,party,Democratic,Hallowell Davis
+Hallowell Davis,bornDate,1959-07-24,Hallowell Davis
+"New Hampton (CDP), New Hampshire",instanceOf,Census Designated Place,"New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",population,"2,333","New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",locatedIn,"Hillsborough County, New Hampshire","New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",locatedIn,New Hampshire,"New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",teaches,New Hampton School,"New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",zipCode,03253,"New Hampton (CDP), New Hampshire"
+"New Hampton (CDP), New Hampshire",areaCode,603,"New Hampton (CDP), New Hampshire"
+Enciclopedia României,instanceOf,encyclopedia,Enciclopedia României
+Enciclopedia României,locatedIn,Romania,Enciclopedia României
+Enciclopedia României,publisher,Editura Academiei Române,Enciclopedia României
+Enciclopedia României,publicationDate,1972,Enciclopedia României
+Enciclopedia României,editor,Alexandru Prodan,Enciclopedia României
+Enciclopedia României,coverage,history of Romania,Enciclopedia României
+Enciclopedia României,numberPages,13 volumes,Enciclopedia României
+Enciclopedia României,language,Romanian,Enciclopedia României
+Jyo Achyutananda,instanceOf,Hindu priest,Jyo Achyutananda
+Jyo Achyutananda,instanceOf,Swami,Jyo Achyutananda
+Jyo Achyutananda,instanceOf,Guru,Jyo Achyutananda
+Jyo Achyutananda,locatedIn,Kerala,Jyo Achyutananda
+Jyo Achyutananda,associatedWith,Sree Poornathilkaalam Temple,Jyo Achyutananda
+Jyo Achyutananda,knownFor,Music,Jyo Achyutananda
+Jyo Achyutananda,knownFor,Dance,Jyo Achyutananda
+Jyo Achyutananda,knownFor,Spiritual teachings,Jyo Achyutananda
+Jyo Achyutananda,birthDate,1979-08-15,Jyo Achyutananda
+David Fitzsimons,instanceOf,chess player,David Fitzsimons (chess player)
+David Fitzsimons,bornIn,Dublin,David Fitzsimons (chess player)
+David Fitzsimons,nationality,Irish,David Fitzsimons (chess player)
+David Fitzsimons,profession,chess player,David Fitzsimons (chess player)
+David Fitzsimons,chessRating,2534,David Fitzsimons (chess player)
+David Fitzsimons,chessTitle,International Master,David Fitzsimons (chess player)
+David Fitzsimons,playsFor,Dublin Chess Club,David Fitzsimons (chess player)
+David Fitzsimons,opponent,Garry Kasparov,David Fitzsimons (chess player)
+David Fitzsimons,opponent,Vladimir Kramnik,David Fitzsimons (chess player)
+David Fitzsimons,opponent,Bobby Fischer,David Fitzsimons (chess player)
+Wilhelm Hauchecorne,instanceOf,French painter,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,bornIn,Rouen,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,diedIn,Paris,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,bornOn,1802-03-16,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,diedOn,1870-04-23,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,occupation,Painter,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,style,Romanticism,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,knownFor,Landscapes,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,influencedBy,Jean-Baptiste Camille Corot,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,studentOf,Jean-Baptiste Camille Corot,Wilhelm Hauchecorne
+Guangdong University of Science and Technology,instanceOf,University,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,locatedIn,Shaoguan,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,established,2002,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,offers,Bachelor's degree,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,offers,Master's degree,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,offers,Doctoral degree,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,fieldsOfStudy,Engineering,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,fieldsOfStudy,Information Technology,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,fieldsOfStudy,Management,Guangdong University of Science and Technology
+Guangdong University of Science and Technology,website,https://www.gust.edu.cn/,Guangdong University of Science and Technology
+Erich Correns (chemist),instanceOf,chemist,Erich Correns (chemist)
+Erich Correns (chemist),bornIn,Bremen,Erich Correns (chemist)
+Erich Correns (chemist),diedIn,Berlin,Erich Correns (chemist)
+Erich Correns (chemist),bornDate,1879-08-11,Erich Correns (chemist)
+Erich Correns (chemist),diedDate,1947-08-16,Erich Correns (chemist)
+Erich Correns (chemist),nationality,German,Erich Correns (chemist)
+Erich Correns (chemist),occupation,chemist,Erich Correns (chemist)
+Erich Correns (chemist),educatedAt,University of Göttingen,Erich Correns (chemist)
+Erich Correns (chemist),doctoralAdvisor,Wilhelm Körner,Erich Correns (chemist)
+Erich Correns (chemist),workedAt,University of Berlin,Erich Correns (chemist)
+Erich Correns (chemist),fieldOfStudy,plant physiology,Erich Correns (chemist)
+Erich Correns (chemist),knownFor,Correns cycle,Erich Correns (chemist)
+Erich Correns (chemist),spouse,Anna Correns,Erich Correns (chemist)
+Bundaleer North,locatedIn,South Australia,"Bundaleer North, South Australia"
+Bundaleer North,instanceOf,locality,"Bundaleer North, South Australia"
+Bundaleer North,population,"1,691","Bundaleer North, South Australia"
+Bundaleer North,postcode,5290,"Bundaleer North, South Australia"
+Bundaleer North,region,Barossa,"Bundaleer North, South Australia"
+"Dubki, Kirzhachsky District, Vladimir Oblast",instanceOf,Settlement,"Dubki, Kirzhachsky District, Vladimir Oblast"
+"Dubki, Kirzhachsky District, Vladimir Oblast",locatedIn,"Kirzhachsky District, Vladimir Oblast","Dubki, Kirzhachsky District, Vladimir Oblast"
+"Dubki, Kirzhachsky District, Vladimir Oblast",locatedIn,Vladimir Oblast,"Dubki, Kirzhachsky District, Vladimir Oblast"
+"Dubki, Kirzhachsky District, Vladimir Oblast",hasPopulation,1338,"Dubki, Kirzhachsky District, Vladimir Oblast"
+"Dubki, Kirzhachsky District, Vladimir Oblast",postalCode,654593,"Dubki, Kirzhachsky District, Vladimir Oblast"
+"Dubki, Kirzhachsky District, Vladimir Oblast",hasCoordinate,"56.673611,38.968333","Dubki, Kirzhachsky District, Vladimir Oblast"
+Fort of Feira,instanceOf,fort,Fort of Feira
+Fort of Feira,locatedIn,Feira,Fort of Feira
+Fort of Feira,locatedIn,Bahia,Fort of Feira
+Fort of Feira,builtIn,1775,Fort of Feira
+Fort of Feira,builtBy,Portuguese Empire,Fort of Feira
+Fort of Feira,purpose,defense,Fort of Feira
+Fort of Feira,partOf,Feira Historic Centre,Fort of Feira
+Fort of Feira,architect,Francisco Xavier Allende,Fort of Feira
+Baltimore (magazine),instanceOf,magazine,Baltimore (magazine)
+Baltimore (magazine),publisher,John S. Ott,Baltimore (magazine)
+Baltimore (magazine),publicationDate,1905-10-27,Baltimore (magazine)
+Baltimore (magazine),editor,John S. Ott,Baltimore (magazine)
+Baltimore (magazine),circulation,"100,000",Baltimore (magazine)
+Baltimore (magazine),location,"Baltimore, Maryland",Baltimore (magazine)
+Baltimore (magazine),topic,Arts and culture,Baltimore (magazine)
+Baltimore (magazine),format,Weekly,Baltimore (magazine)
+Baltimore (magazine),successorTo,The Baltimore Sun,Baltimore (magazine)
+Baltimore (magazine),predecessorTo,The Baltimore American,Baltimore (magazine)
+Secrets of Rætikon,instanceOf,Book,Secrets of Rætikon
+Secrets of Rætikon,author,Michael Shea,Secrets of Rætikon
+Secrets of Rætikon,genre,Science Fiction,Secrets of Rætikon
+Secrets of Rætikon,publicationDate,1992,Secrets of Rætikon
+Secrets of Rætikon,publisher,Tor Books,Secrets of Rætikon
+Secrets of Rætikon,setting,Rætikon,Secrets of Rætikon
+Secrets of Rætikon,plot,A young man discovers a hidden world and a dangerous secret.,Secrets of Rætikon
+Secrets of Rætikon,characters,Kael,Secrets of Rætikon
+Secrets of Rætikon,characters,Rætikon,Secrets of Rætikon
+Secrets of Rætikon,characters,The Keepers,Secrets of Rætikon
+David Newton (artist),instanceOf,artist,David Newton (artist)
+David Newton (artist),bornIn,New York City,David Newton (artist)
+David Newton (artist),occupation,artist,David Newton (artist)
+David Newton (artist),worksIn,New York,David Newton (artist)
+David Newton (artist),style,Abstract Expressionism,David Newton (artist)
+David Newton (artist),memberOf,American Abstract Expressionist Movement,David Newton (artist)
+David Newton (artist),yearOfBirth,1926,David Newton (artist)
+David Newton (artist),yearOfDeath,2003,David Newton (artist)
+David Newton (artist),nationality,American,David Newton (artist)
+David Newton (artist),influencedBy,Jackson Pollock,David Newton (artist)
+David Newton (artist),influencedBy,Mark Rothko,David Newton (artist)
+Channa pleurophthalma,instanceOf,Fish,Channa pleurophthalma
+Channa pleurophthalma,scientificName,Channa pleurophthalma,Channa pleurophthalma
+Channa pleurophthalma,commonName,Pleurophthalma snakehead,Channa pleurophthalma
+Channa pleurophthalma,origin,Southeast Asia,Channa pleurophthalma
+Channa pleurophthalma,habitat,Rivers and streams,Channa pleurophthalma
+Channa pleurophthalma,size,Up to 60 cm (24 in),Channa pleurophthalma
+Channa pleurophthalma,diet,Carnivorous,Channa pleurophthalma
+Channa pleurophthalma,color,Dark brown with yellow or orange spots,Channa pleurophthalma
+Channa pleurophthalma,conservationStatus,Near Threatened,Channa pleurophthalma
+Channa pleurophthalma,family,Channidae,Channa pleurophthalma
+Channa pleurophthalma,length,60 cm,Channa pleurophthalma
+Channa pleurophthalma,weight,1.5 kg,Channa pleurophthalma
+Athletics at the 2014 Asian Games – Men's 800 metres,instanceOf,Athletics event,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,heldIn,Incheon,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,startDate,2014-08-29,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,endDate,2014-09-01,Athletics at the 2014 Asian Games – Men's 800 metres
+David Rudisha,participatedIn,Athletics at the 2014 Asian Games – Men's 800 metres,Athletics at the 2014 Asian Games – Men's 800 metres
+Boaz Cheseto,participatedIn,Athletics at the 2014 Asian Games – Men's 800 metres,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,goldMedalWinner,David Rudisha,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,silverMedalWinner,Boaz Cheseto,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,bronzeMedalWinner,Abdullah Al-Maghrabi,Athletics at the 2014 Asian Games – Men's 800 metres
+Abdullah Al-Maghrabi,participatedIn,Athletics at the 2014 Asian Games – Men's 800 metres,Athletics at the 2014 Asian Games – Men's 800 metres
+Athletics at the 2014 Asian Games – Men's 800 metres,time,1:44.14,Athletics at the 2014 Asian Games – Men's 800 metres
+Jake DeBrusk,instanceOf,Ice Hockey Player,Jake DeBrusk
+Jake DeBrusk,position,Left Wing,Jake DeBrusk
+Jake DeBrusk,team,Boston Bruins,Jake DeBrusk
+Jake DeBrusk,drafted,2015 NHL Entry Draft,Jake DeBrusk
+Jake DeBrusk,draftedPosition,2nd Round,Jake DeBrusk
+Jake DeBrusk,draftedNumber,31,Jake DeBrusk
+Jake DeBrusk,height,6 ft 1 in (185 cm),Jake DeBrusk
+Jake DeBrusk,weight,190 lb (86 kg),Jake DeBrusk
+Jake DeBrusk,dateOfBirth,1996-03-28,Jake DeBrusk
+Jake DeBrusk,placeOfBirth,"Dartmouth, Massachusetts",Jake DeBrusk
+Jake DeBrusk,college,Boston University,Jake DeBrusk
+Jake DeBrusk,NHLDebut,2017-10-04,Jake DeBrusk
+Jake DeBrusk,goals,17,Jake DeBrusk
+Jake DeBrusk,assists,33,Jake DeBrusk
+Jake DeBrusk,points,50,Jake DeBrusk
+Jake DeBrusk,shots,133,Jake DeBrusk
+Jake DeBrusk,plusMinus,73,Jake DeBrusk
+Jake DeBrusk,penaltyMinutes,113,Jake DeBrusk
+Jake DeBrusk,careerGoals,138,Jake DeBrusk
+Jake DeBrusk,careerAssists,303,Jake DeBrusk
+Jake DeBrusk,careerPoints,441,Jake DeBrusk
+1950–51 La Liga,instanceOf,Football League,1950–51 La Liga
+1950–51 La Liga,startDate,1950-09-16,1950–51 La Liga
+1950–51 La Liga,endDate,1951-04-17,1950–51 La Liga
+1950–51 La Liga,champion,Real Madrid,1950–51 La Liga
+1950–51 La Liga,runnerUp,Athletic Bilbao,1950–51 La Liga
+1950–51 La Liga,teams,Real Madrid,1950–51 La Liga
+1950–51 La Liga,teams,Athletic Bilbao,1950–51 La Liga
+1950–51 La Liga,teams,FC Barcelona,1950–51 La Liga
+1950–51 La Liga,teams,RCD Espanyol,1950–51 La Liga
+1950–51 La Liga,teams,Levante UD,1950–51 La Liga
+1950–51 La Liga,teams,Getxo CF,1950–51 La Liga
+1950–51 La Liga,teams,Sporting Gijón,1950–51 La Liga
+1950–51 La Liga,teams,Racing de Santander,1950–51 La Liga
+1950–51 La Liga,teams,CE Sabadell,1950–51 La Liga
+1950–51 La Liga,teams,CD Castellón,1950–51 La Liga
+1950–51 La Liga,teams,UD Salamanca,1950–51 La Liga
+1950–51 La Liga,teams,Real Union,1950–51 La Liga
+1950–51 La Liga,teams,CF Recreativo de Huelva,1950–51 La Liga
+1950–51 La Liga,teams,CD Marino,1950–51 La Liga
+1950–51 La Liga,teams,CD Terrassa,1950–51 La Liga
+1950–51 La Liga,teams,CD Guadajoz,1950–51 La Liga
+"Church of the Transfiguration of the Lord, Ruma",instanceOf,Church,"Church of the Transfiguration of the Lord, Ruma"
+"Church of the Transfiguration of the Lord, Ruma",locatedIn,Ruma,"Church of the Transfiguration of the Lord, Ruma"
+"Church of the Transfiguration of the Lord, Ruma",denomination,Orthodox Church,"Church of the Transfiguration of the Lord, Ruma"
+"Church of the Transfiguration of the Lord, Ruma",address,"Ruma, Romania","Church of the Transfiguration of the Lord, Ruma"
+TalkTalk,title,TalkTalk,TalkTalk (A Perfect Circle song)
+TalkTalk,artist,A Perfect Circle,TalkTalk (A Perfect Circle song)
+TalkTalk,album,Thirteenth,TalkTalk (A Perfect Circle song)
+TalkTalk,genre,Progressive Metal,TalkTalk (A Perfect Circle song)
+TalkTalk,length,5:48,TalkTalk (A Perfect Circle song)
+TalkTalk,instanceOf,song,TalkTalk (A Perfect Circle song)
+Amphimachus I of Elis,instanceOf,King,Amphimachus I of Elis
+Amphimachus I of Elis,partOf,Elis,Amphimachus I of Elis
+Amphimachus I of Elis,ruled,Elis,Amphimachus I of Elis
+Amphimachus I of Elis,fatherOf,Periand,Amphimachus I of Elis
+Amphimachus I of Elis,sonOf,Chilon of Elis,Amphimachus I of Elis
+Amphimachus I of Elis,brotherOf,Chilon of Elis,Amphimachus I of Elis
+Amphimachus I of Elis,died,560 BC,Amphimachus I of Elis
+Riqui Puig,instanceOf,Footballer,Riqui Puig
+Riqui Puig,playsFor,FC Barcelona,Riqui Puig
+Riqui Puig,position,Midfielder,Riqui Puig
+Riqui Puig,dateOfBirth,1998-02-26,Riqui Puig
+Riqui Puig,nationality,Spanish,Riqui Puig
+Riqui Puig,jerseyNumber,6,Riqui Puig
+Riqui Puig,youthClub,FC Barcelona La Masia,Riqui Puig
+Riqui Puig,debutDate,2017-03-05,Riqui Puig
+Riqui Puig,totalGamesPlayed,150+,Riqui Puig
+Riqui Puig,totalGoalsScored,10+,Riqui Puig
+Jim McDonnell (boxer),instanceOf,boxer,Jim McDonnell (boxer)
+Jim McDonnell (boxer),bornIn,"Los Angeles, California",Jim McDonnell (boxer)
+Jim McDonnell (boxer),birthDate,1977-03-15,Jim McDonnell (boxer)
+Jim McDonnell (boxer),nationality,American,Jim McDonnell (boxer)
+Jim McDonnell (boxer),occupation,boxer,Jim McDonnell (boxer)
+Jim McDonnell (boxer),debut,1999,Jim McDonnell (boxer)
+Jim McDonnell (boxer),record,26-3-0,Jim McDonnell (boxer)
+Jim McDonnell (boxer),opponent,Ricardo Williams,Jim McDonnell (boxer)
+Jim McDonnell (boxer),opponent,Carlos Munoz,Jim McDonnell (boxer)
+Jim McDonnell (boxer),opponent,Danny Santiago,Jim McDonnell (boxer)
+Brett Cooper (fighter),instanceOf,fighter,Brett Cooper (fighter)
+Brett Cooper (fighter),nationality,American,Brett Cooper (fighter)
+Brett Cooper (fighter),bornIn,"San Antonio, Texas",Brett Cooper (fighter)
+Brett Cooper (fighter),height,6 ft 2 in (188 cm),Brett Cooper (fighter)
+Brett Cooper (fighter),weight,211 lb (95.7 kg),Brett Cooper (fighter)
+Brett Cooper (fighter),mixedMartialArtsRecord,13-9-0,Brett Cooper (fighter)
+Brett Cooper (fighter),opponent,Dan Henderson,Brett Cooper (fighter)
+Brett Cooper (fighter),opponent,Michael Bisping,Brett Cooper (fighter)
+Brett Cooper (fighter),opponent,Jim Miller,Brett Cooper (fighter)
+Brett Cooper (fighter),opponent,Diego Sanchez,Brett Cooper (fighter)
+MV Glenachulish,instanceOf,Ship,MV Glenachulish
+MV Glenachulish,IMO Number,6507343,MV Glenachulish
+MV Glenachulish,MMSI Number,3FFG882130102,MV Glenachulish
+MV Glenachulish,length,108.5,MV Glenachulish
+MV Glenachulish,beam,14.0,MV Glenachulish
+MV Glenachulish,grossTonnage,1200,MV Glenachulish
+MV Glenachulish,type,General Cargo Ship,MV Glenachulish
+MV Glenachulish,owner,Glenachulish Shipping Ltd,MV Glenachulish
+MV Glenachulish,built,1973,MV Glenachulish
+MV Glenachulish,builtBy,Robert Shipyard Ltd,MV Glenachulish
+Association for Rural & Small Libraries,instanceOf,Professional Association,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,locatedIn,United States,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,establishedIn,1937,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,website,https://www.arls.org/,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,mission,To support and advocate for rural and small libraries.,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,membership,Libraries serving rural and small communities,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,provides,Resources and professional development for librarians,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,offers,ARSL Newsletter,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,offers,ARSL Conference,Association for Rural & Small Libraries
+Association for Rural & Small Libraries,governedBy,Board of Directors,Association for Rural & Small Libraries
+"Pierre-François, Marquess of Rougé",instanceOf,Peer,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",birthDate,1716-03-15,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",deathDate,1793-05-18,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",occupation,Peer,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",father,"Louis-Lucie de Rougé, Marquess of Rougé","Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",mother,Anne-Marie de Launay,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",spouse,Marie-Louise de La Rochefoucauld,"Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",children,"Pierre-Lucille de Rougé, Marquess of Rougé","Pierre-François, Marquess of Rougé"
+"Pierre-François, Marquess of Rougé",residedIn,France,"Pierre-François, Marquess of Rougé"
+2007–08 St. John's Red Storm men's basketball team,instanceOf,Basketball team,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,headCoach,Chris Crenshaw,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,conference,Big East Conference,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,record,34–7,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,conferenceStanding,1st,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,defeated,Memphis Tigers,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,lostTo,Connecticut Huskies,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,tournamentAppearance,Elite Eight,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,starPlayer,Jamal Johnson,2007–08 St. John's Red Storm men's basketball team
+2007–08 St. John's Red Storm men's basketball team,starPlayer,Steve Novak,2007–08 St. John's Red Storm men's basketball team
+Ben Newton (wheelchair rugby),instanceOf,Athlete,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),instanceOf,Para-athlete,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),playsFor,London Chargers,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),bornIn,1988,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),nationality,British,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),position,Attacker,Ben Newton (wheelchair rugby)
+Ben Newton (wheelchair rugby),wheelchairRugbyCareerStarted,2008,Ben Newton (wheelchair rugby)
+Malekshahi County,locatedIn,Iran,Malekshahi County
+Malekshahi County,partOf,Mazandaran Province,Malekshahi County
+Malekshahi County,population,123567,Malekshahi County
+Malekshahi County,area,838,Malekshahi County
+Malekshahi County,instanceOf,County,Malekshahi County
+Malekshahi County,postalCode,35361,Malekshahi County
+Malekshahi County,hasCity,Malekshahi,Malekshahi County
+Malekshahi County,hasCity,Kiasar,Malekshahi County
+Happening,instanceOf,novel,Happening (book)
+Happening,author,Don DeLillo,Happening (book)
+Happening,publicationDate,1999-03-17,Happening (book)
+Happening,publisher,Alfred A. Knopf,Happening (book)
+Happening,ISBN,9780385480076,Happening (book)
+Happening,genre,contemporary American literature,Happening (book)
+Happening,setting,New York City,Happening (book)
+Happening,themes,"terrorism, media, memory",Happening (book)
+Happening,plotSummary,A group of New Yorkers react to the bombing of the World Trade Center.,Happening (book)
+2023 Tour de l'Ain,instanceOf,Cycling race,2023 Tour de l'Ain
+2023 Tour de l'Ain,startDate,2023-03-18,2023 Tour de l'Ain
+2023 Tour de l'Ain,endDate,2023-03-20,2023 Tour de l'Ain
+2023 Tour de l'Ain,location,"Ain, France",2023 Tour de l'Ain
+2023 Tour de l'Ain,numberOfStages,3,2023 Tour de l'Ain
+2023 Tour de l'Ain,winner,Gianluca Gasparotto,2023 Tour de l'Ain
+2023 Tour de l'Ain,organizer,Unidee,2023 Tour de l'Ain
+2023 Tour de l'Ain,UCI,2.1,2023 Tour de l'Ain
+Port of Henichesk,locatedIn,"Henichesk, Mykolaiv Oblast, Ukraine",Port of Henichesk
+Port of Henichesk,instanceOf,Port,Port of Henichesk
+Port of Henichesk,partOf,Mykolaiv Oblast,Port of Henichesk
+Port of Henichesk,operationalSince,1936,Port of Henichesk
+Port of Henichesk,coordinates,"45.43333, 32.73333",Port of Henichesk
+Port of Henichesk,description,"A port on the Kalivryche River in Henichesk, Mykolaiv Oblast, Ukraine.",Port of Henichesk
+Port of Henichesk,cargo,Grain,Port of Henichesk
+Port of Henichesk,portAuthority,State Sea and River Ports Authority of Ukraine,Port of Henichesk
+Phocylides (beetle),instanceOf,beetle,Phocylides (beetle)
+Phocylides (beetle),isA,insect,Phocylides (beetle)
+Phocylides (beetle),isA,arthropod,Phocylides (beetle)
+Phocylides (beetle),isA,animal,Phocylides (beetle)
+Phocylides (beetle),livesIn,soil,Phocylides (beetle)
+Phocylides (beetle),feedsOn,leaves,Phocylides (beetle)
+Phocylides (beetle),isFoundIn,forest,Phocylides (beetle)
+Phocylides (beetle),isFoundIn,garden,Phocylides (beetle)
+Phocylides (beetle),hasColor,brown,Phocylides (beetle)
+Phocylides (beetle),hasColor,black,Phocylides (beetle)
+MongoDB Inc.,instanceOf,Company,MongoDB Inc.
+MongoDB Inc.,location,"Menlo Park, California",MongoDB Inc.
+MongoDB Inc.,founded,2007,MongoDB Inc.
+MongoDB Inc.,founder,Abraham Rassool,MongoDB Inc.
+MongoDB Inc.,founder,Janusz Grabowski,MongoDB Inc.
+MongoDB Inc.,industry,Database software,MongoDB Inc.
+MongoDB Inc.,website,https://www.mongodb.com/,MongoDB Inc.
+MongoDB Inc.,products,MongoDB,MongoDB Inc.
+MongoDB,developedBy,MongoDB Inc.,MongoDB Inc.
+MongoDB Inc.,parentCompany,Manual Ltd.,MongoDB Inc.
+MongoDB Inc.,acquires,MemSQL,MongoDB Inc.
+MemSQL,acquiredBy,MongoDB Inc.,MongoDB Inc.
+The Cleaner (2021 film),instanceOf,film,The Cleaner (2021 film)
+The Cleaner (2021 film),directedBy,Ben Askrin,The Cleaner (2021 film)
+The Cleaner (2021 film),writer,Ben Askrin,The Cleaner (2021 film)
+The Cleaner (2021 film),genre,crime thriller,The Cleaner (2021 film)
+The Cleaner (2021 film),releaseDate,2021-09-24,The Cleaner (2021 film)
+The Cleaner (2021 film),plot,A British detective investigates a series of murders in Amsterdam.,The Cleaner (2021 film)
+The Cleaner (2021 film),starring,Mackenzie Davis,The Cleaner (2021 film)
+The Cleaner (2021 film),starring,Robert Pattinson,The Cleaner (2021 film)
+The Cleaner (2021 film),starring,Idris Elba,The Cleaner (2021 film)
+The Cleaner (2021 film),rated,R,The Cleaner (2021 film)
+2011 Kütahya earthquake,instanceOf,earthquake,2011 Kütahya earthquake
+2011 Kütahya earthquake,magnitude,6.6,2011 Kütahya earthquake
+2011 Kütahya earthquake,occurredIn,"Kütahya Province, Turkey",2011 Kütahya earthquake
+2011 Kütahya earthquake,date,2011-02-21,2011 Kütahya earthquake
+2011 Kütahya earthquake,causedDamage,Buildings,2011 Kütahya earthquake
+2011 Kütahya earthquake,causedCasualties,Fatalities,2011 Kütahya earthquake
+2011 Kütahya earthquake,causedCasualties,Injuries,2011 Kütahya earthquake
+2011 Kütahya earthquake,affectedArea,Kütahya,2011 Kütahya earthquake
+2011 Kütahya earthquake,affectedArea,Bursa,2011 Kütahya earthquake
+2011 Kütahya earthquake,affectedArea,Balıkesir,2011 Kütahya earthquake
+Seeds (TV on the Radio album),instanceOf,album,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),released,2007-03-07,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),label,Seeds,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),artist,TV on the Radio,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),genre,indie rock,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),tracks,10,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),producedBy,Paul Epworth,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),recordedAt,"The Church Studios, London",Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),label,Merge Records,Seeds (TV on the Radio album)
+Seeds (TV on the Radio album),rating,4.5/5,Seeds (TV on the Radio album)
+"Caetés, Pernambuco",is located in,Pernambuco,"Caetés, Pernambuco"
+"Caetés, Pernambuco",is a,municipality,"Caetés, Pernambuco"
+"Caetés, Pernambuco",is part of,Agreste,"Caetés, Pernambuco"
+"Caetés, Pernambuco",has population,18353,"Caetés, Pernambuco"
+"Caetés, Pernambuco",instanceOf,Brazilian municipality,"Caetés, Pernambuco"
+2019 Great Yarmouth Borough Council election,instanceOf,Local election,2019 Great Yarmouth Borough Council election
+2019 Great Yarmouth Borough Council election,date,2019,2019 Great Yarmouth Borough Council election
+2019 Great Yarmouth Borough Council election,location,Great Yarmouth Borough Council,2019 Great Yarmouth Borough Council election
+2019 Great Yarmouth Borough Council election,type,Municipal election,2019 Great Yarmouth Borough Council election
+Great Yarmouth Borough Council,isLocatedIn,Norfolk,2019 Great Yarmouth Borough Council election
+Great Yarmouth Borough Council,isLocatedIn,England,2019 Great Yarmouth Borough Council election
+Harry Pitts,instanceOf,footballer,Harry Pitts (footballer)
+Harry Pitts,playsFor,Woking,Harry Pitts (footballer)
+Harry Pitts,position,Defender,Harry Pitts (footballer)
+Harry Pitts,dateOfBirth,1998-03-15,Harry Pitts (footballer)
+Harry Pitts,height,183cm,Harry Pitts (footballer)
+Harry Pitts,nationality,English,Harry Pitts (footballer)
+Harry Pitts,contractUntil,2024-06-30,Harry Pitts (footballer)
+Harry Pitts,shirtNumber,3,Harry Pitts (footballer)
+"Brie, Ille-et-Vilaine",instanceOf,French commune,"Brie, Ille-et-Vilaine"
+"Brie, Ille-et-Vilaine",locatedIn,Ille-et-Vilaine,"Brie, Ille-et-Vilaine"
+"Brie, Ille-et-Vilaine",population,1333,"Brie, Ille-et-Vilaine"
+"Brie, Ille-et-Vilaine",postalCode,35130,"Brie, Ille-et-Vilaine"
+"Brie, Ille-et-Vilaine",latitude,48.3233,"Brie, Ille-et-Vilaine"
+"Brie, Ille-et-Vilaine",longitude,-1.5243,"Brie, Ille-et-Vilaine"
+Miss Brazil 2014,instanceOf,Beauty pageant,Miss Brazil 2014
+Miss Brazil 2014,winner,Iara Rocha,Miss Brazil 2014
+Miss Brazil 2014,heldIn,São Paulo,Miss Brazil 2014
+Miss Brazil 2014,date,2014-09-12,Miss Brazil 2014
+Miss Brazil 2014,organizer,RecordTV,Miss Brazil 2014
+Miss Brazil 2014,broadcastOn,RecordTV,Miss Brazil 2014
+Miss Brazil 2014,represents,Brazil,Miss Brazil 2014
+Iara Rocha,represents,Brazil,Miss Brazil 2014
+No Hard Feelings (2020 film),instanceOf,film,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),directedBy,Jeff Baena,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),starring,Jennifer Lawrence,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),starring,Ray Liotta,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),starring,Isabelle Reyes,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),genre,comedy,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),releaseDate,2023-03-03,No Hard Feelings (2020 film)
+No Hard Feelings (2020 film),plot,A teenage girl hires a stranger to sleep with her mom in an attempt to get her ex-stepfather to take her back.,No Hard Feelings (2020 film)
+Fondazione Pisa,instanceOf,Research Foundation,Fondazione Pisa
+Fondazione Pisa,locatedIn,Pisa,Fondazione Pisa
+Fondazione Pisa,establishedIn,1999,Fondazione Pisa
+Fondazione Pisa,focusArea,Artificial Intelligence,Fondazione Pisa
+Fondazione Pisa,focusArea,Machine Learning,Fondazione Pisa
+Fondazione Pisa,focusArea,Data Science,Fondazione Pisa
+Fondazione Pisa,mission,Promoting research and development in Artificial Intelligence,Fondazione Pisa
+Fondazione Pisa,website,https://www.fondazionepisa.it/,Fondazione Pisa
+Fondazione Pisa,director,Francesco Calzolari,Fondazione Pisa
+Fondazione Pisa,memberOf,European AI Alliance,Fondazione Pisa
+The Gunfighter (1917 film),instanceOf,Film,The Gunfighter (1917 film)
+The Gunfighter (1917 film),directedBy,Edward Sedgwick,The Gunfighter (1917 film)
+The Gunfighter (1917 film),starring,Tom Wilson,The Gunfighter (1917 film)
+The Gunfighter (1917 film),starring,Robert Anderson,The Gunfighter (1917 film)
+The Gunfighter (1917 film),starring,Mary Brambly,The Gunfighter (1917 film)
+The Gunfighter (1917 film),genre,Western,The Gunfighter (1917 film)
+The Gunfighter (1917 film),runtime,45 minutes,The Gunfighter (1917 film)
+The Gunfighter (1917 film),released,1917,The Gunfighter (1917 film)
+The Gunfighter (1917 film),basedOn,The Gunfighter (short story),The Gunfighter (1917 film)
+Breece Hall,instanceOf,American football player,Breece Hall
+Breece Hall,position,Running back,Breece Hall
+Breece Hall,team,New York Jets,Breece Hall
+Breece Hall,drafted,2022 NFL Draft,Breece Hall
+Breece Hall,college,Iowa State University,Breece Hall
+Breece Hall,height,6 ft 0 in (183 cm),Breece Hall
+Breece Hall,weight,210 lb (95 kg),Breece Hall
+Breece Hall,born,1999-12-31,Breece Hall
+Breece Hall,number,27,Breece Hall
+Breece Hall,jerseyNumber,27,Breece Hall
+Cara Delevingne,instanceOf,Model,Cara Delevingne
+Cara Delevingne,instanceOf,Actress,Cara Delevingne
+Cara Delevingne,instanceOf,Singer,Cara Delevingne
+Cara Delevingne,bornIn,London,Cara Delevingne
+Cara Delevingne,dateOfBirth,2012-08-25,Cara Delevingne
+Cara Delevingne,nationality,British,Cara Delevingne
+Cara Delevingne,agent,IMG Models,Cara Delevingne
+Cara Delevingne,collaboratedWith,Nicki Minaj,Cara Delevingne
+Cara Delevingne,collaboratedWith,Rita Ora,Cara Delevingne
+Cara Delevingne,collaboratedWith,Pharrell Williams,Cara Delevingne
+Cara Delevingne,starredIn,Suicide Squad,Cara Delevingne
+Cara Delevingne,starredIn,Only Murders in the Building,Cara Delevingne
+Cara Delevingne,starredIn,Tulip Fever,Cara Delevingne
+Cara Delevingne,starredIn,Sing,Cara Delevingne
+Cara Delevingne,socialMedia,Instagram,Cara Delevingne
+Cara Delevingne,socialMedia,Twitter,Cara Delevingne
+Cara Delevingne,socialMedia,TikTok,Cara Delevingne
+Cemetery Without Crosses,instanceOf,Cemetery,Cemetery Without Crosses
+Cemetery Without Crosses,locatedIn,Gravejorden,Cemetery Without Crosses
+Cemetery Without Crosses,hasFeature,unmarked graves,Cemetery Without Crosses
+Cemetery Without Crosses,hasFeature,atmospheric setting,Cemetery Without Crosses
+Cemetery Without Crosses,hasFeature,sense of melancholy,Cemetery Without Crosses
+Cemetery Without Crosses,isLocatedIn,Denmark,Cemetery Without Crosses
+David Herman,instanceOf,BMX rider,David Herman (BMX rider)
+David Herman,bornIn,1984,David Herman (BMX rider)
+David Herman,nationality,American,David Herman (BMX rider)
+David Herman,residesIn,California,David Herman (BMX rider)
+David Herman,profession,BMX rider,David Herman (BMX rider)
+David Herman,knownFor,Trick riding,David Herman (BMX rider)
+David Herman,competition,X Games,David Herman (BMX rider)
+David Herman,competition,Red Bull X Games,David Herman (BMX rider)
+David Herman,competition,Fiesta SA X Games,David Herman (BMX rider)
+"St Luke's Church, Holbrooks",instanceOf,Church,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",locatedIn,Holbrooks,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",locatedIn,Eastwood,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",denomination,Anglican,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",architect,William Burges,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",constructionStart,1860,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",constructionEnd,1872,"St Luke's Church, Holbrooks"
+"St Luke's Church, Holbrooks",architecturalStyle,Gothic Revival,"St Luke's Church, Holbrooks"
+Sottens transmitter,instanceOf,transmitter,Sottens transmitter
+Sottens transmitter,locatedIn,"Sottens, Switzerland",Sottens transmitter
+Sottens transmitter,operator,Swiss Radio Corporation,Sottens transmitter
+Sottens transmitter,frequency,153 kHz,Sottens transmitter
+Sottens transmitter,type,Shortwave transmitter,Sottens transmitter
+Sottens transmitter,power,100 kW,Sottens transmitter
+Sottens transmitter,built,1937,Sottens transmitter
+Sottens transmitter,purpose,International broadcasting,Sottens transmitter
+Sottens transmitter,maintainedBy,Swiss Radio Corporation,Sottens transmitter
+Nardosinone,instanceOf,Natural product,Nardosinone
+Nardosinone,chemicalFormula,C20H28O6,Nardosinone
+Nardosinone,molecularWeight,368.44 g/mol,Nardosinone
+Nardosinone,isolationFrom,Nardostachys jatamansi,Nardosinone
+Nardosinone,chemicalClass,Sesquiterpene lactone,Nardosinone
+Nardosinone,biologicalActivity,Anti-inflammatory,Nardosinone
+Nardosinone,biologicalActivity,Antioxidant,Nardosinone
+Nardosinone,biologicalActivity,Antitumor,Nardosinone
+Nardosinone,biologicalActivity,Neuroprotective,Nardosinone
+Nardosinone,isolationMethod,Extraction,Nardosinone
+Nardosinone,isolationMethod,Chromatography,Nardosinone
+Feelings (2003 film),instanceOf,Film,Feelings (2003 film)
+Feelings (2003 film),directedBy,Denzel Washington,Feelings (2003 film)
+Feelings (2003 film),starring,Denzel Washington,Feelings (2003 film)
+Feelings (2003 film),starring,Kelly Macdonald,Feelings (2003 film)
+Feelings (2003 film),starring,Mark Wahlberg,Feelings (2003 film)
+Feelings (2003 film),genre,Drama,Feelings (2003 film)
+Feelings (2003 film),genre,Romance,Feelings (2003 film)
+Feelings (2003 film),releaseDate,2003-06-06,Feelings (2003 film)
+Feelings (2003 film),plot,A widowed father and his daughter struggle to cope with their grief and reconnect.,Feelings (2003 film)
+Feelings (2003 film),rating,PG-13,Feelings (2003 film)
+"2018 European Athletics Championships – Men's 10,000 metres",instanceOf,Athletic event,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",startDate,2018-06-08,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",endDate,2018-06-10,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",location,Berlin,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",organizer,European Athletics,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",numberOfAthletes,29,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",goldMedalWinner,Tage Davis,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",silverMedalWinner,Timo Nordgren,"2018 European Athletics Championships – Men's 10,000 metres"
+"2018 European Athletics Championships – Men's 10,000 metres",bronzeMedalWinner,Lameck Jelani Mucheru,"2018 European Athletics Championships – Men's 10,000 metres"
+Heracleum lehmannianum,instanceOf,Plant,Heracleum lehmannianum
+Heracleum lehmannianum,scientificName,Heracleum lehmannianum,Heracleum lehmannianum
+Heracleum lehmannianum,commonName,Lehmann's Giant Hogweed,Heracleum lehmannianum
+Heracleum lehmannianum,nativeRange,Central Europe,Heracleum lehmannianum
+Heracleum lehmannianum,habitat,"Meadows, grasslands, and riverbanks",Heracleum lehmannianum
+Heracleum lehmannianum,plantHeight,3-6 meters,Heracleum lehmannianum
+Heracleum lehmannianum,floweringSeason,June-August,Heracleum lehmannianum
+Heracleum lehmannianum,flowerColor,White,Heracleum lehmannianum
+Heracleum lehmannianum,leafShape,"Large, deeply divided",Heracleum lehmannianum
+Heracleum lehmannianum,toxicity,Highly toxic; contains photosensitizing compounds,Heracleum lehmannianum
+Heracleum lehmannianum,partOf,Asteraceae,Heracleum lehmannianum
+Heracleum lehmannianum,conservationStatus,Least Concern,Heracleum lehmannianum
+Heracleum lehmannianum,plantType,Herbaceous perennial,Heracleum lehmannianum
+Heracleum lehmannianum,sunlightRequirement,Full sun,Heracleum lehmannianum
+Heracleum lehmannianum,soilType,Well-drained,Heracleum lehmannianum
+2005–06 Kuwaiti Premier League,instanceOf,Football League,2005–06 Kuwaiti Premier League
+2005–06 Kuwaiti Premier League,startDate,2005-08-29,2005–06 Kuwaiti Premier League
+2005–06 Kuwaiti Premier League,endDate,2006-05-13,2005–06 Kuwaiti Premier League
+2005–06 Kuwaiti Premier League,numberOfTeams,16,2005–06 Kuwaiti Premier League
+2005–06 Kuwaiti Premier League,leagueName,Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Sadd SC,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Qadisiya SC,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Koweiti Sporting Club,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Arab SC,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Kazroo FC,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Dibba Club,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Fahaheel SC,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Ittihad Kalbiya,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Tadamon,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Khormala,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Sahra Club,participatedIn,2005–06 Kuwaiti Premier League,2005–06 Kuwaiti Premier League
+Al-Qadisiya SC,finished,1,2005–06 Kuwaiti Premier League
+Al-Sadd SC,finished,2,2005–06 Kuwaiti Premier League
+Nickelodeon All-Star Brawl 2,instanceOf,Video Game,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,releaseDate,"October 6, 2023",Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,platform,Nintendo Switch,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,platform,PlayStation 5,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,platform,Xbox Series X,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,platform,PC,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,genre,Fighting Game,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,developer,Triple Brown Studios,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,publisher,Outward Studios,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,SpongeBob SquarePants,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Patrick Star,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Danny Phantom,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Ariel,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Donkey Kong,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Metal Sonic,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Sonic the Hedgehog,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Luigi,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Mario,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Peach,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Bowser,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Samus Aran,Nickelodeon All-Star Brawl 2
+Nickelodeon All-Star Brawl 2,characters,Link,Nickelodeon All-Star Brawl 2
+"St James' Church, Grewelthorpe",instanceOf,Church,"St James' Church, Grewelthorpe"
+"St James' Church, Grewelthorpe",locatedIn,Grewelthorpe,"St James' Church, Grewelthorpe"
+Grewelthorpe,locatedIn,North Yorkshire,"St James' Church, Grewelthorpe"
+"St James' Church, Grewelthorpe",architect,William Tottle,"St James' Church, Grewelthorpe"
+"St James' Church, Grewelthorpe",builtIn,1821,"St James' Church, Grewelthorpe"
+"St James' Church, Grewelthorpe",denomination,Anglican,"St James' Church, Grewelthorpe"
+"St James' Church, Grewelthorpe",hasStainedGlass,Yes,"St James' Church, Grewelthorpe"
+Matthew Kaminski (journalist),instanceOf,journalist,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),worksFor,The New York Times,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),writesAbout,technology,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),writesAbout,artificial intelligence,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),writesAbout,machine learning,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),writesAbout,data science,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),writesAbout,innovation,Matthew Kaminski (journalist)
+Matthew Kaminski (journalist),basedIn,New York City,Matthew Kaminski (journalist)
+Kazusa-Mitsumata Station,instanceOf,Train Station,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,locatedIn,Chiba Prefecture,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,partOf,Joban Line,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,operator,Japan Railways,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,coordinates,"35.7444° N, 139.7333° E",Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,postalCode,282-0911,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,access,JR Narita Express,Kazusa-Mitsumata Station
+Kazusa-Mitsumata Station,access,Keisei Skyliner,Kazusa-Mitsumata Station
+2025 Italian Open – Women's singles,instanceOf,tennis tournament,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,location,Rome,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,startDate,2025-08-14,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,endDate,2025-08-20,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,tournamentType,WTA 250,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,surface,clay,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,organizer,WTA,2025 Italian Open – Women's singles
+2025 Italian Open – Women's singles,host,Italy,2025 Italian Open – Women's singles
+Guyanancistrus niger,instanceOf,Plant,Guyanancistrus niger
+Guyanancistrus niger,instanceOf,Angiosperm,Guyanancistrus niger
+Guyanancistrus niger,scientificName,Guyanancistrus niger,Guyanancistrus niger
+Guyanancistrus niger,nativeTo,Brazil,Guyanancistrus niger
+Guyanancistrus niger,habitat,Tropical rainforests,Guyanancistrus niger
+Guyanancistrus niger,leafType,Simple,Guyanancistrus niger
+Guyanancistrus niger,flowerColor,White,Guyanancistrus niger
+Guyanancistrus niger,fruitType,Berry,Guyanancistrus niger
+Guyanancistrus niger,size,Small,Guyanancistrus niger
+Guyanancistrus niger,growthHabit,Shrub,Guyanancistrus niger
+Ministry of Education and Science (Kyrgyzstan),instanceOf,Ministry,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),locatedIn,Kyrgyzstan,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),responsibleFor,Education,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),responsibleFor,Science,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),responsibleFor,Technical Control,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),establishedIn,1992,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),headquartersLocatedIn,Bishkek,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),website,https://moes.gov.kg/,Ministry of Education and Science (Kyrgyzstan)
+Ministry of Education and Science (Kyrgyzstan),officialWebsite,https://moes.gov.kg/,Ministry of Education and Science (Kyrgyzstan)
+"St George's Church, Barrow-in-Furness",instanceOf,Church,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",locatedIn,Barrow-in-Furness,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",denomination,Anglican,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",architect,William Burges,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",constructionStart,1879,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",constructionEnd,1885,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",style,Gothic Revival,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",material,Sandstone,"St George's Church, Barrow-in-Furness"
+"St George's Church, Barrow-in-Furness",coordinates,"54.37778, -3.01667","St George's Church, Barrow-in-Furness"
+Joseph Y. Yun,instanceOf,Computer Scientist,Joseph Y. Yun
+Joseph Y. Yun,bornIn,Seoul,Joseph Y. Yun
+Joseph Y. Yun,nationality,American,Joseph Y. Yun
+Joseph Y. Yun,education,Massachusetts Institute of Technology,Joseph Y. Yun
+Joseph Y. Yun,education,Stanford University,Joseph Y. Yun
+Joseph Y. Yun,occupation,Professor,Joseph Y. Yun
+Joseph Y. Yun,affiliation,University of Utah,Joseph Y. Yun
+Joseph Y. Yun,researchArea,Computer Vision,Joseph Y. Yun
+Joseph Y. Yun,researchArea,Image Processing,Joseph Y. Yun
+Joseph Y. Yun,memberOf,IEEE,Joseph Y. Yun
+Joseph Y. Yun,memberOf,ACM,Joseph Y. Yun
+Joseph Y. Yun,authorOf,Computer Vision: Algorithms and Applications,Joseph Y. Yun
+"Pablo López (footballer, born 1996)",instanceOf,footballer,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",dateOfBirth,1996-03-16,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",nationality,Spanish,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",currentTeam,Real Betis,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",position,Goalkeeper,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",height,1.91 m,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",jerseyNumber,1,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",bornIn,Alcalá de Henares,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",clubHistory,Real Madrid Castilla,"Pablo López (footballer, born 1996)"
+"Pablo López (footballer, born 1996)",clubHistory,Real Betis,"Pablo López (footballer, born 1996)"
+Missouri State Penitentiary,instanceOf,Penitentiary,Missouri State Penitentiary
+Missouri State Penitentiary,locatedIn,"Columbia, Missouri",Missouri State Penitentiary
+Missouri State Penitentiary,builtIn,1858,Missouri State Penitentiary
+Missouri State Penitentiary,operatedUntil,1995,Missouri State Penitentiary
+Missouri State Penitentiary,operatedBy,Missouri Department of Corrections,Missouri State Penitentiary
+Missouri State Penitentiary,heldPrisoners,Al Capone,Missouri State Penitentiary
+Missouri State Penitentiary,heldPrisoners,Bonnie and Clyde,Missouri State Penitentiary
+Missouri State Penitentiary,heldPrisoners,George Nicholls,Missouri State Penitentiary
+Missouri State Penitentiary,features,Guard Towers,Missouri State Penitentiary
+Missouri State Penitentiary,features,Cell Blocks,Missouri State Penitentiary
+Missouri State Penitentiary,features,Exercise Yards,Missouri State Penitentiary
+Missouri State Penitentiary,features,Chapel,Missouri State Penitentiary
+Missouri State Penitentiary,isNow,Museum,Missouri State Penitentiary
+Missouri State Penitentiary,name,Missouri State Penitentiary,Missouri State Penitentiary
+Notgrove railway station,instanceOf,railway station,Notgrove railway station
+Notgrove railway station,locatedIn,Sheffield,Notgrove railway station
+Notgrove railway station,partOf,Sheffield railway,Notgrove railway station
+Notgrove railway station,operator,Network Rail,Notgrove railway station
+Notgrove railway station,opened,1848,Notgrove railway station
+Notgrove railway station,closed,1982,Notgrove railway station
+2015 Copa ASOBAL,instanceOf,Sports league,2015 Copa ASOBAL
+2015 Copa ASOBAL,startDate,2015-01-01,2015 Copa ASOBAL
+2015 Copa ASOBAL,endDate,2015-04-25,2015 Copa ASOBAL
+2015 Copa ASOBAL,organizer,Federación Española de Baloncesto,2015 Copa ASOBAL
+2015 Copa ASOBAL,location,Spain,2015 Copa ASOBAL
+2015 Copa ASOBAL,winner,FC Barcelona,2015 Copa ASOBAL
+2015 Copa ASOBAL,runnerUp,Real Madrid,2015 Copa ASOBAL
+2015 Copa ASOBAL,numberOfTeams,16,2015 Copa ASOBAL
+2015 Copa ASOBAL,sport,Handball,2015 Copa ASOBAL
+The First Kiss (1954 film),instanceOf,Film,The First Kiss (1954 film)
+The First Kiss (1954 film),directedBy,Robert Gordon,The First Kiss (1954 film)
+The First Kiss (1954 film),starring,Robert Gordon,The First Kiss (1954 film)
+The First Kiss (1954 film),starring,Jean Wallace,The First Kiss (1954 film)
+The First Kiss (1954 film),genre,Romantic Comedy,The First Kiss (1954 film)
+The First Kiss (1954 film),releaseDate,1954-04-15,The First Kiss (1954 film)
+The First Kiss (1954 film),runtime,63 minutes,The First Kiss (1954 film)
+The First Kiss (1954 film),country,United States,The First Kiss (1954 film)
+The First Kiss (1954 film),plot,A young man and a young woman fall in love and have their first kiss.,The First Kiss (1954 film)
+Evander Holyfield vs. Henry Tillman,instanceOf,Boxing Match,Evander Holyfield vs. Henry Tillman
+Evander Holyfield,fought,Henry Tillman,Evander Holyfield vs. Henry Tillman
+Evander Holyfield,bornIn,"San Diego, California",Evander Holyfield vs. Henry Tillman
+Henry Tillman,bornIn,"Philadelphia, Pennsylvania",Evander Holyfield vs. Henry Tillman
+Evander Holyfield vs. Henry Tillman,date,"November 23, 1992",Evander Holyfield vs. Henry Tillman
+Evander Holyfield vs. Henry Tillman,location,"Toronto, Ontario",Evander Holyfield vs. Henry Tillman
+Evander Holyfield vs. Henry Tillman,result,Draw,Evander Holyfield vs. Henry Tillman
+Evander Holyfield,weightClass,Heavyweight,Evander Holyfield vs. Henry Tillman
+Henry Tillman,weightClass,Heavyweight,Evander Holyfield vs. Henry Tillman
+Evander Holyfield,winsBy,TKO,Evander Holyfield vs. Henry Tillman
+Henry Tillman,winsBy,KO,Evander Holyfield vs. Henry Tillman
+The Third Degree (1913 film),instanceOf,Film,The Third Degree (1913 film)
+The Third Degree (1913 film),directedBy,Edward Sedgwick,The Third Degree (1913 film)
+The Third Degree (1913 film),starring,James O'Brien,The Third Degree (1913 film)
+The Third Degree (1913 film),starring,Mary Brambly,The Third Degree (1913 film)
+The Third Degree (1913 film),starring,William H. Walker,The Third Degree (1913 film)
+The Third Degree (1913 film),genre,Mystery film,The Third Degree (1913 film)
+The Third Degree (1913 film),runtime,60 minutes,The Third Degree (1913 film)
+The Third Degree (1913 film),released,1913,The Third Degree (1913 film)
+The Third Degree (1913 film),productionCompany,Edison Manufacturing Company,The Third Degree (1913 film)
+The Third Degree (1913 film),filmFormat,Silent film,The Third Degree (1913 film)
+1993 Torneio Rio-São Paulo,instanceOf,football tournament,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,location,Rio de Janeiro,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,date,1993,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,organizer,Confederação Brasileira de Futebol,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,participants,Corinthians,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,participants,Flamengo,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,participants,Vasco da Gama,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,participants,São Paulo,1993 Torneio Rio-São Paulo
+1993 Torneio Rio-São Paulo,winner,Corinthians,1993 Torneio Rio-São Paulo
+National Highway 41 (India),instanceOf,highway,National Highway 41 (India)
+National Highway 41 (India),connects,Delhi,National Highway 41 (India)
+National Highway 41 (India),connects,Panipat,National Highway 41 (India)
+National Highway 41 (India),connects,Meerut,National Highway 41 (India)
+National Highway 41 (India),connects,Saharanpur,National Highway 41 (India)
+National Highway 41 (India),connects,Ludhiana,National Highway 41 (India)
+National Highway 41 (India),connects,Amritsar,National Highway 41 (India)
+National Highway 41 (India),connects,Pathankot,National Highway 41 (India)
+National Highway 41 (India),connects,Jammu,National Highway 41 (India)
+National Highway 41 (India),length,553 km,National Highway 41 (India)
+National Highway 41 (India),locatedIn,India,National Highway 41 (India)
+Wedding of Prince Felipe and Letizia Ortiz,instanceOf,Wedding,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,date,2004-03-22,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,location,Royal Palace of Madrid,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,officiatedBy,Bishop Ricardo Sanjuán,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,bridesmaids,Princess Leonor,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,groomsmen,Prince Gonzalo,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,dressDesigner,Manuel Pertegaz,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,dressColor,White,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,ringDesigner,Jorge Heraud,Wedding of Prince Felipe and Letizia Ortiz
+Letizia Ortiz,marriedTo,Prince Felipe,Wedding of Prince Felipe and Letizia Ortiz
+Prince Felipe,marriedTo,Letizia Ortiz,Wedding of Prince Felipe and Letizia Ortiz
+Typhoon Doksuri,instanceOf,typhoon,Typhoon Doksuri
+Typhoon Doksuri,affectedArea,Philippines,Typhoon Doksuri
+Typhoon Doksuri,affectedArea,Taiwan,Typhoon Doksuri
+Typhoon Doksuri,affectedArea,China,Typhoon Doksuri
+Typhoon Doksuri,affectedArea,Vietnam,Typhoon Doksuri
+Typhoon Doksuri,formationDate,2023-08-28,Typhoon Doksuri
+Typhoon Doksuri,peakIntensity,super typhoon,Typhoon Doksuri
+Typhoon Doksuri,landfallDate,2023-08-30,Typhoon Doksuri
+Typhoon Doksuri,maximumWindSpeed,240 km/h,Typhoon Doksuri
+Typhoon Doksuri,category,Category 5,Typhoon Doksuri
+Typhoon Doksuri,status,weakened to a tropical storm,Typhoon Doksuri
+Typhoon Doksuri,path,West,Typhoon Doksuri
+Douwe Aukes-class minelayer,instanceOf,minelayer,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,commissioned,1963,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,servedIn,North Sea,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,builtBy,Foudres-Werf,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,displacement,660 tons,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,length,102.5 meters,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,crew,80,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,armament,"47 mm guns, 410 mm naval gun",Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,retired,1993,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,name,Douwe Aukes,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,type,minelayer,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,countryOfOrigin,Netherlands,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,manufacturer,Foudres-Werf,Douwe Aukes-class minelayer
+Douwe Aukes-class minelayer,class,Douwe Aukes-class,Douwe Aukes-class minelayer
+Something Personal (Houston Person album),instanceOf,album,Something Personal (Houston Person album)
+Something Personal (Houston Person album),released,1964,Something Personal (Houston Person album)
+Something Personal (Houston Person album),label,Something Personal,Something Personal (Houston Person album)
+Something Personal (Houston Person album),artist,Houston Person,Something Personal (Houston Person album)
+Something Personal (Houston Person album),genre,Jazz,Something Personal (Houston Person album)
+Something Personal (Houston Person album),format,LP,Something Personal (Houston Person album)
+Castillo de San Julián,instanceOf,castle,Castillo de San Julián
+Castillo de San Julián,locatedIn,"San Julián, Asturias",Castillo de San Julián
+Castillo de San Julián,builtIn,1181,Castillo de San Julián
+Castillo de San Julián,builtBy,Alfonso VIII of Castile,Castillo de San Julián
+Castillo de San Julián,partOf,San Julián,Castillo de San Julián
+Castillo de San Julián,type,medieval castle,Castillo de San Julián
+Castillo de San Julián,status,ruins,Castillo de San Julián
+1882 Wentworth colonial by-election,instanceOf,By-election,1882 Wentworth colonial by-election
+1882 Wentworth colonial by-election,date,1882,1882 Wentworth colonial by-election
+1882 Wentworth colonial by-election,location,Wentworth (New South Wales),1882 Wentworth colonial by-election
+1882 Wentworth colonial by-election,winner,George Meredith,1882 Wentworth colonial by-election
+1882 Wentworth colonial by-election,defeated,John Ellis,1882 Wentworth colonial by-election
+1882 Wentworth colonial by-election,heldIn,Australia,1882 Wentworth colonial by-election
+George Meredith,instanceOf,Politician,1882 Wentworth colonial by-election
+John Ellis,instanceOf,Politician,1882 Wentworth colonial by-election
+2015 Copa del Rey final,instanceOf,football tournament,2015 Copa del Rey final
+2015 Copa del Rey final,date,"May 3, 2015",2015 Copa del Rey final
+2015 Copa del Rey final,location,"Madrid, Spain",2015 Copa del Rey final
+2015 Copa del Rey final,winner,FC Barcelona,2015 Copa del Rey final
+2015 Copa del Rey final,runner-up,Real Madrid,2015 Copa del Rey final
+2015 Copa del Rey final,result,FC Barcelona won 2-0,2015 Copa del Rey final
+FC Barcelona,playsFor,FC Barcelona,2015 Copa del Rey final
+Real Madrid,playsFor,Real Madrid,2015 Copa del Rey final
+Testosterone (2004 film),instanceOf,film,Testosterone (2004 film)
+Testosterone (2004 film),directedBy,Robert Wise,Testosterone (2004 film)
+Testosterone (2004 film),starring,James Caan,Testosterone (2004 film)
+Testosterone (2004 film),starring,Susan Sarandon,Testosterone (2004 film)
+Testosterone (2004 film),starring,Bruce Willis,Testosterone (2004 film)
+Testosterone (2004 film),genre,drama,Testosterone (2004 film)
+Testosterone (2004 film),releaseDate,2004-09-30,Testosterone (2004 film)
+Testosterone (2004 film),plot,A police officer struggling with his personal life and a series of murders.,Testosterone (2004 film)
+Newsmongers,instanceOf,Company,Newsmongers
+Newsmongers,founded,2019,Newsmongers
+Newsmongers,locatedIn,San Francisco,Newsmongers
+Newsmongers,industry,Artificial Intelligence,Newsmongers
+Newsmongers,specialty,AI-powered news generation,Newsmongers
+Newsmongers,technology,Natural Language Processing,Newsmongers
+Newsmongers,website,https://www.newsmongers.com/,Newsmongers
+Newsmongers,mission,To build AI tools for journalists,Newsmongers
+Newsmongers,funding,$11.5 million,Newsmongers
+Newsmongers,founders,David Senge,Newsmongers
+Toby Fox,instanceOf,Game Developer,Toby Fox
+Toby Fox,instanceOf,Musician,Toby Fox
+Toby Fox,instanceOf,Composer,Toby Fox
+Toby Fox,created,Undertale,Toby Fox
+Toby Fox,created,Deltarune,Toby Fox
+Toby Fox,bornIn,"Portland, Oregon",Toby Fox
+Toby Fox,occupation,Game Development,Toby Fox
+Toby Fox,instrument,Keyboard,Toby Fox
+Toby Fox,software,Tilemap Editor,Toby Fox
+Toby Fox,influencedBy,EarthBound,Toby Fox
+Toby Fox,influencedBy,The Binding of Isaac,Toby Fox
+Erin Andrews,instanceOf,American sportscaster,Erin Andrews
+Erin Andrews,instanceOf,television personality,Erin Andrews
+Erin Andrews,instanceOf,sports broadcaster,Erin Andrews
+Erin Andrews,bornIn,"San Jose, California",Erin Andrews
+Erin Andrews,birthDate,1984-03-27,Erin Andrews
+Erin Andrews,worksFor,ESPN,Erin Andrews
+Erin Andrews,hosts,SportsCenter,Erin Andrews
+Erin Andrews,hosted,Dancing with the Stars,Erin Andrews
+Erin Andrews,won,Dancing with the Stars Season 19,Erin Andrews
+Erin Andrews,marriedTo,LaVarne Harrell,Erin Andrews
+Erin Andrews,child,Frederick Harrell,Erin Andrews
+Utica Public Library,instanceOf,Public Library,Utica Public Library
+Utica Public Library,locatedIn,"Utica, New York",Utica Public Library
+Utica Public Library,hasAddress,"171 S Playfair Rd, Utica, NY 13301",Utica Public Library
+Utica Public Library,phoneNumber,315-726-5000,Utica Public Library
+Utica Public Library,website,https://uticapubliclibrary.org/,Utica Public Library
+Utica Public Library,offers,Books,Utica Public Library
+Utica Public Library,offers,Computers,Utica Public Library
+Utica Public Library,offers,Internet Access,Utica Public Library
+Utica Public Library,offers,Programs for Children,Utica Public Library
+Utica Public Library,offers,Programs for Adults,Utica Public Library
+Utica Public Library,offers,Meeting Rooms,Utica Public Library
+Utica Public Library,openHours,"Monday-Thursday: 9:00 AM - 8:00 PM, Friday: 9:00 AM - 5:00 PM, Saturday: 10:00 AM - 2:00 PM, Sunday: 1:00 PM - 5:00 PM",Utica Public Library
+Exiguobacterium antarcticum,instanceOf,Bacterium,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Bacteria,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Pseudomonas,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Proteobacteria,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Alphaproteobacteria,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Methylophilales,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Methylophilaceae,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,taxonomy,Exiguobacterium,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,habitat,Antarctic ice,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,habitat,Subglacial lakes,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,metabolism,Methylotrophy,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,metabolism,Methane oxidation,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,genome,Complete genome sequenced,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,genome,Relatively small genome,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,role,Microbial food web,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,role,Carbon cycling,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,strain,ATCC 33087,Exiguobacterium antarcticum
+Exiguobacterium antarcticum,strain,DSM 17500,Exiguobacterium antarcticum
+Aubin Grove railway station,instanceOf,railway station,Aubin Grove railway station
+Aubin Grove railway station,locatedIn,Sydney,Aubin Grove railway station
+Aubin Grove railway station,partOf,Silly Walk Line,Aubin Grove railway station
+Aubin Grove railway station,operational,current,Aubin Grove railway station
+Aubin Grove railway station,coordinates,"33.8827, 151.2569",Aubin Grove railway station
+Beaminster School,instanceOf,School,Beaminster School
+Beaminster School,locatedIn,"Beaminster, Dorset",Beaminster School
+Beaminster School,established,1934,Beaminster School
+Beaminster School,type,Primary School,Beaminster School
+Beaminster School,hasStudent,Approximately 350 students,Beaminster School
+Beaminster School,hasStaff,Approximately 60 staff,Beaminster School
+Beaminster School,governingBody,Dorset Local Authority,Beaminster School
+Minusio railway station,instanceOf,railway station,Minusio railway station
+Minusio railway station,locatedIn,"Minusio, Switzerland",Minusio railway station
+Minusio railway station,partOf,Verzasca Line,Minusio railway station
+Minusio railway station,operator,CFF - Swiss Federal Railways,Minusio railway station
+Minusio railway station,coordinates,"46.1733° N, 8.5681° E",Minusio railway station
+Minusio railway station,elevation,385 m,Minusio railway station
+Minusio railway station,yearOpened,1912,Minusio railway station
+Minusio railway station,type,passenger station,Minusio railway station
+Hymnal of a Troubled Man's Mind,author,Thomas Berger,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,genre,Novel,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,publicationYear,1978,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,setting,New York City,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,protagonist,Jack Bass,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,instanceOf,Fiction,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,instanceOf,American Literature,Hymnal of a Troubled Man's Mind
+Hymnal of a Troubled Man's Mind,instanceOf,Contemporary Literature,Hymnal of a Troubled Man's Mind
+Autophagy (journal),instanceOf,journal,Autophagy (journal)
+Autophagy (journal),publisher,Springer,Autophagy (journal)
+Autophagy (journal),ISSN,1660-9123,Autophagy (journal)
+Autophagy (journal),URL,https://www.springer.com/journal/10481,Autophagy (journal)
+Autophagy (journal),firstPublishedDate,2011-07-01,Autophagy (journal)
+Autophagy (journal),abstracts,true,Autophagy (journal)
+Autophagy (journal),keywords,"autophagy, cellular processes, cell biology, life sciences",Autophagy (journal)
+Autophagy (journal),subjectArea,Cell Biology,Autophagy (journal)
+Autophagy (journal),journalStatistics,Impact Factor: 6.2,Autophagy (journal)
+"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast",instanceOf,posolok,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast",locatedIn,Gus-Khrustalny District,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Gus-Khrustalny District,locatedIn,Vladimir Oblast,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Vladimir Oblast,locatedIn,Russia,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Russia,population,144444000,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Vladimir Oblast,area,27593,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Gus-Khrustalny District,population,63696,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast",postalCode,65432,"Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast"
+Småland Runic Inscription 39,instanceOf,Runic inscription,Småland Runic Inscription 39
+Småland Runic Inscription 39,locatedIn,Småland,Småland Runic Inscription 39
+Småland Runic Inscription 39,date,1630s,Småland Runic Inscription 39
+Småland Runic Inscription 39,language,Old Norse,Småland Runic Inscription 39
+Småland Runic Inscription 39,material,Wood,Småland Runic Inscription 39
+Småland Runic Inscription 39,inscriptionType,Runic inscription,Småland Runic Inscription 39
+Småland Runic Inscription 39,description,"A runic inscription found in Småland, Sweden, dating to the 1630s. It is carved on a piece of wood and contains Old Norse runes.",Småland Runic Inscription 39
+Småland Runic Inscription 39,dimensions,12.5 cm x 8.2 cm,Småland Runic Inscription 39
+Pseudococculina rugosoplicata,instanceOf,Spider,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,nativeTo,Chile,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,nativeTo,Argentina,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,diet,Insects,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,habitat,Forests,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,size,Approximately 10 mm,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,color,Brown,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,genus,Pseudococculina,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,family,Thomisidae,Pseudococculina rugosoplicata
+Pseudococculina rugosoplicata,distribution,South America,Pseudococculina rugosoplicata
+Ha-De-Ron-Dah Wilderness Area,instanceOf,Wilderness Area,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,locatedIn,Minnesota,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,partOf,Boundary Waters Canoe Area Wilderness,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,established,1980,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,area,"23,400 acres",Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,managedBy,U.S. Forest Service,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,activities,Canoeing,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,activities,Hiking,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,activities,Fishing,Ha-De-Ron-Dah Wilderness Area
+Ha-De-Ron-Dah Wilderness Area,activities,Wildlife Viewing,Ha-De-Ron-Dah Wilderness Area
+Miklós Hajdufy,instanceOf,composer,Miklós Hajdufy
+Miklós Hajdufy,nationality,Hungarian,Miklós Hajdufy
+Miklós Hajdufy,birthDate,1801-07-29,Miklós Hajdufy
+Miklós Hajdufy,deathDate,1889-07-28,Miklós Hajdufy
+Miklós Hajdufy,occupation,composer,Miklós Hajdufy
+Miklós Hajdufy,birthPlace,Kiscornai,Miklós Hajdufy
+Miklós Hajdufy,deathPlace,Budapest,Miklós Hajdufy
+Miklós Hajdufy,genre,classical music,Miklós Hajdufy
+Miklós Hajdufy,instrument,piano,Miklós Hajdufy
+Miklós Hajdufy,influencedBy,Joseph Haydn,Miklós Hajdufy
+Miklós Hajdufy,influenced,Joseph Haydn,Miklós Hajdufy
+Miklós Hajdufy,work,Sonata in C major,Miklós Hajdufy
+Miklós Hajdufy,work,Sonata in D major,Miklós Hajdufy
+Miklós Hajdufy,work,Sonata in F major,Miklós Hajdufy
+Matigari ma Njiruungi,instanceOf,Village,Matigari ma Njiruungi
+Matigari ma Njiruungi,locatedIn,Kirinyaga County,Matigari ma Njiruungi
+Matigari ma Njiruungi,partOf,Kirinyaga,Matigari ma Njiruungi
+Matigari ma Njiruungi,hasPopulation,"Approximately 20,000",Matigari ma Njiruungi
+Matigari ma Njiruungi,isA,Settlement,Matigari ma Njiruungi
+Matigari ma Njiruungi,locatedNear,Kagio,Matigari ma Njiruungi
+Catholic University of Angola,instanceOf,University,Catholic University of Angola
+Catholic University of Angola,locatedIn,Luanda,Catholic University of Angola
+Catholic University of Angola,establishedIn,2007,Catholic University of Angola
+Catholic University of Angola,offersDegree,Bachelor's Degree,Catholic University of Angola
+Catholic University of Angola,offersDegree,Master's Degree,Catholic University of Angola
+Catholic University of Angola,offersDegree,Doctorate Degree,Catholic University of Angola
+Catholic University of Angola,affiliatedWith,Catholic Church,Catholic University of Angola
+Catholic University of Angola,website,https://ucuanda.edu.ao/,Catholic University of Angola
+"St Helen's Church, Stillingfleet",instanceOf,Church,"St Helen's Church, Stillingfleet"
+"St Helen's Church, Stillingfleet",locatedIn,Stillingfleet,"St Helen's Church, Stillingfleet"
+Stillingfleet,locatedIn,East Riding of Yorkshire,"St Helen's Church, Stillingfleet"
+"St Helen's Church, Stillingfleet",architect,John Thorpe,"St Helen's Church, Stillingfleet"
+"St Helen's Church, Stillingfleet",builtIn,1721,"St Helen's Church, Stillingfleet"
+"St Helen's Church, Stillingfleet",denomination,Anglican,"St Helen's Church, Stillingfleet"
+"St Helen's Church, Stillingfleet",hasStainedGlass,true,"St Helen's Church, Stillingfleet"
+Stillingfleet,partOf,East Riding of Yorkshire,"St Helen's Church, Stillingfleet"
+Bernd Seidensticker,instanceOf,football manager,Bernd Seidensticker
+Bernd Seidensticker,worksFor,1860 Munich,Bernd Seidensticker
+Bernd Seidensticker,bornIn,1953,Bernd Seidensticker
+Bernd Seidensticker,nationality,German,Bernd Seidensticker
+Bernd Seidensticker,position,Director of sport,Bernd Seidensticker
+Bernd Seidensticker,managedTeam,1860 Munich,Bernd Seidensticker
+Bernd Seidensticker,managedTeam,VfB Stuttgart,Bernd Seidensticker
+Bernd Seidensticker,managedTeam,Hertha BSC,Bernd Seidensticker
+Bernd Seidensticker,managedTeam,FC Energie Cottbus,Bernd Seidensticker
+Bernd Seidensticker,managedTeam,Rot-Weiß Erfurt,Bernd Seidensticker
+Tony Gregory (footballer),instanceOf,Footballer,Tony Gregory (footballer)
+Tony Gregory (footballer),nationality,Irish,Tony Gregory (footballer)
+Tony Gregory (footballer),dateOfBirth,1960-07-19,Tony Gregory (footballer)
+Tony Gregory (footballer),dateOfDeath,2002-03-08,Tony Gregory (footballer)
+Tony Gregory (footballer),causeOfDeath,Suicide,Tony Gregory (footballer)
+Tony Gregory (footballer),club,Cork City,Tony Gregory (footballer)
+Tony Gregory (footballer),position,Midfielder,Tony Gregory (footballer)
+Tony Gregory (footballer),playingYears,1980-1998,Tony Gregory (footballer)
+Tony Gregory (footballer),internationalAppearances,3,Tony Gregory (footballer)
+Tony Gregory (footballer),internationalGoals,1,Tony Gregory (footballer)
+78 Ursae Majoris,instanceOf,Star,78 Ursae Majoris
+78 Ursae Majoris,rightAscendant,10 33 33,78 Ursae Majoris
+78 Ursae Majoris,declination,+61 13 42,78 Ursae Majoris
+78 Ursae Majoris,magnitude,6.93,78 Ursae Majoris
+78 Ursae Majoris,spectralType,G8III,78 Ursae Majoris
+78 Ursae Majoris,luminosityClass,III,78 Ursae Majoris
+78 Ursae Majoris,distance,179 light-years,78 Ursae Majoris
+78 Ursae Majoris,parallax,0.734733,78 Ursae Majoris
+78 Ursae Majoris,coordinates,"RA: 10h 33m 33s, Dec: +61° 13′ 42″",78 Ursae Majoris
+William Collingwood (1819–1903),instanceOf,British historian,William Collingwood (1819–1903)
+William Collingwood (1819–1903),birthDate,1819,William Collingwood (1819–1903)
+William Collingwood (1819–1903),deathDate,1903,William Collingwood (1819–1903)
+William Collingwood (1819–1903),occupation,Historian,William Collingwood (1819–1903)
+William Collingwood (1819–1903),nationality,British,William Collingwood (1819–1903)
+William Collingwood (1819–1903),work,The History of the Middle Low German Language,William Collingwood (1819–1903)
+William Collingwood (1819–1903),work,A History of the German Language,William Collingwood (1819–1903)
+William Collingwood (1819–1903),work,The History of the German Language,William Collingwood (1819–1903)
+William Collingwood (1819–1903),associatedWith,Johann Christoph Gottsched,William Collingwood (1819–1903)
+Methylsilane,chemicalFormula,CH4Si,Methylsilane
+Methylsilane,CASNumber,1663-38-3,Methylsilane
+Methylsilane,molecularWeight,84.24,Methylsilane
+Methylsilane,density,0.692 g/cm3,Methylsilane
+Methylsilane,boilingPoint,26.5 °C,Methylsilane
+Methylsilane,meltingPoint,-103.9 °C,Methylsilane
+Methylsilane,form,Gas,Methylsilane
+Methylsilane,instanceOf,Organosilicon compound,Methylsilane
+Methylsilane,instanceOf,Silane,Methylsilane
+Methylsilane,instanceOf,Chemical compound,Methylsilane
+Methylsilane,reactsWith,Water,Methylsilane
+Methylsilane,reactsWith,Oxygen,Methylsilane
+Emily van Egmond,instanceOf,Footballer,Emily van Egmond
+Emily van Egmond,nationality,Dutch,Emily van Egmond
+Emily van Egmond,dateOfBirth,1988-07-17,Emily van Egmond
+Emily van Egmond,position,Attacking Midfielder,Emily van Egmond
+Emily van Egmond,club,FC Twente,Emily van Egmond
+Emily van Egmond,club,AS Roma,Emily van Egmond
+Emily van Egmond,club,Angel United,Emily van Egmond
+Emily van Egmond,nationalTeam,Netherlands women's national football team,Emily van Egmond
+Emily van Egmond,capNumber,133,Emily van Egmond
+Emily van Egmond,goals,31,Emily van Egmond
+Emily van Egmond,debut,2007-09-01,Emily van Egmond
+Emily van Egmond,awards,Dutch Footballer of the Year 2010,Emily van Egmond
+Emily van Egmond,height,1.68 m,Emily van Egmond
+Pietro Contarini,instanceOf,bishop,Pietro Contarini (bishop)
+Pietro Contarini,bornIn,Venice,Pietro Contarini (bishop)
+Pietro Contarini,deathDate,1577-03-16,Pietro Contarini (bishop)
+Pietro Contarini,deathPlace,Rome,Pietro Contarini (bishop)
+Pietro Contarini,occupation,diplomat,Pietro Contarini (bishop)
+Pietro Contarini,occupation,statesman,Pietro Contarini (bishop)
+Pietro Contarini,servedAs,Ambassador of Venice to France,Pietro Contarini (bishop)
+Pietro Contarini,servedAs,Ambassador of Venice to the Holy Roman Empire,Pietro Contarini (bishop)
+Pietro Contarini,servedAs,Ambassador of Venice to Spain,Pietro Contarini (bishop)
+Pietro Contarini,memberOf,Council of Venice,Pietro Contarini (bishop)
+Pietro Contarini,influenced,Peace of Cateau-Cambrésis,Pietro Contarini (bishop)
+Pietro Contarini,influenced,Treaty of Znaim,Pietro Contarini (bishop)
+Pietro Contarini,nationality,Venetian,Pietro Contarini (bishop)
+Biri,instanceOf,footballer,Biri (footballer)
+Biri,bornIn,Kastamonu,Biri (footballer)
+Biri,dateOfBirth,1993-07-24,Biri (footballer)
+Biri,playsFor,Gaziantep FK,Biri (footballer)
+Biri,position,Winger,Biri (footballer)
+Biri,nationality,Turkish,Biri (footballer)
+Biri,jerseyNumber,23,Biri (footballer)
+Gali Guleiyan,instanceOf,River,Gali Guleiyan
+Gali Guleiyan,locatedIn,Jammu and Kashmir,Gali Guleiyan
+Gali Guleiyan,flowsThrough,Rajouri district,Gali Guleiyan
+Gali Guleiyan,flowsThrough,Kotli district,Gali Guleiyan
+Gali Guleiyan,originatesFrom,Pir Panjal Range,Gali Guleiyan
+Gali Guleiyan,length,Approximately 160 km,Gali Guleiyan
+Gali Guleiyan,isA,River,Gali Guleiyan
+Gali Guleiyan,partOf,Chenab River,Gali Guleiyan
+Waifu2x,instanceOf,Image upscaler,Waifu2x
+Waifu2x,developedBy,Kouji Kawashima,Waifu2x
+Waifu2x,released,2016,Waifu2x
+Waifu2x,platform,Windows,Waifu2x
+Waifu2x,purpose,Enhance anime and manga images,Waifu2x
+Waifu2x,features,AI-powered upscaling,Waifu2x
+Waifu2x,license,Shareware,Waifu2x
+Waifu2x,version,1.4.1,Waifu2x
+Waifu2x,website,https://waifu2x.udp.jp/,Waifu2x
+American Medical Writers Association,instanceOf,Professional Association,American Medical Writers Association
+American Medical Writers Association,established,1933,American Medical Writers Association
+American Medical Writers Association,headquarters,"Chicago, Illinois",American Medical Writers Association
+American Medical Writers Association,mission,To advance the profession of medical writing,American Medical Writers Association
+American Medical Writers Association,membership,"Medical writers, editors, and healthcare communicators",American Medical Writers Association
+American Medical Writers Association,website,www.amwa.org,American Medical Writers Association
+American Medical Writers Association,provides,Continuing education programs,American Medical Writers Association
+American Medical Writers Association,provides,Certification programs,American Medical Writers Association
+American Medical Writers Association,publishes,The American Journal of Medical Writing,American Medical Writers Association
+2018 UCI Asia Tour,instanceOf,Cycling event,2018 UCI Asia Tour
+2018 UCI Asia Tour,startDate,2018-02-03,2018 UCI Asia Tour
+2018 UCI Asia Tour,endDate,2018-03-18,2018 UCI Asia Tour
+2018 UCI Asia Tour,location,Asia,2018 UCI Asia Tour
+2018 UCI Asia Tour,organizer,Union Cycliste Internationale,2018 UCI Asia Tour
+2018 UCI Asia Tour,discipline,Road cycling,2018 UCI Asia Tour
+2018 UCI Asia Tour,numberOfRaces,13,2018 UCI Asia Tour
+2018 UCI Asia Tour,raceCountries,"China, Hong Kong, Kazakhstan, Kyrgyzstan, Laos, Malaysia, Macau, Mongolia, Nepal, New Zealand, Philippines, Singapore, Sri Lanka, Taiwan, Thailand, Uzbekistan",2018 UCI Asia Tour
+1956 World Table Tennis Championships,instanceOf,Table Tennis Championship,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,location,London,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,startDate,1956-07-01,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,endDate,1956-07-08,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,winner,Dr. Li Zhuoying,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,runnerUp,Hans Behrens,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,hostCountry,United Kingdom,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,numberOfParticipants,32,1956 World Table Tennis Championships
+1956 World Table Tennis Championships,heldIn,"London, England",1956 World Table Tennis Championships
+Timothy's Quest (1936 film),instanceOf,film,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),directedBy,William Butler,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),starring,William Powell,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),starring,Myrna Loy,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),starring,George Barbier,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),genre,romantic comedy,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),releaseDate,1936-07-27,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),productionCompany,Samuel Goldwyn Productions,Timothy's Quest (1936 film)
+Timothy's Quest (1936 film),basedOn,The Three Musketeers,Timothy's Quest (1936 film)
+Ole Bjørn Sundgot,instanceOf,Sports Nutritionist,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,nationality,Norwegian,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,birthDate,1963-07-24,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,occupation,Sports Nutritionist,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,education,Master of Science in Sports Nutrition,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,affiliation,Oslo University Hospital,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,researchArea,Exercise and Nutrition,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,publications,Numerous scientific articles,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,expertIn,Macronutrient Metabolism,Ole Bjørn Sundgot
+Ole Bjørn Sundgot,expertIn,Energy Balance,Ole Bjørn Sundgot
+JaJaMaru no Daibouken,instanceOf,Video Game,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,genre,Adventure,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,genre,RPG,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,genre,Simulation,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,releaseDate,1993-08-12,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,platform,Super Famicom,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,developer,Hudson Soft,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,publisher,Hudson Soft,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,protagonist,JaJaMaru,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,setting,The World,JaJaMaru no Daibouken
+JaJaMaru no Daibouken,plot,JaJaMaru must save the world from the evil forces of the Dark Lord.,JaJaMaru no Daibouken
+The Voice – Norges beste stemme,instanceOf,television series,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,broadcastsIn,Norway,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,genre,talent show,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,network,TV 2,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,creator,Simon Cowell,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,host,Atle Antonsen,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,judge,Margaret Kruger,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,judge,Tilenna Jørgenrud Sandberg,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,judge,Torbjørn Berland,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,season,Season 1,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,season,Season 2,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,season,Season 3,The Voice – Norges beste stemme
+The Voice – Norges beste stemme,season,Season 4,The Voice – Norges beste stemme
