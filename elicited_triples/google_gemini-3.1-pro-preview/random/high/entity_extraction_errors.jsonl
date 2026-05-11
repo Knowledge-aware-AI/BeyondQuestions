@@ -1,0 +1,4 @@
+{"error": "expected string or bytes-like object, got 'NoneType'", "entity": "Giovanni Battista Costa (bishop)", "response": "None"}
+{"error": "expected string or bytes-like object, got 'NoneType'", "entity": "Joseph Y. Yun", "response": "None"}
+{"error": "expected string or bytes-like object, got 'NoneType'", "entity": "Pablo L\u00f3pez (footballer, born 1996)", "response": "None"}
+{"error": "expected string or bytes-like object, got 'NoneType'", "entity": "Biri (footballer)", "response": "None"}

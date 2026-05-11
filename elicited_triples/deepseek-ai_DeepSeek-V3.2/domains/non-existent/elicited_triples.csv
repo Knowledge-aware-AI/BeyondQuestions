@@ -1,0 +1,132 @@
+subject,predicate,object,subject_name
+Valdora Strait,instanceOf,strait,Valdora Strait
+Valdora Strait,locatedIn,Antarctica,Valdora Strait
+Valdora Strait,connects,Mawson Sea,Valdora Strait
+Valdora Strait,connects,Davis Sea,Valdora Strait
+Valdora Strait,separates,Queen Mary Land,Valdora Strait
+Valdora Strait,separates,Wilkes Land,Valdora Strait
+Valdora Strait,namedAfter,Valdora,Valdora Strait
+Valdora Strait,discoveredBy,Australasian Antarctic Expedition,Valdora Strait
+Valdora Strait,discoveryYear,1912,Valdora Strait
+Valdora Strait,expeditionLeader,Douglas Mawson,Valdora Strait
+International Airport of Andorra,instanceOf,airport,International Airport of Andorra
+International Airport of Andorra,locatedIn,Andorra,International Airport of Andorra
+International Airport of Andorra,locatedIn,La Seu d'Urgell,International Airport of Andorra
+International Airport of Andorra,alsoKnownAs,Andorra–La Seu d'Urgell Airport,International Airport of Andorra
+International Airport of Andorra,IATA code,LEU,International Airport of Andorra
+International Airport of Andorra,ICAO code,LESU,International Airport of Andorra
+International Airport of Andorra,operator,Aeroports de Catalunya,International Airport of Andorra
+International Airport of Andorra,elevation,800 metres,International Airport of Andorra
+International Airport of Andorra,runwaySurface,asphalt,International Airport of Andorra
+International Airport of Andorra,runwayLength,1250 metres,International Airport of Andorra
+International Airport of Andorra,servesCity,Andorra la Vella,International Airport of Andorra
+International Airport of Andorra,servesRegion,Alt Urgell,International Airport of Andorra
+International Airport of Andorra,country,Spain,International Airport of Andorra
+International Airport of Andorra,opened,1982,International Airport of Andorra
+International Airport of Andorra,airportType,public,International Airport of Andorra
+U-Bahn Dresden,instanceOf,planned rapid transit system,U-Bahn Dresden
+U-Bahn Dresden,locatedIn,Dresden,U-Bahn Dresden
+U-Bahn Dresden,locatedIn,Germany,U-Bahn Dresden
+U-Bahn Dresden,country,Germany,U-Bahn Dresden
+U-Bahn Dresden,state,Saxony,U-Bahn Dresden
+U-Bahn Dresden,plannedStart,1970s,U-Bahn Dresden
+U-Bahn Dresden,planningStatus,abandoned,U-Bahn Dresden
+U-Bahn Dresden,replacedBy,Dresdner Verkehrsbetriebe tram network,U-Bahn Dresden
+U-Bahn Dresden,plannedLines,3,U-Bahn Dresden
+U-Bahn Dresden,plannedStations,approx. 30,U-Bahn Dresden
+U-Bahn Dresden,plannedSystemLength,approx. 30 km,U-Bahn Dresden
+U-Bahn Dresden,constructionStart,never began,U-Bahn Dresden
+U-Bahn Dresden,reasonForAbandonment,political change,U-Bahn Dresden
+U-Bahn Dresden,reasonForAbandonment,German reunification,U-Bahn Dresden
+U-Bahn Dresden,reasonForAbandonment,high costs,U-Bahn Dresden
+U-Bahn Dresden,historicalPeriod,German Democratic Republic (GDR),U-Bahn Dresden
+U-Bahn Dresden,alternativeDeveloped,Dresden S-Bahn,U-Bahn Dresden
+U-Bahn Dresden,alternativeDeveloped,tunnel sections for trams,U-Bahn Dresden
+U-Bahn Dresden,notableTunnelBuilt,Dresden Central Station tram tunnel,U-Bahn Dresden
+U-Bahn Dresden,publicTransportAuthority,Dresdner Verkehrsbetriebe (DVB),U-Bahn Dresden
+Mediterranean Logistics Coordination Agency,instanceOf,organization,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,instanceOf,humanitarian agency,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,abbreviation,MLCA,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,operatesInRegion,Mediterranean region,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,field,logistics,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,field,coordination,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,field,humanitarian response,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,purpose,coordinate logistics for humanitarian aid,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,purpose,improve supply chain efficiency,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,purpose,support disaster relief,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,sector,non-governmental organization,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,sector,non-profit,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,collaboratesWith,United Nations agencies,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,collaboratesWith,national governments,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,collaboratesWith,other NGOs,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,focusArea,refugee crises,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,focusArea,natural disasters,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,focusArea,public health emergencies,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,activities,warehouse management,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,activities,transport coordination,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,activities,information sharing,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,activities,capacity building,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,foundingYear,2016,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,headquartersLocation,Rome,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,headquartersCountry,Italy,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,officialLanguage,English,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,officialLanguage,French,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,officialLanguage,Arabic,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,keyPartners,World Food Programme,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,keyPartners,International Organization for Migration,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,keyPartners,UNHCR,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,keyPartners,European Union,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,fundingSource,donor contributions,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,fundingSource,grants,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,governanceBody,Steering Committee,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,regionServed,North Africa,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,regionServed,Southern Europe,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,regionServed,Middle East,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,responseType,cross-border operations,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,responseType,regional coordination,Mediterranean Logistics Coordination Agency
+Helios Prize for Digital Arts,instanceOf,award,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,instanceOf,art prize,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,country,United States,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,presentedBy,Helios Interactive,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,field,digital art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,field,interactive art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,field,new media art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,firstAwarded,2005,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,awardedFor,excellence in digital arts,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,awardedFor,innovation in digital arts,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,prizeMoney,"USD 10,000",Helios Prize for Digital Arts
+Helios Prize for Digital Arts,frequency,annual,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,website,http://www.heliosprize.org,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,namedAfter,Helios,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,focus,emerging artists,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,focus,technology-based art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,administeredBy,Helios Foundation,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,eligibility,international,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,submissionPeriod,spring,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,announcementDate,fall,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,ceremonyLocation,New York City,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,associatedEvent,Helios Digital Arts Festival,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,judgingProcess,jury panel,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,media,online exhibition,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,previousWinners,Rafael Lozano-Hemmer,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,previousWinners,Camille Utterback,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,previousWinners,John Gerrard,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,previousWinners,Mona Hatoum,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,previousWinners,TeamLab,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,sponsor,Adobe,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,sponsor,Autodesk,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,sponsor,NVIDIA,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,category,Interactive Installation,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,category,Generative Art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,category,Virtual Reality,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,category,Net Art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,applicationFee,USD 25,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,founder,Helios Interactive,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,founder,Digital Arts Alliance,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,motto,Illuminating the Future of Art,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,publication,Helios Prize Annual,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,socialMedia,@heliosprize,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,hashtag,#HeliosPrize,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,language,English,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,currency,US Dollar,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,status,active,Helios Prize for Digital Arts
