@@ -1,0 +1,1065 @@
+subject,predicate,object,subject_name
+"Villebois, Quebec",instanceOf,municipality,"Villebois, Quebec"
+"Villebois, Quebec",locatedIn,Quebec,"Villebois, Quebec"
+"Villebois, Quebec",locatedIn,Canada,"Villebois, Quebec"
+"Sorok, Republic of Buryatia",instanceOf,locality,"Sorok, Republic of Buryatia"
+"Sorok, Republic of Buryatia",locatedIn,Republic of Buryatia,"Sorok, Republic of Buryatia"
+"Sorok, Republic of Buryatia",locatedIn,Russia,"Sorok, Republic of Buryatia"
+Geobacter thiogenes,instanceOf,species,Geobacter thiogenes
+Geobacter thiogenes,genus,Geobacter,Geobacter thiogenes
+Geobacter thiogenes,family,Geobacteraceae,Geobacter thiogenes
+Geobacter thiogenes,NCBI Taxonomy ID,202421,Geobacter thiogenes
+1984 Tolly Cobbold Classic,instanceOf,Tolly Cobbold Classic,1984 Tolly Cobbold Classic
+1984 Tolly Cobbold Classic,year,1984,1984 Tolly Cobbold Classic
+1984 Tolly Cobbold Classic,series,Tolly Cobbold Classic series,1984 Tolly Cobbold Classic
+Geophilus persephones,instanceOf,Species,Geophilus persephones
+Geophilus persephones,family,Geophilidae,Geophilus persephones
+Geophilus persephones,genus,Geophilus,Geophilus persephones
+Geophilus persephones,taxonomicRank,species,Geophilus persephones
+Pylas,instanceOf,Genus,Pylas
+Pylas,family,Tortricidae,Pylas
+Pylas,subfamily,Olethreutinae,Pylas
+Maria gens,instanceOf,Roman gens,Maria gens
+Maria gens,namedAfter,Roman family,Maria gens
+Maria gens,category,Ancient Roman families,Maria gens
+Āwhitu Regional Park,instanceOf,regional park,Āwhitu Regional Park
+Āwhitu Regional Park,locatedIn,New Zealand,Āwhitu Regional Park
+Āwhitu Regional Park,locatedIn,Auckland,Āwhitu Regional Park
+Āwhitu Regional Park,hasArea,40.6 km2,Āwhitu Regional Park
+Sadura railway station,instanceOf,railway station,Sadura railway station
+Sadura railway station,locatedIn,India,Sadura railway station
+Sadura railway station,country,India,Sadura railway station
+Sadura railway station,serves,Sadura,Sadura railway station
+"Choice Paradise, Kochi",instanceOf,Shopping Mall,"Choice Paradise, Kochi"
+"Choice Paradise, Kochi",locatedIn,Kochi,"Choice Paradise, Kochi"
+"Choice Paradise, Kochi",country,India,"Choice Paradise, Kochi"
+2015 Japan Sevens,instanceOf,Rugby Sevens Tournament,2015 Japan Sevens
+2015 Japan Sevens,year,2015,2015 Japan Sevens
+2015 Japan Sevens,location,Japan,2015 Japan Sevens
+2015 Japan Sevens,partOf,World Rugby Sevens Series,2015 Japan Sevens
+Zhang Bo (figure skater),instanceOf,Figure Skater,Zhang Bo (figure skater)
+Zhang Bo (figure skater),country,China,Zhang Bo (figure skater)
+Zhang Bo (figure skater),partner,Zhang Hao,Zhang Bo (figure skater)
+Zhang Bo (figure skater),skatingDiscipline,Pair Skating,Zhang Bo (figure skater)
+Pioneers Palace (Almaty),instanceOf,palace,Pioneers Palace (Almaty)
+Pioneers Palace (Almaty),location,Almaty,Pioneers Palace (Almaty)
+Pioneers Palace (Almaty),namedAfter,Pioneers,Pioneers Palace (Almaty)
+Daza (cicada),instanceOf,cicada,Daza (cicada)
+Daza (cicada),is a,insect,Daza (cicada)
+Daza (cicada),found in,Colombia,Daza (cicada)
+Winter Wonderland (Shinee song),instanceOf,song,Winter Wonderland (Shinee song)
+Winter Wonderland (Shinee song),partOf,The Misconceptions of Shinee,Winter Wonderland (Shinee song)
+Winter Wonderland (Shinee song),language,Japanese,Winter Wonderland (Shinee song)
+Winter Wonderland (Shinee song),performer,Shinee,Winter Wonderland (Shinee song)
+Winter Wonderland (Shinee song),publishedBy,SM Entertainment,Winter Wonderland (Shinee song)
+Helcystogramma craticula,instanceOf,Species,Helcystogramma craticula
+Helcystogramma craticula,family,Gelechiidae,Helcystogramma craticula
+Helcystogramma craticula,genus,Helcystogramma,Helcystogramma craticula
+"Hart Hall, Glaisdale",instanceOf,hall,"Hart Hall, Glaisdale"
+"Hart Hall, Glaisdale",location,Glaisdale,"Hart Hall, Glaisdale"
+"Hart Hall, Glaisdale",partOf,Glaisdale Estate,"Hart Hall, Glaisdale"
+Amager Badminton Club,instanceOf,sports club,Amager Badminton Club
+Amager Badminton Club,location,Denmark,Amager Badminton Club
+Amager Badminton Club,sport,badminton,Amager Badminton Club
+1963 World Table Tennis Championships,instanceOf,World Table Tennis Championships,1963 World Table Tennis Championships
+1963 World Table Tennis Championships,year,1963,1963 World Table Tennis Championships
+1963 World Table Tennis Championships,location,Dortmund,1963 World Table Tennis Championships
+Ai no Baka,instanceOf,Japanese manga series,Ai no Baka
+Ai no Baka,creator,Tsuneko Nakashima,Ai no Baka
+Ai no Baka,publishedIn,Shueisha,Ai no Baka
+Ai no Baka,genre,Romance,Ai no Baka
+Ai no Baka,numberOfVolumes,4,Ai no Baka
+Society for Women in Philosophy,instanceOf,organization,Society for Women in Philosophy
+Society for Women in Philosophy,foundedBy,Marilyn Friedman,Society for Women in Philosophy
+Society for Women in Philosophy,foundingYear,1990,Society for Women in Philosophy
+Society for Women in Philosophy,purpose,promoting women in philosophy,Society for Women in Philosophy
+Society for Women in Philosophy,headquarteredIn,United States,Society for Women in Philosophy
+"Bryukhovo, Kaduysky District, Vologda Oblast",instanceOf,rural settlement,"Bryukhovo, Kaduysky District, Vologda Oblast"
+"Bryukhovo, Kaduysky District, Vologda Oblast",locatedIn,Kaduysky District,"Bryukhovo, Kaduysky District, Vologda Oblast"
+"Bryukhovo, Kaduysky District, Vologda Oblast",locatedIn,Vologda Oblast,"Bryukhovo, Kaduysky District, Vologda Oblast"
+GALEX J071816.4+373139,instanceOf,astronomical object,GALEX J071816.4+373139
+GALEX J071816.4+373139,coordinate,07h 18m 16.4s +37d 31m 39s,GALEX J071816.4+373139
+GALEX J071816.4+373139,observedBy,GALEX,GALEX J071816.4+373139
+Alexis Opera House,instanceOf,opera house,Alexis Opera House
+Alexis Opera House,location,Minneapolis,Alexis Opera House
+Alexis Opera House,location,Minnesota,Alexis Opera House
+Alexis Opera House,namedAfter,Alexis,Alexis Opera House
+Fernando Chagas Carvalho Neto,instanceOf,Q5,Fernando Chagas Carvalho Neto
+Fernando Chagas Carvalho Neto,givenName,Fernando,Fernando Chagas Carvalho Neto
+Fernando Chagas Carvalho Neto,familyName,Carvalho Neto,Fernando Chagas Carvalho Neto
+Fernando Chagas Carvalho Neto,dateOfBirth,1967-03-07,Fernando Chagas Carvalho Neto
+"Sipesville, Pennsylvania",instanceOf,borough,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",locatedIn,Pennsylvania,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",locatedIn,United States,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",partOf,"Westmoreland County, Pennsylvania","Sipesville, Pennsylvania"
+2002 Euro Beach Soccer Cup,instanceOf,Euro Beach Soccer Cup,2002 Euro Beach Soccer Cup
+2002 Euro Beach Soccer Cup,year,2002,2002 Euro Beach Soccer Cup
+2002 Euro Beach Soccer Cup,edition,2,2002 Euro Beach Soccer Cup
+2002 Euro Beach Soccer Cup,location,Portugal,2002 Euro Beach Soccer Cup
+2002 Euro Beach Soccer Cup,winner,Portugal,2002 Euro Beach Soccer Cup
+2002 Euro Beach Soccer Cup,runner-up,France,2002 Euro Beach Soccer Cup
+Somoto Canyon National Monument,instanceOf,national monument,Somoto Canyon National Monument
+Somoto Canyon National Monument,location,Nicaragua,Somoto Canyon National Monument
+Somoto Canyon National Monument,location,Madriz Department,Somoto Canyon National Monument
+Somoto Canyon National Monument,established,2011,Somoto Canyon National Monument
+Somoto Canyon National Monument,feature,Somoto Canyon,Somoto Canyon National Monument
+1906 European Figure Skating Championships,instanceOf,European Figure Skating Championships,1906 European Figure Skating Championships
+1906 European Figure Skating Championships,year,1906,1906 European Figure Skating Championships
+1906 European Figure Skating Championships,sportsSeason,1906 in figure skating,1906 European Figure Skating Championships
+Chaffee-Hunter House,instanceOf,house,Chaffee-Hunter House
+Chaffee-Hunter House,location,Rhode Island,Chaffee-Hunter House
+Chaffee-Hunter House,architecturalStyle,Greek Revival,Chaffee-Hunter House
+Chaffee-Hunter House,NRHPReferenceNumber,73000019,Chaffee-Hunter House
+Chaffee-Hunter House,addedToNRHP,1973-04-11,Chaffee-Hunter House
+Magic (Rina Aiuchi song),instanceOf,song,Magic (Rina Aiuchi song)
+Magic (Rina Aiuchi song),artist,Rina Aiuchi,Magic (Rina Aiuchi song)
+Magic (Rina Aiuchi song),releaseDate,2001-08-08,Magic (Rina Aiuchi song)
+Magic (Rina Aiuchi song),album,A I Uchi,Magic (Rina Aiuchi song)
+"Immaculate Conception Church (Sparks, Nevada)",instanceOf,church,"Immaculate Conception Church (Sparks, Nevada)"
+"Immaculate Conception Church (Sparks, Nevada)",location,"Sparks, Nevada","Immaculate Conception Church (Sparks, Nevada)"
+"Immaculate Conception Church (Sparks, Nevada)",dedicatedTo,Immaculate Conception,"Immaculate Conception Church (Sparks, Nevada)"
+Cal 39 Mark II,instanceOf,firearm,Cal 39 Mark II
+Cal 39 Mark II,manufacturer,Beretta,Cal 39 Mark II
+Cal 39 Mark II,cartridge,.39 Caliber,Cal 39 Mark II
+Cal 39 Mark II,type,semi-automatic pistol,Cal 39 Mark II
+Cal 39 Mark II,origin,Italy,Cal 39 Mark II
+2020 Latvian Football Cup,instanceOf,sports tournament,2020 Latvian Football Cup
+2020 Latvian Football Cup,country,Latvia,2020 Latvian Football Cup
+2020 Latvian Football Cup,year,2020,2020 Latvian Football Cup
+2020 Latvian Football Cup,organizer,Latvian Football Federation,2020 Latvian Football Cup
+2020 Latvian Football Cup,sportsLeague,Latvian Football Cup,2020 Latvian Football Cup
+La Habra–Yorba Linda Line,instanceOf,rail line,La Habra–Yorba Linda Line
+La Habra–Yorba Linda Line,location,California,La Habra–Yorba Linda Line
+La Habra–Yorba Linda Line,terminus,La Habra,La Habra–Yorba Linda Line
+La Habra–Yorba Linda Line,terminus,Yorba Linda,La Habra–Yorba Linda Line
+La Habra–Yorba Linda Line,operator,Metrolink,La Habra–Yorba Linda Line
+Telstar 19V,instanceOf,communications satellite,Telstar 19V
+Telstar 19V,manufacturer,Space Systems/Loral,Telstar 19V
+Telstar 19V,launchDate,2018-07-20,Telstar 19V
+Telstar 19V,launchVehicle,Falcon 9,Telstar 19V
+Telstar 19V,operator,AT&T,Telstar 19V
+Telstar 19V,orbit,geostationary orbit,Telstar 19V
+Sri Venkateswara Medical College,instanceOf,medical college,Sri Venkateswara Medical College
+Sri Venkateswara Medical College,locatedIn,Tirupati,Sri Venkateswara Medical College
+Sri Venkateswara Medical College,affiliatedTo,Sri Venkateswara University,Sri Venkateswara Medical College
+Sri Venkateswara Medical College,offers,MBBS,Sri Venkateswara Medical College
+Sri Venkateswara Medical College,offers,MD,Sri Venkateswara Medical College
+Sri Venkateswara Medical College,founded,1954,Sri Venkateswara Medical College
+Rural Municipality of Mervin No. 499,instanceOf,rural municipality in Saskatchewan,Rural Municipality of Mervin No. 499
+Rural Municipality of Mervin No. 499,locatedIn,Saskatchewan,Rural Municipality of Mervin No. 499
+Rural Municipality of Mervin No. 499,locatedIn,Canada,Rural Municipality of Mervin No. 499
+Rural Municipality of Mervin No. 499,hasPopulation,557,Rural Municipality of Mervin No. 499
+Rural Municipality of Mervin No. 499,hasArea,1016.29,Rural Municipality of Mervin No. 499
+2012 Thomas & Uber Cup Preliminaries for Oceania,instanceOf,sports event,2012 Thomas & Uber Cup Preliminaries for Oceania
+2012 Thomas & Uber Cup Preliminaries for Oceania,partOf,2012 Thomas & Uber Cup,2012 Thomas & Uber Cup Preliminaries for Oceania
+2012 Thomas & Uber Cup Preliminaries for Oceania,location,Oceania,2012 Thomas & Uber Cup Preliminaries for Oceania
+2012 Thomas & Uber Cup Preliminaries for Oceania,year,2012,2012 Thomas & Uber Cup Preliminaries for Oceania
+2012 Thomas & Uber Cup Preliminaries for Oceania,hasQualifier,preliminary round,2012 Thomas & Uber Cup Preliminaries for Oceania
+Cosin's Library,instanceOf,library,Cosin's Library
+Cosin's Library,location,Cambridge,Cosin's Library
+Cosin's Library,namedAfter,John Cosin,Cosin's Library
+Cosin's Library,foundedBy,John Cosin,Cosin's Library
+Cosin's Library,partOf,"King's College, Cambridge",Cosin's Library
+2022 Swindon Borough Council election,instanceOf,local council election,2022 Swindon Borough Council election
+2022 Swindon Borough Council election,location,Swindon,2022 Swindon Borough Council election
+2022 Swindon Borough Council election,startDate,2022-05-05,2022 Swindon Borough Council election
+2022 Swindon Borough Council election,endDate,2022-05-05,2022 Swindon Borough Council election
+2022 Swindon Borough Council election,partOf,2022 United Kingdom local elections,2022 Swindon Borough Council election
+Presidency of Manuel Oribe,instanceOf,Presidency,Presidency of Manuel Oribe
+Presidency of Manuel Oribe,country,Uruguay,Presidency of Manuel Oribe
+Presidency of Manuel Oribe,headOfGovernment,Manuel Oribe,Presidency of Manuel Oribe
+Presidency of Manuel Oribe,startDate,1848-03-01,Presidency of Manuel Oribe
+Presidency of Manuel Oribe,endDate,1853-03-01,Presidency of Manuel Oribe
+Cathedral of the Nativity of the Mother of God (Toronto),instanceOf,cathedral,Cathedral of the Nativity of the Mother of God (Toronto)
+Cathedral of the Nativity of the Mother of God (Toronto),location,Toronto,Cathedral of the Nativity of the Mother of God (Toronto)
+Cathedral of the Nativity of the Mother of God (Toronto),denomination,Eastern Orthodox,Cathedral of the Nativity of the Mother of God (Toronto)
+Cathedral of the Nativity of the Mother of God (Toronto),consecrated,1984,Cathedral of the Nativity of the Mother of God (Toronto)
+2023 New York Film Festival,instanceOf,film festival,2023 New York Film Festival
+2023 New York Film Festival,location,New York City,2023 New York Film Festival
+2023 New York Film Festival,year,2023,2023 New York Film Festival
+2023 New York Film Festival,follows,2022 New York Film Festival,2023 New York Film Festival
+2023 New York Film Festival,precededBy,2024 New York Film Festival,2023 New York Film Festival
+2023 New York Film Festival,organizedBy,Film Society of the Lincoln Center,2023 New York Film Festival
+Botanical Miscellany,instanceOf,scientific journal,Botanical Miscellany
+Botanical Miscellany,abbreviation,Bot. Miscell.,Botanical Miscellany
+Botanical Miscellany,publisher,William Jackson Hooker,Botanical Miscellany
+Botanical Miscellany,publicationDate,1830-1833,Botanical Miscellany
+Botanical Miscellany,editor,William Jackson Hooker,Botanical Miscellany
+Volleyball at the 2018 Mediterranean Games,instanceOf,Sports event at the Mediterranean Games,Volleyball at the 2018 Mediterranean Games
+Volleyball at the 2018 Mediterranean Games,partOf,2018 Mediterranean Games,Volleyball at the 2018 Mediterranean Games
+Volleyball at the 2018 Mediterranean Games,hasSport,Volleyball,Volleyball at the 2018 Mediterranean Games
+Volleyball at the 2018 Mediterranean Games,location,Tarragona,Volleyball at the 2018 Mediterranean Games
+Volleyball at the 2018 Mediterranean Games,startDate,2018-06-22,Volleyball at the 2018 Mediterranean Games
+Volleyball at the 2018 Mediterranean Games,endDate,2018-06-30,Volleyball at the 2018 Mediterranean Games
+2019 U-20 Africa Cup of Nations,instanceOf,Africa Cup of Nations,2019 U-20 Africa Cup of Nations
+2019 U-20 Africa Cup of Nations,year,2019,2019 U-20 Africa Cup of Nations
+2019 U-20 Africa Cup of Nations,ageGroup,under-20,2019 U-20 Africa Cup of Nations
+2019 U-20 Africa Cup of Nations,organizer,Confederation of African Football,2019 U-20 Africa Cup of Nations
+2019 U-20 Africa Cup of Nations,edition,13th,2019 U-20 Africa Cup of Nations
+2019 U-20 Africa Cup of Nations,hostingCountry,Nigeria,2019 U-20 Africa Cup of Nations
+MV Karadeniz Powership Gökhan Bey,instanceOf,powership,MV Karadeniz Powership Gökhan Bey
+MV Karadeniz Powership Gökhan Bey,operator,Karadeniz Holding,MV Karadeniz Powership Gökhan Bey
+MV Karadeniz Powership Gökhan Bey,type,ship,MV Karadeniz Powership Gökhan Bey
+MV Karadeniz Powership Gökhan Bey,name,Gökhan Bey,MV Karadeniz Powership Gökhan Bey
+MV Karadeniz Powership Gökhan Bey,class,Powership,MV Karadeniz Powership Gökhan Bey
+Michigan Left (album),instanceOf,album,Michigan Left (album)
+Michigan Left (album),released,2017-04-14,Michigan Left (album)
+Michigan Left (album),artist,The Clientele,Michigan Left (album)
+Michigan Left (album),genre,indie pop,Michigan Left (album)
+Michigan Left (album),producer,The Clientele,Michigan Left (album)
+1981–82 A Group,instanceOf,sports season,1981–82 A Group
+1981–82 A Group,startTime,1981-09-13,1981–82 A Group
+1981–82 A Group,endTime,1982-05-09,1981–82 A Group
+1981–82 A Group,country,Bulgaria,1981–82 A Group
+1981–82 A Group,sportsType,association football,1981–82 A Group
+Chaparmukh Junction railway station,instanceOf,railway station,Chaparmukh Junction railway station
+Chaparmukh Junction railway station,locatedIn,India,Chaparmukh Junction railway station
+Chaparmukh Junction railway station,locatedIn,Assam,Chaparmukh Junction railway station
+Chaparmukh Junction railway station,serves,Chaparmukh,Chaparmukh Junction railway station
+Chaparmukh Junction railway station,country,India,Chaparmukh Junction railway station
+Chaparmukh Junction railway station,operator,Indian Railways,Chaparmukh Junction railway station
+1931–32 Istanbul Football League,instanceOf,sports season,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,startTime,1931,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,endTime,1932,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,location,Istanbul,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,participant,Galatasaray SK,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,participant,Fenerbahçe SK,1931–32 Istanbul Football League
+1931–32 Istanbul Football League,participant,Beşiktaş JK,1931–32 Istanbul Football League
+MV Ganga Vilas,instanceOf,River Cruise Ship,MV Ganga Vilas
+MV Ganga Vilas,operator,Indian Railways,MV Ganga Vilas
+MV Ganga Vilas,launched,2023,MV Ganga Vilas
+MV Ganga Vilas,route,Varanasi to Kolkata,MV Ganga Vilas
+MV Ganga Vilas,length,82 meters,MV Ganga Vilas
+MV Ganga Vilas,capacity,200 passengers,MV Ganga Vilas
+MV Ganga Vilas,speed,15 knots,MV Ganga Vilas
+1966–67 Michigan State Spartans men's basketball team,instanceOf,basketball team,1966–67 Michigan State Spartans men's basketball team
+1966–67 Michigan State Spartans men's basketball team,partOf,1966-67 NCAA Division I men's basketball season,1966–67 Michigan State Spartans men's basketball team
+1966–67 Michigan State Spartans men's basketball team,university,Michigan State University,1966–67 Michigan State Spartans men's basketball team
+1966–67 Michigan State Spartans men's basketball team,coach,John Juday,1966–67 Michigan State Spartans men's basketball team
+1966–67 Michigan State Spartans men's basketball team,season,1966-67,1966–67 Michigan State Spartans men's basketball team
+Gurinder Singh (field hockey),instanceOf,Q5,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),givenName,Gurinder,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),familyName,Singh,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),dateOfBirth,1995-01-20,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),playsSport,field hockey,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),position,defender,Gurinder Singh (field hockey)
+Gurinder Singh (field hockey),nationalTeam,India men's national field hockey team,Gurinder Singh (field hockey)
+Christine Holgate,instanceOf,Q5,Christine Holgate
+Christine Holgate,givenName,Christine,Christine Holgate
+Christine Holgate,familyName,Holgate,Christine Holgate
+Christine Holgate,occupation,business executive,Christine Holgate
+Christine Holgate,employer,Telstra,Christine Holgate
+Christine Holgate,position,CEO,Christine Holgate
+You Never Forget Your First,instanceOf,Book,You Never Forget Your First
+You Never Forget Your First,author,Joe Biden,You Never Forget Your First
+You Never Forget Your First,publishedBy,Penguin Random House,You Never Forget Your First
+You Never Forget Your First,publicationDate,2022-11-15,You Never Forget Your First
+You Never Forget Your First,ISBN,978-1984876311,You Never Forget Your First
+Amphipithecidae,instanceOf,family,Amphipithecidae
+Amphipithecidae,partOf,Hominidae,Amphipithecidae
+Amphipithecidae,taxonomicRank,family,Amphipithecidae
+Amphipithecidae,extinctionStatus,extinct,Amphipithecidae
+Amphipithecidae,fossilRecord,Oligocene,Amphipithecidae
+Auroracetus,instanceOf,whale,Auroracetus
+Auroracetus,discoveredBy,Perryman et al.,Auroracetus
+Auroracetus,yearOfDiscovery,2021,Auroracetus
+Auroracetus,classification,Mysticeti,Auroracetus
+Auroracetus,scientificName,Auroracetus perryman,Auroracetus
+Desoutter Mk.II,instanceOf,aircraft,Desoutter Mk.II
+Desoutter Mk.II,manufacturer,Desoutter,Desoutter Mk.II
+Desoutter Mk.II,model,Mk.II,Desoutter Mk.II
+Desoutter Mk.II,type,biplane,Desoutter Mk.II
+Desoutter Mk.II,engine,de Havilland Gipsy,Desoutter Mk.II
+Desoutter Mk.II,numberOfEngines,1,Desoutter Mk.II
+W-19-class minesweeper,instanceOf,ship class,W-19-class minesweeper
+W-19-class minesweeper,countryOfOrigin,Japan,W-19-class minesweeper
+W-19-class minesweeper,operator,Imperial Japanese Navy,W-19-class minesweeper
+W-19-class minesweeper,hasPart,Q13163657,W-19-class minesweeper
+W-19-class minesweeper,serviceEntry,1944,W-19-class minesweeper
+W-19-class minesweeper,serviceExit,1945,W-19-class minesweeper
+W-19-class minesweeper,numberOf,10,W-19-class minesweeper
+The Science of Revolutionary Warfare,author,Mao Zedong,The Science of Revolutionary Warfare
+The Science of Revolutionary Warfare,instanceOf,book,The Science of Revolutionary Warfare
+The Science of Revolutionary Warfare,publishedIn,1965,The Science of Revolutionary Warfare
+The Science of Revolutionary Warfare,language,English,The Science of Revolutionary Warfare
+The Science of Revolutionary Warfare,topic,Military strategy,The Science of Revolutionary Warfare
+The Science of Revolutionary Warfare,topic,Revolutionary warfare,The Science of Revolutionary Warfare
+2012–13 Seton Hall Pirates men's basketball team,instanceOf,basketball team,2012–13 Seton Hall Pirates men's basketball team
+2012–13 Seton Hall Pirates men's basketball team,partOf,2012-13 NCAA Division I men's basketball season,2012–13 Seton Hall Pirates men's basketball team
+2012–13 Seton Hall Pirates men's basketball team,university,Seton Hall University,2012–13 Seton Hall Pirates men's basketball team
+2012–13 Seton Hall Pirates men's basketball team,coach,Kevin Willard,2012–13 Seton Hall Pirates men's basketball team
+2012–13 Seton Hall Pirates men's basketball team,season,2012-13,2012–13 Seton Hall Pirates men's basketball team
+Discovery Gardens (Dubai Metro),instanceOf,Dubai Metro station,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),locatedIn,Dubai,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),opened,2004,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),serves,Discovery Gardens,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),platforms,2,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),tracks,2,Discovery Gardens (Dubai Metro)
+Discovery Gardens (Dubai Metro),zone,Jebel Ali,Discovery Gardens (Dubai Metro)
+"Toll House (Georgetown, Colorado)",instanceOf,historic house,"Toll House (Georgetown, Colorado)"
+"Toll House (Georgetown, Colorado)",location,"Georgetown, Colorado","Toll House (Georgetown, Colorado)"
+"Toll House (Georgetown, Colorado)",architect,George M. Hill,"Toll House (Georgetown, Colorado)"
+"Toll House (Georgetown, Colorado)",addedToNationalRegisterOfHistoricPlaces,1980-04-15,"Toll House (Georgetown, Colorado)"
+"Toll House (Georgetown, Colorado)",architecturalStyle,Toll House,"Toll House (Georgetown, Colorado)"
+USS Leyte (ARG-8),instanceOf, amphibious transport dock,USS Leyte (ARG-8)
+USS Leyte (ARG-8),commissioningDate,1945-04-09,USS Leyte (ARG-8)
+USS Leyte (ARG-8),decommissioningDate,1971-05-27,USS Leyte (ARG-8)
+USS Leyte (ARG-8),shipName,Leyte,USS Leyte (ARG-8)
+USS Leyte (ARG-8),shipClass,Andromeda-class amphibious transport dock,USS Leyte (ARG-8)
+USS Leyte (ARG-8),shipPennantNumber,ARG-8,USS Leyte (ARG-8)
+USS Leyte (ARG-8),operator,United States Navy,USS Leyte (ARG-8)
+1975 Omloop Het Volk,instanceOf,Omloop Het Volk,1975 Omloop Het Volk
+1975 Omloop Het Volk,year,1975,1975 Omloop Het Volk
+1975 Omloop Het Volk,follows,1974 Omloop Het Volk,1975 Omloop Het Volk
+1975 Omloop Het Volk,followedBy,1976 Omloop Het Volk,1975 Omloop Het Volk
+1975 Omloop Het Volk,winner,Cees Bal,1975 Omloop Het Volk
+Khaplu Palace,instanceOf,palace,Khaplu Palace
+Khaplu Palace,location,Gilgit-Baltistan,Khaplu Palace
+Khaplu Palace,location,Pakistan,Khaplu Palace
+Khaplu Palace,architecturalStyle,Balti architecture,Khaplu Palace
+Khaplu Palace,commissionedBy,Mirza Muhammad Hassan Khan,Khaplu Palace
+Khaplu Palace,restoredBy,Aga Khan Trust for Culture,Khaplu Palace
+2016 Wimbledon Championships – Men's singles,instanceOf,Tennis tournament edition,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,partOf,2016 Wimbledon Championships,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,startDate,2016-06-27,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,endDate,2016-07-10,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,numberOfParticipants,64,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,champion,Andy Murray,2016 Wimbledon Championships – Men's singles
+2016 Wimbledon Championships – Men's singles,runner-up,Milosh Raonic,2016 Wimbledon Championships – Men's singles
+1989 Pan American Women's Handball Championship,instanceOf,Pan American Women's Handball Championship,1989 Pan American Women's Handball Championship
+1989 Pan American Women's Handball Championship,year,1989,1989 Pan American Women's Handball Championship
+1989 Pan American Women's Handball Championship,location,Argentina,1989 Pan American Women's Handball Championship
+1989 Pan American Women's Handball Championship,sportsType,Handball,1989 Pan American Women's Handball Championship
+1989 Pan American Women's Handball Championship,gender,Women,1989 Pan American Women's Handball Championship
+1989 Pan American Women's Handball Championship,organizer,International Handball Federation,1989 Pan American Women's Handball Championship
+Harry Potter and the Deathly Hallows – Part 1 (soundtrack),instanceOf,soundtrack,Harry Potter and the Deathly Hallows – Part 1 (soundtrack)
+Harry Potter and the Deathly Hallows – Part 1 (soundtrack),partOf,Harry Potter and the Deathly Hallows – Part 1,Harry Potter and the Deathly Hallows – Part 1 (soundtrack)
+Harry Potter and the Deathly Hallows – Part 1 (soundtrack),composer,Alexandre Desplat,Harry Potter and the Deathly Hallows – Part 1 (soundtrack)
+Harry Potter and the Deathly Hallows – Part 1 (soundtrack),releaseDate,2010-11-16,Harry Potter and the Deathly Hallows – Part 1 (soundtrack)
+Harry Potter and the Deathly Hallows – Part 1 (soundtrack),hasDiscography,Harry Potter film series,Harry Potter and the Deathly Hallows – Part 1 (soundtrack)
+Fort La Baye,instanceOf,fort,Fort La Baye
+Fort La Baye,location,"St. Croix, Wisconsin",Fort La Baye
+Fort La Baye,namedAfter,Jean Nicolet,Fort La Baye
+Fort La Baye,built,1710,Fort La Baye
+Fort La Baye,controlledBy,France,Fort La Baye
+Fort La Baye,controlledBy,United Kingdom,Fort La Baye
+Devin Haney vs. Ryan Garcia,instanceOf,boxing match,Devin Haney vs. Ryan Garcia
+Devin Haney vs. Ryan Garcia,participant,Devin Haney,Devin Haney vs. Ryan Garcia
+Devin Haney vs. Ryan Garcia,participant,Ryan Garcia,Devin Haney vs. Ryan Garcia
+Devin Haney vs. Ryan Garcia,date,"April 20, 2024",Devin Haney vs. Ryan Garcia
+Devin Haney vs. Ryan Garcia,location,Barclays Center,Devin Haney vs. Ryan Garcia
+Devin Haney vs. Ryan Garcia,result,Devin Haney won by split decision,Devin Haney vs. Ryan Garcia
+2015–16 Denver Pioneers men's basketball team,instanceOf,basketball team,2015–16 Denver Pioneers men's basketball team
+2015–16 Denver Pioneers men's basketball team,partOf,2015-16 NCAA Division I men's basketball season,2015–16 Denver Pioneers men's basketball team
+2015–16 Denver Pioneers men's basketball team,university,University of Denver,2015–16 Denver Pioneers men's basketball team
+2015–16 Denver Pioneers men's basketball team,headCoach,Joe Scott,2015–16 Denver Pioneers men's basketball team
+2015–16 Denver Pioneers men's basketball team,season,2015-16,2015–16 Denver Pioneers men's basketball team
+2015–16 Denver Pioneers men's basketball team,league,The Summit League,2015–16 Denver Pioneers men's basketball team
+IFFCO Chowk metro station,instanceOf,rapid transit station,IFFCO Chowk metro station
+IFFCO Chowk metro station,locatedIn,Gurugram,IFFCO Chowk metro station
+IFFCO Chowk metro station,servedBy,Yellow Line (Delhi Metro),IFFCO Chowk metro station
+IFFCO Chowk metro station,hasAdjacentStation,HUDA City Centre metro station,IFFCO Chowk metro station
+IFFCO Chowk metro station,hasAdjacentStation,Millennium City Centre metro station,IFFCO Chowk metro station
+IFFCO Chowk metro station,opened,2006,IFFCO Chowk metro station
+Nebula Award Stories 4,instanceOf,anthology,Nebula Award Stories 4
+Nebula Award Stories 4,publisher,DAW Books,Nebula Award Stories 4
+Nebula Award Stories 4,editor,Robert Silverberg,Nebula Award Stories 4
+Nebula Award Stories 4,publicationDate,1980,Nebula Award Stories 4
+Nebula Award Stories 4,series,Nebula Award Stories,Nebula Award Stories 4
+Nebula Award Stories 4,precededBy,Nebula Award Stories 3,Nebula Award Stories 4
+Nebula Award Stories 4,followedBy,Nebula Award Stories 5,Nebula Award Stories 4
+Raquel Montoya-Lewis,instanceOf,Q124594,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,givenName,Raquel,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,familyName,Montoya-Lewis,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,positionHeld,Associate Justice of the Washington Supreme Court,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,educatedAt,University of New Mexico School of Law,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,ethnicGroup,Latin American,Raquel Montoya-Lewis
+Raquel Montoya-Lewis,sexOrGender,female,Raquel Montoya-Lewis
+Château du Petit-Ringelstein,instanceOf,castle,Château du Petit-Ringelstein
+Château du Petit-Ringelstein,location,France,Château du Petit-Ringelstein
+Château du Petit-Ringelstein,locatedIn,Vosges,Château du Petit-Ringelstein
+Château du Petit-Ringelstein,locatedIn,Grand Est,Château du Petit-Ringelstein
+Château du Petit-Ringelstein,typeOf,fortress,Château du Petit-Ringelstein
+Frederick Miller (cricketer),instanceOf,Q1047014,Frederick Miller (cricketer)
+Frederick Miller (cricketer),birthDate,1867-05-14,Frederick Miller (cricketer)
+Frederick Miller (cricketer),deathDate,1942-12-11,Frederick Miller (cricketer)
+Frederick Miller (cricketer),countryOfCitizenship,England,Frederick Miller (cricketer)
+Frederick Miller (cricketer),occupation,cricketer,Frederick Miller (cricketer)
+Frederick Miller (cricketer),sportsDiscipline,cricket,Frederick Miller (cricketer)
+Frederick Miller (cricketer),team,Marylebone Cricket Club,Frederick Miller (cricketer)
+Beuvry Communal Cemetery Extension,instanceOf,cemetery,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,location,Beuvry,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,country,France,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,partOf,Pas-de-Calais,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,containsBurials,World War I,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,containsBurials,World War II,Beuvry Communal Cemetery Extension
+Beuvry Communal Cemetery Extension,operatedBy,Commonwealth War Graves Commission,Beuvry Communal Cemetery Extension
+International Fragrance Association,instanceOf,organization,International Fragrance Association
+International Fragrance Association,abbreviatedAs,IFRA,International Fragrance Association
+International Fragrance Association,foundedIn,1909,International Fragrance Association
+International Fragrance Association,foundedBy,International Association of Soaps and Detergents,International Fragrance Association
+International Fragrance Association,headquarteredIn,Geneva,International Fragrance Association
+International Fragrance Association,industry,perfumery,International Fragrance Association
+International Fragrance Association,regulates,fragrance industry,International Fragrance Association
+International Fragrance Association,sets,safety standards,International Fragrance Association
+2016–17 Ole Miss Rebels men's basketball team,instanceOf,basketball team,2016–17 Ole Miss Rebels men's basketball team
+2016–17 Ole Miss Rebels men's basketball team,partOf,2016-17 NCAA Division I men's basketball season,2016–17 Ole Miss Rebels men's basketball team
+2016–17 Ole Miss Rebels men's basketball team,team,Ole Miss Rebels,2016–17 Ole Miss Rebels men's basketball team
+2016–17 Ole Miss Rebels men's basketball team,coach,John Augstave,2016–17 Ole Miss Rebels men's basketball team
+2016–17 Ole Miss Rebels men's basketball team,arena,Rebels Arena,2016–17 Ole Miss Rebels men's basketball team
+2016–17 Ole Miss Rebels men's basketball team,conference,Southeastern Conference,2016–17 Ole Miss Rebels men's basketball team
+"First African Methodist Episcopal Zion Church, San Francisco",instanceOf,church,"First African Methodist Episcopal Zion Church, San Francisco"
+"First African Methodist Episcopal Zion Church, San Francisco",location,San Francisco,"First African Methodist Episcopal Zion Church, San Francisco"
+"First African Methodist Episcopal Zion Church, San Francisco",denomination,Methodist,"First African Methodist Episcopal Zion Church, San Francisco"
+"First African Methodist Episcopal Zion Church, San Francisco",denomination,Episcopal,"First African Methodist Episcopal Zion Church, San Francisco"
+"First African Methodist Episcopal Zion Church, San Francisco",denomination,Zion,"First African Methodist Episcopal Zion Church, San Francisco"
+"First African Methodist Episcopal Zion Church, San Francisco",isPartOf,African Methodist Episcopal Zion Church,"First African Methodist Episcopal Zion Church, San Francisco"
+"Northtown Mall (Blaine, Minnesota)",instanceOf,shopping mall,"Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",location,"Blaine, Minnesota","Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",country,United States,"Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",operator,Cortland Companies,"Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",numberOfStores,86,"Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",opened,1974,"Northtown Mall (Blaine, Minnesota)"
+"Northtown Mall (Blaine, Minnesota)",floors,2,"Northtown Mall (Blaine, Minnesota)"
+BMD-4,instanceOf,infantry fighting vehicle,BMD-4
+BMD-4,manufacturer,Uralvagonzavod,BMD-4
+BMD-4,countryOfOrigin,Russia,BMD-4
+BMD-4,usedBy,Russian Ground Forces,BMD-4
+BMD-4,crew,3,BMD-4
+BMD-4,length,6.4 m,BMD-4
+BMD-4,width,3.2 m,BMD-4
+BMD-4,height,2.4 m,BMD-4
+BMD-4,topSpeed,70 km/h,BMD-4
+The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge,instanceOf,music album,The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge
+The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge,partOf,The Black Midi Anthology,The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge
+The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge,publicationDate,2021-10-29,The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge
+The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge,hasComposer,Black Midi,The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge
+The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge,hasPerformer,Black Midi,The Black Midi Anthology Vol. 1: Tales of Suspense and Revenge
+Gender neutrality in Portuguese,instanceOf,Language feature,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,appliesToLanguage,Portuguese language,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,hasGenderedForm,Masculine,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,hasGenderedForm,Feminine,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,usesNeutralPronoun,Ele,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,usesNeutralPronoun,Eles,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,relatedToSocialMovement,LGBTQ+ rights,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,influencedBy,Spanish language,Gender neutrality in Portuguese
+Gender neutrality in Portuguese,studiedIn,Linguistics,Gender neutrality in Portuguese
+Timor-Leste at the 2016 Summer Olympics,instanceOf,Olympic Games,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,country,Timor-Leste,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,year,2016,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,edition,Summer Olympics,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,participant,Aloia Correia,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,participant,Jailton Paulino,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,participant,Maria de Fatima Furtado,Timor-Leste at the 2016 Summer Olympics
+Timor-Leste at the 2016 Summer Olympics,participant,Nailton Semedo,Timor-Leste at the 2016 Summer Olympics
+WSC Real 11: World Snooker Championship,instanceOf,video game,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,developer,Blade Interactive,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,publisher,Sega,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,platform,Microsoft Windows,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,platform,PlayStation 3,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,platform,Xbox 360,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,releaseDate,2011-04-08,WSC Real 11: World Snooker Championship
+WSC Real 11: World Snooker Championship,genre,sports video game,WSC Real 11: World Snooker Championship
+Don Goddard,instanceOf,Q215627,Don Goddard
+Don Goddard,givenName,Don,Don Goddard
+Don Goddard,familyName,Goddard,Don Goddard
+Don Goddard,dateOfBirth,1904-07-5,Don Goddard
+Don Goddard,dateOfDeath,1975-05-16,Don Goddard
+Don Goddard,occupation,radio personality,Don Goddard
+Don Goddard,occupation,newscaster,Don Goddard
+Don Goddard,hasWorksInTheCollection,Museum of Modern Art,Don Goddard
+Voima (1924 icebreaker),instanceOf,icebreaker,Voima (1924 icebreaker)
+Voima (1924 icebreaker),countryOfOrigin,Finland,Voima (1924 icebreaker)
+Voima (1924 icebreaker),yearBuilt,1924,Voima (1924 icebreaker)
+Voima (1924 icebreaker),operator,Finnish Navy,Voima (1924 icebreaker)
+Voima (1924 icebreaker),commissioningDate,1924-02-29,Voima (1924 icebreaker)
+Voima (1924 icebreaker),decommissioningDate,1975,Voima (1924 icebreaker)
+Voima (1924 icebreaker),length,50.7,Voima (1924 icebreaker)
+Voima (1924 icebreaker),beam,13.8,Voima (1924 icebreaker)
+Voima (1924 icebreaker),draft,4.5,Voima (1924 icebreaker)
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,instanceOf,Olympic event,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,partOf,Cross-country skiing at the 1964 Winter Olympics,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,hasGender,men,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,hasDiscipline,cross-country skiing,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,hasEventType,relay,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,hasDistance,40 kilometre,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,location,Innsbruck,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay,year,1964,Cross-country skiing at the 1964 Winter Olympics – Men's 4 × 10 kilometre relay
+French destroyer Trident,instanceOf,destroyer,French destroyer Trident
+French destroyer Trident,countryOfOrigin,France,French destroyer Trident
+French destroyer Trident,operator,French Navy,French destroyer Trident
+French destroyer Trident,class,Trident-class destroyer,French destroyer Trident
+French destroyer Trident,commissioningDate,1932-05-10,French destroyer Trident
+French destroyer Trident,decommissioningDate,1942-06-18,French destroyer Trident
+French destroyer Trident,shipDisplacement,2000,French destroyer Trident
+French destroyer Trident,length,103.8,French destroyer Trident
+French destroyer Trident,beam,9.78,French destroyer Trident
+French destroyer Trident,draft,4.4,French destroyer Trident
+FIS Alpine World Ski Championships 2013 – Men's downhill,instanceOf,Skiing competition,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,partOf,FIS Alpine World Ski Championships 2013,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,sport,Alpine skiing,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,discipline,Downhill,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,location,Schladming,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,date,2013-02-10,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,winner,Dominik Gisin,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,second,Hannes Reichelt,FIS Alpine World Ski Championships 2013 – Men's downhill
+FIS Alpine World Ski Championships 2013 – Men's downhill,third,Lars Hintermann,FIS Alpine World Ski Championships 2013 – Men's downhill
+USS LSM-397,instanceOf,LSM-1-class landing ship medium,USS LSM-397
+USS LSM-397,commissioned,1944,USS LSM-397
+USS LSM-397,decommissioned,1946,USS LSM-397
+USS LSM-397,shipBuilder,Wiley,USS LSM-397
+USS LSM-397,shipBuilder,Brown Shipbuilding,USS LSM-397
+USS LSM-397,length,203,USS LSM-397
+USS LSM-397,beam,32,USS LSM-397
+USS LSM-397,draft,4.3,USS LSM-397
+USS LSM-397,shipDisplacement, LSM-1-class:  LSM-1 to  LSM-300  790  tons  LSM-301 to  LSM-399  835 tons  LSM-400 to  LSM-491  860 tons,USS LSM-397
+USS LSM-397,crew,137,USS LSM-397
+Archaeological Museum of Amphipolis,instanceOf,archaeological museum,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,locatedIn,Amphipolis,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,country,Greece,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,region,Central Macedonia,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,typeOfMuseum,archaeological,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,exhibits,amphorae,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,exhibits,coins,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,exhibits,sculptures,Archaeological Museum of Amphipolis
+Archaeological Museum of Amphipolis,foundingDate,1970,Archaeological Museum of Amphipolis
+Swimming at the 2017 World Aquatics Championships,instanceOf,Sports event at the 2017 World Aquatics Championships,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,hasPart,Swimming at the 2017 World Aquatics Championships – Women's 400 metre freestyle,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,hasPart,Swimming at the 2017 World Aquatics Championships – Men's 400 metre freestyle,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,hasPart,Swimming at the 2017 World Aquatics Championships – Women's 4 × 100 metre freestyle relay,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,location,Danube Arena,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,startTime,2017-07-23T00:00:00Z,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,endTime,2017-07-30T00:00:00Z,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,partOf,2017 World Aquatics Championships,Swimming at the 2017 World Aquatics Championships
+Swimming at the 2017 World Aquatics Championships,competitor,American team at the 2017 World Aquatics Championships,Swimming at the 2017 World Aquatics Championships
+Results of the 2018 South Australian state election (House of Assembly),instanceOf,Election results,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),hasParty,Australian Labor Party,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),hasParty,South Australian Liberal Party,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),hasParty,Australian Greens,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),electedLeader,Peter Malinauskas,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),electedDeputyLeader,Susan Close,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),numberOfSeats,47,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),heldDate,2018-03-17,Results of the 2018 South Australian state election (House of Assembly)
+Results of the 2018 South Australian state election (House of Assembly),location,South Australia,Results of the 2018 South Australian state election (House of Assembly)
+Harry DeWolf-class offshore patrol vessel,instanceOf,ship class,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,countryOfOrigin,Canada,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,operator,Royal Canadian Navy,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,designer,Lockheed Martin,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,builder,Halifax Shipyard,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,commissioningDate,2020-06-26,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,length,109 m,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,beam,16 m,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,draft,5 m,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,shipDisplacement,3400 t,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,propulsion,diesel-electric,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,speed,22 knots,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,range,10000 nmi,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,complement,70,Harry DeWolf-class offshore patrol vessel
+Harry DeWolf-class offshore patrol vessel,name,Harry DeWolf-class,Harry DeWolf-class offshore patrol vessel
+"Strmec, Zagreb",instanceOf,settlement,"Strmec, Zagreb"
+"Strmec, Zagreb",locatedIn,Zagreb,"Strmec, Zagreb"
+"Strmec, Zagreb",locatedIn,Croatia,"Strmec, Zagreb"
+"Longmen Township, Ya'an",instanceOf,township,"Longmen Township, Ya'an"
+"Longmen Township, Ya'an",locatedIn,Ya'an,"Longmen Township, Ya'an"
+"Longmen Township, Ya'an",locatedInAdministrativeTerritory,Sichuan,"Longmen Township, Ya'an"
+Shuangxi Park and Chinese Garden,instanceOf,park,Shuangxi Park and Chinese Garden
+Shuangxi Park and Chinese Garden,location,Taiwan,Shuangxi Park and Chinese Garden
+Shuangxi Park and Chinese Garden,locatedIn,Taipei,Shuangxi Park and Chinese Garden
+Canelas e Espiunca,instanceOf,civil parish,Canelas e Espiunca
+Canelas e Espiunca,locatedIn,Viana do Castelo District,Canelas e Espiunca
+Canelas e Espiunca,locatedIn,Portugal,Canelas e Espiunca
+Newsmongers,instanceOf,Comedy troupe,Newsmongers
+Newsmongers,foundedBy,John Oliver,Newsmongers
+Newsmongers,foundedBy,Andy Zaltzman,Newsmongers
+Newsmongers,knownFor,The Bugle,Newsmongers
+Bahau River,instanceOf,river,Bahau River
+Bahau River,locatedIn,Malaysia,Bahau River
+Bahau River,locatedIn,Negros Oriental,Bahau River
+Bahau River,mouth,Sulu Sea,Bahau River
+1981 Quito Grand Prix,instanceOf,Grand Prix,1981 Quito Grand Prix
+1981 Quito Grand Prix,year,1981,1981 Quito Grand Prix
+1981 Quito Grand Prix,location,Quito,1981 Quito Grand Prix
+Bettles River,instanceOf,river,Bettles River
+Bettles River,locatedIn,Alaska,Bettles River
+Bettles River,tributaryOf,Kuskokwim River,Bettles River
+Arsenic triazide,instanceOf,Chemical compound,Arsenic triazide
+Arsenic triazide,chemicalFormula,As(N3)3,Arsenic triazide
+Arsenic triazide,isExplosive,true,Arsenic triazide
+Trustfall (song),instanceOf,song,Trustfall (song)
+Trustfall (song),partOf,Trustfall,Trustfall (song)
+Trustfall (song),artist,Pink,Trustfall (song)
+Trustfall (song),releaseDate,2023-02-17,Trustfall (song)
+A Bath Full of Ecstasy,instanceOf,album,A Bath Full of Ecstasy
+A Bath Full of Ecstasy,publisher,K Records,A Bath Full of Ecstasy
+A Bath Full of Ecstasy,releaseDate,2019-05-10,A Bath Full of Ecstasy
+A Bath Full of Ecstasy,artist,The Radio Dept.,A Bath Full of Ecstasy
+Byczyna Town Hall,instanceOf,town hall,Byczyna Town Hall
+Byczyna Town Hall,location,Byczyna,Byczyna Town Hall
+Byczyna Town Hall,country,Poland,Byczyna Town Hall
+Shihlin Paper Mill,instanceOf,paper mill,Shihlin Paper Mill
+Shihlin Paper Mill,location,Shihlin District,Shihlin Paper Mill
+Shihlin Paper Mill,locatedIn,Taipei,Shihlin Paper Mill
+Shihlin Paper Mill,established,1958,Shihlin Paper Mill
+Host and Guest,instanceOf,TV series,Host and Guest
+Host and Guest,genre,Reality-TV,Host and Guest
+Host and Guest,countryOfOrigin,South Korea,Host and Guest
+Host and Guest,originalLanguage,Korean,Host and Guest
+Host and Guest,host,Lee Seung-gi,Host and Guest
+Lealholm Methodist Chapel,instanceOf,Methodist chapel,Lealholm Methodist Chapel
+Lealholm Methodist Chapel,location,Lealholm,Lealholm Methodist Chapel
+Lealholm Methodist Chapel,denomination,Methodist,Lealholm Methodist Chapel
+"Alfred Robinson (footballer, born 1916)",instanceOf,Q12345678,"Alfred Robinson (footballer, born 1916)"
+"Alfred Robinson (footballer, born 1916)",birthDate,1916,"Alfred Robinson (footballer, born 1916)"
+"Alfred Robinson (footballer, born 1916)",occupation,footballer,"Alfred Robinson (footballer, born 1916)"
+"Alfred Robinson (footballer, born 1916)",sportsPosition,Q123,"Alfred Robinson (footballer, born 1916)"
+Dobrich Knoll,instanceOf,knoll,Dobrich Knoll
+Dobrich Knoll,locatedIn,Antarctica,Dobrich Knoll
+Dobrich Knoll,namedAfter,Dobrich,Dobrich Knoll
+"Oakwood Township, Walsh County, North Dakota",instanceOf,township,"Oakwood Township, Walsh County, North Dakota"
+"Oakwood Township, Walsh County, North Dakota",locatedIn,"Walsh County, North Dakota","Oakwood Township, Walsh County, North Dakota"
+"Oakwood Township, Walsh County, North Dakota",partOf,North Dakota,"Oakwood Township, Walsh County, North Dakota"
+"Oakwood Township, Walsh County, North Dakota",hasType,civil township,"Oakwood Township, Walsh County, North Dakota"
+Tomb of Wang Chuzhi,instanceOf,tomb,Tomb of Wang Chuzhi
+Tomb of Wang Chuzhi,location,China,Tomb of Wang Chuzhi
+Tomb of Wang Chuzhi,namedAfter,Wang Chuzhi,Tomb of Wang Chuzhi
+2018 Balkan Badminton Championships,instanceOf,Balkan Badminton Championships,2018 Balkan Badminton Championships
+2018 Balkan Badminton Championships,year,2018,2018 Balkan Badminton Championships
+2018 Balkan Badminton Championships,edition,2018,2018 Balkan Badminton Championships
+2018 Balkan Badminton Championships,location,Bulgaria,2018 Balkan Badminton Championships
+"Lobanovo, Gus-Khrustalny District, Vladimir Oblast",instanceOf,rural locality,"Lobanovo, Gus-Khrustalny District, Vladimir Oblast"
+"Lobanovo, Gus-Khrustalny District, Vladimir Oblast",locatedIn,Gus-Khrustalny District,"Lobanovo, Gus-Khrustalny District, Vladimir Oblast"
+"Lobanovo, Gus-Khrustalny District, Vladimir Oblast",locatedIn,Vladimir Oblast,"Lobanovo, Gus-Khrustalny District, Vladimir Oblast"
+National Route 804 (Costa Rica),instanceOf,National Route,National Route 804 (Costa Rica)
+National Route 804 (Costa Rica),country,Costa Rica,National Route 804 (Costa Rica)
+National Route 804 (Costa Rica),routeNumber,804,National Route 804 (Costa Rica)
+Trams in Ballarat,instanceOf,Tram system,Trams in Ballarat
+Trams in Ballarat,location,Ballarat,Trams in Ballarat
+Trams in Ballarat,country,Australia,Trams in Ballarat
+Trams in Ballarat,heritageStatus,Heritage-listed,Trams in Ballarat
+Trams in Ballarat,operator,Ballarat Tramway Preservation Society,Trams in Ballarat
+2011 Kütahya earthquake,instanceOf,earthquake,2011 Kütahya earthquake
+2011 Kütahya earthquake,location,Kütahya Province,2011 Kütahya earthquake
+2011 Kütahya earthquake,date,2011-05-17,2011 Kütahya earthquake
+2011 Kütahya earthquake,magnitude,5.7 Mw,2011 Kütahya earthquake
+Stanley station (North Dakota),instanceOf,railway station,Stanley station (North Dakota)
+Stanley station (North Dakota),locatedIn,North Dakota,Stanley station (North Dakota)
+Stanley station (North Dakota),locatedIn,United States,Stanley station (North Dakota)
+Stanley station (North Dakota),serves,"Stanley, North Dakota",Stanley station (North Dakota)
+Bhanjpur railway station,instanceOf,railway station,Bhanjpur railway station
+Bhanjpur railway station,locatedIn,India,Bhanjpur railway station
+Bhanjpur railway station,serves,Bhanjpur,Bhanjpur railway station
+Bhanjpur railway station,country,India,Bhanjpur railway station
+Bhanjpur railway station,operator,Indian Railways,Bhanjpur railway station
+Xhavid Leskoviku,instanceOf,Human,Xhavid Leskoviku
+Xhavid Leskoviku,birthPlace,Leskovik,Xhavid Leskoviku
+Xhavid Leskoviku,givenName,Xhavid,Xhavid Leskoviku
+Xhavid Leskoviku,familyName,Leskoviku,Xhavid Leskoviku
+Hidiya Hanim Barakat,instanceOf,Human,Hidiya Hanim Barakat
+Hidiya Hanim Barakat,givenName,Hidiya,Hidiya Hanim Barakat
+Hidiya Hanim Barakat,familyName,Barakat,Hidiya Hanim Barakat
+Hidiya Hanim Barakat,title,Hanim,Hidiya Hanim Barakat
+Hidiya Hanim Barakat,spouse,Muhammad Ali Barakat,Hidiya Hanim Barakat
+1995 Kyrgyz presidential election,instanceOf,presidential election,1995 Kyrgyz presidential election
+1995 Kyrgyz presidential election,country,Kyrgyzstan,1995 Kyrgyz presidential election
+1995 Kyrgyz presidential election,year,1995,1995 Kyrgyz presidential election
+1995 Kyrgyz presidential election,electedPresident,Askar Akayev,1995 Kyrgyz presidential election
+William Burns (referee),instanceOf,Q5,William Burns (referee)
+William Burns (referee),occupation,Q1226315,William Burns (referee)
+William Burns (referee),givenName,William,William Burns (referee)
+William Burns (referee),familyName,Burns,William Burns (referee)
+"Novonikolayevka, Republic of Dagestan",instanceOf,human settlement,"Novonikolayevka, Republic of Dagestan"
+"Novonikolayevka, Republic of Dagestan",locatedIn,Republic of Dagestan,"Novonikolayevka, Republic of Dagestan"
+"Novonikolayevka, Republic of Dagestan",country,Russia,"Novonikolayevka, Republic of Dagestan"
+If I Hadn't Got You,instanceOf,song,If I Hadn't Got You
+If I Hadn't Got You,artist,Alicia Keys,If I Hadn't Got You
+If I Hadn't Got You,album,As I Am,If I Hadn't Got You
+If I Hadn't Got You,released,2007,If I Hadn't Got You
+If I Hadn't Got You,genre,R&B,If I Hadn't Got You
+If I Hadn't Got You,genre,soul,If I Hadn't Got You
+Swedish Ski Games,instanceOf,skiing competition,Swedish Ski Games
+Swedish Ski Games,location,Sweden,Swedish Ski Games
+Swedish Ski Games,hasEvent,cross-country skiing,Swedish Ski Games
+Swedish Ski Games,hasEvent,ski jumping,Swedish Ski Games
+Swedish Ski Games,organizedBy,Fjellskolen,Swedish Ski Games
+Marchwiel Hall,instanceOf,mansion,Marchwiel Hall
+Marchwiel Hall,location,Shropshire,Marchwiel Hall
+Marchwiel Hall,country,England,Marchwiel Hall
+Marchwiel Hall,architect,George Gilbert Scott,Marchwiel Hall
+Marchwiel Hall,architect,William Bonython Moffatt,Marchwiel Hall
+Decimus Veturius Macrinus,instanceOf,Roman consul,Decimus Veturius Macrinus
+Decimus Veturius Macrinus,givenName,Decimus,Decimus Veturius Macrinus
+Decimus Veturius Macrinus,familyName,Veturius Macrinus,Decimus Veturius Macrinus
+Decimus Veturius Macrinus,office,Consul of the Roman Empire,Decimus Veturius Macrinus
+Decimus Veturius Macrinus,reign,134,Decimus Veturius Macrinus
+Nantong Zhiyun F.C.,instanceOf,football club,Nantong Zhiyun F.C.
+Nantong Zhiyun F.C.,foundedIn,2014,Nantong Zhiyun F.C.
+Nantong Zhiyun F.C.,basedIn,Nantong,Nantong Zhiyun F.C.
+Nantong Zhiyun F.C.,playsIn,China League One,Nantong Zhiyun F.C.
+Nantong Zhiyun F.C.,teamSponsor,Jiangsu Nantong Zhiyun Football Club,Nantong Zhiyun F.C.
+Nantong Zhiyun F.C.,stadium,Rugao Football Stadium,Nantong Zhiyun F.C.
+Sunshine (Liam Payne song),instanceOf,song,Sunshine (Liam Payne song)
+Sunshine (Liam Payne song),artist,Liam Payne,Sunshine (Liam Payne song)
+Sunshine (Liam Payne song),artist,Quavo,Sunshine (Liam Payne song)
+Sunshine (Liam Payne song),released,2017-10-09,Sunshine (Liam Payne song)
+Sunshine (Liam Payne song),album,LP1,Sunshine (Liam Payne song)
+Charles W. Noyes House,instanceOf,house,Charles W. Noyes House
+Charles W. Noyes House,location,United States,Charles W. Noyes House
+Charles W. Noyes House,architect,Bruce Price,Charles W. Noyes House
+Charles W. Noyes House,architecturalStyle,Colonial Revival architecture,Charles W. Noyes House
+Charles W. Noyes House,NRHP Reference Number,82001865,Charles W. Noyes House
+French destroyer Le Mars,instanceOf,destroyer,French destroyer Le Mars
+French destroyer Le Mars,countryOfOrigin,France,French destroyer Le Mars
+French destroyer Le Mars,operator,French Navy,French destroyer Le Mars
+French destroyer Le Mars,class,Le Mars-class destroyer,French destroyer Le Mars
+French destroyer Le Mars,commissioned,1935,French destroyer Le Mars
+French destroyer Le Mars,decommissioned,1946,French destroyer Le Mars
+French destroyer Le Mars,scrapped,1953,French destroyer Le Mars
+National Association for Biomedical Research,instanceOf,organization,National Association for Biomedical Research
+National Association for Biomedical Research,abbreviation,NABR,National Association for Biomedical Research
+National Association for Biomedical Research,foundingYear,1982,National Association for Biomedical Research
+National Association for Biomedical Research,headquarteredIn,"Washington, D.C.",National Association for Biomedical Research
+National Association for Biomedical Research,advocatesFor,biomedical research,National Association for Biomedical Research
+National Association for Biomedical Research,represents,research institutions,National Association for Biomedical Research
+National Association for Biomedical Research,supports,animal research,National Association for Biomedical Research
+Museum of Words,instanceOf,museum,Museum of Words
+Museum of Words,location,California,Museum of Words
+Museum of Words,founder,Jack Magness,Museum of Words
+Museum of Words,namedAfter,National Poetry Month,Museum of Words
+Museum of Words,type,poetry museum,Museum of Words
+Daniel Donnelly House,instanceOf,house,Daniel Donnelly House
+Daniel Donnelly House,location,United States,Daniel Donnelly House
+Daniel Donnelly House,architecturalStyle,Greek Revival,Daniel Donnelly House
+Daniel Donnelly House,NRHPReferenceNumber,00001184,Daniel Donnelly House
+Daniel Donnelly House,isPartOf,National Register of Historic Places,Daniel Donnelly House
+Palaiyam railway station,instanceOf,railway station,Palaiyam railway station
+Palaiyam railway station,locatedIn,Tiruchirappalli district,Palaiyam railway station
+Palaiyam railway station,country,India,Palaiyam railway station
+Palaiyam railway station,serves,Palaiyam,Palaiyam railway station
+Palaiyam railway station,operator,Indian Railways,Palaiyam railway station
+Palaiyam railway station,railwayZone,Southern Railway zone,Palaiyam railway station
+2014–15 Texas A&M Aggies men's basketball team,instanceOf,sports team,2014–15 Texas A&M Aggies men's basketball team
+2014–15 Texas A&M Aggies men's basketball team,season,2014-15,2014–15 Texas A&M Aggies men's basketball team
+2014–15 Texas A&M Aggies men's basketball team,team,Texas A&M Aggies men's basketball,2014–15 Texas A&M Aggies men's basketball team
+2014–15 Texas A&M Aggies men's basketball team,league,NCAA Division I,2014–15 Texas A&M Aggies men's basketball team
+2014–15 Texas A&M Aggies men's basketball team,conference,Southeastern Conference,2014–15 Texas A&M Aggies men's basketball team
+2014–15 Texas A&M Aggies men's basketball team,coach,Billy Kennedy,2014–15 Texas A&M Aggies men's basketball team
+Geeting Covered Bridge,instanceOf,covered bridge,Geeting Covered Bridge
+Geeting Covered Bridge,location,Pennsylvania,Geeting Covered Bridge
+Geeting Covered Bridge,hasLength,64 feet,Geeting Covered Bridge
+Geeting Covered Bridge,builtIn,1871,Geeting Covered Bridge
+Geeting Covered Bridge,architect,John A. Potter,Geeting Covered Bridge
+Geeting Covered Bridge,NRHPReferenceNumber,73001646,Geeting Covered Bridge
+Anatolian Hieroglyphs (Unicode block),instanceOf,Unicode block,Anatolian Hieroglyphs (Unicode block)
+Anatolian Hieroglyphs (Unicode block),namedAfter,Anatolian hieroglyphs,Anatolian Hieroglyphs (Unicode block)
+Anatolian Hieroglyphs (Unicode block),unicodeRange,U+14C0-U+14FF,Anatolian Hieroglyphs (Unicode block)
+Anatolian Hieroglyphs (Unicode block),version,13.0,Anatolian Hieroglyphs (Unicode block)
+Anatolian Hieroglyphs (Unicode block),totalCodePoints,80,Anatolian Hieroglyphs (Unicode block)
+2016 AFC Futsal Club Championship,instanceOf,AFC Futsal Club Championship,2016 AFC Futsal Club Championship
+2016 AFC Futsal Club Championship,year,2016,2016 AFC Futsal Club Championship
+2016 AFC Futsal Club Championship,organizer,Asian Football Confederation,2016 AFC Futsal Club Championship
+2016 AFC Futsal Club Championship,sport,futsal,2016 AFC Futsal Club Championship
+2016 AFC Futsal Club Championship,numberOfTeams,16,2016 AFC Futsal Club Championship
+"Mountain High School (Mountain, Wisconsin)",instanceOf,high school,"Mountain High School (Mountain, Wisconsin)"
+"Mountain High School (Mountain, Wisconsin)",locatedIn,"Mountain, Wisconsin","Mountain High School (Mountain, Wisconsin)"
+"Mountain High School (Mountain, Wisconsin)",partOf,Wisconsin school system,"Mountain High School (Mountain, Wisconsin)"
+"Mountain High School (Mountain, Wisconsin)",educates,students,"Mountain High School (Mountain, Wisconsin)"
+"Mountain High School (Mountain, Wisconsin)",offers,high school education,"Mountain High School (Mountain, Wisconsin)"
+Shakespeare Cliff Halt railway station,instanceOf,railway station,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,locatedIn,England,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,locatedIn,United Kingdom,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,isPartOf,South Eastern Railway,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,hasCoordinate,51.0953°N 1.3136°E,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,opened,1913,Shakespeare Cliff Halt railway station
+Shakespeare Cliff Halt railway station,closed,1927,Shakespeare Cliff Halt railway station
+Tiree Music Festival,instanceOf,music festival,Tiree Music Festival
+Tiree Music Festival,location,Tiree,Tiree Music Festival
+Tiree Music Festival,startDate,2000-07-08,Tiree Music Festival
+Tiree Music Festival,endDate,2000-07-09,Tiree Music Festival
+Tiree Music Festival,organizer,Tiree Festival Company,Tiree Music Festival
+2024 United States Senate election in Utah,instanceOf,United States Senate election,2024 United States Senate election in Utah
+2024 United States Senate election in Utah,location,Utah,2024 United States Senate election in Utah
+2024 United States Senate election in Utah,startDate,2024,2024 United States Senate election in Utah
+2024 United States Senate election in Utah,endDate,2024-11-05,2024 United States Senate election in Utah
+2024 United States Senate election in Utah,partOf,2024 United States elections,2024 United States Senate election in Utah
+Time Zones (album),instanceOf,album,Time Zones (album)
+Time Zones (album),artist,Röyksopp,Time Zones (album)
+Time Zones (album),released,2001-05-28,Time Zones (album)
+Time Zones (album),genre,Electronic music,Time Zones (album)
+Time Zones (album),genre,Ambient house,Time Zones (album)
+Time Zones (album),label,Wall of Sound,Time Zones (album)
+Platanos railway station,instanceOf,railway station,Platanos railway station
+Platanos railway station,locatedIn,Greece,Platanos railway station
+Platanos railway station,serves,Platanos,Platanos railway station
+Morrison River,instanceOf,river,Morrison River
+Morrison River,locatedIn,New Jersey,Morrison River
+Morrison River,mouthOfTheRiver,Delaware Bay,Morrison River
+2019 World Wheelchair Curling Championship,instanceOf,World Wheelchair Curling Championship,2019 World Wheelchair Curling Championship
+2019 World Wheelchair Curling Championship,year,2019,2019 World Wheelchair Curling Championship
+2019 World Wheelchair Curling Championship,sportsLeague,World Curling Federation,2019 World Wheelchair Curling Championship
+2019 World Wheelchair Curling Championship,location,Almonton,2019 World Wheelchair Curling Championship
+2019 World Wheelchair Curling Championship,startDate,2019-03-23,2019 World Wheelchair Curling Championship
+2019 World Wheelchair Curling Championship,endDate,2019-03-30,2019 World Wheelchair Curling Championship
+Italian submarine Turchese,instanceOf,Submarine,Italian submarine Turchese
+Italian submarine Turchese,countryOfOrigin,Italy,Italian submarine Turchese
+Italian submarine Turchese,operator,Regia Marina,Italian submarine Turchese
+Italian submarine Turchese,class,Brin-class submarine,Italian submarine Turchese
+Italian submarine Turchese,commissioned,1939,Italian submarine Turchese
+Italian submarine Turchese,decommissioned,1943,Italian submarine Turchese
+Italian submarine Turchese,name,Turchese,Italian submarine Turchese
+Gurung Khema (Unicode block),instanceOf,Unicode block,Gurung Khema (Unicode block)
+Gurung Khema (Unicode block),unicodeName,Gurung Khema,Gurung Khema (Unicode block)
+Gurung Khema (Unicode block),unicodeRange,U+16B00-U+16B8F,Gurung Khema (Unicode block)
+Gurung Khema (Unicode block),numberOfCharacters,48,Gurung Khema (Unicode block)
+Gurung Khema (Unicode block),version,13.0,Gurung Khema (Unicode block)
+Gurung Khema (Unicode block),proposal,L2/19-179,Gurung Khema (Unicode block)
+Pwll Du Tunnel,instanceOf,tunnel,Pwll Du Tunnel
+Pwll Du Tunnel,location,Wales,Pwll Du Tunnel
+Pwll Du Tunnel,location,United Kingdom,Pwll Du Tunnel
+Pwll Du Tunnel,connects,Gower Peninsula,Pwll Du Tunnel
+Pwll Du Tunnel,connects,Swallowfield,Pwll Du Tunnel
+Pwll Du Tunnel,commissioningDate,1825,Pwll Du Tunnel
+Pwll Du Tunnel,length,67,Pwll Du Tunnel
+Taj ol-Molouk,instanceOf,Q474613,Taj ol-Molouk
+Taj ol-Molouk,givenName,Taj ol-Molouk,Taj ol-Molouk
+Taj ol-Molouk,familyName,Pahlavi,Taj ol-Molouk
+Taj ol-Molouk,spouse,Reza Shah,Taj ol-Molouk
+Taj ol-Molouk,child,Mohammad Reza Pahlavi,Taj ol-Molouk
+Taj ol-Molouk,child,Abdul Karim Pahlavi,Taj ol-Molouk
+Taj ol-Molouk,child,Mahmoud Reza Pahlavi,Taj ol-Molouk
+Taj ol-Molouk,child,Fatima Pahlavi,Taj ol-Molouk
+Altoman Vojinović,instanceOf,Human,Altoman Vojinović
+Altoman Vojinović,givenName,Altoman,Altoman Vojinović
+Altoman Vojinović,familyName,Vojinović,Altoman Vojinović
+Altoman Vojinović,dateOfBirth,14th century,Altoman Vojinović
+Altoman Vojinović,placeOfBirth,Bosnia and Herzegovina,Altoman Vojinović
+Altoman Vojinović,occupation,nobleman,Altoman Vojinović
+Altoman Vojinović,countryOfCitizenship,Kingdom of Bosnia,Altoman Vojinović
+2019–20 Bulgarian Cup,instanceOf,Bulgarian Cup,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,startDate,2019,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,endDate,2020,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,country,Bulgaria,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,sportsSeason,2019–20 season,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,previousSeason,2018–19 Bulgarian Cup,2019–20 Bulgarian Cup
+2019–20 Bulgarian Cup,nextSeason,2020–21 Bulgarian Cup,2019–20 Bulgarian Cup
+Burmali Minare Mosque,instanceOf,mosque,Burmali Minare Mosque
+Burmali Minare Mosque,location,Turkey,Burmali Minare Mosque
+Burmali Minare Mosque,architecturalStyle,Ottoman architecture,Burmali Minare Mosque
+Kraton Kacirebonan,instanceOf,Kraton,Kraton Kacirebonan
+Kraton Kacirebonan,location,Cirebon,Kraton Kacirebonan
+Kraton Kacirebonan,location,Indonesia,Kraton Kacirebonan
+Nicobi River,instanceOf,river,Nicobi River
+Nicobi River,locatedIn,Andaman and Nicobar Islands,Nicobi River
+Nicobi River,country,India,Nicobi River
+Shearwater (schooner),instanceOf,schooner,Shearwater (schooner)
+Shearwater (schooner),countryOfOrigin,United States,Shearwater (schooner)
+Shearwater (schooner),hullType,wooden hull,Shearwater (schooner)
+Shearwater (schooner),propulsion,sail,Shearwater (schooner)
+Shearwater (schooner),shipOwner,Newport Harbor Nautical Museum,Shearwater (schooner)
+Shearwater (schooner),shipClass,tall ship,Shearwater (schooner)
+Shearwater (schooner),portOfRegistry,"Newport Beach, California",Shearwater (schooner)
+Issaka Assane Karanta,instanceOf,Q5,Issaka Assane Karanta
+Issaka Assane Karanta,givenName,Issaka Assane,Issaka Assane Karanta
+Issaka Assane Karanta,familyName,Karanta,Issaka Assane Karanta
+Issaka Assane Karanta,dateOfBirth,1968,Issaka Assane Karanta
+Issaka Assane Karanta,isCitizenOf,Burkina Faso,Issaka Assane Karanta
+Issaka Assane Karanta,occupation,diplomat,Issaka Assane Karanta
+Issaka Assane Karanta,positionHeld,ambassador of Burkina Faso to Germany,Issaka Assane Karanta
+Schizonycha ruficollis,instanceOf,Species,Schizonycha ruficollis
+Schizonycha ruficollis,family,Elateridae,Schizonycha ruficollis
+Schizonycha ruficollis,genus,Schizonycha,Schizonycha ruficollis
+Wilhelm Ellis Rau Palace,instanceOf,palace,Wilhelm Ellis Rau Palace
+Wilhelm Ellis Rau Palace,location,Bucharest,Wilhelm Ellis Rau Palace
+Wilhelm Ellis Rau Palace,architect,Wilhelm Ellis Rau,Wilhelm Ellis Rau Palace
+2010 Southern Conference men's basketball tournament,instanceOf,Southern Conference men's basketball tournament,2010 Southern Conference men's basketball tournament
+2010 Southern Conference men's basketball tournament,year,2010,2010 Southern Conference men's basketball tournament
+2010 Southern Conference men's basketball tournament,sportsLeague,Southern Conference,2010 Southern Conference men's basketball tournament
+2010 Southern Conference men's basketball tournament,hasWinner,Wofford Terriers men's basketball,2010 Southern Conference men's basketball tournament
+2010 Southern Conference men's basketball tournament,hasFinalist,Samford Bulldogs men's basketball,2010 Southern Conference men's basketball tournament
+2010 Southern Conference men's basketball tournament,location,"Greenville, South Carolina",2010 Southern Conference men's basketball tournament
+Elston Grey-Turner,instanceOf,Human,Elston Grey-Turner
+Elston Grey-Turner,givenName,Elston,Elston Grey-Turner
+Elston Grey-Turner,familyName,Grey-Turner,Elston Grey-Turner
+Keiser Witte,instanceOf,steam locomotive,Keiser Witte
+Keiser Witte,manufacturer,B&O,Keiser Witte
+Keiser Witte,buildYear,1899,Keiser Witte
+Keiser Witte,wheelConfiguration,4-6-4,Keiser Witte
+Keiser Witte,topSpeed,112 km/h,Keiser Witte
+Keiser Witte,name,Keiser Witte,Keiser Witte
+Keiser Witte,preservedAt,B&O Railroad Museum,Keiser Witte
+Denmark in the Eurovision Song Contest 2023,instanceOf,Country in the Eurovision Song Contest,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,participatingCountry,Denmark,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,contest,Eurovision Song Contest 2023,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,performingLanguage,English,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,performer,Keld Heick,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,song,Love Is Back,Denmark in the Eurovision Song Contest 2023
+Denmark in the Eurovision Song Contest 2023,semiFinal,Eurovision Song Contest 2023 Semi-Final 2,Denmark in the Eurovision Song Contest 2023
+2025 UCI World Tour,instanceOf,UCI World Tour,2025 UCI World Tour
+2025 UCI World Tour,startDate,2025,2025 UCI World Tour
+2025 UCI World Tour,organizer,Union Cycliste Internationale,2025 UCI World Tour
+2025 UCI World Tour,competitionClass,men's cycling,2025 UCI World Tour
+2025 UCI World Tour,hasPart,2025 Tour de France,2025 UCI World Tour
+2025 UCI World Tour,hasPart,2025 Giro d'Italia,2025 UCI World Tour
+2025 UCI World Tour,hasPart,2025 Vuelta a España,2025 UCI World Tour
+Internazionali di Tennis Città di Vicenza,instanceOf,sports tournament,Internazionali di Tennis Città di Vicenza
+Internazionali di Tennis Città di Vicenza,location,Vicenza,Internazionali di Tennis Città di Vicenza
+Internazionali di Tennis Città di Vicenza,sport,tennis,Internazionali di Tennis Città di Vicenza
+Internazionali di Tennis Città di Vicenza,category,ATP Challenger Tour,Internazionali di Tennis Città di Vicenza
+Sam Scott (rugby union),instanceOf,Q1048572,Sam Scott (rugby union)
+Sam Scott (rugby union),birthDate,1993-05-19,Sam Scott (rugby union)
+Sam Scott (rugby union),birthPlace,Glasgow,Sam Scott (rugby union)
+Sam Scott (rugby union),countryOfCitizenship,Scotland,Sam Scott (rugby union)
+Sam Scott (rugby union),givenName,Sam,Sam Scott (rugby union)
+Sam Scott (rugby union),familyName,Scott,Sam Scott (rugby union)
+Sam Scott (rugby union),position,Rugby union prop,Sam Scott (rugby union)
+Sam Scott (rugby union),hasWorksInTheCollection,Scotland national rugby union team,Sam Scott (rugby union)
+Royal Textile Academy of Bhutan,instanceOf,textile academy,Royal Textile Academy of Bhutan
+Royal Textile Academy of Bhutan,location,Bhutan,Royal Textile Academy of Bhutan
+Royal Textile Academy of Bhutan,foundingYear,1982,Royal Textile Academy of Bhutan
+Royal Textile Academy of Bhutan,founder,King Jigme Dorji Wangchuck,Royal Textile Academy of Bhutan
+Royal Textile Academy of Bhutan,focus,textile preservation,Royal Textile Academy of Bhutan
+Royal Textile Academy of Bhutan,focus,weaving,Royal Textile Academy of Bhutan
+United Nations Security Council Resolution 2532,instanceOf,United Nations Security Council Resolution,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,adoptedBy,United Nations Security Council,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,adoptionDate,2020-05-01,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,number,2532,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,topic,COVID-19 pandemic,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,topic,Global health,United Nations Security Council Resolution 2532
+United Nations Security Council Resolution 2532,topic,International cooperation,United Nations Security Council Resolution 2532
+Dekpura Halt railway station,instanceOf,railway station,Dekpura Halt railway station
+Dekpura Halt railway station,locatedIn,India,Dekpura Halt railway station
+Dekpura Halt railway station,country,India,Dekpura Halt railway station
+Dekpura Halt railway station,serves,Dekpura,Dekpura Halt railway station
+Owston's Warehouse,instanceOf,warehouse,Owston's Warehouse
+Owston's Warehouse,location,Sheffield,Owston's Warehouse
+Owston's Warehouse,architect,Alfred Waterhouse,Owston's Warehouse
+Owston's Warehouse,builtYear,1887,Owston's Warehouse
+Owston's Warehouse,grade,Grade II listed building,Owston's Warehouse
+University of Michigan Rogel Cancer Center,instanceOf,cancer center,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,partOf,University of Michigan,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,locatedIn,"Ann Arbor, Michigan",University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,namedAfter,Gilbert B. Rogel,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,foundedBy,University of Michigan Health System,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,specializesIn,oncology,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,accreditedBy,American Cancer Society,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,provides,cancer treatment,University of Michigan Rogel Cancer Center
+University of Michigan Rogel Cancer Center,conductsResearchIn,cancer research,University of Michigan Rogel Cancer Center
+Equestrian at the 1956 Summer Olympics – Team jumping,instanceOf,Olympic equestrian event,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,partOf,Equestrian at the 1956 Summer Olympics,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,discipline,Equestrian,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,competitionType,Team event,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,eventType,Jumping,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,year,1956,Equestrian at the 1956 Summer Olympics – Team jumping
+Equestrian at the 1956 Summer Olympics – Team jumping,olympicsEdition,1956 Summer Olympics,Equestrian at the 1956 Summer Olympics – Team jumping
+For the Liberation of Shusha Medal,instanceOf,medal,For the Liberation of Shusha Medal
+For the Liberation of Shusha Medal,country,Azerbaijan,For the Liberation of Shusha Medal
+For the Liberation of Shusha Medal,year,2020,For the Liberation of Shusha Medal
+For the Liberation of Shusha Medal,namedAfter,Shusha,For the Liberation of Shusha Medal
+For the Liberation of Shusha Medal,awardFor,liberation of Shusha,For the Liberation of Shusha Medal
+Smithland Lock and Dam,instanceOf,lock and dam,Smithland Lock and Dam
+Smithland Lock and Dam,locatedIn,United States,Smithland Lock and Dam
+Smithland Lock and Dam,locatedOn,Ohio River,Smithland Lock and Dam
+Smithland Lock and Dam,hasPart,Smithland Dam,Smithland Lock and Dam
+Smithland Lock and Dam,hasPart,Smithland Lock,Smithland Lock and Dam
+Smithland Lock and Dam,operatedBy,United States Army Corps of Engineers,Smithland Lock and Dam
+Smithland Lock and Dam,locatedIn,Kentucky,Smithland Lock and Dam
+Smithland Lock and Dam,locatedIn,Illinois,Smithland Lock and Dam
+2015–16 Boston University Terriers men's basketball team,instanceOf,basketball team,2015–16 Boston University Terriers men's basketball team
+2015–16 Boston University Terriers men's basketball team,season,2015-16,2015–16 Boston University Terriers men's basketball team
+2015–16 Boston University Terriers men's basketball team,school,Boston University,2015–16 Boston University Terriers men's basketball team
+2015–16 Boston University Terriers men's basketball team,league,Patriot League,2015–16 Boston University Terriers men's basketball team
+2015–16 Boston University Terriers men's basketball team,coach,Joe Jones,2015–16 Boston University Terriers men's basketball team
+Forse che sì forse che no,instanceOf,novel,Forse che sì forse che no
+Forse che sì forse che no,author,Italo Calvino,Forse che sì forse che no
+Forse che sì forse che no,publishedIn,Nuova Rivista di Letture,Forse che sì forse che no
+Forse che sì forse che no,year,1981,Forse che sì forse che no
+1913–14 Wisconsin Badgers men's basketball team,instanceOf,basketball team,1913–14 Wisconsin Badgers men's basketball team
+1913–14 Wisconsin Badgers men's basketball team,partOf,University of Wisconsin–Madison,1913–14 Wisconsin Badgers men's basketball team
+1913–14 Wisconsin Badgers men's basketball team,season,1913–14,1913–14 Wisconsin Badgers men's basketball team
+1913–14 Wisconsin Badgers men's basketball team,league,Western Conference,1913–14 Wisconsin Badgers men's basketball team
+1913–14 Wisconsin Badgers men's basketball team,coach,Walter Meanwell,1913–14 Wisconsin Badgers men's basketball team
+Hypogeum of the Volumnius family,instanceOf,Etruscan tomb,Hypogeum of the Volumnius family
+Hypogeum of the Volumnius family,location,Perugia,Hypogeum of the Volumnius family
+Hypogeum of the Volumnius family,namedAfter,Volumnius family,Hypogeum of the Volumnius family
+Hypogeum of the Volumnius family,type,Hypogeum,Hypogeum of the Volumnius family
+Hypogeum of the Volumnius family,inception,2nd century BC,Hypogeum of the Volumnius family
+Abang Iskandar Abang Hashim,instanceOf,Q5,Abang Iskandar Abang Hashim
+Abang Iskandar Abang Hashim,givenName,Abang Iskandar,Abang Iskandar Abang Hashim
+Abang Iskandar Abang Hashim,familyName,Abang Hashim,Abang Iskandar Abang Hashim
+Abang Iskandar Abang Hashim,positionHeld,Chief Justice of Malaysia,Abang Iskandar Abang Hashim
+Abang Iskandar Abang Hashim,memberOf,Federal Court of Malaysia,Abang Iskandar Abang Hashim
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,instanceOf,Paralympic swimming event,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,partOf,Swimming at the 2008 Summer Paralympics,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,hasGender,male,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,hasClassification,S12,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,hasDistance,50 metre,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12,stroke,freestyle,Swimming at the 2008 Summer Paralympics – Men's 50 metre freestyle S12
+Ian Scott (ice hockey),instanceOf,Q5,Ian Scott (ice hockey)
+Ian Scott (ice hockey),givenName,Ian,Ian Scott (ice hockey)
+Ian Scott (ice hockey),familyName,Scott,Ian Scott (ice hockey)
+Ian Scott (ice hockey),dateOfBirth,1981-06-16,Ian Scott (ice hockey)
+Ian Scott (ice hockey),occupation,ice hockey player,Ian Scott (ice hockey)
+Ian Scott (ice hockey),position,centre,Ian Scott (ice hockey)
+Ian Scott (ice hockey),draftTeam,Edmonton Oilers,Ian Scott (ice hockey)
+Ian Scott (ice hockey),draftYear,1999,Ian Scott (ice hockey)
+Ian Scott (ice hockey),draftRound,3,Ian Scott (ice hockey)
+Ian Scott (ice hockey),draftOverall,80,Ian Scott (ice hockey)
+Latin American Music Awards of 2016,instanceOf,Latin American Music Awards,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,year,2016,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,location,Mandalay Bay Events Center,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,presenter,Univision,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,host,Wendy Williams,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,host,Alfred Molina,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,award,Favorite Pop/Rock Song,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,award,Favorite Urban Song,Latin American Music Awards of 2016
+Latin American Music Awards of 2016,award,Favorite Tropical Song,Latin American Music Awards of 2016
+Skopunarfjørður,instanceOf,fjord,Skopunarfjørður
+Skopunarfjørður,locatedIn,Faroe Islands,Skopunarfjørður
+Skopunarfjørður,location,Atlantic Ocean,Skopunarfjørður
+Skopunarfjørður,partOf,Suðuroy,Skopunarfjørður
+Skopunarfjørður,connects,Atlantic Ocean,Skopunarfjørður
+Skopunarfjørður,separates,islands,Skopunarfjørður
+Wedding of Prince Felipe and Letizia Ortiz,instanceOf,wedding,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,location,Almudena Cathedral,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,date,"May 22, 2004",Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,participant,Felipe VI of Spain,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,participant,Letizia Ortiz Rocasolano,Wedding of Prince Felipe and Letizia Ortiz
+Wedding of Prince Felipe and Letizia Ortiz,religiousLeader,Ricardo Blázquez,Wedding of Prince Felipe and Letizia Ortiz
+2001 Copa Merconorte,instanceOf,Copa Merconorte,2001 Copa Merconorte
+2001 Copa Merconorte,year,2001,2001 Copa Merconorte
+2001 Copa Merconorte,editionOf,Copa Merconorte,2001 Copa Merconorte
+2001 Copa Merconorte,participant,América de Cali,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Atlético Nacional,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Deportivo Cali,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Independiente Santa Fe,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Once Caldas,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Real Cartagena,2001 Copa Merconorte
+2001 Copa Merconorte,participant,Unión Magdalena,2001 Copa Merconorte
+Pediments of the Parthenon,instanceOf,pediment,Pediments of the Parthenon
+Pediments of the Parthenon,partOf,Parthenon,Pediments of the Parthenon
+Pediments of the Parthenon,location,Acropolis of Athens,Pediments of the Parthenon
+Pediments of the Parthenon,createdBy,Phidias,Pediments of the Parthenon
+Pediments of the Parthenon,depicts,mythological scene,Pediments of the Parthenon
+Pediments of the Parthenon,material,marble,Pediments of the Parthenon
+Pediments of the Parthenon,period,Ancient Greek,Pediments of the Parthenon
+Pediments of the Parthenon,style,Classical architecture,Pediments of the Parthenon
+Boonruen Choonhavan,instanceOf,Q5,Boonruen Choonhavan
+Boonruen Choonhavan,givenName,Boonruen,Boonruen Choonhavan
+Boonruen Choonhavan,familyName,Choonhavan,Boonruen Choonhavan
+Boonruen Choonhavan,dateOfBirth,1932-05-31,Boonruen Choonhavan
+Boonruen Choonhavan,dateOfDeath,2021-08-09,Boonruen Choonhavan
+Boonruen Choonhavan,placeOfBirth,Thailand,Boonruen Choonhavan
+Boonruen Choonhavan,placeOfDeath,Thailand,Boonruen Choonhavan
+Boonruen Choonhavan,occupation,politician,Boonruen Choonhavan
+Boonruen Choonhavan,positionHeld,Member of the House of Representatives,Boonruen Choonhavan
+Boonruen Choonhavan,countryOfCitizenship,Thailand,Boonruen Choonhavan
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,instanceOf,Sports event,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,partOf,Athletics at the 2004 Summer Paralympics,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Hassan Falah,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Mario Sategna,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Christos Tsioutsias,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Franz-Wilhelm Stoleberg,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Maksym Medvid,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Roman Akhmedov,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Yuri Charkov,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Alois Nigg,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58
+Athletics at the 2004 Summer Paralympics – Men's shot put F52–58,hasCompetitor,Heinz-Wolfgang Raidt,Athletics at the 2004 Summer Paralympics – Men's shot put F52–58

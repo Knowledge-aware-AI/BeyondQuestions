@@ -1,0 +1,33 @@
+subject,predicate,object,subject_name
+Mediterranean Logistics Coordination Agency,instanceOf,logistics coordination agency,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,location,Mediterranean region,Mediterranean Logistics Coordination Agency
+Helios Prize for Digital Arts,instanceOf,award,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,location,Israel,Helios Prize for Digital Arts
+Helios Prize for Digital Arts,namedAfter,Helios,Helios Prize for Digital Arts
+Valdora Strait,instanceOf,strait,Valdora Strait
+Valdora Strait,locatedIn,Antarctica,Valdora Strait
+Valdora Strait,separates,Robert Island,Valdora Strait
+Valdora Strait,separates,Nelson Island,Valdora Strait
+Milan Flying Public Transport System,instanceOf,public transport system,Milan Flying Public Transport System
+Milan Flying Public Transport System,locatedIn,Milan,Milan Flying Public Transport System
+Milan Flying Public Transport System,typeOfTransport,flying,Milan Flying Public Transport System
+Milan Flying Public Transport System,modeOfTransport,airborne,Milan Flying Public Transport System
+Gulf of Varennes,instanceOf,gulf,Gulf of Varennes
+Gulf of Varennes,locatedIn,Quebec,Gulf of Varennes
+Gulf of Varennes,locatedIn,Canada,Gulf of Varennes
+Gulf of Varennes,partOf,Saint Lawrence River,Gulf of Varennes
+Gulf of Varennes,connectedTo,Saint Lawrence River,Gulf of Varennes
+U-Bahn Dresden,instanceOf,rapid transit system,U-Bahn Dresden
+U-Bahn Dresden,location,Dresden,U-Bahn Dresden
+U-Bahn Dresden,numberOfLines,3,U-Bahn Dresden
+U-Bahn Dresden,numberOfStations,47,U-Bahn Dresden
+U-Bahn Dresden,opened,1992,U-Bahn Dresden
+U-Bahn Dresden,operator,Verkehrsgesellschaft Dresden,U-Bahn Dresden
+U-Bahn Dresden,type,underground,U-Bahn Dresden
+International Airport of Andorra,instanceOf,airport,International Airport of Andorra
+International Airport of Andorra,location,Andorra,International Airport of Andorra
+International Airport of Andorra,name,International Airport of Andorra,International Airport of Andorra
+International Airport of Andorra,IATA,none,International Airport of Andorra
+International Airport of Andorra,ICAO,none,International Airport of Andorra
+International Airport of Andorra,serves,Andorra la Vella,International Airport of Andorra
+International Airport of Andorra,status,closed,International Airport of Andorra
