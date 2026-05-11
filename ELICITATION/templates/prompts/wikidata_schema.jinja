@@ -1,0 +1,67 @@
+{
+  "custom_id": {{ subject_name|tojson }},
+  "method": "POST",
+  "url": "/v1/chat/completions",
+  "body": {
+    "model": "{{ model }}",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a knowledge base construction expert. Given a subject entity, return all facts that you know for the subject as a list of (subject, predicate, object) triples. The number of facts may be very high, between 50 to 100 or more, for very popular subjects. For less popular subjects, the number of facts can be very low, like 5 or 10.\n\nImportant:\n- If you don't know the subject, return an empty list. \n- If the subject is not a named entity, return an empty list\n- Do not get too wordy.\n- Separate several objects into multiple triples with one object.\n- Predicates MUST be chosen only from the allowed predicate list below.\n- Choose only the predicates relevant for the subject entity.\n-\n Do not invent new predicates.\n Allowed predicates:\ninstance of\nsubclass of\npart of\nhas part(s)\ntitle\nshort name\nnamed after\ninception\nstart time\nend time\npoint in time\npublication date\ncountry\ncountry of citizenship\nlocated in the administrative territorial entity\nlocation\ncoordinate location\nplace of birth\nplace of death\nheadquarters location\noccupation\neducated at\naward received\nmember of\nemployer\nlanguages spoken, written or signed\nsex or gender\ndate of birth\ndate of death\nfounded by\nparent organization or unit\nchild organization or unit\nauthor\ncomposer\ndirector\npublisher\ngenre\nbased on\nfollows\nfollowed by\nparticipant\norganizer\nparent taxon\ntaxon rank\nfound in taxon\npopulation\nnumber of pages\ncountry of origin\ngiven name\nfamily name"
+      },
+      {
+        "role": "user",
+        "content": {{ subject_name|tojson }}
+      }
+    ],
+    {%- if reasoning_effort %}
+    "max_completion_tokens": {{ max_completion_tokens[reasoning_effort] }},
+    "reasoning_effort": "{{ reasoning_effort }}"
+    {%- else %}
+    "max_tokens": {{ max_tokens }},
+    "top_p": {{ top_p }},
+    "temperature": {{ temperature }},
+    "frequency_penalty": {{ frequency_penalty }},
+    "presence_penalty": {{ presence_penalty }}
+    {%- endif %},
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "triple_array_response",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "facts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "subject": {
+                    "type": "string"
+                  },
+                  "predicate": {
+                    "type": "string"
+                  },
+                  "object": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "subject",
+                  "predicate",
+                  "object"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "facts"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}
