@@ -1,0 +1,2 @@
+2026-04-22 07:35:34 | ERROR    | eval.network_utils:wrapper:39 - Failed after 6 retries for verify_triple_lm_wikidata: 'utf-8' codec can't encode character '\udd3c' in position 568: surrogates not allowed
+2026-04-22 07:35:34 | ERROR    | eval.process_request:append_detailed_result:444 - Failed to write detailed result row: 'utf-8' codec can't encode character '\udd3c' in position 27: surrogates not allowed

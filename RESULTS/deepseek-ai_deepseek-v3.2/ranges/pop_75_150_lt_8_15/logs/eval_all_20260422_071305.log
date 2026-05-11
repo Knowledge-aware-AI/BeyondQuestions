@@ -1,0 +1,329 @@
+2026-04-22 07:13:05 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/lugi922h/work/OKBENCH/results/deepseek-ai_deepseek-v3.2/ranges/pop_75_150_lt_8_15/logs
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:115 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/lugi922h/work/OKBENCH/results/deepseek-ai_deepseek-v3.2/ranges/pop_75_150_lt_8_15
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-04-22 07:13:05 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Seeds (TV on the Radio album), received generally... => a
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json (200 entities)
+2026-04-22 07:13:05 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cara Delevingne. Marking as Neutral.
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Ground truth file: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json
+2026-04-22 07:13:05 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Thunder Bay Symphony Orchestra. Marking as Neutral.
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Loaded 200 entities from cache
+2026-04-22 07:13:05 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_triple_extractor:__init__:54 - Max workers for parallel processing: 5
+2026-04-22 07:13:05 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Secrets of Rætikon, type, game)
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-04-22 07:13:05 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1666 characters
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:441 - Starting parallel batch processing of 200 entities with 5 workers
+2026-04-22 07:13:05 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:05 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:469 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/lugi922h/work/OKBENCH/results/deepseek-ai_deepseek-v3.2/ranges/pop_75_150_lt_8_15/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/lugi922h/work/OKBENCH/elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_75_150_lt_8_15
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-04-22 07:13:05 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/lugi922h/work/OKBENCH/results/deepseek-ai_deepseek-v3.2/ranges/pop_75_150_lt_8_15/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-22 07:13:05 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-04-22 07:13:05 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples
+2026-04-22 07:13:05 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Donald_L._Conner_House: 19 passages, 19 embeddings
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Donald L. Conner House, instanceOf, house)
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, wikipedia, wikipedia, wikipedia, web, web, web, web, web
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Ecublens-Rue railway station, railway line, Paléz... => c
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Bari La Fitta railway station, located in, Ceglie del Campo, Italy)
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 585 characters
+2026-04-22 07:13:06 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Erich Correns (chemist), educated at, Gymnasium i... => c
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Giulio Masetti (bishop), deathYear, 1624)
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 726 characters
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Anybody (Movin' On), reached, number 37 on the Eu... => c
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Don Quixote (1973 film), production designed and costumed by, Barry Kay)
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 349 characters
+2026-04-22 07:13:08 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:09 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Donald L. Conner House, instanceOf, house)... => a
+2026-04-22 07:13:09 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:09 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Donald L. Conner House, NRHP reference number, 83000050)
+2026-04-22 07:13:09 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, wikipedia, wikipedia, web, web, web, web, web
+2026-04-22 07:13:09 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Secrets of Rætikon, type, game)... => a
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (2005–06 Kuwaiti Premier League, hasParticipatingTeam, Al-Arabi Club)
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 902 characters
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Bari La Fitta railway station, located in, Ceglie... => c
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Zug Postplatz railway station, has service, Zug Stadtbahn S2)
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 744 characters
+2026-04-22 07:13:11 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:12 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Giulio Masetti (bishop), deathYear, 1624)... => b
+2026-04-22 07:13:12 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:12 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Valentina Alazraki, isConferencista, true)
+2026-04-22 07:13:12 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 736 characters
+2026-04-22 07:13:12 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:13 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Don Quixote (1973 film), production designed and ... => c
+2026-04-22 07:13:13 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:13 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (The Associate (1946 film), stars, Nelly Montiel)
+2026-04-22 07:13:13 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 392 characters
+2026-04-22 07:13:13 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:15 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Donald L. Conner House, NRHP reference number, 83... => c
+2026-04-22 07:13:15 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:15 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Donald L. Conner House, located in, United States)
+2026-04-22 07:13:15 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, wikipedia, web, wikipedia, wikipedia, web, web, web, web
+2026-04-22 07:13:15 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:17 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Zug Postplatz railway station, has service, Zug S... => c
+2026-04-22 07:13:17 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:17 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Rybny, Serafimovichsky District, Volgograd Oblast, distance from administrative centre, 42 km)
+2026-04-22 07:13:17 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1373 characters
+2026-04-22 07:13:17 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (2005–06 Kuwaiti Premier League, hasParticipatingT... => c
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Zhangbei station, locatedIn, Zhubei City)
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1890 characters
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (The Associate (1946 film), stars, Nelly Montiel)... => c
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Mark Felt: The Man Who Brought Down the White House, premiered at, the Toronto International Film Festival on September 8, 2017)
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 415 characters
+2026-04-22 07:13:18 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Valentina Alazraki, isConferencista, true)... => c
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Fondazione Pisa, disposedSharesForCash, €156,730,172)
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 699 characters
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:19 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Donald L. Conner House, located in, United States... => a
+2026-04-22 07:13:19 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Arcade_game: 42 passages, 42 embeddings
+2026-04-22 07:13:20 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:20 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, hasPart, Button)
+2026-04-22 07:13:20 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, web, wikipedia, web, web, web, wikipedia
+2026-04-22 07:13:20 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:22 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Rybny, Serafimovichsky District, Volgograd Oblast... => c
+2026-04-22 07:13:22 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:22 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Vine Area Historic District, is located in, Kalamazoo, Michigan)
+2026-04-22 07:13:22 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1201 characters
+2026-04-22 07:13:22 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Zhangbei station, locatedIn, Zhubei City)... => b
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (The Cleaner (2021 film), features, King Orba as Buck Enderly)
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 925 characters
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Fondazione Pisa, disposedSharesForCash, €156,730,... => c
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres, location, Sea Forest Waterway)
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1394 characters
+2026-04-22 07:13:23 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:24 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, hasPart, Button)... => c
+2026-04-22 07:13:24 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:24 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, instanceOf, Video game)
+2026-04-22 07:13:24 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, wikipedia, wikipedia, wikipedia, web, web, wikipedia, web, web, web
+2026-04-22 07:13:24 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:25 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Mark Felt: The Man Who Brought Down the White Hou... => c
+2026-04-22 07:13:25 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:25 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (The Coyote (film), rating, 59%)
+2026-04-22 07:13:25 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 268 characters
+2026-04-22 07:13:25 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:27 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Vine Area Historic District, is located in, Kalam... => a
+2026-04-22 07:13:27 | WARNING  | eval.process_request:compute_recall_wiki_by_category:1300 - No elicited triples found for subject: Henley Brook bus station (category: location)
+2026-04-22 07:13:27 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:27 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Coalpit Heath railway station, openedBy, Great Western Railway)
+2026-04-22 07:13:27 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 582 characters
+2026-04-22 07:13:27 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Canoeing at the 2016 Summer Olympics – Women's K-... => b
+2026-04-22 07:13:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (William Collingwood (1819–1903), signed, with monogram and dated 'WC 1870')
+2026-04-22 07:13:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 531 characters
+2026-04-22 07:13:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (The Coyote (film), rating, 59%)... => c
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Los Motivos de Luz, releaseYear, 1985)
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 216 characters
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (The Cleaner (2021 film), features, King Orba as B... => c
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Duolun County, type, Place)
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1549 characters
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:29 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, instanceOf, Video game)... => a
+2026-04-22 07:13:30 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:30 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, hasGenre, Racing game)
+2026-04-22 07:13:30 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, wikipedia, wikipedia, wikipedia, wikipedia, web, web, web
+2026-04-22 07:13:30 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Los Motivos de Luz, releaseYear, 1985)... => b
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (The Edge (2010 film), features, Jamie Foreman)
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 415 characters
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (William Collingwood (1819–1903), signed, with mon... => c
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (United Nations Security Council Resolution 2397, calls for repatriation of nationals within, 24 months)
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1029 characters
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Coalpit Heath railway station, openedBy, Great We... => c
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Riddes railway station, located in, Swiss canton of Valais)
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 857 characters
+2026-04-22 07:13:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Duolun County, type, Place)... => a
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, hasGenre, Racing game)... => c
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (1993 Torneio Rio-São Paulo, group_size, 4)
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1807 characters
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, hasGenre, Puzzle game)
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, wikipedia, wikipedia, wikipedia, web, wikipedia, web, web
+2026-04-22 07:13:35 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:36 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Riddes railway station, located in, Swiss canton ... => a
+2026-04-22 07:13:36 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:36 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Suola (river), instance of, river)
+2026-04-22 07:13:36 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 184 characters
+2026-04-22 07:13:36 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:37 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (United Nations Security Council Resolution 2397, ... => c
+2026-04-22 07:13:37 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:37 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (St Luke's Church, Holbrooks, has priest, Fr Lowder)
+2026-04-22 07:13:37 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 654 characters
+2026-04-22 07:13:37 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (The Edge (2010 film), features, Jamie Foreman)... => c
+2026-04-22 07:13:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Railway Children (film), included in list, 100 Greatest Family Films)
+2026-04-22 07:13:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 408 characters
+2026-04-22 07:13:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, hasGenre, Puzzle game)... => c
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Suola (river), instance of, river)... => a
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Aabenraa County, merged with, three other counties to form South Jutland County)
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 990 characters
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, platform, Console)
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, wikipedia, web, wikipedia, web, web, web
+2026-04-22 07:13:39 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (1993 Torneio Rio-São Paulo, group_size, 4)... => c
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Engine House No. 6 (Wichita, Kansas), has architectural style, Tudor)
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1672 characters
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (St Luke's Church, Holbrooks, has priest, Fr Lowde... => c
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Hymnal of a Troubled Man's Mind, artist, Oliver Anthony)
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 552 characters
+2026-04-22 07:13:41 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:42 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Railway Children (film), included in list, 100 Gr... => c
+2026-04-22 07:13:42 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:42 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Tenebrae Responsoria (Gesualdo), recording_by, Collegium Vocale Gent)
+2026-04-22 07:13:42 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 316 characters
+2026-04-22 07:13:42 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:44 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, platform, Console)... => c
+2026-04-22 07:13:44 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:44 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Arcade game, isSubclassOf, Computer game)
+2026-04-22 07:13:44 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, wikipedia, wikipedia, web, wikipedia, web, wikipedia, web
+2026-04-22 07:13:44 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:45 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Hymnal of a Troubled Man's Mind, artist, Oliver A... => b
+2026-04-22 07:13:45 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:45 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts, location, Olympic Aquatic Centre of the Athens Olympic Sports Complex in Athens, Greece)
+2026-04-22 07:13:45 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1209 characters
+2026-04-22 07:13:45 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Engine House No. 6 (Wichita, Kansas), has archite... => b
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Enciclopedia României, hasTopic, Arhitectură)
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 248 characters
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Aabenraa County, merged with, three other countie... => a
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Emu Point, Western Australia, has reserve, Boronia Reserve)
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1235 characters
+2026-04-22 07:13:46 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:47 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Tenebrae Responsoria (Gesualdo), recording_by, Co... => c
+2026-04-22 07:13:47 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:47 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (A Place Further than the Universe, listed_among, the best anime of the 2010s by IGN)
+2026-04-22 07:13:47 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 421 characters
+2026-04-22 07:13:47 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:49 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Arcade game, isSubclassOf, Computer game)... => a
+2026-04-22 07:13:49 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Buddleja_lindleyana: 23 passages, 23 embeddings
+2026-04-22 07:13:49 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:49 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Buddleja lindleyana, height, 1.5 to 2.5 meters)
+2026-04-22 07:13:49 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, wikipedia, web, web, web
+2026-04-22 07:13:49 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:50 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Enciclopedia României, hasTopic, Arhitectură)... => c
+2026-04-22 07:13:50 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:50 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team, has standings on, FOXSports.com)
+2026-04-22 07:13:50 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1984 characters
+2026-04-22 07:13:50 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:51 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Swimming at the 2004 Summer Paralympics – Men's 4... => a
+2026-04-22 07:13:51 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:51 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Erin Andrews, hasBrand, Wear by Erin Andrews)
+2026-04-22 07:13:51 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 624 characters
+2026-04-22 07:13:51 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (A Place Further than the Universe, listed_among, ... => c
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Shair (film), has character, Beena's mother)
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 297 characters
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Emu Point, Western Australia, has reserve, Boroni... => c
+2026-04-22 07:13:52 | WARNING  | eval.process_request:compute_recall_wiki_by_category:1300 - No elicited triples found for subject: Istana Kota Manggalela (category: location)
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Sugarwell Court, has listed building reference, 1375170)
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 317 characters
+2026-04-22 07:13:52 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:54 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Buddleja lindleyana, height, 1.5 to 2.5 meters)... => a
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Buddleja lindleyana, genus, Buddleja)
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, wikipedia
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (2013–14 Arkansas–Pine Bluff Golden Lions men's ba... => c
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Jyo Achyutananda, starring, Tanikella Bharani)
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1110 characters
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Erin Andrews, hasBrand, Wear by Erin Andrews)... => c
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres, has_location, Folsom, California)
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1020 characters
+2026-04-22 07:13:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:56 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Sugarwell Court, has listed building reference, 1... => c
+2026-04-22 07:13:56 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:56 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Monastery of Saint John the Theologian (Souroti), location, Souroti, Greece)
+2026-04-22 07:13:56 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1973 characters
+2026-04-22 07:13:56 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Shair (film), has character, Beena's mother)... => c
+2026-04-22 07:13:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:13:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Higher (Deborah Cox song), is number one hit number, twelve)
+2026-04-22 07:13:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 274 characters
+2026-04-22 07:13:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:13:59 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Buddleja lindleyana, genus, Buddleja)... => a
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Buddleja lindleyana, instanceOf, flowering plant)
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, wikipedia, web, web, web, web
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Canoeing at the 2024 Summer Olympics – Women's C-... => b
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Seeds (TV on the Radio album), characterized by, hook filled, pop leaning)
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 577 characters
+2026-04-22 07:14:00 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-22 07:14:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Higher (Deborah Cox song), is number one hit numb... => c
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for plant in elicited_triples: Entailment=52, Contradiction=9, Neutral=439
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for event in elicited_triples: Entailment=78, Contradiction=31, Neutral=391
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for scientific_concept in elicited_triples: Entailment=70, Contradiction=27, Neutral=403
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for cultural_concept in elicited_triples: Entailment=52, Contradiction=15, Neutral=432
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for location in elicited_triples: Entailment=60, Contradiction=20, Neutral=420
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for animal in elicited_triples: Entailment=61, Contradiction=17, Neutral=422
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for person in elicited_triples: Entailment=21, Contradiction=24, Neutral=455
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for artifact in elicited_triples: Entailment=64, Contradiction=42, Neutral=394
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for organization in elicited_triples: Entailment=54, Contradiction=23, Neutral=423
+2026-04-22 07:14:01 | INFO     | eval.process_request:compute_recall_wiki_by_category:1362 - Recall (Wiki-Category) for work_of_art in elicited_triples: Entailment=38, Contradiction=67, Neutral=395
+2026-04-22 07:14:01 | INFO     | eval.process_request:write_categorical_results_to_csv:2044 - Categorical results written to /home/lugi922h/work/OKBENCH/results/meta-llama_llama-4-scout-17b-16e-instruct/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_by_category.csv
+2026-04-22 07:14:01 | INFO     | eval.main:main_evaluation:242 - Category-stratified results saved to /home/lugi922h/work/OKBENCH/results/meta-llama_llama-4-scout-17b-16e-instruct/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_by_category.csv
+2026-04-22 07:14:01 | INFO     | eval.process_request:close_detailed_results_file:452 - Detailed results file closed.
+2026-04-22 07:14:01 | INFO     | eval.main:main_evaluation:293 - Detailed per-triple results saved to /home/lugi922h/work/OKBENCH/results/meta-llama_llama-4-scout-17b-16e-instruct/domains/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-22 07:14:01 | INFO     | eval.main:main_evaluation:295 - ================================================================================
+2026-04-22 07:14:01 | INFO     | eval.main:main_evaluation:296 - Triple Verification Completed Successfully
+2026-04-22 07:14:01 | INFO     | eval.main:main_evaluation:297 - ================================================================================
