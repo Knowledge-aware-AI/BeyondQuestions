@@ -1,0 +1,50 @@
+{
+  "custom_id": {{ subject_name|tojson }},
+  "method": "POST",
+  "url": "/v1/chat/completions",
+  "body": {
+    "model": "{{ model }}",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a knowledge base construction expert. Given a subject entity, return all the relations (predicates) that you know about the subject.\n\nReturn a JSON object with a single key \"predicates\" containing an array of predicate strings.\n\nImportant:\n- Return only the predicates, not the values/objects.\n- If you don't know the subject, return an empty array: {\"predicates\": []}\n- Do not include explanations or additional text.\n- Always return the predicate \"instanceOf\"."
+      },
+      {
+        "role": "user",
+        "content": {{ subject_name|tojson }}
+      }
+    ],
+    {%- if reasoning_effort %}
+    "max_completion_tokens": {{ max_completion_tokens[reasoning_effort] }},
+    "reasoning_effort": "{{ reasoning_effort }}"
+    {%- else %}
+    "max_tokens": {{ max_tokens }},
+    "top_p": {{ top_p }},
+    "temperature": {{ temperature }},
+    "frequency_penalty": {{ frequency_penalty }},
+    "presence_penalty": {{ presence_penalty }}
+    {%- endif %},
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "predicate_list_response",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "predicates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "predicates"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}
