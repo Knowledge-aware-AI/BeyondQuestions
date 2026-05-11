@@ -1,0 +1,287 @@
+2026-04-21 19:01:22 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/lugi922h/work/OKBENCH/results/openai_gpt-oss-120b/random/logs
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:115 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/lugi922h/work/OKBENCH/results/openai_gpt-oss-120b/random
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-04-21 19:01:22 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Athletics at the 2014 Asian Games – Men's 800 met... => a
+2026-04-21 19:01:22 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Documentation and Cultural Centre of German Sinti... => c
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json (200 entities)
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Ground truth file: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Loaded 200 entities from cache
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_triple_extractor:__init__:54 - Max workers for parallel processing: 5
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:441 - Starting parallel batch processing of 200 entities with 5 workers
+2026-04-21 19:01:22 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:469 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/lugi922h/work/OKBENCH/results/openai_gpt-oss-120b/random/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/lugi922h/work/OKBENCH/elicited_triples/openai_gpt-oss-120b/random
+2026-04-21 19:01:22 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/St_George's_Church,_Barrow-in-Furness: 20 passages, 20 embeddings
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-04-21 19:01:22 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/lugi922h/work/OKBENCH/results/openai_gpt-oss-120b/random/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-21 19:01:22 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-04-21 19:01:22 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples
+2026-04-21 19:01:22 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/2011_Kütahya_earthquake: 24 passages, 24 embeddings
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Documentation and Cultural Centre of German Sinti and Roma, activity, educational programs)
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St George's Church, Barrow-in-Furness, instanceOf, Anglican church)
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, location, Kütahya Province, western Turkey)
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, wikipedia, web, web, web, wikipedia, web, web, web
+2026-04-21 19:01:23 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:24 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Minusio railway station, is operated by, Swiss Fe... => a
+2026-04-21 19:01:24 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:24 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Erich Correns (chemist), father, Carl Correns)
+2026-04-21 19:01:24 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 945 characters
+2026-04-21 19:01:24 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St George's Church, Barrow-in-Furness, instanceOf... => a
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St George's Church, Barrow-in-Furness, denomination, Church of England)
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Cemetery Without Crosses, creator, Robert Hossein... => a
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Documentation and Cultural Centre of German Sinti and Roma, seeks to present, the cultural contributions of the Sinti and Roma minority in the fields of literature, the fine arts, and music)
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 2861 characters
+2026-04-21 19:01:26 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Documentation and Cultural Centre of German Sinti... => c
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, location, Kütahya Provin... => a
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, magnitudeScale, moment magnitude scale (Mw))
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, wikipedia, web, web, wikipedia, web, web, web, web, web
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Documentation and Cultural Centre of German Sinti and Roma, fundedBy, Federal Government of Germany)
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:27 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Erich Correns (chemist), father, Carl Correns)... => a
+2026-04-21 19:01:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (The Cleaner (2021 film), has plot summary, When middle-aged house cleaner Buck Enderly takes on an eccentric new client, he gets roped into locating her estranged son. Buck tracks down the disturbed young man but in another twist of fate becomes an accomplice to a violent crime.)
+2026-04-21 19:01:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 820 characters
+2026-04-21 19:01:28 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:30 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, magnitudeScale, moment m... => a
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St George's Church, Barrow-in-Furness, denominati... => a
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Documentation and Cultural Centre of German Sinti... => c
+2026-04-21 19:01:31 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/2007–08_St._John's_Red_Storm_men's_basketball_team: 19 passages, 19 embeddings
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, buildingCodeImpact, older structures suffered severe damage)
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, wikipedia, web, web, web, wikipedia, wikipedia, web, web, web
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St George's Church, Barrow-in-Furness, adminDistrict, Borough of Barrow-in-Furness)
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2007–08 St. John's Red Storm men's basketball team, arena, Carnesecca Arena)
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (The Cleaner (2021 film), has plot summary, When m... => c
+2026-04-21 19:01:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Heracleum lehmannianum, skos:altLabel, Heracleum afghanicum Kitam.)
+2026-04-21 19:01:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 382 characters
+2026-04-21 19:01:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:34 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Documentation and Cultural Centre of German Sinti... => c
+2026-04-21 19:01:34 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:34 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (St Helen's Church, Stillingfleet, instance of, church building)
+2026-04-21 19:01:34 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1938 characters
+2026-04-21 19:01:34 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2007–08 St. John's Red Storm men's basketball tea... => a
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2007–08 St. John's Red Storm men's basketball team, headCoach, Norm Roberts)
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St George's Church, Barrow-in-Furness, adminDistr... => c
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, buildingCodeImpact, olde... => a
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St George's Church, Barrow-in-Furness, heritageDesignation, Grade II listed)
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, wikipedia, web, web, web, web, web, web, web, web
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, depthClassification, shallow)
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, wikipedia, web, wikipedia, web, web, web, web, web, web
+2026-04-21 19:01:35 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2007–08 St. John's Red Storm men's basketball tea... => a
+2026-04-21 19:01:38 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Port_of_Henichesk: 14 passages, 14 embeddings
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Port of Henichesk, region, Northern coast of the Sea of Azov)
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (St Helen's Church, Stillingfleet, instance of, ch... => a
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (St Helen's Church, Stillingfleet, isIn, pancake flat landscape)
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1938 characters
+2026-04-21 19:01:38 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Heracleum lehmannianum, skos:altLabel, Heracleum ... => c
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (International Journal of Hindu Studies, abstractedIn, Humanities Index)
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 693 characters
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St George's Church, Barrow-in-Furness, heritageDe... => a
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St George's Church, Barrow-in-Furness, constructionCentury, 19th century)
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, web, wikipedia, web, web, web, web
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, depthClassification, sha... => a
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, housesDamaged, approximately 1,200 houses)
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, wikipedia, web, web, wikipedia, wikipedia, wikipedia, web, web, web
+2026-04-21 19:01:39 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:42 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St George's Church, Barrow-in-Furness, constructi... => a
+2026-04-21 19:01:42 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Sam_Stewart_(rugby_league): 24 passages, 24 embeddings
+2026-04-21 19:01:42 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:42 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Sam Stewart (rugby league), position, wing)
+2026-04-21 19:01:42 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, wikipedia, web, web, web, web, web
+2026-04-21 19:01:42 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (International Journal of Hindu Studies, abstracte... => c
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Heracleum lehmannianum, stemDescription, very stout branching stems)
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 382 characters
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (St Helen's Church, Stillingfleet, isIn, pancake f... => c
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Nardosinone, is isolated from, crude drug N. chinensis)
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1126 characters
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, housesDamaged, approxima... => c
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Port of Henichesk, region, Northern coast of the ... => a
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (2011 Kütahya earthquake, feltIn, Eskişehir)
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, wikipedia, web, web, wikipedia, web, wikipedia, web, web
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Port of Henichesk, nearBodyOfWater, Syvash)
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:43 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:46 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Sam Stewart (rugby league), position, wing)... => c
+2026-04-21 19:01:46 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:46 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Sam Stewart (rugby league), country, Australia)
+2026-04-21 19:01:46 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, web, wikipedia, wikipedia, web, web, web
+2026-04-21 19:01:46 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Nardosinone, is isolated from, crude drug N. chin... => a
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (1993 Torneio Rio-São Paulo, participation, false)
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1293 characters
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Port of Henichesk, nearBodyOfWater, Syvash)... => a
+2026-04-21 19:01:48 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/International_Journal_of_Hindu_Studies: 15 passages, 15 embeddings
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Heracleum lehmannianum, stemDescription, very sto... => c
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Loyola Greyhounds men's soccer, includes, roster)
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 763 characters
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (International Journal of Hindu Studies, indexedIn, ATLA Religion Database)
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, wikipedia, web, web, web, web, web, web, web, web
+2026-04-21 19:01:48 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:49 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (2011 Kütahya earthquake, feltIn, Eskişehir)... => c
+2026-04-21 19:01:49 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/New_Canton,_Virginia: 21 passages, 21 embeddings
+2026-04-21 19:01:49 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:49 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (New Canton, Virginia, zipCode, 24266)
+2026-04-21 19:01:49 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:49 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:50 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Sam Stewart (rugby league), country, Australia)... => c
+2026-04-21 19:01:50 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:50 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Sam Stewart (rugby league), gender, male)
+2026-04-21 19:01:50 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, web, web, wikipedia, web, web, web
+2026-04-21 19:01:50 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:52 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (International Journal of Hindu Studies, indexedIn... => c
+2026-04-21 19:01:52 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:52 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (International Journal of Hindu Studies, eISSN, 1574-9282)
+2026-04-21 19:01:52 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:52 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (New Canton, Virginia, zipCode, 24266)... => c
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (New Canton, Virginia, settlementType, unincorporated community)
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, wikipedia, web, web, web, web, web, web
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Loyola Greyhounds men's soccer, includes, roster)... => c
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Yerevan railway station, located in, Yerevan)
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 647 characters
+2026-04-21 19:01:53 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:54 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Sam Stewart (rugby league), gender, male)... => a
+2026-04-21 19:01:54 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/St_Helen's_Church,_Stillingfleet: 21 passages, 21 embeddings
+2026-04-21 19:01:54 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:54 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St Helen's Church, Stillingfleet, partOf, Ainsty Deanery)
+2026-04-21 19:01:54 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:54 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (1993 Torneio Rio-São Paulo, participation, false)... => c
+2026-04-21 19:01:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Missouri State Penitentiary, hadNotableInmatesIncluding, James Earl Ray)
+2026-04-21 19:01:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 3262 characters
+2026-04-21 19:01:55 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (International Journal of Hindu Studies, eISSN, 15... => c
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (New Canton, Virginia, settlementType, unincorpora... => a
+2026-04-21 19:01:56 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Engine_House_No._6_(Wichita,_Kansas): 15 passages, 15 embeddings
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (International Journal of Hindu Studies, associatedWith, James Madison University)
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Engine House No. 6 (Wichita, Kansas), material, brick)
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:56 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Yerevan railway station, located in, Yerevan)... => a
+2026-04-21 19:01:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:01:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Testosterone (2004 film), starring, Dimitra Matsouka)
+2026-04-21 19:01:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 864 characters
+2026-04-21 19:01:57 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:58 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St Helen's Church, Stillingfleet, partOf, Ainsty ... => c
+2026-04-21 19:01:58 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:58 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St Helen's Church, Stillingfleet, denomination, Church of England)
+2026-04-21 19:01:58 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:58 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Engine House No. 6 (Wichita, Kansas), material, b... => a
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Engine House No. 6 (Wichita, Kansas), architect, unknown)
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (International Journal of Hindu Studies, associate... => a
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (International Journal of Hindu Studies, country, United States)
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:01:59 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Missouri State Penitentiary, hadNotableInmatesInc... => a
+2026-04-21 19:02:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:02:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Toby Fox, composedMusicFor, Deltarune)
+2026-04-21 19:02:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 3985 characters
+2026-04-21 19:02:01 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (St Helen's Church, Stillingfleet, denomination, C... => a
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (St Helen's Church, Stillingfleet, instanceOf, parish church)
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Engine House No. 6 (Wichita, Kansas), architect, ... => c
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Engine House No. 6 (Wichita, Kansas), owner, City of Wichita)
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-04-21 19:02:02 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (International Journal of Hindu Studies, country, ... => c
+2026-04-21 19:02:03 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Evander_Holyfield_vs._Henry_Tillman: 16 passages, 16 embeddings
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Evander Holyfield vs. Henry Tillman, sport, boxing)
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, wikipedia, web, wikipedia, web, wikipedia, web, web, web
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Toby Fox, composedMusicFor, Deltarune)... => a
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_lm_wikidata:166 - === LLM CALL: verify_triple_lm_wikidata ===
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_lm_wikidata:167 - Triple to verify: (Guangdong University of Science and Technology, hasCampus, Jieyang Campus, Huilai, Jieyang City)
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_lm_wikidata:168 - Gold triples length: 1832 characters
+2026-04-21 19:02:03 | DEBUG    | eval.request:verify_triple_lm_wikidata:169 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 19:02:04 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (Testosterone (2004 film), starring, Dimitra Matso... => c
+2026-04-21 19:02:04 | INFO     | eval.process_request:compute_recall_wiki_dir:909 - Recall (Wiki+Web) for elicited_triples: Entailment=134, Contradiction=12, Neutral=354, Errors=0
+2026-04-21 19:02:04 | INFO     | eval.main:main_evaluation:288 - Aggregated results saved to /home/lugi922h/work/OKBENCH/results/google_gemini-3.1-pro-preview/random/medium/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results.csv
+2026-04-21 19:02:04 | INFO     | eval.process_request:close_detailed_results_file:452 - Detailed results file closed.
+2026-04-21 19:02:04 | INFO     | eval.main:main_evaluation:293 - Detailed per-triple results saved to /home/lugi922h/work/OKBENCH/results/google_gemini-3.1-pro-preview/random/medium/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-21 19:02:04 | INFO     | eval.main:main_evaluation:295 - ================================================================================
+2026-04-21 19:02:04 | INFO     | eval.main:main_evaluation:296 - Triple Verification Completed Successfully
+2026-04-21 19:02:04 | INFO     | eval.main:main_evaluation:297 - ================================================================================

@@ -1,0 +1,49 @@
+2026-04-21 15:24:30 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/lugi922h/work/OKBENCH/results/moonshotai_kimi-k2.5/prompts/LMCRAWL/logs
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:115 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/lugi922h/work/OKBENCH/results/moonshotai_kimi-k2.5/prompts/LMCRAWL
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-04-21 15:24:30 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Taekwondo at the 2020 Summer Olympics – Men's 68 ... => a
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json (200 entities)
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Ground truth file: /home/lugi922h/work/OKBENCH/ground_truth/random/200/GT.json
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Loaded 200 entities from cache
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_triple_extractor:__init__:54 - Max workers for parallel processing: 5
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:441 - Starting parallel batch processing of 200 entities with 5 workers
+2026-04-21 15:24:30 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:469 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/lugi922h/work/OKBENCH/results/moonshotai_kimi-k2.5/prompts/LMCRAWL/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/lugi922h/work/OKBENCH/elicited_triples/moonshotai_kimi-k2.5/prompts/LMCRAWL
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-04-21 15:24:30 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/lugi922h/work/OKBENCH/results/moonshotai_kimi-k2.5/prompts/LMCRAWL/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-21 15:24:30 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-04-21 15:24:30 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples
+2026-04-21 15:24:30 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/lugi922h/work/OKBENCH/ground_truth/random/200/rag_cache/Newsmongers: 32 passages, 32 embeddings
+2026-04-21 15:24:30 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 15:24:30 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Taekwondo at the 2020 Summer Olympics – Men's 68 kg, organizer, World Taekwondo)
+2026-04-21 15:24:30 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, wikipedia, web, web, web, web, web
+2026-04-21 15:24:30 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (Newsmongers, instanceOf, literary work)
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: web, web, web, web, web, web, web, web, wikipedia, web
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (The Rough Guide to the Music of Zimbabwe, region,... => c
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:509 - === LLM CALL: verify_triple_with_rag ===
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - Triple: (The Rough Guide to the Music of Zimbabwe, format, Digital download)
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Sources: wikipedia, web, web, web, web, web, web, web, web, wikipedia
+2026-04-21 15:24:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+2026-04-21 15:24:32 | DEBUG    | eval.request:verify_triple_with_rag:529 - RAG verification completed: (Fallout 4: Nuka-World, platform, Microsoft Window... => a
+2026-04-21 15:24:32 | DEBUG    | eval.request:verify_triple_lm_wikidata:186 - Wikidata verification completed: (David Newton (artist), hasShippingOption, fast sh... => c
+2026-04-21 15:24:32 | INFO     | eval.process_request:compute_recall_wiki_dir:909 - Recall (Wiki+Web) for elicited_triples: Entailment=95, Contradiction=56, Neutral=349, Errors=0
+2026-04-21 15:24:32 | INFO     | eval.main:main_evaluation:288 - Aggregated results saved to /home/lugi922h/work/OKBENCH/results/google_gemma-3-12b-it/random/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results.csv
+2026-04-21 15:24:32 | INFO     | eval.process_request:close_detailed_results_file:452 - Detailed results file closed.
+2026-04-21 15:24:32 | INFO     | eval.main:main_evaluation:293 - Detailed per-triple results saved to /home/lugi922h/work/OKBENCH/results/google_gemma-3-12b-it/random/meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval/results_detailed.csv
+2026-04-21 15:24:32 | INFO     | eval.main:main_evaluation:295 - ================================================================================
+2026-04-21 15:24:32 | INFO     | eval.main:main_evaluation:296 - Triple Verification Completed Successfully
+2026-04-21 15:24:32 | INFO     | eval.main:main_evaluation:297 - ================================================================================

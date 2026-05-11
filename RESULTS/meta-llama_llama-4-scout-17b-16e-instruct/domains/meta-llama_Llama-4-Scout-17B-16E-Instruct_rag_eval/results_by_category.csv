@@ -1,0 +1,21 @@
+Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
+person,288,37,175,0.576,0.074,0.35,500,Precision (Wikipedia-Category),elicited_triples
+organization,323,11,166,0.646,0.022,0.332,500,Precision (Wikipedia-Category),elicited_triples
+location,277,17,121,0.6674698795180722,0.04096385542168675,0.29156626506024097,415,Precision (Wikipedia-Category),elicited_triples
+event,344,20,136,0.688,0.04,0.272,500,Precision (Wikipedia-Category),elicited_triples
+work_of_art,208,44,248,0.416,0.088,0.496,500,Precision (Wikipedia-Category),elicited_triples
+artifact,266,30,204,0.532,0.06,0.408,500,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,295,30,155,0.6145833333333334,0.0625,0.3229166666666667,480,Precision (Wikipedia-Category),elicited_triples
+cultural_concept,263,9,228,0.526,0.018,0.456,500,Precision (Wikipedia-Category),elicited_triples
+animal,332,25,46,0.8238213399503722,0.062034739454094295,0.1141439205955335,403,Precision (Wikipedia-Category),elicited_triples
+plant,350,15,54,0.8353221957040573,0.03579952267303103,0.1288782816229117,419,Precision (Wikipedia-Category),elicited_triples
+plant,52,9,439,0.104,0.018,0.878,500,Recall (Wikipedia-Category),elicited_triples
+event,78,31,391,0.156,0.062,0.782,500,Recall (Wikipedia-Category),elicited_triples
+scientific_concept,70,27,403,0.14,0.054,0.806,500,Recall (Wikipedia-Category),elicited_triples
+cultural_concept,52,15,432,0.10420841683366733,0.03006012024048096,0.8657314629258517,499,Recall (Wikipedia-Category),elicited_triples
+location,60,20,420,0.12,0.04,0.84,500,Recall (Wikipedia-Category),elicited_triples
+animal,61,17,422,0.122,0.034,0.844,500,Recall (Wikipedia-Category),elicited_triples
+person,21,24,455,0.042,0.048,0.91,500,Recall (Wikipedia-Category),elicited_triples
+artifact,64,42,394,0.128,0.084,0.788,500,Recall (Wikipedia-Category),elicited_triples
+organization,54,23,423,0.108,0.046,0.846,500,Recall (Wikipedia-Category),elicited_triples
+work_of_art,38,67,395,0.076,0.134,0.79,500,Recall (Wikipedia-Category),elicited_triples

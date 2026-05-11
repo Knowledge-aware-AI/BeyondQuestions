@@ -1,0 +1,3 @@
+Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Error_count,Error_ratio,Metric,Source Elicited File,Source Prompt File
+345,24,131,0.69,0.048,0.262,500,0,0.0,Precision (Precision (RAG)),elicited_triples,
+66,37,397,0.132,0.074,0.794,500,0,0.0,Recall (Wikipedia+Web),elicited_triples,
