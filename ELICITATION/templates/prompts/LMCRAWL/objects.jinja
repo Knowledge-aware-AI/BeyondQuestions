@@ -1,0 +1,50 @@
+{
+  "custom_id": {{ custom_id|tojson }},
+  "method": "POST",
+  "url": "/v1/chat/completions",
+  "body": {
+    "model": "{{ model }}",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a knowledge base construction expert. Given a subject entity and a specific predicate (relation), return all the objects (values) that you know about that subject-predicate pair.\n\nReturn a JSON object with a single key \"objects\" containing an array of object strings. Each object should be a direct value — either a literal string or a named entity.\n\nImportant:\n- Return only the objects for the given subject-predicate pair, not other subjects or predicates.\n- If there are multiple valid objects, list them all.\n- If you don't know the value, return an empty array: {\"objects\": []}\n- Do not include explanations or additional text."
+      },
+      {
+        "role": "user",
+        "content": "Subject: {{ subject_name }}\nPredicate: {{ predicate }}"
+      }
+    ],
+    {%- if reasoning_effort %}
+    "max_completion_tokens": {{ max_completion_tokens[reasoning_effort] }},
+    "reasoning_effort": "{{ reasoning_effort }}"
+    {%- else %}
+    "max_tokens": {{ max_tokens }},
+    "top_p": {{ top_p }},
+    "temperature": {{ temperature }},
+    "frequency_penalty": {{ frequency_penalty }},
+    "presence_penalty": {{ presence_penalty }}
+    {%- endif %},
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "object_list_response",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "objects": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "objects"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}
