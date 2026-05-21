@@ -2,7 +2,7 @@
 
 **An open knowledge evaluation benchmark for Large Language Models.**
 
-BeQu systematically measures how well LLMs can elicit factual knowledge as RDF triples, evaluating both **precision** (are the elicited triples correct?) and **recall** (do they cover ground truth knowledge?) across 20+ models, 10,000+ entities, and 7 experimental scenarios.
+BeQu systematically measures how well LLMs can elicit factual knowledge, evaluating both **precision** (are the elicited triples correct?) and **recall** (do they cover reference knowledge?) across 20 models, 10,000 entities, and 5 experimental scenarios.
 
 ---
 
@@ -25,10 +25,10 @@ BeQu systematically measures how well LLMs can elicit factual knowledge as RDF t
 Traditional NLP benchmarks rely on fixed question-answering pairs. BeQu goes further: instead of asking *specific* questions, it prompts LLMs to freely elicit structured knowledge about entities, then measures coverage and correctness against a reference corpus built from Wikipedia and the web.
 
 **Key capabilities:**
-- Prompt LLMs to extract RDF triples (subject, predicate, object) for any set of Wikipedia entities
-- Build ground truth corpora from Wikipedia articles and web search results
+- Prompt LLMs to triples (subject, predicate, object) for any set of Wikipedia entities
+- Build reference corpora from Wikipedia articles and web search results
 - Evaluate elicited triples via RAG-based LLM verification (precision) and coverage checking (recall)
-- Compare results across models, domains, popularity tiers, and prompt strategies
+- Compare results across models, domains, and prompt strategies
 
 ---
 
@@ -39,11 +39,10 @@ BeyondQuestions/
 ├── BeQu.py                          # Main CLI entry point
 ├── experiment_tracker.py            # Experiment deduplication
 ├── combine_results.py               # Result aggregation
-├── index.html                       # GitHub Pages results dashboard
 │
 ├── ELICITATION/                     # Knowledge elicitation pipeline
 │   ├── main.py                      # OpenAI Batch API orchestration
-│   ├── local.py                     # OpenRouter / SCADS API wrapper
+│   ├── local.py                     # OpenRouter / local API wrapper
 │   ├── gpt_kbc.py                   # GPT KBC runner (workspace isolation)
 │   ├── template_utils.py            # Jinja2 prompt template loading
 │   └── templates/prompts/           # Prompt templates
@@ -60,7 +59,7 @@ BeyondQuestions/
 │   ├── main.py                      # Evaluation coordinator
 │   ├── request.py                   # LLM verification (JSON schema output)
 │   ├── process_request.py           # Batch evaluation
-│   ├── wikipedia_triple_extractor.py # Ground truth construction
+│   ├── wikipedia_triple_extractor.py # Reference construction
 │   ├── rag_retriever.py             # Dense embedding retrieval
 │   ├── retrieve_passages.py         # Passage utilities
 │   ├── wikipedia_utils.py           # Wikipedia API wrapper
@@ -69,46 +68,36 @@ BeyondQuestions/
 │
 ├── ENTITY LISTS/                    # Test entity sets
 │   ├── RANDOM/                      # 10K random Wikipedia entities
-│   ├── DOMAINS/                     # Entities grouped by Wikipedia domain
+│   ├── DOMAINS/                     # Entities grouped by domain
 │   └── POPULARITY/                  # Entities grouped by page-view popularity
 │
-├── REFERENCE CORPUS/                # Ground truth (Git LFS)
+├── REFERENCE CORPUS/                
 │   ├── random/GT.json.gz
 │   ├── domains/GT.json.gz
 │   └── popularity/GT.json.gz
 │
-├── ELICITED TRIPLES/                # Model outputs (20+ models)
-└── RESULTS/                         # Evaluation results (~887 MB)
+├── ELICITED TRIPLES/                # Model outputs (20 models)
+└── RESULTS/                         # Evaluation results
     └── combined_results_manual.csv
 ```
 
 ### Elicitation Pipeline
 
-LLMs are prompted to extract RDF triples for each entity using configurable Jinja2 templates. Supported APIs:
+LLMs are prompted to generate knowledge for each entity using configurable Jinja2 templates.
 
-| API | Description |
-|-----|-------------|
-| `openai_batched` | OpenAI Batch API (50% cost reduction, asynchronous) |
-| `openrouter` | Any OpenRouter-served model |
-| `scads` | SCADS AI local LLM serving |
-
-Two elicitation strategies are supported:
-- **Single-step** (`GPTKB.jinja`): Prompt the model to elicit all triples in one shot
-- **Two-step** (`LMCRAWL/`): First elicit predicates, then fill in objects per predicate
-
-### Ground Truth Construction
+### Reference Corpus Construction
 
 For each entity, the pipeline:
 1. Fetches the full Wikipedia article text
 2. Retrieves the top-20 web search results via Brave Search API
-3. Uses an LLM to extract RDF triples from all sources
-4. Caches everything (text, URLs, triples) in a compressed `GT.json.gz`
+3. Uses an LLM to extract triples from all sources
+4. Caches everything (text, URLs, triples) in a json file
 
 ### Evaluation Pipeline
 
 **Precision (RAG-based):**
 1. For each elicited triple, concatenate subject + predicate + object as a query
-2. Retrieve the top-10 most similar passages from the ground truth corpus using dense embeddings (`text-embedding-3-small`)
+2. Retrieve the top-10 most similar passages from the reference corpus using dense embeddings (`text-embedding-3-small`)
 3. A judge LLM classifies: **entailment** / **contradiction** / **neutral**
 4. Precision = fraction of triples classified as entailment
 
@@ -122,21 +111,19 @@ Result categories per triple:
 | Category | Meaning |
 |----------|---------|
 | Entailment | Verified as factually correct |
-| Contradiction | Contradicts ground truth |
+| Contradiction | Contradicts reference |
 | Neutral | Truth cannot be determined |
-| Error | Malformed triple or extraction failure |
 
 ---
 
 ## Experimental Settings
 
-BeQu supports 7+ configurations to test different aspects of LLM knowledge:
+BeQu supports 6 configurations to test different aspects of LLM knowledge:
 
 | Setting | Description |
 |---------|-------------|
 | `random` | 10,000 random Wikipedia entities (baseline) |
 | `domains` | 1,000 entities across Wikipedia topic domains |
-| `popularity` | Entities bucketed by Wikipedia page-view frequency |
 | `ranges` | Vary the number of expected triples per entity |
 | `non_existing` | Made-up entities to test hallucination robustness |
 | `multiple_prompts` | Run multiple elicitation templates per model |
@@ -146,7 +133,7 @@ BeQu supports 7+ configurations to test different aspects of LLM knowledge:
 
 ## Tested Models
 
-BeQu has been evaluated on 20+ models:
+BeQu has been evaluated on 20 models:
 
 **Commercial:**
 | Provider | Model |
@@ -173,46 +160,34 @@ BeQu has been evaluated on 20+ models:
 ### Prerequisites
 
 - Python 3.8+
-- Git LFS (for reference corpus and large result files)
-
+- 
 ### Installation
 
 ```bash
-git clone https://github.com/Knowledge-aware-AI/BeyondQuestions.git
+git clone [ANONYMIZED]
 cd BeyondQuestions
 
-# Pull large files (ground truth corpus, detailed results)
+# Pull large files (reference corpus, detailed results)
 git lfs pull
 
 pip install openai anthropic requests pandas loguru tqdm \
             sentence-transformers torch jinja2 fire
 ```
 
-### API Keys
-
-Set the relevant environment variables for the APIs you intend to use:
-
-```bash
-export OPENAI_API_KEY="..."         # OpenAI Batch API
-export OPENROUTER_API_KEY="..."     # OpenRouter
-export BRAVE_SEARCH_API_KEY="..."   # Web search for ground truth construction
-export SCADS_API_KEY="..."          # SCADS AI (optional)
-```
-
 ---
 
 ## Usage
 
-All workflows are driven through the `BeQu.py` CLI (powered by [Fire](https://github.com/google/python-fire)).
+All workflows are driven through the `BeQu.py` CLI.
 
-### 1 — Build Ground Truth Only
+### 1 — Build Reference Corpus Only
 
 Construct the reference corpus from Wikipedia + web search without running any model:
 
 ```bash
 python BeQu.py \
-  --entities_file_path "ENTITY LISTS/RANDOM/10000_random_entities_wikipedia.json" \
-  --ground_truth_dir_path "REFERENCE CORPUS/random/200" \
+  --entities_file_path "path/to/json/file" \
+  --ground_truth_dir_path "path/to/output" \
   --build_ground_truth_only
 ```
 
@@ -220,15 +195,15 @@ python BeQu.py \
 
 ```bash
 python BeQu.py \
-  --entities_file_path "ENTITY LISTS/RANDOM/10000_random_entities_wikipedia.json" \
-  --api openai_batched \
-  --model_elicitation gpt-4o \
-  --prompt_template_dir_elicitation ELICITATION/templates/prompts/GPTKB.jinja \
-  --reasoning_effort_elicitation medium \
+  --entities_file_path "path/to/json/file" \
+  --api [YOUR_API] \
+  --model_elicitation [MODEL] \
+  --prompt_template_dir_elicitation ELICITATION/templates/prompts/ \
+  --reasoning_effort_elicitation [EFFORT] \
   --elicited_triples_dir "ELICITED TRIPLES" \
-  --ground_truth_dir_path "REFERENCE CORPUS/random/200" \
+  --ground_truth_dir_path "path/to/reference" \
   --results_dir_path RESULTS \
-  --llm_judge "meta-llama/Llama-4-Scout-17B-16E-Instruct" \
+  --llm_judge [JUDGE] \
   --sample_size 500 \
   --seed 42
 ```
@@ -239,7 +214,7 @@ python BeQu.py \
 python BeQu.py \
   --skip_elicitation \
   --elicited_triples_dir "ELICITED TRIPLES" \
-  --ground_truth_dir_path "REFERENCE CORPUS/random/200" \
+  --ground_truth_dir_path "path/to/reference" \
   --results_dir_path RESULTS
 ```
 
@@ -257,24 +232,6 @@ python BeQu.py \
 ```bash
 python combine_results.py --results_dir RESULTS
 ```
-
-### Key CLI Parameters
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `--api` | API backend: `openai_batched`, `scads`, `openrouter` | required |
-| `--model_elicitation` | Model identifier (e.g. `gpt-4o`) | required |
-| `--sample_size` | Entities to sample per experiment | `500` |
-| `--seed` | Random seed for reproducibility | `42` |
-| `--llm_judge` | Model used as evaluator | `meta-llama/Llama-4-Scout-17B-16E-Instruct` |
-| `--evaluate_by_category` | Report metrics per Wikipedia domain | `False` |
-| `--evaluate_by_popularity` | Report metrics per popularity bucket | `False` |
-| `--non_existing_entities` | Test robustness with fake entities | `False` |
-| `--use_all_prompts` | Run all available prompt templates | `False` |
-| `--recover_errors` | Retry failed triple evaluations | `False` |
-| `--build_ground_truth_only` | Skip elicitation and evaluation | `False` |
-| `--skip_elicitation` | Use existing triples, evaluate only | `False` |
-| `--skip_evaluation` | Elicit triples only, skip evaluation | `False` |
 
 ---
 
@@ -316,7 +273,7 @@ claude-sonnet-4-6,random,,0.85,0.87,0.83
 
 ## Results
 
-Aggregated results are available in `RESULTS/combined_results_manual.csv` and visualized on the [GitHub Pages dashboard](https://knowledge-aware-ai.github.io/BeyondQuestions/).
+Aggregated results are available in `RESULTS/combined_results_manual.csv`.
 
 Individual per-model evaluation outputs are stored under `RESULTS/{model}/{setting}/` and include:
 
@@ -333,8 +290,7 @@ Individual per-model evaluation outputs are stored under `RESULTS/{model}/{setti
 
 - **Experiment deduplication**: Configuration hashes (SHA-256) are stored in `.experiment_tracking.json` so runs are never repeated accidentally.
 - **Memory efficiency**: Evaluation results are streamed to CSV incrementally rather than held in memory.
-- **Cost efficiency**: OpenAI Batch API cuts inference costs by 50%; dense RAG retrieval minimizes the number of LLM judge calls.
-- **Parallelism**: Up to 5 models can be evaluated concurrently; elicitation threads are configurable.
+- **Parallelism**: Several models can be evaluated concurrently; elicitation threads are configurable.
 - **Reproducibility**: Fix `--seed` and `--sample_size` to reproduce any published result exactly.
 
 ---
@@ -342,3 +298,5 @@ Individual per-model evaluation outputs are stored under `RESULTS/{model}/{setti
 ## License
 
 This project is released under the [Creative Commons Attribution 4.0 International (CC-BY 4.0)](LICENSE) license. You are free to share and adapt the material for any purpose, provided appropriate credit is given.
+
+Please cite our work: [TBD]
