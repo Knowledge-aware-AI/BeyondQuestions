@@ -400,6 +400,145 @@ h1.title em { font-style: italic; color: var(--accent); font-weight: 400; }
   color: var(--ink-4);
 }
 
+/* ============ TRIPLES BROWSER ============ */
+.triples-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.triples-sidebar {
+  position: sticky;
+  top: 68px;
+}
+.triples-sidebar-section { margin-bottom: 20px; }
+.triples-sidebar-label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-4);
+  margin-bottom: 8px;
+}
+.model-list { display: flex; flex-direction: column; gap: 3px; }
+.model-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 12.5px;
+  color: var(--ink-2);
+  transition: all 0.12s;
+  cursor: pointer;
+  line-height: 1.3;
+}
+.model-btn:hover { background: var(--paper-2); color: var(--ink); border-color: var(--line); }
+.model-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.model-btn .org { font-size: 10px; opacity: 0.65; display: block; margin-top: 1px; }
+.exp-list { display: flex; flex-direction: column; gap: 3px; }
+.exp-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 12px;
+  color: var(--ink-2);
+  transition: all 0.12s;
+  cursor: pointer;
+}
+.exp-btn:hover { background: var(--paper-2); color: var(--ink); border-color: var(--line); }
+.exp-btn.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-tint); font-weight: 500; }
+.triples-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.triples-info { font-size: 12px; color: var(--ink-3); }
+.triples-info b { color: var(--ink); font-weight: 500; }
+.triples-table-wrap {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table.triples-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+table.triples-tbl thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  white-space: nowrap;
+}
+table.triples-tbl tbody tr { border-bottom: 1px solid var(--line); }
+table.triples-tbl tbody tr:last-child { border-bottom: none; }
+table.triples-tbl tbody tr:hover { background: var(--paper); }
+table.triples-tbl td {
+  padding: 9px 14px;
+  vertical-align: top;
+  line-height: 1.4;
+  word-break: break-word;
+}
+table.triples-tbl td.td-subj { font-weight: 500; color: var(--ink); max-width: 200px; }
+table.triples-tbl td.td-pred { color: var(--accent); font-family: var(--mono); font-size: 11px; }
+table.triples-tbl td.td-obj { color: var(--ink-2); max-width: 260px; }
+.triples-empty {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.triples-empty b { color: var(--ink); display: block; font-size: 15px; margin-bottom: 6px; }
+.triples-pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  justify-content: center;
+}
+.pg-btn {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--line-2);
+  background: var(--card);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.pg-btn:hover:not(:disabled) { background: var(--paper-2); color: var(--ink); }
+.pg-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.pg-btn:disabled { opacity: 0.35; cursor: default; }
+.pg-info { font-size: 12px; color: var(--ink-3); padding: 0 6px; }
+.triples-loading {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .triples-layout { grid-template-columns: 1fr; }
+  .triples-sidebar { position: static; }
+}
+
 /* ============ LEADERBOARD TABLE ============ */
 .lb-wrap {
   background: var(--card);
@@ -802,6 +941,7 @@ footer a:hover { color: var(--ink); }
       <a href="#" data-view="methodology" onclick="showView('methodology'); return false;"><span class="lbl">Methodology</span></a>
       <a href="#" data-view="datasets" onclick="showView('datasets'); return false;"><span class="lbl">Datasets</span></a>
       <a href="#" data-view="about" onclick="showView('about'); return false;"><span class="lbl">About</span></a>
+      <a href="#" data-view="triples" onclick="showView('triples'); return false;"><span class="lbl">Elicited Triples</span></a>
       <a href="https://arxiv.org/abs/2605.26937" target="_blank" rel="noopener"><span class="lbl">Paper</span><span class="ext">↗</span></a>
       <a href="https://github.com/Knowledge-aware-AI/BeyondQuestions" target="_blank" rel="noopener"><span class="lbl">GitHub</span><span class="ext">↗</span></a>
     </div>
@@ -1255,6 +1395,42 @@ footer a:hover { color: var(--ink); }
   year     = {2026},
   note     = {Under review}
 }</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ TRIPLES VIEW ============ -->
+<div id="view-triples" class="view">
+  <section class="section" style="padding-top: 72px;">
+    <div class="wrap">
+      <div class="section-h" style="margin-bottom: 28px;">
+        <div class="section-h-left">
+          <div class="kicker">Data explorer</div>
+          <h2>Elicited Triples</h2>
+        </div>
+        <div class="section-h-right">Browse the subject–predicate–object triples each model generated for each experiment. Select a model and dataset on the left, then search or page through the results.</div>
+      </div>
+
+      <div class="triples-layout">
+        <!-- sidebar: model + experiment pickers -->
+        <div class="triples-sidebar">
+          <div class="triples-sidebar-section">
+            <div class="triples-sidebar-label">Model</div>
+            <div class="model-list" id="triples-model-list"></div>
+          </div>
+          <div class="triples-sidebar-section" id="triples-exp-section" style="display:none;">
+            <div class="triples-sidebar-label">Experiment / subset</div>
+            <div class="exp-list" id="triples-exp-list"></div>
+          </div>
+        </div>
+
+        <!-- main content area -->
+        <div>
+          <div id="triples-content">
+            <div class="triples-empty"><b>Select a model</b>Choose a model on the left to explore its elicited triples.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1807,6 +1983,353 @@ updateSortHeaders();
 
 // re-render scatter on resize for crisp text
 window.addEventListener("resize", renderScatter);
+
+/* ============================================================
+   TRIPLES BROWSER
+============================================================ */
+const TRIPLES_INDEX = [
+  { id: "anthropic_claude-haiku-4.5",   display: "Claude Haiku 4.5",      org: "Anthropic",
+    experiments: [
+      { label: "Random",  path: "ELICITED TRIPLES/anthropic_claude-haiku-4.5/random/elicited_triples.csv" }
+    ]
+  },
+  { id: "anthropic_claude-opus-4.6",    display: "Claude Opus 4.6",       org: "Anthropic",
+    experiments: [
+      { label: "Random · Low",    path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/low/elicited_triples.csv" },
+      { label: "Random · Medium", path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Random · High",   path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/high/elicited_triples.csv" }
+    ]
+  },
+  { id: "anthropic_claude-sonnet-4.6",  display: "Claude Sonnet 4.6",     org: "Anthropic",
+    experiments: [
+      { label: "Random · Medium", path: "ELICITED TRIPLES/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "deepseek-ai_DeepSeek-V3.2",    display: "DeepSeek V3.2",         org: "DeepSeek",
+    experiments: [
+      { label: "Random",                      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/random/elicited_triples.csv" },
+      { label: "Domains",                     path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/domains/elicited_triples.csv" },
+      { label: "Domains · Non-existent",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/domains/non-existent/elicited_triples.csv" },
+      { label: "Popularity 0–33%",            path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/0-33%/elicited_triples.csv" },
+      { label: "Popularity 33–66%",           path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/33-66%/elicited_triples.csv" },
+      { label: "Popularity 66–100%",          path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/66-100%/elicited_triples.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+    ]
+  },
+  { id: "google_gemini-3.1-flash-lite-preview", display: "Gemini 3.1 Flash Lite", org: "Google DeepMind",
+    experiments: [
+      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3.1-flash-lite-preview/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "google_gemini-3.1-pro-preview", display: "Gemini 3.1 Pro",       org: "Google DeepMind",
+    experiments: [
+      { label: "Random · Low",    path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/low/elicited_triples.csv" },
+      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Random · High",   path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/high/elicited_triples.csv" }
+    ]
+  },
+  { id: "google_gemini-3-flash-preview",  display: "Gemini 3 Flash",      org: "Google DeepMind",
+    experiments: [
+      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "google_gemma-3-12b-it",   display: "Gemma 3 12B",       org: "Google",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-12b-it/random/elicited_triples.csv" }]
+  },
+  { id: "google_gemma-3-27b-it",   display: "Gemma 3 27B",       org: "Google",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-27b-it/random/elicited_triples.csv" }]
+  },
+  { id: "google_gemma-3-4b-it",    display: "Gemma 3 4B",        org: "Google",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-4b-it/random/elicited_triples.csv" }]
+  },
+  { id: "gpt-5.4-2026-03-05",      display: "GPT-5.4",           org: "OpenAI",
+    experiments: [
+      { label: "Random · Low",            path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/low/elicited_triples_1773057497.csv" },
+      { label: "Random · Medium",         path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/medium/elicited_triples_1773056495.csv" },
+      { label: "Random · High",           path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/high/elicited_triples_1773057545.csv" },
+      { label: "Domains",                 path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/domains/elicited_triples_1773057744.csv" },
+      { label: "Domains · Non-existent",  path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/domains/non-existent/elicited_triples_1773058061.csv" },
+      { label: "Popularity 0–33%",        path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/0-33%/elicited_triples_1773058409.csv" },
+      { label: "Popularity 33–66%",       path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/33-66%/elicited_triples_1773058407.csv" },
+      { label: "Popularity 66–100%",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/66-100%/elicited_triples_1773058406.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_5_10_lt_1/elicited_triples_1773058330.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_10_20_lt_1_2/elicited_triples_1773058332.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_25_50_lt_3_5/elicited_triples_1773058333.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_33_66_lt_3_7/elicited_triples_1773058334.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_75_150_lt_8_15/elicited_triples_1773058336.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_100_200_lt_10_20/elicited_triples_1773058338.csv" }
+    ]
+  },
+  { id: "gpt-5-mini-2025-08-07",   display: "GPT-5 Mini",        org: "OpenAI",
+    experiments: [{ label: "Random · Medium", path: "ELICITED TRIPLES/gpt-5-mini-2025-08-07/random/medium/elicited_triples_1772642378.csv" }]
+  },
+  { id: "gpt-5-nano-2025-08-07",   display: "GPT-5 Nano",        org: "OpenAI",
+    experiments: [{ label: "Random · Medium", path: "ELICITED TRIPLES/gpt-5-nano-2025-08-07/random/medium/elicited_triples_1772649352.csv" }]
+  },
+  { id: "meta-llama_Llama-4-Scout-17B-16E-Instruct", display: "Llama 4 Scout 17B", org: "Meta AI",
+    experiments: [
+      { label: "Random",                      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/random/elicited_triples.csv" },
+      { label: "Domains",                     path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/elicited_triples.csv" },
+      { label: "Domains · Non-existent",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/non-existent/elicited_triples.csv" },
+      { label: "Popularity 0–33%",            path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/0-33%/elicited_triples.csv" },
+      { label: "Popularity 33–66%",           path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/33-66%/elicited_triples.csv" },
+      { label: "Popularity 66–100%",          path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/66-100%/elicited_triples.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+    ]
+  },
+  { id: "MiniMaxAI_MiniMax-M2.5",  display: "MiniMax M2.5",       org: "MiniMax",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/MiniMaxAI_MiniMax-M2.5/random/elicited_triples.csv" }]
+  },
+  { id: "mistralai_mistral-large-2512", display: "Mistral Large",  org: "Mistral AI",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/mistralai_mistral-large-2512/random/elicited_triples.csv" }]
+  },
+  { id: "moonshotai_kimi-k2.5",    display: "Kimi K2.5",          org: "Moonshot AI",
+    experiments: [
+      { label: "Random",                          path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/random/elicited_triples.csv" },
+      { label: "Prompt: LMCRAWL",                 path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/LMCRAWL/elicited_triples.csv" },
+      { label: "Prompt: GPTKB",                   path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB/elicited_triples.csv" },
+      { label: "Prompt: GPTKB 2× rep.",           path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB_2x_repetition/elicited_triples.csv" },
+      { label: "Prompt: GPTKB 3× rep.",           path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB_3x_repetition/elicited_triples.csv" },
+      { label: "Prompt: Schema.org",              path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/schemaorg_schema/elicited_triples.csv" },
+      { label: "Prompt: Schema.org (no constr.)", path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
+      { label: "Prompt: Wikidata schema",         path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/wikidata_schema/elicited_triples.csv" },
+      { label: "Prompt: Wikidata (no constr.)",   path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/wikidata_schema_no_constraints/elicited_triples.csv" }
+    ]
+  },
+  { id: "openai_gpt-oss-120b",     display: "GPT-OSS-120B",       org: "OpenAI",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/openai_gpt-oss-120b/random/elicited_triples.csv" }]
+  },
+  { id: "qwen_qwen3.5-27b",        display: "Qwen3.5 27B",        org: "Alibaba",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/qwen_qwen3.5-27b/random/elicited_triples.csv" }]
+  },
+  { id: "x-ai_grok-4.1-fast",      display: "Grok 4.1 Fast",      org: "xAI",
+    experiments: [{ label: "Random", path: "ELICITED TRIPLES/x-ai_grok-4.1-fast/random/elicited_triples.csv" }]
+  }
+];
+
+const triplesState = {
+  modelId: null,
+  expPath: null,
+  rows: [],
+  filtered: [],
+  page: 0,
+  pageSize: 50,
+  search: ""
+};
+
+function parseCSV(text) {
+  const lines = text.split("\n");
+  if (lines.length < 2) return [];
+  const header = parseCSVLine(lines[0]);
+  const si = header.indexOf("subject");
+  const pi = header.indexOf("predicate");
+  const oi = header.indexOf("object");
+  const rows = [];
+  for (let i = 1; i < lines.length; i++) {
+    const l = lines[i].trim();
+    if (!l) continue;
+    const cols = parseCSVLine(l);
+    rows.push({
+      subject: cols[si] || "",
+      predicate: cols[pi] || "",
+      object: cols[oi] || ""
+    });
+  }
+  return rows;
+}
+
+function parseCSVLine(line) {
+  const result = [];
+  let cur = "", inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') {
+      if (inQ && line[i+1] === '"') { cur += '"'; i++; }
+      else inQ = !inQ;
+    } else if (c === ',' && !inQ) {
+      result.push(cur); cur = "";
+    } else {
+      cur += c;
+    }
+  }
+  result.push(cur);
+  return result;
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function highlight(s, q) {
+  if (!q) return esc(s);
+  const idx = s.toLowerCase().indexOf(q.toLowerCase());
+  if (idx < 0) return esc(s);
+  return esc(s.slice(0, idx)) + '<mark style="background:var(--warn-soft);border-radius:2px;padding:0 1px;">' + esc(s.slice(idx, idx + q.length)) + '</mark>' + esc(s.slice(idx + q.length));
+}
+
+function triplesApplyFilter() {
+  const q = triplesState.search.toLowerCase();
+  triplesState.filtered = q
+    ? triplesState.rows.filter(r =>
+        r.subject.toLowerCase().includes(q) ||
+        r.predicate.toLowerCase().includes(q) ||
+        r.object.toLowerCase().includes(q))
+    : triplesState.rows;
+  triplesState.page = 0;
+}
+
+function triplesRender() {
+  const content = document.getElementById("triples-content");
+  if (!triplesState.expPath) {
+    content.innerHTML = '<div class="triples-empty"><b>Select a model</b>Choose a model on the left to explore its elicited triples.</div>';
+    return;
+  }
+  const { filtered, page, pageSize, search } = triplesState;
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const start = page * pageSize;
+  const slice = filtered.slice(start, start + pageSize);
+
+  let rows = slice.map(r => `
+    <tr>
+      <td class="td-subj">${highlight(r.subject, search)}</td>
+      <td class="td-pred">${highlight(r.predicate, search)}</td>
+      <td class="td-obj">${highlight(r.object, search)}</td>
+    </tr>`).join("");
+
+  if (!rows) rows = `<tr><td colspan="3" style="padding:40px 14px;text-align:center;color:var(--ink-3);">No triples match your search.</td></tr>`;
+
+  let pages = "";
+  if (totalPages > 1) {
+    pages += `<button class="pg-btn" onclick="triplesGo(${page-1})" ${page===0?"disabled":""}>← Prev</button>`;
+    const lo = Math.max(0, page-2), hi = Math.min(totalPages-1, page+2);
+    if (lo > 0) pages += `<button class="pg-btn" onclick="triplesGo(0)">1</button>${lo>1?'<span class="pg-info">…</span>':""}`;
+    for (let p = lo; p <= hi; p++) {
+      pages += `<button class="pg-btn${p===page?" active":""}" onclick="triplesGo(${p})">${p+1}</button>`;
+    }
+    if (hi < totalPages-1) pages += `${hi<totalPages-2?'<span class="pg-info">…</span>':""}<button class="pg-btn" onclick="triplesGo(${totalPages-1})">${totalPages}</button>`;
+    pages += `<button class="pg-btn" onclick="triplesGo(${page+1})" ${page===totalPages-1?"disabled":""}>Next →</button>`;
+  }
+
+  content.innerHTML = `
+    <div class="triples-toolbar">
+      <div class="triples-info">
+        ${total === triplesState.rows.length
+          ? `<b>${total.toLocaleString()}</b> triples`
+          : `<b>${total.toLocaleString()}</b> of ${triplesState.rows.length.toLocaleString()} triples`}
+        &nbsp;·&nbsp; page ${page+1} of ${totalPages}
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="triples-search" type="search" placeholder="Search subject, predicate, object…" value="${esc(search)}">
+      </div>
+    </div>
+    <div class="triples-table-wrap">
+      <table class="triples-tbl">
+        <thead><tr><th>Subject</th><th>Predicate</th><th>Object</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    ${totalPages > 1 ? `<div class="triples-pagination">${pages}</div>` : ""}
+  `;
+
+  document.getElementById("triples-search").addEventListener("input", e => {
+    triplesState.search = e.target.value;
+    triplesApplyFilter();
+    triplesRender();
+  });
+}
+
+function triplesGo(p) {
+  const totalPages = Math.ceil(triplesState.filtered.length / triplesState.pageSize);
+  triplesState.page = Math.max(0, Math.min(p, totalPages - 1));
+  triplesRender();
+  document.getElementById("triples-content").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+const GITHUB_RAW = "https://raw.githubusercontent.com/Knowledge-aware-AI/BeyondQuestions/main/";
+
+function toRawURL(path) {
+  return GITHUB_RAW + path.split("/").map(encodeURIComponent).join("/");
+}
+
+async function triplesLoadExp(path) {
+  triplesState.expPath = path;
+  triplesState.search = "";
+  triplesState.page = 0;
+  triplesState.rows = [];
+  triplesState.filtered = [];
+
+  const content = document.getElementById("triples-content");
+  content.innerHTML = '<div class="triples-loading">Loading triples…</div>';
+
+  try {
+    const res = await fetch(toRawURL(path));
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    triplesState.rows = parseCSV(text);
+    triplesApplyFilter();
+    triplesRender();
+  } catch (e) {
+    content.innerHTML = `<div class="triples-empty">
+      <b>Could not load data</b>
+      Failed to fetch from GitHub: ${esc(e.message)}
+    </div>`;
+  }
+}
+
+function triplesSelectModel(modelId) {
+  triplesState.modelId = modelId;
+  triplesState.expPath = null;
+  triplesState.rows = [];
+  triplesState.filtered = [];
+  triplesState.page = 0;
+
+  document.querySelectorAll(".model-btn").forEach(b => b.classList.toggle("active", b.dataset.model === modelId));
+
+  const model = TRIPLES_INDEX.find(m => m.id === modelId);
+  const expSection = document.getElementById("triples-exp-section");
+  const expList = document.getElementById("triples-exp-list");
+
+  expSection.style.display = "block";
+  expList.innerHTML = model.experiments.map((e, i) =>
+    `<button class="exp-btn" data-model="${modelId}" data-idx="${i}" onclick="triplesSelectExp('${modelId}', ${i})">${esc(e.label)}</button>`
+  ).join("");
+
+  if (model.experiments.length === 1) {
+    triplesSelectExp(modelId, 0);
+  } else {
+    document.getElementById("triples-content").innerHTML =
+      '<div class="triples-empty"><b>Select an experiment</b>Choose one of the subsets listed on the left.</div>';
+  }
+}
+
+function triplesSelectExp(modelId, idx) {
+  const model = TRIPLES_INDEX.find(m => m.id === modelId);
+  const exp = model.experiments[idx];
+  document.querySelectorAll(".exp-btn").forEach(b => b.classList.toggle("active", b.dataset.model === modelId && +b.dataset.idx === idx));
+  triplesLoadExp(exp.path);
+}
+
+// Build model list on page load
+(function initTriples() {
+  const list = document.getElementById("triples-model-list");
+  list.innerHTML = TRIPLES_INDEX.map(m =>
+    `<button class="model-btn" data-model="${m.id}" onclick="triplesSelectModel('${m.id}')">
+      ${esc(m.display)}<span class="org">${esc(m.org)}</span>
+    </button>`
+  ).join("");
+})();
 </script>
 
 </body>
