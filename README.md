@@ -39,7 +39,7 @@ Traditional NLP benchmarks rely on fixed question-answering pairs, which introdu
 
 ## Website
 
-The repository includes a self-contained interactive website (`index.html`) with five sections:
+The repository includes a self-contained interactive website (`index.html`) with six sections:
 
 ### Leaderboard
 The primary view. Shows all 20 models ranked by Entailment F1, with sortable columns for F1, Precision, Recall, and Contradiction rate. Results can be filtered by commercial vs. open-weight models and searched by name. The view includes:
@@ -66,10 +66,22 @@ Also shows a hallucination bar chart for the non-existent entity experiment: GPT
 ### About
 Background on the benchmark motivation and design philosophy.
 
+### Entity Lists
+An interactive browser for the four Wikipedia entity sets used across BeQu experiments. Clicking a dataset card fetches the corresponding JSON from GitHub and renders a searchable, paginated table (50 rows per page). Four datasets are available:
+
+| Card | Dataset | Columns |
+|------|---------|---------|
+| Dataset 01 | Random entities (10,000) | Entity |
+| Dataset 02 | By domain (10 × 100) | Entity · Wikidata ID |
+| Appendix E | By popularity (3 × ~200) | Entity · Popularity · Wikidata statements · Wikidata ID |
+| Dataset 03 | Non-existent entities (10) | Entity |
+
+The Domains dataset exposes subset chips for each of the 10 domains (Person, Organization, Location, …). The Popularity dataset exposes chips for each tier (High 66–100%, Mid 33–66%, Low 0–33%). Entity titles link to Wikipedia; Wikidata IDs link to Wikidata.
+
 ### Elicited Triples
 An interactive data browser that loads the raw `elicited_triples.csv` files directly from the repository via the GitHub raw content API. Select any model from the sidebar, then choose an experiment or subset to browse the full triple table (subject · predicate · object) with live search and pagination (50 rows per page). All 20 models and their respective experiment subsets are available.
 
-To use the website, open `index.html` in any modern browser. The Elicited Triples section fetches data from GitHub and therefore requires an internet connection.
+To use the website, open `index.html` in any modern browser. The Entity Lists and Elicited Triples sections fetch data from GitHub and therefore require an internet connection.
 
 ---
 
