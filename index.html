@@ -400,6 +400,97 @@ h1.title em { font-style: italic; color: var(--accent); font-weight: 400; }
   color: var(--ink-4);
 }
 
+/* ============ ENTITY LISTS BROWSER ============ */
+.entity-dataset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.entity-dataset-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: left;
+}
+.entity-dataset-card:hover { border-color: var(--ink-2); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.entity-dataset-card.active { border-color: var(--accent); background: var(--accent-soft); }
+.entity-dataset-card .ds-num { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; color: var(--ink-4); text-transform: uppercase; margin-bottom: 6px; }
+.entity-dataset-card.active .ds-num { color: var(--accent); }
+.entity-dataset-card h3 { font-family: var(--serif); font-weight: 400; font-size: 17px; letter-spacing: -0.3px; margin-bottom: 4px; }
+.entity-dataset-card .count { font-size: 13px; color: var(--ink-3); }
+.entity-dataset-card.active .count { color: var(--accent); }
+.entity-dataset-card p { font-size: 12px; color: var(--ink-3); line-height: 1.5; margin-top: 6px; }
+.entity-dataset-card.active p { color: var(--ink-2); }
+.entity-sub-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.entity-table-wrap {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table.entity-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+table.entity-tbl thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  white-space: nowrap;
+}
+table.entity-tbl tbody tr { border-bottom: 1px solid var(--line); }
+table.entity-tbl tbody tr:last-child { border-bottom: none; }
+table.entity-tbl tbody tr:hover { background: var(--paper); }
+table.entity-tbl td { padding: 8px 14px; vertical-align: middle; line-height: 1.4; }
+table.entity-tbl td.td-title a { color: var(--ink); font-weight: 500; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.12s; }
+table.entity-tbl td.td-title a:hover { border-bottom-color: var(--ink-2); }
+table.entity-tbl td.td-meta { color: var(--ink-3); font-size: 12px; font-family: var(--mono); }
+.entity-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  border: 1px solid var(--line-2);
+  color: var(--ink-3);
+  background: var(--paper);
+  white-space: nowrap;
+}
+.entity-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.entity-info { font-size: 12px; color: var(--ink-3); }
+.entity-info b { color: var(--ink); font-weight: 500; }
+.entity-empty {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.entity-empty b { color: var(--ink); display: block; font-size: 15px; margin-bottom: 6px; }
+.entity-loading {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
 /* ============ TRIPLES BROWSER ============ */
 .triples-layout {
   display: grid;
@@ -941,6 +1032,7 @@ footer a:hover { color: var(--ink); }
       <a href="#" data-view="methodology" onclick="showView('methodology'); return false;"><span class="lbl">Methodology</span></a>
       <a href="#" data-view="datasets" onclick="showView('datasets'); return false;"><span class="lbl">Datasets</span></a>
       <a href="#" data-view="about" onclick="showView('about'); return false;"><span class="lbl">About</span></a>
+      <a href="#" data-view="entities" onclick="showView('entities'); return false;"><span class="lbl">Entity Lists</span></a>
       <a href="#" data-view="triples" onclick="showView('triples'); return false;"><span class="lbl">Elicited Triples</span></a>
       <a href="https://arxiv.org/abs/2605.26937" target="_blank" rel="noopener"><span class="lbl">Paper</span><span class="ext">↗</span></a>
       <a href="https://github.com/Knowledge-aware-AI/BeyondQuestions" target="_blank" rel="noopener"><span class="lbl">GitHub</span><span class="ext">↗</span></a>
@@ -1397,6 +1489,44 @@ footer a:hover { color: var(--ink); }
 }</div>
         </div>
       </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ENTITY LISTS VIEW ============ -->
+<div id="view-entities" class="view">
+  <section class="section" style="padding-top: 72px;">
+    <div class="wrap">
+      <div class="section-h" style="margin-bottom: 28px;">
+        <div class="section-h-left">
+          <div class="kicker">Data explorer</div>
+          <h2>Entity Lists</h2>
+        </div>
+        <div class="section-h-right">Browse the Wikipedia entity sets used across BeQu experiments. Select a dataset below to search and page through all entities.</div>
+      </div>
+
+      <div class="entity-dataset-grid" id="entity-dataset-grid">
+        <button class="entity-dataset-card" data-ds="random" onclick="entitySelectDataset('random')">
+          <div class="ds-num">Dataset 01</div>
+          <h3>Random entities <span class="count">10,000</span></h3>
+        </button>
+        <button class="entity-dataset-card" data-ds="domains" onclick="entitySelectDataset('domains')">
+          <div class="ds-num">Dataset 02</div>
+          <h3>By domain <span class="count">10 × 100</span></h3>
+        </button>
+        <button class="entity-dataset-card" data-ds="popularity" onclick="entitySelectDataset('popularity')">
+          <div class="ds-num">Appendix E</div>
+          <h3>By popularity <span class="count">3 × ~200</span></h3>
+        </button>
+        <button class="entity-dataset-card" data-ds="nonexistent" onclick="entitySelectDataset('nonexistent')">
+          <div class="ds-num">Dataset 03</div>
+          <h3>Non-existent entities <span class="count">10</span></h3>
+        </button>
+      </div>
+
+      <div id="entity-sub-row" class="entity-sub-row" style="display:none;"></div>
+
+      <div id="entity-main"></div>
     </div>
   </section>
 </div>
@@ -1983,6 +2113,219 @@ updateSortHeaders();
 
 // re-render scatter on resize for crisp text
 window.addEventListener("resize", renderScatter);
+
+/* ============================================================
+   ENTITY LISTS BROWSER
+============================================================ */
+const ENTITY_DATASETS = {
+  random: {
+    path: "ENTITY LISTS/RANDOM/10000_random_entities_wikipedia.json",
+    label: "Random entities",
+    subsets: null,
+    columns: ["title"]
+  },
+  domains: {
+    path: "ENTITY LISTS/DOMAINS/wikipedia_entities_by_domain_1000.json",
+    label: "By domain",
+    subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"],
+    columns: ["title", "wikibase_item"]
+  },
+  popularity: {
+    path: "ENTITY LISTS/POPULARITY/10000_random_entities_wikipedia_popularity_sorted_clustered.json",
+    label: "By popularity",
+    subsets: ["66-100%","33-66%","0-33%"],
+    columns: ["title", "wikidata_statements", "wikidata_id"]
+  },
+  nonexistent: {
+    path: "ENTITY LISTS/DOMAINS/wikipedia_entities_non_existent_10.json",
+    label: "Non-existent entities",
+    subsets: null,
+    columns: ["title"]
+  }
+};
+
+const entityState = {
+  dsId: null,
+  subset: null,
+  allData: null,
+  rows: [],
+  filtered: [],
+  page: 0,
+  pageSize: 50,
+  search: ""
+};
+
+const SUBSET_LABELS = {
+  person: "Person", organization: "Organization", location: "Location",
+  event: "Event", work_of_art: "Work of Art", artifact: "Artifact",
+  scientific_concept: "Scientific Concept", cultural_concept: "Cultural Concept",
+  animal: "Animal", plant: "Plant",
+  "66-100%": "High (66–100%)", "33-66%": "Mid (33–66%)", "0-33%": "Low (0–33%)"
+};
+
+function entityRows(allData, dsId, subset) {
+  const ds = ENTITY_DATASETS[dsId];
+  if (!ds.subsets) return Array.isArray(allData) ? allData : [];
+  if (!subset) {
+    if (dsId === "domains") {
+      return Object.entries(allData).flatMap(([domain, items]) =>
+        items.map(r => ({ ...r, _domain: domain })));
+    }
+    return Object.values(allData).flat();
+  }
+  return allData[subset] || [];
+}
+
+function entityApplyFilter() {
+  const q = entityState.search.toLowerCase();
+  entityState.filtered = q
+    ? entityState.rows.filter(r => (r.title||"").toLowerCase().includes(q))
+    : entityState.rows;
+  entityState.page = 0;
+}
+
+function entityRender() {
+  const main = document.getElementById("entity-main");
+  if (!entityState.dsId) {
+    main.innerHTML = "";
+    return;
+  }
+  const { dsId, filtered, page, pageSize, search } = entityState;
+  const ds = ENTITY_DATASETS[dsId];
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const start = page * pageSize;
+  const slice = filtered.slice(start, start + pageSize);
+
+  const showDomain = dsId === "domains" && !entityState.subset;
+  const showPop    = dsId === "popularity";
+  const showId     = ds.columns.includes("wikibase_item") || ds.columns.includes("wikidata_id");
+  const showStmts  = ds.columns.includes("wikidata_statements");
+
+  const colHeaders = ["Entity", ...(showDomain ? ["Domain"] : []), ...(showPop ? ["Popularity"] : []), ...(showStmts ? ["Wikidata statements"] : []), ...(showId ? ["Wikidata ID"] : [])];
+
+  const rows = slice.map(r => {
+    const wikiUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(r.title||"")}`;
+    const titleCell = `<td class="td-title"><a href="${wikiUrl}" target="_blank" rel="noopener">${highlight(r.title||"", search)}</a></td>`;
+    const domainCell = showDomain ? `<td><span class="entity-tag">${esc(SUBSET_LABELS[r._domain]||r._domain||"")}</span></td>` : "";
+    const popCell = showPop ? `<td><span class="entity-tag">${esc(r.popularity_bucket||"")}</span></td>` : "";
+    const stmtsCell = showStmts ? `<td class="td-meta">${r.wikidata_statements != null ? r.wikidata_statements.toLocaleString() : "—"}</td>` : "";
+    const idVal = r.wikibase_item || r.wikidata_id || "";
+    const idCell = showId
+      ? `<td class="td-meta">${idVal ? `<a href="https://www.wikidata.org/wiki/${esc(idVal)}" target="_blank" rel="noopener" style="color:var(--ink-3);border-bottom:1px solid var(--line-2);">${esc(idVal)}</a>` : "—"}</td>`
+      : "";
+    return `<tr>${titleCell}${domainCell}${popCell}${stmtsCell}${idCell}</tr>`;
+  }).join("");
+
+  const emptyRow = `<tr><td colspan="${colHeaders.length}" style="padding:40px 14px;text-align:center;color:var(--ink-3);">No entities match your search.</td></tr>`;
+
+  let pages = "";
+  if (totalPages > 1) {
+    pages += `<button class="pg-btn" onclick="entityGo(${page-1})" ${page===0?"disabled":""}>← Prev</button>`;
+    const lo = Math.max(0, page-2), hi = Math.min(totalPages-1, page+2);
+    if (lo > 0) pages += `<button class="pg-btn" onclick="entityGo(0)">1</button>${lo>1?'<span class="pg-info">…</span>':""}`;
+    for (let p = lo; p <= hi; p++) pages += `<button class="pg-btn${p===page?" active":""}" onclick="entityGo(${p})">${p+1}</button>`;
+    if (hi < totalPages-1) pages += `${hi<totalPages-2?'<span class="pg-info">…</span>':""}<button class="pg-btn" onclick="entityGo(${totalPages-1})">${totalPages}</button>`;
+    pages += `<button class="pg-btn" onclick="entityGo(${page+1})" ${page===totalPages-1?"disabled":""}>Next →</button>`;
+  }
+
+  main.innerHTML = `
+    <div class="entity-toolbar">
+      <div class="entity-info">
+        ${total === entityState.rows.length
+          ? `<b>${total.toLocaleString()}</b> entities`
+          : `<b>${total.toLocaleString()}</b> of ${entityState.rows.length.toLocaleString()} entities`}
+        &nbsp;·&nbsp; page ${page+1} of ${totalPages}
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="entity-search" type="search" placeholder="Search entities…" value="${esc(search)}">
+      </div>
+    </div>
+    <div class="entity-table-wrap">
+      <table class="entity-tbl">
+        <thead><tr>${colHeaders.map(h=>`<th>${h}</th>`).join("")}</tr></thead>
+        <tbody>${rows||emptyRow}</tbody>
+      </table>
+    </div>
+    ${totalPages > 1 ? `<div class="triples-pagination">${pages}</div>` : ""}
+  `;
+
+  document.getElementById("entity-search").addEventListener("input", e => {
+    entityState.search = e.target.value;
+    entityApplyFilter();
+    entityRender();
+  });
+}
+
+function entityGo(p) {
+  const totalPages = Math.ceil(entityState.filtered.length / entityState.pageSize);
+  entityState.page = Math.max(0, Math.min(p, totalPages - 1));
+  entityRender();
+  document.getElementById("entity-main").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function entitySetSubset(subset) {
+  entityState.subset = subset;
+  entityState.search = "";
+  entityState.page = 0;
+
+  document.querySelectorAll(".entity-sub-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.subset === (subset||"")));
+
+  entityState.rows = entityRows(entityState.allData, entityState.dsId, subset);
+  entityApplyFilter();
+  entityRender();
+}
+
+function entityRenderSubRow(dsId) {
+  const ds = ENTITY_DATASETS[dsId];
+  const subRow = document.getElementById("entity-sub-row");
+  if (!ds.subsets) { subRow.style.display = "none"; return; }
+
+  const allLabel = dsId === "domains" ? "All domains" : "All tiers";
+  subRow.style.display = "flex";
+  subRow.innerHTML = [
+    `<button class="chip active entity-sub-btn" data-subset="" onclick="entitySetSubset(null)">${allLabel}</button>`,
+    ...ds.subsets.map(s =>
+      `<button class="chip entity-sub-btn" data-subset="${s}" onclick="entitySetSubset('${s}')">${esc(SUBSET_LABELS[s]||s)}</button>`)
+  ].join("");
+}
+
+async function entitySelectDataset(dsId) {
+  document.querySelectorAll(".entity-dataset-card").forEach(c =>
+    c.classList.toggle("active", c.dataset.ds === dsId));
+
+  const main = document.getElementById("entity-main");
+
+  if (entityState.dsId === dsId && entityState.allData) {
+    entityRenderSubRow(dsId);
+    entitySetSubset(null);
+    return;
+  }
+
+  entityState.dsId = dsId;
+  entityState.allData = null;
+  entityState.subset = null;
+  entityState.search = "";
+  entityState.page = 0;
+
+  document.getElementById("entity-sub-row").style.display = "none";
+  main.innerHTML = '<div class="entity-loading">Loading…</div>';
+
+  const ds = ENTITY_DATASETS[dsId];
+  try {
+    const res = await fetch(toRawURL(ds.path));
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    entityState.allData = await res.json();
+    entityRenderSubRow(dsId);
+    entityState.rows = entityRows(entityState.allData, dsId, null);
+    entityApplyFilter();
+    entityRender();
+  } catch (e) {
+    main.innerHTML = `<div class="entity-empty"><b>Could not load data</b>Failed to fetch from GitHub: ${esc(e.message)}</div>`;
+  }
+}
 
 /* ============================================================
    TRIPLES BROWSER
