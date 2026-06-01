@@ -2334,10 +2334,7 @@ function corpusRender() {
   main.innerHTML = `
     <div class="corpus-toolbar">
       <div class="corpus-info">
-        ${total === corpusState.rows.length
-          ? `<b>${total.toLocaleString()}</b> entities`
-          : `<b>${total.toLocaleString()}</b> of ${corpusState.rows.length.toLocaleString()} entities`}
-        &nbsp;·&nbsp; page ${page+1} of ${totalPages}
+        ${total < corpusState.rows.length ? `<b>${total.toLocaleString()}</b> results &nbsp;·&nbsp; ` : ""}page ${page+1} of ${totalPages}
       </div>
       <div class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
