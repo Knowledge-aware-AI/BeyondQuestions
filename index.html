@@ -400,6 +400,84 @@ h1.title em { font-style: italic; color: var(--accent); font-weight: 400; }
   color: var(--ink-4);
 }
 
+/* ============ REFERENCE CORPORA BROWSER ============ */
+.corpus-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.corpus-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: left;
+}
+.corpus-card:hover { border-color: var(--ink-2); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.corpus-card.active { border-color: var(--accent); background: var(--accent-soft); }
+.corpus-card .ds-num { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; color: var(--ink-4); text-transform: uppercase; margin-bottom: 6px; }
+.corpus-card.active .ds-num { color: var(--accent); }
+.corpus-card h3 { font-family: var(--serif); font-weight: 400; font-size: 17px; letter-spacing: -0.3px; margin-bottom: 2px; }
+.corpus-card .count { font-size: 13px; color: var(--ink-3); }
+.corpus-card.active .count { color: var(--accent); }
+.corpus-sub-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+table.corpus-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+table.corpus-tbl thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+table.corpus-tbl thead th:hover { color: var(--ink); }
+table.corpus-tbl thead th.sorted { color: var(--ink); }
+table.corpus-tbl tbody tr { border-bottom: 1px solid var(--line); }
+table.corpus-tbl tbody tr:last-child { border-bottom: none; }
+table.corpus-tbl tbody tr:hover { background: var(--paper); }
+table.corpus-tbl td { padding: 8px 14px; vertical-align: middle; }
+table.corpus-tbl td.td-title a { color: var(--ink); font-weight: 500; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.12s; }
+table.corpus-tbl td.td-title a:hover { border-bottom-color: var(--ink-2); }
+table.corpus-tbl td.td-num { font-family: var(--mono); font-size: 12px; color: var(--ink-2); text-align: right; }
+table.corpus-tbl td.td-id { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.corpus-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.corpus-info { font-size: 12px; color: var(--ink-3); }
+.corpus-info b { color: var(--ink); font-weight: 500; }
+.corpus-empty {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.corpus-empty b { color: var(--ink); display: block; font-size: 15px; margin-bottom: 6px; }
+.corpus-loading {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
 /* ============ ENTITY LISTS BROWSER ============ */
 .entity-dataset-grid {
   display: grid;
@@ -1033,6 +1111,7 @@ footer a:hover { color: var(--ink); }
       <a href="#" data-view="datasets" onclick="showView('datasets'); return false;"><span class="lbl">Datasets</span></a>
       <a href="#" data-view="about" onclick="showView('about'); return false;"><span class="lbl">About</span></a>
       <a href="#" data-view="entities" onclick="showView('entities'); return false;"><span class="lbl">Entity Lists</span></a>
+      <a href="#" data-view="corpora" onclick="showView('corpora'); return false;"><span class="lbl">Reference Corpora</span></a>
       <a href="#" data-view="triples" onclick="showView('triples'); return false;"><span class="lbl">Elicited Triples</span></a>
       <a href="https://arxiv.org/abs/2605.26937" target="_blank" rel="noopener"><span class="lbl">Paper</span><span class="ext">↗</span></a>
       <a href="https://github.com/Knowledge-aware-AI/BeyondQuestions" target="_blank" rel="noopener"><span class="lbl">GitHub</span><span class="ext">↗</span></a>
@@ -1489,6 +1568,39 @@ footer a:hover { color: var(--ink); }
 }</div>
         </div>
       </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ REFERENCE CORPORA VIEW ============ -->
+<div id="view-corpora" class="view">
+  <section class="section" style="padding-top: 72px;">
+    <div class="wrap">
+      <div class="section-h" style="margin-bottom: 28px;">
+        <div class="section-h-left">
+          <div class="kicker">Data explorer</div>
+          <h2>Reference Corpora</h2>
+        </div>
+        <div class="section-h-right">Browse the per-entity reference corpora used to verify elicited triples. Each entry shows Wikipedia and web coverage statistics. Select a corpus to explore.</div>
+      </div>
+
+      <div class="corpus-card-grid">
+        <button class="corpus-card" data-corpus="random200" onclick="corpusSelect('random200')">
+          <h3>Random (sample – 200)</h3>
+        </button>
+        <button class="corpus-card" data-corpus="random10k" onclick="corpusSelect('random10k')">
+          <h3>Random (full – 10K)</h3>
+        </button>
+        <button class="corpus-card" data-corpus="domains" onclick="corpusSelect('domains')">
+          <h3>By domain (10 × 100)</h3>
+        </button>
+        <button class="corpus-card" data-corpus="popularity" onclick="corpusSelect('popularity')">
+          <h3>By popularity (3 × 200)</h3>
+        </button>
+      </div>
+
+      <div class="corpus-sub-row" id="corpus-sub-row" style="display:none;"></div>
+      <div id="corpus-main"></div>
     </div>
   </section>
 </div>
@@ -2113,6 +2225,217 @@ updateSortHeaders();
 
 // re-render scatter on resize for crisp text
 window.addEventListener("resize", renderScatter);
+
+/* ============================================================
+   REFERENCE CORPORA BROWSER
+============================================================ */
+const CORPUS_INDEX = {
+  random200:  { path: "REFERENCE CORPUS/random/200/index.json",    subsets: null },
+  random10k:  { path: "REFERENCE CORPUS/random/10k/index.json",    subsets: null },
+  domains:    { path: "REFERENCE CORPUS/domains/index.json",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
+  popularity: { path: "REFERENCE CORPUS/popularity/index.json",     subsets: ["66-100%","33-66%","0-33%"] }
+};
+
+const corpusState = {
+  id: null,
+  subset: null,
+  allData: null,
+  rows: [],
+  filtered: [],
+  page: 0,
+  pageSize: 50,
+  search: "",
+  sortKey: "entity",
+  sortDir: "asc"
+};
+
+function corpusFilterRows(allData, id, subset) {
+  if (!subset) return allData;
+  if (id === "domains")    return allData.filter(r => r.domain === subset);
+  if (id === "popularity") return allData.filter(r => r.popularity_bucket === subset);
+  return allData;
+}
+
+function corpusApplyFilter() {
+  const q = corpusState.search.toLowerCase();
+  let rows = q ? corpusState.rows.filter(r => r.entity.toLowerCase().includes(q)) : corpusState.rows.slice();
+  const { sortKey, sortDir } = corpusState;
+  const num = ["wiki_triples","wikidata_triples","web_triples","web_docs","word_count","wikidata_statements"].includes(sortKey);
+  rows.sort((a, b) => {
+    const av = a[sortKey] ?? 0, bv = b[sortKey] ?? 0;
+    const cmp = num ? av - bv : String(av).localeCompare(String(bv));
+    return sortDir === "asc" ? cmp : -cmp;
+  });
+  corpusState.filtered = rows;
+  corpusState.page = 0;
+}
+
+function corpusRender() {
+  const main = document.getElementById("corpus-main");
+  if (!corpusState.id) { main.innerHTML = ""; return; }
+
+  const { id, filtered, page, pageSize, search, sortKey, sortDir } = corpusState;
+  const cfg = CORPUS_INDEX[id];
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const slice = filtered.slice(page * pageSize, (page + 1) * pageSize);
+
+  const showDomain = id === "domains";
+  const showPop    = id === "popularity";
+
+  function th(label, key) {
+    const active = sortKey === key;
+    const arrow = active ? (sortDir === "asc" ? " ▲" : " ▼") : "";
+    return `<th class="${active?"sorted":""}" onclick="corpusSort('${key}')">${label}${arrow}</th>`;
+  }
+
+  const headers = `<tr>
+    ${th("Entity","entity")}
+    ${showDomain ? th("Domain","domain") : ""}
+    ${showPop ? th("Popularity","popularity_bucket") : ""}
+    ${th("Wiki triples","wiki_triples")}
+    ${th("Wikidata triples","wikidata_triples")}
+    ${th("Web triples","web_triples")}
+    ${th("Web docs","web_docs")}
+    <th>Links</th>
+  </tr>`;
+
+  const rows = slice.map(r => {
+    const titleCell = `<td class="td-title"><a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener">${highlight(r.entity, search)}</a></td>`;
+    const domainCell = showDomain ? `<td><span class="entity-tag">${esc(SUBSET_LABELS[r.domain]||r.domain||"—")}</span></td>` : "";
+    const popCell    = showPop    ? `<td><span class="entity-tag">${esc(r.popularity_bucket||"—")}</span></td>` : "";
+    const links = r.wikidata_url
+      ? `<a href="${esc(r.wikidata_url)}" target="_blank" rel="noopener" style="font-size:11px;color:var(--ink-3);border-bottom:1px solid var(--line-2);">${esc(r.wikidata_id)}</a>`
+      : "—";
+    return `<tr>
+      ${titleCell}
+      ${domainCell}
+      ${popCell}
+      <td class="td-num">${r.wiki_triples}</td>
+      <td class="td-num">${r.wikidata_triples}</td>
+      <td class="td-num">${r.web_triples}</td>
+      <td class="td-num">${r.web_docs}</td>
+      <td class="td-id">${links}</td>
+    </tr>`;
+  }).join("");
+
+  const emptyRow = `<tr><td colspan="8" style="padding:40px 14px;text-align:center;color:var(--ink-3);">No entities match your search.</td></tr>`;
+
+  let pages = "";
+  if (totalPages > 1) {
+    pages += `<button class="pg-btn" onclick="corpusGo(${page-1})" ${page===0?"disabled":""}>← Prev</button>`;
+    const lo = Math.max(0, page-2), hi = Math.min(totalPages-1, page+2);
+    if (lo > 0) pages += `<button class="pg-btn" onclick="corpusGo(0)">1</button>${lo>1?'<span class="pg-info">…</span>':""}`;
+    for (let p = lo; p <= hi; p++) pages += `<button class="pg-btn${p===page?" active":""}" onclick="corpusGo(${p})">${p+1}</button>`;
+    if (hi < totalPages-1) pages += `${hi<totalPages-2?'<span class="pg-info">…</span>':""}<button class="pg-btn" onclick="corpusGo(${totalPages-1})">${totalPages}</button>`;
+    pages += `<button class="pg-btn" onclick="corpusGo(${page+1})" ${page===totalPages-1?"disabled":""}>Next →</button>`;
+  }
+
+  main.innerHTML = `
+    <div class="corpus-toolbar">
+      <div class="corpus-info">
+        ${total === corpusState.rows.length
+          ? `<b>${total.toLocaleString()}</b> entities`
+          : `<b>${total.toLocaleString()}</b> of ${corpusState.rows.length.toLocaleString()} entities`}
+        &nbsp;·&nbsp; page ${page+1} of ${totalPages}
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="corpus-search" type="search" placeholder="Search entities…" value="${esc(search)}">
+      </div>
+    </div>
+    <div class="triples-table-wrap">
+      <table class="corpus-tbl">
+        <thead>${headers}</thead>
+        <tbody>${rows||emptyRow}</tbody>
+      </table>
+    </div>
+    ${totalPages > 1 ? `<div class="triples-pagination">${pages}</div>` : ""}
+  `;
+
+  document.getElementById("corpus-search").addEventListener("input", e => {
+    corpusState.search = e.target.value;
+    corpusApplyFilter();
+    corpusRender();
+  });
+}
+
+function corpusSort(key) {
+  if (corpusState.sortKey === key) {
+    corpusState.sortDir = corpusState.sortDir === "asc" ? "desc" : "asc";
+  } else {
+    corpusState.sortKey = key;
+    corpusState.sortDir = key === "entity" ? "asc" : "desc";
+  }
+  corpusApplyFilter();
+  corpusRender();
+}
+
+function corpusGo(p) {
+  const totalPages = Math.ceil(corpusState.filtered.length / corpusState.pageSize);
+  corpusState.page = Math.max(0, Math.min(p, totalPages - 1));
+  corpusRender();
+  document.getElementById("corpus-main").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function corpusSetSubset(subset) {
+  corpusState.subset = subset;
+  corpusState.search = "";
+  corpusState.page = 0;
+  document.querySelectorAll(".corpus-sub-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.subset === (subset || "")));
+  corpusState.rows = corpusFilterRows(corpusState.allData, corpusState.id, subset);
+  corpusApplyFilter();
+  corpusRender();
+}
+
+function corpusRenderSubRow(id) {
+  const cfg = CORPUS_INDEX[id];
+  const subRow = document.getElementById("corpus-sub-row");
+  if (!cfg.subsets) { subRow.style.display = "none"; return; }
+  const allLabel = id === "domains" ? "All domains" : "All tiers";
+  subRow.style.display = "flex";
+  subRow.innerHTML = [
+    `<button class="chip active corpus-sub-btn" data-subset="" onclick="corpusSetSubset(null)">${allLabel}</button>`,
+    ...cfg.subsets.map(s =>
+      `<button class="chip corpus-sub-btn" data-subset="${s}" onclick="corpusSetSubset('${s}')">${esc(SUBSET_LABELS[s]||s)}</button>`)
+  ].join("");
+}
+
+async function corpusSelect(id) {
+  document.querySelectorAll(".corpus-card").forEach(c =>
+    c.classList.toggle("active", c.dataset.corpus === id));
+
+  const main = document.getElementById("corpus-main");
+
+  if (corpusState.id === id && corpusState.allData) {
+    corpusRenderSubRow(id);
+    corpusSetSubset(null);
+    return;
+  }
+
+  corpusState.id = id;
+  corpusState.allData = null;
+  corpusState.subset = null;
+  corpusState.search = "";
+  corpusState.page = 0;
+  corpusState.sortKey = "entity";
+  corpusState.sortDir = "asc";
+  document.getElementById("corpus-sub-row").style.display = "none";
+  main.innerHTML = '<div class="corpus-loading">Loading…</div>';
+
+  try {
+    const res = await fetch(toRawURL(CORPUS_INDEX[id].path));
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    corpusState.allData = await res.json();
+    corpusRenderSubRow(id);
+    corpusState.rows = corpusFilterRows(corpusState.allData, id, null);
+    corpusApplyFilter();
+    corpusRender();
+  } catch (e) {
+    main.innerHTML = `<div class="corpus-empty"><b>Could not load data</b>Failed to fetch from GitHub: ${esc(e.message)}</div>`;
+  }
+}
 
 /* ============================================================
    ENTITY LISTS BROWSER
