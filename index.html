@@ -2303,22 +2303,31 @@ function corpusRender() {
   const rows = slice.flatMap((r, i) => {
     const globalIdx = page * pageSize + i;
     const isOpen = corpusState.expanded === globalIdx;
-    const titleCell = `<td class="td-title" style="cursor:pointer;" onclick="corpusToggle(${globalIdx})">
-      <span style="margin-right:6px;font-size:10px;color:var(--ink-4);">${isOpen ? "▾" : "▸"}</span><a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${highlight(r.entity, search)}</a>
+    const titleCell = `<td class="td-title">
+      <span style="margin-right:5px;font-size:10px;color:var(--ink-4);">${isOpen ? "▾" : "▸"}</span><a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${highlight(r.entity, search)}</a>
     </td>`;
     const domainCell = showDomain ? `<td><span class="entity-tag">${esc(SUBSET_LABELS[r.domain]||r.domain||"—")}</span></td>` : "";
     const popCell    = showPop    ? `<td><span class="entity-tag">${esc(r.popularity_bucket||"—")}</span></td>` : "";
-    const mainRow = `<tr style="${isOpen?"background:var(--paper);":""}" onclick="corpusToggle(${globalIdx})" style="cursor:pointer;">
+    const mainRow = `<tr style="cursor:pointer;${isOpen?"background:var(--paper-2);":""}" onclick="corpusToggle(${globalIdx})">
       ${titleCell}${domainCell}${popCell}
       <td class="td-num">${r.wiki_triples}</td>
       <td class="td-num">${r.web_triples}</td>
       <td class="td-num">${r.web_docs}</td>
     </tr>`;
-    const expandRow = isOpen ? `<tr>
-      <td colspan="${colCount}" style="padding:0;border-bottom:1px solid var(--line);">
-        <div style="padding:14px 18px 16px;background:var(--paper);border-top:1px solid var(--line);">
-          <p style="font-size:13px;color:var(--ink-2);line-height:1.6;margin-bottom:10px;">${esc(r.snippet||"No excerpt available.")}</p>
-          <a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);border-bottom:1px solid var(--accent-tint);">Read on Wikipedia →</a>
+    const webSnippetsHtml = (r.web_snippets||[]).map(w => `
+      <div style="border-top:1px solid var(--line);padding-top:10px;margin-top:10px;">
+        <div style="font-size:11px;font-weight:500;margin-bottom:3px;">
+          <a href="${esc(w.url)}" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid var(--line-2);" onclick="event.stopPropagation()">${esc(w.title||w.url)}</a>
+        </div>
+        <p style="font-size:12px;color:var(--ink-3);line-height:1.5;margin:0;">${esc(w.snippet||"")}</p>
+      </div>`).join("");
+    const expandRow = isOpen ? `<tr onclick="event.stopPropagation()">
+      <td colspan="${colCount}" style="padding:0;">
+        <div style="padding:14px 18px 16px;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line-2);">
+          <div style="font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-4);margin-bottom:6px;">Wikipedia</div>
+          <p style="font-size:13px;color:var(--ink-2);line-height:1.6;margin-bottom:8px;">${esc(r.snippet||"No excerpt available.")}</p>
+          <a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);border-bottom:1px solid var(--accent-tint);" onclick="event.stopPropagation()">Read on Wikipedia →</a>
+          ${webSnippetsHtml ? `<div style="margin-top:12px;"><div style="font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-4);margin-bottom:4px;">Web sources</div>${webSnippetsHtml}</div>` : ""}
         </div>
       </td>
     </tr>` : "";
