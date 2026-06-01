@@ -2230,11 +2230,13 @@ window.addEventListener("resize", renderScatter);
    REFERENCE CORPORA BROWSER
 ============================================================ */
 const CORPUS_INDEX = {
-  random200:  { path: "REFERENCE CORPUS/random/200/index.json",    subsets: null },
-  random10k:  { path: "REFERENCE CORPUS/random/10k/index.json",    subsets: null },
-  domains:    { path: "REFERENCE CORPUS/domains/index.json",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
-  popularity: { path: "REFERENCE CORPUS/popularity/index.json",     subsets: ["66-100%","33-66%","0-33%"] }
+  random200:  { path: "REFERENCE CORPUS/random/200/index.json",    rawPath: "REFERENCE CORPUS/random/200/GT.json.gz",    subsets: null },
+  random10k:  { path: "REFERENCE CORPUS/random/10k/index.json",    rawPath: "REFERENCE CORPUS/random/10k/GT.json.gz",    subsets: null },
+  domains:    { path: "REFERENCE CORPUS/domains/index.json",        rawPath: "REFERENCE CORPUS/domains/GT.json.gz",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
+  popularity: { path: "REFERENCE CORPUS/popularity/index.json",     rawPath: "REFERENCE CORPUS/popularity/GT.json.gz",     subsets: ["66-100%","33-66%","0-33%"] }
 };
+
+const GITHUB_BLOB = "https://github.com/Knowledge-aware-AI/BeyondQuestions/blob/main/";
 
 const corpusState = {
   id: null,
@@ -2284,6 +2286,8 @@ function corpusRender() {
   const showDomain = id === "domains";
   const showPop    = id === "popularity";
   const colCount   = 4 + (showDomain ? 1 : 0) + (showPop ? 1 : 0);
+  const rawFileUrl = GITHUB_BLOB + CORPUS_INDEX[id].rawPath.split("/").map(encodeURIComponent).join("/");
+  const notAvailable = `Full data not available for this corpus size. Please refer to the raw files at <a href="${rawFileUrl}" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid var(--accent-tint);">${esc(CORPUS_INDEX[id].rawPath)}</a>.`;
 
   function th(label, key) {
     const active = sortKey === key;
@@ -2344,31 +2348,30 @@ function corpusRender() {
             <a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);border-bottom:1px solid var(--accent-tint);" onclick="event.stopPropagation()">Read on Wikipedia →</a>
           </div>
 
-          ${wikiTriplesHtml ? `<div style="${tripleSectionStyle}">
-            <div style="${sectionLabelStyle}">Wikipedia triples (${(r.triples_wiki||[]).length})</div>
-            <div style="background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:260px;">
-              <table style="${tripleTableStyle}"><tbody>${wikiTriplesHtml}</tbody></table>
-            </div>
-          </div>` : (r.wiki_triples > 0 ? `<div style="${tripleSectionStyle}"><div style="${sectionLabelStyle}">Wikipedia triples (${r.wiki_triples})</div><p style="font-size:12px;color:var(--ink-4);margin:0;">Full triple data not available for this corpus size.</p></div>` : "")}
+          <div style="${tripleSectionStyle}">
+            <div style="${sectionLabelStyle}">Wikipedia triples (${r.wiki_triples})</div>
+            ${wikiTriplesHtml
+              ? `<div style="background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:260px;"><table style="${tripleTableStyle}"><tbody>${wikiTriplesHtml}</tbody></table></div>`
+              : `<p style="font-size:12px;color:var(--ink-4);margin:0;line-height:1.6;">${notAvailable}</p>`}
+          </div>
 
-          ${webSnippetsHtml ? `<div style="${tripleSectionStyle}">
-            <div style="${sectionLabelStyle}">Web sources (${(r.web_snippets||[]).length})</div>
-            ${webSnippetsHtml}
-          </div>` : ""}
+          <div style="${tripleSectionStyle}">
+            <div style="${sectionLabelStyle}">Web sources (${r.web_docs})</div>
+            ${webSnippetsHtml
+              ? webSnippetsHtml
+              : `<p style="font-size:12px;color:var(--ink-4);margin:0;line-height:1.6;">${notAvailable}</p>`}
+          </div>
 
-          ${webTriplesHtml ? `<div style="${tripleSectionStyle}">
-            <div style="${sectionLabelStyle}">Web triples (${(r.triples_web||[]).length})</div>
-            <div style="background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:320px;">
-              <table style="${tripleTableStyle}">
-                <thead><tr>
+          <div style="${tripleSectionStyle}">
+            <div style="${sectionLabelStyle}">Web triples (${r.web_triples})</div>
+            ${webTriplesHtml
+              ? `<div style="background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:320px;"><table style="${tripleTableStyle}"><thead><tr>
                   <th style="padding:6px 10px;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);text-align:left;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;">Predicate</th>
                   <th style="padding:6px 10px;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);text-align:left;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;">Object</th>
                   <th style="padding:6px 10px;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);text-align:left;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;">Source</th>
-                </tr></thead>
-                <tbody>${webTriplesHtml}</tbody>
-              </table>
-            </div>
-          </div>` : (r.web_triples > 0 ? `<div style="${tripleSectionStyle}"><div style="${sectionLabelStyle}">Web triples (${r.web_triples})</div><p style="font-size:12px;color:var(--ink-4);margin:0;">Full triple data not available for this corpus size.</p></div>` : "")}
+                </tr></thead><tbody>${webTriplesHtml}</tbody></table></div>`
+              : `<p style="font-size:12px;color:var(--ink-4);margin:0;line-height:1.6;">${notAvailable}</p>`}
+          </div>
 
         </div>
       </td>
