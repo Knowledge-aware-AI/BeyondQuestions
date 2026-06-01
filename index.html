@@ -2349,7 +2349,7 @@ function corpusRender() {
             <div style="background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:260px;">
               <table style="${tripleTableStyle}"><tbody>${wikiTriplesHtml}</tbody></table>
             </div>
-          </div>` : ""}
+          </div>` : (r.wiki_triples > 0 ? `<div style="${tripleSectionStyle}"><div style="${sectionLabelStyle}">Wikipedia triples (${r.wiki_triples})</div><p style="font-size:12px;color:var(--ink-4);margin:0;">Full triple data not available for this corpus size.</p></div>` : "")}
 
           ${webSnippetsHtml ? `<div style="${tripleSectionStyle}">
             <div style="${sectionLabelStyle}">Web sources (${(r.web_snippets||[]).length})</div>
@@ -2368,7 +2368,7 @@ function corpusRender() {
                 <tbody>${webTriplesHtml}</tbody>
               </table>
             </div>
-          </div>` : ""}
+          </div>` : (r.web_triples > 0 ? `<div style="${tripleSectionStyle}"><div style="${sectionLabelStyle}">Web triples (${r.web_triples})</div><p style="font-size:12px;color:var(--ink-4);margin:0;">Full triple data not available for this corpus size.</p></div>` : "")}
 
         </div>
       </td>
