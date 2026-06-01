@@ -2246,7 +2246,8 @@ const corpusState = {
   pageSize: 50,
   search: "",
   sortKey: "entity",
-  sortDir: "asc"
+  sortDir: "asc",
+  expanded: null
 };
 
 function corpusFilterRows(allData, id, subset) {
@@ -2260,7 +2261,7 @@ function corpusApplyFilter() {
   const q = corpusState.search.toLowerCase();
   let rows = q ? corpusState.rows.filter(r => r.entity.toLowerCase().includes(q)) : corpusState.rows.slice();
   const { sortKey, sortDir } = corpusState;
-  const num = ["wiki_triples","wikidata_triples","web_triples","web_docs","word_count","wikidata_statements"].includes(sortKey);
+  const num = ["wiki_triples","web_triples","web_docs","wikidata_statements"].includes(sortKey);
   rows.sort((a, b) => {
     const av = a[sortKey] ?? 0, bv = b[sortKey] ?? 0;
     const cmp = num ? av - bv : String(av).localeCompare(String(bv));
@@ -2282,6 +2283,7 @@ function corpusRender() {
 
   const showDomain = id === "domains";
   const showPop    = id === "popularity";
+  const colCount   = 4 + (showDomain ? 1 : 0) + (showPop ? 1 : 0);
 
   function th(label, key) {
     const active = sortKey === key;
@@ -2292,34 +2294,38 @@ function corpusRender() {
   const headers = `<tr>
     ${th("Entity","entity")}
     ${showDomain ? th("Domain","domain") : ""}
-    ${showPop ? th("Popularity","popularity_bucket") : ""}
-    ${th("Wiki triples","wiki_triples")}
-    ${th("Wikidata triples","wikidata_triples")}
+    ${showPop    ? th("Popularity","popularity_bucket") : ""}
+    ${th("Wikipedia triples","wiki_triples")}
     ${th("Web triples","web_triples")}
     ${th("Web docs","web_docs")}
-    <th>Links</th>
   </tr>`;
 
-  const rows = slice.map(r => {
-    const titleCell = `<td class="td-title"><a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener">${highlight(r.entity, search)}</a></td>`;
+  const rows = slice.flatMap((r, i) => {
+    const globalIdx = page * pageSize + i;
+    const isOpen = corpusState.expanded === globalIdx;
+    const titleCell = `<td class="td-title" style="cursor:pointer;" onclick="corpusToggle(${globalIdx})">
+      <span style="margin-right:6px;font-size:10px;color:var(--ink-4);">${isOpen ? "▾" : "▸"}</span><a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${highlight(r.entity, search)}</a>
+    </td>`;
     const domainCell = showDomain ? `<td><span class="entity-tag">${esc(SUBSET_LABELS[r.domain]||r.domain||"—")}</span></td>` : "";
     const popCell    = showPop    ? `<td><span class="entity-tag">${esc(r.popularity_bucket||"—")}</span></td>` : "";
-    const links = r.wikidata_url
-      ? `<a href="${esc(r.wikidata_url)}" target="_blank" rel="noopener" style="font-size:11px;color:var(--ink-3);border-bottom:1px solid var(--line-2);">${esc(r.wikidata_id)}</a>`
-      : "—";
-    return `<tr>
-      ${titleCell}
-      ${domainCell}
-      ${popCell}
+    const mainRow = `<tr style="${isOpen?"background:var(--paper);":""}" onclick="corpusToggle(${globalIdx})" style="cursor:pointer;">
+      ${titleCell}${domainCell}${popCell}
       <td class="td-num">${r.wiki_triples}</td>
-      <td class="td-num">${r.wikidata_triples}</td>
       <td class="td-num">${r.web_triples}</td>
       <td class="td-num">${r.web_docs}</td>
-      <td class="td-id">${links}</td>
     </tr>`;
+    const expandRow = isOpen ? `<tr>
+      <td colspan="${colCount}" style="padding:0;border-bottom:1px solid var(--line);">
+        <div style="padding:14px 18px 16px;background:var(--paper);border-top:1px solid var(--line);">
+          <p style="font-size:13px;color:var(--ink-2);line-height:1.6;margin-bottom:10px;">${esc(r.snippet||"No excerpt available.")}</p>
+          <a href="${esc(r.wiki_url||"#")}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);border-bottom:1px solid var(--accent-tint);">Read on Wikipedia →</a>
+        </div>
+      </td>
+    </tr>` : "";
+    return mainRow + expandRow;
   }).join("");
 
-  const emptyRow = `<tr><td colspan="8" style="padding:40px 14px;text-align:center;color:var(--ink-3);">No entities match your search.</td></tr>`;
+  const emptyRow = `<tr><td colspan="${colCount}" style="padding:40px 14px;text-align:center;color:var(--ink-3);">No entities match your search.</td></tr>`;
 
   let pages = "";
   if (totalPages > 1) {
@@ -2357,6 +2363,11 @@ function corpusRender() {
   });
 }
 
+function corpusToggle(idx) {
+  corpusState.expanded = corpusState.expanded === idx ? null : idx;
+  corpusRender();
+}
+
 function corpusSort(key) {
   if (corpusState.sortKey === key) {
     corpusState.sortDir = corpusState.sortDir === "asc" ? "desc" : "asc";
@@ -2364,6 +2375,7 @@ function corpusSort(key) {
     corpusState.sortKey = key;
     corpusState.sortDir = key === "entity" ? "asc" : "desc";
   }
+  corpusState.expanded = null;
   corpusApplyFilter();
   corpusRender();
 }
@@ -2371,6 +2383,7 @@ function corpusSort(key) {
 function corpusGo(p) {
   const totalPages = Math.ceil(corpusState.filtered.length / corpusState.pageSize);
   corpusState.page = Math.max(0, Math.min(p, totalPages - 1));
+  corpusState.expanded = null;
   corpusRender();
   document.getElementById("corpus-main").scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -2379,6 +2392,7 @@ function corpusSetSubset(subset) {
   corpusState.subset = subset;
   corpusState.search = "";
   corpusState.page = 0;
+  corpusState.expanded = null;
   document.querySelectorAll(".corpus-sub-btn").forEach(b =>
     b.classList.toggle("active", b.dataset.subset === (subset || "")));
   corpusState.rows = corpusFilterRows(corpusState.allData, corpusState.id, subset);
@@ -2418,6 +2432,7 @@ async function corpusSelect(id) {
   corpusState.page = 0;
   corpusState.sortKey = "entity";
   corpusState.sortDir = "asc";
+  corpusState.expanded = null;
   document.getElementById("corpus-sub-row").style.display = "none";
   main.innerHTML = '<div class="corpus-loading">Loading…</div>';
 
