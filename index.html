@@ -1261,7 +1261,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
       <a href="#" data-view="entities" onclick="showView('entities'); return false;"><span class="lbl">Entity Lists</span></a>
       <a href="#" data-view="corpora" onclick="showView('corpora'); return false;"><span class="lbl">Reference Corpora</span></a>
       <a href="#" data-view="triples" onclick="showView('triples'); return false;"><span class="lbl">Elicited Triples</span></a>
-      <a href="#" data-view="compare" onclick="showView('compare'); return false;"><span class="lbl">Compare Results</span></a>
+      <a href="#" data-view="compare" onclick="showView('compare'); return false;"><span class="lbl">Detailed Results</span></a>
       <a href="https://arxiv.org/abs/2605.26937" target="_blank" rel="noopener"><span class="lbl">Paper</span><span class="ext">↗</span></a>
       <a href="https://github.com/Knowledge-aware-AI/BeyondQuestions" target="_blank" rel="noopener"><span class="lbl">GitHub</span><span class="ext">↗</span></a>
     </div>
@@ -1834,16 +1834,16 @@ table.compare-tbl tr.result-N { background: var(--card); }
       <div class="section-h" style="margin-bottom: 28px;">
         <div class="section-h-left">
           <div class="kicker">Evaluation explorer</div>
-          <h2>Compare Results</h2>
+          <h2>Detailed Results</h2>
         </div>
-        <div class="section-h-right">Pick an experiment, a metric, and up to 3 models to compare. Then choose an entity to see each model's sampled triples colored by NLI judgment: <span style="color:#155724;font-weight:600;">green = entailed</span>, <span style="color:#721c24;font-weight:600;">red = contradiction</span>, grey = neutral.</div>
+        <div class="section-h-right">Pick a setting, a metric, and up to 3 models to compare. Then choose an entity to see each model's sampled triples colored by NLI judgment: <span style="color:#155724;font-weight:600;">green = entailed</span>, <span style="color:#721c24;font-weight:600;">red = contradiction</span>, grey = neutral.</div>
       </div>
 
       <div class="compare-layout">
         <!-- sidebar -->
         <div class="compare-sidebar">
           <div>
-            <div class="compare-sidebar-label">Experiment</div>
+            <div class="compare-sidebar-label">Setting</div>
             <select class="compare-exp-select" id="compare-exp-select" onchange="compareSelectExp(this.value)">
               <option value="">— choose —</option>
             </select>
@@ -1858,7 +1858,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
           <div>
             <div class="compare-sidebar-label">Models <span style="font-weight:400;text-transform:none;letter-spacing:0;">(up to 3)</span></div>
             <div class="compare-model-list" id="compare-model-list">
-              <div style="font-size:12px;color:var(--ink-2);">Select an experiment first.</div>
+              <div style="font-size:12px;color:var(--ink-2);">Select a setting first.</div>
             </div>
           </div>
         </div>
@@ -3259,184 +3259,203 @@ function triplesSelectExp(modelId, idx) {
 })();
 
 /* ============================================================
-   COMPARE RESULTS
+   DETAILED RESULTS
 ============================================================ */
 const EVAL_FOLDER = "meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval";
 
-// Each entry: { display, org, resultsFolder, experiments: [{label, expPath}] }
-const RESULTS_INDEX = [
-  { display: "Claude Haiku 4.5",      org: "Anthropic",       resultsFolder: "anthropic_claude-haiku-4.5",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Claude Opus 4.6",       org: "Anthropic",       resultsFolder: "anthropic_claude-opus-4.6",
-    experiments: [
-      { label: "Random · Low",    expPath: "random/low" },
-      { label: "Random · Medium", expPath: "random/medium" },
-      { label: "Random · High",   expPath: "random/high" }
-    ]
-  },
-  { display: "Claude Sonnet 4.6",     org: "Anthropic",       resultsFolder: "anthropic_claude-sonnet-4.6",
-    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
-  { display: "DeepSeek V3.2",         org: "DeepSeek",        resultsFolder: "deepseek-ai_deepseek-v3.2",
-    experiments: [
-      { label: "Random",              expPath: "random" },
-      { label: "Domains",             expPath: "domains" },
-      { label: "Popularity 0–33%",    expPath: "popularity/0-33%" },
-      { label: "Popularity 33–66%",   expPath: "popularity/33-66%" },
-      { label: "Popularity 66–100%",  expPath: "popularity/66-100%" },
-      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
-      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
-      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
-      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
-      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
-      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
-    ]
-  },
-  { display: "Gemini 3.1 Flash Lite", org: "Google DeepMind", resultsFolder: "google_gemini-3.1-flash-lite-preview",
-    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
-  { display: "Gemini 3.1 Pro",        org: "Google DeepMind", resultsFolder: "google_gemini-3.1-pro-preview",
-    experiments: [
-      { label: "Random · Low",    expPath: "random/low" },
-      { label: "Random · Medium", expPath: "random/medium" },
-      { label: "Random · High",   expPath: "random/high" }
-    ]
-  },
-  { display: "Gemini 3 Flash",        org: "Google DeepMind", resultsFolder: "google_gemini-3-flash-preview",
-    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
-  { display: "Gemma 3 12B",           org: "Google",          resultsFolder: "google_gemma-3-12b-it",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Gemma 3 27B",           org: "Google",          resultsFolder: "google_gemma-3-27b-it",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Gemma 3 4B",            org: "Google",          resultsFolder: "google_gemma-3-4b-it",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "GPT-5.4",               org: "OpenAI",          resultsFolder: "gpt-5.4-2026-03-05",
-    experiments: [
-      { label: "Random · Low",           expPath: "random/low" },
-      { label: "Random · Medium",        expPath: "random/medium" },
-      { label: "Random · High",          expPath: "random/high" },
-      { label: "Domains",                expPath: "domains" },
-      { label: "Popularity 0–33%",       expPath: "popularity/0-33%" },
-      { label: "Popularity 33–66%",      expPath: "popularity/33-66%" },
-      { label: "Popularity 66–100%",     expPath: "popularity/66-100%" },
-      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
-      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
-      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
-      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
-      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
-      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
-    ]
-  },
-  { display: "GPT-5 Mini",            org: "OpenAI",          resultsFolder: "gpt-5-mini-2025-08-07",
-    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
-  { display: "GPT-5 Nano",            org: "OpenAI",          resultsFolder: "gpt-5-nano-2025-08-07",
-    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
-  { display: "Llama 4 Scout 17B",     org: "Meta AI",         resultsFolder: "meta-llama_llama-4-scout-17b-16e-instruct",
-    experiments: [
-      { label: "Random",              expPath: "random" },
-      { label: "Domains",             expPath: "domains" },
-      { label: "Popularity 0–33%",    expPath: "popularity/0-33%" },
-      { label: "Popularity 33–66%",   expPath: "popularity/33-66%" },
-      { label: "Popularity 66–100%",  expPath: "popularity/66-100%" },
-      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
-      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
-      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
-      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
-      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
-      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
-    ]
-  },
-  { display: "MiniMax M2.5",          org: "MiniMax",         resultsFolder: "minimaxai_minimax-m2.5",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Mistral Large",         org: "Mistral AI",      resultsFolder: "mistralai_mistral-large-2512",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Kimi K2.5",            org: "Moonshot AI",      resultsFolder: "moonshotai_kimi-k2.5",
-    experiments: [
-      { label: "Random",                          expPath: "random" },
-      { label: "Prompt: LMCRAWL",                 expPath: "prompts/LMCRAWL" },
-      { label: "Prompt: GPTKB",                   expPath: "prompts/GPTKB" },
-      { label: "Prompt: GPTKB 2× rep.",           expPath: "prompts/GPTKB_2x_repetition" },
-      { label: "Prompt: GPTKB 3× rep.",           expPath: "prompts/GPTKB_3x_repetition" },
-      { label: "Prompt: Schema.org",              expPath: "prompts/schemaorg_schema" },
-      { label: "Prompt: Schema.org (no constr.)", expPath: "prompts/schemaorg_schema_no_constraints" },
-      { label: "Prompt: Wikidata schema",         expPath: "prompts/wikidata_schema" },
-      { label: "Prompt: Wikidata (no constr.)",   expPath: "prompts/wikidata_schema_no_constraints" }
-    ]
-  },
-  { display: "GPT-OSS-120B",          org: "OpenAI",          resultsFolder: "openai_gpt-oss-120b",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Qwen3.5 27B",           org: "Alibaba",         resultsFolder: "qwen_qwen3.5-27b",
-    experiments: [{ label: "Random", expPath: "random" }] },
-  { display: "Grok 4.1 Fast",         org: "xAI",             resultsFolder: "x-ai_grok-4.1-fast",
-    experiments: [{ label: "Random", expPath: "random" }] }
+// Display info keyed by resultsFolder
+const RESULTS_MODELS = {
+  "anthropic_claude-haiku-4.5":            { display: "Claude Haiku 4.5" },
+  "anthropic_claude-opus-4.6":             { display: "Claude Opus 4.6" },
+  "anthropic_claude-sonnet-4.6":           { display: "Claude Sonnet 4.6" },
+  "deepseek-ai_deepseek-v3.2":             { display: "DeepSeek V3.2" },
+  "google_gemini-3.1-flash-lite-preview":  { display: "Gemini 3.1 Flash Lite" },
+  "google_gemini-3.1-pro-preview":         { display: "Gemini 3.1 Pro" },
+  "google_gemini-3-flash-preview":         { display: "Gemini 3 Flash" },
+  "google_gemma-3-12b-it":                 { display: "Gemma 3 12B" },
+  "google_gemma-3-27b-it":                 { display: "Gemma 3 27B" },
+  "google_gemma-3-4b-it":                  { display: "Gemma 3 4B" },
+  "gpt-5.4-2026-03-05":                    { display: "GPT-5.4" },
+  "gpt-5-mini-2025-08-07":                 { display: "GPT-5 Mini" },
+  "gpt-5-nano-2025-08-07":                 { display: "GPT-5 Nano" },
+  "meta-llama_llama-4-scout-17b-16e-instruct": { display: "Llama 4 Scout 17B" },
+  "minimaxai_minimax-m2.5":                { display: "MiniMax M2.5" },
+  "mistralai_mistral-large-2512":          { display: "Mistral Large" },
+  "moonshotai_kimi-k2.5":                  { display: "Kimi K2.5" },
+  "openai_gpt-oss-120b":                   { display: "GPT-OSS-120B" },
+  "qwen_qwen3.5-27b":                      { display: "Qwen3.5 27B" },
+  "x-ai_grok-4.1-fast":                   { display: "Grok 4.1 Fast" }
+};
+
+// Experiment groups: each entry maps a folder to its actual file path
+const EXPERIMENT_GROUPS = [
+  { value: "random", label: "Random", entries: [
+    { folder: "anthropic_claude-haiku-4.5",           expPath: "random" },
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "random" },
+    { folder: "google_gemma-3-12b-it",                expPath: "random" },
+    { folder: "google_gemma-3-27b-it",                expPath: "random" },
+    { folder: "google_gemma-3-4b-it",                 expPath: "random" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "random" },
+    { folder: "minimaxai_minimax-m2.5",               expPath: "random" },
+    { folder: "mistralai_mistral-large-2512",         expPath: "random" },
+    { folder: "moonshotai_kimi-k2.5",                 expPath: "random" },
+    { folder: "openai_gpt-oss-120b",                  expPath: "random" },
+    { folder: "qwen_qwen3.5-27b",                     expPath: "random" },
+    { folder: "x-ai_grok-4.1-fast",                  expPath: "random" },
+    { folder: "anthropic_claude-opus-4.6",            expPath: "random/medium" },
+    { folder: "anthropic_claude-sonnet-4.6",          expPath: "random/medium" },
+    { folder: "google_gemini-3-flash-preview",        expPath: "random/medium" },
+    { folder: "google_gemini-3.1-flash-lite-preview", expPath: "random/medium" },
+    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/medium" },
+    { folder: "gpt-5-mini-2025-08-07",                expPath: "random/medium" },
+    { folder: "gpt-5-nano-2025-08-07",                expPath: "random/medium" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/medium" }
+  ]},
+  { value: "random/low", label: "Random · Low", entries: [
+    { folder: "anthropic_claude-opus-4.6",            expPath: "random/low" },
+    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/low" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/low" }
+  ]},
+  { value: "random/medium", label: "Random · Medium", entries: [
+    { folder: "anthropic_claude-opus-4.6",            expPath: "random/medium" },
+    { folder: "anthropic_claude-sonnet-4.6",          expPath: "random/medium" },
+    { folder: "google_gemini-3-flash-preview",        expPath: "random/medium" },
+    { folder: "google_gemini-3.1-flash-lite-preview", expPath: "random/medium" },
+    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/medium" },
+    { folder: "gpt-5-mini-2025-08-07",                expPath: "random/medium" },
+    { folder: "gpt-5-nano-2025-08-07",                expPath: "random/medium" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/medium" }
+  ]},
+  { value: "random/high", label: "Random · High", entries: [
+    { folder: "anthropic_claude-opus-4.6",            expPath: "random/high" },
+    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/high" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/high" }
+  ]},
+  { value: "domains", label: "Domains", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "domains" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "domains" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "domains" }
+  ]},
+  { value: "popularity/0-33%", label: "Popularity 0–33%", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/0-33%" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/0-33%" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/0-33%" }
+  ]},
+  { value: "popularity/33-66%", label: "Popularity 33–66%", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/33-66%" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/33-66%" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/33-66%" }
+  ]},
+  { value: "popularity/66-100%", label: "Popularity 66–100%", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/66-100%" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/66-100%" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/66-100%" }
+  ]},
+  { value: "ranges/pop_5_10_lt_1", label: "Range pop 5–10 lt 1", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_5_10_lt_1" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_5_10_lt_1" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_5_10_lt_1" }
+  ]},
+  { value: "ranges/pop_10_20_lt_1_2", label: "Range pop 10–20 lt 1–2", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_10_20_lt_1_2" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_10_20_lt_1_2" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_10_20_lt_1_2" }
+  ]},
+  { value: "ranges/pop_25_50_lt_3_5", label: "Range pop 25–50 lt 3–5", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_25_50_lt_3_5" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_25_50_lt_3_5" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_25_50_lt_3_5" }
+  ]},
+  { value: "ranges/pop_33_66_lt_3_7", label: "Range pop 33–66 lt 3–7", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_33_66_lt_3_7" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_33_66_lt_3_7" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_33_66_lt_3_7" }
+  ]},
+  { value: "ranges/pop_75_150_lt_8_15", label: "Range pop 75–150 lt 8–15", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_75_150_lt_8_15" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_75_150_lt_8_15" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_75_150_lt_8_15" }
+  ]},
+  { value: "ranges/pop_100_200_lt_10_20", label: "Range pop 100–200 lt 10–20", entries: [
+    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_100_200_lt_10_20" },
+    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_100_200_lt_10_20" },
+    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_100_200_lt_10_20" }
+  ]},
+  { value: "prompts/LMCRAWL", label: "Prompt: LMCRAWL", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/LMCRAWL" }
+  ]},
+  { value: "prompts/GPTKB", label: "Prompt: GPTKB", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB" }
+  ]},
+  { value: "prompts/GPTKB_2x_repetition", label: "Prompt: GPTKB 2× rep.", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB_2x_repetition" }
+  ]},
+  { value: "prompts/GPTKB_3x_repetition", label: "Prompt: GPTKB 3× rep.", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB_3x_repetition" }
+  ]},
+  { value: "prompts/schemaorg_schema", label: "Prompt: Schema.org", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/schemaorg_schema" }
+  ]},
+  { value: "prompts/schemaorg_schema_no_constraints", label: "Prompt: Schema.org (no constr.)", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/schemaorg_schema_no_constraints" }
+  ]},
+  { value: "prompts/wikidata_schema", label: "Prompt: Wikidata schema", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/wikidata_schema" }
+  ]},
+  { value: "prompts/wikidata_schema_no_constraints", label: "Prompt: Wikidata (no constr.)", entries: [
+    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/wikidata_schema_no_constraints" }
+  ]}
 ];
 
-function compareResultsIndexPath(resultsFolder, expPath) {
-  return `RESULTS/${resultsFolder}/${expPath}/${EVAL_FOLDER}/results_index.json`;
+function compareResultsIndexPath(folder, expPath) {
+  return `RESULTS/${folder}/${expPath}/${EVAL_FOLDER}/results_index.json`;
+}
+
+function compareExpPathForFolder(group, folder) {
+  const entry = group.entries.find(e => e.folder === folder);
+  return entry ? entry.expPath : null;
 }
 
 const compareState = {
-  expPath: null,         // currently selected experiment expPath
+  group: null,           // currently selected EXPERIMENT_GROUPS entry
   metric: "P",          // P or R
   selectedModels: [],   // array of resultsFolder strings (max 3)
-  cache: {},            // resultsFolder+expPath -> array of row objects
+  cache: {},            // folder+"|"+expPath -> array of row objects
   entities: [],         // intersection entity list
   entity: null,         // selected entity
   entityInput: "",      // autocomplete input value
   dropdownVisible: false
 };
 
-function compareModelsForExp(expPath) {
-  return RESULTS_INDEX.filter(m => m.experiments.some(e => e.expPath === expPath));
-}
-
-// Populate experiment dropdown from all unique expPaths across all models
 (function initCompare() {
   const sel = document.getElementById("compare-exp-select");
-  // Gather all unique experiment labels + paths, in a fixed order
-  const seen = new Map();
-  // Ordering: random first, then domains, popularity, ranges, prompts
-  const order = ["random", "random/low", "random/medium", "random/high",
-    "domains",
-    "popularity/0-33%", "popularity/33-66%", "popularity/66-100%",
-    "ranges/pop_5_10_lt_1", "ranges/pop_10_20_lt_1_2", "ranges/pop_25_50_lt_3_5",
-    "ranges/pop_33_66_lt_3_7", "ranges/pop_75_150_lt_8_15", "ranges/pop_100_200_lt_10_20",
-    "prompts/LMCRAWL", "prompts/GPTKB", "prompts/GPTKB_2x_repetition", "prompts/GPTKB_3x_repetition",
-    "prompts/schemaorg_schema", "prompts/schemaorg_schema_no_constraints",
-    "prompts/wikidata_schema", "prompts/wikidata_schema_no_constraints"
-  ];
-  for (const expPath of order) {
-    const models = compareModelsForExp(expPath);
-    if (models.length === 0) continue;
-    const exp = models[0].experiments.find(e => e.expPath === expPath);
-    const label = exp ? exp.label : expPath;
-    const modelCount = models.length;
+  EXPERIMENT_GROUPS.forEach(g => {
     sel.appendChild(Object.assign(document.createElement("option"), {
-      value: expPath,
-      textContent: `${label} (${modelCount} model${modelCount > 1 ? "s" : ""})`
+      value: g.value,
+      textContent: g.label
     }));
-  }
+  });
 })();
 
-function compareSelectExp(expPath) {
-  compareState.expPath = expPath || null;
+function compareSelectExp(value) {
+  compareState.group = EXPERIMENT_GROUPS.find(g => g.value === value) || null;
   compareState.selectedModels = [];
   compareState.entities = [];
   compareState.entity = null;
   compareState.entityInput = "";
 
   const modelList = document.getElementById("compare-model-list");
-  if (!expPath) {
-    modelList.innerHTML = '<div style="font-size:12px;color:var(--ink-2);">Select an experiment first.</div>';
+  if (!compareState.group) {
+    modelList.innerHTML = '<div style="font-size:12px;color:var(--ink-2);">Select a setting first.</div>';
     document.getElementById("compare-main").innerHTML =
-      '<div class="compare-empty"><b>Get started</b>Choose an experiment and at least one model on the left.</div>';
+      '<div class="compare-empty"><b>Get started</b>Choose a setting and at least one model on the left.</div>';
     return;
   }
 
-  const models = compareModelsForExp(expPath);
-  modelList.innerHTML = models.map(m =>
-    `<button class="compare-model-btn" id="cmbtn-${CSS.escape(m.resultsFolder)}"
-       onclick="compareToggleModel('${esc(m.resultsFolder)}')" data-folder="${esc(m.resultsFolder)}">
-      <span class="check">✓</span>
-      ${esc(m.display)}<span class="org">${esc(m.org)}</span>
+  modelList.innerHTML = compareState.group.entries.map(e =>
+    `<button class="compare-model-btn" id="cmbtn-${CSS.escape(e.folder)}"
+       onclick="compareToggleModel('${esc(e.folder)}')" data-folder="${esc(e.folder)}">
+      <span class="check">✓</span>${esc(RESULTS_MODELS[e.folder].display)}
     </button>`
   ).join("");
 
@@ -3461,12 +3480,10 @@ async function compareToggleModel(folder) {
     compareState.selectedModels.push(folder);
   }
 
-  // Update button states
-  const models = compareModelsForExp(compareState.expPath);
-  models.forEach(m => {
-    const btn = document.getElementById("cmbtn-" + CSS.escape(m.resultsFolder));
+  compareState.group.entries.forEach(e => {
+    const btn = document.getElementById("cmbtn-" + CSS.escape(e.folder));
     if (!btn) return;
-    const sel = compareState.selectedModels.includes(m.resultsFolder);
+    const sel = compareState.selectedModels.includes(e.folder);
     const maxed = compareState.selectedModels.length >= 3 && !sel;
     btn.classList.toggle("selected", sel);
     btn.classList.toggle("disabled", maxed);
@@ -3487,13 +3504,13 @@ async function compareToggleModel(folder) {
 }
 
 async function compareFetchAll() {
-  const { expPath, selectedModels } = compareState;
+  const { group, selectedModels } = compareState;
   const fetches = selectedModels.map(async folder => {
+    const expPath = compareExpPathForFolder(group, folder);
     const key = folder + "|" + expPath;
     if (compareState.cache[key]) return;
-    const path = compareResultsIndexPath(folder, expPath);
     try {
-      const resp = await fetch(toRawURL(path));
+      const resp = await fetch(toRawURL(compareResultsIndexPath(folder, expPath)));
       if (!resp.ok) throw new Error(resp.status);
       compareState.cache[key] = await resp.json();
     } catch(e) {
@@ -3504,15 +3521,13 @@ async function compareFetchAll() {
 }
 
 function compareUpdateEntities() {
-  const { expPath, selectedModels, metric } = compareState;
+  const { group, selectedModels, metric } = compareState;
   if (selectedModels.length === 0) return;
 
-  // Build entity sets per model for the selected metric, then intersect
   const sets = selectedModels.map(folder => {
+    const expPath = compareExpPathForFolder(group, folder);
     const key = folder + "|" + expPath;
-    const rows = compareState.cache[key] || [];
-    const s = new Set(rows.filter(r => r.m === metric).map(r => r.s));
-    return s;
+    return new Set((compareState.cache[key] || []).filter(r => r.m === metric).map(r => r.s));
   });
 
   let intersection = [...sets[0]];
@@ -3526,7 +3541,7 @@ function compareUpdateEntities() {
 
   const main = document.getElementById("compare-main");
   if (intersection.length === 0) {
-    main.innerHTML = '<div class="compare-empty"><b>No common entities</b>The selected models share no sampled entities for this experiment and metric.</div>';
+    main.innerHTML = '<div class="compare-empty"><b>No common entities</b>The selected models share no sampled entities for this setting and metric.</div>';
     return;
   }
 
@@ -3556,8 +3571,7 @@ function compareShowDropdown() {
   const dd = document.getElementById("compare-entity-dropdown");
   if (!dd) return;
   if (filtered.length === 0) { dd.style.display = "none"; return; }
-  const top = filtered.slice(0, 80);
-  dd.innerHTML = top.map((e, i) =>
+  dd.innerHTML = filtered.slice(0, 80).map((e, i) =>
     `<div class="compare-entity-option" data-entity="${esc(e)}" data-idx="${i}"
        onmousedown="compareSelectEntity('${esc(e).replace(/'/g,"&#39;")}')">${esc(e)}</div>`
   ).join("");
@@ -3575,12 +3589,9 @@ function compareEntityKeydown(e) {
   if (e.key === "Enter") {
     const dd = document.getElementById("compare-entity-dropdown");
     const focused = dd && dd.querySelector(".focused");
-    if (focused) {
-      compareSelectEntity(focused.dataset.entity);
-    } else {
-      const first = dd && dd.querySelector(".compare-entity-option");
-      if (first) compareSelectEntity(first.dataset.entity);
-    }
+    const first = dd && dd.querySelector(".compare-entity-option");
+    if (focused) compareSelectEntity(focused.dataset.entity);
+    else if (first) compareSelectEntity(first.dataset.entity);
   } else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
     e.preventDefault();
     const dd = document.getElementById("compare-entity-dropdown");
@@ -3604,7 +3615,7 @@ function compareSelectEntity(entity) {
 }
 
 function compareRender() {
-  const { expPath, selectedModels, metric, entity } = compareState;
+  const { group, selectedModels, metric, entity } = compareState;
   const wrap = document.getElementById("compare-columns-wrap");
   if (!wrap || !entity) return;
 
@@ -3616,11 +3627,9 @@ function compareRender() {
     </div>`;
 
   const cols = selectedModels.map(folder => {
-    const m = RESULTS_INDEX.find(x => x.resultsFolder === folder);
+    const expPath = compareExpPathForFolder(group, folder);
     const key = folder + "|" + expPath;
-    const rows = (compareState.cache[key] || [])
-      .filter(r => r.m === metric && r.s === entity);
-
+    const rows = (compareState.cache[key] || []).filter(r => r.m === metric && r.s === entity);
     const rowsHtml = rows.length === 0
       ? `<tr><td colspan="2" style="text-align:center;color:var(--ink-2);padding:16px;">No triples for this entity.</td></tr>`
       : rows.map(r => `
@@ -3628,10 +3637,9 @@ function compareRender() {
             <td class="pred">${esc(r.p)}</td>
             <td class="obj">${esc(r.o)}</td>
           </tr>`).join("");
-
     return `
       <div class="compare-col">
-        <div class="compare-col-header">${esc(m.display)}<span class="org-tag">${esc(m.org)}</span></div>
+        <div class="compare-col-header">${esc(RESULTS_MODELS[folder].display)}</div>
         <div class="compare-col-body">
           <table class="compare-tbl"><tbody>${rowsHtml}</tbody></table>
         </div>
