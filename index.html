@@ -1091,6 +1091,154 @@ footer a:hover { color: var(--ink); }
 }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* ============ COMPARE RESULTS ============ */
+.compare-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.compare-sidebar { display: flex; flex-direction: column; gap: 20px; }
+.compare-sidebar-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 8px;
+}
+.compare-exp-select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 13px;
+  cursor: pointer;
+}
+.compare-metric-toggle {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.compare-metric-toggle button {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  background: var(--card);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.compare-metric-toggle button.active {
+  background: var(--accent);
+  color: #fff;
+}
+.compare-model-list { display: flex; flex-direction: column; gap: 4px; }
+.compare-model-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 12.5px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color .15s, background .15s;
+}
+.compare-model-btn .org { font-size: 10.5px; color: var(--ink-2); margin-left: auto; }
+.compare-model-btn.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--card)); }
+.compare-model-btn.disabled { opacity: .4; cursor: not-allowed; }
+.compare-model-btn .check {
+  width: 14px; height: 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  color: transparent;
+}
+.compare-model-btn.selected .check { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.compare-entity-wrap { margin-bottom: 16px; position: relative; }
+.compare-entity-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--card);
+  color: var(--ink);
+  box-sizing: border-box;
+}
+.compare-entity-input:focus { outline: none; border-color: var(--accent); }
+.compare-entity-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  z-index: 50;
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+}
+.compare-entity-option {
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .1s;
+}
+.compare-entity-option:hover, .compare-entity-option.focused { background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+
+.compare-columns {
+  display: grid;
+  gap: 16px;
+}
+.compare-columns[data-cols="1"] { grid-template-columns: 1fr; }
+.compare-columns[data-cols="2"] { grid-template-columns: 1fr 1fr; }
+.compare-columns[data-cols="3"] { grid-template-columns: 1fr 1fr 1fr; }
+
+.compare-col { display: flex; flex-direction: column; gap: 0; }
+.compare-col-header {
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px 8px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.compare-col-header .org-tag { font-size: 10.5px; font-weight: 400; color: var(--ink-2); margin-left: 6px; }
+.compare-col-body {
+  border: 1px solid var(--line);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  overflow-y: auto;
+  max-height: 520px;
+}
+table.compare-tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+table.compare-tbl td { padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.compare-tbl tr:last-child td { border-bottom: none; }
+table.compare-tbl td.pred { font-family: var(--mono); font-size: 11px; color: var(--accent); white-space: nowrap; padding-right: 6px; }
+table.compare-tbl td.obj { color: var(--ink); }
+table.compare-tbl tr.result-E { background: #d4edda; }
+table.compare-tbl tr.result-C { background: #f8d7da; }
+table.compare-tbl tr.result-N { background: var(--card); }
+.compare-legend { display: flex; gap: 14px; font-size: 11.5px; margin-bottom: 12px; }
+.compare-legend-item { display: flex; align-items: center; gap: 5px; }
+.compare-legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+.compare-empty { padding: 32px 16px; text-align: center; color: var(--ink-2); font-size: 13.5px; }
+.compare-empty b { display: block; font-size: 15px; color: var(--ink); margin-bottom: 6px; }
+.compare-loading { padding: 24px; text-align: center; color: var(--ink-2); font-size: 13px; }
 </style>
 </head>
 <body>
@@ -1113,6 +1261,7 @@ footer a:hover { color: var(--ink); }
       <a href="#" data-view="entities" onclick="showView('entities'); return false;"><span class="lbl">Entity Lists</span></a>
       <a href="#" data-view="corpora" onclick="showView('corpora'); return false;"><span class="lbl">Reference Corpora</span></a>
       <a href="#" data-view="triples" onclick="showView('triples'); return false;"><span class="lbl">Elicited Triples</span></a>
+      <a href="#" data-view="compare" onclick="showView('compare'); return false;"><span class="lbl">Compare Results</span></a>
       <a href="https://arxiv.org/abs/2605.26937" target="_blank" rel="noopener"><span class="lbl">Paper</span><span class="ext">↗</span></a>
       <a href="https://github.com/Knowledge-aware-AI/BeyondQuestions" target="_blank" rel="noopener"><span class="lbl">GitHub</span><span class="ext">↗</span></a>
     </div>
@@ -1672,6 +1821,52 @@ footer a:hover { color: var(--ink); }
         <div>
           <div id="triples-content">
             <div class="triples-empty"><b>Select a model</b>Choose a model on the left to explore its elicited triples.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="view-compare" class="view">
+  <section class="section" style="padding-top: 72px;">
+    <div class="wrap">
+      <div class="section-h" style="margin-bottom: 28px;">
+        <div class="section-h-left">
+          <div class="kicker">Evaluation explorer</div>
+          <h2>Compare Results</h2>
+        </div>
+        <div class="section-h-right">Pick an experiment, a metric, and up to 3 models to compare. Then choose an entity to see each model's sampled triples colored by NLI judgment: <span style="color:#155724;font-weight:600;">green = entailed</span>, <span style="color:#721c24;font-weight:600;">red = contradiction</span>, grey = neutral.</div>
+      </div>
+
+      <div class="compare-layout">
+        <!-- sidebar -->
+        <div class="compare-sidebar">
+          <div>
+            <div class="compare-sidebar-label">Experiment</div>
+            <select class="compare-exp-select" id="compare-exp-select" onchange="compareSelectExp(this.value)">
+              <option value="">— choose —</option>
+            </select>
+          </div>
+          <div>
+            <div class="compare-sidebar-label">Metric</div>
+            <div class="compare-metric-toggle">
+              <button id="compare-metric-P" class="active" onclick="compareSetMetric('P')">Precision</button>
+              <button id="compare-metric-R" onclick="compareSetMetric('R')">Recall</button>
+            </div>
+          </div>
+          <div>
+            <div class="compare-sidebar-label">Models <span style="font-weight:400;text-transform:none;letter-spacing:0;">(up to 3)</span></div>
+            <div class="compare-model-list" id="compare-model-list">
+              <div style="font-size:12px;color:var(--ink-2);">Select an experiment first.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main -->
+        <div>
+          <div id="compare-main">
+            <div class="compare-empty"><b>Get started</b>Choose an experiment and at least one model on the left.</div>
           </div>
         </div>
       </div>
@@ -3062,6 +3257,389 @@ function triplesSelectExp(modelId, idx) {
     </button>`
   ).join("");
 })();
+
+/* ============================================================
+   COMPARE RESULTS
+============================================================ */
+const EVAL_FOLDER = "meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval";
+
+// Each entry: { display, org, resultsFolder, experiments: [{label, expPath}] }
+const RESULTS_INDEX = [
+  { display: "Claude Haiku 4.5",      org: "Anthropic",       resultsFolder: "anthropic_claude-haiku-4.5",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Claude Opus 4.6",       org: "Anthropic",       resultsFolder: "anthropic_claude-opus-4.6",
+    experiments: [
+      { label: "Random · Low",    expPath: "random/low" },
+      { label: "Random · Medium", expPath: "random/medium" },
+      { label: "Random · High",   expPath: "random/high" }
+    ]
+  },
+  { display: "Claude Sonnet 4.6",     org: "Anthropic",       resultsFolder: "anthropic_claude-sonnet-4.6",
+    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
+  { display: "DeepSeek V3.2",         org: "DeepSeek",        resultsFolder: "deepseek-ai_deepseek-v3.2",
+    experiments: [
+      { label: "Random",              expPath: "random" },
+      { label: "Domains",             expPath: "domains" },
+      { label: "Popularity 0–33%",    expPath: "popularity/0-33%" },
+      { label: "Popularity 33–66%",   expPath: "popularity/33-66%" },
+      { label: "Popularity 66–100%",  expPath: "popularity/66-100%" },
+      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
+      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
+      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
+      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
+      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
+      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
+    ]
+  },
+  { display: "Gemini 3.1 Flash Lite", org: "Google DeepMind", resultsFolder: "google_gemini-3.1-flash-lite-preview",
+    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
+  { display: "Gemini 3.1 Pro",        org: "Google DeepMind", resultsFolder: "google_gemini-3.1-pro-preview",
+    experiments: [
+      { label: "Random · Low",    expPath: "random/low" },
+      { label: "Random · Medium", expPath: "random/medium" },
+      { label: "Random · High",   expPath: "random/high" }
+    ]
+  },
+  { display: "Gemini 3 Flash",        org: "Google DeepMind", resultsFolder: "google_gemini-3-flash-preview",
+    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
+  { display: "Gemma 3 12B",           org: "Google",          resultsFolder: "google_gemma-3-12b-it",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Gemma 3 27B",           org: "Google",          resultsFolder: "google_gemma-3-27b-it",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Gemma 3 4B",            org: "Google",          resultsFolder: "google_gemma-3-4b-it",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "GPT-5.4",               org: "OpenAI",          resultsFolder: "gpt-5.4-2026-03-05",
+    experiments: [
+      { label: "Random · Low",           expPath: "random/low" },
+      { label: "Random · Medium",        expPath: "random/medium" },
+      { label: "Random · High",          expPath: "random/high" },
+      { label: "Domains",                expPath: "domains" },
+      { label: "Popularity 0–33%",       expPath: "popularity/0-33%" },
+      { label: "Popularity 33–66%",      expPath: "popularity/33-66%" },
+      { label: "Popularity 66–100%",     expPath: "popularity/66-100%" },
+      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
+      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
+      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
+      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
+      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
+      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
+    ]
+  },
+  { display: "GPT-5 Mini",            org: "OpenAI",          resultsFolder: "gpt-5-mini-2025-08-07",
+    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
+  { display: "GPT-5 Nano",            org: "OpenAI",          resultsFolder: "gpt-5-nano-2025-08-07",
+    experiments: [{ label: "Random · Medium", expPath: "random/medium" }] },
+  { display: "Llama 4 Scout 17B",     org: "Meta AI",         resultsFolder: "meta-llama_llama-4-scout-17b-16e-instruct",
+    experiments: [
+      { label: "Random",              expPath: "random" },
+      { label: "Domains",             expPath: "domains" },
+      { label: "Popularity 0–33%",    expPath: "popularity/0-33%" },
+      { label: "Popularity 33–66%",   expPath: "popularity/33-66%" },
+      { label: "Popularity 66–100%",  expPath: "popularity/66-100%" },
+      { label: "Range pop 5–10 lt 1",        expPath: "ranges/pop_5_10_lt_1" },
+      { label: "Range pop 10–20 lt 1–2",     expPath: "ranges/pop_10_20_lt_1_2" },
+      { label: "Range pop 25–50 lt 3–5",     expPath: "ranges/pop_25_50_lt_3_5" },
+      { label: "Range pop 33–66 lt 3–7",     expPath: "ranges/pop_33_66_lt_3_7" },
+      { label: "Range pop 75–150 lt 8–15",   expPath: "ranges/pop_75_150_lt_8_15" },
+      { label: "Range pop 100–200 lt 10–20", expPath: "ranges/pop_100_200_lt_10_20" }
+    ]
+  },
+  { display: "MiniMax M2.5",          org: "MiniMax",         resultsFolder: "minimaxai_minimax-m2.5",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Mistral Large",         org: "Mistral AI",      resultsFolder: "mistralai_mistral-large-2512",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Kimi K2.5",            org: "Moonshot AI",      resultsFolder: "moonshotai_kimi-k2.5",
+    experiments: [
+      { label: "Random",                          expPath: "random" },
+      { label: "Prompt: LMCRAWL",                 expPath: "prompts/LMCRAWL" },
+      { label: "Prompt: GPTKB",                   expPath: "prompts/GPTKB" },
+      { label: "Prompt: GPTKB 2× rep.",           expPath: "prompts/GPTKB_2x_repetition" },
+      { label: "Prompt: GPTKB 3× rep.",           expPath: "prompts/GPTKB_3x_repetition" },
+      { label: "Prompt: Schema.org",              expPath: "prompts/schemaorg_schema" },
+      { label: "Prompt: Schema.org (no constr.)", expPath: "prompts/schemaorg_schema_no_constraints" },
+      { label: "Prompt: Wikidata schema",         expPath: "prompts/wikidata_schema" },
+      { label: "Prompt: Wikidata (no constr.)",   expPath: "prompts/wikidata_schema_no_constraints" }
+    ]
+  },
+  { display: "GPT-OSS-120B",          org: "OpenAI",          resultsFolder: "openai_gpt-oss-120b",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Qwen3.5 27B",           org: "Alibaba",         resultsFolder: "qwen_qwen3.5-27b",
+    experiments: [{ label: "Random", expPath: "random" }] },
+  { display: "Grok 4.1 Fast",         org: "xAI",             resultsFolder: "x-ai_grok-4.1-fast",
+    experiments: [{ label: "Random", expPath: "random" }] }
+];
+
+function compareResultsIndexPath(resultsFolder, expPath) {
+  return `RESULTS/${resultsFolder}/${expPath}/${EVAL_FOLDER}/results_index.json`;
+}
+
+const compareState = {
+  expPath: null,         // currently selected experiment expPath
+  metric: "P",          // P or R
+  selectedModels: [],   // array of resultsFolder strings (max 3)
+  cache: {},            // resultsFolder+expPath -> array of row objects
+  entities: [],         // intersection entity list
+  entity: null,         // selected entity
+  entityInput: "",      // autocomplete input value
+  dropdownVisible: false
+};
+
+function compareModelsForExp(expPath) {
+  return RESULTS_INDEX.filter(m => m.experiments.some(e => e.expPath === expPath));
+}
+
+// Populate experiment dropdown from all unique expPaths across all models
+(function initCompare() {
+  const sel = document.getElementById("compare-exp-select");
+  // Gather all unique experiment labels + paths, in a fixed order
+  const seen = new Map();
+  // Ordering: random first, then domains, popularity, ranges, prompts
+  const order = ["random", "random/low", "random/medium", "random/high",
+    "domains",
+    "popularity/0-33%", "popularity/33-66%", "popularity/66-100%",
+    "ranges/pop_5_10_lt_1", "ranges/pop_10_20_lt_1_2", "ranges/pop_25_50_lt_3_5",
+    "ranges/pop_33_66_lt_3_7", "ranges/pop_75_150_lt_8_15", "ranges/pop_100_200_lt_10_20",
+    "prompts/LMCRAWL", "prompts/GPTKB", "prompts/GPTKB_2x_repetition", "prompts/GPTKB_3x_repetition",
+    "prompts/schemaorg_schema", "prompts/schemaorg_schema_no_constraints",
+    "prompts/wikidata_schema", "prompts/wikidata_schema_no_constraints"
+  ];
+  for (const expPath of order) {
+    const models = compareModelsForExp(expPath);
+    if (models.length === 0) continue;
+    const exp = models[0].experiments.find(e => e.expPath === expPath);
+    const label = exp ? exp.label : expPath;
+    const modelCount = models.length;
+    sel.appendChild(Object.assign(document.createElement("option"), {
+      value: expPath,
+      textContent: `${label} (${modelCount} model${modelCount > 1 ? "s" : ""})`
+    }));
+  }
+})();
+
+function compareSelectExp(expPath) {
+  compareState.expPath = expPath || null;
+  compareState.selectedModels = [];
+  compareState.entities = [];
+  compareState.entity = null;
+  compareState.entityInput = "";
+
+  const modelList = document.getElementById("compare-model-list");
+  if (!expPath) {
+    modelList.innerHTML = '<div style="font-size:12px;color:var(--ink-2);">Select an experiment first.</div>';
+    document.getElementById("compare-main").innerHTML =
+      '<div class="compare-empty"><b>Get started</b>Choose an experiment and at least one model on the left.</div>';
+    return;
+  }
+
+  const models = compareModelsForExp(expPath);
+  modelList.innerHTML = models.map(m =>
+    `<button class="compare-model-btn" id="cmbtn-${CSS.escape(m.resultsFolder)}"
+       onclick="compareToggleModel('${esc(m.resultsFolder)}')" data-folder="${esc(m.resultsFolder)}">
+      <span class="check">✓</span>
+      ${esc(m.display)}<span class="org">${esc(m.org)}</span>
+    </button>`
+  ).join("");
+
+  document.getElementById("compare-main").innerHTML =
+    '<div class="compare-empty"><b>Select models</b>Choose up to 3 models to compare.</div>';
+}
+
+function compareSetMetric(m) {
+  compareState.metric = m;
+  document.getElementById("compare-metric-P").classList.toggle("active", m === "P");
+  document.getElementById("compare-metric-R").classList.toggle("active", m === "R");
+  if (compareState.entity) compareRender();
+  else if (compareState.selectedModels.length > 0) compareUpdateEntities();
+}
+
+async function compareToggleModel(folder) {
+  const idx = compareState.selectedModels.indexOf(folder);
+  if (idx >= 0) {
+    compareState.selectedModels.splice(idx, 1);
+  } else {
+    if (compareState.selectedModels.length >= 3) return;
+    compareState.selectedModels.push(folder);
+  }
+
+  // Update button states
+  const models = compareModelsForExp(compareState.expPath);
+  models.forEach(m => {
+    const btn = document.getElementById("cmbtn-" + CSS.escape(m.resultsFolder));
+    if (!btn) return;
+    const sel = compareState.selectedModels.includes(m.resultsFolder);
+    const maxed = compareState.selectedModels.length >= 3 && !sel;
+    btn.classList.toggle("selected", sel);
+    btn.classList.toggle("disabled", maxed);
+  });
+
+  compareState.entity = null;
+  compareState.entityInput = "";
+  if (compareState.selectedModels.length === 0) {
+    document.getElementById("compare-main").innerHTML =
+      '<div class="compare-empty"><b>Select models</b>Choose up to 3 models to compare.</div>';
+    return;
+  }
+
+  document.getElementById("compare-main").innerHTML =
+    '<div class="compare-loading">Loading results…</div>';
+  await compareFetchAll();
+  compareUpdateEntities();
+}
+
+async function compareFetchAll() {
+  const { expPath, selectedModels } = compareState;
+  const fetches = selectedModels.map(async folder => {
+    const key = folder + "|" + expPath;
+    if (compareState.cache[key]) return;
+    const path = compareResultsIndexPath(folder, expPath);
+    try {
+      const resp = await fetch(toRawURL(path));
+      if (!resp.ok) throw new Error(resp.status);
+      compareState.cache[key] = await resp.json();
+    } catch(e) {
+      compareState.cache[key] = [];
+    }
+  });
+  await Promise.all(fetches);
+}
+
+function compareUpdateEntities() {
+  const { expPath, selectedModels, metric } = compareState;
+  if (selectedModels.length === 0) return;
+
+  // Build entity sets per model for the selected metric, then intersect
+  const sets = selectedModels.map(folder => {
+    const key = folder + "|" + expPath;
+    const rows = compareState.cache[key] || [];
+    const s = new Set(rows.filter(r => r.m === metric).map(r => r.s));
+    return s;
+  });
+
+  let intersection = [...sets[0]];
+  for (let i = 1; i < sets.length; i++) {
+    intersection = intersection.filter(e => sets[i].has(e));
+  }
+  intersection.sort();
+  compareState.entities = intersection;
+  compareState.entity = null;
+  compareState.entityInput = "";
+
+  const main = document.getElementById("compare-main");
+  if (intersection.length === 0) {
+    main.innerHTML = '<div class="compare-empty"><b>No common entities</b>The selected models share no sampled entities for this experiment and metric.</div>';
+    return;
+  }
+
+  main.innerHTML = `
+    <div class="compare-entity-wrap" id="compare-entity-wrap">
+      <input class="compare-entity-input" id="compare-entity-input" type="text"
+        placeholder="Search entity (${intersection.length} available)…"
+        autocomplete="off"
+        oninput="compareEntityInput(this.value)"
+        onkeydown="compareEntityKeydown(event)"
+        onfocus="compareShowDropdown()"
+        onblur="setTimeout(compareHideDropdown, 150)" />
+      <div class="compare-entity-dropdown" id="compare-entity-dropdown" style="display:none;"></div>
+    </div>
+    <div id="compare-columns-wrap"></div>`;
+}
+
+function compareEntityInput(val) {
+  compareState.entityInput = val;
+  compareShowDropdown();
+}
+
+function compareShowDropdown() {
+  const { entities, entityInput } = compareState;
+  const q = entityInput.toLowerCase();
+  const filtered = q ? entities.filter(e => e.toLowerCase().includes(q)) : entities;
+  const dd = document.getElementById("compare-entity-dropdown");
+  if (!dd) return;
+  if (filtered.length === 0) { dd.style.display = "none"; return; }
+  const top = filtered.slice(0, 80);
+  dd.innerHTML = top.map((e, i) =>
+    `<div class="compare-entity-option" data-entity="${esc(e)}" data-idx="${i}"
+       onmousedown="compareSelectEntity('${esc(e).replace(/'/g,"&#39;")}')">${esc(e)}</div>`
+  ).join("");
+  dd.style.display = "block";
+  compareState.dropdownVisible = true;
+}
+
+function compareHideDropdown() {
+  const dd = document.getElementById("compare-entity-dropdown");
+  if (dd) dd.style.display = "none";
+  compareState.dropdownVisible = false;
+}
+
+function compareEntityKeydown(e) {
+  if (e.key === "Enter") {
+    const dd = document.getElementById("compare-entity-dropdown");
+    const focused = dd && dd.querySelector(".focused");
+    if (focused) {
+      compareSelectEntity(focused.dataset.entity);
+    } else {
+      const first = dd && dd.querySelector(".compare-entity-option");
+      if (first) compareSelectEntity(first.dataset.entity);
+    }
+  } else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    const dd = document.getElementById("compare-entity-dropdown");
+    if (!dd) return;
+    const opts = [...dd.querySelectorAll(".compare-entity-option")];
+    const cur = dd.querySelector(".focused");
+    let idx = cur ? opts.indexOf(cur) : -1;
+    if (cur) cur.classList.remove("focused");
+    idx = e.key === "ArrowDown" ? Math.min(idx + 1, opts.length - 1) : Math.max(idx - 1, 0);
+    if (opts[idx]) { opts[idx].classList.add("focused"); opts[idx].scrollIntoView({block:"nearest"}); }
+  }
+}
+
+function compareSelectEntity(entity) {
+  compareState.entity = entity;
+  compareState.entityInput = entity;
+  const inp = document.getElementById("compare-entity-input");
+  if (inp) inp.value = entity;
+  compareHideDropdown();
+  compareRender();
+}
+
+function compareRender() {
+  const { expPath, selectedModels, metric, entity } = compareState;
+  const wrap = document.getElementById("compare-columns-wrap");
+  if (!wrap || !entity) return;
+
+  const legendHtml = `
+    <div class="compare-legend">
+      <div class="compare-legend-item"><div class="compare-legend-dot" style="background:#28a745;"></div> Entailment</div>
+      <div class="compare-legend-item"><div class="compare-legend-dot" style="background:#dc3545;"></div> Contradiction</div>
+      <div class="compare-legend-item"><div class="compare-legend-dot" style="background:var(--line);"></div> Neutral</div>
+    </div>`;
+
+  const cols = selectedModels.map(folder => {
+    const m = RESULTS_INDEX.find(x => x.resultsFolder === folder);
+    const key = folder + "|" + expPath;
+    const rows = (compareState.cache[key] || [])
+      .filter(r => r.m === metric && r.s === entity);
+
+    const rowsHtml = rows.length === 0
+      ? `<tr><td colspan="2" style="text-align:center;color:var(--ink-2);padding:16px;">No triples for this entity.</td></tr>`
+      : rows.map(r => `
+          <tr class="result-${r.c}">
+            <td class="pred">${esc(r.p)}</td>
+            <td class="obj">${esc(r.o)}</td>
+          </tr>`).join("");
+
+    return `
+      <div class="compare-col">
+        <div class="compare-col-header">${esc(m.display)}<span class="org-tag">${esc(m.org)}</span></div>
+        <div class="compare-col-body">
+          <table class="compare-tbl"><tbody>${rowsHtml}</tbody></table>
+        </div>
+      </div>`;
+  }).join("");
+
+  wrap.innerHTML = legendHtml + `<div class="compare-columns" data-cols="${selectedModels.length}">${cols}</div>`;
+}
 </script>
 
 </body>
