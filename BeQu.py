@@ -448,8 +448,14 @@ def BeQu(
                 
                 return results_summary
         
-        if isinstance(model_elicitation, str):
-                models = [model_elicitation]
+        if isinstance(model_elicitation, list):
+                models = model_elicitation
+        elif isinstance(model_elicitation, str):
+                stripped = model_elicitation.strip()
+                if stripped.startswith("[") and stripped.endswith("]"):
+                        models = [m.strip().strip("'\"") for m in stripped[1:-1].split(",") if m.strip()]
+                else:
+                        models = [model_elicitation]
         else:
                 models = []
 
