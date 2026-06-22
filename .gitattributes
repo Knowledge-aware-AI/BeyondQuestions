@@ -1,0 +1,4 @@
+REFERENCE_CORPUS/domains/GT.json.gz filter=lfs diff=lfs merge=lfs -text
+REFERENCE_CORPUS/popularity/old/GT.json.gz filter=lfs diff=lfs merge=lfs -text
+REFERENCE_CORPUS/random/200/GT.json filter=lfs diff=lfs merge=lfs -text
+REFERENCE_CORPUS/random/10k/GT.json.gz filter=lfs diff=lfs merge=lfs -text

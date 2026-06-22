@@ -369,7 +369,33 @@ def BeQu(
                         return []
                 
                 results_summary = []
-                
+
+                # Pre-build ground truth once before parallel evaluation to avoid
+                # multiple workers racing to fetch the same Brave Search results.
+                print(f"\n{'='*70}")
+                print("Pre-building ground truth before parallel evaluation...")
+                print(f"{'='*70}\n")
+                from eval import main_evaluation as _main_eval
+                _sample_config = all_configs[0][1]
+                _main_eval(
+                        entities_file_path=_sample_config["entities_file_path"],
+                        elicited_triples_dir=_sample_config["elicited_triples_dir"],
+                        ground_truth_dir_path=_sample_config["ground_truth_dir_path"],
+                        results_dir_path=None,
+                        llm_judge=llm_judge,
+                        seed=seed,
+                        sample_size=sample_size,
+                        evaluate_by_category=evaluate_by_category,
+                        triples_per_category=triples_per_category,
+                        evaluate_by_popularity=evaluate_by_popularity,
+                        triples_per_popularity_bucket=triples_per_category,
+                        web_results_count=web_results_count,
+                        web_docs_for_eval=web_docs_for_eval,
+                        build_ground_truth_only=True,
+                        top_k=top_k,
+                )
+                print(f"Ground truth ready. Starting parallel evaluation...")
+
                 def evaluate_single_config(args):
                         i, (model, config), total = args
                         model_name = config["model_elicitation"]
@@ -724,8 +750,29 @@ def BeQu(
                 if result is not None:
                         results_summary.append(result)
         else:
-                # Multiple models: run elicitation pipelines in parallel
-                print(f"Running elicitation for {len(models)} models in parallel...")
+                # Multiple models: pre-build ground truth once before parallel execution
+                # to avoid all workers racing to fetch the same Brave Search results.
+                print(f"\n{'='*70}")
+                print("Pre-building ground truth before parallel elicitation/evaluation...")
+                print(f"{'='*70}\n")
+                main_evaluation(
+                        entities_file_path=entities_file_path,
+                        elicited_triples_dir=elicited_triples_dir,
+                        ground_truth_dir_path=ground_truth_dir_path,
+                        results_dir_path=None,
+                        llm_judge=llm_judge,
+                        seed=seed,
+                        sample_size=sample_size,
+                        evaluate_by_category=evaluate_by_category,
+                        triples_per_category=triples_per_category,
+                        evaluate_by_popularity=evaluate_by_popularity,
+                        triples_per_popularity_bucket=triples_per_category,
+                        web_results_count=web_results_count,
+                        web_docs_for_eval=web_docs_for_eval,
+                        build_ground_truth_only=True,
+                        top_k=top_k,
+                )
+                print(f"Ground truth ready. Running elicitation for {len(models)} models in parallel...")
                 with ThreadPoolExecutor(max_workers=len(models)) as executor:
                         future_to_model = {executor.submit(run_single_model, model): model for model in models}
                         for future in as_completed(future_to_model):

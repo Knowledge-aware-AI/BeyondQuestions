@@ -1,0 +1,10 @@
+2026-06-18 13:47:06 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/logs
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:115 - Model: openai/gpt-oss-120b
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:118 - Results directory: RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-06-18 13:47:06 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
