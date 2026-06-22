@@ -1,0 +1,209 @@
+2026-06-18 12:00:12 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/logs
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:115 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-06-18 12:00:12 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json (200 entities)
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_triple_extractor:__init__:51 - Ground truth file: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Loaded 200 entities from cache
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Max workers for parallel processing: 5
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:325 - Starting parallel batch processing of 200 entities with 5 workers
+2026-06-18 12:00:13 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:353 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/openai_gpt-oss-120b_rag_eval
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-06-18 12:00:13 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/openai_gpt-oss-120b_rag_eval/results_detailed.csv
+2026-06-18 12:00:13 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-06-18 12:00:13 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples_1781776657
+2026-06-18 12:00:13 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Castillo_de_San_Julián: 20 passages, 20 embeddings
+2026-06-18 12:00:13 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:13 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Castillo de San Julián, instanceOf, castle)
+2026-06-18 12:00:13 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, wikipedia, web, web, wikipedia, web, web, web, web
+2026-06-18 12:00:13 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:26 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Castillo de San Julián, instanceOf, castle)... => c
+2026-06-18 12:00:26 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:26 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Castillo de San Julián, hasHeritageDesignation, Bien de Interés Cultural)
+2026-06-18 12:00:26 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, wikipedia, wikipedia, web, web, web
+2026-06-18 12:00:26 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:32 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Castillo de San Julián, hasHeritageDesignation, B... => c
+2026-06-18 12:00:32 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:32 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Castillo de San Julián, builtDuring, reign of Isabella II)
+2026-06-18 12:00:32 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, wikipedia, wikipedia, web, web, web, web, web, web
+2026-06-18 12:00:32 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:00:41 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:00:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:42 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Castillo de San Julián, builtDuring, reign of Isa... => c
+2026-06-18 12:00:42 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:42 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Castillo de San Julián, situatedOn, Monte de San Julián)
+2026-06-18 12:00:42 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, wikipedia, web, web, wikipedia, web, web, web
+2026-06-18 12:00:42 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:47 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Castillo de San Julián, situatedOn, Monte de San ... => a
+2026-06-18 12:00:48 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:48 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Castillo de San Julián, overlooks, Cartagena)
+2026-06-18 12:00:48 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, wikipedia, web, web, web, wikipedia, web, web
+2026-06-18 12:00:48 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:00:56 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Castillo de San Julián, overlooks, Cartagena)... => c
+2026-06-18 12:00:56 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/New_Canton,_Virginia: 21 passages, 21 embeddings
+2026-06-18 12:00:56 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:00:56 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (New Canton, Virginia, timezone, UTC-5)
+2026-06-18 12:00:56 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:00:56 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:03 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (New Canton, Virginia, timezone, UTC-5)... => c
+2026-06-18 12:01:03 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:03 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (New Canton, Virginia, timezone, Eastern Time Zone)
+2026-06-18 12:01:03 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:01:03 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:10 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (New Canton, Virginia, timezone, Eastern Time Zone... => c
+2026-06-18 12:01:10 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:10 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (New Canton, Virginia, locatedIn, Buckingham County)
+2026-06-18 12:01:10 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, wikipedia, web, web, web, web, web, web, web
+2026-06-18 12:01:10 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:01:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:15 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (New Canton, Virginia, locatedIn, Buckingham Count... => a
+2026-06-18 12:01:15 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Aleptina_junctimacula: 14 passages, 14 embeddings
+2026-06-18 12:01:16 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:16 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aleptina junctimacula, kingdom, Animalia)
+2026-06-18 12:01:16 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:01:16 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:22 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aleptina junctimacula, kingdom, Animalia)... => a
+2026-06-18 12:01:22 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:22 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aleptina junctimacula, instanceOf, species)
+2026-06-18 12:01:22 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:01:22 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:32 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aleptina junctimacula, instanceOf, species)... => a
+2026-06-18 12:01:32 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:32 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aleptina junctimacula, describedBy, Barnes)
+2026-06-18 12:01:32 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:01:32 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:40 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aleptina junctimacula, describedBy, Barnes)... => b
+2026-06-18 12:01:40 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:40 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aleptina junctimacula, order, Lepidoptera)
+2026-06-18 12:01:40 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 12:01:40 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:01:42 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:01:55 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aleptina junctimacula, order, Lepidoptera)... => a
+2026-06-18 12:01:55 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Exit_(2011_film): 23 passages, 23 embeddings
+2026-06-18 12:01:55 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:01:55 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Exit (2011 film), releaseYear, 2011)
+2026-06-18 12:01:55 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, web, web, web, web
+2026-06-18 12:01:55 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:02:02 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Exit (2011 film), releaseYear, 2011)... => a
+2026-06-18 12:02:02 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:02:02 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Exit (2011 film), instanceOf, film)
+2026-06-18 12:02:02 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, web, web, web, web, web, web, web, web
+2026-06-18 12:02:02 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:02:09 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Exit (2011 film), instanceOf, film)... => a
+2026-06-18 12:02:10 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 12:02:10 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Exit (2011 film), genre, drama)
+2026-06-18 12:02:10 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, web, web, web, web, web, web, web, web
+2026-06-18 12:02:10 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: completed
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:481 - Moved in_progress_1781776657.json to /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4-turbo-2024-04-09/prompts/.work/1781776657_447908_1401/completed_dir/completed_1781776657.json
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:182 - Processing a newly completed batch: `batch_6a33c112760c81909ed2dfda5b47c696`.
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:192 - Downloading results from OpenAI.
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:02:12 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:02:13 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:201 - Batch results written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4-turbo-2024-04-09/prompts/.work/1781776657_447908_1401/results_dir/batch_results_1781776657.json`.
+2026-06-18 12:02:13 | ERROR    | elicitation.gpt_kbc:process_completed_batch_dir:217 - Unexpected error while parsing line 58: {"id": "batch_req_6a33c21c1f588190a73a1a732ccaba03", "custom_id": "Word joiner", "response": {"status_code": 200, "request_id": "0b027678-76c8-48e7-87ab-722ff8c49263", "body": {"id": "chatcmpl-Ds3obh57eQSclZ2gTywhn6W3f1LKQ", "object": "chat.completion", "created": 1781776749, "model": "gpt-4-turbo-2024-04-09", "choices": [{"index": 0, "message": {"role": "assistant", "content": "{\n  \"result\": []\n}", "refusal": null, "annotations": []}, "logprobs": null, "finish_reason": "stop"}], "usage": {"prompt_tokens": 173, "completion_tokens": 7, "total_tokens": 180, "prompt_tokens_details": {"cached_tokens": 0, "audio_tokens": 0}, "completion_tokens_details": {"reasoning_tokens": 0, "audio_tokens": 0, "accepted_prediction_tokens": 0, "rejected_prediction_tokens": 0}}, "service_tier": "default", "system_fingerprint": "fp_48d008729f"}}, "error": null} | Error: Key 'facts' not found in response
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:219 - Found 1,383 raw triples in the batch results.
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:write_triples_to_csv:286 - Data written to CSV succesfully ...
+2026-06-18 12:02:13 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:229 - Raw triples written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4-turbo-2024-04-09/prompts/elicited_triples_1781776657.csv`.
+2026-06-18 12:02:13 | INFO     | elicitation.main:_poll_until_complete:529 - All batches completed and processed. Exiting.
+2026-06-18 12:02:13 | INFO     | elicitation.main:_poll_until_complete:541 - Cleanup complete.

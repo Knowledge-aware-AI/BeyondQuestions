@@ -1838,6 +1838,9 @@ table.compare-tbl tr.result-N { background: var(--card); }
         </div>
         <div class="section-h-right">Pick a setting, a metric, and up to 3 models to compare. Then choose an entity to see each model's sampled triples colored by NLI judgment: <span style="color:#155724;font-weight:600;">green = entailed</span>, <span style="color:#721c24;font-weight:600;">red = contradiction</span>, grey = neutral.</div>
       </div>
+      <div style="margin: 0.75rem 0 1.25rem; padding: 0.65rem 1rem; background:#fff8e1; border:1px solid #ffe082; border-radius:6px; font-size:0.88rem; color:#5d4037; line-height:1.5;">
+        <strong>Note:</strong> During evaluation 500 triples were sampled respectively for precision and recall, so neither all entities nor all triples for the entities are shown here. For the full list of entities visit the <a href="#" onclick="showView('entities'); return false;" style="color:#5d4037; text-decoration:underline;">Entity Lists</a> section, and for the full list of triples elicited for each entity visit the <a href="#" onclick="showView('triples'); return false;" style="color:#5d4037; text-decoration:underline;">Elicited Triples</a> section.
+      </div>
 
       <div class="compare-layout">
         <!-- sidebar -->
@@ -3626,25 +3629,68 @@ function compareRender() {
       <div class="compare-legend-item"><div class="compare-legend-dot" style="background:var(--line);"></div> Neutral</div>
     </div>`;
 
-  const cols = selectedModels.map(folder => {
-    const expPath = compareExpPathForFolder(group, folder);
-    const key = folder + "|" + expPath;
-    const rows = (compareState.cache[key] || []).filter(r => r.m === metric && r.s === entity);
-    const rowsHtml = rows.length === 0
-      ? `<tr><td colspan="2" style="text-align:center;color:var(--ink-2);padding:16px;">No triples for this entity.</td></tr>`
-      : rows.map(r => `
-          <tr class="result-${r.c}">
-            <td class="pred">${esc(r.p)}</td>
-            <td class="obj">${esc(r.o)}</td>
-          </tr>`).join("");
-    return `
-      <div class="compare-col">
-        <div class="compare-col-header">${esc(RESULTS_MODELS[folder].display)}</div>
-        <div class="compare-col-body">
-          <table class="compare-tbl"><tbody>${rowsHtml}</tbody></table>
-        </div>
-      </div>`;
-  }).join("");
+  let cols;
+
+  if (metric === "R") {
+    // For recall: show the same reference triples for all models, colored per-model judgment.
+    // Collect union of all reference (p, o) pairs across selected models.
+    const tripleMap = new Map(); // key "p|||o" -> {p, o}
+    selectedModels.forEach(folder => {
+      const expPath = compareExpPathForFolder(group, folder);
+      const key = folder + "|" + expPath;
+      (compareState.cache[key] || []).filter(r => r.m === "R" && r.s === entity).forEach(r => {
+        const k = r.p + "|||" + r.o;
+        if (!tripleMap.has(k)) tripleMap.set(k, { p: r.p, o: r.o });
+      });
+    });
+    const refTriples = [...tripleMap.values()];
+
+    cols = selectedModels.map(folder => {
+      const expPath = compareExpPathForFolder(group, folder);
+      const key = folder + "|" + expPath;
+      const judgmentMap = new Map();
+      (compareState.cache[key] || []).filter(r => r.m === "R" && r.s === entity).forEach(r => {
+        judgmentMap.set(r.p + "|||" + r.o, r.c);
+      });
+      const rowsHtml = refTriples.length === 0
+        ? `<tr><td colspan="2" style="text-align:center;color:var(--ink-2);padding:16px;">No reference triples for this entity.</td></tr>`
+        : refTriples.map(t => {
+            const c = judgmentMap.get(t.p + "|||" + t.o) || "N";
+            return `<tr class="result-${c}">
+              <td class="pred">${esc(t.p)}</td>
+              <td class="obj">${esc(t.o)}</td>
+            </tr>`;
+          }).join("");
+      return `
+        <div class="compare-col">
+          <div class="compare-col-header">${esc(RESULTS_MODELS[folder].display)}</div>
+          <div class="compare-col-body">
+            <table class="compare-tbl"><tbody>${rowsHtml}</tbody></table>
+          </div>
+        </div>`;
+    }).join("");
+  } else {
+    // Precision: existing behavior — each model shows its own elicited triples.
+    cols = selectedModels.map(folder => {
+      const expPath = compareExpPathForFolder(group, folder);
+      const key = folder + "|" + expPath;
+      const rows = (compareState.cache[key] || []).filter(r => r.m === metric && r.s === entity);
+      const rowsHtml = rows.length === 0
+        ? `<tr><td colspan="2" style="text-align:center;color:var(--ink-2);padding:16px;">No triples for this entity.</td></tr>`
+        : rows.map(r => `
+            <tr class="result-${r.c}">
+              <td class="pred">${esc(r.p)}</td>
+              <td class="obj">${esc(r.o)}</td>
+            </tr>`).join("");
+      return `
+        <div class="compare-col">
+          <div class="compare-col-header">${esc(RESULTS_MODELS[folder].display)}</div>
+          <div class="compare-col-body">
+            <table class="compare-tbl"><tbody>${rowsHtml}</tbody></table>
+          </div>
+        </div>`;
+    }).join("");
+  }
 
   wrap.innerHTML = legendHtml + `<div class="compare-columns" data-cols="${selectedModels.length}">${cols}</div>`;
 }

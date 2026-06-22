@@ -1,0 +1,569 @@
+2026-06-18 11:59:42 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/logs
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:115 - Model: openai/gpt-oss-120b
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json (200 entities)
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_triple_extractor:__init__:51 - Ground truth file: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Loaded 200 entities from cache
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Max workers for parallel processing: 5
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:325 - Starting parallel batch processing of 200 entities with 5 workers
+2026-06-18 11:59:42 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:353 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/openai_gpt-oss-120b_rag_eval
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-06-18 11:59:42 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/openai_gpt-oss-120b_rag_eval/results_detailed.csv
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-06-18 11:59:42 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples_1781776657
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:282 - Computing Recall...
+2026-06-18 11:59:42 | DEBUG    | eval.process_request:compute_recall_wiki_dir:793 - Computing Recall (Wiki + Web) for file: elicited_triples_1781776657
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1950–51 La Liga. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Documentation and Cultural Centre of German Sinti and Roma. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Baltimore (magazine). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Helen's Church, Stillingfleet. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Catholic University of Angola. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1956 World Table Tennis Championships. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St James' Church, Grewelthorpe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Matigari ma Njiruungi. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Newsmongers. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yale Steam Laundry. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Favites abdita. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2017 World Aquatics Championships. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Frosti Sigurjónsson. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bundaleer North, South Australia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Rough Guide to the Music of Zimbabwe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pseudococculina rugosoplicata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: National Highway 41 (India). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Amphimachus I of Elis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Valentina Alazraki. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brett Cooper (fighter). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1882 Wentworth colonial by-election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: KRI Teluk Karimata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Miklós Hajdufy. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yale Steam Laundry. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lones Wigger. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Wedding of Prince Felipe and Letizia Ortiz. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Conrad Tao. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Douwe Aukes-class minelayer. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2005–06 Kuwaiti Premier League. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seth Hays House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1952 United States presidential election in Pennsylvania. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Rough Guide to the Music of Zimbabwe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: New Canton, Virginia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Breece Hall. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Aubin Grove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1993 Torneio Rio-São Paulo. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Niambia (crustacean). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Autophagy (journal). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jim McDonnell (boxer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: San Agustin Parish Church (Bay, Laguna). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: KRI Teluk Karimata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yerevan railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Musée Hoangho Paiho. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seeds (TV on the Radio album). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2004 Summer Paralympics – Men's shot put F42–46. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St James' Church, Grewelthorpe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sam Shaw (sound editor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MV Glenachulish. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ministry of Education and Science (Kyrgyzstan). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Emily van Egmond. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jake DeBrusk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Hugh Murray (geographer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Newton (artist). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fondazione Pisa. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2005–06 Kuwaiti Premier League. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jake DeBrusk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Finnish Main Line. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Coordination Chemistry Reviews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Air Wisconsin Flight 965. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: HNLMS Van Meerlant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Småland Runic Inscription 39. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Beaminster School. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Association for Rural & Small Libraries. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Beaminster School. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Exiguobacterium antarcticum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Småland Runic Inscription 39. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Småland Runic Inscription 39. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Notgrove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: United Nations Security Council Resolution 2397. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Amphimachus I of Elis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cyathaspis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 European Athletics Championships – Men's 10,000 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Secrets of Rætikon. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 78 Ursae Majoris A 1. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: William Collingwood (1819–1903). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Heracleum lehmannianum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ben Newton (wheelchair rugby). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Fitzsimons (chess player). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Valentina Alazraki. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brett Cooper (fighter). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Minusio railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Secrets of Rætikon. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: American Medical Writers Association. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Testosterone (2004 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2005–06 Kuwaiti Premier League. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brie, Ille-et-Vilaine. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sottens transmitter. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MV Glenachulish. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nardosinone. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jim McDonnell (boxer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Casekow station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Scott Shane (professor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Minusio railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Channa pleurophthalma. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Chelyabinsk Opera and Ballet Theatre. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Enciclopedia României. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Harvington School. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sam Shaw (sound editor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pierre-François, Marquess of Rougé. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pablo López (footballer, born 1996). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2015 Copa del Rey final. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Mystic, Georgia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2004 Summer Paralympics – Men's shot put F42–46. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St James' Church, Grewelthorpe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Happening (book). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: EuroBasket Women 1985. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Waifu2x. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony DeMarco (dancer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Katherine Langford. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Thunder Bay Symphony Orchestra. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Malekshahi County. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Kazusa-Mitsumata Station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Harry Pitts (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Gunfighter (1917 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Typhoon Doksuri. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Zhangbei station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Toby Fox. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Typhoon Doksuri. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ben Newton (wheelchair rugby). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2019 Great Yarmouth Borough Council election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jake DeBrusk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Cleaner (2021 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Missouri State Penitentiary. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pietro Contarini (bishop). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Port of Henichesk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Gali Guleiyan. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Minusio railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Matigari ma Njiruungi. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Third Degree (1913 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sumida Aquarium. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Third Degree (1913 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Secrets of Rætikon. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Scott Shane (professor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2008–09 Serie A. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Miss Brazil 2014. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2007–08 St. John's Red Storm men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seth Hays House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Valentina Alazraki. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cyathaspis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sottens transmitter. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Helen's Church, Stillingfleet. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Toby Fox. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: TalkTalk (A Perfect Circle song). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Gali Guleiyan. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: No Hard Feelings (2020 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Exiguobacterium antarcticum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sottens transmitter. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong Institute of Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: EuroBasket Women 1985. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 UCI Asia Tour. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Phocylides (beetle). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Voice – Norges beste stemme. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Frosti Sigurjónsson. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fondazione Pisa. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Interest Tax Act, 1974. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2014 Asian Games – Men's 800 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Splendour (apple). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Donald L. Conner House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Fitzsimons (chess player). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: TalkTalk (A Perfect Circle song). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sodium orthosilicate. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Methylsilane. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1952 United States presidential election in Pennsylvania. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2019 Great Yarmouth Borough Council election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Church of St. Peter and St. Paul, Ukmergė. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Waifu2x. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Aubin Grove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 European Athletics Championships – Men's 10,000 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jyo Achyutananda. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MongoDB Inc.. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Exiguobacterium antarcticum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seth Hays House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Library Association of Singapore. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Progress in Physical Geography. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Hugh Murray (geographer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fallout 4: Nuka-World. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yale Steam Laundry. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2017 World Aquatics Championships. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Giovanni Battista Costa (bishop). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Scott Shane (professor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erin Andrews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ha-De-Ron-Dah Wilderness Area. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: New Canton, Virginia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Documentation and Cultural Centre of German Sinti and Roma. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Secrets of Rætikon. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: San Agustin Parish Church (Bay, Laguna). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bernd Seidensticker. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Favites abdita. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Air Wisconsin Flight 965. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Santa María del Valle District. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jyo Achyutananda. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Aubin Grove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Joseph Y. Yun. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Voice – Norges beste stemme. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Breece Hall. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Miklós Hajdufy. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Småland Runic Inscription 39. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Harry Pitts (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Chan Yuk-cheung. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: EuroBasket Women 1985. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Heracleum lehmannianum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Gunfighter (1917 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Heracleum lehmannianum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cemetery Without Crosses. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Paul A. Gompers. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Niambia (crustacean). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: KRI Teluk Karimata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Wilhelm Hauchecorne. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fort of Feira. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Arcade game. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2004 Summer Paralympics – Men's shot put F42–46. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sevilla. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nouran El Torky. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Rough Guide to the Music of Zimbabwe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2013–14 Arkansas–Pine Bluff Golden Lions men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nouran El Torky. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Progress in Physical Geography. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Heracleum lehmannianum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Scott Shane (professor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ben Newton (wheelchair rugby). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2017 World Championships in Athletics – Men's pole vault. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Typhoon Doksuri. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: TalkTalk (A Perfect Circle song). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Progress in Physical Geography. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony DeMarco (dancer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nickelodeon All-Star Brawl 2. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Mystic, Georgia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Secrets of Rætikon. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2019 Great Yarmouth Borough Council election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Utica Public Library. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Joseph Y. Yun. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Methylsilane. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seth Hays House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 78 Ursae Majoris. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Church of St. Peter and St. Paul, Ukmergė. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Musée Hoangho Paiho. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: National Highway 41 (India). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Catholic University of Angola. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Feelings (2003 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jean-Claude Mailly. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Port of Henichesk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jean-Claude Mailly. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1993 Torneio Rio-São Paulo. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Phocylides (beetle). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Evander Holyfield vs. Henry Tillman. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: International Journal of Hindu Studies. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bernd Seidensticker. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Casekow station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Kazusa-Mitsumata Station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Hallowell Davis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seth Hays House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Chan Yuk-cheung. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Matigari ma Njiruungi. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Zhangbei station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Baltimore (magazine). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Castillo de San Julián. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lones Wigger. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Casekow station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2008–09 Serie A. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2015 Copa ASOBAL. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Finnish Main Line. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Katherine Langford. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Evander Holyfield vs. Henry Tillman. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Notgrove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2024 Summer Olympics – Women's C-2 500 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yerevan railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: National Highway 41 (India). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Missouri State Penitentiary. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Gerry Duggan (writer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Conrad Tao. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Library Association of Singapore. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St George's Church, Barrow-in-Furness. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Favites abdita. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Loyola Greyhounds men's soccer. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MongoDB Inc.. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Church of St. Peter and St. Paul, Ukmergė. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Port of Henichesk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 European Athletics Championships – Men's 10,000 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Enciclopedia României. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Notgrove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: United Nations Security Council Resolution 2397. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sumida Aquarium. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Documentation and Cultural Centre of German Sinti and Roma. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pietro Contarini (bishop). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yuriy Yakovenko (footballer, born 1971). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fallout 4: Nuka-World. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Loyola Greyhounds men's soccer. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Herman (BMX rider). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Association for Rural & Small Libraries. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2011 Kütahya earthquake. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sam Shaw (sound editor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Thunder Bay Symphony Orchestra. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Minusio railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Matthew Kaminski (journalist). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Giovanni Battista Costa (bishop). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lake Kimihia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brett Cooper (fighter). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: KRI Teluk Karimata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2015 Copa del Rey final. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Fitzsimons (chess player). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lake Kimihia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2019 Great Yarmouth Borough Council election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Yale Steam Laundry. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sumida Aquarium. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fallout 4: Nuka-World. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sumida Aquarium. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lake Kimihia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Duolun County. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: International Journal of Hindu Studies. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Methylsilane. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1950–51 La Liga. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Caetés, Pernambuco. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony Gregory (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1950–51 La Liga. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Canoeing at the 2016 Summer Olympics – Women's K-1 200 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Library Association of Singapore. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Cleaner (2021 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2014 Asian Games – Men's 800 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Musée Hoangho Paiho. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2008–09 Serie A. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cara Delevingne. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Rough Guide to the Music of Zimbabwe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bude Lifeboat Station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Testosterone (2004 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Minusio railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Arcade game. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Word joiner. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Coordination Chemistry Reviews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Harvington School. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pierre-François, Marquess of Rougé. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Valentina Alazraki. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony Gregory (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: International Journal of Hindu Studies. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: United Nations Security Council Resolution 2397. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Third Degree (1913 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2017 World Aquatics Championships. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2016 Summer Olympics – Men's 1500 metre freestyle. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2025 Italian Open – Women's singles. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Phocylides (beetle). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2025 Italian Open – Women's singles. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Catholic University of Angola. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Donald L. Conner House. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pietro Contarini (bishop). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Santa María del Valle District. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1882 Wentworth colonial by-election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Exit (2011 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony Gregory (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Calm Down (Rema song). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Taekwondo at the 2020 Summer Olympics – Men's 68 kg. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guangdong University of Science and Technology. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Autophagy (journal). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Ole Bjørn Sundgot. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erin Andrews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Joseph Y. Yun. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: New Canton, Virginia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Wedding of Prince Felipe and Letizia Ortiz. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Valentina Alazraki. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Heracleum lehmannianum. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Interest Tax Act, 1974. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Feelings (2003 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2019 Great Yarmouth Borough Council election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: International Journal of Hindu Studies. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2007–08 St. John's Red Storm men's basketball team. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: American Medical Writers Association. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Katherine Langford. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1956 World Table Tennis Championships. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Enciclopedia României. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Notgrove railway station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MV Glenachulish. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2023 Tour de l'Ain. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cara Delevingne. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Finnish Main Line. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Cleaner (2021 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Biri (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Athletics at the 2014 Asian Games – Men's 800 metres. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Rough Guide to the Music of Zimbabwe. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Niambia (crustacean). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Gerry Duggan (writer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Acacia castanostegia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nardosinone. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 78 Ursae Majoris. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erin Andrews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Santa María del Valle District. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Autophagy (journal). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erin Andrews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Testosterone (2004 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cyathaspis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Guyanancistrus niger. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brie, Ille-et-Vilaine. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Phocylides (beetle). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Casekow station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Miss Brazil 2014. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Port of Henichesk. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Harry Pitts (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Fallout 4: Nuka-World. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bude Lifeboat Station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 UCI Asia Tour. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: TalkTalk (A Perfect Circle song). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Hugh Murray (geographer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bromley Cemetery. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Hakan Arslan (footballer, born 1989). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Documentation and Cultural Centre of German Sinti and Roma. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Beaminster School. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1952 United States presidential election in Pennsylvania. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Cyathaspis. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2005–06 Kuwaiti Premier League. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Jean-Claude Mailly. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Mystic, Georgia. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Swimming at the 2004 Summer Paralympics – Men's 4 × 50 metre medley relay 20pts. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Lones Wigger. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: National Highway 41 (India). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Vasilyovo (Posyolok Zolotkovo), Gus-Khrustalny District, Vladimir Oblast. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1882 Wentworth colonial by-election. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erich Correns (chemist). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Wilhelm Hauchecorne. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Chelyabinsk Opera and Ballet Theatre. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Riqui Puig. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bude Lifeboat Station. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: No Hard Feelings (2020 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Sam Shaw (sound editor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Erin Andrews. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony DeMarco (dancer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Exit (2011 film). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Herman (BMX rider). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Tony Gregory (footballer). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Nardosinone. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 2018 UCI Asia Tour. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: John Proctor House (Westford, Massachusetts). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Chan Yuk-cheung. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Seeds (TV on the Radio album). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: KRI Teluk Karimata. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Bernd Seidensticker. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Pablo López (footballer, born 1996). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Brie, Ille-et-Vilaine. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: David Chan Yuk-cheung. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: MongoDB Inc.. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: 1952 United States presidential election in Pennsylvania. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Douwe Aukes-class minelayer. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Scott Shane (professor). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: St Luke's Church, Holbrooks. Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: Splendour (apple). Marking as Neutral.
+2026-06-18 11:59:42 | WARNING  | eval.process_request:compute_recall_wiki_dir:836 - No elicited triples found for subject: The Further Adventures of the Flag Lieutenant. Marking as Neutral.
+2026-06-18 11:59:42 | INFO     | eval.process_request:compute_recall_wiki_dir:909 - Recall (Wiki+Web) for elicited_triples_1781776657: Entailment=0, Contradiction=0, Neutral=500, Errors=0
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:288 - Aggregated results saved to /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/openai_gpt-oss-120b_rag_eval/results.csv
+2026-06-18 11:59:42 | INFO     | eval.process_request:close_detailed_results_file:452 - Detailed results file closed.
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:293 - Detailed per-triple results saved to /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-3.5-turbo-0125/prompts/openai_gpt-oss-120b_rag_eval/results_detailed.csv
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:295 - ================================================================================
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:296 - Triple Verification Completed Successfully
+2026-06-18 11:59:42 | INFO     | eval.main:main_evaluation:297 - ================================================================================
+2026-06-18 12:00:10 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:10 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:00:10 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:10 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112760c81909ed2dfda5b47c696 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112760c81909ed2dfda5b47c696 still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c1128ca88190b8d288354467adae in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c1128ca88190b8d288354467adae still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112e18c81908ccc7f52d6a9f9db in in_progress_1781776657.json: completed
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:481 - Moved in_progress_1781776657.json to /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/.work/1781776657_447908_2476/completed_dir/completed_1781776657.json
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:182 - Processing a newly completed batch: `batch_6a33c112e18c81908ccc7f52d6a9f9db`.
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:192 - Downloading results from OpenAI.
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112772081908034b419b01228c5 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112772081908034b419b01228c5 still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112406c8190bf68b76c634f16dd in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112406c8190bf68b76c634f16dd still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33c112eb588190963d30ee458adf36 in in_progress_1781776657.json: in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33c112eb588190963d30ee458adf36 still running with status in_progress
+2026-06-18 12:00:11 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 12:00:12 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:201 - Batch results written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/.work/1781776657_447908_2476/results_dir/batch_results_1781776657.json`.
+2026-06-18 12:00:12 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:219 - Found 3,759 raw triples in the batch results.
+2026-06-18 12:00:12 | INFO     | elicitation.gpt_kbc:write_triples_to_csv:286 - Data written to CSV succesfully ...
+2026-06-18 12:00:12 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:229 - Raw triples written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-5.4-2026-03-05/prompts/elicited_triples_1781776657.csv`.
+2026-06-18 12:00:12 | INFO     | elicitation.main:_poll_until_complete:529 - All batches completed and processed. Exiting.
+2026-06-18 12:00:12 | INFO     | elicitation.main:_poll_until_complete:541 - Cleanup complete.

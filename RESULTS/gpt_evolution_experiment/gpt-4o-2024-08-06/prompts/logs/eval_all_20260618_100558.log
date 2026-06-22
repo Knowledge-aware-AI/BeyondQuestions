@@ -1,0 +1,210 @@
+2026-06-18 10:05:58 | INFO     | eval.main:setup_logging:57 - Logging initialized. Logs directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-4o-2024-08-06/prompts/logs
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:112 - ================================================================================
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:113 - Evaluation started.
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:114 - ================================================================================
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:115 - Model: openai/gpt-oss-120b
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:116 - Seed: 42
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:117 - Sample size: 500
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:118 - Results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-4o-2024-08-06/prompts
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:132 - Precision evaluation: RAG-based (top-10 passages, single LLM call)
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:133 - Recall evaluation: LLM verification against all ground truth sources
+2026-06-18 10:05:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f211c48190acf5cae30178a118 in in_progress_1781769712.json: in_progress
+2026-06-18 10:05:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f211c48190acf5cae30178a118 still running with status in_progress
+2026-06-18 10:05:58 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_utils:load_unified_wikipedia_cache:134 - Loaded unified Wikipedia cache: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json (200 entities)
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_triple_extractor:__init__:51 - Ground truth file: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/GT.json
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_triple_extractor:__init__:52 - Loaded 200 entities from cache
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_triple_extractor:__init__:53 - Max workers for parallel processing: 5
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:163 - Processing 200 entities...
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:325 - Starting parallel batch processing of 200 entities with 5 workers
+2026-06-18 10:05:58 | INFO     | eval.wikipedia_triple_extractor:process_entities_batch:353 - Batch processing complete: 200 successful, 0 failed out of 200 total
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:172 - Starting evaluation...
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:180 - Model results directory: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-4o-2024-08-06/prompts/openai_gpt-oss-120b_rag_eval
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:186 - RAG cache directory: /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:189 - Processing elicited triples from: /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4o-2024-08-06/prompts
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:213 - Extracted triples from Wikipedia for 200 entities
+2026-06-18 10:05:58 | INFO     | eval.process_request:init_detailed_results_file:419 - Initialized detailed results file for incremental writing: /home/luca-giordano/Desktop/BeyondQuestions_original/RESULTS/gpt_evolution_experiment/gpt-4o-2024-08-06/prompts/openai_gpt-oss-120b_rag_eval/results_detailed.csv
+2026-06-18 10:05:58 | INFO     | eval.main:main_evaluation:280 - Computing Precision...
+2026-06-18 10:05:58 | DEBUG    | eval.process_request:compute_precision_wiki_dir:600 - Computing Precision (Precision (RAG)) for file: elicited_triples_1781769712
+2026-06-18 10:05:58 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Utica_Public_Library: 17 passages, 17 embeddings
+2026-06-18 10:05:58 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:05:58 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Utica Public Library, instanceOf, Public Library)
+2026-06-18 10:05:58 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, wikipedia, web, web, web, wikipedia, web, web, web
+2026-06-18 10:05:58 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:01 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Utica Public Library, instanceOf, Public Library)... => c
+2026-06-18 10:06:01 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:01 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Utica Public Library, website, www.uticapubliclibrary.org)
+2026-06-18 10:06:01 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, web, web, wikipedia, web
+2026-06-18 10:06:01 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:03 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Utica Public Library, website, www.uticapubliclib... => c
+2026-06-18 10:06:03 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:03 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Utica Public Library, collectionSize, over 200,000 items)
+2026-06-18 10:06:03 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, web, web, web, web, web, wikipedia, web, wikipedia
+2026-06-18 10:06:03 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:06 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Utica Public Library, collectionSize, over 200,00... => c
+2026-06-18 10:06:06 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Jean-Claude_Mailly: 17 passages, 17 embeddings
+2026-06-18 10:06:06 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:06 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Jean-Claude Mailly, organization, Force Ouvrière)
+2026-06-18 10:06:06 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, web, web, web, web, web, web, web, web
+2026-06-18 10:06:06 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:08 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Jean-Claude Mailly, organization, Force Ouvrière)... => a
+2026-06-18 10:06:08 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:08 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Jean-Claude Mailly, birthDate, 12 March 1953)
+2026-06-18 10:06:08 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:08 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:09 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Jean-Claude Mailly, birthDate, 12 March 1953)... => a
+2026-06-18 10:06:09 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:09 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Jean-Claude Mailly, termEnd, 2018)
+2026-06-18 10:06:09 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, web, web, web, web
+2026-06-18 10:06:09 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:12 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Jean-Claude Mailly, termEnd, 2018)... => c
+2026-06-18 10:06:12 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:12 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Jean-Claude Mailly, instanceOf, Trade Unionist)
+2026-06-18 10:06:12 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:12 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:14 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Jean-Claude Mailly, instanceOf, Trade Unionist)... => a
+2026-06-18 10:06:14 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:14 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Jean-Claude Mailly, birthPlace, Beaucourt, France)
+2026-06-18 10:06:14 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:14 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:16 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Jean-Claude Mailly, birthPlace, Beaucourt, France... => b
+2026-06-18 10:06:16 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Acacia_castanostegia: 17 passages, 17 embeddings
+2026-06-18 10:06:16 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:16 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Acacia castanostegia, genus, Acacia)
+2026-06-18 10:06:16 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, wikipedia, web, wikipedia, wikipedia, web, web, web, wikipedia, web
+2026-06-18 10:06:16 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:18 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Acacia castanostegia, genus, Acacia)... => a
+2026-06-18 10:06:19 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:19 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Acacia castanostegia, nativeTo, Australia)
+2026-06-18 10:06:19 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, wikipedia, wikipedia, wikipedia, web, web, web, web
+2026-06-18 10:06:19 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:20 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Acacia castanostegia, nativeTo, Australia)... => a
+2026-06-18 10:06:20 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:20 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Acacia castanostegia, instanceOf, plant species)
+2026-06-18 10:06:20 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, wikipedia, wikipedia, web, web, web, web, wikipedia, web
+2026-06-18 10:06:20 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:22 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Acacia castanostegia, instanceOf, plant species)... => a
+2026-06-18 10:06:22 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Engine_House_No._6_(Wichita,_Kansas): 15 passages, 15 embeddings
+2026-06-18 10:06:22 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:22 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Engine House No. 6 (Wichita, Kansas), instanceOf, historic fire station)
+2026-06-18 10:06:22 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:22 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:25 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Engine House No. 6 (Wichita, Kansas), instanceOf,... => a
+2026-06-18 10:06:25 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:25 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Engine House No. 6 (Wichita, Kansas), constructedIn, 1909)
+2026-06-18 10:06:25 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:25 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:26 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Engine House No. 6 (Wichita, Kansas), constructed... => a
+2026-06-18 10:06:26 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:26 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Engine House No. 6 (Wichita, Kansas), location, Wichita, Kansas)
+2026-06-18 10:06:26 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:26 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:27 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:27 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 still running with status in_progress
+2026-06-18 10:06:27 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:27 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 still running with status in_progress
+2026-06-18 10:06:27 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f1f2448190afe5a66a922b7e55 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f1f2448190afe5a66a922b7e55 still running with status in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f2076c8190b474dd053530b669 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f2076c8190b474dd053530b669 still running with status in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f1f2448190afe5a66a922b7e55 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f1f2448190afe5a66a922b7e55 still running with status in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f2076c8190b474dd053530b669 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f2076c8190b474dd053530b669 still running with status in_progress
+2026-06-18 10:06:28 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f211c48190acf5cae30178a118 in in_progress_1781769712.json: finalizing
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f211c48190acf5cae30178a118 still running with status finalizing
+2026-06-18 10:06:28 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Engine House No. 6 (Wichita, Kansas), location, W... => a
+2026-06-18 10:06:28 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Aubin_Grove_railway_station: 19 passages, 19 embeddings
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f211c48190acf5cae30178a118 in in_progress_1781769712.json: finalizing
+2026-06-18 10:06:28 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f211c48190acf5cae30178a118 still running with status finalizing
+2026-06-18 10:06:28 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:28 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:28 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, location, Aubin Grove, Western Australia)
+2026-06-18 10:06:28 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, wikipedia, wikipedia, wikipedia, web, web, web, web, web, wikipedia
+2026-06-18 10:06:28 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:31 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, location, Aubin Grov... => c
+2026-06-18 10:06:31 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:31 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, ownedBy, Public Transport Authority)
+2026-06-18 10:06:31 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, web, wikipedia, web, wikipedia, wikipedia, web, wikipedia, web
+2026-06-18 10:06:31 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:33 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, ownedBy, Public Tran... => c
+2026-06-18 10:06:33 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:33 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, zone, Zone 3)
+2026-06-18 10:06:33 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, web, web, wikipedia, web, wikipedia, wikipedia, web, web
+2026-06-18 10:06:33 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:36 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, zone, Zone 3)... => c
+2026-06-18 10:06:37 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:37 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, line, Mandurah Line)
+2026-06-18 10:06:37 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, wikipedia, wikipedia, wikipedia, wikipedia, web, web, wikipedia, web, web
+2026-06-18 10:06:37 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:38 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, line, Mandurah Line)... => a
+2026-06-18 10:06:38 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:38 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, opened, April 23, 2017)
+2026-06-18 10:06:38 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, wikipedia, web, wikipedia, web
+2026-06-18 10:06:38 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:41 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, opened, April 23, 20... => c
+2026-06-18 10:06:41 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:41 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, instanceOf, railway station)
+2026-06-18 10:06:41 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, web, wikipedia, web, web, wikipedia, web, wikipedia, web
+2026-06-18 10:06:41 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:42 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, instanceOf, railway ... => a
+2026-06-18 10:06:42 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:42 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, platforms, 2)
+2026-06-18 10:06:42 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, web, wikipedia, web, wikipedia, wikipedia, web, web, web
+2026-06-18 10:06:42 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:45 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, platforms, 2)... => a
+2026-06-18 10:06:45 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:45 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Aubin Grove railway station, operatedBy, Transperth)
+2026-06-18 10:06:45 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, wikipedia, wikipedia, wikipedia, wikipedia, web, wikipedia, web, web, web
+2026-06-18 10:06:45 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:48 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Aubin Grove railway station, operatedBy, Transper... => c
+2026-06-18 10:06:48 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Wedding_of_Prince_Felipe_and_Letizia_Ortiz: 37 passages, 37 embeddings
+2026-06-18 10:06:49 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:49 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Wedding of Prince Felipe and Letizia Ortiz, broadcast, Televised in Spain)
+2026-06-18 10:06:49 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, wikipedia, web, wikipedia, wikipedia
+2026-06-18 10:06:49 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:51 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Wedding of Prince Felipe and Letizia Ortiz, broad... => a
+2026-06-18 10:06:51 | INFO     | eval.rag_retriever:load_from_disk:264 - RAG index loaded from /home/luca-giordano/Desktop/BeyondQuestions_original/REFERENCE_CORPUS/random/200/rag_cache/Splendour_(apple): 19 passages, 19 embeddings
+2026-06-18 10:06:52 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:52 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Splendour (apple), instanceOf, Apple cultivar)
+2026-06-18 10:06:52 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: wikipedia, web, web, web, web, web, web, web, web, web
+2026-06-18 10:06:52 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:54 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Splendour (apple), instanceOf, Apple cultivar)... => a
+2026-06-18 10:06:54 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:54 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Splendour (apple), taste, Sweet)
+2026-06-18 10:06:54 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, web, web, web, web
+2026-06-18 10:06:54 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:57 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Splendour (apple), taste, Sweet)... => c
+2026-06-18 10:06:57 | DEBUG    | eval.request:verify_triple_with_rag:510 - === LLM CALL: verify_triple_with_rag ===
+2026-06-18 10:06:57 | DEBUG    | eval.request:verify_triple_with_rag:511 - Triple: (Splendour (apple), color, Red)
+2026-06-18 10:06:57 | DEBUG    | eval.request:verify_triple_with_rag:512 - Sources: web, web, wikipedia, web, web, web, web, web, web, web
+2026-06-18 10:06:57 | DEBUG    | eval.request:verify_triple_with_rag:513 - Model: openai/gpt-oss-120b
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f179bc8190add8ee1d4e7fb5e9 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f1f2448190afe5a66a922b7e55 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f1f2448190afe5a66a922b7e55 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f2076c8190b474dd053530b669 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f2076c8190b474dd053530b669 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f1f2448190afe5a66a922b7e55 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f1f2448190afe5a66a922b7e55 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f2076c8190b474dd053530b669 in in_progress_1781769712.json: in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:462 - Batch batch_6a33a5f2076c8190b474dd053530b669 still running with status in_progress
+2026-06-18 10:06:58 | INFO     | elicitation.main:_poll_until_complete:532 - 1 batch(es) still running. Sleeping 30s...
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:448 - Current status of batch batch_6a33a5f211c48190acf5cae30178a118 in in_progress_1781769712.json: completed
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:check_batch_status_dir:481 - Moved in_progress_1781769712.json to /home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4.1-2025-04-14/prompts/.work/1781769712_424382_581/completed_dir/completed_1781769712.json
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:182 - Processing a newly completed batch: `batch_6a33a5f211c48190acf5cae30178a118`.
+2026-06-18 10:06:58 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:192 - Downloading results from OpenAI.
+2026-06-18 10:07:00 | DEBUG    | eval.request:verify_triple_with_rag:530 - RAG verification completed: (Splendour (apple), color, Red)... => b
+2026-06-18 10:07:00 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:201 - Batch results written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4.1-2025-04-14/prompts/.work/1781769712_424382_581/results_dir/batch_results_1781769712.json`.
+2026-06-18 10:07:00 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:219 - Found 2,928 raw triples in the batch results.
+2026-06-18 10:07:00 | INFO     | elicitation.gpt_kbc:write_triples_to_csv:286 - Data written to CSV succesfully ...
+2026-06-18 10:07:00 | INFO     | elicitation.gpt_kbc:process_completed_batch_dir:229 - Raw triples written to `/home/luca-giordano/Desktop/BeyondQuestions_original/elicited_triples/gpt_evolution_experiment/gpt-4.1-2025-04-14/prompts/elicited_triples_1781769712.csv`.
+2026-06-18 10:07:00 | INFO     | elicitation.main:_poll_until_complete:529 - All batches completed and processed. Exiting.
+2026-06-18 10:07:00 | INFO     | elicitation.main:_poll_until_complete:541 - Cleanup complete.
