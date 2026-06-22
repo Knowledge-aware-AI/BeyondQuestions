@@ -92,8 +92,9 @@ BeyondQuestions/
 ├── BeQu.py                          # Main CLI entry point
 ├── experiment_tracker.py            # Experiment deduplication
 ├── combine_results.py               # Result aggregation
+├── compute_stats.py                 # Triple statistics generation
 │
-├── ELICITATION/                     # Knowledge elicitation pipeline
+├── elicitation/                     # Knowledge elicitation pipeline
 │   ├── main.py                      # OpenAI Batch API orchestration
 │   ├── local.py                     # OpenRouter / local API wrapper
 │   ├── gpt_kbc.py                   # GPT KBC runner (workspace isolation)
@@ -103,12 +104,14 @@ BeyondQuestions/
 │       ├── GPTKB_2x_repetition.jinja
 │       ├── GPTKB_3x_repetition.jinja
 │       ├── wikidata_schema.jinja
+│       ├── wikidata_schema_no_constraints.jinja
 │       ├── schemaorg_schema.jinja
+│       ├── schemaorg_schema_no_constraints.jinja
 │       └── LMCRAWL/                 # Two-step elicitation
 │           ├── predicates.jinja     # Step 1: elicit predicates
 │           └── objects.jinja        # Step 2: elicit objects
 │
-├── EVALUATION/                      # Triple evaluation pipeline
+├── eval/                            # Triple evaluation pipeline
 │   ├── main.py                      # Evaluation coordinator
 │   ├── request.py                   # LLM verification (JSON schema output)
 │   ├── process_request.py           # Batch evaluation
@@ -119,17 +122,17 @@ BeyondQuestions/
 │   ├── wikidata_utils.py            # Wikidata API wrapper
 │   └── network_utils.py             # Retry decorator
 │
-├── ENTITY LISTS/                    # Test entity sets
+├── ENTITY_LISTS/                    # Test entity sets
 │   ├── RANDOM/                      # 10K random Wikipedia entities
 │   ├── DOMAINS/                     # Entities grouped by domain
 │   └── POPULARITY/                  # Entities grouped by page-view popularity
 │
-├── REFERENCE CORPUS/
+├── REFERENCE_CORPUS/
 │   ├── random/GT.json.gz
 │   ├── domains/GT.json.gz
 │   └── popularity/GT.json.gz
 │
-├── ELICITED TRIPLES/                # Model outputs (20 models × experiments)
+├── elicited_triples/                # Model outputs (20 models × experiments)
 ├── RESULTS/                         # Evaluation results
 │   └── combined_results_manual.csv
 └── index.html                       # Interactive website (single file, no build step)
@@ -288,9 +291,9 @@ python BeQu.py \
   --entities_file_path "path/to/json/file" \
   --api [YOUR_API] \
   --model_elicitation [MODEL] \
-  --prompt_template_dir_elicitation ELICITATION/templates/prompts/ \
+  --prompt_template_dir_elicitation elicitation/templates/prompts/ \
   --reasoning_effort_elicitation [EFFORT] \
-  --elicited_triples_dir "ELICITED TRIPLES" \
+  --elicited_triples_dir elicited_triples \
   --ground_truth_dir_path "path/to/reference" \
   --results_dir_path RESULTS \
   --llm_judge [JUDGE] \
@@ -303,7 +306,7 @@ python BeQu.py \
 ```bash
 python BeQu.py \
   --skip_elicitation \
-  --elicited_triples_dir "ELICITED TRIPLES" \
+  --elicited_triples_dir elicited_triples \
   --ground_truth_dir_path "path/to/reference" \
   --results_dir_path RESULTS
 ```
@@ -313,7 +316,7 @@ python BeQu.py \
 ```bash
 python BeQu.py \
   --evaluate_all_models \
-  --elicited_triples_dir "ELICITED TRIPLES" \
+  --elicited_triples_dir elicited_triples \
   --results_dir_path RESULTS
 ```
 
