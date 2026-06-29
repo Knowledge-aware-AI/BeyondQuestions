@@ -2428,10 +2428,10 @@ window.addEventListener("resize", renderScatter);
    REFERENCE CORPORA BROWSER
 ============================================================ */
 const CORPUS_INDEX = {
-  random200:  { path: "REFERENCE CORPUS/random/200/index.json",    rawPath: "REFERENCE CORPUS/random/200/GT.json.gz",    subsets: null },
-  random10k:  { path: "REFERENCE CORPUS/random/10k/index.json",    rawPath: "REFERENCE CORPUS/random/10k/GT.json.gz",    subsets: null },
-  domains:    { path: "REFERENCE CORPUS/domains/index.json",        rawPath: "REFERENCE CORPUS/domains/GT.json.gz",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
-  popularity: { path: "REFERENCE CORPUS/popularity/index.json",     rawPath: "REFERENCE CORPUS/popularity/GT.json.gz",     subsets: ["66-100%","33-66%","0-33%"] }
+  random200:  { path: "REFERENCE_CORPUS/random/200/index.json",    rawPath: "REFERENCE_CORPUS/random/200/GT.json.gz",    subsets: null },
+  random10k:  { path: "REFERENCE_CORPUS/random/10k/index.json",    rawPath: "REFERENCE_CORPUS/random/10k/GT.json.gz",    subsets: null },
+  domains:    { path: "REFERENCE_CORPUS/domains/index.json",        rawPath: "REFERENCE_CORPUS/domains/GT.json.gz",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
+  popularity: { path: "REFERENCE_CORPUS/popularity/index.json",     rawPath: "REFERENCE_CORPUS/popularity/GT.json.gz",     subsets: ["66-100%","33-66%","0-33%"] }
 };
 
 const GITHUB_BLOB = "https://github.com/Knowledge-aware-AI/BeyondQuestions/blob/main/";
@@ -2706,25 +2706,25 @@ async function corpusSelect(id) {
 ============================================================ */
 const ENTITY_DATASETS = {
   random: {
-    path: "ENTITY LISTS/RANDOM/10000_random_entities_wikipedia.json",
+    path: "ENTITY_LISTS/RANDOM/10000_random_entities_wikipedia.json",
     label: "Random entities",
     subsets: null,
     columns: ["title"]
   },
   domains: {
-    path: "ENTITY LISTS/DOMAINS/wikipedia_entities_by_domain_1000.json",
+    path: "ENTITY_LISTS/DOMAINS/wikipedia_entities_by_domain_1000.json",
     label: "By domain",
     subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"],
     columns: ["title", "wikibase_item"]
   },
   popularity: {
-    path: "ENTITY LISTS/POPULARITY/10000_random_entities_wikipedia_popularity_sorted_clustered.json",
+    path: "ENTITY_LISTS/POPULARITY/10000_random_entities_wikipedia_popularity_sorted_clustered_LOG.json",
     label: "By popularity",
     subsets: ["66-100%","33-66%","0-33%"],
     columns: ["title", "wikidata_statements", "wikidata_id"]
   },
   nonexistent: {
-    path: "ENTITY LISTS/DOMAINS/wikipedia_entities_non_existent_10.json",
+    path: "ENTITY_LISTS/DOMAINS/wikipedia_entities_non_existent_10.json",
     label: "Non-existent entities",
     subsets: null,
     columns: ["title"]
@@ -2920,130 +2920,130 @@ async function entitySelectDataset(dsId) {
 const TRIPLES_INDEX = [
   { id: "anthropic_claude-haiku-4.5",   display: "Claude Haiku 4.5",      org: "Anthropic",
     experiments: [
-      { label: "Random",  path: "ELICITED TRIPLES/anthropic_claude-haiku-4.5/random/elicited_triples.csv" }
+      { label: "Random",  path: "elicited_triples/anthropic_claude-haiku-4.5/random/elicited_triples.csv" }
     ]
   },
   { id: "anthropic_claude-opus-4.6",    display: "Claude Opus 4.6",       org: "Anthropic",
     experiments: [
-      { label: "Random · Low",    path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/low/elicited_triples.csv" },
-      { label: "Random · Medium", path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
-      { label: "Random · High",   path: "ELICITED TRIPLES/anthropic_claude-opus-4.6/random/high/elicited_triples.csv" }
+      { label: "Random · Low",    path: "elicited_triples/anthropic_claude-opus-4.6/random/low/elicited_triples.csv" },
+      { label: "Random · Medium", path: "elicited_triples/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Random · High",   path: "elicited_triples/anthropic_claude-opus-4.6/random/high/elicited_triples.csv" }
     ]
   },
   { id: "anthropic_claude-sonnet-4.6",  display: "Claude Sonnet 4.6",     org: "Anthropic",
     experiments: [
-      { label: "Random · Medium", path: "ELICITED TRIPLES/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" }
+      { label: "Random · Medium", path: "elicited_triples/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" }
     ]
   },
   { id: "deepseek-ai_DeepSeek-V3.2",    display: "DeepSeek V3.2",         org: "DeepSeek",
     experiments: [
-      { label: "Random",                      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/random/elicited_triples.csv" },
-      { label: "Domains",                     path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/domains/elicited_triples.csv" },
-      { label: "Domains · Non-existent",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/domains/non-existent/elicited_triples.csv" },
-      { label: "Popularity 0–33%",            path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/0-33%/elicited_triples.csv" },
-      { label: "Popularity 33–66%",           path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/33-66%/elicited_triples.csv" },
-      { label: "Popularity 66–100%",          path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/popularity/66-100%/elicited_triples.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_5_10_lt_1/elicited_triples.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/deepseek-ai_DeepSeek-V3.2/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+      { label: "Random",                      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/random/elicited_triples.csv" },
+      { label: "Domains",                     path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/domains/elicited_triples.csv" },
+      { label: "Domains · Non-existent",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/domains/non-existent/elicited_triples.csv" },
+      { label: "Popularity 0–33%",            path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/0-33%/elicited_triples.csv" },
+      { label: "Popularity 33–66%",           path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/33-66%/elicited_triples.csv" },
+      { label: "Popularity 66–100%",          path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/66-100%/elicited_triples.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
     ]
   },
   { id: "google_gemini-3.1-flash-lite-preview", display: "Gemini 3.1 Flash Lite", org: "Google DeepMind",
     experiments: [
-      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3.1-flash-lite-preview/random/medium/elicited_triples.csv" }
+      { label: "Random · Medium", path: "elicited_triples/google_gemini-3.1-flash-lite-preview/random/medium/elicited_triples.csv" }
     ]
   },
   { id: "google_gemini-3.1-pro-preview", display: "Gemini 3.1 Pro",       org: "Google DeepMind",
     experiments: [
-      { label: "Random · Low",    path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/low/elicited_triples.csv" },
-      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
-      { label: "Random · High",   path: "ELICITED TRIPLES/google_gemini-3.1-pro-preview/random/high/elicited_triples.csv" }
+      { label: "Random · Low",    path: "elicited_triples/google_gemini-3.1-pro-preview/random/low/elicited_triples.csv" },
+      { label: "Random · Medium", path: "elicited_triples/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Random · High",   path: "elicited_triples/google_gemini-3.1-pro-preview/random/high/elicited_triples.csv" }
     ]
   },
   { id: "google_gemini-3-flash-preview",  display: "Gemini 3 Flash",      org: "Google DeepMind",
     experiments: [
-      { label: "Random · Medium", path: "ELICITED TRIPLES/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" }
+      { label: "Random · Medium", path: "elicited_triples/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" }
     ]
   },
   { id: "google_gemma-3-12b-it",   display: "Gemma 3 12B",       org: "Google",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-12b-it/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-12b-it/random/elicited_triples.csv" }]
   },
   { id: "google_gemma-3-27b-it",   display: "Gemma 3 27B",       org: "Google",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-27b-it/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-27b-it/random/elicited_triples.csv" }]
   },
   { id: "google_gemma-3-4b-it",    display: "Gemma 3 4B",        org: "Google",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/google_gemma-3-4b-it/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-4b-it/random/elicited_triples.csv" }]
   },
   { id: "gpt-5.4-2026-03-05",      display: "GPT-5.4",           org: "OpenAI",
     experiments: [
-      { label: "Random · Low",            path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/low/elicited_triples_1773057497.csv" },
-      { label: "Random · Medium",         path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/medium/elicited_triples_1773056495.csv" },
-      { label: "Random · High",           path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/random/high/elicited_triples_1773057545.csv" },
-      { label: "Domains",                 path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/domains/elicited_triples_1773057744.csv" },
-      { label: "Domains · Non-existent",  path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/domains/non-existent/elicited_triples_1773058061.csv" },
-      { label: "Popularity 0–33%",        path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/0-33%/elicited_triples_1773058409.csv" },
-      { label: "Popularity 33–66%",       path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/33-66%/elicited_triples_1773058407.csv" },
-      { label: "Popularity 66–100%",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/popularity/66-100%/elicited_triples_1773058406.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_5_10_lt_1/elicited_triples_1773058330.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_10_20_lt_1_2/elicited_triples_1773058332.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_25_50_lt_3_5/elicited_triples_1773058333.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_33_66_lt_3_7/elicited_triples_1773058334.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_75_150_lt_8_15/elicited_triples_1773058336.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/gpt-5.4-2026-03-05/ranges/pop_100_200_lt_10_20/elicited_triples_1773058338.csv" }
+      { label: "Random · Low",            path: "elicited_triples/gpt-5.4-2026-03-05/random/low/elicited_triples_1773057497.csv" },
+      { label: "Random · Medium",         path: "elicited_triples/gpt-5.4-2026-03-05/random/medium/elicited_triples_1773056495.csv" },
+      { label: "Random · High",           path: "elicited_triples/gpt-5.4-2026-03-05/random/high/elicited_triples_1773057545.csv" },
+      { label: "Domains",                 path: "elicited_triples/gpt-5.4-2026-03-05/domains/elicited_triples_1773057744.csv" },
+      { label: "Domains · Non-existent",  path: "elicited_triples/gpt-5.4-2026-03-05/domains/non-existent/elicited_triples_1773058061.csv" },
+      { label: "Popularity 0–33%",        path: "elicited_triples/gpt-5.4-2026-03-05/popularity/0-33%/elicited_triples_1773058409.csv" },
+      { label: "Popularity 33–66%",       path: "elicited_triples/gpt-5.4-2026-03-05/popularity/33-66%/elicited_triples_1773058407.csv" },
+      { label: "Popularity 66–100%",      path: "elicited_triples/gpt-5.4-2026-03-05/popularity/66-100%/elicited_triples_1773058406.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_5_10_lt_1/elicited_triples_1773058330.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_10_20_lt_1_2/elicited_triples_1773058332.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_25_50_lt_3_5/elicited_triples_1773058333.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_33_66_lt_3_7/elicited_triples_1773058334.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_75_150_lt_8_15/elicited_triples_1773058336.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_100_200_lt_10_20/elicited_triples_1773058338.csv" }
     ]
   },
   { id: "gpt-5-mini-2025-08-07",   display: "GPT-5 Mini",        org: "OpenAI",
-    experiments: [{ label: "Random · Medium", path: "ELICITED TRIPLES/gpt-5-mini-2025-08-07/random/medium/elicited_triples_1772642378.csv" }]
+    experiments: [{ label: "Random · Medium", path: "elicited_triples/gpt-5-mini-2025-08-07/random/medium/elicited_triples_1772642378.csv" }]
   },
   { id: "gpt-5-nano-2025-08-07",   display: "GPT-5 Nano",        org: "OpenAI",
-    experiments: [{ label: "Random · Medium", path: "ELICITED TRIPLES/gpt-5-nano-2025-08-07/random/medium/elicited_triples_1772649352.csv" }]
+    experiments: [{ label: "Random · Medium", path: "elicited_triples/gpt-5-nano-2025-08-07/random/medium/elicited_triples_1772649352.csv" }]
   },
   { id: "meta-llama_Llama-4-Scout-17B-16E-Instruct", display: "Llama 4 Scout 17B", org: "Meta AI",
     experiments: [
-      { label: "Random",                      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/random/elicited_triples.csv" },
-      { label: "Domains",                     path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/elicited_triples.csv" },
-      { label: "Domains · Non-existent",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/non-existent/elicited_triples.csv" },
-      { label: "Popularity 0–33%",            path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/0-33%/elicited_triples.csv" },
-      { label: "Popularity 33–66%",           path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/33-66%/elicited_triples.csv" },
-      { label: "Popularity 66–100%",          path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/66-100%/elicited_triples.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_5_10_lt_1/elicited_triples.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "ELICITED TRIPLES/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+      { label: "Random",                      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/random/elicited_triples.csv" },
+      { label: "Domains",                     path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/elicited_triples.csv" },
+      { label: "Domains · Non-existent",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/non-existent/elicited_triples.csv" },
+      { label: "Popularity 0–33%",            path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/0-33%/elicited_triples.csv" },
+      { label: "Popularity 33–66%",           path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/33-66%/elicited_triples.csv" },
+      { label: "Popularity 66–100%",          path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/66-100%/elicited_triples.csv" },
+      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
     ]
   },
   { id: "MiniMaxAI_MiniMax-M2.5",  display: "MiniMax M2.5",       org: "MiniMax",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/MiniMaxAI_MiniMax-M2.5/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/MiniMaxAI_MiniMax-M2.5/random/elicited_triples.csv" }]
   },
   { id: "mistralai_mistral-large-2512", display: "Mistral Large",  org: "Mistral AI",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/mistralai_mistral-large-2512/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/mistralai_mistral-large-2512/random/elicited_triples.csv" }]
   },
   { id: "moonshotai_kimi-k2.5",    display: "Kimi K2.5",          org: "Moonshot AI",
     experiments: [
-      { label: "Random",                          path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/random/elicited_triples.csv" },
-      { label: "Prompt: LMCRAWL",                 path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/LMCRAWL/elicited_triples.csv" },
-      { label: "Prompt: GPTKB",                   path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB/elicited_triples.csv" },
-      { label: "Prompt: GPTKB 2× rep.",           path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB_2x_repetition/elicited_triples.csv" },
-      { label: "Prompt: GPTKB 3× rep.",           path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/GPTKB_3x_repetition/elicited_triples.csv" },
-      { label: "Prompt: Schema.org",              path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/schemaorg_schema/elicited_triples.csv" },
-      { label: "Prompt: Schema.org (no constr.)", path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
-      { label: "Prompt: Wikidata schema",         path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/wikidata_schema/elicited_triples.csv" },
-      { label: "Prompt: Wikidata (no constr.)",   path: "ELICITED TRIPLES/moonshotai_kimi-k2.5/prompts/wikidata_schema_no_constraints/elicited_triples.csv" }
+      { label: "Random",                          path: "elicited_triples/moonshotai_kimi-k2.5/random/elicited_triples.csv" },
+      { label: "Prompt: LMCRAWL",                 path: "elicited_triples/moonshotai_kimi-k2.5/prompts/LMCRAWL/elicited_triples.csv" },
+      { label: "Prompt: GPTKB",                   path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB/elicited_triples.csv" },
+      { label: "Prompt: GPTKB 2× rep.",           path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB_2x_repetition/elicited_triples.csv" },
+      { label: "Prompt: GPTKB 3× rep.",           path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB_3x_repetition/elicited_triples.csv" },
+      { label: "Prompt: Schema.org",              path: "elicited_triples/moonshotai_kimi-k2.5/prompts/schemaorg_schema/elicited_triples.csv" },
+      { label: "Prompt: Schema.org (no constr.)", path: "elicited_triples/moonshotai_kimi-k2.5/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
+      { label: "Prompt: Wikidata schema",         path: "elicited_triples/moonshotai_kimi-k2.5/prompts/wikidata_schema/elicited_triples.csv" },
+      { label: "Prompt: Wikidata (no constr.)",   path: "elicited_triples/moonshotai_kimi-k2.5/prompts/wikidata_schema_no_constraints/elicited_triples.csv" }
     ]
   },
   { id: "openai_gpt-oss-120b",     display: "GPT-OSS-120B",       org: "OpenAI",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/openai_gpt-oss-120b/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/openai_gpt-oss-120b/random/elicited_triples.csv" }]
   },
   { id: "qwen_qwen3.5-27b",        display: "Qwen3.5 27B",        org: "Alibaba",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/qwen_qwen3.5-27b/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/qwen_qwen3.5-27b/random/elicited_triples.csv" }]
   },
   { id: "x-ai_grok-4.1-fast",      display: "Grok 4.1 Fast",      org: "xAI",
-    experiments: [{ label: "Random", path: "ELICITED TRIPLES/x-ai_grok-4.1-fast/random/elicited_triples.csv" }]
+    experiments: [{ label: "Random", path: "elicited_triples/x-ai_grok-4.1-fast/random/elicited_triples.csv" }]
   }
 ];
 
