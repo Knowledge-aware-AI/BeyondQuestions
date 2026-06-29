@@ -146,6 +146,7 @@ def BeQu(
         prompt_template_dir_elicitation:str = None,
         reasoning_effort_elicitation:Literal["low", "medium", "high"] = None,
         llm_judge:str = "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        llm_judge_api:Literal["scads", "openrouter"] = "scads",
         seed:int = 42,
         sample_size:int = 500,
         evaluate_by_category:bool = False,
@@ -180,6 +181,7 @@ def BeQu(
                 ground_truth_dir_path (str): Dir path where the ground truth triples are stored
                 results_dir_path (str): Dir path for storing the evaluation results
                 llm_judge (str): Name of the model to use as judge in the evaluation
+                llm_judge_api (Literal["scads", "openrouter"]): API backend for the LLM judge. Use "openrouter" to route judge calls through OpenRouter instead of ScadsAI (default: "scads")
                 seed (int): Random seed for sampling in evaluation (default: 42)
                 sample_size (int): Number of triples to sample for evaluation (default: 100)
                 evaluate_by_category (bool): Whether to evaluate by category (default: False)
@@ -233,6 +235,14 @@ def BeQu(
         if prompt_template_dir_elicitation is None:
             prompt_template_dir_elicitation = os.path.join(base_dir, "elicitation", "templates", "prompts")
         
+        # Set judge API URL and key based on llm_judge_api
+        if llm_judge_api == "openrouter":
+                judge_api_url = "https://openrouter.ai/api/v1"
+                judge_api_key = OPENROUTER_API_KEY
+        else:  # default: scads
+                judge_api_url = os.getenv("SCADSAI_BASE_URL")
+                judge_api_key = SCADSAI_API_KEY
+
         # Set API URL and key based on selected API
         api_url_elicitation = None  # Default to None; will be set based on api if needed
         api_key_elicitation = None
@@ -288,7 +298,7 @@ def BeQu(
                         if not os.path.isdir(model_path):
                                 continue
                         
-                        model_sanitized = sanitize_filename(model_name).lower()
+                        model_sanitized = sanitize_filename(model_name)
                         
                         for root, dirs, files in os.walk(model_path):
                                 if "elicited_triples.csv" in files or any(f.startswith("elicited_triples") and f.endswith(".csv") for f in files):
@@ -393,6 +403,8 @@ def BeQu(
                         web_docs_for_eval=web_docs_for_eval,
                         build_ground_truth_only=True,
                         top_k=top_k,
+                        judge_api_url=judge_api_url,
+                        judge_api_key=judge_api_key,
                 )
                 print(f"Ground truth ready. Starting parallel evaluation...")
 
@@ -437,6 +449,8 @@ def BeQu(
                                 web_docs_for_eval=web_docs_for_eval,
                                 build_ground_truth_only=False,
                                 top_k=top_k,
+                                judge_api_url=judge_api_url,
+                                judge_api_key=judge_api_key,
                         )
                         
                         tracker.register_experiment(config, results_path=config["results_dir_path"])
@@ -485,21 +499,104 @@ def BeQu(
         else:
                 models = []
 
+        # Auto-discover models from elicited_triples_dir when skipping elicitation.
+        # Only includes folders where the expected subpath (matching the same flags used
+        # during evaluation) contains at least one CSV — this naturally excludes nested
+        # experiment directories like gpt_evolution_experiment.
+        #
+        # With --reasoning_effort_elicitation auto, discovers all effort variants
+        # (bare random/ and any random/<effort>/ subdirs) per model and builds a flat
+        # list of (model, effort) jobs.
+        auto_effort_jobs = []  # list of (model_folder_name, effort_or_None)
+
+        if skip_elicitation and not models and os.path.isdir(elicited_triples_dir):
+                def _has_csvs(path):
+                        return os.path.isdir(path) and any(f.endswith(".csv") for f in os.listdir(path))
+
+                def _expected_subpath(model_folder):
+                        if evaluate_by_popularity:
+                                return os.path.join(model_folder, "popularity")
+                        elif evaluate_by_category:
+                                return os.path.join(model_folder, "domains")
+                        elif non_existing_entities:
+                                return os.path.join(model_folder, "domains", "non-existent")
+                        elif different_elicitation_triple_ranges:
+                                return os.path.join(model_folder, "ranges")
+                        elif reasoning_effort_elicitation and isinstance(reasoning_effort_elicitation, str) and reasoning_effort_elicitation not in ("auto",) and "," not in reasoning_effort_elicitation:
+                                return os.path.join(model_folder, "random", reasoning_effort_elicitation)
+                        elif use_all_prompts or prompt_templates is not None:
+                                return os.path.join(model_folder, "prompts")
+                        else:
+                                return os.path.join(model_folder, "random")
+
+                # Parse effort list. Fire may pass "none,medium" as a tuple ('none','medium').
+                # Normalise to a list or the sentinel "auto".
+                effort_list = None
+                if isinstance(reasoning_effort_elicitation, (list, tuple)):
+                        effort_list = [None if e.strip().lower() == "none" else e.strip() for e in reasoning_effort_elicitation]
+                elif reasoning_effort_elicitation == "auto":
+                        effort_list = "auto"
+                elif reasoning_effort_elicitation and "," in reasoning_effort_elicitation:
+                        effort_list = [
+                                None if e.strip().lower() == "none" else e.strip()
+                                for e in reasoning_effort_elicitation.split(",")
+                        ]
+
+                if effort_list is not None:
+                        # Discover models, then build (model, effort) jobs for each requested effort
+                        for d in sorted(os.listdir(elicited_triples_dir)):
+                                model_dir = os.path.join(elicited_triples_dir, d)
+                                if not os.path.isdir(model_dir):
+                                        continue
+                                random_dir = os.path.join(model_dir, "random")
+                                if not os.path.isdir(random_dir):
+                                        continue
+                                if effort_list == "auto":
+                                        # Include bare random/ and all effort subdirs that have CSVs
+                                        if _has_csvs(random_dir):
+                                                auto_effort_jobs.append((d, None))
+                                        for sub in sorted(os.listdir(random_dir)):
+                                                sub_path = os.path.join(random_dir, sub)
+                                                if os.path.isdir(sub_path) and _has_csvs(sub_path):
+                                                        auto_effort_jobs.append((d, sub))
+                                else:
+                                        # Include only the explicitly requested efforts that exist
+                                        for effort in effort_list:
+                                                path = random_dir if effort is None else os.path.join(random_dir, effort)
+                                                if _has_csvs(path):
+                                                        auto_effort_jobs.append((d, effort))
+                        models = list(dict.fromkeys(m for m, _ in auto_effort_jobs))
+                        if auto_effort_jobs:
+                                print(f"Discovered {len(auto_effort_jobs)} (model, effort) jobs to evaluate:")
+                                for m, e in auto_effort_jobs:
+                                        print(f"  {m}  effort={e or 'none'}")
+                else:
+                        models = [
+                                d for d in sorted(os.listdir(elicited_triples_dir))
+                                if os.path.isdir(os.path.join(elicited_triples_dir, d))
+                                and _has_csvs(_expected_subpath(os.path.join(elicited_triples_dir, d)))
+                        ]
+                        if models:
+                                print(f"Auto-discovered {len(models)} models to evaluate: {models}")
+
         results_summary = []
 
-        def run_single_model(model):
-                model_sanitized = sanitize_filename(model).lower()
-                # Prepare configuration for this model
-                # Determine elicited_triples_dir:
-                # - If skip_elicitation but NOT skip_evaluation: use user-provided path
-                # - Otherwise: construct path based on various conditions
-                    # Construct path based on conditions (for elicitation)
+        def run_single_model(model, effort_override=None):
+                model_sanitized = sanitize_filename(model)
+                is_multi_effort = reasoning_effort_elicitation and (
+                        isinstance(reasoning_effort_elicitation, (list, tuple))
+                        or reasoning_effort_elicitation == "auto"
+                        or (isinstance(reasoning_effort_elicitation, str) and "," in reasoning_effort_elicitation)
+                )
+                effective_effort = effort_override if effort_override is not None else (
+                        None if is_multi_effort else reasoning_effort_elicitation
+                )
                 elicited_triples_dir_value = (
                 os.path.join(elicited_triples_dir, model_sanitized, "popularity") if evaluate_by_popularity
                 else os.path.join(elicited_triples_dir, model_sanitized, "domains") if evaluate_by_category
                 else os.path.join(elicited_triples_dir, model_sanitized, "domains", "non-existent") if non_existing_entities
                 else os.path.join(elicited_triples_dir, model_sanitized, "ranges") if different_elicitation_triple_ranges
-                else os.path.join(elicited_triples_dir, model_sanitized, "random", reasoning_effort_elicitation) if reasoning_effort_elicitation
+                else os.path.join(elicited_triples_dir, model_sanitized, "random", effective_effort) if effective_effort
                 else os.path.join(elicited_triples_dir, model_sanitized, "prompts") if use_all_prompts or prompt_templates is not None
                 else os.path.join(elicited_triples_dir, model_sanitized, "random")
                 )
@@ -510,7 +607,7 @@ def BeQu(
                         "api": api,
                         "model_elicitation": model,
                         "prompt_template_dir_elicitation": prompt_template_dir_elicitation,
-                        "reasoning_effort_elicitation": reasoning_effort_elicitation,
+                        "reasoning_effort_elicitation": effective_effort,
                         "non_existing_entities": non_existing_entities,
                         "elicited_triples_dir": elicited_triples_dir_value,
                         "ground_truth_dir_path": ground_truth_dir_path,
@@ -551,7 +648,7 @@ def BeQu(
                                         entities_file_path=entities_file_path,
                                         model_elicitation=model,
                                         prompt_template_dir_elicitation=prompt_template_dir_elicitation,
-                                        reasoning_effort_elicitation=reasoning_effort_elicitation,
+                                        reasoning_effort_elicitation=effective_effort,
                                         elicited_triples_dir=config['elicited_triples_dir'],
                                         evaluate_by_category=evaluate_by_category,
                                         different_elicitation_triple_ranges=different_elicitation_triple_ranges,
@@ -568,7 +665,7 @@ def BeQu(
                                         model_elicitation=model,
                                         api_url_elicitation=api_url_elicitation,
                                         api_key_elicitation=api_key_elicitation,
-                                        reasoning_effort_elicitation=reasoning_effort_elicitation,
+                                        reasoning_effort_elicitation=effective_effort,
                                         elicited_triples_dir=config['elicited_triples_dir'],
                                         evaluate_by_category=evaluate_by_category,
                                         different_elicitation_triple_ranges=different_elicitation_triple_ranges,
@@ -652,6 +749,8 @@ def BeQu(
                                                 web_docs_for_eval=web_docs_for_eval,
                                                 build_ground_truth_only=build_ground_truth_only,
                                                 top_k=top_k,
+                                                judge_api_url=judge_api_url,
+                                                judge_api_key=judge_api_key,
                                         )
                                         
                                         if not build_ground_truth_only:
@@ -660,6 +759,33 @@ def BeQu(
                                         
                                         return subdir_name
                                 
+                                # Pre-build ground truth once, sequentially, before spawning parallel
+                                # prompt-subdir evaluations — prevents N threads from racing to fetch
+                                # the same Brave Search results simultaneously.
+                                print(f"\n{'='*70}")
+                                print("Pre-building ground truth before parallel prompt evaluation...")
+                                print(f"{'='*70}\n")
+                                main_evaluation(
+                                        entities_file_path=entities_file_path,
+                                        elicited_triples_dir=config['elicited_triples_dir'],
+                                        ground_truth_dir_path=ground_truth_dir_path,
+                                        results_dir_path=None,
+                                        llm_judge=llm_judge,
+                                        seed=seed,
+                                        sample_size=sample_size,
+                                        evaluate_by_category=evaluate_by_category,
+                                        triples_per_category=triples_per_category,
+                                        evaluate_by_popularity=evaluate_by_popularity,
+                                        triples_per_popularity_bucket=triples_per_category,
+                                        web_results_count=web_results_count,
+                                        web_docs_for_eval=web_docs_for_eval,
+                                        build_ground_truth_only=True,
+                                        top_k=top_k,
+                                        judge_api_url=judge_api_url,
+                                        judge_api_key=judge_api_key,
+                                )
+                                print(f"Ground truth ready. Running {len(prompts_subdirs)} prompt evaluations in parallel...")
+
                                 max_workers_prompts = min(len(prompts_subdirs), 5)
                                 with ThreadPoolExecutor(max_workers=max_workers_prompts) as executor:
                                         futures = {executor.submit(evaluate_prompt_subdir, subdir): subdir for subdir in prompts_subdirs}
@@ -695,6 +821,8 @@ def BeQu(
                                         web_docs_for_eval=web_docs_for_eval,
                                         build_ground_truth_only=build_ground_truth_only,
                                         top_k=top_k,
+                                        judge_api_url=judge_api_url,
+                                        judge_api_key=judge_api_key,
                                 )
 
                                 if not build_ground_truth_only:
@@ -737,6 +865,8 @@ def BeQu(
                         web_docs_for_eval=web_docs_for_eval,
                         build_ground_truth_only=True,
                         top_k=top_k,
+                        judge_api_url=judge_api_url,
+                        judge_api_key=judge_api_key,
                 )
                 
                 print(f"\n{'='*70}")
@@ -744,13 +874,22 @@ def BeQu(
                 print(f"{'='*70}\n")
                 return
         
-        if len(models) == 1:
-                # Single model: run directly without thread overhead
-                result = run_single_model(models[0])
+        # Build the flat job list: list of (model, effort_or_None)
+        if auto_effort_jobs:
+                jobs = auto_effort_jobs
+        else:
+                jobs = [(m, None) for m in models]
+
+        if not jobs:
+                print(f"ERROR: No elicited triples found in {elicited_triples_dir} for the given flags. Pass --model_elicitation explicitly or check the directory.")
+                return
+
+        if len(jobs) == 1:
+                result = run_single_model(jobs[0][0], effort_override=jobs[0][1])
                 if result is not None:
                         results_summary.append(result)
         else:
-                # Multiple models: pre-build ground truth once before parallel execution
+                # Multiple jobs: pre-build ground truth once before parallel execution
                 # to avoid all workers racing to fetch the same Brave Search results.
                 print(f"\n{'='*70}")
                 print("Pre-building ground truth before parallel elicitation/evaluation...")
@@ -771,12 +910,14 @@ def BeQu(
                         web_docs_for_eval=web_docs_for_eval,
                         build_ground_truth_only=True,
                         top_k=top_k,
+                        judge_api_url=judge_api_url,
+                        judge_api_key=judge_api_key,
                 )
-                print(f"Ground truth ready. Running elicitation for {len(models)} models in parallel...")
-                with ThreadPoolExecutor(max_workers=len(models)) as executor:
-                        future_to_model = {executor.submit(run_single_model, model): model for model in models}
-                        for future in as_completed(future_to_model):
-                                model = future_to_model[future]
+                print(f"Ground truth ready. Running {len(jobs)} evaluation jobs in parallel...")
+                with ThreadPoolExecutor(max_workers=len(jobs)) as executor:
+                        future_to_job = {executor.submit(run_single_model, m, e): (m, e) for m, e in jobs}
+                        for future in as_completed(future_to_job):
+                                model, _ = future_to_job[future]
                                 try:
                                         result = future.result()
                                         if result is not None:

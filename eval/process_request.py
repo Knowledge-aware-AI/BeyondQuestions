@@ -32,17 +32,19 @@ class ProcessRequest:
     LLM call to determine entailment/contradiction/neutral.
     """
     
-    def __init__(self, 
-                llm_judge, 
+    def __init__(self,
+                llm_judge,
                 elicited_triples_dir,
-                entities_file_path, 
-                seed, 
+                entities_file_path,
+                seed,
                 sample_size,
                 results_dir_path,
                 ground_truth_dir_path=None,
                 web_docs_for_eval: int = 30,
                 rag_cache_dir: str = None,
                 top_k: int = 10,
+                judge_api_url: str = None,
+                judge_api_key: str = None,
         ):
         """
         Initialize the ProcessRequest handler.
@@ -103,14 +105,16 @@ class ProcessRequest:
         
         # Number of top passages to retrieve for RAG-based precision evaluation
         self.top_k = top_k
-        
+        self.judge_api_url = judge_api_url
+        self.judge_api_key = judge_api_key
+
     def verify_triples(self, raw_triples):
 
         """
         Process raw triples, verify from language model, and categorize each response.
         Returns a dict with keys: 'a' (entailment), 'b' (contradiction), 'c' (neutral), and 'noSnippet' (triples without search results).
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
 
         # this dict stores results which fall into one of the categories (a, b, c) -- a=entailment, b=contradiction, c=neutral
         results = {"a":[], "b":[], "c":[], "noSnippet": []}
@@ -250,19 +254,31 @@ class ProcessRequest:
                 else:
                     logger.warning(f"No CSV found in {self.elicited_triples_dir} or its subfolder {subdirs[0]}")
             elif len(subdirs) > 1:
-                logger.warning(f"Multiple subdirectories found in {self.elicited_triples_dir}, no CSV files directly available")
+                logger.info(f"Multiple subdirectories found in {self.elicited_triples_dir}, collecting CSVs from all subdirectories: {subdirs}")
+                all_rows = []
+                for subdir in subdirs:
+                    subdir_path = os.path.join(self.elicited_triples_dir, subdir)
+                    for file in os.listdir(subdir_path):
+                        if file.endswith(".csv"):
+                            file_path = os.path.join(subdir_path, file)
+                            with open(file_path, mode='r', newline='', encoding='utf-8') as f:
+                                csv_reader = csv.DictReader(f)
+                                all_rows.extend([row for row in csv_reader])
+                if all_rows:
+                    raw_triples["elicited_triples"] = all_rows
+                return raw_triples
 
         # Iterate over all files in the (potentially nested) search directory
         for file in os.listdir(search_dir):
-            if file.endswith(".csv"):  
+            if file.endswith(".csv"):
                 file_path = os.path.join(search_dir, file)
                 # get the filename without the extension
-                file_key = os.path.splitext(file)[0]  
+                file_key = os.path.splitext(file)[0]
 
                 with open(file_path, mode='r', newline='', encoding='utf-8') as f:
                     csv_reader = csv.DictReader(f)
-                    raw_triples[file_key] = [row for row in csv_reader]  
-        
+                    raw_triples[file_key] = [row for row in csv_reader]
+
         # return type is a dict with key as filename and value as rows read from that file
         return raw_triples
 
@@ -594,7 +610,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with precision metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         
         for filename, triples_list in elicited_triples.items():
             logger.debug(f"Computing Precision ({self.metric_name}) for file: {filename}")
@@ -787,7 +803,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with recall metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         
         for filename, elicited_list in elicited_triples.items():
             logger.debug(f"Computing Recall (Wiki + Web) for file: {filename}")
@@ -1216,7 +1232,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with per-category recall metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         for filename, elicited_list in elicited_triples.items():
             logger.debug(f"Computing Recall (Wiki) by category for file: {filename}")
             # Build mapping from Wikipedia triple subjects to entity titles
@@ -1376,7 +1392,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with per-category precision metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         for filename, triples_list in elicited_triples.items():
             logger.debug(f"Computing Precision (Wiki) by category for file: {filename}")
             sampled_triples = []
@@ -1621,7 +1637,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with per-bucket precision metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         for filename, triples_list in elicited_triples.items():
             logger.debug(f"Computing Precision (Wiki) by popularity for file: {filename}")
             # Two-level stratified sampling: 100 triples per popularity bucket
@@ -1877,7 +1893,7 @@ class ProcessRequest:
         Returns:
             Updated self.aggregated_data with per-bucket recall metrics.
         """
-        request = Request(self.llm_judge)
+        request = Request(self.llm_judge, judge_api_url=self.judge_api_url, judge_api_key=self.judge_api_key)
         for filename, elicited_list in elicited_triples.items():
             logger.debug(f"Computing Recall (Wiki) by popularity for file: {filename}")
             # Build mapping from Wikipedia triple subjects to entity titles

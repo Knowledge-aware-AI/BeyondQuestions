@@ -1,4 +1,5 @@
 import os
+import tempfile
 import requests
 import json
 from loguru import logger
@@ -109,9 +110,12 @@ def save_unified_wikipedia_cache(cache_dict: Dict, cache_file_path: str):
             os.makedirs(cache_dir, exist_ok=True)
             logger.debug(f"Created cache directory: {cache_dir}")
         
-        with open(cache_file_path, "w", encoding="utf-8") as f:
-            json.dump(cache_dict, f, indent=4)
-        cache_size = len(json.dumps(cache_dict)) / (1024 * 1024)  # Size in MB
+        cache_dir = os.path.dirname(cache_file_path) or "."
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=cache_dir, delete=False, suffix=".tmp") as tmp:
+            json.dump(cache_dict, tmp, indent=4)
+            tmp_path = tmp.name
+        os.replace(tmp_path, cache_file_path)
+        cache_size = os.path.getsize(cache_file_path) / (1024 * 1024)
         logger.info(f"Unified ground truth saved: {cache_file_path} ({len(cache_dict)} entities, {cache_size:.2f} MB)")
     except Exception as e:
         logger.error(f"Failed to save unified ground truth to {cache_file_path}: {e}", exc_info=True)
@@ -158,7 +162,6 @@ def word_count(text: str) -> int:
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "YOUR_BRAVE_API_KEY_HERE")
 
 
-@network_retry(max_retries=5, initial_delay=1.0)
 def search_web(entity_name: str, num_results: int = 10) -> list:
     """
     Search the web for an entity using Brave Search API.
