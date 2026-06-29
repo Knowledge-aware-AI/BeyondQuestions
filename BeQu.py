@@ -2,7 +2,7 @@ from typing import Literal
 import fire
 import os
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SCADSAI_API_KEY = os.getenv("SCADSAI_API_KEY")
+CUSTOM_API_KEY = os.getenv("CUSTOM_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from elicitation import main_elicitation_openai_batched, main_elicitation_other
@@ -138,7 +138,7 @@ def combine_all_results(results_dir_path: str, results_summary: list) -> str:
 
 def BeQu(
         entities_file_path:str = None,
-        api:Literal["openai_batched", "scads", "openrouter"] = None,
+        api:Literal["openai_batched", "custom", "openrouter"] = None,
         model_elicitation = None,
         elicited_triples_dir:str = None,
         ground_truth_dir_path:str = None,
@@ -146,7 +146,7 @@ def BeQu(
         prompt_template_dir_elicitation:str = None,
         reasoning_effort_elicitation:Literal["low", "medium", "high"] = None,
         llm_judge:str = "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-        llm_judge_api:Literal["scads", "openrouter"] = "scads",
+        llm_judge_api:Literal["custom", "openrouter"] = "custom",
         seed:int = 42,
         sample_size:int = 500,
         evaluate_by_category:bool = False,
@@ -173,7 +173,7 @@ def BeQu(
         Main function to run the entire BeQu pipeline, from elicitation to evaluation.
         Arguments:
                 entities_file_path (str): File path storing the entities (random, by domain, by popularity)
-                api (Literal["openai_batched", "scads", "openrouter"]): API to use for elicitation
+                api (Literal["openai_batched", "custom", "openrouter"]): API to use for elicitation
                 model_elicitation (str): Name of the model to use for elicitation
                 prompt_template_dir_elicitation (str): Dir which stores multiple jinja files for elicitation
                 reasoning_effort_elicitation:Literal["low", "medium", "high"] = None: Reasoning effort level for elicitation prompts. Works only for models that support this parameter
@@ -181,7 +181,7 @@ def BeQu(
                 ground_truth_dir_path (str): Dir path where the ground truth triples are stored
                 results_dir_path (str): Dir path for storing the evaluation results
                 llm_judge (str): Name of the model to use as judge in the evaluation
-                llm_judge_api (Literal["scads", "openrouter"]): API backend for the LLM judge. Use "openrouter" to route judge calls through OpenRouter instead of ScadsAI (default: "scads")
+                llm_judge_api (Literal["custom", "openrouter"]): API backend for the LLM judge. Use "openrouter" to route judge calls through OpenRouter instead of custom (default: "custom")
                 seed (int): Random seed for sampling in evaluation (default: 42)
                 sample_size (int): Number of triples to sample for evaluation (default: 100)
                 evaluate_by_category (bool): Whether to evaluate by category (default: False)
@@ -239,16 +239,16 @@ def BeQu(
         if llm_judge_api == "openrouter":
                 judge_api_url = "https://openrouter.ai/api/v1"
                 judge_api_key = OPENROUTER_API_KEY
-        else:  # default: scads
-                judge_api_url = os.getenv("SCADSAI_BASE_URL")
-                judge_api_key = SCADSAI_API_KEY
+        else:  # default: custom
+                judge_api_url = os.getenv("CUSTOM_BASE_URL")
+                judge_api_key = CUSTOM_API_KEY
 
         # Set API URL and key based on selected API
         api_url_elicitation = None  # Default to None; will be set based on api if needed
         api_key_elicitation = None
-        if api == "scads":
-                api_url_elicitation = os.getenv("SCADSAI_BASE_URL")
-                api_key_elicitation = SCADSAI_API_KEY
+        if api == "custom":
+                api_url_elicitation = os.getenv("CUSTOM_BASE_URL")
+                api_key_elicitation = CUSTOM_API_KEY
         elif api == "openrouter":
                 api_url_elicitation = "https://openrouter.ai/api/v1"
                 api_key_elicitation = OPENROUTER_API_KEY
@@ -658,7 +658,7 @@ def BeQu(
                                         prompt_templates=prompt_templates,
                                         openai_api_key=api_key_elicitation,
                                 )
-                        elif api in ["scads", "openrouter"]:
+                        elif api in ["custom", "openrouter"]:
                                 print(f"Starting elicitation with {api} API for model: {model} ...")
                                 main_elicitation_other(
                                         entities_file_path=entities_file_path,
@@ -675,7 +675,7 @@ def BeQu(
                                         prompt_templates=prompt_templates,
                                 )
                         else:
-                                print(f"Unsupported API choice: {api}. Please choose 'openai_batched', 'scads', or 'openrouter'.")
+                                print(f"Unsupported API choice: {api}. Please choose 'openai_batched', 'custom', or 'openrouter'.")
                                 return None
                 else:
                         if build_ground_truth_only:

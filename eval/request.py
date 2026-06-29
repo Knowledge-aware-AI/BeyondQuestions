@@ -81,7 +81,7 @@ class Request:
         elif llm_judge.startswith("gpt-") and 'oss' not in llm_judge:
             self.client = OpenAI()
         else:
-            self.client = OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
+            self.client = OpenAI(base_url=os.getenv("CUSTOM_BASE_URL"), api_key=os.getenv("CUSTOM_API_KEY"))
 
     @network_retry(max_retries=6, initial_delay=1.0)
     def verify_triple_lm_snippet(self, triple, snippet):
