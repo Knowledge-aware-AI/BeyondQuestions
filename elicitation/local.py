@@ -377,6 +377,16 @@ def main_elicitation_other(
                 if linetriples is None:
                     raise ValueError("Failed to extract JSON array from response")
 
+                # Normalize list-of-lists [["s","p","o"], ...] → list-of-dicts
+                if linetriples and isinstance(linetriples[0], list):
+                    keys = ("subject", "predicate", "object")
+                    normalized = []
+                    for item in linetriples:
+                        if isinstance(item, list) and len(item) == 3:
+                            normalized.append(dict(zip(keys, [str(v) for v in item])))
+                    if normalized:
+                        linetriples = normalized
+
                 # Validate structure and try to repair if invalid
                 valid, reason = validate_triples(linetriples)
                 if not valid:

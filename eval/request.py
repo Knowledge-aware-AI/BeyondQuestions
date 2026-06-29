@@ -1,9 +1,57 @@
 from openai import OpenAI
 import json
+import re
 import os
 from loguru import logger
 from typing import Dict, List
 from .network_utils import network_retry
+
+
+def _parse_json(text: str) -> dict:
+    """Parse JSON from LLM output that may contain extra text or markdown fences."""
+    text = text.strip()
+    # Strip markdown code fences
+    text = re.sub(r'^```(?:json)?\s*', '', text)
+    text = re.sub(r'\s*```$', '', text)
+    text = text.strip()
+
+    # Repair common truncation: model omits the leading '{' so response starts with '"key":' or 'key":'
+    if text and text[0] != '{' and text[0] != '[':
+        text = '{' + text
+        # Ensure it's closed
+        if not text.rstrip().endswith('}'):
+            text = text.rstrip().rstrip(',') + '}'
+
+    try:
+        result = json.loads(text)
+        # If model returned a list, try to find a dict inside it
+        if isinstance(result, list):
+            for item in result:
+                if isinstance(item, dict):
+                    return item
+            raise ValueError(f"JSON array with no dict element: {result}")
+        return result
+    except json.JSONDecodeError:
+        # Find the outermost {...} block (supports nested structures)
+        depth, start = 0, -1
+        for i, ch in enumerate(text):
+            if ch == '{':
+                if depth == 0:
+                    start = i
+                depth += 1
+            elif ch == '}':
+                depth -= 1
+                if depth == 0 and start != -1:
+                    try:
+                        return json.loads(text[start:i + 1])
+                    except json.JSONDecodeError:
+                        pass
+                    start = -1
+        # Last resort: bare answer letter
+        bare = re.search(r'\b([abc])\b', text.lower())
+        if bare:
+            return {"answer": bare.group(1), "reasoning": "extracted from plain text"}
+        raise
 
 class Request:
     """
@@ -15,18 +63,22 @@ class Request:
     - Retrieved RAG passages (used for precision with new RAG-based approach)
     """
     
-    def __init__(self, llm_judge, max_tokens = 3000):
+    def __init__(self, llm_judge, max_tokens = 3000, judge_api_url: str = None, judge_api_key: str = None):
         """
         Initialize the Request handler.
-        
+
         Args:
             llm_judge: Name of the LLM model to use for verification
             max_tokens: Maximum tokens in LLM response (default: 3000)
+            judge_api_url: Base URL for the judge API (overrides default selection)
+            judge_api_key: API key for the judge API (overrides default selection)
         """
         self.llm_judge = llm_judge
         self.max_tokens = max_tokens
 
-        if llm_judge.startswith("gpt-") and 'oss' not in llm_judge:
+        if judge_api_url is not None:
+            self.client = OpenAI(base_url=judge_api_url, api_key=judge_api_key)
+        elif llm_judge.startswith("gpt-") and 'oss' not in llm_judge:
             self.client = OpenAI()
         else:
             self.client = OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
@@ -95,16 +147,16 @@ class Request:
             model=self.llm_judge,
             max_tokens=self.max_tokens,
             temperature=0.0,
-            response_format=response_schema
+            response_format={"type": "json_object"}
         )
         
         response_text = response.choices[0].message.content
-        result = json.loads(response_text)
-        
+        result = _parse_json(response_text)
+
         # Validate structured output
         if not isinstance(result, dict) or result.get("answer") not in ['a', 'b', 'c']:
             raise ValueError(f"Invalid LLM response for triple '{triple}': {result}")
-        
+
         logger.debug(f"Snippet verification completed: {triple[:50]}... => {result.get('answer')}")
         
         return result
@@ -174,16 +226,16 @@ class Request:
             model=self.llm_judge,
             max_tokens=self.max_tokens,
             temperature=0.0,
-            response_format=response_schema
+            response_format={"type": "json_object"}
         )
         
         response_text = response.choices[0].message.content
-        result = json.loads(response_text)
-        
+        result = _parse_json(response_text)
+
         # Validate structured output
         if not isinstance(result, dict) or result.get("answer") not in ['a', 'b', 'c']:
             raise ValueError(f"Invalid LLM response for triple '{triple}': {result}")
-        
+
         logger.debug(f"Wikidata verification completed: {triple[:50]}... => {result.get('answer')}")
         
         return result
@@ -268,86 +320,68 @@ class Request:
             logger.error(f"Error in shorten_web_document_text: {e}", exc_info=True)
             return text
 
-    @network_retry(max_retries=5, initial_delay=1.0)
     def extract_triples_from_text(self, entity_name: str, text: str) -> List[Dict]:
         """
         Extract RDF triples from a given text for a specific entity.
         Returns structured JSON output with guaranteed list of triples.
-        
+
         Args:
             entity_name (str): The subject entity for the triples.
             text (str): The text to extract triples from.
-        
+
         Returns:
             list: List of dicts with 'subject', 'predicate', 'object' keys.
         """
-        # Define the JSON schema for structured output
-        response_schema = {
-            "type": "json_schema",
-            "json_schema": {
-                "name": "TripleExtraction",
-                "description": "Extract RDF triples from text",
-                "schema": {
-                    "type": "object",
-                    "properties": {
-                        "triples": {
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "subject": {"type": "string"},
-                                    "predicate": {"type": "string"},
-                                    "object": {"type": "string"}
-                                },
-                                "required": ["subject", "predicate", "object"]
-                            },
-                            "description": "List of extracted triples"
-                        }
-                    },
-                    "required": ["triples"]
-                }
-            }
-        }
-        
-        messages = [
-            {"role": "user", "content": f"""Extract RDF triples from the following text about '{entity_name}'. 
-The subject of all triples should be '{entity_name}'.
-Return the triples as a JSON array with objects containing 'subject', 'predicate', 'object' fields.
+        prompt = f"""Extract RDF triples from the following text about '{entity_name}'.
+The subject of all triples MUST be '{entity_name}'.
+
+You MUST return ONLY a JSON object in exactly this format, with no other text before or after:
+{{"triples": [{{"subject": "...", "predicate": "...", "object": "..."}}, ...]}}
 
 Text:
-{text}"""}
-        ]
-        
-        logger.debug("=== LLM CALL: extract_triples_from_text ===")
-        logger.debug(f"Entity: {entity_name}")
-        logger.debug(f"Input text length: {len(text)} characters, {len(text.split())} words")
-        logger.debug(f"Model: {self.llm_judge}")
-        
-        try:
-            response = self.client.chat.completions.create(
-                messages=messages,
-                model=self.llm_judge,
-                max_tokens=2000,
-                temperature=0.0,
-                response_format=response_schema
-            )
-            
-            response_text = response.choices[0].message.content
-            result = json.loads(response_text)
-            triples = result.get("triples", [])
-            
-            # Validation: warn if no triples were extracted
-            if not triples or len(triples) == 0:
-                logger.warning(f"No triples extracted for entity '{entity_name}'. Response was: {response_text[:200]}")
-            else:
-                logger.debug(f"Extracted {len(triples)} triples")
-            
-            #logger.info(f"Triple extraction for '{entity_name}': {len(triples)} triples extracted")
-            
-            return triples
-        except Exception as e:
-            logger.error(f"Error in extract_triples_from_text for {entity_name}: {e}", exc_info=True)
-            return []
+{text}"""
+
+        logger.debug(f"=== LLM CALL: extract_triples_from_text === Entity: {entity_name}, model: {self.llm_judge}")
+
+        max_attempts = 4
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = self.client.chat.completions.create(
+                    messages=[{"role": "user", "content": prompt}],
+                    model=self.llm_judge,
+                    max_tokens=2000,
+                    temperature=0.0,
+                    response_format={"type": "json_object"},
+                )
+                response_text = response.choices[0].message.content
+                result = _parse_json(response_text)
+
+                if not isinstance(result, dict) or "triples" not in result:
+                    raise ValueError(f"Missing 'triples' key in response: {response_text[:200]}")
+
+                triples = result["triples"]
+                if not isinstance(triples, list):
+                    raise ValueError(f"'triples' is not a list: {type(triples)}")
+
+                # Filter out malformed items
+                valid = [
+                    t for t in triples
+                    if isinstance(t, dict) and all(k in t for k in ("subject", "predicate", "object"))
+                ]
+                if len(valid) < len(triples):
+                    logger.warning(f"Dropped {len(triples) - len(valid)} malformed triple(s) for '{entity_name}'")
+
+                if not valid:
+                    logger.warning(f"No triples extracted for entity '{entity_name}' (attempt {attempt}). Response: {response_text[:200]}")
+                else:
+                    logger.debug(f"Extracted {len(valid)} triples for '{entity_name}'")
+                return valid
+
+            except Exception as e:
+                logger.warning(f"extract_triples_from_text attempt {attempt}/{max_attempts} failed for '{entity_name}': {e}")
+                if attempt == max_attempts:
+                    logger.error(f"All {max_attempts} attempts failed for '{entity_name}', returning empty list")
+                    return []
     
     @network_retry(max_retries=5, initial_delay=1.0)
     def verify_triple_all_sources(self, triple: str, wikipedia_snippet: str, wikidata_triples: list, web_snippets: list) -> dict:
@@ -436,16 +470,16 @@ Text:
             model=self.llm_judge,
             max_tokens=self.max_tokens,
             temperature=0.0,
-            response_format=response_schema
+            response_format={"type": "json_object"}
         )
         
         response_text = response.choices[0].message.content
-        result = json.loads(response_text)
-        
+        result = _parse_json(response_text)
+
         # Validate structured output
         if not isinstance(result, dict) or result.get("answer") not in ['a', 'b', 'c']:
             raise ValueError(f"Invalid LLM response for triple '{triple}': {result}")
-        
+
         logger.debug(f"All-sources verification completed: {triple[:50]}... => {result.get('answer')}")
         
         return result
@@ -517,16 +551,16 @@ Text:
             model=self.llm_judge,
             max_tokens=self.max_tokens,
             temperature=0.0,
-            response_format=response_schema
+            response_format={"type": "json_object"}
         )
         
         response_text = response.choices[0].message.content
-        result = json.loads(response_text)
-        
+        result = _parse_json(response_text)
+
         # Validate structured output
         if not isinstance(result, dict) or result.get("answer") not in ['a', 'b', 'c']:
             raise ValueError(f"Invalid LLM response for triple '{triple}': {result}")
-        
+
         logger.debug(f"RAG verification completed: {triple[:50]}... => {result.get('answer')}")
         
         return result

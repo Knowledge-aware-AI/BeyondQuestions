@@ -24,21 +24,26 @@ Unified cache stores original articles, shortened versions, and extracted triple
 """
 
 class WikipediaTripleExtractor:
-    def __init__(self, ground_truth_dir_path, llm_judge: str = "meta-llama/Llama-4-Scout-17B-16E-Instruct", web_results_count: int = 30, max_workers: int = 4):
+    def __init__(self, ground_truth_dir_path, llm_judge: str = "meta-llama/Llama-4-Scout-17B-16E-Instruct", web_results_count: int = 30, max_workers: int = 4, judge_api_url: str = None, judge_api_key: str = None, max_brave_calls: int = 1000):
         """
         Initialize the Wikipedia triple extractor.
-        
+
         Args:
             llm_judge (str): Name of the LLM model to use.
             ground_truth_dir_path (str): Directory to store unified Wikipedia cache. If None, uses cwd.
             web_results_count (int): Number of Brave Search results to fetch per entity (default: 30).
             max_workers (int): Maximum number of parallel workers for entity processing (default: 4).
+            judge_api_url (str): Base URL for the judge API (overrides default selection).
+            judge_api_key (str): API key for the judge API (overrides default selection).
+            max_brave_calls (int): Maximum total Brave Search API calls across the run (default: 1000).
         """
-        self.request = Request(llm_judge)
+        self.request = Request(llm_judge, judge_api_url=judge_api_url, judge_api_key=judge_api_key)
         self.llm_judge = llm_judge
         self.ground_truth_dir_path = ground_truth_dir_path or os.getcwd()
         self.web_results_count = web_results_count
         self.max_workers = max_workers
+        self._brave_calls = 0
+        self._max_brave_calls = max_brave_calls
         # Single unified cache file containing all Wikipedia data
         self.unified_cache_file = os.path.join(self.ground_truth_dir_path, "GT.json")
         
@@ -51,7 +56,18 @@ class WikipediaTripleExtractor:
         logger.info(f"Ground truth file: {self.unified_cache_file}")
         logger.info(f"Loaded {len(self.unified_cache)} entities from cache")
         logger.info(f"Max workers for parallel processing: {self.max_workers}")
-    
+
+    def _search_web_guarded(self, entity_name: str, num_results: int) -> list:
+        """Call search_web only if the global Brave API call budget has not been exhausted."""
+        with self._cache_lock:
+            if self._brave_calls >= self._max_brave_calls:
+                logger.warning(
+                    f"Brave Search limit ({self._max_brave_calls}) reached — skipping web search for '{entity_name}'"
+                )
+                return []
+            self._brave_calls += 1
+        return search_web(entity_name, num_results=num_results)
+
     def get_wikipedia_article_for_entity(self, entity_name: str) -> Optional[Dict]:
         """
         Get Wikipedia article for an entity, using unified cache if available.
@@ -203,7 +219,7 @@ class WikipediaTripleExtractor:
             else:
                 # Empty cache - re-fetch
                 logger.info(f"Fetching web search results for {entity_name}...")
-                web_results = search_web(entity_name, num_results=self.web_results_count)
+                web_results = self._search_web_guarded(entity_name, num_results=self.web_results_count)
                 result["web_search_results"] = web_results
                 result["web_search_count"] = len(web_results)
                 
@@ -233,7 +249,7 @@ class WikipediaTripleExtractor:
         else:
             # No cache entry - re-fetch
             logger.info(f"Fetching web search results for {entity_name}...")
-            web_results = search_web(entity_name, num_results=self.web_results_count)
+            web_results = self._search_web_guarded(entity_name, num_results=self.web_results_count)
             result["web_search_results"] = web_results
             result["web_search_count"] = len(web_results)
             

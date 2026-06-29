@@ -73,6 +73,8 @@ def main_evaluation(
         build_ground_truth_only: bool = False,
         max_workers: int = 5,
         top_k: int = 10,
+        judge_api_url: str = None,
+        judge_api_key: str = None,
 ):  
     """
     Main function to run the evaluation pipeline for the elicited triples.
@@ -157,7 +159,7 @@ def main_evaluation(
     """
     
     # Step 1: Initialize Wikipedia triple extractor
-    extractor = WikipediaTripleExtractor(llm_judge=llm_judge, ground_truth_dir_path=ground_truth_dir_path, web_results_count=web_results_count, max_workers=max_workers)
+    extractor = WikipediaTripleExtractor(llm_judge=llm_judge, ground_truth_dir_path=ground_truth_dir_path, web_results_count=web_results_count, max_workers=max_workers, judge_api_url=judge_api_url, judge_api_key=judge_api_key)
     
     # Step 2: Process entities and extract triples from Wikipedia
     logger.info(f"Processing {len(all_entities)} entities...")
@@ -188,16 +190,18 @@ def main_evaluation(
     # Initialize ProcessRequest with the model-specific results directory
     logger.info(f"Processing elicited triples from: {elicited_triples_dir}")
     process_request = ProcessRequest(
-        llm_judge, 
+        llm_judge,
         elicited_triples_dir,
-        entities_file_path, 
-        seed, 
+        entities_file_path,
+        seed,
         sample_size,
         model_results_dir,
         ground_truth_dir_path=ground_truth_dir_path,
         web_docs_for_eval=web_docs_for_eval,
         rag_cache_dir=rag_cache_dir,
         top_k=top_k,
+        judge_api_url=judge_api_url,
+        judge_api_key=judge_api_key,
     )
 
     ret_triples = process_request.read_triples_dir()
