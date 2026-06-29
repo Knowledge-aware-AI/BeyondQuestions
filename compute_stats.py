@@ -3,8 +3,8 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-BASE_DIR = Path("/home/luca-giordano/Desktop/BeyondQuestions/ELICITED TRIPLES")
-OUTPUT_DIR = Path("/home/luca-giordano/Desktop")
+BASE_DIR = Path(__file__).parent / "elicited_triples"
+OUTPUT_DIR = Path(__file__).parent
 
 per_file_rows = []
 per_model_accum = {}  # model -> accumulated data
