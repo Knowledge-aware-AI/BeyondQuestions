@@ -52,7 +52,7 @@ MIN_LENGTH = 2000
 MIN_STATEMENTS = 10
 
 # LLM client (keeps original initialization)
-client = openai.OpenAI(base_url=os.getenv("CUSTOM_BASE_URL"), api_key=os.getenv("CUSTOM_API_KEY"))
+client = openai.OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
 
 # State
 fetched_titles = set()
