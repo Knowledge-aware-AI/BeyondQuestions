@@ -1,6 +1,8 @@
 import json
 import hashlib
 import os
+import fcntl
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Dict, Any, Optional
 from datetime import datetime
@@ -46,13 +48,35 @@ class ExperimentTracker:
         """Load all tracked experiments from file."""
         try:
             content = self.tracking_file.read_text()
-            return json.loads(content) if content.strip() else []
-        except (json.JSONDecodeError, FileNotFoundError):
+        except FileNotFoundError:
             return []
+        if not content.strip():
+            return []
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError as e:
+            # never treat a damaged tracker as empty: that would redo (and overwrite) every
+            # finished experiment and replace the tracker with a single entry
+            raise RuntimeError(f"{self.tracking_file} is not valid JSON ({e}); restore it from a backup") from e
     
     def _save_experiments(self, experiments: list) -> None:
-        """Save experiments to file."""
-        self.tracking_file.write_text(json.dumps(experiments, indent=2))
+        """Save experiments to file. Atomic: written to a temp file, then renamed over the old one,
+        so a process killed mid-write can never leave a truncated tracker behind."""
+        tmp = self.tracking_file.with_name(f"{self.tracking_file.name}.tmp.{os.getpid()}")
+        tmp.write_text(json.dumps(experiments, indent=2))
+        os.replace(tmp, self.tracking_file)
+
+    @contextmanager
+    def _locked(self):
+        """Exclusive lock (across threads and processes) around read-modify-write of the tracker,
+        so registrations finishing at the same moment cannot overwrite each other."""
+        fd = os.open(str(self.tracking_file) + ".lock", os.O_CREAT | os.O_RDWR)
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX)
+            yield
+        finally:
+            fcntl.flock(fd, fcntl.LOCK_UN)
+            os.close(fd)
     
     def check_experiment(self, config: Dict[str, Any]) -> Optional[str]:
         """
@@ -93,9 +117,10 @@ class ExperimentTracker:
         if results_path:
             experiment_record["results_path"] = str(results_path)
         
-        experiments = self._load_experiments()
-        experiments.append(experiment_record)
-        self._save_experiments(experiments)
+        with self._locked():
+            experiments = self._load_experiments()
+            experiments.append(experiment_record)
+            self._save_experiments(experiments)
     
     def get_all_experiments(self) -> list:
         """
@@ -122,15 +147,16 @@ class ExperimentTracker:
             bool: True if experiment was found and removed, False otherwise.
         """
         config_hash = self._compute_config_hash(config)
-        experiments = self._load_experiments()
-        original_count = len(experiments)
-        
-        experiments = [exp for exp in experiments if exp.get("config_hash") != config_hash]
-        
-        if len(experiments) < original_count:
-            self._save_experiments(experiments)
-            return True
-        
+        with self._locked():
+            experiments = self._load_experiments()
+            original_count = len(experiments)
+
+            experiments = [exp for exp in experiments if exp.get("config_hash") != config_hash]
+
+            if len(experiments) < original_count:
+                self._save_experiments(experiments)
+                return True
+
         return False
     
     def find_similar_experiments(self, config: Dict[str, Any], exclude_keys: Optional[list] = None) -> list:

@@ -1,0 +1,4 @@
+Model,F1_low,Precision_low,Recall_low,F1_medium,Precision_medium,Recall_medium,F1_high,Precision_high,Recall_high
+claude-opus-4.6,0.2768,0.708,0.172,0.352,0.612,0.247,0.3912,0.542,0.306
+gemini-3.1-pro-preview,0.3595,0.765,0.235,0.3814,0.701,0.262,0.3642,0.709,0.245
+gpt-5.4,0.3545,0.648,0.244,0.3806,0.675,0.265,0.3738,0.665,0.26

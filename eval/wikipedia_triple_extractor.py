@@ -24,7 +24,7 @@ Unified cache stores original articles, shortened versions, and extracted triple
 """
 
 class WikipediaTripleExtractor:
-    def __init__(self, ground_truth_dir_path, llm_judge: str = "meta-llama/Llama-4-Scout-17B-16E-Instruct", web_results_count: int = 30, max_workers: int = 4, judge_api_url: str = None, judge_api_key: str = None, max_brave_calls: int = 1000):
+    def __init__(self, ground_truth_dir_path, llm_judge: str = "google/gemma-4-26B-A4B-it", web_results_count: int = 30, disable_web_results_topup: bool = False, max_workers: int = 4, judge_api_url: str = None, judge_api_key: str = None, max_brave_calls: int = 1000):
         """
         Initialize the Wikipedia triple extractor.
 
@@ -32,6 +32,8 @@ class WikipediaTripleExtractor:
             llm_judge (str): Name of the LLM model to use.
             ground_truth_dir_path (str): Directory to store unified Wikipedia cache. If None, uses cwd.
             web_results_count (int): Number of Brave Search results to fetch per entity (default: 30).
+            disable_web_results_topup (bool): When True, an entity with any cached web_search_results
+                is treated as fully cached and never re-fetched to reach web_results_count (default: False).
             max_workers (int): Maximum number of parallel workers for entity processing (default: 4).
             judge_api_url (str): Base URL for the judge API (overrides default selection).
             judge_api_key (str): API key for the judge API (overrides default selection).
@@ -41,6 +43,7 @@ class WikipediaTripleExtractor:
         self.llm_judge = llm_judge
         self.ground_truth_dir_path = ground_truth_dir_path or os.getcwd()
         self.web_results_count = web_results_count
+        self.disable_web_results_topup = disable_web_results_topup
         self.max_workers = max_workers
         self._brave_calls = 0
         self._max_brave_calls = max_brave_calls
@@ -57,7 +60,7 @@ class WikipediaTripleExtractor:
         logger.info(f"Loaded {len(self.unified_cache)} entities from cache")
         logger.info(f"Max workers for parallel processing: {self.max_workers}")
 
-    def _search_web_guarded(self, entity_name: str, num_results: int) -> list:
+    def _search_web_guarded(self, entity_name: str, num_results: int, offset: int = 0) -> list:
         """Call search_web only if the global Brave API call budget has not been exhausted."""
         with self._cache_lock:
             if self._brave_calls >= self._max_brave_calls:
@@ -66,7 +69,7 @@ class WikipediaTripleExtractor:
                 )
                 return []
             self._brave_calls += 1
-        return search_web(entity_name, num_results=num_results)
+        return search_web(entity_name, num_results=num_results, offset=offset)
 
     def get_wikipedia_article_for_entity(self, entity_name: str) -> Optional[Dict]:
         """
@@ -116,7 +119,11 @@ class WikipediaTripleExtractor:
             dict: Contains 'entity', 'original_content', 'triples', 'wiki_url'
                   or None if Wikipedia article not found.
         """
-        # Check if entity is FULLY cached (has all required fields)
+        # Check if entity is FULLY cached (has all required fields) AND already has
+        # at least as many web results as currently requested (self.web_results_count).
+        # If the cache has fewer web results than requested (e.g. corpus previously
+        # built with 20 and now rebuilding with a higher target), fall through so the
+        # web-fetching step below can extend the cache instead of skipping it.
         if entity_name in self.unified_cache:
             cached_entry = self.unified_cache[entity_name]
             if all(key in cached_entry for key in ["original_content", "triples"]):
@@ -125,8 +132,15 @@ class WikipediaTripleExtractor:
                     # Also validate that web_search_results is not empty (to handle cases where Brave Search API failed with 402)
                     web_results = cached_entry.get("web_search_results")
                     if web_results and len(web_results) > 0:
-                        #logger.info(f"Entity {entity_name} is fully cached, skipping all API and LLM calls")
-                        return cached_entry
+                        if self.disable_web_results_topup or len(web_results) >= self.web_results_count:
+                            #logger.info(f"Entity {entity_name} is fully cached, skipping all API and LLM calls")
+                            return cached_entry
+                        else:
+                            logger.info(
+                                f"Entity {entity_name} cached with {len(web_results)} web results, "
+                                f"extending to target {self.web_results_count}"
+                            )
+                            # Fall through to fetch additional web results
                     else:
                         logger.warning(f"Entity {entity_name} has empty web_search_results in cache (likely from 402 error), will re-fetch web data")
                         # Fall through to re-fetch web search results
@@ -176,107 +190,121 @@ class WikipediaTripleExtractor:
             "extracted_triple_count": len(triples),
         }
         
-        # Step 5: Fetch web search results
-        if entity_name in self.unified_cache and "web_search_results" in self.unified_cache[entity_name]:
-            cached_web_results = self.unified_cache[entity_name]["web_search_results"]
-            if cached_web_results and len(cached_web_results) > 0:
-                result["web_search_results"] = cached_web_results
-                result["web_search_count"] = len(cached_web_results)
-                logger.debug(f"Using cached web search results for {entity_name} ({len(cached_web_results)} results)")
-                
-                # Check if full documents were cached
-                if "web_full_documents" in self.unified_cache[entity_name]:
-                    result["web_full_documents"] = self.unified_cache[entity_name]["web_full_documents"]
-                    result["web_full_documents_count"] = len(result["web_full_documents"])
-                else:
-                    # Fetch full documents (no shortening)
-                    logger.info(f"Fetching full documents for cached web results {entity_name}...")
-                    full_documents = []
-                    for item in cached_web_results:
-                        url = item.get("url", "")
-                        if url:
-                            full_content = fetch_full_document(url)
-                            if full_content:
-                                full_documents.append({
-                                    "url": url,
-                                    "title": item.get("title", ""),
-                                    "content": full_content,
-                                    "word_count": len(full_content.split())
-                                })
-                    result["web_full_documents"] = full_documents
-                    result["web_full_documents_count"] = len(full_documents)
-                
-                # Check if triples were extracted from web results
-                if "web_triples" in self.unified_cache[entity_name]:
-                    result["web_triples"] = self.unified_cache[entity_name]["web_triples"]
-                    result["web_triple_count"] = len(result["web_triples"])
-                else:
-                    # Extract triples from web snippets
-                    logger.info(f"Extracting triples from web search results for {entity_name}...")
-                    web_triples = self._extract_triples_from_web_results(cached_web_results, entity_name)
-                    result["web_triples"] = web_triples
-                    result["web_triple_count"] = len(web_triples)
-            else:
-                # Empty cache - re-fetch
-                logger.info(f"Fetching web search results for {entity_name}...")
-                web_results = self._search_web_guarded(entity_name, num_results=self.web_results_count)
-                result["web_search_results"] = web_results
-                result["web_search_count"] = len(web_results)
-                
-                # Fetch full document content (no shortening)
-                logger.info(f"Fetching full documents for {entity_name}...")
-                full_documents = []
-                for item in web_results:
-                    url = item.get("url", "")
-                    if url:
-                        full_content = fetch_full_document(url)
-                        if full_content:
-                            full_documents.append({
-                                "url": url,
-                                "title": item.get("title", ""),
-                                "content": full_content,
-                                "word_count": len(full_content.split())
-                            })
-                result["web_full_documents"] = full_documents
-                result["web_full_documents_count"] = len(full_documents)
-                
-                # Extract triples from web snippets
-                logger.info(f"Extracting triples from web search results for {entity_name}...")
-                web_triples = self._extract_triples_from_web_results(web_results, entity_name)
-                result["web_triples"] = web_triples
-                result["web_triple_count"] = len(web_triples)
-                logger.info(f"Fetched {len(web_results)} web search results, {len(full_documents)} full documents, and extracted {len(web_triples)} triples for {entity_name}")
+        # Step 5: Fetch web search results page-by-page, extending any cached results up to
+        # self.web_results_count, and checkpoint raw vs. LLM-deduped-novel triple counts after
+        # every page so we can plot triples-vs-#docs curves (does raw growth reflect genuinely
+        # new information, or just redundant restatements from lower-relevance results?).
+        cached_entry = self.unified_cache.get(entity_name, {})
+        cached_web_results = cached_entry.get("web_search_results") or []
+        cached_full_documents = cached_entry.get("web_full_documents") or []
+        cached_web_triples = cached_entry.get("web_triples") or []
+        cached_checkpoints = cached_entry.get("web_checkpoints") or []
+
+        page_size = 20
+        web_results = list(cached_web_results)
+        full_documents = list(cached_full_documents)
+        web_triples = list(cached_web_triples)
+        checkpoints = list(cached_checkpoints)
+
+        # "Known" baseline for novelty judging: Wikipedia triples plus every raw web
+        # triple already accounted for by prior checkpoints (whether it was itself
+        # judged novel or a duplicate, it's still "already available" information).
+        known_triples = list(triples)
+        if checkpoints:
+            # Resume from the last checkpoint: all web triples accounted for so far are "known"
+            known_triples.extend(web_triples)
+            novel_cumulative = checkpoints[-1]["novel_triples_cumulative"]
+        elif cached_web_triples:
+            # Old cache predates checkpointing: treat the cached batch as checkpoint 0
+            logger.info(f"Backfilling checkpoint 0 for {entity_name} ({len(cached_web_results)} cached docs, no prior checkpoint metadata)")
+            novel_flags = self.request.dedup_triples_llm(known_triples, cached_web_triples)
+            novel_count = sum(novel_flags)
+            known_triples.extend(cached_web_triples)
+            checkpoints.append({
+                "docs_cumulative": len(cached_web_results),
+                "raw_triples_cumulative": len(cached_web_triples),
+                "novel_triples_cumulative": novel_count,
+                "new_docs": len(cached_web_results),
+                "new_raw_triples": len(cached_web_triples),
+                "new_novel_triples": novel_count,
+            })
+            novel_cumulative = novel_count
         else:
-            # No cache entry - re-fetch
-            logger.info(f"Fetching web search results for {entity_name}...")
-            web_results = self._search_web_guarded(entity_name, num_results=self.web_results_count)
-            result["web_search_results"] = web_results
-            result["web_search_count"] = len(web_results)
-            
-            # Fetch full document content (no shortening)
-            logger.info(f"Fetching full documents for {entity_name}...")
-            full_documents = []
-            for item in web_results:
+            novel_cumulative = 0
+
+        already_have = len(web_results)
+        seen_urls = {item.get("url", "") for item in web_results}
+        start_page = already_have // page_size
+        num_pages_needed = -(-self.web_results_count // page_size)  # ceil
+
+        for page in range(start_page, num_pages_needed):
+            if len(web_results) >= self.web_results_count:
+                break
+            page_results = self._search_web_guarded(entity_name, num_results=page_size, offset=page)
+            if not page_results:
+                logger.info(f"No more web results available for {entity_name} at page {page}, stopping pagination early")
+                break
+
+            batch = [item for item in page_results if item.get("url", "") not in seen_urls]
+            for item in batch:
+                seen_urls.add(item.get("url", ""))
+            if not batch:
+                if len(page_results) < page_size:
+                    break
+                continue
+
+            logger.info(f"Fetching {len(batch)} new full documents (page {page}) for {entity_name}...")
+            batch_full_documents = []
+            for item in batch:
                 url = item.get("url", "")
                 if url:
                     full_content = fetch_full_document(url)
                     if full_content:
-                        full_documents.append({
+                        batch_full_documents.append({
                             "url": url,
                             "title": item.get("title", ""),
                             "content": full_content,
                             "word_count": len(full_content.split())
                         })
-            result["web_full_documents"] = full_documents
-            result["web_full_documents_count"] = len(full_documents)
-            
-            # Extract triples from web snippets
-            logger.info(f"Extracting triples from web search results for {entity_name}...")
-            web_triples = self._extract_triples_from_web_results(web_results, entity_name)
-            result["web_triples"] = web_triples
-            result["web_triple_count"] = len(web_triples)
-            logger.info(f"Fetched {len(web_results)} web search results, {len(full_documents)} full documents, and extracted {len(web_triples)} triples for {entity_name}")
-        
+
+            batch_triples = self._extract_triples_from_web_results(batch, entity_name)
+            novel_flags = self.request.dedup_triples_llm(known_triples, batch_triples) if batch_triples else []
+            batch_novel_count = sum(novel_flags)
+
+            web_results.extend(batch)
+            full_documents.extend(batch_full_documents)
+            web_triples.extend(batch_triples)
+            known_triples.extend(batch_triples)
+            novel_cumulative += batch_novel_count
+
+            checkpoints.append({
+                "docs_cumulative": len(web_results),
+                "raw_triples_cumulative": len(web_triples),
+                "novel_triples_cumulative": novel_cumulative,
+                "new_docs": len(batch),
+                "new_raw_triples": len(batch_triples),
+                "new_novel_triples": batch_novel_count,
+            })
+
+            logger.info(
+                f"Checkpoint for {entity_name}: {len(web_results)} docs -> "
+                f"{len(web_triples)} raw triples, {novel_cumulative} novel triples cumulative "
+                f"(+{len(batch_triples)} raw / +{batch_novel_count} novel this page)"
+            )
+
+            if len(page_results) < page_size:
+                logger.info(f"Brave returned fewer than {page_size} results for {entity_name} at page {page}, stopping pagination early")
+                break
+
+        result["web_search_results"] = web_results
+        result["web_search_count"] = len(web_results)
+        result["web_full_documents"] = full_documents
+        result["web_full_documents_count"] = len(full_documents)
+        result["web_triples"] = web_triples
+        result["web_triple_count"] = len(web_triples)
+        result["web_checkpoints"] = checkpoints
+        result["web_novel_triple_count"] = novel_cumulative
+
         # Store in unified cache (thread-safe)
         with self._cache_lock:
             self.unified_cache[entity_name] = result

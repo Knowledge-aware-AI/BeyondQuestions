@@ -1,0 +1,212 @@
+# BeQu: all results
+
+_Generated 2026-10-06 13:24 by ANALYSIS/make_all_tables.py. Precision / Recall = entailment ratio of the 1000-triple precision / recall sample (judge: gemma-4-26B-A4B-it, RAG); F1 = harmonic mean._
+
+181 of 181 rows evaluated
+
+## exp1
+
+| Run | Model | Setting | Category | Status | Precision | Recall | F1 | Contradiction_P | Contradiction_R | Errors_P | Errors_R | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | anthropic_claude-haiku-4.5 | random/medium |  | done | 0.646 | 0.133 | 0.2206 | 0.067 | 0.023 | 0 | 0 |  |
+| 1 | anthropic_claude-opus-4.6 | random/medium |  | done | 0.612 | 0.247 | 0.352 | 0.044 | 0.044 | 0 | 0 |  |
+| 1 | anthropic_claude-sonnet-4.6 | random/medium |  | done | 0.6 | 0.208 | 0.3089 | 0.073 | 0.041 | 0 | 0 |  |
+| 1 | deepseek_deepseek-v3.2 | random/medium |  | done | 0.403 | 0.253 | 0.3109 | 0.06 | 0.095 | 0 | 0 |  |
+| 1 | google_gemini-3-flash-preview | random/medium |  | done | 0.394 | 0.358 | 0.3751 | 0.041 | 0.063 | 0 | 0 |  |
+| 1 | google_gemini-3.1-flash-lite | random/medium |  | done | 0.59 | 0.205 | 0.3043 | 0.057 | 0.053 | 0 | 0 |  |
+| 1 | google_gemini-3.1-pro-preview | random/medium |  | done | 0.701 | 0.262 | 0.3814 | 0.032 | 0.03 | 0 | 0 |  |
+| 1 | google_gemma-3-12b-it | random/medium |  | done | 0.174 | 0.168 | 0.1709 | 0.083 | 0.132 | 0 | 0 |  |
+| 1 | google_gemma-3-27b-it | random/medium |  | done | 0.212 | 0.171 | 0.1893 | 0.094 | 0.12 | 0 | 0 |  |
+| 1 | google_gemma-3-4b-it | random/medium |  | done | 0.202 | 0.06 | 0.0925 | 0.111 | 0.077 | 0 | 0 |  |
+| 1 | meta-llama_llama-4-scout | random/medium |  | done | 0.429 | 0.067 | 0.1159 | 0.186 | 0.045 | 0 | 0 |  |
+| 1 | minimax_minimax-m2.5 | random/medium |  | done | 0.535 | 0.138 | 0.2194 | 0.076 | 0.039 | 0 | 0 |  |
+| 1 | mistralai_mistral-large-2512 | random/medium |  | done | 0.457 | 0.239 | 0.3139 | 0.081 | 0.056 | 0 | 0 |  |
+| 1 | moonshotai_kimi-k2.5 | random/medium |  | done | 0.572 | 0.263 | 0.3603 | 0.057 | 0.04 | 0 | 0 |  |
+| 1 | openai_gpt-5-mini | random/medium |  | done | 0.625 | 0.186 | 0.2867 | 0.024 | 0.012 | 0 | 0 |  |
+| 1 | openai_gpt-5-nano | random/medium |  | done | 0.828 | 0.089 | 0.1607 | 0.026 | 0.004 | 0 | 0 |  |
+| 1 | openai_gpt-5.4 | random/medium |  | done | 0.675 | 0.265 | 0.3806 | 0.047 | 0.047 | 0 | 0 |  |
+| 1 | openai_gpt-oss-120b | random/medium |  | done | 0.203 | 0.226 | 0.2139 | 0.075 | 0.13 | 0 | 0 |  |
+| 1 | qwen_qwen3.5-27b | random/medium |  | done | 0.335 | 0.159 | 0.2156 | 0.104 | 0.101 | 0 | 0 |  |
+| 1 | x-ai_grok-4.3 | random/medium |  | done | 0.742 | 0.127 | 0.2169 | 0.029 | 0.016 | 0 | 0 |  |
+| 2 | anthropic_claude-haiku-4.5 | random/medium |  | done | 0.64 | 0.128 | 0.2133 | 0.08 | 0.026 | 0 | 0 |  |
+| 2 | anthropic_claude-opus-4.6 | random/medium |  | done | 0.56 | 0.224 | 0.32 | 0.053 | 0.043 | 0 | 0 |  |
+| 2 | anthropic_claude-sonnet-4.6 | random/medium |  | done | 0.581 | 0.22 | 0.3192 | 0.071 | 0.034 | 0 | 0 |  |
+| 2 | deepseek_deepseek-v3.2 | random/medium |  | done | 0.378 | 0.221 | 0.2789 | 0.073 | 0.076 | 0 | 0 |  |
+| 2 | google_gemini-3-flash-preview | random/medium |  | done | 0.389 | 0.363 | 0.3756 | 0.05 | 0.066 | 0 | 0 |  |
+| 2 | google_gemini-3.1-flash-lite | random/medium |  | done | 0.596 | 0.208 | 0.3084 | 0.058 | 0.041 | 0 | 0 |  |
+| 2 | google_gemini-3.1-pro-preview | random/medium |  | done | 0.716 | 0.244 | 0.364 | 0.019 | 0.025 | 0 | 0 |  |
+| 2 | google_gemma-3-12b-it | random/medium |  | done | 0.173 | 0.135 | 0.1517 | 0.089 | 0.159 | 0 | 0 |  |
+| 2 | google_gemma-3-27b-it | random/medium |  | done | 0.211 | 0.166 | 0.1858 | 0.101 | 0.127 | 0 | 0 |  |
+| 2 | google_gemma-3-4b-it | random/medium |  | done | 0.168 | 0.054 | 0.0817 | 0.108 | 0.074 | 0 | 0 |  |
+| 2 | meta-llama_llama-4-scout | random/medium |  | done | 0.426 | 0.058 | 0.1021 | 0.188 | 0.048 | 0 | 0 |  |
+| 2 | minimax_minimax-m2.5 | random/medium |  | done | 0.516 | 0.146 | 0.2276 | 0.099 | 0.057 | 0 | 0 |  |
+| 2 | mistralai_mistral-large-2512 | random/medium |  | done | 0.484 | 0.226 | 0.3081 | 0.074 | 0.064 | 0 | 0 |  |
+| 2 | moonshotai_kimi-k2.5 | random/medium |  | done | 0.542 | 0.273 | 0.3631 | 0.062 | 0.048 | 0 | 0 |  |
+| 2 | openai_gpt-5-mini | random/medium |  | done | 0.607 | 0.198 | 0.2986 | 0.016 | 0.014 | 0 | 0 |  |
+| 2 | openai_gpt-5-nano | random/medium |  | done | 0.823 | 0.092 | 0.1655 | 0.022 | 0.012 | 0 | 0 |  |
+| 2 | openai_gpt-5.4 | random/medium |  | done | 0.661 | 0.255 | 0.368 | 0.048 | 0.023 | 0 | 0 |  |
+| 2 | openai_gpt-oss-120b | random/medium |  | done | 0.219 | 0.248 | 0.2326 | 0.091 | 0.123 | 0 | 0 |  |
+| 2 | qwen_qwen3.5-27b | random/medium |  | done | 0.317 | 0.153 | 0.2064 | 0.103 | 0.088 | 0 | 0 |  |
+| 2 | x-ai_grok-4.3 | random/medium |  | done | 0.731 | 0.137 | 0.2308 | 0.042 | 0.016 | 0 | 0 |  |
+| 3 | anthropic_claude-haiku-4.5 | random/medium |  | done | 0.655 | 0.115 | 0.1956 | 0.068 | 0.023 | 0 | 0 |  |
+| 3 | anthropic_claude-opus-4.6 | random/medium |  | done | 0.579 | 0.248 | 0.3473 | 0.066 | 0.043 | 0 | 0 |  |
+| 3 | anthropic_claude-sonnet-4.6 | random/medium |  | done | 0.608 | 0.218 | 0.3209 | 0.074 | 0.039 | 0 | 0 |  |
+| 3 | deepseek_deepseek-v3.2 | random/medium |  | done | 0.317 | 0.274 | 0.2939 | 0.078 | 0.069 | 0 | 0 |  |
+| 3 | google_gemini-3-flash-preview | random/medium |  | done | 0.394 | 0.351 | 0.3713 | 0.042 | 0.069 | 0 | 0 |  |
+| 3 | google_gemini-3.1-flash-lite | random/medium |  | done | 0.597 | 0.228 | 0.33 | 0.051 | 0.05 | 0 | 0 |  |
+| 3 | google_gemini-3.1-pro-preview | random/medium |  | done | 0.717 | 0.228 | 0.346 | 0.026 | 0.027 | 0 | 0 |  |
+| 3 | google_gemma-3-12b-it | random/medium |  | done | 0.168 | 0.172 | 0.17 | 0.082 | 0.148 | 0 | 0 |  |
+| 3 | google_gemma-3-27b-it | random/medium |  | done | 0.205 | 0.167 | 0.1841 | 0.115 | 0.13 | 0 | 0 |  |
+| 3 | google_gemma-3-4b-it | random/medium |  | done | 0.192 | 0.056 | 0.0867 | 0.106 | 0.073 | 0 | 0 |  |
+| 3 | meta-llama_llama-4-scout | random/medium |  | done | 0.448 | 0.066 | 0.1151 | 0.178 | 0.051 | 0 | 0 |  |
+| 3 | minimax_minimax-m2.5 | random/medium |  | done | 0.535 | 0.142 | 0.2244 | 0.08 | 0.04 | 0 | 0 |  |
+| 3 | mistralai_mistral-large-2512 | random/medium |  | done | 0.48 | 0.216 | 0.2979 | 0.073 | 0.072 | 0 | 0 |  |
+| 3 | moonshotai_kimi-k2.5 | random/medium |  | done | 0.558 | 0.269 | 0.363 | 0.069 | 0.054 | 0 | 0 |  |
+| 3 | openai_gpt-5-mini | random/medium |  | done | 0.62 | 0.19 | 0.2909 | 0.015 | 0.015 | 0 | 0 |  |
+| 3 | openai_gpt-5-nano | random/medium |  | done | 0.825 | 0.079 | 0.1442 | 0.032 | 0.013 | 0 | 1 |  |
+| 3 | openai_gpt-5.4 | random/medium |  | done | 0.675 | 0.279 | 0.3948 | 0.041 | 0.035 | 0 | 0 |  |
+| 3 | openai_gpt-oss-120b | random/medium |  | done | 0.225 | 0.222 | 0.2235 | 0.078 | 0.1 | 0 | 0 |  |
+| 3 | qwen_qwen3.5-27b | random/medium |  | done | 0.357 | 0.168 | 0.2285 | 0.119 | 0.1 | 0 | 0 |  |
+| 3 | x-ai_grok-4.3 | random/medium |  | done | 0.748 | 0.137 | 0.2316 | 0.041 | 0.017 | 0 | 0 |  |
+| 4 | anthropic_claude-haiku-4.5 | random/medium |  | done | 0.661 | 0.119 | 0.2017 | 0.069 | 0.027 | 0 | 0 |  |
+| 4 | anthropic_claude-opus-4.6 | random/medium |  | done | 0.588 | 0.264 | 0.3644 | 0.071 | 0.043 | 0 | 0 |  |
+| 4 | anthropic_claude-sonnet-4.6 | random/medium |  | done | 0.602 | 0.231 | 0.3339 | 0.069 | 0.044 | 0 | 0 |  |
+| 4 | deepseek_deepseek-v3.2 | random/medium |  | done | 0.394 | 0.248 | 0.3044 | 0.081 | 0.07 | 0 | 0 |  |
+| 4 | google_gemini-3-flash-preview | random/medium |  | done | 0.382 | 0.333 | 0.3558 | 0.047 | 0.066 | 0 | 0 |  |
+| 4 | google_gemini-3.1-flash-lite | random/medium |  | done | 0.587 | 0.23 | 0.3305 | 0.073 | 0.049 | 0 | 0 |  |
+| 4 | google_gemini-3.1-pro-preview | random/medium |  | done | 0.698 | 0.272 | 0.3915 | 0.035 | 0.033 | 0 | 1 |  |
+| 4 | google_gemma-3-12b-it | random/medium |  | done | 0.164 | 0.16 | 0.162 | 0.061 | 0.139 | 0 | 0 |  |
+| 4 | google_gemma-3-27b-it | random/medium |  | done | 0.25 | 0.175 | 0.2059 | 0.091 | 0.118 | 0 | 0 |  |
+| 4 | google_gemma-3-4b-it | random/medium |  | done | 0.182 | 0.056 | 0.0856 | 0.1 | 0.073 | 0 | 0 |  |
+| 4 | meta-llama_llama-4-scout | random/medium |  | done | 0.458 | 0.071 | 0.1229 | 0.183 | 0.057 | 0 | 0 |  |
+| 4 | minimax_minimax-m2.5 | random/medium |  | done | 0.52 | 0.166 | 0.2517 | 0.084 | 0.048 | 0 | 0 |  |
+| 4 | mistralai_mistral-large-2512 | random/medium |  | done | 0.464 | 0.231 | 0.3084 | 0.078 | 0.067 | 0 | 0 |  |
+| 4 | moonshotai_kimi-k2.5 | random/medium |  | done | 0.506 | 0.269 | 0.3513 | 0.05 | 0.061 | 0 | 0 |  |
+| 4 | openai_gpt-5-mini | random/medium |  | done | 0.61 | 0.186 | 0.2851 | 0.022 | 0.014 | 0 | 0 |  |
+| 4 | openai_gpt-5-nano | random/medium |  | done | 0.835 | 0.104 | 0.185 | 0.02 | 0.005 | 0 | 1 |  |
+| 4 | openai_gpt-5.4 | random/medium |  | done | 0.676 | 0.257 | 0.3724 | 0.049 | 0.042 | 0 | 0 |  |
+| 4 | openai_gpt-oss-120b | random/medium |  | done | 0.218 | 0.217 | 0.2175 | 0.081 | 0.106 | 0 | 0 |  |
+| 4 | qwen_qwen3.5-27b | random/medium |  | done | 0.327 | 0.184 | 0.2355 | 0.1 | 0.118 | 0 | 1 |  |
+| 4 | x-ai_grok-4.3 | random/medium |  | done | 0.727 | 0.153 | 0.2528 | 0.046 | 0.009 | 0 | 0 |  |
+| 5 | anthropic_claude-haiku-4.5 | random/medium |  | done | 0.637 | 0.123 | 0.2062 | 0.075 | 0.03 | 0 | 0 |  |
+| 5 | anthropic_claude-opus-4.6 | random/medium |  | done | 0.571 | 0.241 | 0.3389 | 0.055 | 0.053 | 0 | 0 |  |
+| 5 | anthropic_claude-sonnet-4.6 | random/medium |  | done | 0.617 | 0.249 | 0.3548 | 0.063 | 0.046 | 0 | 0 |  |
+| 5 | deepseek_deepseek-v3.2 | random/medium |  | done | 0.382 | 0.234 | 0.2902 | 0.076 | 0.072 | 0 | 0 |  |
+| 5 | google_gemini-3-flash-preview | random/medium |  | done | 0.404 | 0.342 | 0.3704 | 0.023 | 0.071 | 0 | 0 |  |
+| 5 | google_gemini-3.1-flash-lite | random/medium |  | done | 0.61 | 0.239 | 0.3434 | 0.058 | 0.032 | 0 | 0 |  |
+| 5 | google_gemini-3.1-pro-preview | random/medium |  | done | 0.712 | 0.246 | 0.3657 | 0.028 | 0.028 | 0 | 0 |  |
+| 5 | google_gemma-3-12b-it | random/medium |  | done | 0.14 | 0.171 | 0.154 | 0.057 | 0.131 | 0 | 0 |  |
+| 5 | google_gemma-3-27b-it | random/medium |  | done | 0.235 | 0.166 | 0.1946 | 0.111 | 0.112 | 0 | 0 |  |
+| 5 | google_gemma-3-4b-it | random/medium |  | done | 0.193 | 0.054 | 0.0844 | 0.114 | 0.078 | 0 | 0 |  |
+| 5 | meta-llama_llama-4-scout | random/medium |  | done | 0.465 | 0.074 | 0.1277 | 0.173 | 0.044 | 0 | 1 |  |
+| 5 | minimax_minimax-m2.5 | random/medium |  | done | 0.509 | 0.155 | 0.2376 | 0.087 | 0.044 | 0 | 0 |  |
+| 5 | mistralai_mistral-large-2512 | random/medium |  | done | 0.459 | 0.232 | 0.3082 | 0.076 | 0.073 | 0 | 0 |  |
+| 5 | moonshotai_kimi-k2.5 | random/medium |  | done | 0.464 | 0.27 | 0.3414 | 0.057 | 0.073 | 0 | 0 |  |
+| 5 | openai_gpt-5-mini | random/medium |  | done | 0.598 | 0.199 | 0.2986 | 0.023 | 0.014 | 0 | 0 |  |
+| 5 | openai_gpt-5-nano | random/medium |  | done | 0.822 | 0.08 | 0.1458 | 0.024 | 0.011 | 0 | 0 |  |
+| 5 | openai_gpt-5.4 | random/medium |  | done | 0.668 | 0.262 | 0.3764 | 0.05 | 0.039 | 0 | 0 |  |
+| 5 | openai_gpt-oss-120b | random/medium |  | done | 0.221 | 0.229 | 0.2249 | 0.074 | 0.11 | 0 | 0 |  |
+| 5 | qwen_qwen3.5-27b | random/medium |  | done | 0.317 | 0.164 | 0.2162 | 0.099 | 0.092 | 0 | 0 |  |
+| 5 | x-ai_grok-4.3 | random/medium |  | done | 0.712 | 0.144 | 0.2396 | 0.05 | 0.023 | 0 | 0 |  |
+
+## exp2
+
+| Run | Model | Setting | Category | Status | Precision | Recall | F1 | Contradiction_P | Contradiction_R | Errors_P | Errors_R | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  | anthropic_claude-opus-4.6 | low |  | done | 0.708 | 0.172 | 0.2768 | 0.055 | 0.035 | 0 | 0 |  |
+|  | anthropic_claude-opus-4.6 | medium |  | done | 0.612 | 0.247 | 0.352 | 0.044 | 0.044 | 0 | 0 | same data as exp1 run 1 |
+|  | anthropic_claude-opus-4.6 | high |  | done | 0.542 | 0.306 | 0.3912 | 0.05 | 0.046 | 0 | 0 |  |
+|  | google_gemini-3.1-pro-preview | low |  | done | 0.765 | 0.235 | 0.3595 | 0.03 | 0.032 | 0 | 0 |  |
+|  | google_gemini-3.1-pro-preview | medium |  | done | 0.701 | 0.262 | 0.3814 | 0.032 | 0.03 | 0 | 0 | same data as exp1 run 1 |
+|  | google_gemini-3.1-pro-preview | high |  | done | 0.709 | 0.245 | 0.3642 | 0.024 | 0.03 | 0 | 0 |  |
+|  | openai_gpt-5.4 | low |  | done | 0.648 | 0.244 | 0.3545 | 0.04 | 0.045 | 0 | 0 |  |
+|  | openai_gpt-5.4 | medium |  | done | 0.675 | 0.265 | 0.3806 | 0.047 | 0.047 | 0 | 0 | same data as exp1 run 1 |
+|  | openai_gpt-5.4 | high |  | done | 0.665 | 0.26 | 0.3738 | 0.035 | 0.033 | 0 | 0 |  |
+
+## exp3
+
+| Run | Model | Setting | Category | Status | Precision | Recall | F1 | Contradiction_P | Contradiction_R | Errors_P | Errors_R | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  | deepseek_deepseek-v3.2 | domains | animal | done | 0.462 | 0.304 | 0.3667 | 0.067 | 0.059 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | artifact | done | 0.32 | 0.247 | 0.2788 | 0.113 | 0.142 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | cultural_concept | done | 0.368 | 0.22 | 0.2754 | 0.054 | 0.034 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | event | done | 0.39 | 0.371 | 0.3803 | 0.051 | 0.101 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | location | done | 0.386 | 0.192 | 0.2564 | 0.08 | 0.08 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | organization | done | 0.368 | 0.214 | 0.2706 | 0.052 | 0.051 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | person | done | 0.287 | 0.126 | 0.1751 | 0.099 | 0.077 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | plant | done | 0.448 | 0.227 | 0.3013 | 0.082 | 0.052 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | scientific_concept | done | 0.399 | 0.357 | 0.3768 | 0.059 | 0.073 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | work_of_art | done | 0.317 | 0.213 | 0.2548 | 0.123 | 0.103 |  |  |  |
+|  | deepseek_deepseek-v3.2 | domains | ALL | done | 0.3745 | 0.2471 | 0.2977 | 0.078 | 0.0772 |  |  | pooled over the 10 domains |
+|  | meta-llama_llama-4-scout | domains | animal | done | 0.6337 | 0.034 | 0.0645 | 0.1091 | 0.02 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | artifact | done | 0.3273 | 0.045 | 0.0791 | 0.2108 | 0.086 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | cultural_concept | done | 0.3775 | 0.028 | 0.0522 | 0.1151 | 0.023 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | event | done | 0.447 | 0.101 | 0.1648 | 0.1303 | 0.088 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | location | done | 0.4368 | 0.047 | 0.0849 | 0.1432 | 0.039 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | organization | done | 0.4523 | 0.048 | 0.0868 | 0.1127 | 0.029 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | person | done | 0.4046 | 0.022 | 0.0417 | 0.2085 | 0.037 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | plant | done | 0.5668 | 0.033 | 0.0624 | 0.0767 | 0.014 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | scientific_concept | done | 0.452 | 0.061 | 0.1075 | 0.1406 | 0.04 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | work_of_art | done | 0.3325 | 0.054 | 0.0929 | 0.2442 | 0.089 |  |  |  |
+|  | meta-llama_llama-4-scout | domains | ALL | done | 0.4289 | 0.0473 | 0.0852 | 0.1545 | 0.0465 |  |  | pooled over the 10 domains |
+|  | openai_gpt-5.4 | domains | animal | done | 0.721 | 0.222 | 0.3395 | 0.035 | 0.038 |  |  |  |
+|  | openai_gpt-5.4 | domains | artifact | done | 0.688 | 0.2 | 0.3099 | 0.047 | 0.028 |  |  |  |
+|  | openai_gpt-5.4 | domains | cultural_concept | done | 0.612 | 0.2482 | 0.3532 | 0.023 | 0.02 |  |  |  |
+|  | openai_gpt-5.4 | domains | event | done | 0.576 | 0.396 | 0.4693 | 0.031 | 0.066 |  |  |  |
+|  | openai_gpt-5.4 | domains | location | done | 0.684 | 0.207 | 0.3178 | 0.075 | 0.033 |  |  |  |
+|  | openai_gpt-5.4 | domains | organization | done | 0.694 | 0.271 | 0.3898 | 0.032 | 0.033 |  |  |  |
+|  | openai_gpt-5.4 | domains | person | done | 0.691 | 0.135 | 0.2259 | 0.05 | 0.013 |  |  |  |
+|  | openai_gpt-5.4 | domains | plant | done | 0.721 | 0.168 | 0.2725 | 0.023 | 0.011 |  |  |  |
+|  | openai_gpt-5.4 | domains | scientific_concept | done | 0.656 | 0.291 | 0.4032 | 0.03 | 0.025 |  |  |  |
+|  | openai_gpt-5.4 | domains | work_of_art | done | 0.637 | 0.277 | 0.3861 | 0.027 | 0.017 |  |  |  |
+|  | openai_gpt-5.4 | domains | ALL | done | 0.668 | 0.2415 | 0.3548 | 0.0373 | 0.0284 |  |  | pooled over the 10 domains |
+
+## exp4
+
+| Run | Model | Setting | Category | Status | Precision | Recall | F1 | Contradiction_P | Contradiction_R | Errors_P | Errors_R | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  | deepseek_deepseek-v3.2 | GPTKB |  | done | 0.345 | 0.265 | 0.2998 | 0.077 | 0.081 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | LMCRAWL |  | done | 0.26 | 0.25 | 0.2549 | 0.078 | 0.081 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | schemaorg_schema |  | done | 0.676 | 0.126 | 0.2124 | 0.067 | 0.021 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | schemaorg_schema_no_constraints |  | done | 0.428 | 0.228 | 0.2975 | 0.053 | 0.051 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | wikidata_schema |  | done | 0.605 | 0.109 | 0.1847 | 0.086 | 0.025 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | wikidata_schema_no_constraints |  | done | 0.361 | 0.162 | 0.2236 | 0.071 | 0.046 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | GPTKB |  | done | 0.431 | 0.064 | 0.1115 | 0.176 | 0.046 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | LMCRAWL |  | done | 0.372 | 0.128 | 0.1905 | 0.151 | 0.067 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | schemaorg_schema |  | done | 0.579 | 0.069 | 0.1233 | 0.133 | 0.028 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | schemaorg_schema_no_constraints |  | done | 0.456 | 0.096 | 0.1586 | 0.12 | 0.045 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | wikidata_schema |  | done | 0.526 | 0.079 | 0.1374 | 0.16 | 0.032 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | wikidata_schema_no_constraints |  | done | 0.379 | 0.087 | 0.1415 | 0.113 | 0.036 | 0 | 0 |  |
+|  | openai_gpt-5.4 | GPTKB |  | done | 0.549 | 0.246 | 0.3398 | 0.062 | 0.058 | 0 | 0 |  |
+|  | openai_gpt-5.4 | LMCRAWL |  | done | 0.386 | 0.207 | 0.2695 | 0.098 | 0.083 | 0 | 0 |  |
+|  | openai_gpt-5.4 | schemaorg_schema |  | done | 0.773 | 0.117 | 0.2032 | 0.059 | 0.014 | 0 | 0 |  |
+|  | openai_gpt-5.4 | schemaorg_schema_no_constraints |  | done | 0.567 | 0.222 | 0.3191 | 0.068 | 0.043 | 0 | 0 |  |
+|  | openai_gpt-5.4 | wikidata_schema |  | done | 0.742 | 0.127 | 0.2169 | 0.079 | 0.026 | 0 | 0 |  |
+|  | openai_gpt-5.4 | wikidata_schema_no_constraints |  | done | 0.597 | 0.196 | 0.2951 | 0.07 | 0.041 | 0 | 0 |  |
+
+## exp5
+
+| Run | Model | Setting | Category | Status | Precision | Recall | F1 | Contradiction_P | Contradiction_R | Errors_P | Errors_R | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  | deepseek_deepseek-v3.2 | pop_5_10_lt_1 |  | done | 0.556 | 0.196 | 0.2898 | 0.113 | 0.05 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_10_20_lt_1_2 |  | done | 0.49 | 0.209 | 0.293 | 0.088 | 0.069 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_25_50_lt_3_5 |  | done | 0.359 | 0.257 | 0.2996 | 0.079 | 0.091 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_33_66_lt_3_7 |  | done | 0.349 | 0.28 | 0.3107 | 0.085 | 0.094 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_50_100_lt_5_10 |  | done | 0.341 | 0.267 | 0.2995 | 0.074 | 0.089 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_75_150_lt_8_15 |  | done | 0.307 | 0.266 | 0.285 | 0.053 | 0.085 | 0 | 0 |  |
+|  | deepseek_deepseek-v3.2 | pop_100_200_lt_10_20 |  | done | 0.321 | 0.272 | 0.2945 | 0.069 | 0.078 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | pop_5_10_lt_1 |  | done | 0.531 | 0.063 | 0.1126 | 0.185 | 0.028 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | pop_10_20_lt_1_2 |  | done | 0.487 | 0.054 | 0.0972 | 0.181 | 0.038 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | pop_25_50_lt_3_5 |  | done | 0.447 | 0.055 | 0.0979 | 0.186 | 0.046 | 0 | 1 |  |
+|  | meta-llama_llama-4-scout | pop_33_66_lt_3_7 |  | done | 0.471 | 0.072 | 0.1249 | 0.174 | 0.043 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | pop_50_100_lt_5_10 |  | done | 0.439 | 0.074 | 0.1267 | 0.183 | 0.047 | 0 | 2 |  |
+|  | meta-llama_llama-4-scout | pop_75_150_lt_8_15 |  | done | 0.4 | 0.069 | 0.1177 | 0.176 | 0.056 | 0 | 0 |  |
+|  | meta-llama_llama-4-scout | pop_100_200_lt_10_20 |  | done | 0.442 | 0.057 | 0.101 | 0.172 | 0.047 | 0 | 1 |  |
+|  | openai_gpt-5.4 | pop_5_10_lt_1 |  | done | 0.659 | 0.207 | 0.315 | 0.074 | 0.053 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_10_20_lt_1_2 |  | done | 0.655 | 0.205 | 0.3123 | 0.056 | 0.043 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_25_50_lt_3_5 |  | done | 0.588 | 0.245 | 0.3459 | 0.075 | 0.042 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_33_66_lt_3_7 |  | done | 0.537 | 0.279 | 0.3672 | 0.064 | 0.054 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_50_100_lt_5_10 |  | done | 0.549 | 0.259 | 0.352 | 0.082 | 0.044 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_75_150_lt_8_15 |  | done | 0.522 | 0.265 | 0.3515 | 0.07 | 0.051 | 0 | 0 |  |
+|  | openai_gpt-5.4 | pop_100_200_lt_10_20 |  | done | 0.551 | 0.274 | 0.366 | 0.068 | 0.043 | 0 | 1 |  |
+

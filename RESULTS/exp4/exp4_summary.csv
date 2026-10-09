@@ -1,0 +1,4 @@
+Model,F1_GPTKB,Precision_GPTKB,Recall_GPTKB,F1_LMCRAWL,Precision_LMCRAWL,Recall_LMCRAWL,F1_schemaorg_schema,Precision_schemaorg_schema,Recall_schemaorg_schema,F1_schemaorg_schema_no_constraints,Precision_schemaorg_schema_no_constraints,Recall_schemaorg_schema_no_constraints,F1_wikidata_schema,Precision_wikidata_schema,Recall_wikidata_schema,F1_wikidata_schema_no_constraints,Precision_wikidata_schema_no_constraints,Recall_wikidata_schema_no_constraints
+deepseek-v3.2,0.2998,0.345,0.265,0.2549,0.26,0.25,0.2124,0.676,0.126,0.2975,0.428,0.228,0.1847,0.605,0.109,0.2236,0.361,0.162
+llama-4-scout,0.1115,0.431,0.064,0.1905,0.372,0.128,0.1233,0.579,0.069,0.1586,0.456,0.096,0.1374,0.526,0.079,0.1415,0.379,0.087
+gpt-5.4,0.3398,0.549,0.246,0.2695,0.386,0.207,0.2032,0.773,0.117,0.3191,0.567,0.222,0.2169,0.742,0.127,0.2951,0.597,0.196

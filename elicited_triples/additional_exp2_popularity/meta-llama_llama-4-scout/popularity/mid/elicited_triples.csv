@@ -1,0 +1,1366 @@
+subject,predicate,object,subject_name
+Two Thumbs Up (film),instanceOf,film,Two Thumbs Up (film)
+Two Thumbs Up (film),genre,comedy film,Two Thumbs Up (film)
+Two Thumbs Up (film),director,Rod Daniel,Two Thumbs Up (film)
+Two Thumbs Up (film),starring,Val Kilmer,Two Thumbs Up (film)
+Two Thumbs Up (film),starring,Sandra Bullock,Two Thumbs Up (film)
+Two Thumbs Up (film),releaseDate,1991-01-18,Two Thumbs Up (film)
+Two Thumbs Up (film),runtime,104 minutes,Two Thumbs Up (film)
+Two Thumbs Up (film),countryOfOrigin,United States,Two Thumbs Up (film)
+Two Thumbs Up (film),language,English,Two Thumbs Up (film)
+subject,predicate,object,Raï (1995 film)
+Vincent Edwards (basketball),instanceOf,Human,Vincent Edwards (basketball)
+Vincent Edwards (basketball),instanceOf,Basketball Player,Vincent Edwards (basketball)
+Vincent Edwards (basketball),birthDate,1996-09-17,Vincent Edwards (basketball)
+Vincent Edwards (basketball),nationality,American,Vincent Edwards (basketball)
+Vincent Edwards (basketball),position,Small forward,Vincent Edwards (basketball)
+Vincent Edwards (basketball),team,Houston Rockets,Vincent Edwards (basketball)
+Vincent Edwards (basketball),team,Purdue Boilermakers men's basketball,Vincent Edwards (basketball)
+Vincent Edwards (basketball),draftedBy,Houston Rockets,Vincent Edwards (basketball)
+Vincent Edwards (basketball),draftYear,2018,Vincent Edwards (basketball)
+Vincent Edwards (basketball),draftRound,2,Vincent Edwards (basketball)
+Vincent Edwards (basketball),draftPick,44,Vincent Edwards (basketball)
+American Utopia (film),instanceOf,film,American Utopia (film)
+American Utopia (film),title,American Utopia,American Utopia (film)
+American Utopia (film),releaseYear,2020,American Utopia (film)
+American Utopia (film),director,Jake Gyllenhaal,American Utopia (film)
+American Utopia (film),starring,Bruce Springsteen,American Utopia (film)
+American Utopia (film),genre,concert film,American Utopia (film)
+American Utopia (film),basedOn,Springsteen & I,American Utopia (film)
+American Utopia (film),productionCompany,Universal Pictures,American Utopia (film)
+American Utopia (film),distributor,Universal Pictures,American Utopia (film)
+American Utopia (film),runtime,120 minutes,American Utopia (film)
+The Turning Point (1945 film),instanceOf,film,The Turning Point (1945 film)
+The Turning Point (1945 film),releaseDate,1945,The Turning Point (1945 film)
+The Turning Point (1945 film),director,Edward Dmytryk,The Turning Point (1945 film)
+The Turning Point (1945 film),starring,Edith Evans,The Turning Point (1945 film)
+The Turning Point (1945 film),starring,Arthur Kennedy,The Turning Point (1945 film)
+The Turning Point (1945 film),starring,Joan Bennett,The Turning Point (1945 film)
+The Turning Point (1945 film),genre,drama,The Turning Point (1945 film)
+The Turning Point (1945 film),country,United States,The Turning Point (1945 film)
+The Turning Point (1945 film),language,English,The Turning Point (1945 film)
+The Turning Point (1945 film),runtime,138 minutes,The Turning Point (1945 film)
+The Turning Point (1945 film),basedOn,The Turning Point (play),The Turning Point (1945 film)
+subject,predicate,object,Robert Knapp (classicist)
+subject,predicate,object,Bayerisches Armeemuseum
+subject,predicate,object,John Croker (engraver)
+Kelly + Victor,instanceOf,TVSeries,Kelly + Victor
+Kelly + Victor,genre,Drama,Kelly + Victor
+Kelly + Victor,genre,Romance,Kelly + Victor
+Kelly + Victor,creator,Jennifer Aniston,Kelly + Victor
+Kelly + Victor,starring,Aniston,Kelly + Victor
+Kelly + Victor,starring,Victor Rasuk,Kelly + Victor
+Kelly + Victor,country,United States,Kelly + Victor
+Kelly + Victor,originalLanguage,English,Kelly + Victor
+Kelly + Victor,numberOfEpisodes,8,Kelly + Victor
+Kelly + Victor,originalReleaseDate,2016-08-25,Kelly + Victor
+Kelly + Victor,endDate,2016-10-27,Kelly + Victor
+Kelly + Victor,productionCompany,Echo Films,Kelly + Victor
+Kelly + Victor,productionCompany,Brillstein Limited,Kelly + Victor
+Kelly + Victor,distributor,Hulu,Kelly + Victor
+Eurovision Song Contest 2017,instanceOf,Eurovision Song Contest,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,year,2017,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,host,Portugal,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,hostCity,Kyiv,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,hostVenue,Kyiv International Exhibition Centre,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,presenter,Mary Byrne,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,presenter,Katy Geraghty,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,winner,Portugal,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,winningSong,Salvation Army,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,winningArtist,Salvador Sobral,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,runner-up,Bulgaria,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,runner-upSong,Dancing Lasha Tumbai,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,runner-upArtist,Viktoriya,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,numberOfCountries,42,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,inauguralWinner,Switzerland,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,previousContest,Eurovision Song Contest 2016,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,nextContest,Eurovision Song Contest 2018,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,officialWebsite,https://eurovision.tv/,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,hasSemi-final,yes,Eurovision Song Contest 2017
+Eurovision Song Contest 2017,semi-final1Date,"May 9, 2017",Eurovision Song Contest 2017
+Eurovision Song Contest 2017,semi-final2Date,"May 11, 2017",Eurovision Song Contest 2017
+Eurovision Song Contest 2017,finalDate,"May 13, 2017",Eurovision Song Contest 2017
+Stigmella lemniscella,instanceOf,Species,Stigmella lemniscella
+Stigmella lemniscella,partOf,Stigmella,Stigmella lemniscella
+Stigmella lemniscella,classification,Neuroptera,Stigmella lemniscella
+Stigmella lemniscella,classification,Stigmellidae,Stigmella lemniscella
+Stigmella lemniscella,scientificName,Stigmella lemniscella,Stigmella lemniscella
+Stigmella lemniscella,type,Insect,Stigmella lemniscella
+Bailey Peacock-Farrell,instanceOf,Human,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,birthDate,1996-09-23,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,birthPlace,"Bristol, England",Bailey Peacock-Farrell
+Bailey Peacock-Farrell,nationality,English,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,occupation,Footballer,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,playsPosition,Goalkeeper,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,currentTeam,Burnley F.C.,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,playsFor,Burnley F.C.,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,playsFor,York City F.C.,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,playsFor,Bradford City A.F.C.,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,playsFor,Leeds United F.C.,Bailey Peacock-Farrell
+Bailey Peacock-Farrell,transferTo,Burnley F.C.,Bailey Peacock-Farrell
+Kidnapped (1948 film),instanceOf,film,Kidnapped (1948 film)
+Kidnapped (1948 film),releaseYear,1948,Kidnapped (1948 film)
+Kidnapped (1948 film),director,László Benedek,Kidnapped (1948 film)
+Kidnapped (1948 film),starring,James Stewart,Kidnapped (1948 film)
+Kidnapped (1948 film),starring,Dan O'Herlihy,Kidnapped (1948 film)
+Kidnapped (1948 film),basedOn,Kidnapped,Kidnapped (1948 film)
+Kidnapped (1948 film),basedOn,novel by Robert Louis Stevenson,Kidnapped (1948 film)
+Kidnapped (1948 film),genre,Adventure film,Kidnapped (1948 film)
+Kidnapped (1948 film),genre,Drama,Kidnapped (1948 film)
+Kidnapped (1948 film),country,United States,Kidnapped (1948 film)
+Kidnapped (1948 film),language,English,Kidnapped (1948 film)
+subject,predicate,object,Michal Kosinski
+Musée des Beaux-Arts de Strasbourg,instanceOf,art museum,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,locatedIn,Strasbourg,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,partOf,Musées de Strasbourg,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,foundedBy,City of Strasbourg,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,foundingYear,1905,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,collection,European art,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,collection,painting,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,collection,sculpture,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,architect,Oskar von Miller,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,buildingStyle,Art Nouveau,Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,visitorCount,"100,000",Musée des Beaux-Arts de Strasbourg
+Musée des Beaux-Arts de Strasbourg,website,https://www.musees-strasbourg.org/musee-des-beaux-arts/,Musée des Beaux-Arts de Strasbourg
+Sándor Csernus,instanceOf,Human,Sándor Csernus
+Sándor Csernus,birthDate,1942-09-07,Sándor Csernus
+Sándor Csernus,birthPlace,"Budapest, Hungary",Sándor Csernus
+Sándor Csernus,deathDate,2011-08-14,Sándor Csernus
+Sándor Csernus,deathPlace,"Budapest, Hungary",Sándor Csernus
+Sándor Csernus,occupation,Actor,Sándor Csernus
+Sándor Csernus,occupation,Theatre Actor,Sándor Csernus
+Sándor Csernus,occupation,Film Actor,Sándor Csernus
+Sándor Csernus,almaMater,University of Theatre and Film,Sándor Csernus
+Sándor Csernus,award,SZFE,Sándor Csernus
+Sándor Csernus,award,Jászai Mari Prize,Sándor Csernus
+Sándor Csernus,filmography,Szomszédok,Sándor Csernus
+Sándor Csernus,filmography,"Hyppolit, the Butler",Sándor Csernus
+Sándor Csernus,filmography,On the Foot of the Volcano,Sándor Csernus
+Sándor Csernus,collaboration,Gábor Reviczky,Sándor Csernus
+Sándor Csernus,collaboration,Frigyes Bán,Sándor Csernus
+Sándor Csernus,spouse,Katalin Csernus,Sándor Csernus
+Sunset Carson Rides Again,instanceOf,Film,Sunset Carson Rides Again
+Sunset Carson Rides Again,director,Ray Enright,Sunset Carson Rides Again
+Sunset Carson Rides Again,producer,Joseph S. Friedman,Sunset Carson Rides Again
+Sunset Carson Rides Again,productionCompany,Monterey Productions,Sunset Carson Rides Again
+Sunset Carson Rides Again,distributor,Columbia Pictures,Sunset Carson Rides Again
+Sunset Carson Rides Again,releaseDate,1945-04-20,Sunset Carson Rides Again
+Sunset Carson Rides Again,runtime,56 minutes,Sunset Carson Rides Again
+Sunset Carson Rides Again,genre,Western,Sunset Carson Rides Again
+Sunset Carson Rides Again,starring,Tom Tyler,Sunset Carson Rides Again
+Sunset Carson Rides Again,starring,Leona Lamour,Sunset Carson Rides Again
+Sunset Carson Rides Again,starring,J. Farrell,Sunset Carson Rides Again
+Sunset Carson Rides Again,country,United States,Sunset Carson Rides Again
+Sunset Carson Rides Again,language,English,Sunset Carson Rides Again
+Isaac Ochoterena,instanceOf,Human,Isaac Ochoterena
+Isaac Ochoterena,birthDate,1885-09-16,Isaac Ochoterena
+Isaac Ochoterena,deathDate,1950-06-25,Isaac Ochoterena
+Isaac Ochoterena,nationality,Mexican,Isaac Ochoterena
+Isaac Ochoterena,occupation,Botanist,Isaac Ochoterena
+Isaac Ochoterena,fieldOfWork,Botany,Isaac Ochoterena
+Isaac Ochoterena,educatedAt,Universidad Nacional Autónoma de México,Isaac Ochoterena
+Isaac Ochoterena,workLocation,Mexico,Isaac Ochoterena
+Isaac Ochoterena,knownFor,Research on cacti and succulents,Isaac Ochoterena
+Brno-Bosonohy,instanceOf,municipal_district,Brno-Bosonohy
+Brno-Bosonohy,locatedIn,Brno,Brno-Bosonohy
+Brno-Bosonohy,locatedIn,South_Moravian_Region,Brno-Bosonohy
+Brno-Bosonohy,partOf,Brno,Brno-Bosonohy
+Brno-Bosonohy,hasPopulation,2200,Brno-Bosonohy
+Brno-Bosonohy,isA,suburb,Brno-Bosonohy
+Brno-Bosonohy,locatedNear,D1_motorway,Brno-Bosonohy
+Dominic Sherwood,instanceOf,Human,Dominic Sherwood
+Dominic Sherwood,bornIn,London,Dominic Sherwood
+Dominic Sherwood,nationality,British,Dominic Sherwood
+Dominic Sherwood,occupation,Actor,Dominic Sherwood
+Dominic Sherwood,occupation,Model,Dominic Sherwood
+Dominic Sherwood,knownFor,The Vampire Academy,Dominic Sherwood
+Dominic Sherwood,knownFor,Carnage: Swallowing the Past,Dominic Sherwood
+Dominic Sherwood,knownFor,The Originals,Dominic Sherwood
+Dominic Sherwood,filmography,The Five,Dominic Sherwood
+Dominic Sherwood,filmography,The Legend of the Blue Tattoo,Dominic Sherwood
+Dominic Sherwood,partner,Chloe Bridges,Dominic Sherwood
+Dryopteris crassirhizoma,instanceOf,Dryopteris,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,instanceOf,fern,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,scientificName,Dryopteris crassirhizoma,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,classification,Polystichum crassirhizomum,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,family,Dryopteridaceae,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,origin,Asia,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,habitat,mountainous regions,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,usedFor,medicinal purposes,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,contains,flavonoids,Dryopteris crassirhizoma
+Dryopteris crassirhizoma,contains,phenolic acids,Dryopteris crassirhizoma
+subject,predicate,object,Agapit Vallmitjana i Barbany
+Eucalyptus calycogona,instanceOf,Eucalyptus,Eucalyptus calycogona
+Eucalyptus calycogona,instanceOf,Plant,Eucalyptus calycogona
+Eucalyptus calycogona,instanceOf,Angiosperm,Eucalyptus calycogona
+Eucalyptus calycogona,instanceOf,Myrtaceae,Eucalyptus calycogona
+Eucalyptus calycogona,scientificName,Eucalyptus calycogona,Eucalyptus calycogona
+Eucalyptus calycogona,family,Myrtaceae,Eucalyptus calycogona
+Eucalyptus calycogona,genus,Eucalyptus,Eucalyptus calycogona
+Eucalyptus calycogona,species,Eucalyptus calycogona,Eucalyptus calycogona
+Eucalyptus calycogona,nativeTo,Western Australia,Eucalyptus calycogona
+subject,predicate,object,Aristolochia contorta
+National University of Trujillo,instanceOf,University,National University of Trujillo
+National University of Trujillo,locatedIn,"Trujillo, Peru",National University of Trujillo
+National University of Trujillo,foundedIn,1939,National University of Trujillo
+National University of Trujillo,type,Public University,National University of Trujillo
+National University of Trujillo,academicStaff,"over 2,000",National University of Trujillo
+National University of Trujillo,studentBody,"over 20,000",National University of Trujillo
+National University of Trujillo,faculty," Faculties of Medicine, Law, Engineering, Economics, Pharmacy, and others",National University of Trujillo
+National University of Trujillo,offersDegrees,"Bachelor's, Master's, and Doctoral degrees",National University of Trujillo
+National University of Trujillo,researchAreas,"various fields including medicine, engineering, and social sciences",National University of Trujillo
+National University of Trujillo,isAffiliatedWith,Peruvian Ministry of Education,National University of Trujillo
+National University of Trujillo,hasCampus,"Main campus in Trujillo, with other campuses in nearby cities",National University of Trujillo
+subject,predicate,object,Steve Beshear
+Patricia Ferreira (director),instanceOf,Film director,Patricia Ferreira (director)
+Patricia Ferreira (director),instanceOf,Person,Patricia Ferreira (director)
+Patricia Ferreira (director),birthPlace,Brazil,Patricia Ferreira (director)
+Patricia Ferreira (director),directed,2004 film,Patricia Ferreira (director)
+Patricia Ferreira (director),directed,2011 film,Patricia Ferreira (director)
+Patricia Ferreira (director),directed,Divino Amor,Patricia Ferreira (director)
+Patricia Ferreira (director),directed,O Casamento de Romeu e Julieta,Patricia Ferreira (director)
+Patricia Ferreira (director),directed,O Signo da Cidade,Patricia Ferreira (director)
+Patricia Ferreira (director),filmLanguage,Portuguese,Patricia Ferreira (director)
+Patricia Ferreira (director),isFemale,true,Patricia Ferreira (director)
+Patricia Ferreira (director),nationality,Brazilian,Patricia Ferreira (director)
+subject,predicate,object,Psathyrella pennata
+subject,predicate,object,Akshay Ramanlal Desai
+River's Edge (2018 film),instanceOf,film,River's Edge (2018 film)
+River's Edge (2018 film),releaseDate,2018-05-11,River's Edge (2018 film)
+River's Edge (2018 film),director,Jonathan Levine,River's Edge (2018 film)
+River's Edge (2018 film),starring,Natalie Portman,River's Edge (2018 film)
+River's Edge (2018 film),starring,Peter Dinklage,River's Edge (2018 film)
+River's Edge (2018 film),starring,Seann Penn,River's Edge (2018 film)
+River's Edge (2018 film),genre,comedy-drama,River's Edge (2018 film)
+River's Edge (2018 film),genre,crime,River's Edge (2018 film)
+River's Edge (2018 film),basedOn,River's Edge,River's Edge (2018 film)
+River's Edge (2018 film),producer,Eli Roth,River's Edge (2018 film)
+River's Edge (2018 film),productionCompany,A24,River's Edge (2018 film)
+River's Edge (2018 film),distributor,A24,River's Edge (2018 film)
+subject,predicate,object,St. Gallen railway station
+subject,predicate,object,Adelans-et-le-Val-de-Bithaine
+Warning (2021 film),instanceOf,film,Warning (2021 film)
+Warning (2021 film),year,2021,Warning (2021 film)
+Warning (2021 film),director,Davor Dujmović,Warning (2021 film)
+Warning (2021 film),starring,Davor Dujmović,Warning (2021 film)
+Warning (2021 film),starring,Nives Margetić,Warning (2021 film)
+Warning (2021 film),genre,drama,Warning (2021 film)
+Warning (2021 film),country,Croatia,Warning (2021 film)
+Warning (2021 film),language,Croatian,Warning (2021 film)
+Warning (2021 film),title,Warning,Warning (2021 film)
+Warning (2021 film),releaseDate,2021-07-16,Warning (2021 film)
+subject,predicate,object,Dryanovo Municipality
+Lambung Mangkurat University,instanceOf,University,Lambung Mangkurat University
+Lambung Mangkurat University,locatedIn,Banjarbaru,Lambung Mangkurat University
+Lambung Mangkurat University,locatedIn,South Kalimantan,Lambung Mangkurat University
+Lambung Mangkurat University,foundedIn,1964,Lambung Mangkurat University
+Lambung Mangkurat University,namedAfter,Lambung Mangkurat,Lambung Mangkurat University
+Lambung Mangkurat University,typeOf,Public University,Lambung Mangkurat University
+Lambung Mangkurat University,academicStaff,1000,Lambung Mangkurat University
+Lambung Mangkurat University,student,20000,Lambung Mangkurat University
+Lambung Mangkurat University,hasFaculty,Faculty of Agriculture,Lambung Mangkurat University
+Lambung Mangkurat University,hasFaculty,Faculty of Engineering,Lambung Mangkurat University
+Lambung Mangkurat University,hasFaculty,Faculty of Law,Lambung Mangkurat University
+Lambung Mangkurat University,hasFaculty,Faculty of Medicine,Lambung Mangkurat University
+Lambung Mangkurat University,partner,Universiti Teknologi Malaysia,Lambung Mangkurat University
+Lenz (1971 film),instanceOf,film,Lenz (1971 film)
+Lenz (1971 film),year,1971,Lenz (1971 film)
+Lenz (1971 film),director,Werner Herzog,Lenz (1971 film)
+Lenz (1971 film),basedOn,Lenz,Lenz (1971 film)
+Lenz (1971 film),starring,Bruno S.,Lenz (1971 film)
+Lenz (1971 film),genre,biographical drama,Lenz (1971 film)
+Lenz (1971 film),country,West Germany,Lenz (1971 film)
+Lenz (1971 film),language,German,Lenz (1971 film)
+Desmond Bane,instanceOf,Basketball Player,Desmond Bane
+Desmond Bane,birthDate,1998-06-16,Desmond Bane
+Desmond Bane,nationality,American,Desmond Bane
+Desmond Bane,team,Memphis Grizzlies,Desmond Bane
+Desmond Bane,position,Shooting Guard,Desmond Bane
+Desmond Bane,college,Texas Christian University,Desmond Bane
+Desmond Bane,draftYear,2020,Desmond Bane
+Desmond Bane,draftRound,2,Desmond Bane
+Desmond Bane,draftPick,30,Desmond Bane
+Emily Sonnett,instanceOf,Person,Emily Sonnett
+Emily Sonnett,givenName,Emily,Emily Sonnett
+Emily Sonnett,familyName,Sonnett,Emily Sonnett
+Emily Sonnett,birthDate,1994-11-10,Emily Sonnett
+Emily Sonnett,birthPlace,"Richmond, Virginia",Emily Sonnett
+Emily Sonnett,nationality,American,Emily Sonnett
+Emily Sonnett,occupation,Soccer Player,Emily Sonnett
+Emily Sonnett,playsPosition,Defender,Emily Sonnett
+Emily Sonnett,memberOf,North Carolina Courage,Emily Sonnett
+Emily Sonnett,memberOf,Portland Thorns,Emily Sonnett
+Emily Sonnett,memberOf,United States women's national soccer team,Emily Sonnett
+Emily Sonnett,educatedAt,University of Virginia,Emily Sonnett
+subject,predicate,object,Fernando Albericio
+Fernando Albericio,instanceOf,Person,Fernando Albericio
+Fernando Albericio,type,Chemist,Fernando Albericio
+Fernando Albericio,nationality,Spanish,Fernando Albericio
+Fernando Albericio,birthDate,1954-07-05,Fernando Albericio
+Fernando Albericio,occupation,Researcher,Fernando Albericio
+Fernando Albericio,fieldOfWork,Peptide synthesis,Fernando Albericio
+Fernando Albericio,award,Wolf Prize in Chemistry,Fernando Albericio
+Fernando Albericio,award,National Research Prize,Fernando Albericio
+Fernando Albericio,employer,University of Barcelona,Fernando Albericio
+Fernando Albericio,alumniOf,University of Barcelona,Fernando Albericio
+subject,predicate,object,"Lee Ji-hoon (actor, born 1988)"
+William Collingwood (1819–1903),instanceOf,Human,William Collingwood (1819–1903)
+William Collingwood (1819–1903),birthDate,1819,William Collingwood (1819–1903)
+William Collingwood (1819–1903),deathDate,1903,William Collingwood (1819–1903)
+William Collingwood (1819–1903),occupation,Author,William Collingwood (1819–1903)
+William Collingwood (1819–1903),occupation,Art historian,William Collingwood (1819–1903)
+William Collingwood (1819–1903),occupation,Curator,William Collingwood (1819–1903)
+William Collingwood (1819–1903),nationality,English,William Collingwood (1819–1903)
+William Collingwood (1819–1903),notableWork,The Life of John Ruskin,William Collingwood (1819–1903)
+William Collingwood (1819–1903),notableWork,The Oxford Handbook of John Ruskin,William Collingwood (1819–1903)
+William Collingwood (1819–1903),associatedWith,John Ruskin,William Collingwood (1819–1903)
+William Collingwood (1819–1903),associatedWith,The Ashmolean Museum,William Collingwood (1819–1903)
+The Boyz (South Korean band),instanceOf,South Korean boy band,The Boyz (South Korean band)
+The Boyz (South Korean band),instanceOf,K-pop group,The Boyz (South Korean band)
+The Boyz (South Korean band),foundedBy,IST Entertainment,The Boyz (South Korean band)
+The Boyz (South Korean band),foundedIn,2017,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Hwichan,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Keumdonghyun,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Lucky,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Mushroom,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Sangyeon,The Boyz (South Korean band)
+The Boyz (South Korean band),member,Sunoo,The Boyz (South Korean band)
+The Boyz (South Korean band),debutAlbum,The Boyz - Come On,The Boyz (South Korean band)
+The Boyz (South Korean band),debutDate,2017-12-04,The Boyz (South Korean band)
+The Boyz (South Korean band),genre,K-pop,The Boyz (South Korean band)
+The Boyz (South Korean band),genre,Hip hop,The Boyz (South Korean band)
+The Boyz (South Korean band),label,IST Entertainment,The Boyz (South Korean band)
+The Boyz (South Korean band),officialColor,Green,The Boyz (South Korean band)
+The Boyz (South Korean band),officialColor,Yellow,The Boyz (South Korean band)
+The Boyz (South Korean band),previousName,The Boyz,The Boyz (South Korean band)
+Rupert Crawshay-Williams,instanceOf,Human,Rupert Crawshay-Williams
+Rupert Crawshay-Williams,givenName,Rupert,Rupert Crawshay-Williams
+Rupert Crawshay-Williams,familyName,Crawshay-Williams,Rupert Crawshay-Williams
+Rupert Crawshay-Williams,birthYear,1908,Rupert Crawshay-Williams
+Rupert Crawshay-Williams,deathYear,1977,Rupert Crawshay-Williams
+Rupert Crawshay-Williams,nationality,British,Rupert Crawshay-Williams
+Rupert Crawshay-Williams, occupation,Writer,Rupert Crawshay-Williams
+Rupert Crawshay-Williams, occupation,Critic,Rupert Crawshay-Williams
+Sam Carr (musician),instanceOf,Musician,Sam Carr (musician)
+Sam Carr (musician),birthDate,1955-01-27,Sam Carr (musician)
+Sam Carr (musician),deathDate,2001-09-13,Sam Carr (musician)
+Sam Carr (musician),birthPlace,"Windsor, Ontario",Sam Carr (musician)
+Sam Carr (musician),nationality,Canadian,Sam Carr (musician)
+Sam Carr (musician),profession,Guitarist,Sam Carr (musician)
+Sam Carr (musician),instrument,Guitar,Sam Carr (musician)
+Sam Carr (musician),associatedBand,The Boogie Brothers,Sam Carr (musician)
+Sam Carr (musician),associatedBand,The Holmes Brothers,Sam Carr (musician)
+Sam Carr (musician),discography,Several albums,Sam Carr (musician)
+subject,predicate,object,Homocitrulline
+Yang Fuqing,instanceOf,Scientist,Yang Fuqing (scientist)
+Yang Fuqing,instanceOf,Chinese Scientist,Yang Fuqing (scientist)
+Yang Fuqing,fieldOfWork,Computer Science,Yang Fuqing (scientist)
+Yang Fuqing,knownFor,Software Development,Yang Fuqing (scientist)
+Yang Fuqing,nationality,Chinese,Yang Fuqing (scientist)
+Yang Fuqing,worksAt,Tsinghua University,Yang Fuqing (scientist)
+Inn for Trouble,instanceOf,Thoroughbred,Inn for Trouble
+Inn for Trouble,bredIn,United States,Inn for Trouble
+Inn for Trouble,foaled,1992,Inn for Trouble
+Inn for Trouble,sex,gelding,Inn for Trouble
+Inn for Trouble,trainedBy,William I. Mott,Inn for Trouble
+Inn for Trouble,riddenBy,Jorge Nunez,Inn for Trouble
+Inn for Trouble,racedAt,Belmont Park,Inn for Trouble
+Inn for Trouble,racedAt,Saratoga Springs,Inn for Trouble
+Inn for Trouble,won,Allowance race,Inn for Trouble
+Inn for Trouble,won,Claiming race,Inn for Trouble
+30 (album),instanceOf,album,30 (album)
+30 (album),artist,Adele,30 (album)
+30 (album),releaseDate,2021-11-19,30 (album)
+30 (album),genre,soul music,30 (album)
+30 (album),genre,blues,30 (album)
+30 (album),genre,pop music,30 (album)
+30 (album),producer,Adele,30 (album)
+30 (album),producer,Max Martin,30 (album)
+30 (album),producer,Shellback,30 (album)
+30 (album),recordLabel,Columbia Records,30 (album)
+30 (album),precededBy,25 (album),30 (album)
+30 (album),followedBy,,30 (album)
+30 (album),title,30,30 (album)
+30 (album),language,English,30 (album)
+Fritillaria karelinii,instanceOf,Fritillaria,Fritillaria karelinii
+Fritillaria karelinii,instanceOf,Plant,Fritillaria karelinii
+Fritillaria karelinii,instanceOf,Species,Fritillaria karelinii
+Fritillaria karelinii,isA,Lily,Fritillaria karelinii
+Fritillaria karelinii,scientificName,Fritillaria karelinii,Fritillaria karelinii
+Fritillaria karelinii,family,Liliaceae,Fritillaria karelinii
+Fritillaria karelinii,genus,Fritillaria,Fritillaria karelinii
+Fritillaria karelinii,nativeTo,Central Asia,Fritillaria karelinii
+Fritillaria karelinii,nativeTo,Kazakhstan,Fritillaria karelinii
+Fritillaria karelinii,nativeTo,Russia,Fritillaria karelinii
+Fritillaria karelinii,nativeTo,Ukraine,Fritillaria karelinii
+Fritillaria karelinii,IUCNStatus,Vulnerable,Fritillaria karelinii
+Fritillaria karelinii,flowerColor,Purple,Fritillaria karelinii
+Fritillaria karelinii,flowerColor,Yellow,Fritillaria karelinii
+Fritillaria karelinii,bloomingTime,Spring,Fritillaria karelinii
+subject,predicate,object,Yoán Moncada
+subject,predicate,object,Pablo Parrilo
+One Wild Night (film),genre,comedy film,One Wild Night (film)
+One (film),director,Jason Alexander,One Wild Night (film)
+One Wild Night (film),starring,Whoopi Goldberg,One Wild Night (film)
+One Wild Night (film),starring,Tim Daly,One Wild Night (film)
+One Wild Night (film),releaseDate,1997-05-30,One Wild Night (film)
+One Wild Night (film),countryOfOrigin,United States,One Wild Night (film)
+One Wild Night (film),language,English,One Wild Night (film)
+One Wild Night (film),distributor,New,One Wild Night (film)
+Song Min-kyu,instanceOf,Human,Song Min-kyu (footballer)
+Song Min-kyu,instanceOf,Footballer,Song Min-kyu (footballer)
+Song Min-kyu,birthDate,1999-09-12,Song Min-kyu (footballer)
+Song Min-kyu,birthPlace,South Korea,Song Min-kyu (footballer)
+Song Min-kyu,plays,Forward,Song Min-kyu (footballer)
+Song Min-kyu,playsFor,Jeonbuk Hyundai Motors,Song Min-kyu (footballer)
+Song Min-kyu,playsFor,South Korea national under-20 football team,Song Min-kyu (footballer)
+Song Min-kyu,hasNationality,South Korean,Song Min-kyu (footballer)
+Song Min-kyu,position,Forward,Song Min-kyu (footballer)
+Plectorhinchus gibbosus,instanceOf,Species,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,classifiesAs,Plectorhinchus,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,scientificName,Plectorhinchus gibbosus,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,commonName,Humpbacked Butterflyfish,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,family,Chaetodontidae,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,order,Perciformes,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,class,Actinopterygii,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,phylum,Chordata,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,kingdom,Animalia,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,habitat,Coral reef,Plectorhinchus gibbosus
+Plectorhinchus gibbosus,distribution,Indo-Pacific,Plectorhinchus gibbosus
+Sphyraena putnamae,instanceOf,Species,Sphyraena putnamae
+Sphyraena putnamae,genus,Sphyraena,Sphyraena putnamae
+Sphyraena putnamae,family,Sphyraenidae,Sphyraena putnamae
+Sphyraena putnamae,order,Sphyraeniformes,Sphyraena putnamae
+Sphyraena putnamae,class,Actinopterygii,Sphyraena putnamae
+Sphyraena putnamae,phylum,Chordata,Sphyraena putnamae
+Sphyraena putnamae,kingdom,Animalia,Sphyraena putnamae
+Sphyraena putnamae,commonName,Putnam's barracuda,Sphyraena putnamae
+Sphyraena putnamae,conservationStatus,Least Concern,Sphyraena putnamae
+Sphyraena putnamae,habitat,Marine,Sphyraena putnamae
+Sphyraena putnamae,distribution,Indo-Pacific,Sphyraena putnamae
+subject,predicate,object,João Gordo
+Region Blekinge,instanceOf,region,Region Blekinge
+Region Blekinge,locatedIn,Sweden,Region Blekinge
+Region Blekinge,capital,Karlskrona,Region Blekinge
+Region Blekinge,area,"2,947 km²",Region Blekinge
+Region Blekinge,population,"160,000",Region Blekinge
+Region Blekinge,formed,2019,Region Blekinge
+Region Blekinge,replaces,Blekinge County,Region Blekinge
+Region Blekinge,governmentType,regional council,Region Blekinge
+Region Blekinge,leaderTitle,regional councillor,Region Blekinge
+Region Blekinge,officialLanguage,Swedish,Region Blekinge
+Region Blekinge,website,https://www.regionblekinge.se,Region Blekinge
+Claude Bez,instanceOf,Person,Claude Bez
+Claude Bez,bornIn,France,Claude Bez
+Claude Bez,diedOn,2011-02-28,Claude Bez
+Claude Bez,knownFor,Football,Claude Bez
+Claude Bez,knownFor,AS Saint-Étienne,Claude Bez
+Claude Bez,presidentOf,AS Saint-Étienne,Claude Bez
+Claude Bez,chairmanOf,AS Saint-Étienne,Claude Bez
+subject,predicate,object,Juan Nepomuceno Zegrí Moreno
+Toumani Camara,instanceOf,Q5,Toumani Camara
+Toumani Camara,givenName,Toumani,Toumani Camara
+Toumani Camara,familyName,Camara,Toumani Camara
+Toumani Camara,birthDate,1970-01-03,Toumani Camara
+Toumani Camara,birthPlace,Conakry,Toumani Camara
+Toumani Camara,nationality,Guinean,Toumani Camara
+Toumani Camara,occupation,Film director,Toumani Camara
+Toumani Camara,occupation,Screenwriter,Toumani Camara
+Toumani Camara,film,Sang pour sang,Toumani Camara
+Toumani Camara,film,Diamants,Toumani Camara
+Toumani Camara,film,Nuit d'or,Toumani Camara
+Toumani Camara,award,César Award,Toumani Camara
+Toumani Camara,award,Prix du meilleur scénario original,Toumani Camara
+Energy and Buildings,instanceOf,academic journal,Energy and Buildings
+Energy and Buildings,publisher,Elsevier,Energy and Buildings
+Energy and Buildings,subject,energy,Energy and Buildings
+Energy and Buildings,subject,building,Energy and Buildings
+Energy and Buildings,impact factor,4.326,Energy and Buildings
+Energy and Buildings,issn,0378-7788,Energy and Buildings
+Energy and Buildings,web site,https://www.journals.elsevier.com/energy-and-buildings/,Energy and Buildings
+Energy and Buildings,first published,1977,Energy and Buildings
+Energy and Buildings,frequency,bimonthly,Energy and Buildings
+Valentina Alazraki,instanceOf,Human,Valentina Alazraki
+Valentina Alazraki,givenName,Valentina,Valentina Alazraki
+Valentina Alazraki,familyName,Alazraki,Valentina Alazraki
+Valentina Alazraki,occupation,Journalist,Valentina Alazraki
+Valentina Alazraki,occupation,Television presenter,Valentina Alazraki
+Valentina Alazraki,nationality,Mexican,Valentina Alazraki
+Valentina Alazraki,birthDate,1967-04-11,Valentina Alazraki
+Valentina Alazraki,birthPlace,Mexico City,Valentina Alazraki
+Valentina Alazraki,education,University of Notre Dame,Valentina Alazraki
+Valentina Alazraki,education,Harvard University,Valentina Alazraki
+Valentina Alazraki,employer,Noté+,Valentina Alazraki
+Valentina Alazraki,employer,CNN en Español,Valentina Alazraki
+Valentina Alazraki,award,Emmy Award,Valentina Alazraki
+Valentina Alazraki,award,Peabody Award,Valentina Alazraki
+subject,predicate,object,The 1619 Project
+Crocus veluchensis,instanceOf,Crocus,Crocus veluchensis
+Crocus veluchensis,isA,Plant,Crocus veluchensis
+Crocus veluchensis,isA,Angiosperm,Crocus veluchensis
+Crocus veluchensis,isA,Monocot,Crocus veluchensis
+Crocus veluchensis,family,Iridaceae,Crocus veluchensis
+Crocus veluchensis,genus,Crocus,Crocus veluchensis
+Crocus veluchensis,species,Crocus veluchensis,Crocus veluchensis
+Crocus veluchensis,scientificName,Crocus veluchensis,Crocus veluchensis
+Crocus veluchensis,endemicTo,Iran,Crocus veluchensis
+The Son (1953 film),instanceOf,film,The Son (1953 film)
+The Son (1953 film),releaseYear,1953,The Son (1953 film)
+The Son (1953 film),director,Giorgio Moser,The Son (1953 film)
+The Son (1953 film),countryOfOrigin,Italy,The Son (1953 film)
+The Son (1953 film),language,Italian,The Son (1953 film)
+Assim Madibo,instanceOf,Q5,Assim Madibo
+Assim Madibo,type,Q5,Assim Madibo
+Assim Madibo,isInstanceOf,Human,Assim Madibo
+Assim Madibo,givenName,Assim,Assim Madibo
+Assim Madibo,familyName,Madibo,Assim Madibo
+Assim Madibo,dateOfBirth,1993-05-24,Assim Madibo
+Assim Madibo,plays,Midfielder,Assim Madibo
+Assim Madibo,memberOf,Al Sadd SC,Assim Madibo
+Assim Madibo,position,Defensive midfielder,Assim Madibo
+Assim Madibo,nationality,Qatar,Assim Madibo
+Assim Madibo,countryOfCitizenship,Qatar,Assim Madibo
+Assim Madibo,playsAssociationFootballFor,Al Sadd SC,Assim Madibo
+Mammillaria petterssonii,instanceOf,Mammillaria,Mammillaria petterssonii
+Mammillaria petterssonii,genus,Mammillaria,Mammillaria petterssonii
+Mammillaria petterssonii,species,Mammillaria petterssonii,Mammillaria petterssonii
+Mammillaria petterssonii,family,Cactaceae,Mammillaria petterssonii
+Mammillaria petterssonii,nativeTo,Mexico,Mammillaria petterssonii
+Mammillaria petterssonii,type,cactus,Mammillaria petterssonii
+Mammillaria petterssonii,isA,succulent plant,Mammillaria petterssonii
+Mammillaria petterssonii,hasFlowers,white,Mammillaria petterssonii
+Mammillaria petterssonii,hasFlowers,pink,Mammillaria petterssonii
+Mammillaria petterssonii,stemShape,globular,Mammillaria petterssonii
+Mammillaria petterssonii,stemSize,small,Mammillaria petterssonii
+Mammillaria petterssonii,spines,radial,Mammillaria petterssonii
+Mammillaria petterssonii,spines,central,Mammillaria petterssonii
+Mammillaria petterssonii,growthHabit,slow-growing,Mammillaria petterssonii
+Mammillaria petterssonii,requires,full sun,Mammillaria petterssonii
+Mammillaria petterssonii,requires,well-draining soil,Mammillaria petterssonii
+subject,predicate,object,Electra (2023 film)
+Electra (2023 film),instanceOf,film,Electra (2023 film)
+Electra (2023 film),releaseYear,2023,Electra (2023 film)
+Electra (2023 film),title,Electra,Electra (2023 film)
+Electra (2023 film),basedOn,Electra,Electra (2023 film)
+Electra (2023 film),director,Olivia Wilde,Electra (2023 film)
+Electra (2023 film),starring,Emma Stone,Electra (2023 film)
+Electra (2023 film),starring,Kirby Howell-Baptiste,Electra (2023 film)
+Electra (2023 film),genre,action,Electra (2023 film)
+Electra (2023 film),genre,comedy,Electra (2023 film)
+Electra (2023 film),productionCompany,Sony Pictures,Electra (2023 film)
+Electra (2023 film),distributor,Sony Pictures,Electra (2023 film)
+Electra,instanceOf,comic book character,Electra (2023 film)
+Electra,creator,Frank Miller,Electra (2023 film)
+subject,predicate,object,Odesa Fine Arts Museum
+Final Cut (1980 film),instanceOf,film,Final Cut (1980 film)
+Final Cut (1980 film),releaseDate,1980,Final Cut (1980 film)
+Final Cut (1980 film),director,Ralph Clemente,Final Cut (1980 film)
+Final Cut (1980 film),starring,Susanne Zenor,Final Cut (1980 film)
+Final Cut (1980 film),starring,Lana Clarkson,Final Cut (1980 film)
+Final Cut (1980 film),genre,horror,Final Cut (1980 film)
+Final Cut (1980 film),genre,thriller,Final Cut (1980 film)
+Final Cut (1980 film),runtime,88 minutes,Final Cut (1980 film)
+Final Cut (1980 film),alsoKnownAs,The Final Cut (1980 film),Final Cut (1980 film)
+Final Cut (1980 film),IMDbId,tt0080948,Final Cut (1980 film)
+"Fokino, Bryansk Oblast",instanceOf,city,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",locatedIn,Bryansk Oblast,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",locatedIn,Russia,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",hasPopulation,"approximately 12,000","Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",isCapitalOf,Fokinsky District,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",foundedIn,1932,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",namedAfter,Ivan Fokin,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",hasArea,approximately 3.9 km²,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",elevation,180 meters,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",timezone,Moscow Time,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",postalCode,242680,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",telephoneCode,+7 48341,"Fokino, Bryansk Oblast"
+birthDate,"""1862-02-18""]","[""Kinahan Cornwallwriter",Kinahan Cornwallis (writer)
+Michael Fallon (priest),instanceOf,Priest,Michael Fallon (priest)
+Michael Fallon (priest),birthDate,1944,Michael Fallon (priest)
+Michael Fallon (priest),deathDate,2020,Michael Fallon (priest)
+Michael Fallon (priest),nationality,Irish,Michael Fallon (priest)
+Michael Fallon (priest),ordination,1970,Michael Fallon (priest)
+Michael Fallon (priest),title,Bishop,Michael Fallon (priest)
+Michael Fallon (priest),diocese,Diocese of Achonry,Michael Fallon (priest)
+Michael Fallon (priest),see,Achonry,Michael Fallon (priest)
+subject,predicate,object,Évry-Courcouronnes station
+Évry-Courcouronnes station,instanceOf,railway station,Évry-Courcouronnes station
+Évry-Courcouronnes station,locatedIn,Évry-Courcouronnes,Évry-Courcouronnes station
+Évry-Courcouronnes station,locatedIn,Essonne,Évry-Courcouronnes station
+Évry-Courcouronnes station,locatedIn,Île-de-France,Évry-Courcouronnes station
+Évry-Courcouronnes station,partOf,Transilien P,Évry-Courcouronnes station
+Évry-Courcouronnes station,servedBy,Transilien P,Évry-Courcouronnes station
+Évry-Courcouronnes station,servedBy,RER D,Évry-Courcouronnes station
+Évry-Courcouronnes station,isA,commuter rail station,Évry-Courcouronnes station
+Évry-Courcouronnes station,isA,suburban station,Évry-Courcouronnes station
+Rohm Theatre Kyoto,instanceOf,theatre,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,locatedIn,Kyoto,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,namedAfter,Rohm,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,operatesAs,concert hall,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,hasCapacity,2000,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,opened,1967,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,architect,Kisho Kurokawa,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,hosts,classical music,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,hosts,opera,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,hosts,ballet,Rohm Theatre Kyoto
+Rohm Theatre Kyoto,isManagedBy,Kyoto City,Rohm Theatre Kyoto
+Matteo Pelucchi,instanceOf,Human,Matteo Pelucchi
+Matteo Pelucchi,type,Cyclist,Matteo Pelucchi
+Matteo Pelucchi,bornIn,Italy,Matteo Pelucchi
+Matteo Pelucchi,dateOfBirth,1988-01-21,Matteo Pelucchi
+Matteo Pelucchi,competedIn,2014 Giro d'Italia,Matteo Pelucchi
+Matteo Pelucchi,competedIn,2015 Giro d'Italia,Matteo Pelucchi
+Matteo Pelucchi,team,IAM Cycling,Matteo Pelucchi
+Matteo Pelucchi,team,Team Katusha-Alpecin,Matteo Pelucchi
+Matteo Pelucchi,wins,multiple stage wins in Giro d'Italia,Matteo Pelucchi
+subject,predicate,object,Emily Willingham
+Emily Willingham,instanceOf,Scientist,Emily Willingham
+Emily Willingham,instanceOf,Journalist,Emily Willingham
+Emily Willingham,instanceOf,Science Writer,Emily Willingham
+Emily Willingham,hasOccupation,Science Journalist,Emily Willingham
+Emily Willingham,hasOccupation,Biology Journalist,Emily Willingham
+Emily Willingham,isKnownFor,Science Writing,Emily Willingham
+Emily Willingham,isKnownFor,Biology Writing,Emily Willingham
+Emily Willingham,hasWrittenFor,Forbes,Emily Willingham
+Emily Willingham,hasWrittenFor,The Guardian,Emily Willingham
+Emily Willingham,hasWrittenFor,Aeon,Emily Willingham
+Emily Willingham,hasEducation,PhD in Biology,Emily Willingham
+Emily Willingham,hasEducation,University of Texas at Austin,Emily Willingham
+Emily Willingham,hasBlog,The Science Lens,Emily Willingham
+Emily Willingham,isTwitterUser,@ewilliamson,Emily Willingham
+Emily Willingham,hasExpertise,Evolutionary Biology,Emily Willingham
+Emily Willingham,hasExpertise,Science Communication,Emily Willingham
+Human Development (journal),instanceOf,academic journal,Human Development (journal)
+Human Development (journal),publisher,Taylor & Francis,Human Development (journal)
+Human Development (journal),subject,human development,Human Development (journal)
+Human Development (journal),discipline,psychology,Human Development (journal)
+Human Development (journal),ISO 4 abbreviation,Hum. Dev.,Human Development (journal)
+Human Development (journal),ISSN,0018-716X,Human Development (journal)
+Human Development (journal),web site,https://www.tandfonline.com/journals/phhd,Human Development (journal)
+Gliese 536,instanceOf,star,Gliese 536
+Gliese 536,locatedIn,Milky Way,Gliese 536
+Gliese 536,constellation,Virgo,Gliese 536
+Gliese 536,spectralType,G,Gliese 536
+Gliese 536,mass,0.92,Gliese 536
+Gliese 536,radius,0.98,Gliese 536
+Gliese 536,surfaceTemperature,5770,Gliese 536
+Gliese 536,luminosity,0.98,Gliese 536
+Gliese 536,metallicity,0.04,Gliese 536
+Gliese 536,age,6.6 billion years,Gliese 536
+Gliese 536,distanceFromEarth,29.88 light-years,Gliese 536
+Gliese 536,discoveredBy,Wilhelm Gliese,Gliese 536
+Gliese 536,discoveryYear,1957,Gliese 536
+Gliese 536b,instanceOf,exoplanet,Gliese 536
+Gliese 536b,orbits,Gliese 536,Gliese 536
+Gliese 536b,mass,5.4 Earth masses,Gliese 536
+Gliese 536b,discoveryYear,2016,Gliese 536
+"National Institute of Technology, Tiruchirappalli",instanceOf,National Institute of Technology,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",locatedIn,Tiruchirappalli,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",locatedIn,Tamil Nadu,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",founded,1960,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",academicStaff,300,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",student,8000,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",offering,B.Tech,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",offering,M.Tech,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",offering,M.Sc,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",offering,Ph.D.,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",campus,275 acres,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",type,Public,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",funding,Government of India,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",website,https://www.nitt.edu/,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",ranked,38,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",rankedBy,NIRF,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",accreditedBy,NBA,"National Institute of Technology, Tiruchirappalli"
+"National Institute of Technology, Tiruchirappalli",accreditedBy,NAAC,"National Institute of Technology, Tiruchirappalli"
+subject,predicate,object,Meu Passado Me Condena 2
+subject,predicate,object,Cordylus niger
+Lilium japonicum,instanceOf,Species,Lilium japonicum
+Lilium japonicum,genus,Lilium,Lilium japonicum
+Lilium japonicum,family,Liliaceae,Lilium japonicum
+Lilium japonicum,nativeTo,Japan,Lilium japonicum
+Lilium japonicum,habitat,Mountainous regions,Lilium japonicum
+Lilium japonicum,bloomingTime,Summer,Lilium japonicum
+Lilium japonicum,flowerColor,White,Lilium japonicum
+Lilium japonicum,flowerShape,Trumpet-shaped,Lilium japonicum
+Lilium japonicum,alsoKnownAs,Japanese Lily,Lilium japonicum
+Lilium japonicum,cultivatedFor,Ornamental purposes,Lilium japonicum
+HD 103197,instanceOf,Star,HD 103197
+HD 103197,locatedIn,Milky Way,HD 103197
+HD 103197,hasSpectralType,G-type main-sequence star,HD 103197
+HD 103197,hasMass,1.05,HD 103197
+HD 103197,hasRadius,1.1,HD 103197
+HD 103197,hasLuminosity,1.15,HD 103197
+HD 103197,hasSurfaceTemperature,5800,HD 103197
+HD 103197,hasAge,4.5 billion years,HD 103197
+HD 103197,isSimilarTo,Sun,HD 103197
+HD 103197,hasPlanetarySystem,HD 103197 b,HD 103197
+HD 103197 b,isOrbiting,HD 103197,HD 103197
+HD 103197 b,hasMass,1.6,HD 103197
+HD 103197 b,hasOrbitalPeriod,1919 days,HD 103197
+HD 103197,discoveredBy,HARPS,HD 103197
+HD 103197,discoveryDate,2009-10-13,HD 103197
+HD 103197,distanceFromEarth,87 light-years,HD 103197
+subject,predicate,object,Haris Hajradinović
+Haris Hajradinović,instanceOf,Person,Haris Hajradinović
+Haris Hajradinović,type,Bosnian footballer,Haris Hajradinović
+Haris Hajradinović,bornAt,Sarajevo,Haris Hajradinović
+Haris Hajradinović,bornOn,1994-02-20,Haris Hajradinović
+Haris Hajradinović,playsPosition,Midfielder,Haris Hajradinović
+Haris Hajradinović,memberOf,Breiðablik,Haris Hajradinović
+Haris Hajradinović,memberOf,FK Sarajevo,Haris Hajradinović
+Haris Hajradinović,memberOf,Bosnia and Herzegovina national football team,Haris Hajradinović
+subject,predicate,object,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),instanceOf,Human,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),instanceOf,Ice Hockey Player,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),birthDate,1927-04-08,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),deathDate,1998-11-13,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),nationality,Canadian,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),position,Goaltender,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),teams,Boston Bruins,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),teams,Chicago Blackhawks,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),teams,Indianapolis Olympians,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),teams,St. Louis Flyers,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),playedIn,NHL,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),playedIn,AHL,Marcel Pelletier (ice hockey)
+Marcel Pelletier (ice hockey),playedIn,USHL,Marcel Pelletier (ice hockey)
+Current Pain and Headache Reports,instanceOf,Journal,Current Pain and Headache Reports
+Current Pain and Headache Reports,publisher,Springer Nature,Current Pain and Headache Reports
+Current Pain and Headache Reports,ISSN,1877-1896,Current Pain and Headache Reports
+Current Pain and Headache Reports,subjectArea,Neurology,Current Pain and Headache Reports
+Current Pain and Headache Reports,subjectArea,Pain Management,Current Pain and Headache Reports
+Current Pain and Headache Reports,impactFactor,2.34,Current Pain and Headache Reports
+Current Pain and Headache Reports,journalType,Peer-reviewed,Current Pain and Headache Reports
+Current Pain and Headache Reports,publicationFrequency,Bimonthly,Current Pain and Headache Reports
+Current Pain and Headache Reports,firstPublicationYear,1997,Current Pain and Headache Reports
+"Dmytrivka, Chernihiv Oblast",instanceOf,urban-type settlement,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedIn,Chernihiv Oblast,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedIn,Ukraine,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",population,"about 2,500","Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",area,about 7.5 km²,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",elevation,about 140 m,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",category,urban-type settlements in Chernihiv Oblast,"Dmytrivka, Chernihiv Oblast"
+"Saint-Adalbert, Quebec",instanceOf,municipality,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",locatedIn,Quebec,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",locatedIn,Canada,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",hasPopulation,1217,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",hasArea,42.9,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",namedAfter,Adalbert of Prague,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",foundedBy, French colonists,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",hasElevation,73,"Saint-Adalbert, Quebec"
+"Saint-Adalbert, Quebec",hasPostalCode,QC J0H 1B0,"Saint-Adalbert, Quebec"
+Max Planck Institute for Plant Breeding Research,instanceOf,research institute,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,locatedIn,"Cologne, Germany",Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,partOf,Max Planck Society,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,focusesOn,plant breeding,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,focusesOn,genetics,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,hasDirector,Ralf Wilhelm,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,hasDepartment,Department of Plant Breeding and Genetics,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,hasDepartment,Department of Molecular Plant Biology,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,conductsResearchIn,crop improvement,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,conductsResearchIn,plant genetics,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,hasNotableResearcher,Gerd Jürgens,Max Planck Institute for Plant Breeding Research
+Max Planck Institute for Plant Breeding Research,hasNotableResearcher,Marek Kuznetsov,Max Planck Institute for Plant Breeding Research
+subject,predicate,object,4-Bromothiophenol
+Nicola Dolapchieff,instanceOf,Human,Nicola Dolapchieff
+Nicola Dolapchieff,bornIn,Russia,Nicola Dolapchieff
+Nicola Dolapchieff,diedIn,France,Nicola Dolapchieff
+Nicola Dolapchieff,givenName,Nicola,Nicola Dolapchieff
+Nicola Dolapchieff,familyName,Dolapchieff,Nicola Dolapchieff
+Nicola Dolapchieff,alsoKnownAs,Nikolay Dolapchieff,Nicola Dolapchieff
+Nicola Dolapchieff,alsoKnownAs,Nikolaï Dolaptschieff,Nicola Dolapchieff
+Nicola Dolapchieff,occupation,Film Producer,Nicola Dolapchieff
+Nicola Dolapchieff,occupation,Film Director,Nicola Dolapchieff
+Nicola Dolapchieff,activeIn,Cinema,Nicola Dolapchieff
+subject,predicate,object,Darmstadt Nord station
+subject,predicate,object,Kikstart: Off-Road Simulator
+"Deborah Stedman-Scott, Baroness Stedman-Scott",instanceOf,Human,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",instanceOf,Baroness,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",title,Baroness Stedman-Scott,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",givenName,Deborah,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",familyName,Stedman-Scott,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",hasRole,Life Peer,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",isMemberOf,House of Lords,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",hasSpouse,Sir John Stedman-Scott,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+"Deborah Stedman-Scott, Baroness Stedman-Scott",hasChildren,2,"Deborah Stedman-Scott, Baroness Stedman-Scott"
+subject,predicate,object,CMA CGM Marco Polo
+subject,predicate,object,Utrecht Lunetten railway station
+subject,predicate,object,Instituto Mexicano de Cinematografía
+Nagano Prefectural Shinano Art Museum,instanceOf,art museum,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,locatedIn,Nagano Prefecture,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,namedAfter,Shinano region,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,hasCollection,Japanese art,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,hasCollection,Western art,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,foundingDate,1959,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,architect,Kenchō Okamura,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,officialWebsite,https://www.artmuseum.pref.nagano.jp/,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,city,Nagano,Nagano Prefectural Shinano Art Museum
+Nagano Prefectural Shinano Art Museum,region,Shinano,Nagano Prefectural Shinano Art Museum
+Takeshita Station,instanceOf,railway station,Takeshita Station
+Takeshita Station,locatedIn,Japan,Takeshita Station
+Takeshita Station,servedBy,JR East,Takeshita Station
+Takeshita Station,servedBy,Tokyo Metro,Takeshita Station
+Takeshita Station,locatedIn,Tokyo,Takeshita Station
+Takeshita Station,hasLine,Yamanote Line,Takeshita Station
+Takeshita Station,hasLine,Marunouchi Line,Takeshita Station
+Takeshita Station,hasPlatform,2,Takeshita Station
+Takeshita Station,opened,1906-11-01,Takeshita Station
+Takeshita Station,renamed,Takeshita Station (current),Takeshita Station
+Takeshita Station,previousName,Takeshita-machi Station,Takeshita Station
+A Welcome Intruder,instanceOf,film,A Welcome Intruder
+A Welcome Intruder,releaseDate,2021-10-01,A Welcome Intruder
+A Welcome Intruder,director,Daryl Wein,A Welcome Intruder
+A Welcome Intruder,starring,Zoe Kravitz,A Welcome Intruder
+A Welcome Intruder,genre,Drama,A Welcome Intruder
+A Welcome Intruder,runtime,104 minutes,A Welcome Intruder
+A Welcome Intruder,country,United States,A Welcome Intruder
+Brachylaimidae,instanceOf,Family,Brachylaimidae
+Brachylaimidae,isPartOf,Brachylaimidae family,Brachylaimidae
+Brachylaimidae,classifiesAs,Trematoda,Brachylaimidae
+Brachylaimidae,taxonomicRank,family,Brachylaimidae
+Brachylaimidae,hasMember,Brachylaimus,Brachylaimidae
+Municipal Market of São Paulo,instanceOf,market,Municipal Market of São Paulo
+Municipal Market of São Paulo,locatedIn,São Paulo,Municipal Market of São Paulo
+Municipal Market of São Paulo,alsoKnownAs,Mercado Municipal de São Paulo,Municipal Market of São Paulo
+Municipal Market of São Paulo,openedIn,1930,Municipal Market of São Paulo
+Municipal Market of São Paulo,architect,Francisco Matarazzo Sobrinho,Municipal Market of São Paulo
+Municipal Market of São Paulo,architecturalStyle,Art Deco,Municipal Market of São Paulo
+Municipal Market of São Paulo,protectedBy,Instituto do Patrimônio Histórico e Artístico Nacional,Municipal Market of São Paulo
+Municipal Market of São Paulo,visitorCenter,yes,Municipal Market of São Paulo
+Municipal Market of São Paulo,hasProducts,fresh produce,Municipal Market of São Paulo
+Municipal Market of São Paulo,hasProducts,meat,Municipal Market of São Paulo
+Municipal Market of São Paulo,hasProducts,dairy products,Municipal Market of São Paulo
+Municipal Market of São Paulo,hasProducts,flowers,Municipal Market of São Paulo
+Municipal Market of São Paulo,isPopularTouristDestination,yes,Municipal Market of São Paulo
+subject,predicate,object,2016 AZ8
+Palestrina Cathedral,instanceOf,cathedral,Palestrina Cathedral
+Palestrina Cathedral,locatedIn,Palestrina,Palestrina Cathedral
+Palestrina Cathedral,dedicatedTo,Santa Maria Assunta,Palestrina Cathedral
+Palestrina Cathedral,diocese,Diocese of Palestrina,Palestrina Cathedral
+Palestrina Cathedral,architect,Vespasiano Bellarmino,Palestrina Cathedral
+Palestrina Cathedral,architecturalStyle,Renaissance architecture,Palestrina Cathedral
+Palestrina Cathedral,architecturalStyle,Baroque architecture,Palestrina Cathedral
+Palestrina Cathedral,hasPart,bell tower,Palestrina Cathedral
+Palestrina Cathedral,hasPart,cloister,Palestrina Cathedral
+Palestrina Cathedral,restorationDate,17th century,Palestrina Cathedral
+Palestrina Cathedral,consecratedDate,11th century,Palestrina Cathedral
+Ivan Efremov (weightlifter),instanceOf,Human,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),instanceOf,Weightlifter,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),birthDate,1984-04-03,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),birthPlace,Russia,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),nationality,Russian,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),competition,European Weightlifting Championships,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),competition,World Weightlifting Championships,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),award,Medal of the Order of the Republic,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),sport,Weightlifting,Ivan Efremov (weightlifter)
+Ivan Efremov (weightlifter),weightClass,85 kg,Ivan Efremov (weightlifter)
+Claes Christian Olrog,instanceOf,Human,Claes Christian Olrog
+Claes Christian Olrog,birthDate,1907-01-10,Claes Christian Olrog
+Claes Christian Olrog,deathDate,1993-01-06,Claes Christian Olrog
+Claes Christian Olrog,occupation,ornithologist,Claes Christian Olrog
+Claes Christian Olrog,nationality,Swedish,Claes Christian Olrog
+Claes Christian Olrog,fieldOfWork,ornithology,Claes Christian Olrog
+Claes Christian Olrog,employer,Uppsala University,Claes Christian Olrog
+Adoration of the Magi (Lorenzo Monaco),instanceOf,painting,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),creator,Lorenzo Monaco,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),dateCreated,1420s,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),location,Uffizi Gallery,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),material,tempera on panel,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),movement,International Gothic,Adoration of the Magi (Lorenzo Monaco)
+Adoration of the Magi (Lorenzo Monaco),subject,Adoration of the Magi,Adoration of the Magi (Lorenzo Monaco)
+Lorenzo Monaco,instanceOf,artist,Adoration of the Magi (Lorenzo Monaco)
+Lorenzo Monaco,active,1400-1422,Adoration of the Magi (Lorenzo Monaco)
+Uffizi Gallery,instanceOf,art museum,Adoration of the Magi (Lorenzo Monaco)
+Mikhail Khatskilevich,instanceOf,Human,Mikhail Khatskilevich
+Mikhail Khatskilevich,givenName,Mikhail,Mikhail Khatskilevich
+Mikhail Khatskilevich,familyName,Khatskilevich,Mikhail Khatskilevich
+Mikhail Khatskilevich,birthDate,1903-01-28,Mikhail Khatskilevich
+Mikhail Khatskilevich,deathDate,1944-05-05,Mikhail Khatskilevich
+Mikhail Khatskilevich,militaryRank,Lieutenant general,Mikhail Khatskilevich
+Mikhail Khatskilevich,award,Order of Lenin,Mikhail Khatskilevich
+Mikhail Khatskilevich,award,Order of the Red Banner,Mikhail Khatskilevich
+Mikhail Khatskilevich,award,Order of Suvorov,Mikhail Khatskilevich
+Mikhail Khatskilevich,battle,World War II,Mikhail Khatskilevich
+Mikhail Khatskilevich,country,Soviet Union,Mikhail Khatskilevich
+Chromis enchrysura,instanceOf,Species,Chromis enchrysura
+Chromis enchrysura,classifiesAs,Chromis,Chromis enchrysura
+Chromis enchrysura,isA,Marine Fish,Chromis enchrysura
+Chromis enchrysura,foundIn,Indo-Pacific,Chromis enchrysura
+Chromis enchrysura,habitat,Coral Reef,Chromis enchrysura
+Chromis enchrysura,diet,Omnivorous,Chromis enchrysura
+Chromis enchrysura,family,Pomacentridae,Chromis enchrysura
+Chromis enchrysura,scientificName,Chromis enchrysura,Chromis enchrysura
+Chromis enchrysura,authority,"Günther, 1867",Chromis enchrysura
+School-Live! (film),instanceOf,film,School-Live! (film)
+School-Live! (film),basedOn,School-Live!,School-Live! (film)
+School-Live! (film),director,Kōnosuke Uda,School-Live! (film)
+School-Live! (film),starring,Sawa Mikami,School-Live! (film)
+School-Live! (film),starring,Tetsuya Matsumoto,School-Live! (film)
+School-Live! (film),starring,Kei,School-Live! (film)
+School-Live! (film),releaseDate,2015-01-24,School-Live! (film)
+School-Live! (film),runtime,90,School-Live! (film)
+School-Live! (film),genre,horror,School-Live! (film)
+School-Live! (film),country,Japan,School-Live! (film)
+subject,predicate,object,IET Software
+Viola Calligaris,instanceOf,Human,Viola Calligaris
+Viola Calligaris,birthDate,1996-06-25,Viola Calligaris
+Viola Calligaris,birthPlace,Udine,Viola Calligaris
+Viola Calligaris,nationality,Italian,Viola Calligaris
+Viola Calligaris,occupation,Football player,Viola Calligaris
+Viola Calligaris,playsFor,Italy women's national football team,Viola Calligaris
+Viola Calligaris,playsFor,FC Bayern Munich,Viola Calligaris
+Viola Calligaris,position,Defender,Viola Calligaris
+78 Ursae Majoris,instanceOf,Star,78 Ursae Majoris
+78 Ursae Majoris,locatedIn,Ursa Major,78 Ursae Majoris
+78 Ursae Majoris,spectralType,G-type giant star,78 Ursae Majoris
+78 Ursae Majoris,bayerDesignation,,78 Ursae Majoris
+78 Ursae Majoris,flamsteedDesignation,78,78 Ursae Majoris
+78 Ursae Majoris,constellation,Ursa Major,78 Ursae Majoris
+78 Ursae Majoris,starType,Giant star,78 Ursae Majoris
+78 Ursae Majoris,colorIndex,0.93,78 Ursae Majoris
+78 Ursae Majoris,luminosity,101 L☉,78 Ursae Majoris
+78 Ursae Majoris,surfaceTemperature,4930,78 Ursae Majoris
+78 Ursae Majoris,mass,2.4 M☉,78 Ursae Majoris
+78 Ursae Majoris,radius,10 R☉,78 Ursae Majoris
+78 Ursae Majoris,age,0.62 billion years,78 Ursae Majoris
+78 Ursae Majoris,rotationalVelocity,4.2 km/s,78 Ursae Majoris
+78 Ursae Majoris,radialVelocity,-17.6 km/s,78 Ursae Majoris
+78 Ursae Majoris,parallax,18.39 mas,78 Ursae Majoris
+78 Ursae Majoris,distance,177 light-years,78 Ursae Majoris
+Giovanni Francesco I Brignole Sale,instanceOf,Human,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,birthDate,1676-07-28,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,deathDate,1737-12-21,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,title,Giovanni Francesco I Brignole Sale,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,givenName,Giovanni Francesco,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,familyName,Brignole Sale,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,countryOfOrigin,Republic of Genoa,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,position,Doges of Genoa,Giovanni Francesco I Brignole Sale
+Giovanni Francesco I Brignole Sale,office,Doge of Genoa,Giovanni Francesco I Brignole Sale
+subject,predicate,object,Ten Pound Island Light
+subject,predicate,object,Happening (book)
+subject,predicate,object,Joseph Lister Memorial
+Adele Chatfield-Taylor,instanceOf,Human,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,givenName,Adele,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,familyName,Chatfield-Taylor,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,birthDate,1962-09-11,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,birthPlace,London,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,spouse,Andrew Chatfield-Taylor,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,occupation,Singer,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,genre,Jazz,Adele Chatfield-Taylor
+Adele Chatfield-Taylor,instrument,Voice,Adele Chatfield-Taylor
+Max Malins,instanceOf,Human,Max Malins
+Max Malins,birthDate,1895-11-11,Max Malins
+Max Malins,birthPlace,"Berkhamsted, Hertfordshire, England",Max Malins
+Max Malins,deathDate,1918-07-31,Max Malins
+Max Malins,deathPlace,"Montauban, France",Max Malins
+Max Malins,occupation,Sapper,Max Malins
+Max Malins,militaryBranch,Royal Engineers,Max Malins
+Max Malins,notableFor,Victoria Cross recipient,Max Malins
+Max Malins,award,Victoria Cross,Max Malins
+subject,predicate,object,Landscape with Obelisk
+Kenneth Webb (artist),instanceOf,Artist,Kenneth Webb (artist)
+Kenneth Webb (artist),birthPlace,Australia,Kenneth Webb (artist)
+Kenneth Webb (artist),nationality,Australian,Kenneth Webb (artist)
+Kenneth Webb (artist),activePeriod,20th century,Kenneth Webb (artist)
+Kenneth Webb (artist),activePeriod,21st century,Kenneth Webb (artist)
+Kenneth Webb (artist),fieldOfWork,Painting,Kenneth Webb (artist)
+Kenneth Webb (artist),knownFor,Landscape painting,Kenneth Webb (artist)
+Kenneth Webb (artist),knownFor,Still life painting,Kenneth Webb (artist)
+Kenneth Webb (artist),movement,Impressionism,Kenneth Webb (artist)
+Kenneth Webb (artist),style,Impressionist,Kenneth Webb (artist)
+Kenneth Webb (artist),influencedBy,Australian Impressionism,Kenneth Webb (artist)
+subject,predicate,object,Knowing Men
+Knowing Men,instanceOf,TV series,Knowing Men
+Knowing Men,genre,Comedy,Knowing Men
+Knowing Men,genre,Drama,Knowing Men
+Knowing Men,countryOfOrigin,South Korea,Knowing Men
+Knowing Men,creator,Kim Jung-hwan,Knowing Men
+Knowing Men,starring,Lee Jong-suk,Knowing Men
+Knowing Men,starring,Kim Seon-ho,Knowing Men
+Knowing Men,starring,Kim Jong-hyeon,Knowing Men
+Knowing Men,starring,Woo Do-hwan,Knowing Men
+Knowing Men,starring,Kim Tae-hee,Knowing Men
+Knowing Men,premiereDate,2015-08-24,Knowing Men
+Knowing Men,endDate,2015-10-09,Knowing Men
+Knowing Men,numberOfEpisodes,12,Knowing Men
+Knowing Men,broadcastOn,SBS,Knowing Men
+subject,predicate,object,Baixa Grande do Ribeiro
+Stained glass windows of Chartres Cathedral,instanceOf,Stained glass window,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,partOf,Chartres Cathedral,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,locatedAt,Chartres Cathedral,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,createdIn,12th century,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,features,Biblical scenes,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,features,Medieval art,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,style,Gothic art,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,material,Glass,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,technique,Stained glass,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,restoredIn,19th century,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,UNESCO heritage site,Chartres Cathedral,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,influencedBy,Romanesque art,Stained glass windows of Chartres Cathedral
+Stained glass windows of Chartres Cathedral,influencedBy,Gothic art,Stained glass windows of Chartres Cathedral
+Dick Logan (American football player),instanceOf,American football player,Dick Logan (American football player)
+Dick Logan (American football player),position,Linebacker,Dick Logan (American football player)
+Dick Logan (American football player),draftedBy,Los Angeles Rams,Dick Logan (American football player)
+Dick Logan (American football player),draftRound,12,Dick Logan (American football player)
+Dick Logan (American football player),draftYear,1983,Dick Logan (American football player)
+Dick Logan (American football player),playedFor,Los Angeles Rams,Dick Logan (American football player)
+Dick Logan (American football player),playedFor,San Diego Chargers,Dick Logan (American football player)
+Dick Logan (American football player),college,University of Southern California,Dick Logan (American football player)
+Paid Holidays (film),instanceOf,film,Paid Holidays (film)
+Paid Holidays (film),genre,drama,Paid Holidays (film)
+Paid Holidays (film),director,Lloyd Kramer,Paid Holidays (film)
+Paid Holidays (film),starring,Christina Ricci,Paid Holidays (film)
+Paid Holidays (film),starring,Ed Harris,Paid Holidays (film)
+Paid Holidays (film),releaseYear,1998,Paid Holidays (film)
+Paid Holidays (film),country,United States,Paid Holidays (film)
+Paid Holidays (film),language,English,Paid Holidays (film)
+Lauren Kalman,instanceOf,Artist,Lauren Kalman
+Lauren Kalman,instanceOf,Sculptor,Lauren Kalman
+Lauren Kalman,birthPlace,Boston,Lauren Kalman
+Lauren Kalman,nationality,American,Lauren Kalman
+Lauren Kalman,educatedAt,Massachusetts College of Art,Lauren Kalman
+Lauren Kalman,educatedAt,School of Visual Arts,Lauren Kalman
+Lauren Kalman,fieldOfWork,Sculpture,Lauren Kalman
+Lauren Kalman,fieldOfWork,Ceramics,Lauren Kalman
+Lauren Kalman,knownFor,Ceramic sculpture,Lauren Kalman
+Lauren Kalman,knownFor,Functional objects,Lauren Kalman
+Lauren Kalman,influencedBy,Ceramic art,Lauren Kalman
+Lauren Kalman,influencedBy,Craft art,Lauren Kalman
+subject,predicate,object,Louis Johan Alexander Schoonheyt
+Hotel Ritz (Lisbon),instanceOf,Hotel,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),locatedIn,Lisbon,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),country,Portugal,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),name,Hotel Ritz,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),city,Lisbon,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),type,Luxury hotel,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),operator,Ritz Hotels & Resorts,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),architect,José Luís Costa,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),architecturalStyle,Neoclassical,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),opened,1990,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),numberOfRooms,108,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),hasAmenity,Fitness center,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),hasAmenity,Spa,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),hasAmenity,Restaurant,Hotel Ritz (Lisbon)
+Hotel Ritz (Lisbon),rating,5-star,Hotel Ritz (Lisbon)
+subject,predicate,object,Beryllium borohydride
+subject,predicate,object,British Plastics Federation
+Charlie Brooker's Weekly Wipe,instanceOf,Television Program,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,creator,Charlie Brooker,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,presenter,Charlie Brooker,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,narrator,Charlie Brooker,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,countryOfOrigin,United Kingdom,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,language,English,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,genre,Comedy,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,genre,Satire,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,genre,News,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,broadcastOn,Channel 4,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,premiereDate,2011-09-23,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,runtime,30 minutes,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,numberOfSeasons,6,Charlie Brooker's Weekly Wipe
+Charlie Brooker's Weekly Wipe,numberOfEpisodes,38,Charlie Brooker's Weekly Wipe
+"Synkiv, Ternopil Oblast",instanceOf,village,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",locatedIn,Ternopil Oblast,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",locatedIn,Ukraine,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",hasPopulation,over 1000,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",hasArea,2.5 km²,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",hasElevation,320 m,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",partOf,Ternopil Raion,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",hasPostalCode,47223,"Synkiv, Ternopil Oblast"
+"Synkiv, Ternopil Oblast",hasCoordinates,"49.8167° N, 25.2333° E","Synkiv, Ternopil Oblast"
+2013 Gent–gem,instanceOf,Gent–Wevelgem,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,year,2013,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,partOf,2013 UCI Europe Tour,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,partOf,2013 UCI World Tour,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,distance,199,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,winner,John Degenkolb,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,second,David Reijnen,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,third,Luca Paolini,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,category,1.UWT,2013 Gent–Wevelgem
+2013 Gent–Wevelgem,date,"March 31, 2013",2013 Gent–Wevelgem
+Hyundai Ioni5,instanceOf,Electric Vehicle,Hyundai Ioniq 5
+Hyundai Ioniq 5,manufacturer,Hyundai,Hyundai Ioniq 5
+Hyundai Ioniq 5,modelYear,2022,Hyundai Ioniq 5
+Hyundai Ioniq 5,class,Crossover SUV,Hyundai Ioniq 5
+Hyundai Ioniq 5,platform,E-GMP,Hyundai Ioniq 5
+Hyundai Ioniq 5,engine,Electric motor,Hyundai Ioniq 5
+Hyundai Ioniq 5,battery,77.4 kWh lithium-ion,Hyundai Ioniq 5
+Hyundai Ioniq 5,range,258 miles,Hyundai Ioniq 5
+Hyundai Ioniq 5,topSpeed,115 mph,Hyundai Ioniq 5
+Hyundai Ioniq 5,0-60mph,2 seconds,Hyundai Ioniq 5
+Hyundai Ioniq 5,transmission,Single-speed automatic,Hyundai Ioniq 5
+Hyundai Ioniq 5,driveType,All-wheel drive,Hyundai Ioniq 5
+Hyundai Ioniq 5,length,182.5 inches,Hyundai Ioniq 5
+Hyundai Ioniq 5,width,74.0 inches,Hyundai Ioniq 5
+Hyundai Ioniq 5,height,63.0 inches,Hyundai Ioniq 5
+Hyundai Ioniq 5,wheelbase,118.1 inches,Hyundai Ioniq 5
+Hyundai Ioniq 5,curbWeight,"3,757 pounds",Hyundai Ioniq 5
+Hyundai Ioniq 5,seatingCapacity,5,Hyundai Ioniq 5
+Hyundai Ioniq 5,cargoCapacity,27.2 cubic feet,Hyundai Ioniq 5
+Hyundai Ioniq 5,towingCapacity,"1,500 pounds",Hyundai Ioniq 5
+Hyundai Ioniq 5,price,"$39,950",Hyundai Ioniq 5
+Hyundai Ioniq 5,award,2022 European Car of the Year,Hyundai Ioniq 5
+Hyundai Ioniq 5,award,2022 World Car of the Year,Hyundai Ioniq 5
+Hyundai Ioniq 5,award,2022 Car and Driver's EV of the Year,Hyundai Ioniq 5
+Shōryaku-ji,instanceOf,Buddhist temple,Shōryaku-ji
+Shōryaku-ji,locatedIn,Japan,Shōryaku-ji
+Shōryaku-ji,isPartOf,Kōyasan Shingon Buddhism,Shōryaku-ji
+Shōryaku-ji,hasDenomination,Shingon Buddhism,Shōryaku-ji
+Shōryaku-ji,foundedBy,Kūkai,Shōryaku-ji
+Shōryaku-ji,locatedIn,Wakayama Prefecture,Shōryaku-ji
+Shōryaku-ji,namedAfter,Shōryaku,Shōryaku-ji
+Shōryaku-ji,hasMountainName,Kōya-san,Shōryaku-ji
+Shōryaku-ji,isA,monastery,Shōryaku-ji
+Shōryaku-ji,isUNESCOWorldHeritageSite,true,Shōryaku-ji
+subject,predicate,object,Acer oligocarpum
+Études (journal),instanceOf,academic journal,Études (journal)
+Études (journal),publisher,Éditions de l'Université de Montréal,Études (journal)
+Études (journal),language,French,Études (journal)
+Études (journal),discipline,theology,Études (journal)
+Études (journal),countryOfOrigin,Canada,Études (journal)
+Études (journal),cityOfPublication,Montreal,Études (journal)
+Études (journal),firstPublished,1941,Études (journal)
+Études (journal),issn,0071-2183,Études (journal)
+Études (journal),subject,theology,Études (journal)
+Études (journal),subject,philosophy,Études (journal)
+Études (journal),subject,religious studies,Études (journal)
+subject,predicate,object,Cubanichthys cubensis
+Tonight (I'm Lovin' You),instanceOf,song,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),artist,Justin Bieber,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),released,2015-04-10,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),genre,pop,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),genre,dance-pop,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),album,Purpose,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),producer,Shellback,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),producer,The-Dream,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),writer,Justin Bieber,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),writer,The-Dream,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),writer,Shellback,Tonight (I'm Lovin' You)
+Tonight (I'm Lovin' You),charted,US Billboard Hot 100,Tonight (I'm Lovin' You)
+subject,predicate,object,Amur minnow
+Chester S. Barnard,instanceOf,Person,Chester S. Barnard
+Chester S. Barnard,bornAt,1913-06-16,Chester S. Barnard
+Chester S. Barnard,diedAt,2001-10-09,Chester S. Barnard
+Chester S. Barnard,nationality,American,Chester S. Barnard
+Chester S. Barnard,occupation,Management theorist,Chester S. Barnard
+Chester S. Barnard,occupation,Organizational theorist,Chester S. Barnard
+Chester S. Barnard,knownFor,The Functions of the Executive,Chester S. Barnard
+Chester S. Barnard,employer,New Jersey Bell Telephone Company,Chester S. Barnard
+Chester S. Barnard,employer,AT&T,Chester S. Barnard
+Chester S. Barnard,educatedAt,Columbia University,Chester S. Barnard
+Chester S. Barnard,educatedAt,Harvard University,Chester S. Barnard
+Chester S. Barnard,award,National Medal of Science,Chester S. Barnard
+Chester S. Barnard,award,Harvard Business School's Alumni Achievement Award,Chester S. Barnard
+Chester S. Barnard,wrote,The Functions of the Executive,Chester S. Barnard
+Chester S. Barnard,wrote,Organization and Management,Chester S. Barnard
+Chester S. Barnard,influencedBy,Mary Parker Follett,Chester S. Barnard
+Chester S. Barnard,influencedBy,Herbert A. Simon,Chester S. Barnard
+subject,predicate,object,Transports de la région Morges-Bière-Cossonay
+subject,predicate,object,Csenger District
+subject,predicate,object,The Blacklist season 2
+Rancho Obi-Wan,instanceOf,ranch,Rancho Obi-Wan
+Rancho Obi-Wan,locatedIn,California,Rancho Obi-Wan
+Rancho Obi-Wan,ownedBy,George Lucas,Rancho Obi-Wan
+Rancho Obi-Wan,namedAfter,Obi-Wan Kenobi,Rancho Obi-Wan
+Rancho Obi-Wan,usedFor,filming,Rancho Obi-Wan
+Rancho Obi-Wan,usedFor,storage,Rancho Obi-Wan
+Rancho Obi-Wan,hasCollection,vintage cars,Rancho Obi-Wan
+Rancho Obi-Wan,hasCollection,industrial equipment,Rancho Obi-Wan
+Rancho Obi-Wan,hasCollection,movie memorabilia,Rancho Obi-Wan
+subject,predicate,object,Flestolol
+subject,predicate,object,Dithiobenzoic acid
+subject,predicate,object,Rubroboletus
+"St Cadfan's Church, Tywyn",instanceOf,church,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",locatedIn,Tywyn,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",dedicatedTo,Cadfan,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",denomination,Christianity,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",architecturalStyle,Gothic Revival,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",builtIn,12th century,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",restoredIn,19th century,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",listedBuildingGrade,Grade II*,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",parish,Parish of Tywyn,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",diocese,Diocese of St Asaph,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",hasTower,yes,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",hasBells,6,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",organ,present,"St Cadfan's Church, Tywyn"
+"St Cadfan's Church, Tywyn",memorials," Cadfan, saint","St Cadfan's Church, Tywyn"
+18 Monocerotis,instanceOf,Star,18 Monocerotis
+18 Monocerotis,hasDesignation,18 Monocerotis,18 Monocerotis
+18 Monocerotis,hasHDNumber,HD 42277,18 Monocerotis
+18 Monocerotis,hasHRNumber,HR 2172,18 Monocerotis
+18 Monocerotis,hasHIPNumber,HIP 29146,18 Monocerotis
+18 Monocerotis,hasBVColorIndex,0.43,18 Monocerotis
+18 Monocerotis,hasVisualMagnitude,5.73,18 Monocerotis
+18 Monocerotis,hasAbsoluteMagnitude,2.02,18 Monocerotis
+18 Monocerotis,hasLuminosity,13.2,18 Monocerotis
+18 Monocerotis,hasSurfaceTemperature,7500,18 Monocerotis
+18 Monocerotis,hasMass,1.8,18 Monocerotis
+18 Monocerotis,hasRadius,2.1,18 Monocerotis
+18 Monocerotis,hasAge,600000000,18 Monocerotis
+18 Monocerotis,isLocatedIn,Monoceros,18 Monocerotis
+18 Monocerotis,isLocatedIn,Milky Way,18 Monocerotis
+18 Monocerotis,hasSpectralType,F0V,18 Monocerotis
+18 Monocerotis,hasUBColorIndex,0.11,18 Monocerotis
+18 Monocerotis,hasVBColorIndex,0.43,18 Monocerotis
+18 Monocerotis,hasYVColorIndex,0.23,18 Monocerotis
+18 Monocerotis,hasBColorIndex,0.54,18 Monocerotis
+18 Monocerotis,hasVColorIndex,0.43,18 Monocerotis
+Oxynoemacheilus,instanceOf,Genus,Oxynoemacheilus
+Oxynoemacheilus,partOf,Nemacheilidae,Oxynoemacheilus
+Oxynoemacheilus,classificationRank,Genus,Oxynoemacheilus
+Oxynoemacheilus,hasSynonym,Orthomanes,Oxynoemacheilus
+Oxynoemacheilus,hasSynonym,Paracobitis,Oxynoemacheilus
+Oxynoemacheilus,hasSynonym,Oxynemacheilus,Oxynoemacheilus
+Oxynoemacheilus,isA,fish,Oxynoemacheilus
+Oxynoemacheilus,isFoundIn,Asia,Oxynoemacheilus
+Oxynoemacheilus,isFoundIn,Europe,Oxynoemacheilus
+Oxynoemacheilus,typeSpecies,Oxynoemacheilus arnoldi,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus arnoldi,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus bergii,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus ceylonensis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus cristatus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus dispar,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus euphratensis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus gallois,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus kermanshahensis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus kiabii,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus kosswigi,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus lenkoranensis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus longicaudus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus lorentii,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus nigris,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus obesus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus orientalis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus paucifasciatus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus platycephalus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus quadrilineatus,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus rupestris,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus sarabrodiensis,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus serveti,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus smithi,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus steindachneri,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus tigris,Oxynoemacheilus
+Oxynoemacheilus,hasSpecies,Oxynoemacheilus zanandreai,Oxynoemacheilus
+Breece Hall,instanceOf,American football player,Breece Hall
+Breece Hall,playsPosition,wide receiver,Breece Hall
+Breece Hall,bornIn,"Iowa City, Iowa",Breece Hall
+Breece Hall,attendedHighSchoolAt,Iowa City West High School,Breece Hall
+Breece Hall,playsCollegeFootballAt,Iowa State University,Breece Hall
+Breece Hall,draftedBy,New York Jets,Breece Hall
+Breece Hall,draftRound,4,Breece Hall
+Breece Hall,draftYear,2022,Breece Hall
+Breece Hall,draftOverall,107,Breece Hall
+"Emma, Lady Tankerville",instanceOf,Human,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",birthName,Emma White,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",marriedTo,"Charles Mordaunt, 5th Earl of Sandwich","Emma, Lady Tankerville"
+"Emma, Lady Tankerville",title,Lady Tankerville,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",givenName,Emma,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",familyName,Mordaunt,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",era,Georgian era,"Emma, Lady Tankerville"
+"Emma, Lady Tankerville",notableFor,being a British noblewoman,"Emma, Lady Tankerville"
+subject,predicate,object,Dawn of Midi
+subject,predicate,object,Jennifer F. Reinganum
+"Greens Beach, Tasmania",instanceOf,beach,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",locatedIn,Tasmania,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",locatedIn,Australia,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",partOf,Tasman Peninsula,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",near,Port Arthur,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",hasFeature,sand,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",hasFeature,coastal erosion,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",popularFor,tourism,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",hasRecreationalActivity,swimming,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",hasRecreationalActivity,surfing,"Greens Beach, Tasmania"
+"Greens Beach, Tasmania",protectedBy,Tasman National Park,"Greens Beach, Tasmania"
+Kaviya Thalaivan (1992 film),instanceOf,film,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),releaseYear,1992,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),director,A. Jagannathan,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),starring,Sathyaraj,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),starring,Rambha,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),starring,Goundamani,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),genre,comedy,Kaviya Thalaivan (1992 film)
+Kaviya Thalaivan (1992 film),language,Tamil,Kaviya Thalaivan (1992 film)
+subject,predicate,object,Moisis Michail Bourlas
+Kim Han-gil (footballer),instanceOf,Q639669,Kim Han-gil (footballer)
+Kim Han-gil (footballer),type,South Korean footballer,Kim Han-gil (footballer)
+Kim Han (footballer),givenName,Kim,Kim Han-gil (footballer)
+-gil (footballer),familyName,Han-gil,Kim Han-gil (footballer)
+Kim Han-gil (footballer),dateOfBirth,1991-05-14,Kim Han-gil (footballer)
+Kim Han-gil (footballer),playsPosition,Defender,Kim Han-gil (footballer)
+Kim Han-gil (footballer),playsFor,Gimpo FC,Kim Han-gil (footballer)
+Kim Han-gil (footballer),hasCareerPeriod,2010-present,Kim Han-gil (footballer)
+Kim Han-gil (footballer),isMale,true,Kim Han-gil (footballer)
+Arnika (NGO),instanceOf,non-governmental organization,Arnika (NGO)
+Arnika (NGO),foundedIn,1991,Arnika (NGO)
+Arnika (NGO),headquarteredIn,Czech Republic,Arnika (NGO)
+Arnika (NGO),founder,Tomáš Tenkrát,Arnika (NGO)
+Arnika (NGO),focus,environmental protection,Arnika (NGO)
+Arnika (NGO),focus,toxic substances,Arnika (NGO)
+Arnika (NGO),focus,chemical safety,Arnika (NGO)
+Arnika (NGO),worksIn,Europe,Arnika (NGO)
+Arnika (NGO),worksIn,Asia,Arnika (NGO)
+Arnika (NGO),partnerOf,Greenpeace,Arnika (NGO)
+Arnika (NGO),partnerOf,Friends of the Earth,Arnika (NGO)
+Chi2 Hydrae,instanceOf,Star,Chi2 Hydrae
+Chi2 Hydrae,locatedIn,Hydra (constellation),Chi2 Hydrae
+Chi2 Hydrae,spectralType,G8III,Chi2 Hydrae
+Chi2 Hydrae,brightness,4.35,Chi2 Hydrae
+Chi2 Hydrae,distanceFromEarth,244 light-years,Chi2 Hydrae
+Chi2 Hydrae,hasComponent,Chi2 Hydrae A,Chi2 Hydrae
+Chi2 Hydrae,hasComponent,Chi2 Hydrae B,Chi2 Hydrae
+Chi2 Hydrae,orbitalPeriod,1400 days,Chi2 Hydrae
+Chi2 Hydrae,mass,2.5 solar masses,Chi2 Hydrae
+Chi2 Hydrae,radius,10 solar radii,Chi2 Hydrae
+Havelland,instanceOf,district,Havelland
+Havelland,locatedIn,Brandenburg,Havelland
+Havelland,capital,Rathenow,Havelland
+Havelland,namedAfter,Havel River,Havelland
+Havelland,partOf,Germany,Havelland
+Havelland,category,Landkreis,Havelland
+Havelland,locatedNear,Berlin,Havelland
+Havelland,hasArea,1721.29,Havelland
+Havelland,population,45600,Havelland
+Discocactus boliviensis,instanceOf,Species,Discocactus boliviensis
+Discocactus boliviensis,genus,Discocactus,Discocactus boliviensis
+Discocactus boliviensis,family,Cactaceae,Discocactus boliviensis
+Discocactus boliviensis,nativeTo,Bolivia,Discocactus boliviensis
+Discocactus boliviensis,typeOf,Succulent plant,Discocactus boliviensis
+Discocactus boliviensis,hasFlowers,Yes,Discocactus boliviensis
+Discocactus boliviensis,flowerColor,White,Discocactus boliviensis
+Discocactus boliviensis,stemShape,Globular,Discocactus boliviensis
+Discocactus boliviensis,stemSize,Up to 30 cm in diameter,Discocactus boliviensis
+Discocactus boliviensis,spineColor,Brown,Discocactus boliviensis
+Discocactus boliviensis,spineNumber,Several,Discocactus boliviensis
+Discocactus boliviensis,growthHabit,Slow-growing,Discocactus boliviensis
+subject,predicate,object,Caladenia longicauda subsp. redacta
+subject,predicate,object,Corgémont railway station
+Big World (film),instanceOf,film,Big World (film)
+Big World (film),releaseYear,2004,Big World (film)
+Big World (film),director,Jia Zhangke,Big World (film)
+Big World (film),starring,Zhao Wei,Big World (film)
+Big World (film),starring,Wu Jing,Big World (film)
+Big World (film),country,China,Big World (film)
+Big World (film),genre,romance film,Big World (film)
+Big World (film),alsoKnownAs,A Big World,Big World (film)
+Big World (film),basedOn,Big World,Big World (film)
+Valeria Palacios (rower),instanceOf,Human,Valeria Palacios (rower)
+Valeria Palacios (rower),instanceOf,Rower,Valeria Palacios (rower)
+Valeria Palacios (rower),sexOrGender,Female,Valeria Palacios (rower)
+Valeria Palacios (rower),country,Peru,Valeria Palacios (rower)
+Valeria Palacios (rower),dateOfBirth,1965-02-18,Valeria Palacios (rower)
+Valeria Palacios (rower),competedIn,1984 Summer Olympics,Valeria Palacios (rower)
+Val (rower),competedIn,1988 Summer Olympics,Valeria Palacios (rower)
+Valeria Palacios (rower),participatedIn,Rowing at the 1988 Summer Olympics coxed four,Valeria Palacios (rower)
+subject,predicate,object,Liam Noble (footballer)
+Liam Noble (footballer),instanceOf,footballer,Liam Noble (footballer)
+Liam Noble (footballer),birthDate,1981-04-08,Liam Noble (footballer)
+Liam Noble (footballer),birthPlace,Newcastle upon Tyne,Liam Noble (footballer)
+Liam Noble (footballer),position,Midfielder,Liam Noble (footballer)
+Liam Noble (footballer),currentClub,Spennymoor Town,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,Hartlepool United,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,Mansfield Town,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,Notts County,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,Darlington,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,Gateshead,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,York City,Liam Noble (footballer)
+Liam Noble (footballer),previousClubs,South Shields,Liam Noble (footballer)
+Liam Noble (footballer),manager,Graeme Lee,Liam Noble (footballer)
+subject,predicate,object,Anđeo Zvizdović
+subject,predicate,object,Environment and Ecology Bureau

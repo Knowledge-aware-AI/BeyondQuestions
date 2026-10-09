@@ -1,0 +1,618 @@
+subject,predicate,object,subject_name
+Gulf of Varennes,instanceOf,gulf,Gulf of Varennes
+Gulf of Varennes,location,Canada,Gulf of Varennes
+Gulf of Varennes,partOf,Saint Lawrence River,Gulf of Varennes
+Gulf of Varennes,connectedTo,Atlantic Ocean,Gulf of Varennes
+Gulf of Varennes,isPartOf,Quebec,Gulf of Varennes
+Valdora Strait,instanceOf,strait,Valdora Strait
+Valdora Strait,locatedIn,Australia,Valdora Strait
+Valdora Strait,locatedIn,Tasmania,Valdora Strait
+Valdora Strait,connects,Bass Strait,Valdora Strait
+Valdora Strait,connects,Great Australian Bight,Valdora Strait
+Valdora Strait,separates,Tasmania,Valdora Strait
+Valdora Strait,separates,Mainland Australia,Valdora Strait
+International Airport of Andorra,instanceOf,airport,International Airport of Andorra
+International Airport of Andorra,location,Andorra,International Airport of Andorra
+International Airport of Andorra,serves,Andorra la Vella,International Airport of Andorra
+International Airport of Andorra,IATA,ALD,International Airport of Andorra
+International Airport of Andorra,ICAO,LEDA,International Airport of Andorra
+International Airport of Andorra,elevation,"1,013",International Airport of Andorra
+International Airport of Andorra,numberOfRunways,1,International Airport of Andorra
+International Airport of Andorra,type,international airport,International Airport of Andorra
+International Airport of Andorra,opened,1982,International Airport of Andorra
+subject,predicate,object,U-Bahn Dresden
+U-Bahn Dresden,instanceOf,Rapid transit system,U-Bahn Dresden
+U-Bahn Dresden,location,Dresden,U-Bahn Dresden
+U-Bahn Dresden,location,Germany,U-Bahn Dresden
+U-Bahn Dresden,numberOfLines,3,U-Bahn Dresden
+U-Bahn Dresden,numberOfStations,47,U-Bahn Dresden
+U-Bahn Dresden,operator,Dresdner Verkehrsbetriebe,U-Bahn Dresden
+U-Bahn Dresden,openingDate,1980-10-26,U-Bahn Dresden
+U-Bahn Dresden,type,Underground,U-Bahn Dresden
+U-Bahn Dresden,systemLength,75.4 km,U-Bahn Dresden
+Mediterranean Logistics Coordination Agency,instanceOf,logistics coordination agency,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,hasAbbreviation,MEDLOG,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,isPartOf,United Nations,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,headquarteredIn,"Rome, Italy",Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,providesLogisticsSupportFor,United Nations humanitarian operations,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,coordinates,maritime logistics,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,coordinates,land logistics,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,coordinates,air logistics,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,hasPartnershipsWith,International Organizations,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,hasPartnershipsWith,NGOs,Mediterranean Logistics Coordination Agency
+Mediterranean Logistics Coordination Agency,hasPartnershipsWith,Governments,Mediterranean Logistics Coordination Agency
+Milan Flying Public Transport System,instanceOf,Proposed Public Transport System,Milan Flying Public Transport System
+Milan Flying Public Transport System,location,Milan,Milan Flying Public Transport System
+Milan Flying Public Transport System,type,Flying Public Transport System,Milan Flying Public Transport System
+Milan Flying Public Transport System,proposedBy,City of Milan,Milan Flying Public Transport System
+Milan Flying Public Transport System,status,Proposed,Milan Flying Public Transport System
+subject,predicate,object,Helios Prize for Digital Arts
+Whispering Isles,instanceOf,Resort,Whispering Isles
+Whispering Isles,location,Maldives,Whispering Isles
+Whispering Isles,operator,Soneva Resorts,Whispering Isles
+Whispering Isles,category,Private island,Whispering Isles
+Whispering Isles,opened,1995,Whispering Isles
+Republic of Kallistos,instanceOf,micronation,Republic of Kallistos
+Republic of Kallistos,locatedIn,California,Republic of Kallistos
+Republic of Kallistos,foundedBy,Chris Baty,Republic of Kallistos
+Republic of Kallistos,foundedOn,December 26,Republic of Kallistos
+Republic of Kallistos,declaredIndependence,Yes,Republic of Kallistos
+Republic of Kallistos,isA,secessionist movement,Republic of Kallistos
+Republic of Kallistos,hasCapital,Lackrana,Republic of Kallistos
+Republic of Kallistos,isLocatedOn,Lackrana Island,Republic of Kallistos
+Bay of Seven Lanterns,instanceOf,bay,Bay of Seven Lanterns
+Bay of Seven Lanterns,location,China,Bay of Seven Lanterns
+Bay of Seven Lanterns,name,Bay of Seven Lanterns,Bay of Seven Lanterns
+Bay of Seven Lanterns,partOf,Qiantang River,Bay of Seven Lanterns
+Trans-Andean Hyperloop Corridor,instanceOf,proposed transportation project,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,location,Andean region,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,connects,Chile,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,connects,Colombia,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,connects,Peru,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,proposedBy,Hyperloop,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,modeOfTransport,Hyperloop,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,expectedSpeed,1200 km/h,Trans-Andean Hyperloop Corridor
+Trans-Andean Hyperloop Corridor,type,corridor,Trans-Andean Hyperloop Corridor
+Port of Nova Esperia,instanceOf,Port,Port of Nova Esperia
+Port of Nova Esperia,location,Nova Esperia,Port of Nova Esperia
+Port of Nova Esperia,partOf,Economy of Nova Esperia,Port of Nova Esperia
+Port of Nova Esperia,usedFor,Trade,Port of Nova Esperia
+Port of Nova Esperia,managedBy,Authority of Nova Esperia,Port of Nova Esperia
+subject,predicate,object,Strait of Mournes
+Ministry of Subterranean Affairs (Switzerland),instanceOf,Government Agency,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),country,Switzerland,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),responsibleFor,subterranean affairs,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),locatedIn,Bern,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),type,Ministry,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),focus,Geology,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),focus,Mining,Ministry of Subterranean Affairs (Switzerland)
+Ministry of Subterranean Affairs (Switzerland),focus,Subterranean infrastructure,Ministry of Subterranean Affairs (Switzerland)
+subject,predicate,object,Samsung Galaxy Fold Infinity
+subject,predicate,object,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,instanceOf,Monorail,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,location,Kreuzberg,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,country,Germany,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,type,Elevated railway,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,operator,Berlin Monorail,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,inception,1984,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,length,1.1 km,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,terminus,Westkreuz,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,terminus,Hauptbahnhof,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,maximumSpeed,70 km/h,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,gauge,"1,435 mm",Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,electrification,Overhead line,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,hasStation,Kottbusser Tor station,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,hasStation,Moritzplatz station,Kreuzberg Elevated Monorail
+Kreuzberg Elevated Monorail,hasStation,Ullsteinstraße station,Kreuzberg Elevated Monorail
+Nagoya Floating Airport,instanceOf,airport,Nagoya Floating Airport
+Nagoya Floating Airport,location,Japan,Nagoya Floating Airport
+Nagoya Floating Airport,locatedIn,Aichi Prefecture,Nagoya Floating Airport
+Nagoya Floating Airport,plannedToBeLocatedIn,Bay of Nagoya,Nagoya Floating Airport
+Nagoya Floating Airport,replaces,Chubu Centrair International Airport,Nagoya Floating Airport
+Nagoya Floating Airport,expectedToOpen,2028,Nagoya Floating Airport
+Osterode Ring Railway,instanceOf,Railway,Osterode Ring Railway
+Osterode Ring Railway,location,Germany,Osterode Ring Railway
+Osterode Ring Railway,locatedIn,Lower Saxony,Osterode Ring Railway
+Osterode Ring Railway,connects,Osterode am Harz,Osterode Ring Railway
+Osterode Ring Railway,connects,Goslar,Osterode Ring Railway
+Osterode Ring Railway,connects,Bad Harzburg,Osterode Ring Railway
+Osterode Ring Railway,connects,Seesen,Osterode Ring Railway
+Osterode Ring Railway,opened,1896,Osterode Ring Railway
+Osterode Ring Railway,length,30 km,Osterode Ring Railway
+Central African Meteorological Consortium,instanceOf,Organization,Central African Meteorological Consortium
+Central African Meteorological Consortium,location,Central Africa,Central African Meteorological Consortium
+Central African Meteorological Consortium,focus,Meteorology,Central African Meteorological Consortium
+Central African Meteorological Consortium,type,Consortium,Central African Meteorological Consortium
+Central African Meteorological Consortium,hasGoal,Improve weather forecasting,Central African Meteorological Consortium
+Central African Meteorological Consortium,hasGoal,Enhance climate change mitigation,Central African Meteorological Consortium
+Central African Meteorological Consortium,partnerOf,African Meteorological Society,Central African Meteorological Consortium
+Central African Meteorological Consortium,partnerOf,World Meteorological Organization,Central African Meteorological Consortium
+Google Pixel Fold Ultra,instanceOf,Smartphone,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,manufacturer,Google,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,model,Pixel Fold Ultra,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,operatingSystem,Android,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,releaseDate,2023-06-27,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,displayType,Foldable OLED,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,processor,Google Tensor G2,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,ram,12 GB,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,storage,512 GB,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,rearCamera,50 MP,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,frontCamera,8 MP,Google Pixel Fold Ultra
+Google Pixel Fold Ultra,batteryCapacity,4823 mAh,Google Pixel Fold Ultra
+subject,predicate,object,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,instanceOf,Pneumatic Tube Postal Network,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,location,Berlin,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,country,Germany,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,startDate,1896,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,endDate,1922,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,operator,Deutsche Reichspost,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,type,Postal System,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,infrastructureType,Pneumatic Tube,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,technicalSpecification,Tube diameter: 20 cm; Tube length: 14 km,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,hasPart,Pneumatic tube mail car,Berlin Pneumatic Tube Postal Network
+subject,predicate,object,Treaty of Reykjavik on Lunar Resource Sharing
+Tesla Cybertruck Mini,instanceOf,Electric Vehicle,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,partOf,Tesla Cybertruck,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,manufacturer,Tesla Inc.,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,modelYear,2020,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,vehicleType,Pickup Truck,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,designer,Franz von Holzhausen,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,productionStatus,Concept Vehicle,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,wheelbase,305 cm,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,length,599 cm,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,width,208 cm,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,height,175 cm,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,curbWeight,"3,100 kg",Tesla Cybertruck Mini
+Tesla Cybertruck Mini,topSpeed,210 km/h,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,acceleration,0-100 km/h in 3 s,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,driveType,All-Wheel Drive,Tesla Cybertruck Mini
+Tesla Cybertruck Mini,transmission,Single Speed Automatic,Tesla Cybertruck Mini
+subject,predicate,object,Vostok Ice Shelf Research Station
+subject,predicate,object,World Federation of Competitive Origami
+World Congress on Interspecies Communication,instanceOf,conference,World Congress on Interspecies Communication
+World Congress on Interspecies Communication,hasLocation,United States,World Congress on Interspecies Communication
+World Congress on Interspecies Communication,hasSubject,Interspecies Communication,World Congress on Interspecies Communication
+World Congress on Interspecies Communication,hasSubject,Animal Communication,World Congress on Interspecies Communication
+World Congress on Interspecies Communication,hasSubject,Human-Animal Communication,World Congress on Interspecies Communication
+World Congress on Interspecies Communication,isLocatedIn,United States,World Congress on Interspecies Communication
+Mount Corvindale,instanceOf,Mountain,Mount Corvindale
+Mount Corvindale,locatedIn,Antarctica,Mount Corvindale
+Mount Corvindale,locatedIn,Ellsworth Mountains,Mount Corvindale
+Mount Corvindale,hasHeight,"4,320",Mount Corvindale
+Mount Corvindale,hasElevation,"4,320",Mount Corvindale
+Mount Corvindale,isPartOf,Ellsworth Mountains,Mount Corvindale
+Union of Caspian Trade Cooperatives,instanceOf,Cooperative,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,locatedIn,Caspian Sea,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasPurpose,Promoting trade,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasMember,Iran,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasMember,Russia,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasMember,Azerbaijan,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasMember,Kazakhstan,Union of Caspian Trade Cooperatives
+Union of Caspian Trade Cooperatives,hasMember,Turkmenistan,Union of Caspian Trade Cooperatives
+Lake Thanassos,instanceOf,lake,Lake Thanassos
+Lake Thanassos,locatedIn,Greece,Lake Thanassos
+Lake Thanassos,locatedIn,Kavala regional unit,Lake Thanassos
+Lake Thanassos,hasPart,Mount Pangaion,Lake Thanassos
+Lake Thanassos,isConnectedTo,Aegean Sea,Lake Thanassos
+Lake Thanassos,isConnectedTo,Nestos River,Lake Thanassos
+Lake Thanassos,hasArea,37 km²,Lake Thanassos
+Lake Thanassos,hasMaximumDepth,1.7 m,Lake Thanassos
+Danube-Rhine Maglev Line,instanceOf,proposed railway line,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,location,Europe,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,connects,Danube River,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,connects,Rhine River,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,proposedBy,European Union,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,type,maglev,Danube-Rhine Maglev Line
+Danube-Rhine Maglev Line,status,proposed,Danube-Rhine Maglev Line
+Kingdom of Etruria,instanceOf,Kingdom,Kingdom of Etrusia
+Kingdom of Etruria,locatedIn,Italy,Kingdom of Etrusia
+Kingdom of Etruria,existedIn,18th century,Kingdom of Etrusia
+Kingdom of Etruria,existedIn,19th century,Kingdom of Etrusia
+Kingdom of Etruria,replacedBy,Grand Duchy of Tuscany,Kingdom of Etrusia
+Kingdom of Etruria,capital,Florence,Kingdom of Etrusia
+Kingdom of Etruria,dissolved,1801-03-21,Kingdom of Etrusia
+Kingdom of Etruria,established,1801-03-21,Kingdom of Etrusia
+Kingdom of Etruria,leader,"Louis I, Grand Duke of Tuscany",Kingdom of Etrusia
+International Chess Federation for Artificial Intelligences,instanceOf,Organization,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,hasAbbreviation,ICFAI,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,participatesIn,Computer Chess Championship,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,organizes,Artificial Intelligence Chess Tournament,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,hasMember,Chess Engine,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,hasMember,Artificial Intelligence,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,createdBy,Chess Community,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,collaboratesWith,FIDE,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,focusesOn,Chess,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,focusesOn,Artificial Intelligence,International Chess Federation for Artificial Intelligences
+Dresden Skybridge Transit System,instanceOf,people mover,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,location,Dresden,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,location,Germany,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,transportType,monorail,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,operator,Dresden public transportation,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,status,operational,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,opened,2010,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,length,2.5 km,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,gauge,standard gauge,Dresden Skybridge Transit System
+Dresden Skybridge Transit System,electrification,yes,Dresden Skybridge Transit System
+Institute for the Study of Forgotten Languages,instanceOf,organization,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,locatedIn,New York City,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,foundedBy,Jeffrey Henning,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,focusesOn,language preservation,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,supports,endangered languages,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,conducts,linguistic research,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,provides,language documentation,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,offers,language courses,Institute for the Study of Forgotten Languages
+Institute for the Study of Forgotten Languages,partnersWith,other organizations,Institute for the Study of Forgotten Languages
+The Aldric Peninsula,instanceOf,Peninsula,The Aldric Peninsula
+The Aldric Peninsula,locatedIn,California,The Aldric Peninsula
+The Aldric Peninsula,partOf,San Francisco Bay Area,The Aldric Peninsula
+The Aldric Peninsula,locatedNear,San Francisco,The Aldric Peninsula
+The Aldric Peninsula,namedAfter,H. H. Aldrich,The Aldric Peninsula
+Order of the Silver Compass,instanceOf,Secret Society,Order of the Silver Compass
+Order of the Silver Compass,foundBy,Philip Pullman,Order of the Silver Compass
+Order of the Silver Compass,in,His Dark Materials,Order of the Silver Compass
+Order of the Silver Compass,alsoKnownAs,The Magisterium,Order of the Silver Compass
+Order of the Silver Compass,hasPurpose,Counteracting the Authority,Order of the Silver Compass
+Order of the Silver Compass,ledBy,The Keeper of the Alethiometer,Order of the Silver Compass
+Order of the Silver Compass,opposes,The Authority,Order of the Silver Compass
+Order of the Silver Compass,hasMember,Lee Scoresby,Order of the Silver Compass
+Order of the Silver Compass,hasMember,Hester,Order of the Silver Compass
+Order of the Silver Compass,hasMember,Farder Coram,Order of the Silver Compass
+Order of the Silver Compass,existsIn,Parallel Universe,Order of the Silver Compass
+Antarctic Sovereign Wealth Fund,instanceOf,Sovereign Wealth Fund,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,country,Antarctica,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,type,Investment Fund,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,managedBy,None,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,assetsUnderManagement,0 USD,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,established,None,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,purpose,None,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,headquarters,None,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,hasCEO,None,Antarctic Sovereign Wealth Fund
+Antarctic Sovereign Wealth Fund,isPartOf,Antarctic Economic System,Antarctic Sovereign Wealth Fund
+Bratislava Underwater Metro,instanceOf,Underwater Metro,Bratislava Underwater Metro
+Bratislava Underwater Metro,locatedIn,Bratislava,Bratislava Underwater Metro
+Bratislava Underwater Metro,typeOf,Metro System,Bratislava Underwater Metro
+Bratislava Underwater Metro,modeOfTransportation,Subway,Bratislava Underwater Metro
+Bratislava Underwater Metro,hasDepth,underwater,Bratislava Underwater Metro
+São Paulo Vertical Farming District,instanceOf,vertical farming district,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,locatedIn,São Paulo,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,typeOf,agricultural project,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,focusOn,sustainable agriculture,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,feature,vertical farming,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,locatedIn,Brazil,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,partOf,sustainable urban planning,São Paulo Vertical Farming District
+São Paulo Vertical Farming District,relatedTo,urban agriculture,São Paulo Vertical Farming District
+subject,predicate,object,Amazon Kindle Infinite
+Global Registry of Extinct Currencies,instanceOf,registry,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,tracks,extinct currencies,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,type,online database,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,maintainer,Central Bank of Germany,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,maintainer,International Monetary Fund,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,hasData,currency data,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,providesInformation,currency history,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,isUsedBy,researchers,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,isUsedBy,economists,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,isUsedBy,historians,Global Registry of Extinct Currencies
+Global Registry of Extinct Currencies,hasDocumentation,API documentation,Global Registry of Extinct Currencies
+Pan-Asian High-Speed Rail Consortium,instanceOf,consortium,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,focus,high-speed rail,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,scope,Pan-Asian,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,type,railway organization,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,goal,promote cooperation,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,goal,develop high-speed rail,Pan-Asian High-Speed Rail Consortium
+Pan-Asian High-Speed Rail Consortium,goal,enhance connectivity,Pan-Asian High-Speed Rail Consortium
+Mediterranean Desalination Treaty of 1994,instanceOf,Treaty,Mediterranean Desalination Treaty of 1994
+Mediterranean Desalination Treaty of 1994,signedOn,1994,Mediterranean Desalination Treaty of 1994
+Mediterranean Desalination Treaty of 1994,subject,Desalination,Mediterranean Desalination Treaty of 1994
+Mediterranean Desalination Treaty of 1994,location,Mediterranean,Mediterranean Desalination Treaty of 1994
+Mediterranean Desalination Treaty of 1994,type,International agreement,Mediterranean Desalination Treaty of 1994
+subject,predicate,object,Xiaomi Mi Quantum 12
+Gulf of Kestrel,instanceOf,gulf,Gulf of Kestrel
+Gulf of Kestrel,locatedIn,Antarctica,Gulf of Kestrel
+Gulf of Kestrel,locatedIn,Ellsworthland,Gulf of Kestrel
+Gulf of Kestrel,partOf,Southern Ocean,Gulf of Kestrel
+Gulf of Kestrel,extendsOnDirection,north,Gulf of Kestrel
+Nairobi Solar Rail Network,instanceOf,Railway,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,location,Nairobi,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,poweredBy,Solar Energy,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,type,Public Transportation System,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,operator,Kenya Railways,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,status,Operational,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,inaugurationDate,2019-10-26,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,length,1.254 km,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,numberOfStations,5,Nairobi Solar Rail Network
+Nairobi Solar Rail Network,maximumSpeed,120 km/h,Nairobi Solar Rail Network
+Voynich Institute for Cryptographic Studies,instanceOf,organization,Voynich Institute for Cryptographic Studies
+Voynich Institute for Cryptographic Studies,focus,cryptography,Voynich Institute for Cryptographic Studies
+Voynich Institute for Cryptographic Studies,namedAfter,Wilfrid Voynich,Voynich Institute for Cryptographic Studies
+Voynich Institute for Cryptographic Studies,study,cryptanalysis,Voynich Institute for Cryptographic Studies
+Voynich Institute for Cryptographic Studies,location,United States,Voynich Institute for Cryptographic Studies
+subject,predicate,object,National Museum of Unbuilt Architecture
+subject,predicate,object,Interplanetary Postal Union
+Interplanetary Postal Union,instanceOf,organization,Interplanetary Postal Union
+Interplanetary Postal Union,hasAbbreviation,IPU,Interplanetary Postal Union
+Interplanetary Postal Union,isLocatedIn,International,Interplanetary Postal Union
+Interplanetary Postal Union,type,treaty,Interplanetary Postal Union
+Interplanetary Postal Union,established,1959-09-15,Interplanetary Postal Union
+Interplanetary Postal Union,headquarteredIn,Bern,Interplanetary Postal Union
+Interplanetary Postal Union,hasMembership,member states,Interplanetary Postal Union
+Interplanetary Postal Union,purpose,coordinate postal services,Interplanetary Postal Union
+Interplanetary Postal Union,regulates,postal services,Interplanetary Postal Union
+Interplanetary Postal Union,governedBy,Universal Postal Congress,Interplanetary Postal Union
+Frankfurt Zeppelin Terminal,instanceOf,air terminal,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,locatedIn,Frankfurt,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,usedFor,zeppelin,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,airportCode,FRA,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,serves,Frankfurt am Main,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,isPartOf,Frankfurt Airport,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,hasLocation,Germany,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,wasBuiltIn,1930s,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,architect,Paul Otto,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,historicalEvent,Zeppelin landing,Frankfurt Zeppelin Terminal
+subject,predicate,object,Wroclaw Sky Tram
+subject,predicate,object,The Order of the Eternal Flame (Belgium)
+Hovercraft Route 9 (English Channel),instanceOf,Hovercraft Route,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),location,English Channel,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),operator,Hoverspeed,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),connects,England,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),connects,France,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),terminusA,Dover,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),terminusB,Calais,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),type,Hovercraft Route,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),status,Discontinued,Hovercraft Route 9 (English Channel)
+subject,predicate,object,Lisbon Floating Bridge
+Apple Vision Nova,instanceOf,Smartphone,Apple Vision Nova
+Apple Vision Nova,manufacturer,Apple Inc.,Apple Vision Nova
+Apple Vision Nova,operatingSystem,iOS,Apple Vision Nova
+Apple Vision Nova,model,Nova,Apple Vision Nova
+Apple Vision Nova,releaseDate,2023-09-01,Apple Vision Nova
+Apple Vision Nova,processor,A15 Bionic,Apple Vision Nova
+Apple Vision Nova,storage,128GB,Apple Vision Nova
+Apple Vision Nova,ram,6GB,Apple Vision Nova
+Apple Vision Nova,rearCamera,Dual-camera setup,Apple Vision Nova
+Apple Vision Nova,frontCamera,12MP,Apple Vision Nova
+Apple Vision Nova,batteryCapacity,4000mAh,Apple Vision Nova
+Apple Vision Nova,displaySize,6.1 inches,Apple Vision Nova
+Apple Vision Nova,displayResolution,1080 x 2536 pixels,Apple Vision Nova
+Siberian Permafrost Preservation Authority,instanceOf,organization,Siberian Permafrost Preservation Authority
+Siberian Permafrost Preservation Authority,location,Siberia,Siberian Permafrost Preservation Authority
+Siberian Permafrost Preservation Authority,purpose,preservation,Siberian Permafrost Preservation Authority
+Siberian Permafrost Preservation Authority,focus,permafrost,Siberian Permafrost Preservation Authority
+Siberian Permafrost Preservation Authority,relatedTo,climate change,Siberian Permafrost Preservation Authority
+Siberian Permafrost Preservation Authority,type,authority,Siberian Permafrost Preservation Authority
+Andes Pacific Railway,instanceOf,Railway Company,Andes Pacific Railway
+Andes Pacific Railway,location,Chile,Andes Pacific Railway
+Andes Pacific Railway,operatesIn,Antofagasta Region,Andes Pacific Railway
+Andes Pacific Railway,operatesIn,Atacama Region,Andes Pacific Railway
+Andes Pacific Railway,connects,Pacific Ocean,Andes Pacific Railway
+Andes Pacific Railway,connects,Bolivia,Andes Pacific Railway
+Andes Pacific Railway,connects,Argentina,Andes Pacific Railway
+Andes Pacific Railway,ownedBy,State,Andes Pacific Railway
+Andes Pacific Railway,length,"1,700 km",Andes Pacific Railway
+Andes Pacific Railway,terminus,Iquique,Andes Pacific Railway
+Andes Pacific Railway,terminus,La Negrita,Andes Pacific Railway
+Andes Pacific Railway,opened,1874,Andes Pacific Railway
+World Bank for Renewable Water Resources,instanceOf,organization,World Bank for Renewable Water Resources
+World Bank for Renewable Water Resources,name,World Bank for Renewable Water Resources,World Bank for Renewable Water Resources
+World Bank for Renewable Water Resources,focus,renewable water resources,World Bank for Renewable Water Resources
+World Bank for Renewable Water Resources,type,International Financial Institution,World Bank for Renewable Water Resources
+subject,predicate,object,Samsung Neural Interface Band
+The Icelandic Institute for Volcanic Diplomacy,instanceOf,Organization,The Icelandic Institute for Volcanic Diplomacy
+The Icelandic Institute for Volcanic Diplomacy,locatedIn,Iceland,The Icelandic Institute for Volcanic Diplomacy
+The Icelandic Institute for Volcanic Diplomacy,focus,Volcanic Diplomacy,The Icelandic Institute for Volcanic Diplomacy
+The Icelandic Institute for Volcanic Diplomacy,focus,International Relations,The Icelandic Institute for Volcanic Diplomacy
+The Icelandic Institute for Volcanic Diplomacy,type,Think tank,The Icelandic Institute for Volcanic Diplomacy
+subject,predicate,object,Tokyo Subterranean Botanical Gardens
+World Academy of Competitive Beekeeping,instanceOf,Organization,World Academy of Competitive Beekeeping
+World Academy of Competitive Beekeeping,hasAbbreviation,WACB,World Academy of Competitive Beekeeping
+World Academy of Competitive Beekeeping,location,United States,World Academy of Competitive Beekeeping
+World Academy of Competitive Beekeeping,foundingLocation,United States,World Academy of Competitive Beekeeping
+World Academy of Competitive Beekeeping,subject,Competitive Beekeeping,World Academy of Competitive Beekeeping
+Qatar Vertical City Initiative,instanceOf,Urban Planning Project,Qatar Vertical City Initiative
+Qatar Vertical City Initiative,location,Qatar,Qatar Vertical City Initiative
+Qatar Vertical City Initiative,purpose,Sustainable Development,Qatar Vertical City Initiative
+Qatar Vertical City Initiative,type,Vertical City,Qatar Vertical City Initiative
+Qatar Vertical City Initiative,status,Proposed,Qatar Vertical City Initiative
+Qatar Vertical City Initiative,partOf,Qatar's Development Plan,Qatar Vertical City Initiative
+Mount Ostrenfeld,instanceOf,Mountain,Mount Ostrenfeld
+Mount Ostrenfeld,locatedIn,Antarctica,Mount Ostrenfeld
+Mount Ostrenfeld,locatedIn,Ellsworth Mountains,Mount Ostrenfeld
+Mount Ostrenfeld,hasHeight,4180,Mount Ostrenfeld
+Mount Ostrenfeld,hasHeight,meters,Mount Ostrenfeld
+Mount Ostrenfeld,namedAfter,Hans Ostrenfeld,Mount Ostrenfeld
+Vienna Circular Canal,instanceOf,canal,Vienna Circular Canal
+Vienna Circular Canal,locatedIn,Vienna,Vienna Circular Canal
+Vienna Circular Canal,partOf,Danube Canal,Vienna Circular Canal
+Vienna Circular Canal,connects,Danube River,Vienna Circular Canal
+Vienna Circular Canal,connects,Lobau River,Vienna Circular Canal
+Vienna Circular Canal,length,6.7 km,Vienna Circular Canal
+Vienna Circular Canal,built,1784-1795,Vienna Circular Canal
+Vienna Circular Canal,commissionedBy,"Joseph II, Holy Roman Emperor",Vienna Circular Canal
+Vienna Circular Canal,designedBy,Franz Anton von Rintl,Vienna Circular Canal
+Saharan Solar Belt Initiative,instanceOf,Renewable Energy Project,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,locatedIn,Sahara Desert,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,proposedBy,Desertec,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,aimsAt,generateSolarEnergy,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,expectedCapacity,15% of global energy needs,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,type,Solar Power Project,Saharan Solar Belt Initiative
+Saharan Solar Belt Initiative,scope,Africa-Europe Energy Corridor,Saharan Solar Belt Initiative
+Order of the Golden Sextant,instanceOf,Chivalric order,Order of the Golden Sextant
+Order of the Golden Sextant,foundedBy,John V of Portugal,Order of the Golden Sextant
+Order of the Golden Sextant,country,Portugal,Order of the Golden Sextant
+Order of the Golden Sextant,yearFounded,1645,Order of the Golden Sextant
+Order of the Golden Sextant,sovereign,Portuguese monarch,Order of the Golden Sextant
+Order of the Golden Sextant,ordersHeadquarters,Lisbon,Order of the Golden Sextant
+Order of the Golden Sextant,type,Chivalric order,Order of the Golden Sextant
+Order of the Golden Sextant,alsoKnownAs,Ordem do Sextant d'Auro,Order of the Golden Sextant
+Order of the Golden Sextant,isPartOf,Orders of chivalry of Portugal,Order of the Golden Sextant
+Helsinki Ice Road Network,instanceOf,road network,Helsinki Ice Road Network
+Helsinki Ice Road Network,location,Helsinki,Helsinki Ice Road Network
+Helsinki Ice Road Network,type,ice road,Helsinki Ice Road Network
+Helsinki Ice Road Network,usedFor,transportation,Helsinki Ice Road Network
+Helsinki Ice Road Network,seasonal,yes,Helsinki Ice Road Network
+Helsinki Ice Road Network,operatesDuring,winter,Helsinki Ice Road Network
+Helsinki Ice Road Network,connects,Baltic Sea,Helsinki Ice Road Network
+Helsinki Ice Road Network,connects,Finland,Helsinki Ice Road Network
+Helsinki Ice Road Network,partOf,Finland transport network,Helsinki Ice Road Network
+Helsinki Ice Road Network,managedBy,Finnish Transport Infrastructure Agency,Helsinki Ice Road Network
+subject,predicate,object,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,instanceOf,Flood Barrier Project,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,location,Mekong Delta,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,purpose,Flood control,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,purpose,Water management,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,type,Infrastructure project,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,expectedOutcome,Protection of agricultural land,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,expectedOutcome,Prevention of flooding,Mekong Delta Flood Barrier Project
+Mekong Delta Flood Barrier Project,partOf,Vietnamese government's flood management plans,Mekong Delta Flood Barrier Project
+subject,predicate,object,Cape Horn Lighthouse Museum
+Baltic Undersea Rail Tunnel,instanceOf,undersea tunnel,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,location,Baltic Sea,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,connects,Poland,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,connects,Denmark,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,connects,Germany,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,hasLength,17.6 km,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,hasDepth,40 m,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,hasRailwayTrack,railway track,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,isLocatedIn,European Union,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,planned,yes,Baltic Undersea Rail Tunnel
+Baltic Undersea Rail Tunnel,status,proposed,Baltic Undersea Rail Tunnel
+International Federation of Competitive Cloud Watching,instanceOf,organization,International Federation of Competitive Cloud Watching
+International Federation of Competitive Cloud Watching,hasAbbreviation,IFCCC,International Federation of Competitive Cloud Watching
+International Federation of Competitive Cloud Watching,isA,federation,International Federation of Competitive Cloud Watching
+International Federation of Competitive Cloud Watching,concernedWith,cloud watching,International Federation of Competitive Cloud Watching
+International Federation of Competitive Cloud Watching,hasEvent,cloud watching competitions,International Federation of Competitive Cloud Watching
+Congo Basin Hydroelectric Consortium,instanceOf,Consortium,Congo Basin Hydroelectric Consortium
+Congo Basin Hydroelectric Consortium,location,Congo Basin,Congo Basin Hydroelectric Consortium
+Congo Basin Hydroelectric Consortium,focus,Hydroelectric Power,Congo Basin Hydroelectric Consortium
+Congo Basin Hydroelectric Consortium,type,Energy Consortium,Congo Basin Hydroelectric Consortium
+Congo Basin Hydroelectric Consortium,relatedTo,Sustainable Development,Congo Basin Hydroelectric Consortium
+The Lisbon Protocol on Deep Sea Mining,instanceOf,Treaty,The Lisbon Protocol on Deep Sea Mining
+The Lisbon Protocol on Deep Sea Mining,location,Lisbon,The Lisbon Protocol on Deep Sea Mining
+The Lisbon Protocol on Deep Sea Mining,topic,Deep Sea Mining,The Lisbon Protocol on Deep Sea Mining
+The Lisbon Protocol on Deep Sea Mining,type,International Agreement,The Lisbon Protocol on Deep Sea Mining
+The Lisbon Protocol on Deep Sea Mining,hasPart,Protocol,The Lisbon Protocol on Deep Sea Mining
+The Lisbon Protocol on Deep Sea Mining,name,The Lisbon Protocol on Deep Sea Mining,The Lisbon Protocol on Deep Sea Mining
+Kyoto Robotics Heritage Museum,instanceOf,museum,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,locatedIn,Kyoto,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,focusesOn,robotics,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,typeOfCollection,heritage collection,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,hasCollection,robotics exhibits,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,isPopularAmong,tourists,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,hasVisitorInformation,Japanese language,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,hasVisitorInformation,English language,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Monday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Tuesday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Wednesday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Thursday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Friday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Saturday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,openOn,Sunday,Kyoto Robotics Heritage Museum
+Kyoto Robotics Heritage Museum,hasGiftShop,yes,Kyoto Robotics Heritage Museum
+subject,predicate,object,Jakarta Floating Metro
+subject,predicate,object,Falkland Islands Maritime University
+Falkland Islands Maritime University,instanceOf,University,Falkland Islands Maritime University
+Falkland Islands Maritime University,locatedIn,Falkland Islands,Falkland Islands Maritime University
+Falkland Islands Maritime University,focusesOn,Maritime Education,Falkland Islands Maritime University
+Falkland Islands Maritime University,offers,Undergraduate Degree,Falkland Islands Maritime University
+Falkland Islands Maritime University,offers,Postgraduate Degree,Falkland Islands Maritime University
+Falkland Islands Maritime University,hasCampus,Falkland Islands,Falkland Islands Maritime University
+Falkland Islands Maritime University,isAffiliatedWith,Falkland Islands Government,Falkland Islands Maritime University
+Strasbourg European Drone Corridor,instanceOf,Drone Corridor,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,locatedIn,Strasbourg,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,locatedIn,France,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,partOf,European Union,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,establishedFor,drone testing,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,operatedBy,European aviation authorities,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,hasPurpose,facilitate drone testing and development,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,features,controlled airspace,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,features,real-time monitoring,Strasbourg European Drone Corridor
+Strasbourg European Drone Corridor,supports,drone innovation,Strasbourg European Drone Corridor
+Panama Skyway Bridge,instanceOf,bridge,Panama Skyway Bridge
+Panama Skyway Bridge,location,Panama,Panama Skyway Bridge
+Panama Skyway Bridge,crosses,Panama Canal,Panama Skyway Bridge
+Panama Skyway Bridge,carries,road,Panama Skyway Bridge
+Panama Skyway Bridge,hasPart,tower,Panama Skyway Bridge
+Panama Skyway Bridge,hasPart,pier,Panama Skyway Bridge
+Panama Skyway Bridge,hasPart,span,Panama Skyway Bridge
+Panama Skyway Bridge,connects,North America,Panama Skyway Bridge
+Panama Skyway Bridge,connects,South America,Panama Skyway Bridge
+The Grand Archive of Unsent Letters,instanceOf,archive,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,instanceOf,collection of letters,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,contains,unsent letters,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,preserves,historical documents,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,holds,letters from various individuals,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,provides insight into,human emotions and experiences,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,serves as a resource for,researchers and scholars,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,offers a unique perspective on,the human condition,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,comprises,a vast collection of correspondence,The Grand Archive of Unsent Letters
+The Grand Archive of Unsent Letters,is a valuable resource for,historians and literary critics,The Grand Archive of Unsent Letters
+subject,predicate,object,Yerevan Cable Car Network
+Order of the Perpetual Almanac,instanceOf,Secret Society,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,foundedBy,Thomas Dekker,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,foundedIn,London,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,relatedTo,Thomas Dekker's works,Order of the Perpetual Almanac
+Antikythera Institute for Ancient Machines,instanceOf,Research Institute,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,locatedIn,Greece,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,focus,Ancient Greek technology,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,focus,Antikythera mechanism,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,partner,National Archaeological Museum,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,collaboratesWith,University of Athens,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,studies,Ancient Greek engineering,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,preserves,Ancient Greek artifacts,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,advances,Knowledge of ancient technology,Antikythera Institute for Ancient Machines
+Trans-Siberian Hyperloop,instanceOf,Hyperloop,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,location,Russia,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,proposedBy,Russia,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,connects,Moscow,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,connects,Kazan,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,connects,Yekaterinburg,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,length,"approximately 2,000 km",Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,plannedSpeed,up to 300 km/h,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,expectedCompletion,late 2020s or early 2030s,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,type,Transportation project,Trans-Siberian Hyperloop
+Trans-Siberian Hyperloop,fundedBy,Russian government,Trans-Siberian Hyperloop
+The Pyrenees Transboundary Water Authority,instanceOf,transboundary water authority,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,locatedIn,Pyrenees,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,manages,water resources,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,involvedIn,water management,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,hasJurisdictionOver,rivers,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,hasJurisdictionOver,streams,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,hasJurisdictionOver,lakes,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,partOf,European Union,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,collaboratesWith,Spain,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,collaboratesWith,France,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,establishedTo,manage water resources,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,aimsTo,protect water quality,The Pyrenees Transboundary Water Authority
+The Pyrenees Transboundary Water Authority,aimsTo,promote sustainable water use,The Pyrenees Transboundary Water Authority
+Reykjavik Geothermal Skyline Project,instanceOf,Renewable Energy Project,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,locatedIn,Reykjavik,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,type,Geothermal Power Plant,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,uses,Geothermal Energy,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,hasCapacity,20 MW,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,operator,Reykjavik Energy,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,status,Operational,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,constructionStarted,2016,Reykjavik Geothermal Skyline Project
+Reykjavik Geothermal Skyline Project,commissioned,2016,Reykjavik Geothermal Skyline Project
+World Registry of Fictional Nations,instanceOf,Registry,World Registry of Fictional Nations
+World Registry of Fictional Nations,tracks,Fictional Nations,World Registry of Fictional Nations
+World Registry of Fictional Nations,locatedAt,Internet,World Registry of Fictional Nations
+World Registry of Fictional Nations,maintainer,Mikko Myllyniemi,World Registry of Fictional Nations
+World Registry of Fictional Nations,registrationStarted,2006,World Registry of Fictional Nations
+World Registry of Fictional Nations,categorizes,Fictional Entities,World Registry of Fictional Nations
+Manila Bay Reclamation Authority,instanceOf,Government Agency,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,location,Manila Bay,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,responsibleFor,Reclamation of Manila Bay,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,partOf,Philippine Government,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,establishedBy,Republic Act,Manila Bay Reclamation Authority
+subject,predicate,object,The Bern Convention on Synthetic Biology
+subject,predicate,object,Sable Island Autonomous Research Zone
+Nokia Aurora X1,instanceOf,Smartphone,Nokia Aurora X1
+Nokia Aurora X1,manufacturer,Nokia,Nokia Aurora X1
+Nokia Aurora X1,operatingSystem,Android,Nokia Aurora X1
+Nokia Aurora X1,modelName,Nokia Aurora X1,Nokia Aurora X1
+Nokia Aurora X1,releaseDate,not found,Nokia Aurora X1
+Nokia Aurora X1,displaySize,not found,Nokia Aurora X1
+Nokia Aurora X1,ram,not found,Nokia Aurora X1
+Nokia Aurora X1,storage,not found,Nokia Aurora X1
+Nokia Aurora X1,rearCamera,not found,Nokia Aurora X1
+Nokia Aurora X1,frontCamera,not found,Nokia Aurora X1
+Nokia Aurora X1,batteryCapacity,not found,Nokia Aurora X1

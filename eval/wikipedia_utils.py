@@ -162,14 +162,16 @@ def word_count(text: str) -> int:
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "YOUR_BRAVE_API_KEY_HERE")
 
 
-def search_web(entity_name: str, num_results: int = 10) -> list:
+def search_web(entity_name: str, num_results: int = 10, offset: int = 0) -> list:
     """
     Search the web for an entity using Brave Search API.
-    
+
     Args:
         entity_name (str): The name of the entity to search for.
         num_results (int): Number of search results to return (default: 10). Maximum is 20 for Brave Search API.
-    
+        offset (int): Pagination offset in units of `num_results` pages (default: 0). Brave supports offset 0-9,
+            so combined with count=20 this allows retrieving up to 200 results total (10 pages x 20 per page).
+
     Returns:
         list: List of dicts with 'title', 'url', 'snippet' keys, or empty list if failed.
     """
@@ -178,25 +180,27 @@ def search_web(entity_name: str, num_results: int = 10) -> list:
     if num_results > MAX_BRAVE_RESULTS:
         logger.warning(f"Brave Search API supports max {MAX_BRAVE_RESULTS} results, capping from {num_results}")
         num_results = MAX_BRAVE_RESULTS
-    
+
     if BRAVE_API_KEY == "YOUR_BRAVE_API_KEY_HERE":
         logger.warning("Brave API key not configured. Set BRAVE_API_KEY environment variable.")
         return []
-    
+
     url = "https://api.search.brave.com/res/v1/web/search"
-    
+
     headers = {
         "Accept": "application/json",
         "X-Subscription-Token": BRAVE_API_KEY
     }
-    
+
     params = {
         "q": entity_name,
         "count": num_results,
     }
-    
+    if offset:
+        params["offset"] = offset
+
     try:
-        logger.info(f"Searching web for: {entity_name}")
+        logger.info(f"Searching web for: {entity_name} (offset={offset})")
         response = requests.get(url, headers=headers, params=params, timeout=10)
         logger.info(f"Brave Search API response status: {response.status_code} for {entity_name}")
         response.raise_for_status()

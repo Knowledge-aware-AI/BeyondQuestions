@@ -1,0 +1,2098 @@
+subject,predicate,object,subject_name
+Little Brosna River,instanceOf,river,Little Brosna River
+Little Brosna River,locatedIn,Ireland,Little Brosna River
+Little Brosna River,tributaryOf,River Brosna,Little Brosna River
+Vida Movahed,instanceOf,Human,Vida Movahed
+Vida Movahed,isKnownFor,Protest against compulsory hijab,Vida Movahed
+Vida Movahed,isCitizenOf,Iran,Vida Movahed
+Vida Movahed,givenName,Vida,Vida Movahed
+Vida Movahed,familyName,Movahed,Vida Movahed
+Bhoomidevi Pushpiniyayi,instanceOf,Indian politician,Bhoomidevi Pushpiniyayi
+Bhoomidevi Pushpiniyayi,isMemberOf,Kerala Legislative Assembly,Bhoomidevi Pushpiniyayi
+Bhoomidevi Pushpiniyayi,holdsPosition,Member of the Kerala Legislative Assembly,Bhoomidevi Pushpiniyayi
+Bhoomidevi Pushpiniyayi,isAffiliatedWith,CPI(M),Bhoomidevi Pushpiniyayi
+SM UB-74,instanceOf,U-boat,SM UB-74
+SM UB-74,isA,UB-74-class submarine,SM UB-74
+SM UB-74,builtBy,Waffenfabrik Friedrichshafen,SM UB-74
+SM UB-74,commissioned,1917-05-19,SM UB-74
+SM UB-74,commandedBy,Ernst Thiele,SM UB-74
+SM UB-74,fate,surrendered,SM UB-74
+SM UB-74,countryOfOrigin,German Empire,SM UB-74
+Katie Kitamura,instanceOf,Person,Katie Kitamura
+Katie Kitamura,birthDate,1986-10-16,Katie Kitamura
+Katie Kitamura,nationality,American,Katie Kitamura
+Katie Kitamura,occupation,novelist,Katie Kitamura
+Katie Kitamura,occupation,lawyer,Katie Kitamura
+Katie Kitamura,educatedAt,"University of California, Berkeley",Katie Kitamura
+Katie Kitamura,educatedAt,Yale Law School,Katie Kitamura
+Katie Kitamura,writesAbout,international law,Katie Kitamura
+Katie Kitamura,publishedBook,The Invisible Girls,Katie Kitamura
+subject,predicate,object,Bueng Kan province
+subject,predicate,object,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,instanceOf,Reality TV series,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,partOf,Survivor (TV series),Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,location,Kaôh Rōng Island,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,location,Fiji,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,numberOfSeasons,1,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,numberOfEpisodes,16,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,airDate,"May 29, 2015",Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,endDate,"September 20, 2015",Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,host,Jeff Probst,Survivor: Kaôh Rōng
+subject,predicate,object,Whitmell P. Martin
+"Fokino, Bryansk Oblast",instanceOf,urban-type settlement in Russia,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",locatedIn,Bryansk Oblast,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",locatedIn,Russia,"Fokino, Bryansk Oblast"
+"Fokino, Bryansk Oblast",hasPopulation,"approximately 2,000","Fokino, Bryansk Oblast"
+subject,predicate,object,Jorge Verstrynge
+Jorge Verstrynge,instanceOf,Person,Jorge Verstrynge
+Jorge Verstrynge,birthName,Jorge Verstrynge Rojas,Jorge Verstrynge
+Jorge Verstrynge,birthDate,1943-01-01,Jorge Verstrynge
+Jorge Verstrynge,nationality,Spanish,Jorge Verstrynge
+Jorge Verstrynge,occupation,Politician,Jorge Verstrynge
+Jorge Verstrynge,occupation,Engineer,Jorge Verstrynge
+Jorge Verstrynge,memberOf,European Parliament,Jorge Verstrynge
+Jorge Verstrynge,position,Mayor of Vitoria-Gasteiz,Jorge Verstrynge
+Jorge Verstrynge,position,Member of the Basque Parliament,Jorge Verstrynge
+Horses Amphora,instanceOf,Vase,Horses Amphora
+Horses Amphora,createdBy,Etruscan Potter,Horses Amphora
+Horses Amphora,date,around 325-300 BCE,Horses Amphora
+Horses Amphora,material,Terracotta,Horses Amphora
+Horses Amphora,depicts,Horses,Horses Amphora
+Horses Amphora,partOf,British Museum collection,Horses Amphora
+Horten Church,instanceOf,Church,Horten Church
+Horten Church,location,Horten,Horten Church
+Horten Church,location,Norway,Horten Church
+Horten Church,denomination,Church of Norway,Horten Church
+Horten Church,architect,Oscar Nissen,Horten Church
+subject,predicate,object,Ministry of Justice (Niger)
+subject,predicate,object,Brand USA
+Brand USA,instanceOf,brand,Brand USA
+Brand USA,is,tourism campaign,Brand USA
+Brand USA,promotes,United States,Brand USA
+Brand USA,launchedBy,U.S. Department of Commerce,Brand USA
+Brand USA,aimsTo,increase tourism,Brand USA
+Brand USA,targets,foreign visitors,Brand USA
+Brand USA,wasEstablishedIn,2011,Brand USA
+USS Lorain (PF-93),instanceOf,Patrol Boat,USS Lorain (PF-93)
+USS Lorain (PF-93),instanceOf,United States Ship,USS Lorain (PF-93)
+USS Lorain (PF-93),namedAfter,"Lorain, Ohio",USS Lorain (PF-93)
+USS Lorain (PF-93),operator,United States Navy,USS Lorain (PF-93)
+USS Lorain (PF-93),shipClass,"Patrol Boat, Small",USS Lorain (PF-93)
+USS Lorain (PF-93),shipNumber,PF-93,USS Lorain (PF-93)
+subject,predicate,object,Tixpéhual Municipality
+subject,predicate,object,Johannes Loccenius
+subject,predicate,object,Schizonycha ruficollis
+Counter-Terrorism and Border Security Act 2019,instanceOf,Act of Parliament,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,partOf,United Kingdom legislation,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,enactedBy,Parliament of the United Kingdom,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,enactedOn,2019,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,relatedTo,Counter-terrorism,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,relatedTo,Border security,Counter-Terrorism and Border Security Act 2019
+Cartagena Cathedral,instanceOf,Cathedral,Cartagena Cathedral
+Cartagena Cathedral,location,"Cartagena, Colombia",Cartagena Cathedral
+Cartagena Cathedral,dedicatedTo,Assumption of Mary,Cartagena Cathedral
+Cartagena Cathedral,architect,Spanish architect,Cartagena Cathedral
+Cartagena Cathedral,inception,1550,Cartagena Cathedral
+Cartagena Cathedral,style,Gothic architecture,Cartagena Cathedral
+Cartagena Cathedral,partOf,Roman Catholic Diocese of Cartagena,Cartagena Cathedral
+Draupner wave,instanceOf,rogue wave,Draupner wave
+Draupner wave,namedAfter,Draupner platform,Draupner wave
+Draupner wave,occurredOn,"January 1, 1995",Draupner wave
+Draupner wave,measuredBy,Draupner oil platform,Draupner wave
+Draupner wave,hasHeight,25.6 meters,Draupner wave
+Draupner wave,exceededBy,North Sea storm of 1953,Draupner wave
+Draupner wave,type,ocean wave,Draupner wave
+Draupner wave,location,North Sea,Draupner wave
+WeTransfer,instanceOf,File Transfer Service,WeTransfer
+WeTransfer,foundedBy,Rutger Beijerman,WeTransfer
+WeTransfer,foundedBy,Jelle Gillis,WeTransfer
+WeTransfer,foundedBy,Maarten Bos,WeTransfer
+WeTransfer,headquarteredIn,Amsterdam,WeTransfer
+WeTransfer,foundedIn,2006,WeTransfer
+WeTransfer,allows,file sharing,WeTransfer
+WeTransfer,offers,cloud storage,WeTransfer
+"Milbank Arms, Barningham",instanceOf,Public House,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",locatedIn,"Barningham, Suffolk","Milbank Arms, Barningham"
+"Milbank Arms, Barningham",serves,Food,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",serves,Ale,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",hasRating,4/5,"Milbank Arms, Barningham"
+Jim Spencer (curler),instanceOf,Human,Jim Spencer (curler)
+Jim Spencer (curler),instanceOf,Curler,Jim Spencer (curler)
+Jim Spencer (curler),hailsFrom,Canada,Jim Spencer (curler)
+Jim Spencer (curler),dateOfBirth,1960,Jim Spencer (curler)
+Jim Spencer (curler),dateOfDeath,2019,Jim Spencer (curler)
+Jim Spencer (curler),participatedIn,2018 Winter Olympics,Jim Spencer (curler)
+2019 AQ3,instanceOf,asteroid,2019 AQ3
+2019 AQ3,discovery:discoveredBy,Catalina Sky Survey,2019 AQ3
+2019 AQ3,discovery:discoveryDate,2019-01-03,2019 AQ3
+2019 AQ3,orbital:orbitalPeriod,378.35 days,2019 AQ3
+2019 AQ3,orbital:semiMajorAxis,0.983 AU,2019 AQ3
+2019 AQ3,physicalCharacteristics:albedo,0.267,2019 AQ3
+2019 AQ3,physicalCharacteristics:diameter,12-26 km,2019 AQ3
+subject,predicate,object,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,instanceOf,Ice Hockey World Junior Championships,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,startDate,2012-01-04,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,endDate,2012-01-15,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,location,Canada,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,winner,Russia national junior ice hockey team,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,runnerUp,Canada national junior ice hockey team,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,thirdPlace,Czech Republic national junior ice hockey team,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,organizedBy,International Ice Hockey Federation,2012 World Junior Ice Hockey Championships
+2016 FIFA U-17 Women's World Cup,instanceOf,FIFA U-17 Women's World Cup,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,startDate,2016-10-05,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,endDate,2016-10-16,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,location,Jordan,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,participant,North Korea women's national under-17 football team,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,participant,Spain women's national under-17 football team,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,participant,United States women's national under-17 soccer team,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,winner,North Korea women's national under-17 football team,2016 FIFA U-17 Women's World Cup
+subject,predicate,object,Forever (Bon Jovi album)
+Bob Charles (footballer),instanceOf,Q123456,Bob Charles (footballer)
+Bob Charles (footballer),name,Bob Charles,Bob Charles (footballer)
+Bob Charles (footballer),givenName,Bob,Bob Charles (footballer)
+Bob Charles (footballer),familyName,Charles,Bob Charles (footballer)
+Bob Charles (footballer),birthDate,1930-01-01,Bob Charles (footballer)
+Bob Charles (footballer),birthPlace,England,Bob Charles (footballer)
+Bob Charles (footballer),deathDate,2000-01-01,Bob Charles (footballer)
+Bob Charles (footballer),deathPlace,England,Bob Charles (footballer)
+Bob Charles (footballer),position,Forward,Bob Charles (footballer)
+Bob Charles (footballer),team,Arsenal F.C.,Bob Charles (footballer)
+Durga Shanker Mishra,instanceOf,Person,Durga Shanker Mishra
+Durga Shanker Mishra,occupation,Civil Servant,Durga Shanker Mishra
+Durga Shanker Mishra,position,Chief Secretary of Uttar Pradesh,Durga Shanker Mishra
+Durga Shanker Mishra,birthDate,1960,Durga Shanker Mishra
+Durga Shanker Mishra,nationality,Indian,Durga Shanker Mishra
+Misfat al Abriyeen,instanceOf,settlement,Misfat al Abriyeen
+Misfat al Abriyeen,locatedIn,Syria,Misfat al Abriyeen
+Misfat al Abriyeen,locatedIn,Homs Governorate,Misfat al Abriyeen
+Misfat al Abriyeen,isPartOf,Homs District,Misfat al Abriyeen
+Zapolyariye,instanceOf,Krai,Zapolyariye
+Zapolyariye,locatedIn,Russia,Zapolyariye
+Zapolyariye,capital,Zapolyarny,Zapolyariye
+Zapolyariye,locatedIn,Murmansk Oblast,Zapolyariye
+Saxton Oval,instanceOf,cricket ground,Saxton Oval
+Saxton Oval,location,Nelson,Saxton Oval
+Saxton Oval,country,New Zealand,Saxton Oval
+Saxton Oval,capacity,25000,Saxton Oval
+The Squeaker (1963 film),instanceOf,film,The Squeaker (1963 film)
+The Squeaker (1963 film),title,The Squeaker,The Squeaker (1963 film)
+The Squeaker (1963 film),year,1963,The Squeaker (1963 film)
+The Squeaker (1963 film),director,William Beaudine,The Squeaker (1963 film)
+The Squeaker (1963 film),starring,Leo Gorcey,The Squeaker (1963 film)
+The Squeaker (1963 film),genre,comedy,The Squeaker (1963 film)
+subject,predicate,object,Park Ji-hyun (curler)
+Nuraghe Genna Maria,instanceOf,Nuraghe,Nuraghe Genna Maria
+Nuraghe Genna Maria,locatedIn,Sardinia,Nuraghe Genna Maria
+Nuraghe Genna Maria,locatedIn,Italy,Nuraghe Genna Maria
+Nuraghe Genna Maria,isA, archaeological site,Nuraghe Genna Maria
+subject,predicate,object,Ohio State Route 292
+subject,predicate,object,Großkrotzenburg
+Rodriguésia (journal),instanceOf,scientific journal,Rodriguésia (journal)
+Rodriguésia (journal),publisher,Instituto de Pesquisas Jardim Botânico do Rio de Janeiro,Rodriguésia (journal)
+Rodriguésia (journal),language,Portuguese,Rodriguésia (journal)
+Rodriguésia (journal),subject,botany,Rodriguésia (journal)
+Rodriguésia (journal),ISSN,0081-8442,Rodriguésia (journal)
+Rodriguésia (journal),country,Brazil,Rodriguésia (journal)
+subject,predicate,object,Lesser amberjack
+Robert Hurley (swimmer),instanceOf,Human,Robert Hurley (swimmer)
+Robert Hurley (swimmer),instanceOf,Swimmer,Robert Hurley (swimmer)
+Robert Hurley (swimmer),birthDate,1985-04-18,Robert Hurley (swimmer)
+Robert Hurley (swimmer),nationality,Australian,Robert Hurley (swimmer)
+Robert Hurley (swimmer),participatedIn,2012 Summer Olympics,Robert Hurley (swimmer)
+Robert Hurley (swimmer),participatedIn,2016 Summer Olympics,Robert Hurley (swimmer)
+Alicia Rodríguez (Spanish actress),instanceOf,Human,Alicia Rodríguez (Spanish actress)
+Alicia Rodríguez (Spanish actress),instanceOf,Actor,Alicia Rodríguez (Spanish actress)
+Alicia Rodríguez (Spanish actress),nationality,Spanish,Alicia Rodríguez (Spanish actress)
+Alicia Rodríguez (Spanish actress),occupation,Actress,Alicia Rodríguez (Spanish actress)
+Alicia Rodríguez (Spanish actress),givenName,Alicia,Alicia Rodríguez (Spanish actress)
+Alicia Rodríguez (Spanish actress),familyName,Rodríguez,Alicia Rodríguez (Spanish actress)
+Dunfermline and Dollar,instanceOf,UK Parliament constituency,Dunfermline and Dollar
+Dunfermline and Dollar,location,Scotland,Dunfermline and Dollar
+Dunfermline and Dollar,country,United Kingdom,Dunfermline and Dollar
+Dunfermline and Dollar,contains,Dunfermline,Dunfermline and Dollar
+Dunfermline and Dollar,contains,"Dollar, Clackmannanshire",Dunfermline and Dollar
+North Central Hardwood Forests,instanceOf,forest,North Central Hardwood Forests
+North Central Hardwood Forests,locatedIn,United States,North Central Hardwood Forests
+North Central Hardwood Forests,ecosystemType,temperate hardwood forest,North Central Hardwood Forests
+North Central Hardwood Forests,partOf,Midwestern United States,North Central Hardwood Forests
+North Central Hardwood Forests,hasTreeSpecies,oak,North Central Hardwood Forests
+North Central Hardwood Forests,hasTreeSpecies,hickory,North Central Hardwood Forests
+North Central Hardwood Forests,hasTreeSpecies,maple,North Central Hardwood Forests
+subject,predicate,object,2010–11 Kent State Golden Flashes men's basketball team
+2012 Stockport Metropolitan Borough Council election,instanceOf,election,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,locatedIn,Stockport,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,occurredOn,2012,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,isPartOf,Stockport Metropolitan Borough Council,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,hasPart,2012 Stockport Metropolitan Borough Council election results,2012 Stockport Metropolitan Borough Council election
+subject,predicate,object,Gaspar de Bono
+subject,predicate,object,Chengdu J-20
+Tony Ford (rugby league),instanceOf,rugby league player,Tony Ford (rugby league)
+Tony Ford (rugby league),birthDate,1955-05-02,Tony Ford (rugby league)
+Tony Ford (rugby league),birthPlace,Australia,Tony Ford (rugby league)
+Tony Ford (rugby league),position,scrum-half,Tony Ford (rugby league)
+Tony Ford (rugby league),nationality,Australian,Tony Ford (rugby league)
+Rådmandsgade,instanceOf,street,Rådmandsgade
+Rådmandsgade,locatedIn,Copenhagen,Rådmandsgade
+Rådmandsgade,isPartOf,Indre By,Rådmandsgade
+Aleš Dryml Sr.,instanceOf,Person,Aleš Dryml Sr.
+Aleš Dryml Sr.,type,Czech athlete,Aleš Dryml Sr.
+Aleš Dryml Sr.,occupation,athlete,Aleš Dryml Sr.
+Aleš Dryml Sr.,familyName,Dryml,Aleš Dryml Sr.
+Aleš Dryml Sr.,givenName,Aleš,Aleš Dryml Sr.
+Aleš Dryml Sr.,isFatherOf,Aleš Dryml Jr.,Aleš Dryml Sr.
+Études (journal),instanceOf,academic journal,Études (journal)
+Études (journal),publisher,Institut d'études québécoises,Études (journal)
+Études (journal),language,French,Études (journal)
+Études (journal),subject,Quebec studies,Études (journal)
+Études (journal),foundingDate,1975,Études (journal)
+Black-capped foliage-gleaner,instanceOf,Species,Black-capped foliage-gleaner
+Black-capped foliage-gleaner,subclassOf,Foliage-gleaner,Black-capped foliage-gleaner
+Black-capped foliage-gleaner,taxonomicRank,species,Black-capped foliage-gleaner
+Black-capped foliage-gleaner,scientificName,Sylviorthorhynchus desmopterus,Black-capped foliage-gleaner
+Black-capped foliage-gleaner,commonName,Black-capped foliage-gleaner,Black-capped foliage-gleaner
+Black-capped foliage-gleaner,family,Furnariidae,Black-capped foliage-gleaner
+"Friary Church of St Francis and St Anthony, Crawley",instanceOf,church,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",location,Crawley,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",dedicatedTo,St Francis,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",dedicatedTo,St Anthony,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",partOf,West Sussex,"Friary Church of St Francis and St Anthony, Crawley"
+Historical Dictionary Project of the Hebrew Language,instanceOf,dictionary project,Historical Dictionary Project of the Hebrew Language
+Historical Dictionary Project of the Hebrew Language,focus,Hebrew language,Historical Dictionary Project of the Hebrew Language
+Historical Dictionary Project of the Hebrew Language,publisher,Israel Academy of Sciences,Historical Dictionary Project of the Hebrew Language
+Historical Dictionary Project of the Hebrew Language,language,Hebrew,Historical Dictionary Project of the Hebrew Language
+Historical Dictionary Project of the Hebrew Language,description,A comprehensive dictionary of the Hebrew language,Historical Dictionary Project of the Hebrew Language
+Deool Band,instanceOf,Music Band,Deool Band
+Deool Band,genre,Bhangra,Deool Band
+Deool Band,activeYears,2008-2014,Deool Band
+Deool Band,origin,India,Deool Band
+Deool Band,member,Rahul Saxena,Deool Band
+Deool Band,member,Rohit Shetty,Deool Band
+Deool Band,member,Kunal Thakur,Deool Band
+Deool Band,member,Bobby Singh,Deool Band
+National Route 306 (Costa Rica),instanceOf,National Route,National Route 306 (Costa Rica)
+National Route 306 (Costa Rica),locatedIn,Costa Rica,National Route 306 (Costa Rica)
+National Route 306 (Costa Rica),hasLength,some length,National Route 306 (Costa Rica)
+National Route 306 (Costa Rica),type,Route,National Route 306 (Costa Rica)
+subject,predicate,object,HSC Winnipeg Children's Hospital
+subject,predicate,object,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",instanceOf,human,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",birthYear,1980,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",birthPlace,Brazil,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",occupation,association football player,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",playsSport,association football,"Wanderson (footballer, born 1980)"
+"Wanderson (footballer, born 1980)",position,defender,"Wanderson (footballer, born 1980)"
+Songpyong-guyok,instanceOf,District of Pyongyang,Songpyong-guyok
+Songpyong-guyok,locatedIn,Pyongyang,Songpyong-guyok
+Songpyong-guyok,isPartOf,North Korea,Songpyong-guyok
+2–8a Rutland Gate,instanceOf,building,2–8a Rutland Gate
+2–8a Rutland Gate,locatedIn,London,2–8a Rutland Gate
+2–8a Rutland Gate,isPartOf,Rutland Gate,2–8a Rutland Gate
+2–8a Rutland Gate,hasAddress,2–8a Rutland Gate,2–8a Rutland Gate
+Armadillidae,instanceOf,Family,Armadillidae
+Armadillidae,subclassOf,Diplodonta,Armadillidae
+Armadillidae,hasSuperclass,Clitellota,Armadillidae
+Armadillidae,order,Isopoda,Armadillidae
+Armadillidae,class,Malacostraca,Armadillidae
+Arp 273,instanceOf,galaxy,Arp 273
+Arp 273,locatedIn,Hubble Space Telescope,Arp 273
+Arp 273,composedOf,UGC 2369,Arp 273
+Arp 273,composedOf,UGC 2370,Arp 273
+Arp 273,composedOf,UGC 2372,Arp 273
+Arp 273,discoveredBy,astronomer,Arp 273
+Arp 273,hasPart,UGC 2369,Arp 273
+Arp 273,hasPart,UGC 2370,Arp 273
+Arp 273,hasPart,UGC 2372,Arp 273
+Kapantay Ay Langit (film),instanceOf,film,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),releaseDate,2011-07-20,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),director,Andoy Ranay,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),starring,Enchong Reyes,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),starring,Andoy Ranay,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),starring,Yassi Pressley,Kapantay Ay Langit (film)
+Kapantay Ay Langit (film),genre,romantic comedy,Kapantay Ay Langit (film)
+subject,predicate,object,Qihoo 360
+HMS Reindeer (1883),instanceOf,torpedo boat,HMS Reindeer (1883)
+HMS Reindeer (1883),isPartOf,Royal Navy,HMS Reindeer (1883)
+HMS Reindeer (1883),hasCountryOfOrigin,United Kingdom,HMS Reindeer (1883)
+HMS Reindeer (1883),builtBy,Robert Napier & Sons,HMS Reindeer (1883)
+HMS Reindeer (1883),commissionedIn,1883,HMS Reindeer (1883)
+subject,predicate,object,Salmo ciscaucasicus
+Chief Justice of Hungary,instanceOf,Chief Justice,Chief Justice of Hungary
+Chief Justice of Hungary,subordinateTo,President of Hungary,Chief Justice of Hungary
+Chief Justice of Hungary,jurisdiction,Hungary,Chief Justice of Hungary
+Chief Justice of Hungary,positionHeldBy,President of the Supreme Court of Hungary,Chief Justice of Hungary
+Chief Justice of Hungary,locatedIn,Hungary,Chief Justice of Hungary
+Chief Justice of Hungary,hasHeadquarters,Budapest,Chief Justice of Hungary
+Chief Justice of Hungary,typeOf,Judicial Office,Chief Justice of Hungary
+subject,predicate,object,Haris Hajradinović
+Broch of Culswick,instanceOf,Broch,Broch of Culswick
+Broch of Culswick,locatedIn,Shetland,Broch of Culswick
+Broch of Culswick,locatedIn,Scotland,Broch of Culswick
+Broch of Culswick,hasLocation,Mainland,Broch of Culswick
+Broch of Culswick,isPartOf,Shetland Museum,Broch of Culswick
+Wimalaratne Kumaragama,instanceOf,Qhuman,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,givenName,Wimalaratne,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,familyName,Kumaragama,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,birthDate,1962,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,occupation,Sri Lankan army officer,Wimalaratne Kumaragama
+subject,predicate,object,Sales (band)
+Sales (band),instanceOf,Musical group,Sales (band)
+Sales (band),genre,Jazz,Sales (band)
+Sales (band),activeYears,1950s-1960s,Sales (band)
+Sales (band),member,Stan Getz,Sales (band)
+Sales (band),member,Al Cohn,Sales (band)
+Sales (band),member,Zoot Sims,Sales (band)
+Sales (band),recordLabel,RCA Records,Sales (band)
+Municipality of Izola,instanceOf,Municipality,Municipality of Izola
+Municipality of Izola,locatedIn,Slovenia,Municipality of Izola
+Municipality of Izola,hasPart,Izola,Municipality of Izola
+Municipality of Izola,hasPart,Korte,Municipality of Izola
+Municipality of Izola,hasPart,Malki,Municipality of Izola
+Municipality of Izola,hasPart,Štorje,Municipality of Izola
+Municipality of Izola,capital,Izola,Municipality of Izola
+subject,predicate,object,Saxifraga rufescens
+subject,predicate,object,Trimbach railway station
+subject,predicate,object,Glières-Val-de-Borne
+subject,predicate,object,Telefónica Argentina
+subject,predicate,object,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),instanceOf,railway line,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),partOf,Milan suburban railway,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),location,Milan,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),operator,Trenord,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),terminus,Milan Rogoredo railway station,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),terminus,Albairate-Vermezzo railway station,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),length,23 km,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),numberOfStations,19,Line S4 (Milan suburban railway service)
+subject,predicate,object,Syzygium bungadinnia
+"Lille Kamøya, Nordkapp",instanceOf,island,"Lille Kamøya, Nordkapp"
+"Lille Kamøya, Nordkapp",locatedIn,Nordkapp,"Lille Kamøya, Nordkapp"
+"Lille Kamøya, Nordkapp",partOf,Norway,"Lille Kamøya, Nordkapp"
+Esporte Clube São Luiz,instanceOf,Football Club,Esporte Clube São Luiz
+Esporte Clube São Luiz,foundIn,Brazil,Esporte Clube São Luiz
+Esporte Clube São Luiz,foundIn,Rio Grande do Sul,Esporte Clube São Luiz
+Esporte Clube São Luiz,playsIn,Gaúcho 1,Esporte Clube São Luiz
+Esporte Clube São Luiz,playsIn,Estádio do Vale,Esporte Clube São Luiz
+Black-throated magpie-jay,instanceOf,Species,Black-throated magpie-jay
+Black-throated magpie-jay,classifiesAs,Corvus capistratus,Black-throated magpie-jay
+Black-throated magpie-jay,taxonomicRank,species,Black-throated magpie-jay
+Black-throated magpie-jay,family,Corvidae,Black-throated magpie-jay
+Black-throated magpie-jay,genus,Dendrocitta,Black-throated magpie-jay
+Black-throated magpie-jay,commonName,Black-throated magpie-jay,Black-throated magpie-jay
+Black-throated magpie-jay,scientificName,Dendrocitta axillaris,Black-throated magpie-jay
+subject,predicate,object,West Thurrock Lagoon and Marshes
+subject,predicate,object,Masum Khan (cricketer)
+subject,predicate,object,José María Oriol Urquijo
+"Baranovka, Narimanovsky District, Astrakhan Oblast",instanceOf,rural locality,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",locatedIn,Narimanovsky District,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",locatedIn,Astrakhan Oblast,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",hasPopulation,less than 1000,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+subject,predicate,object,Desmodus draculae
+Casey Crawford (American football),instanceOf,Human,Casey Crawford (American football)
+Casey Crawford (American football),instanceOf,American football player,Casey Crawford (American football)
+Casey Crawford (American football),birthDate,1986-06-27,Casey Crawford (American football)
+Casey Crawford (American football),position,Defensive end,Casey Crawford (American football)
+Casey Crawford (American football),draftedBy,Denver Broncos,Casey Crawford (American football)
+Casey Crawford (American football),draftRound,3,Casey Crawford (American football)
+Casey Crawford (American football),draftYear,2010,Casey Crawford (American football)
+Casey Crawford (American football),college,University of Texas,Casey Crawford (American football)
+subject,predicate,object,"Alan Franco (footballer, born 1996)"
+Anacamptis collina,instanceOf,Species,Anacamptis collina
+Anacamptis collina,genus,Anacamptis,Anacamptis collina
+Anacamptis collina,family,Orchidaceae,Anacamptis collina
+Anacamptis collina,commonName,Bee Orchid,Anacamptis collina
+Anacamptis collina,taxonRank,Species,Anacamptis collina
+Anacamptis collina,origin,Europe,Anacamptis collina
+Le Bal (novella),instanceOf,novella,Le Bal (novella)
+Le Bal (novella),author,Irène Némirovsky,Le Bal (novella)
+Le Bal (novella),publishedIn,Suite française,Le Bal (novella)
+Le Bal (novella),language,French,Le Bal (novella)
+Le Bal (novella),translator,Carol Brown Janeway,Le Bal (novella)
+Remscheid Hauptbahnhof,instanceOf,railway station,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedIn,Remscheid,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedIn,North Rhine-Westphalia,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedIn,Germany,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,isCentralStationOf,Remscheid,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,hasOperator,Deutsche Bahn,Remscheid Hauptbahnhof
+BET Awards 2011,instanceOf,Award Ceremony,BET Awards 2011
+BET Awards 2011,location,Los Angeles,BET Awards 2011
+BET Awards 2011,presenter,BET Networks,BET Awards 2011
+BET Awards 2011,date,"June 26, 2011",BET Awards 2011
+BET Awards 2011,award,Best Female R&B Artist,BET Awards 2011
+BET Awards 2011,award,Best Male R&B Artist,BET Awards 2011
+BET Awards 2011,award,Best Group Video,BET Awards 2011
+BET Awards 2011,award,Best New Artist,BET Awards 2011
+Serious Sam,instanceOf,video game series,Serious Sam
+Serious Sam,genre,first-person shooter,Serious Sam
+Serious Sam,developer,Croteam,Serious Sam
+Serious Sam,publisher,THQ,Serious Sam
+Serious Sam,release date,2002,Serious Sam
+Serious Sam,platform,PC,Serious Sam
+Serious Sam,platform,Xbox,Serious Sam
+Serious Sam,platform,Xbox 360,Serious Sam
+Serious Sam,platform,PlayStation 2,Serious Sam
+Serious Sam,protagonist,Sam,Serious Sam
+Research in Developmental Disabilities,instanceOf,Academic Journal,Research in Developmental Disabilities
+Research in Developmental Disabilities,publisher,Elsevier,Research in Developmental Disabilities
+Research in Developmental Disabilities,subject,Developmental Disabilities,Research in Developmental Disabilities
+Research in Developmental Disabilities,subject,Research,Research in Developmental Disabilities
+Research in Developmental Disabilities,ISSN,0188-4441,Research in Developmental Disabilities
+House-Museum of Samad Vurgun,instanceOf,museum,House-Museum of Samad Vurgun
+House-Museum of Samad Vurgun,locatedIn,Baku,House-Museum of Samad Vurgun
+House-Museum of Samad Vurgun,dedicatedTo,Samad Vurgun,House-Museum of Samad Vurgun
+House-Museum of Samad Vurgun,type,house-museum,House-Museum of Samad Vurgun
+Samad Vurgun,instanceOf,person,House-Museum of Samad Vurgun
+Samad Vurgun,is, Azerbaijani poet,House-Museum of Samad Vurgun
+Manolo Muñoz (footballer),instanceOf,Footballer,Manolo Muñoz (footballer)
+Manolo Muñoz (footballer),playsSport,Football,Manolo Muñoz (footballer)
+Manolo Muñoz (footballer),hasPosition,Goalkeeper,Manolo Muñoz (footballer)
+Manolo Muñoz (footballer),isCitizenOf,Spain,Manolo Muñoz (footballer)
+Manolo Muñoz (footballer),dateOfBirth,1990-02-20,Manolo Muñoz (footballer)
+Chestnut-and-black weaver,instanceOf,Species,Chestnut-and-black weaver
+Chestnut-and-black weaver,classifiesAs,Bird,Chestnut-and-black weaver
+Chestnut-and-black weaver,hasScientificName,Ploceus nigerrimus,Chestnut-and-black weaver
+Chestnut-and-black weaver,hasCommonName,Chestnut-and-black weaver,Chestnut-and-black weaver
+Chestnut-and-black weaver,isFoundIn,Africa,Chestnut-and-black weaver
+subject,predicate,object,"Sir Hugh Smith, 1st Baronet"
+Felix Ua Duib Sláin,instanceOf,King of Munster,Felix Ua Duib Sláin
+Felix Ua Duib Sláin,reign,944-944,Felix Ua Duib Sláin
+Felix Ua Duib Sláin,familyName,Ua Duib Sláin,Felix Ua Duib Sláin
+Felix Ua Duib Sláin,givenName,Felix,Felix Ua Duib Sláin
+Kenneth Binmoeller,instanceOf,Catholic bishop,Kenneth Binmoeller
+Kenneth Binmoeller,bornIn,1957,Kenneth Binmoeller
+Kenneth Binmoeller,isBishop of,Diocese of Owasso,Kenneth Binmoeller
+Kenneth Binmoeller,ordainedAsPriest,1982,Kenneth Binmoeller
+Kenneth Binmoeller,appointedAsBishop,2014,Kenneth Binmoeller
+subject,predicate,object,Voyant Tools
+USS LST-952,instanceOf,LST-542-class tank landing ship,USS LST-952
+USS LST-952,commissioned,1944-05-06,USS LST-952
+USS LST-952,decommissioned,1946-07-01,USS LST-952
+USS LST-952,countryOfOrigin,United States,USS LST-952
+USS LST-952,operator,United States Navy,USS LST-952
+Better Late Than Never (1979 film),instanceOf,film,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),namedAfter,proverb,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),director,Jonathan Kaplan,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),starring,Diane Lane,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),starring,Rob Lowe,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),starring,Sally Field,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),genre,comedy film,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),genre,romantic comedy,Better Late Than Never (1979 film)
+Better Late Than Never (1979 film),releaseDate,1979,Better Late Than Never (1979 film)
+subject,predicate,object,Shōmaru Station
+If there are not many facts,I'll return what I have; if there are many facts,I can return them in batches or by request.,Shōmaru Station
+Giovanni Maria da Varano,instanceOf,Noble,Giovanni Maria da Varano
+Giovanni Maria da Varano,instanceOf,Cardinal,Giovanni Maria da Varano
+Giovanni Maria da Varano,birthDate,1480,Giovanni Maria da Varano
+Giovanni Maria da Varano,deathDate,1545,Giovanni Maria da Varano
+Giovanni Maria da Varano,diocese,Camerino,Giovanni Maria da Varano
+subject,predicate,object,Ascanio della Corgna
+"Rodrigo Alonso (footballer, born 1982)",instanceOf,Human,"Rodrigo Alonso (footballer, born 1982)"
+"Rodrigo Alonso (footballer, born 1982)",instanceOf,Footballer,"Rodrigo Alonso (footballer, born 1982)"
+"Rodrigo Alonso (footballer, born 1982)",birthYear,1982,"Rodrigo Alonso (footballer, born 1982)"
+"Rodrigo Alonso (footballer, born 1982)",birthName,Rodrigo Alonso,"Rodrigo Alonso (footballer, born 1982)"
+subject,predicate,object,American College of Greece
+Tingel-Tangel (1930 film),instanceOf,film,Tingel-Tangel (1930 film)
+Tingel-Tangel (1930 film),publicationDate,1930,Tingel-Tangel (1930 film)
+Tingel-Tangel (1930 film),director,Hanns Schwarz,Tingel-Tangel (1930 film)
+Tingel-Tangel (1930 film),countryOfOrigin,Germany,Tingel-Tangel (1930 film)
+Tingel-Tangel (1930 film),language,German,Tingel-Tangel (1930 film)
+Claude Théodore Decaen,instanceOf,Person,Claude Théodore Decaen
+Claude Théodore Decaen,bornIn,1769-01-13,Claude Théodore Decaen
+Claude Théodore Decaen,diedIn,1820-02-09,Claude Théodore Decaen
+Claude Théodore Decaen,notablePosition,Governor-general of the Dutch East Indies,Claude Théodore Decaen
+Claude Théodore Decaen,notablePosition,General,Claude Théodore Decaen
+Claude Théodore Decaen,country,France,Claude Théodore Decaen
+subject,predicate,object,Ife National Museum
+subject,predicate,object,Piponisiw River
+subject,predicate,object,"Borisoglebsky, Murmansk Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",instanceOf,rural locality,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",locatedIn,Podgorensky District,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",locatedIn,Voronezh Oblast,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",hasAdministrativeCenter,Podgorensky District,"Ternovoye, Podgorensky District, Voronezh Oblast"
+subject,predicate,object,China Railway CR400AF
+subject,predicate,object,Jatt & Juliet 2
+subject,predicate,object,Sandaker senter tram stop
+Sandaker senter tram stop,instanceOf,tram stop,Sandaker senter tram stop
+Sandaker senter tram stop,locatedIn,Oslo,Sandaker senter tram stop
+Sandaker senter tram stop,servedBy,Tramway of Oslo,Sandaker senter tram stop
+Sandaker senter tram stop,hasPlatforms,2,Sandaker senter tram stop
+Note: The actual number of facts can be much higher,but for the sake of brevity,I'm only including a few here.,Sandaker senter tram stop
+Wendy Mogel,instanceOf,Person,Wendy Mogel
+Wendy Mogel,isA,Orthodox Jewish rabbi,Wendy Mogel
+Wendy Mogel,isA,writer,Wendy Mogel
+Wendy Mogel,isA,lecturer,Wendy Mogel
+Wendy Mogel,writesOn,Jewish parenting,Wendy Mogel
+Wendy Mogel,writesOn,Orthodox Judaism,Wendy Mogel
+Cabo Velas,instanceOf,cape,Cabo Velas
+Cabo Velas,locatedIn,Mexico,Cabo Velas
+Cabo Velas,locatedIn,Baja California Sur,Cabo Velas
+Cabo Velas,partOf,Los Cabos Municipality,Cabo Velas
+Cabo Velas,isConnectedTo,Sea of Cortez,Cabo Velas
+Cabo Velas,isConnectedTo,Pacific Ocean,Cabo Velas
+"Mill Creek East, Washington",instanceOf,census-designated place,"Mill Creek East, Washington"
+"Mill Creek East, Washington",locatedIn,Snohomish County,"Mill Creek East, Washington"
+"Mill Creek East, Washington",locatedIn,Washington,"Mill Creek East, Washington"
+"Mill Creek East, Washington",hasPart,Mill Creek,"Mill Creek East, Washington"
+"Mill Creek East, Washington",isPartOf,Seattle metropolitan area,"Mill Creek East, Washington"
+Andromeda Star,instanceOf,Star,Andromeda Star
+Andromeda Star,locatedIn,Andromeda Galaxy,Andromeda Star
+Andromeda Star,isPartOf,Andromeda Galaxy,Andromeda Star
+Andromeda Star,hasMass,solar mass value,Andromeda Star
+Andromeda Star,hasLuminosity,luminosity value,Andromeda Star
+subject,predicate,object,"Dumbleton, Queensland"
+1996 EA Generali Open,instanceOf,Tennis tournament,1996 EA Generali Open
+1996 EA Generali Open,partOf,1996 ATP Tour,1996 EA Generali Open
+1996 EA Generali Open,location,Austria,1996 EA Generali Open
+1996 EA Generali Open,startDate,1996-07-15,1996 EA Generali Open
+1996 EA Generali Open,endDate,1996-07-22,1996 EA Generali Open
+1996 EA Generali Open,surface,Clay court,1996 EA Generali Open
+1996 EA Generali Open,category,ATP International Series,1996 EA Generali Open
+1996 EA Generali Open,prizeMoney,400000,1996 EA Generali Open
+Philip Adolphe Klier,instanceOf,Person,Philip Adolphe Klier
+Philip Adolphe Klier,birthDate,1808-02-13,Philip Adolphe Klier
+Philip Adolphe Klier,deathDate,1874-12-23,Philip Adolphe Klier
+Philip Adolphe Klier,occupation,Photographer,Philip Adolphe Klier
+Philip Adolphe Klier,nationality,German,Philip Adolphe Klier
+"Sipesville, Pennsylvania",instanceOf,borough,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",locatedIn,"Somerset County, Pennsylvania","Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",hasPopulation,1264,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",wasFounded,1776,"Sipesville, Pennsylvania"
+subject,predicate,object,Staphylococcus schleiferi
+subject,predicate,object,Mionnay station
+"Dmytrivka, Chernihiv Oblast",instanceOf,urban-type settlement,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedIn,Chernihiv Oblast,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedIn,Ukraine,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",population,"approximately 2,500","Dmytrivka, Chernihiv Oblast"
+Krishnam Raju Gadiraju,instanceOf,Person,Krishnam Raju Gadiraju
+Krishnam Raju Gadiraju,typeOf,Researcher,Krishnam Raju Gadiraju
+Krishnam Raju Gadiraju,fieldOf,Computer Science,Krishnam Raju Gadiraju
+Krishnam Raju Gadiraju,worksAt,University of Hamburg,Krishnam Raju Gadiraju
+Krishnam Raju Gadiraju,studiedAt,Jawaharlal Nehru Technological University,Krishnam Raju Gadiraju
+Durga Mohan Bhattacharyya,instanceOf,Person,Durga Mohan Bhattacharyya
+Durga Mohan Bhattacharyya,birthPlace,India,Durga Mohan Bhattacharyya
+Durga Mohan Bhattacharyya,fieldOfWork,Computer Science,Durga Mohan Bhattacharyya
+Durga Mohan Bhattacharyya,knownFor,Computer Science Contributions,Durga Mohan Bhattacharyya
+Otakar Šín,instanceOf,Person,Otakar Šín
+Otakar Šín,birthDate,1892-04-25,Otakar Šín
+Otakar Šín,deathDate,1956-10-22,Otakar Šín
+Otakar Šín,nationality,Czech,Otakar Šín
+Otakar Šín,occupation,Conductor,Otakar Šín
+Otakar Šín,notableWork,Slovak National Anthem,Otakar Šín
+Bailey's Dam,instanceOf,dam,Bailey's Dam
+Bailey's Dam,locatedIn,Colorado,Bailey's Dam
+Bailey's Dam,namedAfter,Bailey,Bailey's Dam
+Bailey's Dam,partOf,Roosevelt National Forest,Bailey's Dam
+Bailey's Dam,locatedOn,North Fork Poudre River,Bailey's Dam
+2017 Kurdistan Region independence referendum,instanceOf,referendum,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,location,Kurdistan Region,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,date,2017-09-25,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,result,yes,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,subject,independence of Kurdistan Region,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,participant,Kurdish people,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,opponent,Iraqi government,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,response,international condemnation,2017 Kurdistan Region independence referendum
+HNoMS Otra (1939),instanceOf,Ship,HNoMS Otra (1939)
+HNoMS Otra (1939),countryOfOrigin,Norway,HNoMS Otra (1939)
+HNoMS Otra (1939),operator,Royal Norwegian Navy,HNoMS Otra (1939)
+HNoMS Otra (1939),commissioned,1939,HNoMS Otra (1939)
+HNoMS Otra (1939),decommissioned,1942,HNoMS Otra (1939)
+Day of Reckoning (1933 film),instanceOf,film,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),publicationDate,1933,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),director,D. Ross Lederman,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),genre,Drama,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),language,English,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),countryOfOrigin,United States,Day of Reckoning (1933 film)
+subject,predicate,object,Martin Road Bridge
+If the response seems limited,it's because there's limited information available about this specific bridge. For a more popular subject,I'd be able to provide many more facts!,Martin Road Bridge
+subject,predicate,object,Puente Genil-Herrera railway station
+subject,predicate,object,Gordon Jackson Rees
+Òran Mór,instanceOf,sea,Òran Mór
+Òran Mór,location,Scotland,Òran Mór
+Òran Mór,location,United Kingdom,Òran Mór
+Òran Mór,partOf,North Sea,Òran Mór
+Dōjigiri,instanceOf,Mountain,Dōjigiri
+Dōjigiri,locatedIn,Japan,Dōjigiri
+Dōjigiri,partOf,Japanese Alps,Dōjigiri
+Dōjigiri,hasPeak,2993,Dōjigiri
+Dōjigiri,isLocatedIn,Nagano Prefecture,Dōjigiri
+American Society of Magazine Editors,instanceOf,professional organization,American Society of Magazine Editors
+American Society of Magazine Editors,abbreviatedAs,ASME,American Society of Magazine Editors
+American Society of Magazine Editors,foundedIn,1926,American Society of Magazine Editors
+American Society of Magazine Editors,headquarteredIn,New York City,American Society of Magazine Editors
+American Society of Magazine Editors,hasMembership,magazine editors,American Society of Magazine Editors
+American Society of Magazine Editors,givesAward,National Magazine Awards,American Society of Magazine Editors
+Is 4 Lovers,instanceOf,EP,Is 4 Lovers
+Is 4 Lovers,partOf,Guns N' Roses,Is 4 Lovers
+Is 4 Lovers,releasedOn,2009-10-02,Is 4 Lovers
+Oregon Route 569,instanceOf,Route,Oregon Route 569
+Oregon Route 569,locatedIn,Oregon,Oregon Route 569
+Oregon Route 569,length,32.86 mi,Oregon Route 569
+Oregon Route 569,directionA,West,Oregon Route 569
+Oregon Route 569,directionB,East,Oregon Route 569
+Oregon Route 569,terminusA,Oregon Route 99E,Oregon Route 569
+Oregon Route 569,terminusB,U.S. Route 20,Oregon Route 569
+subject,predicate,object,Mucuri Airport
+subject,predicate,object,Juncus inflexus
+subject,predicate,object,To the Wonder
+subject,predicate,object,The Rookie: Feds
+subject,predicate,object,Danny Abeckaser
+Danny Abeckaser,instanceOf,Person,Danny Abeckaser
+Danny Abeckaser,isA,Comedian,Danny Abeckaser
+Danny Abeckaser,isA,Actor,Danny Abeckaser
+Danny Abeckaser,bornIn,New York City,Danny Abeckaser
+Danny Abeckaser,hasOccupation,Comedian,Danny Abeckaser
+Danny Abeckaser,hasOccupation,Actor,Danny Abeckaser
+Danny Abeckaser,appearedIn,The Tonight Show with Jimmy Fallon,Danny Abeckaser
+Megascolides,instanceOf,genus,Megascolides
+Megascolides,classifiesAs,earthworm,Megascolides
+Megascolides,taxonomyRank,genus,Megascolides
+Megascolides,isFoundIn,Australia,Megascolides
+subject,predicate,object,Cap-Haïtien International Airport
+"2,3-Dimethylhexane",instanceOf,Chemical Compound,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",chemicalFormula,C8H18,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",CASNumber,110-37-2,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",isIsomerOf,Octane,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",IUPACName,"2,3-Dimethylhexane","2,3-Dimethylhexane"
+subject,predicate,object,"Hill Point, Wisconsin"
+AAPG Bulletin,instanceOf,scientific journal,AAPG Bulletin
+AAPG Bulletin,publisher,American Association of Petroleum Geologists,AAPG Bulletin
+AAPG Bulletin,issn,0149-1423,AAPG Bulletin
+AAPG Bulletin,subject,Geology,AAPG Bulletin
+AAPG Bulletin,subject,Petroleum geology,AAPG Bulletin
+AAPG Bulletin,language,English,AAPG Bulletin
+AAPG Bulletin,type,Journal,AAPG Bulletin
+subject,predicate,object,Cazzano di Tramigna
+Menthorpe,instanceOf,Village,Menthorpe
+Menthorpe,locatedIn,North Yorkshire,Menthorpe
+Menthorpe,locatedIn,England,Menthorpe
+Menthorpe,hasPopulation,around 300,Menthorpe
+Lahore Se Aagey,instanceOf,Pakistani Film,Lahore Se Aagey
+Lahore Se Aagey,releaseDate,2016-07-22,Lahore Se Aagey
+Lahore Se Aagey,director,Waqar Mukhtar,Lahore Se Aagey
+Lahore Se Aagey,producer,Moin Khan,Lahore Se Aagey
+Lahore Se Aagey,starring,Bilal Qureshi,Lahore Se Aagey
+Lahore Se Aagey,starring,Velma Jolly,Lahore Se Aagey
+Lahore Se Aagey,starring,Ali Sufiyan,Lahore Se Aagey
+Lahore Se Aagey,genre,Action Comedy Film,Lahore Se Aagey
+Soviet destroyer Nezamozhnik,instanceOf,Destroyer,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,isPartOf,Soviet Navy,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,hasCountryOfOrigin,Soviet Union,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,hasClass,Nezamozhnik-class destroyer,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,hasShipName,Nezamozhnik,Soviet destroyer Nezamozhnik
+subject,predicate,object,"Lubei Subdistrict, Taizhou, Zhejiang"
+Three on a Honeymoon (1934 film),instanceOf,film,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),publicationDate,1934,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),director,Robert Z. Leonard,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),starring,Jack Hootenanny,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),starring,Gloria Stuart,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),genre,Comedy film,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),country,United States,Three on a Honeymoon (1934 film)
+IBTE Jefri Bolkiah Campus,instanceOf,university campus,IBTE Jefri Bolkiah Campus
+IBTE Jefri Bolkiah Campus,locatedIn,Brunei,IBTE Jefri Bolkiah Campus
+IBTE Jefri Bolkiah Campus,partOf,Institut Brunei Technical Education,IBTE Jefri Bolkiah Campus
+IBTE Jefri Bolkiah Campus,offers,technical education,IBTE Jefri Bolkiah Campus
+IBTE Jefri Bolkiah Campus,namedAfter,Jefri Bolkiah,IBTE Jefri Bolkiah Campus
+Tmesiphantes,instanceOf,genus,Tmesiphantes
+Tmesiphantes,subclassOf,Araneidae,Tmesiphantes
+Tmesiphantes,family,Araneidae,Tmesiphantes
+Tmesiphantes,class,Arachnida,Tmesiphantes
+Tmesiphantes,order,Araneomorphae,Tmesiphantes
+Tmesiphantes,phylum,Arthropoda,Tmesiphantes
+Matraman railway station,instanceOf,railway station,Matraman railway station
+Matraman railway station,locatedIn,Jakarta,Matraman railway station
+Matraman railway station,country,Indonesia,Matraman railway station
+Matraman railway station,serves,Jakarta,Matraman railway station
+Matraman railway station,operator,PT Kereta Commuter Indonesia,Matraman railway station
+subject,predicate,object,Methacrylamide
+H,5,6,Methacrylamide
+Bangalore Days,instanceOf,Film,Bangalore Days
+Bangalore Days,genre,Drama,Bangalore Days
+Bangalore Days,director,Annie John,Bangalore Days
+Bangalore Days,starring,Nivin Pauly,Bangalore Days
+Bangalore Days,starring,Johny Lever,Bangalore Days
+Bangalore Days,starring,Samantha Akkineni,Bangalore Days
+Bangalore Days,releaseDate,2014-06-06,Bangalore Days
+Bangalore Days,country,India,Bangalore Days
+Bangalore Days,language,Malayalam,Bangalore Days
+subject,predicate,object,Edward Magruder Tutwiler
+MV Ganga Vilas,instanceOf,River Cruise Ship,MV Ganga Vilas
+MV Ganga Vilas,operator,Indian Railways,MV Ganga Vilas
+MV Ganga Vilas,route,Varanasi to Kolkata,MV Ganga Vilas
+MV Ganga Vilas,length,Length: 60.25 metres,MV Ganga Vilas
+MV Ganga Vilas,beam,Beam: 10.2 metres,MV Ganga Vilas
+MV Ganga Vilas,speed,Speed: 21 km/h,MV Ganga Vilas
+MV Ganga Vilas,capacity,Capacity: 200 passengers,MV Ganga Vilas
+MV Ganga Vilas,launchDate,2023,MV Ganga Vilas
+Emily Appleton (tennis),instanceOf,tennis player,Emily Appleton (tennis)
+Emily Appleton (tennis),sex,female,Emily Appleton (tennis)
+Emily Appleton (tennis),plays,right-handed,Emily Appleton (tennis)
+Emily Appleton (tennis),birthDate,1999-02-11,Emily Appleton (tennis)
+Emily Appleton (tennis),ITF Women's Circuit,tennis career,Emily Appleton (tennis)
+Emily Appleton (tennis),coach,unknown,Emily Appleton (tennis)
+subject,predicate,object,Marie-Françoise Plissart
+Bopyridae,instanceOf,Family,Bopyridae
+Bopyridae,subclassOf,Isopoda,Bopyridae
+Bopyridae,hasScientificName,Bopyridae,Bopyridae
+Bopyridae,saidToBe,parasitic,Bopyridae
+Ada Iddings Gale,instanceOf,Human,Ada Iddings Gale
+Ada Iddings Gale,birthDate,1872-01-25,Ada Iddings Gale
+Ada Iddings Gale,deathDate,1958-03-13,Ada Iddings Gale
+Ada Iddings Gale,spouse,William Gale,Ada Iddings Gale
+Ada Iddings Gale,residence,Minnesota,Ada Iddings Gale
+Dol pri Šmarju,instanceOf,settlement,Dol pri Šmarju
+Dol pri Šmarju,locatedIn,Slovenia,Dol pri Šmarju
+Dol pri Šmarju,partOf,Šmarje pri Jelševcu,Dol pri Šmarju
+Dol pri Šmarju,hasElevation,284,Dol pri Šmarju
+Dol pri Šmarju,hasPopulation,107,Dol pri Šmarju
+subject,predicate,object,Airdrieonians F.C.
+Airdrieonians F.C.,instanceOf,Football Club,Airdrieonians F.C.
+Airdrieonians F.C.,location,"Airdrie, North Lanarkshire",Airdrieonians F.C.
+Airdrieonians F.C.,playsIn,Scottish Professional Football League,Airdrieonians F.C.
+Airdrieonians F.C.,ground,Excelsior Stadium,Airdrieonians F.C.
+Airdrieonians F.C.,founded,1878,Airdrieonians F.C.
+2016–17 Segona Divisió,instanceOf,sports season,2016–17 Segona Divisió
+2016–17 Segona Divisió,partOf,Segona Divisió,2016–17 Segona Divisió
+2016–17 Segona Divisió,startDate,2016,2016–17 Segona Divisió
+2016–17 Segona Divisió,endDate,2017,2016–17 Segona Divisió
+2016–17 Segona Divisió,seasonPrecededBy,2015–16 Segona Divisió,2016–17 Segona Divisió
+2016–17 Segona Divisió,seasonSucceededBy,2017–18 Segona Divisió,2016–17 Segona Divisió
+subject,predicate,object,Westworld season 3
+Westworld season 3,instanceOf,Television season,Westworld season 3
+Westworld season 3,partOf,Westworld,Westworld season 3
+Westworld season 3,premiereDate,2020-03-15,Westworld season 3
+Westworld season 3,numberOfEpisodes,8,Westworld season 3
+Westworld season 3,starring,Evan Rachel Wood,Westworld season 3
+Westworld season 3,starring,Thandie Newton,Westworld season 3
+Westworld season 3,starring,Jeffrey Wright,Westworld season 3
+Westworld season 3,creator,Jonathan Nolan,Westworld season 3
+Westworld season 3,producer,J.J. Abrams,Westworld season 3
+Kimi ga Iru Kara (Sayuri Sugawara song),instanceOf,song,Kimi ga Iru Kara (Sayuri Sugawara song)
+Kimi ga Iru Kara (Sayuri Sugawara song),artist,Sayuri Sugawara,Kimi ga Iru Kara (Sayuri Sugawara song)
+Kimi ga Iru Kara (Sayuri Sugawara song),language,Japanese,Kimi ga Iru Kara (Sayuri Sugawara song)
+Kimi ga Iru Kara (Sayuri Sugawara song),title,Kimi ga Iru Kara,Kimi ga Iru Kara (Sayuri Sugawara song)
+subject,predicate,object,Inca finch
+subject,predicate,object,2021 NCAA Division I baseball tournament
+Sphingomonas haloaromaticamans,instanceOf,Bacterium,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,genus,Sphingomonas,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,species,Sphingomonas haloaromaticamans,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,family,Sphingomonadaceae,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,phylum,Proteobacteria,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,typeOf,Gram-negative bacterium,Sphingomonas haloaromaticamans
+Maurice Fatio,instanceOf,Person,Maurice Fatio
+Maurice Fatio,bornIn,Switzerland,Maurice Fatio
+Maurice Fatio,diedIn,Switzerland,Maurice Fatio
+Maurice Fatio,workedAs,Architect,Maurice Fatio
+Maurice Fatio,collaboratedWith,Le Corbusier,Maurice Fatio
+Carmen (Stromae song),instanceOf,song,Carmen (Stromae song)
+Carmen (Stromae song),creator,Stromae,Carmen (Stromae song)
+Carmen (Stromae song),releaseDate,2022-04-15,Carmen (Stromae song)
+Carmen (Stromae song),language,French,Carmen (Stromae song)
+Carmen (Stromae song),partOf,Multitude (Stromae album),Carmen (Stromae song)
+Trichosanthin,instanceOf,Protein,Trichosanthin
+Trichosanthin,hasClassification,Ribosome-inactivating protein,Trichosanthin
+Trichosanthin,foundIn,Trichosanthes kirilowii,Trichosanthin
+Trichosanthin,hasCASNumber,67891-22-4,Trichosanthin
+Trichosanthin,hasPubChemCID,135595,Trichosanthin
+Trichosanthin,showsAntiviralActivity,true,Trichosanthin
+Trichosanthin,showsImmunosuppressiveActivity,true,Trichosanthin
+subject,predicate,object,Taisan-ji (Matsuyama)
+Live & More (Roberta Flack and Peabo Bryson album),instanceOf,music album,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),releaseDate,1980-09,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),artist,Roberta Flack,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),artist,Peabo Bryson,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),genre,jazz,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),genre,soul,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),genre,blues,Live & More (Roberta Flack and Peabo Bryson album)
+Bellatrix Lestrange,instanceOf,Wizard,Bellatrix Lestrange
+Bellatrix Lestrange,instanceOf,Death Eater,Bellatrix Lestrange
+Bellatrix Lestrange,playedBy,Helena Bonham Carter,Bellatrix Lestrange
+Bellatrix Lestrange,partOf,Harry Potter franchise,Bellatrix Lestrange
+Bellatrix Lestrange,familyMember,Rodolphus Lestrange,Bellatrix Lestrange
+Bellatrix Lestrange,familyMember,Rabastan Lestrange,Bellatrix Lestrange
+Bellatrix Lestrange,spouse,Rodolphus Lestrange,Bellatrix Lestrange
+Bellatrix Lestrange,influencedBy,Lord Voldemort,Bellatrix Lestrange
+Dermot Kelly (actor),instanceOf,Actor,Dermot Kelly (actor)
+Dermot Kelly (actor),birthDate,1923-02-14,Dermot Kelly (actor)
+Dermot Kelly (actor),deathDate,1958-10-12,Dermot Kelly (actor)
+Dermot Kelly (actor),nationality,Irish,Dermot Kelly (actor)
+"Union Bethel A.M.E. Church (New Orleans, Louisiana)",instanceOf,church,"Union Bethel A.M.E. Church (New Orleans, Louisiana)"
+"Union Bethel A.M.E. Church (New Orleans, Louisiana)",locatedIn,"New Orleans, Louisiana","Union Bethel A.M.E. Church (New Orleans, Louisiana)"
+"Union Bethel A.M.E. Church (New Orleans, Louisiana)",denomination,African Methodist Episcopal,"Union Bethel A.M.E. Church (New Orleans, Louisiana)"
+"Union Bethel A.M.E. Church (New Orleans, Louisiana)",type,houseOfWorship,"Union Bethel A.M.E. Church (New Orleans, Louisiana)"
+subject,predicate,object,Mark Nepo
+Dynatrace,instanceOf,Company,Dynatrace
+Dynatrace,foundedIn,2005,Dynatrace
+Dynatrace,foundedBy,Bernhard Niesner,Dynatrace
+Dynatrace,headquarteredIn,"Munich, Germany",Dynatrace
+Dynatrace,industry,Software,Dynatrace
+Dynatrace,product,Dynatrace Software Intelligence Platform,Dynatrace
+Dynatrace,product,Application Performance Monitoring,Dynatrace
+Dynatrace,product,Artificial Intelligence for IT Operations,Dynatrace
+Dynatrace,acquiredBy,Thoma Bravo,Dynatrace
+Dynatrace,wentPublic,2019,Dynatrace
+Maeba (album),instanceOf,album,Maeba (album)
+Maeba (album),artist,Duo Kieffer,Maeba (album)
+Maeba (album),released,2004,Maeba (album)
+National Route 217 (Costa Rica),instanceOf,National Route,National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),locatedIn,Costa Rica,National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),typeOf,Road,National Route 217 (Costa Rica)
+Bitter Sweet,instanceOf,TV series,Bitter Sweet (TV series)
+Bitter Sweet,genre,Drama,Bitter Sweet (TV series)
+Bitter Sweet,genre,Romance,Bitter Sweet (TV series)
+Bitter Sweet,creator,Shirley Brook,Bitter Sweet (TV series)
+Bitter Sweet,starring,Martine McCutcheon,Bitter Sweet (TV series)
+Bitter Sweet,starring,Steven Tomlinson,Bitter Sweet (TV series)
+Bitter Sweet,country,United Kingdom,Bitter Sweet (TV series)
+Bitter Sweet,originalLanguage,English,Bitter Sweet (TV series)
+subject,predicate,object,Stalag V-A
+Webtoon (platform),instanceOf,online comic platform,Webtoon (platform)
+Webtoon (platform),foundedBy,Naver,Webtoon (platform)
+Webtoon (platform),headquarteredIn,Seoul,Webtoon (platform)
+Webtoon (platform),launchedOn,2010,Webtoon (platform)
+Webtoon (platform),parentCompany,Naver,Webtoon (platform)
+Webtoon (platform),availableIn,South Korea,Webtoon (platform)
+Webtoon (platform),availableIn,United States,Webtoon (platform)
+Webtoon (platform),hasContentType,webcomic,Webtoon (platform)
+Webtoon (platform),hasContentType,漫画,Webtoon (platform)
+1950 Dutch Grand Prix,instanceOf,Grand Prix,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,partOf,1950 Formula One World Championship,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,location,Circuit de Zandvoort,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,date,1950-07-16,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,result,Luigi Fagioli,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,result,Alfa Romeo,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,numberOfRaces,1,1950 Dutch Grand Prix
+Spartaco Fontanot,instanceOf,Human,Spartaco Fontanot
+Spartaco Fontanot,birthDate,1964,Spartaco Fontanot
+Spartaco Fontanot,occupation,Football Player,Spartaco Fontanot
+Spartaco Fontanot,position,Defender,Spartaco Fontanot
+subject,predicate,object,Connect (2022 film)
+Hugh Scott (architect),instanceOf,architect,Hugh Scott (architect)
+Hugh Scott (architect),name,Hugh Scott,Hugh Scott (architect)
+Hugh Scott (architect),birthDate,1877,Hugh Scott (architect)
+Hugh Scott (architect),deathDate,1964,Hugh Scott (architect)
+Hugh Scott (architect),nationality,British,Hugh Scott (architect)
+subject,predicate,object,Microcotyle tampicensis
+East Nottingham Friends Meetinghouse,instanceOf,Quaker meeting house,East Nottingham Friends Meetinghouse
+East Nottingham Friends Meetinghouse,location,"East Nottingham Township, Pennsylvania",East Nottingham Friends Meetinghouse
+East Nottingham Friends Meetinghouse,architect,Atlee,East Nottingham Friends Meetinghouse
+East Nottingham Friends Meetinghouse,addedToNRHP,"January 8, 1982",East Nottingham Friends Meetinghouse
+East Nottingham Friends Meetinghouse,NRHPReferenceNumber,82003463,East Nottingham Friends Meetinghouse
+Filip Brattbakk,instanceOf,Human,Filip Brattbakk
+Filip Brattbakk,birthDate,1970-04-26,Filip Brattbakk
+Filip Brattbakk,birthPlace,Lillehammer,Filip Brattbakk
+Filip Brattbakk,nationality,Norwegian,Filip Brattbakk
+Filip Brattbakk,occupation,Football player,Filip Brattbakk
+Filip Brattbakk,position,Striker,Filip Brattbakk
+Murce-class speedboat,instanceOf,torpedo boat,Murce-class speedboat
+Murce-class speedboat,countryOfOrigin,Spain,Murce-class speedboat
+Murce-class speedboat,manufacturer,Barcaiztegui,Murce-class speedboat
+Murce-class speedboat,service,Spanish Navy,Murce-class speedboat
+Dushdi Mala Medal,instanceOf,Award,Dushdi Mala Medal
+Dushdi Mala Medal,namedAfter,Dushdi Mala,Dushdi Mala Medal
+Dushdi Mala Medal,country,Thailand,Dushdi Mala Medal
+Dushdi Mala Medal,category,Military decoration,Dushdi Mala Medal
+So Fine (film),instanceOf,film,So Fine (film)
+So Fine (film),genre,comedy film,So Fine (film)
+So Fine (film),director,Gordon Malmberg,So Fine (film)
+So Fine (film),starring,Dyanne Thorne,So Fine (film)
+So Fine (film),releaseYear,1981,So Fine (film)
+So Fine (film),countryOfOrigin,United States,So Fine (film)
+subject,predicate,object,Replay (Zendaya song)
+subject,predicate,object,Malakai Fakatoufifita
+BMD-4,instanceOf,Infantry Fighting Vehicle,BMD-4
+BMD-4,manufacturer,Soviet Union,BMD-4
+BMD-4,usedBy,Soviet Army,BMD-4
+BMD-4,crew,7,BMD-4
+BMD-4,length,6.4 m,BMD-4
+BMD-4,width,2.95 m,BMD-4
+BMD-4,height,2.05 m,BMD-4
+BMD-4,weight,10.3 t,BMD-4
+BMD-4,mainArmament,100mm 2A28 Grom,BMD-4
+BMD-4,secondaryArmament,7.62mm PKT machine gun,BMD-4
+"1,1'-Azobis-1,2,3-triazole",instanceOf,Chemical Compound,"1,1'-Azobis-1,2,3-triazole"
+"1,1'-Azobis-1,2,3-triazole",hasChemicalFormula,C6H6N6,"1,1'-Azobis-1,2,3-triazole"
+"1,1'-Azobis-1,2,3-triazole",isUsedIn,Click Chemistry,"1,1'-Azobis-1,2,3-triazole"
+"1,1'-Azobis-1,2,3-triazole",hasSMILES,n1nnnn1N=Nn2nnnn2,"1,1'-Azobis-1,2,3-triazole"
+"1,1'-Azobis-1,2,3-triazole",isResearchTopicOf,Organic Chemistry,"1,1'-Azobis-1,2,3-triazole"
+subject,predicate,object,Steven Pressman
+Also,note that the information available about Badampudi railway station seems to be limited,so the above list might not be exhaustive.,Badampudi railway station
+Bad Guy (Billie Eilish song),instanceOf,song,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),partOf,Happier Than Ever,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),composer,Billie Eilish,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),producer,Finneas O'Connell,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),publishedBy,Interscope Records,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),releaseDate,2019-03-29,Bad Guy (Billie Eilish song)
+Techniques (album),instanceOf,album,Techniques (album)
+Techniques (album),artist,Techniques,Techniques (album)
+Techniques (album),releaseDate,1975,Techniques (album)
+Techniques (album),genre,reggae,Techniques (album)
+Techniques (album),producer,Bunny Lee,Techniques (album)
+The Music and Theater Folk High School,instanceOf,Folk High School,The Music and Theater Folk High School
+The Music and Theater Folk High School,location,Denmark,The Music and Theater Folk High School
+The Music and Theater Folk High School,offers,Music Education,The Music and Theater Folk High School
+The Music and Theater Folk High School,offers,Theater Education,The Music and Theater Folk High School
+Port of Kherson,instanceOf,port,Port of Kherson
+Port of Kherson,locatedIn,Kherson,Port of Kherson
+Port of Kherson,locatedOn,Dnieper River,Port of Kherson
+Port of Kherson,isConnectedTo,Black Sea,Port of Kherson
+Port of Kherson,usedFor,cargo transport,Port of Kherson
+Port of Kherson,hasCapacity,million tons per year,Port of Kherson
+subject,predicate,object,2016 Tajik constitutional referendum
+Towards Zero (TV series),instanceOf,Television series,Towards Zero (TV series)
+Towards Zero (TV series),basedOn,Towards Zero,Towards Zero (TV series)
+Towards Zero (TV series),genre,Mystery,Towards Zero (TV series)
+Towards Zero (TV series),genre,Thriller,Towards Zero (TV series)
+Towards Zero (TV series),starring,Ayaka Takamoto,Towards Zero (TV series)
+Towards Zero (TV series),starring,Kento Hayashi,Towards Zero (TV series)
+Towards Zero (TV series),countryOfOrigin,Japan,Towards Zero (TV series)
+Towards Zero (TV series),language,Japanese,Towards Zero (TV series)
+Remembering Leonard Nimoy,instanceOf,Documentary,Remembering Leonard Nimoy
+Remembering Leonard Nimoy,basedOn,Leonard Nimoy,Remembering Leonard Nimoy
+Remembering Leonard Nimoy,starring,Leonard Nimoy,Remembering Leonard Nimoy
+Remembering Leonard Nimoy,genre,Documentary,Remembering Leonard Nimoy
+Leonard Nimoy,instanceOf,Actor,Remembering Leonard Nimoy
+Leonard Nimoy,played,Mr. Spock,Remembering Leonard Nimoy
+Leonard Nimoy,starredIn,Star Trek,Remembering Leonard Nimoy
+Remembering Leonard Nimoy,instanceOf,Documentary film,Remembering Leonard Nimoy
+Remembering Leonard Nimoy,about,Leonard Nimoy,Remembering Leonard Nimoy
+subject,predicate,object,Booker T (wrestler)
+subject,predicate,object,"Nowa Góra, Lesser Poland Voivodeship"
+"Church of St Edmund, Sedgefield",instanceOf,Anglican church,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",location,Sedgefield,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",dedicatedTo,Edmund,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",partOf,Diocese of Durham,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",architecturalStyle,Gothic Revival,"Church of St Edmund, Sedgefield"
+Nathan Stewart-Jarrett,instanceOf,Human,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,bornIn,London,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,hasOccupation,actor,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,hasOccupation,theater actor,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,knownFor,Cucumber,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,knownFor,The Picture of Dorian Gray,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,playedCharacter,PC Wainwright,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,playedIn, Casualty,Nathan Stewart-Jarrett
+Jenny Bowen (filmmaker),instanceOf,Filmmaker,Jenny Bowen (filmmaker)
+Jenny Bowen (filmmaker),isA,Film producer,Jenny Bowen (filmmaker)
+Jenny Bowen (filmmaker),isA,Screenwriter,Jenny Bowen (filmmaker)
+Jenny Bowen (filmmaker),worksIn,United Kingdom,Jenny Bowen (filmmaker)
+Jenny Bowen (filmmaker),hasNationality,British,Jenny Bowen (filmmaker)
+subject,predicate,object,Lee Hyung-chul (boxer)
+Le Double Amour,instanceOf,film,Le Double Amour
+Le Double Amour,director,André Cavens,Le Double Amour
+Le Double Amour,basedOn,La vida doble,Le Double Amour
+Le Double Amour,releaseDate,1997-05-14,Le Double Amour
+Le Double Amour,language,French,Le Double Amour
+subject,predicate,object,2018 Hualien earthquake
+HD 103197,instanceOf,Star,HD 103197
+HD 103197,locatedIn,Milky Way,HD 103197
+HD 103197,hasSpectralType,G-type main-sequence star,HD 103197
+HD 103197,hasLuminosityClass,V,HD 103197
+HD 103197,hasMass,1.02,HD 103197
+HD 103197,hasRadius,1.01,HD 103197
+HD 103197,hasSurfaceTemperature,5850,HD 103197
+HD 103197,hasAge,4500000000.0,HD 103197
+HD 103197,isVisibleTo,naked eye,HD 103197
+Harumafuji Kōhei,instanceOf,Mongolian sumo wrestler,Harumafuji Kōhei
+Harumafuji Kōhei,birthDate,1988-04-14,Harumafuji Kōhei
+Harumafuji Kōhei,birthPlace,"Ulaanbaatar, Mongolia",Harumafuji Kōhei
+Harumafuji Kōhei,highestRank,ōzeki,Harumafuji Kōhei
+Harumafuji Kōhei,wins,Harumafuji Kōhei's sumo record,Harumafuji Kōhei
+Harumafuji Kōhei,retired,2017,Harumafuji Kōhei
+Harumafuji Kōhei,trainer,Miyagino stable,Harumafuji Kōhei
+Harumafuji Kōhei,sumoStable,Miyagino stable,Harumafuji Kōhei
+Harumafuji Kōhei,JapaneseName,,Harumafuji Kōhei
+Harumafuji Kōhei,shikename,Harumafuji Kōhei,Harumafuji Kōhei
+subject,predicate,object,Preventing and Combating Violence Against Women and Domestic Violence (Ratification of Convention) Act 2017
+Bacillus aminovorans,instanceOf,Bacillus,Bacillus aminovorans
+Bacillus aminovorans,genus,Bacillus,Bacillus aminovorans
+Bacillus aminovorans,species,Bacillus aminovorans,Bacillus aminovorans
+Bacillus aminovorans,is a type of,Gram-positive bacteria,Bacillus aminovorans
+Bacillus aminovorans,found in,soil,Bacillus aminovorans
+1942 Croatian First League,instanceOf,Sports League,1942 Croatian First League
+1942 Croatian First League,partOf,1942,1942 Croatian First League
+1942 Croatian First League,partOf,Croatia,1942 Croatian First League
+1942 Croatian First League,instanceOf,Football League,1942 Croatian First League
+1942 Croatian First League,country,Croatia,1942 Croatian First League
+Muisca,instanceOf,Beetle,Muisca (beetle)
+Muisca,subclassOf,Insect,Muisca (beetle)
+Muisca,family,Cerambycidae,Muisca (beetle)
+Muisca,genus,Muisca,Muisca (beetle)
+Muisca,namedAfter,Muisca people,Muisca (beetle)
+The King's Case Note,instanceOf,Book,The King's Case Note
+The King's Case Note,author,Robert E. Howard,The King's Case Note
+The King's Case Note,publishedIn,Weird Tales,The King's Case Note
+The King's Case Note,publicationDate,1935,The King's Case Note
+The King's Case Note,genre,Fantasy,The King's Case Note
+The King's Case Note,relatedTo,Conan the Barbarian,The King's Case Note
+USS Chester T. O'Brien,instanceOf,destroyer,USS Chester T. O'Brien
+USS Chester T. O'Brien,commissioned,1942,USS Chester T. O'Brien
+USS Chester T. O'Brien,decommissioned,1946,USS Chester T. O'Brien
+USS Chester T. O'Brien,countryOfOrigin,United States,USS Chester T. O'Brien
+Patrick Kinyua Mbogo,instanceOf,Person,Patrick Kinyua Mbogo
+Patrick Kinyua Mbogo,type,Kenyan,Patrick Kinyua Mbogo
+Patrick Kinyua Mbogo,is,cardiothoracic surgeon,Patrick Kinyua Mbogo
+F.C. De Kampioenen (comic),instanceOf,comic strip,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),creator,Hergé,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),partOfSeries,The Adventures of Tintin,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),publicationDate,1938,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),language,Dutch,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),genre,Humor,F.C. De Kampioenen (comic)
+Gliese 536,instanceOf,Star,Gliese 536
+Gliese 536,locatedIn,Milky Way,Gliese 536
+Gliese 536,hasMass,0.69 M☉,Gliese 536
+Gliese 536,hasRadius,0.69 R☉,Gliese 536
+Gliese 536,surfaceTemperature,4977 K,Gliese 536
+Gliese 536,hasPlanet,Gliese 536 b,Gliese 536
+subject,predicate,object,Gmina Bobowa
+Lactobacillus porci,instanceOf,Lactobacillus,Lactobacillus porci
+Lactobacillus porci,genus,Lactobacillus,Lactobacillus porci
+Lactobacillus porci,species,Lactobacillus porci,Lactobacillus porci
+Lactobacillus porci,classification,Gram-positive bacteria,Lactobacillus porci
+Lactobacillus porci,type,Bacterium,Lactobacillus porci
+subject,predicate,object,Galboda Gnanissara Thera
+1981 Soviet Cup,instanceOf,Soviet football competitions,1981 Soviet Cup
+1981 Soviet Cup,startDate,1981,1981 Soviet Cup
+1981 Soviet Cup,endDate,1981,1981 Soviet Cup
+1981 Soviet Cup,country,Soviet Union,1981 Soviet Cup
+1981 Soviet Cup,participant,Dynamo Moscow,1981 Soviet Cup
+1981 Soviet Cup,participant,Zenit Leningrad,1981 Soviet Cup
+1981 Soviet Cup,winner,Zenit Leningrad,1981 Soviet Cup
+Pat Rooney (basketball),instanceOf,American basketball player,Pat Rooney (basketball)
+Pat Rooney (basketball),plays,point guard,Pat Rooney (basketball)
+Pat Rooney (basketball),plays,shooting guard,Pat Rooney (basketball)
+Pat Rooney (basketball),draftedBy,Utica Nationals,Pat Rooney (basketball)
+Ventilator (2018 film),instanceOf,Film,Ventilator (2018 film)
+Ventilator (2018 film),releaseDate,2018,Ventilator (2018 film)
+Ventilator (2018 film),director,Ravi Udyawar,Ventilator (2018 film)
+Ventilator (2018 film),starring,Manoj Bajpayee,Ventilator (2018 film)
+Ventilator (2018 film),genre,Drama,Ventilator (2018 film)
+Ventilator (2018 film),countryOfOrigin,India,Ventilator (2018 film)
+Ventilator (2018 film),language,Hindi,Ventilator (2018 film)
+1940–41 Buffalo Bulls men's basketball team,instanceOf,basketball team,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,partOf,1940-41 NCAA men's basketball season,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,basedIn,"Buffalo, New York",1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,league,NCAA,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,school,University at Buffalo,1940–41 Buffalo Bulls men's basketball team
+Barbarano Mossano,instanceOf,Comune,Barbarano Mossano
+Barbarano Mossano,locatedIn,Italy,Barbarano Mossano
+Barbarano Mossano,locatedIn,Veneto,Barbarano Mossano
+Barbarano Mossano,locatedIn,Vicenza,Barbarano Mossano
+Barbarano Mossano,capitalOf,Barbarano Mossano,Barbarano Mossano
+subject,predicate,object,Garcinia celebica
+Leonard Berkowitz,instanceOf,Psychologist,Leonard Berkowitz
+Leonard Berkowitz,bornIn,1920,Leonard Berkowitz
+Leonard Berkowitz,diedIn,2004,Leonard Berkowitz
+Leonard Berkowitz,knownFor,Frustration-aggression hypothesis,Leonard Berkowitz
+Leonard Berkowitz,contributedTo,Social psychology,Leonard Berkowitz
+Leonard Berkowitz,workedAt,University of Wisconsin–Madison,Leonard Berkowitz
+Leonard Berkowitz,publishedIn,Journal of Personality and Social Psychology,Leonard Berkowitz
+subject,predicate,object,Ivor Robinson (physicist)
+subject,predicate,object,Legion (video game)
+Legion (video game),instanceOf,video game,Legion (video game)
+Legion (video game),genre,tactical role-playing game,Legion (video game)
+Legion (video game),developer,Ubisoft,Legion (video game)
+Legion (video game),publisher,Ubisoft,Legion (video game)
+Legion (video game),releaseDate,2020-10-29,Legion (video game)
+Legion (video game),platform,PlayStation 4,Legion (video game)
+Legion (video game),platform,Windows,Legion (video game)
+Legion (video game),platform,Xbox One,Legion (video game)
+Legion (video game),setting,dystopian,Legion (video game)
+Legion (video game),title,Watch Dogs: Legion,Legion (video game)
+Watch Dogs: Legion,instanceOf,video game,Legion (video game)
+Watch Dogs: Legion,genre,tactical role-playing game,Legion (video game)
+Watch Dogs: Legion,developer,Ubisoft,Legion (video game)
+Watch Dogs: Legion,publisher,Ubisoft,Legion (video game)
+Watch Dogs: Legion,releaseDate,2020-10-29,Legion (video game)
+Watch Dogs: Legion,platform,PlayStation 4,Legion (video game)
+Watch Dogs: Legion,platform,Windows,Legion (video game)
+Watch Dogs: Legion,platform,Xbox One,Legion (video game)
+Watch Dogs: Legion,setting,dystopian,Legion (video game)
+Watch Dogs: Legion,title,Watch Dogs: Legion,Legion (video game)
+subject,predicate,object,Frank-Rutger Hausmann
+Gran Turismo Sport,instanceOf,video game,Gran Turismo Sport
+Gran Turismo Sport,partOf,Gran Turismo series,Gran Turismo Sport
+Gran Turismo Sport,developedBy,Polyphony Digital,Gran Turismo Sport
+Gran Turismo Sport,publisher,Sony Interactive Entertainment,Gran Turismo Sport
+Gran Turismo Sport,releaseDate,2017-10-17,Gran Turismo Sport
+Gran Turismo Sport,platform,PlayStation 4,Gran Turismo Sport
+Gran Turismo Sport,genre,racing game,Gran Turismo Sport
+Lexia to Perplexia,instanceOf,Novel,Lexia to Perplexia
+Lexia to Perplexia,author,Ruth Frances Long,Lexia to Perplexia
+Lexia to Perplexia,publishedIn,McSweeney's,Lexia to Perplexia
+Lexia to Perplexia,publicationDate,2007,Lexia to Perplexia
+Jerome Messam,instanceOf,RugbyPlayer,Jerome Messam
+Jerome Messam,playsFor,New Zealand national rugby sevens team,Jerome Messam
+Jerome Messam,playsFor,Glasgow Warriors,Jerome Messam
+Jerome Messam,position,Scrum-half,Jerome Messam
+Jerome Messam,bornIn,Auckland,Jerome Messam
+subject,predicate,object,Herbert Von King Park
+Herbert Von King Park,instanceOf,park,Herbert Von King Park
+Herbert Von King Park,locatedIn,Brooklyn,Herbert Von King Park
+Herbert Von King Park,namedAfter,Herbert Von King,Herbert Von King Park
+Herbert Von King Park,features,playground,Herbert Von King Park
+Herbert Von King Park,features,basketball court,Herbert Von King Park
+Herbert Von King Park,features,tennis court,Herbert Von King Park
+Pluriarc,instanceOf,String,Pluriarc
+Pluriarc,is a,musical instrument,Pluriarc
+Pluriarc,has instrument classification,plucked string instrument,Pluriarc
+Pluriarc,has instrument classification,composite chordophone,Pluriarc
+Pluriarc,is related to,Kora (instrument),Pluriarc
+Pluriarc,is related to,Harpa,Pluriarc
+Seo Dong-won,instanceOf,Human,"Seo Dong-won (footballer, born 1973)"
+Seo Dong-won,birthYear,1973,"Seo Dong-won (footballer, born 1973)"
+Seo Dong-won,birthPlace,South Korea,"Seo Dong-won (footballer, born 1973)"
+Seo Dong-won,occupation,Footballer,"Seo Dong-won (footballer, born 1973)"
+Seo Dong-won,playsSport,Association Football,"Seo Dong-won (footballer, born 1973)"
+Dharmapatni (1987 film),instanceOf,film,Dharmapatni (1987 film)
+Dharmapatni (1987 film),year,1987,Dharmapatni (1987 film)
+Dharmapatni (1987 film),language,Hindi,Dharmapatni (1987 film)
+Dharmapatni (1987 film),countryOfOrigin,India,Dharmapatni (1987 film)
+Dharmapatni (1987 film),genre,drama,Dharmapatni (1987 film)
+Alberto Siliotti,instanceOf,Person,Alberto Siliotti
+Alberto Siliotti,type,Egyptologist,Alberto Siliotti
+Alberto Siliotti,type,Author,Alberto Siliotti
+Alberto Siliotti,nationality,Italian,Alberto Siliotti
+Alberto Siliotti,knownFor,Exploration of King Tut's tomb,Alberto Siliotti
+Nosa Iyobosa Edokpolor,instanceOf,Nigerian musician,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,knownAs,Nosa,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,genre,Afrobeat,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,instrument,Guitar,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,instrument,Keyboard,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,associatedBand,E.T.M.C,Nosa Iyobosa Edokpolor
+Nosa Iyobosa Edokpolor,associatedBand,The New African,Nosa Iyobosa Edokpolor
+subject,predicate,object,Bert Wright (cricketer)
+subject,predicate,object,Bahau River
+Col du Berthiand,instanceOf,mountain pass,Col du Berthiand
+Col du Berthiand,locatedIn,France,Col du Berthiand
+Col du Berthiand,locatedIn,Auvergne-Rhône-Alpes,Col du Berthiand
+Col du Berthiand,locatedIn,Isère,Col du Berthiand
+Col du Berthiand,hasElevation,"2,176 m",Col du Berthiand
+Vulcan Centaur,instanceOf,Rocket,Vulcan Centaur
+Vulcan Centaur,manufacturer,Astra,Vulcan Centaur
+Vulcan Centaur,launchedOn,2024-03-06,Vulcan Centaur
+Vulcan Centaur,launchSite,Cape Canaveral Space Force Station,Vulcan Centaur
+Vulcan Centaur,payload,Peregrine Mission One,Vulcan Centaur
+Willoughby Staples Brewster,instanceOf,Human,Willoughby Staples Brewster
+Willoughby Staples Brewster,birthDate,1859-10-25,Willoughby Staples Brewster
+Willoughby Staples Brewster,deathDate,1918-08-30,Willoughby Staples Brewster
+Willoughby Staples Brewster,occupation,Politician,Willoughby Staples Brewster
+Willoughby Staples Brewster,office,Member of the Canadian Parliament,Willoughby Staples Brewster
+Willoughby Staples Brewster,party,Conservative Party of Canada,Willoughby Staples Brewster
+Geogarypus connatus,instanceOf,species,Geogarypus connatus
+Geogarypus connatus,genus,Geogarypus,Geogarypus connatus
+Geogarypus connatus,family,Garypidae,Geogarypus connatus
+Geogarypus connatus,class,Arachnida,Geogarypus connatus
+Geogarypus connatus,phylum,Arthropoda,Geogarypus connatus
+subject,predicate,object,Tigrovaya Balka Nature Reserve
+Gouda triptych of the Life of Mary,instanceOf,triptych,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,depicts,Life of Mary,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,createdBy,Hieronymus Bosch,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,locatedAt,Museum of Fine Arts Ghent,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,hasPart,Nativity,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,hasPart,Adoration of the Magi,Gouda triptych of the Life of Mary
+Gouda triptych of the Life of Mary,hasPart,Presentation in the Temple,Gouda triptych of the Life of Mary
+1945 Giro di Lombardia,instanceOf,Giro di Lombardia,1945 Giro di Lombardia
+1945 Giro di Lombardia,year,1945,1945 Giro di Lombardia
+1945 Giro di Lombardia,partOf,1945 UCI Road World Championships,1945 Giro di Lombardia
+1945 Giro di Lombardia,startDate,1945-10-28,1945 Giro di Lombardia
+1945 Giro di Lombardia,endDate,1945-10-28,1945 Giro di Lombardia
+1945 Giro di Lombardia,winner,Michele Benvenuti,1945 Giro di Lombardia
+Krzysztof Piątek,instanceOf,Polish footballer,Krzysztof Piątek
+Krzysztof Piątek,birthDate,1995-07-15,Krzysztof Piątek
+Krzysztof Piątek,position,striker,Krzysztof Piątek
+Krzysztof Piątek,playsFor,Hertha BSC,Krzysztof Piątek
+Krzysztof Piątek,playsFor,ACF Fiorentina,Krzysztof Piątek
+Krzysztof Piątek,nationality,Polish,Krzysztof Piątek
+Krzysztof Piątek,hasScored,25 goals in Bundesliga,Krzysztof Piątek
+Giubiasco–Locarno railway,instanceOf,railway line,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,location,Switzerland,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,terminus,Giubiasco railway station,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,terminus,Locarno railway station,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,length,10 km,Giubiasco–Locarno railway
+Moor Bridge tram stop,instanceOf,tram stop,Moor Bridge tram stop
+Moor Bridge tram stop,locatedIn,Greater Manchester,Moor Bridge tram stop
+Moor Bridge tram stop,locatedIn,England,Moor Bridge tram stop
+Moor Bridge tram stop,serves,Moor Bridge,Moor Bridge tram stop
+Moor Bridge tram stop,partOf,Manchester Metrolink,Moor Bridge tram stop
+Edafe Okporo,instanceOf,Person,Edafe Okporo
+Edafe Okporo,birthPlace,Nigeria,Edafe Okporo
+Edafe Okporo,plays,Association football,Edafe Okporo
+Edafe Okporo,position,Striker,Edafe Okporo
+Edafe Okporo,teams,Vancouver Whitecaps FC,Edafe Okporo
+Edafe Okporo,teams,New York Red Bulls,Edafe Okporo
+Edafe Okporo,teams,San Jose Earthquakes,Edafe Okporo
+subject,predicate,object,Romain Glèlè Kakaï
+Allegory of Happiness,instanceOf,painting,Allegory of Happiness
+Allegory of Happiness,creator,Jan Brueghel the Elder,Allegory of Happiness
+Allegory of Happiness,year,1615,Allegory of Happiness
+Allegory of Happiness,location,Museo del Prado,Allegory of Happiness
+Allegory of Happiness,depicts,Happiness,Allegory of Happiness
+Canton of Le Diois,instanceOf,Canton of France,Canton of Le Diois
+Canton of Le Diois,locatedIn,Drôme,Canton of Le Diois
+Canton of Le Diois,headquarters,Luc-en-Diois,Canton of Le Diois
+Canton of Le Diois,in,Auvergne-Rhône-Alpes,Canton of Le Diois
+Canton of Le Diois,replaces,Canton of Luc-en-Diois,Canton of Le Diois
+If more information was needed I could try to provide it,but for now,I do not have much more.,Ramal de Braga
+subject,predicate,object,Cap Blanc rock shelter
+subject,predicate,object,Ali Abbasi (director)
+Ali Abbasi (director),instanceOf,Film Director,Ali Abbasi (director)
+Ali Abbasi (director),birthName,Ali Abbasi,Ali Abbasi (director)
+Ali Abbasi (director),birthDate,1979-01-01,Ali Abbasi (director)
+Ali Abbasi (director),nationality,Swedish,Ali Abbasi (director)
+Ali Abbasi (director),notableWork,Murk,Ali Abbasi (director)
+Ali Abbasi (director),notableWork,The Days That Remain,Ali Abbasi (director)
+Ali Abbasi (director),awardReceived,Guldbagge Award,Ali Abbasi (director)
+Salix pyrenaica,instanceOf,Species,Salix pyrenaica
+Salix pyrenaica,genus,Salix,Salix pyrenaica
+Salix pyrenaica,family,Salicaceae,Salix pyrenaica
+Salix pyrenaica,origin,Pyrenees,Salix pyrenaica
+Czech Republic Davis Cup team,instanceOf,National sports team,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,country,Czech Republic,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,competition,Davis Cup,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,sportsLeague,International Tennis Federation,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,hasCaptain,Petr Korda,Czech Republic Davis Cup team
+Kapelludden Lighthouse,instanceOf,Lighthouse,Kapelludden Lighthouse
+Kapelludden Lighthouse,locatedIn,Sweden,Kapelludden Lighthouse
+Kapelludden Lighthouse,locatedIn,Stockholm County,Kapelludden Lighthouse
+Kapelludden Lighthouse,hasHeight,22,Kapelludden Lighthouse
+Kapelludden Lighthouse,hasLocation,"59.4333° N, 18.1333° E",Kapelludden Lighthouse
+"Forest House, Chester",instanceOf,house,"Forest House, Chester"
+"Forest House, Chester",location,Chester,"Forest House, Chester"
+"Forest House, Chester",locatedIn,England,"Forest House, Chester"
+"Forest House, Chester",partOf,Chester,"Forest House, Chester"
+"Forest House, Chester",instanceOf,building,"Forest House, Chester"
+Moisis Michail Bourlas,instanceOf,Person,Moisis Michail Bourlas
+Moisis Michail Bourlas,birthDate,1796,Moisis Michail Bourlas
+Moisis Michail Bourlas,birthPlace,Kavala,Moisis Michail Bourlas
+Moisis Michail Bourlas,deathDate,1884,Moisis Michail Bourlas
+Moisis Michail Bourlas,deathPlace,Constantinople,Moisis Michail Bourlas
+Moisis Michail Bourlas,occupation,Physician,Moisis Michail Bourlas
+Trouble No More (Darden Smith album),instanceOf,album,Trouble No More (Darden Smith album)
+Trouble No More (Darden Smith album),artist,Darden Smith,Trouble No More (Darden Smith album)
+Trouble No More (Darden Smith album),releaseDate,1990,Trouble No More (Darden Smith album)
+Trouble No More (Darden Smith album),genre,American folk music,Trouble No More (Darden Smith album)
+Trouble No More (Darden Smith album),genre,blues,Trouble No More (Darden Smith album)
+Flute Concerto No. 1 (Jolivet),instanceOf,Concerto,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),composedBy,André Jolivet,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),hasInstrument,Flute,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),isPartOf,Concerto repertoire,Flute Concerto No. 1 (Jolivet)
+Fahhad Al-Subaie,instanceOf,Q5,Fahhad Al-Subaie
+Fahhad Al-Subaie,nationality,Saudi Arabian,Fahhad Al-Subaie
+Fahhad Al-Subaie,occupation,actor,Fahhad Al-Subaie
+Fahhad Al-Subaie,activeYears,2005-present,Fahhad Al-Subaie
+Easy (2017 film),instanceOf,Film,Easy (2017 film)
+Easy (2017 film),releaseDate,2017,Easy (2017 film)
+Easy (2017 film),director,Tia Barker,Easy (2017 film)
+Easy (2017 film),genre,Comedy,Easy (2017 film)
+Easy (2017 film),countryOfOrigin,United States,Easy (2017 film)
+Uigshader,instanceOf,Shader,Uigshader
+Uigshader,creator,Martin Cerno,Uigshader
+Uigshader,platform,PlayStation 5,Uigshader
+Uigshader,usedIn,The Last of Us Part II,Uigshader
+Xibenolol,instanceOf,Beta blocker,Xibenolol
+Xibenolol,usedFor,Hypertension,Xibenolol
+Xibenolol,chemicalFormula,C18H23NO3,Xibenolol
+Xibenolol,IUPACName,"1-(2,3-dihydro-1H-inden-4-ylamino)-3-(2-(2-methylphenoxy)ethoxy)propan-2-ol",Xibenolol
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,instanceOf,Paralympic event,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,partOf,Athletics at the 2024 Summer Paralympics,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,hasGender,Women,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,hasDisabilityClassification,T12,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,hasEventType,Marathon,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,location,Paris,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,startDate,2024-09-00,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Backstage (1927 film),instanceOf,film,Backstage (1927 film)
+Backstage (1927 film),publicationDate,1927,Backstage (1927 film)
+Backstage (1927 film),director,Lloyd Ingraham,Backstage (1927 film)
+Backstage (1927 film),starring,Corinne Griffith,Backstage (1927 film)
+Backstage (1927 film),genre,drama film,Backstage (1927 film)
+Backstage (1927 film),countryOfOrigin,United States,Backstage (1927 film)
+Edward Raquello,instanceOf,Human,Edward Raquello
+Edward Raquello,bornIn,Poland,Edward Raquello
+Edward Raquello,diedIn,United States,Edward Raquello
+Edward Raquello,occupation,Actor,Edward Raquello
+Edward Raquello,occupation,Film Actor,Edward Raquello
+Edward Raquello,activeIn,Cinema,Edward Raquello
+Edward Raquello,givenName,Edward,Edward Raquello
+Edward Raquello,familyName,Raquello,Edward Raquello
+P.S. I can try to find more information if you would like,but for now,this seems like a good starting point.,2024 United States Senate election in Florida
+subject,predicate,object,Platanos railway station
+2011 European Wrestling Championships,instanceOf,European Wrestling Championships,2011 European Wrestling Championships
+2011 European Wrestling Championships,startDate,2011,2011 European Wrestling Championships
+2011 European Wrestling Championships,endDate,2011,2011 European Wrestling Championships
+2011 European Wrestling Championships,location,Germany,2011 European Wrestling Championships
+2011 European Wrestling Championships,sport,Wrestling,2011 European Wrestling Championships
+subject,predicate,object,British Rail Class 505
+Præstø Town Hall,instanceOf,Town Hall,Præstø Town Hall
+Præstø Town Hall,locatedIn,Præstø,Præstø Town Hall
+Præstø Town Hall,locatedIn,Denmark,Præstø Town Hall
+Præstø Town Hall,architect,Søren Absalon Larsen,Præstø Town Hall
+subject,predicate,object,Creed II
+German submarine U-106 (1940),instanceOf,German submarine Type VIIC,German submarine U-106 (1940)
+German submarine U-106 (1940),commissioned,1940,German submarine U-106 (1940)
+German submarine U-106 (1940),commander,Klaus Hornle,German submarine U-106 (1940)
+German submarine U-106 (1940),countryOfOrigin,Germany,German submarine U-106 (1940)
+German submarine U-106 (1940),operator,Kriegsmarine,German submarine U-106 (1940)
+German submarine U-106 (1940),shipClass,Type VIIC submarine,German submarine U-106 (1940)
+German submarine U-106 (1940),shipDisplacement,769,German submarine U-106 (1940)
+German submarine U-106 (1940),length,48.65,German submarine U-106 (1940)
+German submarine U-106 (1940),beam,4.7,German submarine U-106 (1940)
+German submarine U-106 (1940),draught,2.76,German submarine U-106 (1940)
+"Ann, Lady Fanshawe",instanceOf,Human,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",givenName,Ann,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",title,Lady Fanshawe,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",familyName,Fanshawe,"Ann, Lady Fanshawe"
+Hovea montana,instanceOf,plant,Hovea montana
+Hovea montana,genus,Hovea,Hovea montana
+Hovea montana,family,Fabaceae,Hovea montana
+Hovea montana,nativeTo,Australia,Hovea montana
+subject,predicate,object,Trinity Jo-Li Bliss
+1997 Singapore Open,instanceOf,Tennis Tournament,1997 Singapore Open
+1997 Singapore Open,startDate,1997-04-14,1997 Singapore Open
+1997 Singapore Open,endDate,1997-04-20,1997 Singapore Open
+1997 Singapore Open,location,Singapore,1997 Singapore Open
+1997 Singapore Open,surface,Hardcourt,1997 Singapore Open
+Callicrates of Samos,instanceOf,Ancient Greek architect,Callicrates of Samos
+Callicrates of Samos,birthPlace,Samos,Callicrates of Samos
+Callicrates of Samos,knownFor,Parthenon,Callicrates of Samos
+Callicrates of Samos,collaboratedWith,Ictinus,Callicrates of Samos
+Callicrates of Samos,fieldOfWork,Architecture,Callicrates of Samos
+Also,"I used ""HDMS"" as the prefix for the ship's name",as it seems to be a common designation for Royal Danish Navy ships.,HDMS Peder Skram (1864)
+subject,predicate,object,Malkhaz Abdushelishvili
+subject,predicate,object,Derozio Memorial College
+subject,predicate,object,United Nations Security Council Resolution 1428
+subject,predicate,object,Richard Worsley (cricketer)
+Walter Ross (boxer),instanceOf,Q123456,Walter Ross (boxer)
+Walter Ross (boxer),birthDate,1905-03-03,Walter Ross (boxer)
+Walter Ross (boxer),deathDate,1976-04-15,Walter Ross (boxer)
+Walter Ross (boxer),nationality,Canadian,Walter Ross (boxer)
+Walter Ross (boxer),occupation,Boxer,Walter Ross (boxer)
+Pungalina (spider),instanceOf,Genus,Pungalina (spider)
+Pungalina (spider),classifiesAs,Araneomorphae,Pungalina (spider)
+Pungalina (spider),suborderOf,Araneomorphae,Pungalina (spider)
+Pungalina (spider),family,Micropholcommatidae,Pungalina (spider)
+Pungalina (spider),genus,Pungalina,Pungalina (spider)
+NGC 7812,instanceOf,Galaxy,NGC 7812
+NGC 7812,namedAfter,New General Catalogue,NGC 7812
+NGC 7812,coordinate,00h 03m 32.4s -22° 59′ 24″,NGC 7812
+NGC 7812,type,E/SB0,NGC 7812
+NGC 7812,distance,298 million light-years,NGC 7812
+subject,predicate,object,Butralin
+subject,predicate,object,"3,4-Dihydroxybenzaldehyde"
+Leverkusen Mitte station,instanceOf,railway station,Leverkusen Mitte station
+Leverkusen Mitte station,locatedIn,Leverkusen,Leverkusen Mitte station
+Leverkusen Mitte station,locatedIn,North Rhine-Westphalia,Leverkusen Mitte station
+Leverkusen Mitte station,locatedIn,Germany,Leverkusen Mitte station
+Leverkusen Mitte station,isServicedBy,S-Bahn,Leverkusen Mitte station
+Leverkusen Mitte station,isServicedBy,Regionalbahn,Leverkusen Mitte station
+Leverkusen Mitte station,isServicedBy,Regional-Express,Leverkusen Mitte station
+1892 United States presidential election in New York,instanceOf,election,1892 United States presidential election in New York
+1892 United States presidential election in New York,partOf,1892 United States presidential election,1892 United States presidential election in New York
+1892 United States presidential election in New York,location,New York,1892 United States presidential election in New York
+1892 United States presidential election in New York,startDate,1892-11-08,1892 United States presidential election in New York
+1892 United States presidential election in New York,electedPresident,Grover Cleveland,1892 United States presidential election in New York
+1892 United States presidential election in New York,candidate,Grover Cleveland,1892 United States presidential election in New York
+1892 United States presidential election in New York,candidate,Benjamin Harrison,1892 United States presidential election in New York
+1892 United States presidential election in New York,candidate,James B. Weaver,1892 United States presidential election in New York
+subject,predicate,object,Kagerup railway station
+subject,predicate,object,Portsmouth Historic Dockyard
+subject,predicate,object,Microsoft Band 2
+subject,predicate,object,Forrest N. Iandola
+Cilejit railway station,instanceOf,railway station,Cilejit railway station
+Cilejit railway station,locatedIn,Turkey,Cilejit railway station
+Cilejit railway station,hasCoordinate,"39.6333, 33.8667",Cilejit railway station
+subject,predicate,object,Zhongyuan Bank
+Mikhail Pashnin,instanceOf,Politician,Mikhail Pashnin
+Mikhail Pashnin,instanceOf,Member of the State Duma,Mikhail Pashnin
+Mikhail Pashnin,position,Member of the State Duma,Mikhail Pashnin
+Mikhail Pashnin,country,Russia,Mikhail Pashnin
+Mikhail Pashnin,birthPlace,Kemerovo Oblast,Mikhail Pashnin
+subject,predicate,object,Ignacy Tłoczyński
+subject,predicate,object,Israel Abanikanda
+subject,predicate,object,Canton of Nomeny
+subject,predicate,object,Cinema Management Group
+subject,predicate,object,H-class container ship
+subject,predicate,object,Shuangxi Park and Chinese Garden
+subject,predicate,object,"Hôtel de Ville, Angers"
+Eristalini,instanceOf,tribe,Eristalini
+Eristalini,partOf,Syrphidae,Eristalini
+Eristalini,contains,Eristalis,Eristalini
+Eristalini,contains,Merodon,Eristalini
+Eristalini,contains,Helophilus,Eristalini
+Horsburgh Castle,instanceOf,Castle,Horsburgh Castle
+Horsburgh Castle,location,East Lothian,Horsburgh Castle
+Horsburgh Castle,location,Scotland,Horsburgh Castle
+Horsburgh Castle,partOf,Horsburgh Tower,Horsburgh Castle
+Horsburgh Castle,builtBy,Sir Patrick Horsburgh,Horsburgh Castle
+Horsburgh Castle,builtIn,16th century,Horsburgh Castle
+Lemon (1969 film),instanceOf,Film,Lemon (1969 film)
+Lemon (1969 film),title,Lemon,Lemon (1969 film)
+Lemon (1969 film),releaseYear,1969,Lemon (1969 film)
+Lemon (1969 film),director,Barney Reisz,Lemon (1969 film)
+Lemon (1969 film),starring,Peter Noon,Lemon (1969 film)
+Lemon (1969 film),genre,Comedy,Lemon (1969 film)
+USS W. S. Sims,instanceOf,destroyer,USS W. S. Sims
+USS W. S. Sims,namedAfter,William S. Sims,USS W. S. Sims
+USS W. S. Sims,commissioned,1940-07-20,USS W. S. Sims
+USS W. S. Sims,decommissioned,1946-04-15,USS W. S. Sims
+USS W. S. Sims,participantOf,World War II,USS W. S. Sims
+USS W. S. Sims,operator,United States Navy,USS W. S. Sims
+subject,predicate,object,RAF Montford Bridge
+subject,predicate,object,Double Concerto (Lutosławski)
+"Meadowbank, Tasmania",instanceOf,locality,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",locatedIn,Tasmania,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",locatedIn,Australia,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",hasPopulation,??,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",isPartOf,Derwent Valley Council,"Meadowbank, Tasmania"
+subject,predicate,object,Naranjito District
+Orléanais Historical and Archaeological Museum,instanceOf,museum,Orléanais Historical and Archaeological Museum
+Orléanais Historical and Archaeological Museum,locatedIn,Orléans,Orléanais Historical and Archaeological Museum
+Orléanais Historical and Archaeological Museum,hasCollection,archaeological artifacts,Orléanais Historical and Archaeological Museum
+Orléanais Historical and Archaeological Museum,hasCollection,historical artifacts,Orléanais Historical and Archaeological Museum
+Orléanais Historical and Archaeological Museum,preserves,cultural heritage,Orléanais Historical and Archaeological Museum
+The Three Witches,instanceOf,Triumvirate,The Three Witches
+The Three Witches,instanceOf,Group of Witches,The Three Witches
+The Three Witches,partOf,Macbeth,The Three Witches
+The Three Witches,describedBy,Weird Sisters,The Three Witches
+The Three Witches,appearIn,Macbeth (opera),The Three Witches
+The Three Witches,appearIn,Macbeth (film),The Three Witches
+The Three Witches,appearIn,Macbeth (1948 film),The Three Witches
+The Three Witches,influencedBy,Scottish folklore,The Three Witches
+MV American Courage,instanceOf,Passenger ship,MV American Courage
+MV American Courage,operator,American Cruise Lines,MV American Courage
+MV American Courage,country,United States,MV American Courage
+MV American Courage,flag,United States,MV American Courage
+MV American Courage,type,Cruise ship,MV American Courage
+Florido Tower,instanceOf,building,Florido Tower
+Florido Tower,locatedIn,"Naples, Florida",Florido Tower
+Florido Tower,partOf,Florido complex,Florido Tower
+Florido Tower,hasHeight,325 feet,Florido Tower
+Florido Tower,floors,29,Florido Tower
+Audio Publishers Association,instanceOf,Trade Association,Audio Publishers Association
+Audio Publishers Association,headquarteredIn,"Alexandria, Virginia",Audio Publishers Association
+Audio Publishers Association,industry,Audiobook Publishing,Audio Publishers Association
+Audio Publishers Association,foundedIn,1985,Audio Publishers Association
+Audio Publishers Association,abbreviatedAs,APA,Audio Publishers Association
+"Henry IX, Count of Waldeck",instanceOf,Count,"Henry IX, Count of Waldeck"
+"Henry IX, Count of Waldeck",partOf,Waldeck,"Henry IX, Count of Waldeck"
+"Henry IX, Count of Waldeck",hasTitle,Count of Waldeck,"Henry IX, Count of Waldeck"
+"Henry IX, Count of Waldeck",family,House of Waldeck,"Henry IX, Count of Waldeck"
+Lulu (1953 film),instanceOf,film,Lulu (1953 film)
+Lulu (1953 film),basedOn,Lulu,Lulu (1953 film)
+Lulu (1953 film),director,Helmut Berger,Lulu (1953 film)
+Lulu (1953 film),starring,Marlene Dietrich,Lulu (1953 film)
+Lulu (1953 film),starring,Günter Lamprecht,Lulu (1953 film)
+Lulu (1953 film),releaseDate,1953-08-13,Lulu (1953 film)
+Lulu (1953 film),country,West Germany,Lulu (1953 film)
+Lulu (1953 film),language,German,Lulu (1953 film)
+Trustfall (song),instanceOf,song,Trustfall (song)
+Trustfall (song),partOf,Trustfall,Trustfall (song)
+Trustfall (song),artist,Pink,Trustfall (song)
+Trustfall (song),genre,pop music,Trustfall (song)
+Take You Down (Illenium song),instanceOf,song,Take You Down (Illenium song)
+Take You Down (Illenium song),released,2019-04-26,Take You Down (Illenium song)
+Take You Down (Illenium song),composer,Illenium,Take You Down (Illenium song)
+Take You Down (Illenium song),genre,deep house,Take You Down (Illenium song)
+Take You Down (Illenium song),publishedBy,Monstercat,Take You Down (Illenium song)
+Take You Down (Illenium song),partOf,Ascension (Illenium album),Take You Down (Illenium song)
+If more information was needed I could try and provide it,but based on available data,these are some basic facts,Wang Tong (basketball)
+Every Ocean Hughes,instanceOf,Private Company,Every Ocean Hughes
+Every Ocean Hughes,foundedBy,Ocean Hughes,Every Ocean Hughes
+Every Ocean Hughes,businessType,Technology,Every Ocean Hughes
+Every Ocean Hughes,headquarteredIn,United States,Every Ocean Hughes
+"Kuzkin, Volgograd Oblast",instanceOf,rural locality,"Kuzkin, Volgograd Oblast"
+"Kuzkin, Volgograd Oblast",locatedIn,Volgograd Oblast,"Kuzkin, Volgograd Oblast"
+"Kuzkin, Volgograd Oblast",locatedIn,Russia,"Kuzkin, Volgograd Oblast"
+subject,predicate,object,Starsector
+United States Department of Justice Criminal Division,instanceOf,division,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,partOf,United States Department of Justice,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,headquarteredIn,"Washington, D.C.",United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,responsibleFor,enforcing federal laws,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,hasLeader,Assistant Attorney General for Criminal Affairs,United States Department of Justice Criminal Division
+Gustavo Balcázar Monzón,instanceOf,Human,Gustavo Balcázar Monzón
+Gustavo Balcázar Monzón,birthPlace,Mexico,Gustavo Balcázar Monzón
+Gustavo Balcázar Monzón,occupation,Politician,Gustavo Balcázar Monzón
+Gustavo Balcázar Monzón,position,Governor of Puebla,Gustavo Balcázar Monzón
+Gustavo Balcázar Monzón,activeYears,2011-2012,Gustavo Balcázar Monzón
+subject,predicate,object,Hirudinaria (annelid)
+subject,predicate,object,Tsai Pai-sheng
+subject,predicate,object,Dmitry Petrovich Dokhturov
+subject,predicate,object,Huepetuche District
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",instanceOf,Noble,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",instanceOf,Politician,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",title,1st Count of Linhares,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",givenName,Rodrigo,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",familyName,Sousa Coutinho,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",country,Portugal,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+Robbie Ryan (cinematographer),instanceOf,cinematographer,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),birthDate,1975,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),birthPlace,"Dublin, Ireland",Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),notableWork,The Favourite,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),notableWork,Brooklyn,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),award,Academy Award for Best Cinematography,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),collaboratedWith,Yorgos Lanthimos,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),instanceOf,person,Robbie Ryan (cinematographer)
+Pennsylvania Railroad class C1,instanceOf,Locomotive,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,type,Steam locomotive,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,manufacturer,Pennsylvania Railroad,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,buildYear,1909,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,numberOfInstances,20,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,configuration,4-4-4-4,Pennsylvania Railroad class C1
+Edward D. Sheafer Jr.,instanceOf,Human,Edward D. Sheafer Jr.
+Edward D. Sheafer Jr.,hasOccupation,Diplomat,Edward D. Sheafer Jr.
+Edward D. Sheafer Jr.,hasOccupation,Government official,Edward D. Sheafer Jr.
+Edward D. Sheafer Jr.,servedAs,United States Ambassador to Lebanon,Edward D. Sheafer Jr.
+Brian Altman (poker player),instanceOf,poker player,Brian Altman (poker player)
+Brian Altman (poker player),country,United States,Brian Altman (poker player)
+Brian Altman (poker player),hasPokerTournamentRecord,yes,Brian Altman (poker player)
+Brian Altman (poker player),participatedIn,World Series of Poker,Brian Altman (poker player)
+Brian Altman (poker player),participatedIn,PokerStars,Brian Altman (poker player)
+Brian Altman (poker player),won,"PokerStars $100,000 Guaranteed Prize",Brian Altman (poker player)
+Brian Altman (poker player),cash,PokerStars SuperStars Challenge,Brian Altman (poker player)
+Acta Zoologica Cracoviensia,instanceOf,scientific journal,Acta Zoologica Cracoviensia
+Acta Zoologica Cracoviensia,publisher,Polish Academy of Sciences,Acta Zoologica Cracoviensia
+Acta Zoologica Cracoviensia,subject,zoology,Acta Zoologica Cracoviensia
+Acta Zoologica Cracoviensia,language,English,Acta Zoologica Cracoviensia
+Acta Zoologica Cracoviensia,ISSN,0065-1587,Acta Zoologica Cracoviensia
+Tamil Times,instanceOf,newspaper,Tamil Times
+Tamil Times,language,Tamil,Tamil Times
+Tamil Times,country,India,Tamil Times
+Tamil Times,type,publication,Tamil Times
+Jim Cox (baseball),instanceOf,Baseball Player,Jim Cox (baseball)
+Jim Cox (baseball),playedFor,Atlanta Braves,Jim Cox (baseball)
+Jim Cox (baseball),playedFor,St. Louis Cardinals,Jim Cox (baseball)
+Jim Cox (baseball),managed,Atlanta Braves,Jim Cox (baseball)
+Jim Cox (baseball),managed,Houston Astros,Jim Cox (baseball)
+Lesser prairie-chicken,instanceOf,Species,Lesser prairie-chicken
+Lesser prairie-chicken,subspeciesOf,Prairie chicken,Lesser prairie-chicken
+Lesser prairie-chicken,classification,Tytonidae,Lesser prairie-chicken
+Lesser prairie-chicken,habitat,Grasslands,Lesser prairie-chicken
+Lesser prairie-chicken,diet,Insects,Lesser prairie-chicken
+Lesser prairie-chicken,conservationStatus,Vulnerable,Lesser prairie-chicken
+Lesser prairie-chicken,scientificName,Tympanuchus pallidicinctus,Lesser prairie-chicken
+Roman amphitheatre of Italica,instanceOf,amphitheatre,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,locatedIn,Italica,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,locatedIn,Spain,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,hasCapacity,25000,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,wasBuiltIn,1st century,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,wasBuiltBy,Romans,Roman amphitheatre of Italica
+subject,predicate,object,Peking University First Hospital
+subject,predicate,object,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",instanceOf,Human,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",birthYear,1911,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",givenName,Billy,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",familyName,Little,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",occupation,Rugby league player,"Billy Little (rugby league, born 1911)"
+Louth Museum,instanceOf,Museum,Louth Museum
+Louth Museum,locatedIn,"Louth, Lincolnshire",Louth Museum
+Louth Museum,hasCollection,Agricultural and Domestic Equipment,Louth Museum
+Louth Museum,hasCollection,Local History,Louth Museum
+Louth Museum,hasCollection,Transportation,Louth Museum
+Louth Museum,instanceOf,Heritage Centre,Louth Museum
+Brown-snouted blind snake,instanceOf,species,Brown-snouted blind snake
+Brown-snouted blind snake,scientificName,Leptotyphlops carinatus,Brown-snouted blind snake
+Brown-snouted blind snake,family,Leptotyphlopidae,Brown-snouted blind snake
+Brown-snouted blind snake,genus,Leptotyphlops,Brown-snouted blind snake
+Never Worn White,instanceOf,Music Album,Never Worn White
+Never Worn White,artist,Kacey Musgraves,Never Worn White
+Never Worn White,releaseDate,2020-03-06,Never Worn White
+Never Worn White,genre,Country Music,Never Worn White
+Never Worn White,genre,Americana,Never Worn White
+Never Worn White,producer,Ian Samuels,Never Worn White
+Marcell Ateman,instanceOf,American football player,Marcell Ateman
+Marcell Ateman,birthDate,1996-02-05,Marcell Ateman
+Marcell Ateman,playsPosition,Wide receiver,Marcell Ateman
+Marcell Ateman,team,Oakland Raiders,Marcell Ateman
+Marcell Ateman,team,Kansas City Chiefs,Marcell Ateman
+Marcell Ateman,college,Oklahoma State University,Marcell Ateman
+Vipera berus sachalinensis,instanceOf,subspecies,Vipera berus sachalinensis
+Vipera berus sachalinensis,isSubclassOf,Vipera berus,Vipera berus sachalinensis
+Vipera berus sachalinensis,isA,Vipera berus,Vipera berus sachalinensis
+Vipera berus sachalinensis,foundIn,Sakhalin,Vipera berus sachalinensis
+Vipera berus sachalinensis,scientificName,Vipera berus sachalinensis,Vipera berus sachalinensis
+subject,predicate,object,John Ireland (cricketer)
+Also,note that there might be other John Ireland with different professions; if you are referring to a different person,the above information may not be relevant.,John Ireland (cricketer)
+NGC 4999,instanceOf,galaxy,NGC 4999
+NGC 4999,namedAfter,John Herschel,NGC 4999
+NGC 4999,discoveredBy,John Herschel,NGC 4999
+NGC 4999,discoveryDate,1789-04-22,NGC 4999
+NGC 4999,upcasedName,NGC 4999,NGC 4999
+NGC 4999,constellation,Virgo,NGC 4999
+NGC 4999,type,SBc,NGC 4999
+NGC 4999,morphologicalType,spiral galaxy,NGC 4999
+NGC 4999,redshift,0.0231,NGC 4999
+2012 OFC Nations Cup final,instanceOf,sports tournament final,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,partOf,2012 OFC Nations Cup,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,date,2012-06-26,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,location,Waikato Stadium,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,participant,New Zealand national football team,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,participant,Tahiti national football team,2012 OFC Nations Cup final
+2012 OFC Nations Cup final,winner,New Zealand national football team,2012 OFC Nations Cup final
+Krouna train accident,instanceOf,train accident,Krouna train accident
+Krouna train accident,location,Krouna,Krouna train accident
+Krouna train accident,occurredOn,date,Krouna train accident
+Krouna train accident,numberOfFatalities,5,Krouna train accident
+Krouna train accident,typeOfCollision,derailment,Krouna train accident
+subject,predicate,object,Australia at the 2018 Winter Olympics
+Arnold Juklerød,instanceOf,Human,Arnold Juklerød
+Arnold Juklerød,hasOccupation,Musician,Arnold Juklerød
+Arnold Juklerød,stageName,Venerable,Arnold Juklerød
+Arnold Juklerød,memberOf,Blackthorns,Arnold Juklerød
+Arnold Juklerød,memberOf,Sunn O))),Arnold Juklerød
+2010 Rochdale Metropolitan Borough Council election,instanceOf,council election,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,partOf,2010 United Kingdom local elections,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,location,Rochdale,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,startDate,2010-05-06,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,endDate,2010-05-06,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,numberOfSeats,24,2010 Rochdale Metropolitan Borough Council election
+2003 Sundance Film Festival,instanceOf,Sundance Film Festival,2003 Sundance Film Festival
+2003 Sundance Film Festival,location,"Park City, Utah",2003 Sundance Film Festival
+2003 Sundance Film Festival,startDate,2003-01-09,2003 Sundance Film Festival
+2003 Sundance Film Festival,endDate,2003-01-19,2003 Sundance Film Festival
+2003 Sundance Film Festival,partOf,Sundance Institute,2003 Sundance Film Festival
+subject,predicate,object,Shattered (Casey book)
+"St Peter Parmentergate, Norwich",instanceOf,church,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",locatedIn,Norwich,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",dedicatedTo,Saint Peter,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",parish,St Peter Parmentergate,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",diocese,Diocese of Norwich,"St Peter Parmentergate, Norwich"
+2022 Colombian presidential election,instanceOf,presidential election,2022 Colombian presidential election
+2022 Colombian presidential election,country,Colombia,2022 Colombian presidential election
+2022 Colombian presidential election,startDate,2022-05-29,2022 Colombian presidential election
+2022 Colombian presidential election,endDate,2022-06-19,2022 Colombian presidential election
+2022 Colombian presidential election,electedPresident,Gustavo Petro,2022 Colombian presidential election
+2022 Colombian presidential election,runner-up,Rodolfo Hernández,2022 Colombian presidential election
+2022 Colombian presidential election,turnout,40.76%,2022 Colombian presidential election
+2022 Colombian presidential election,president-elect,Gustavo Petro,2022 Colombian presidential election
+subject,predicate,object,1971 Tour of Flanders
+subject,predicate,object,Djamel Ibouzidène
+Owston's Warehouse,instanceOf,building,Owston's Warehouse
+Owston's Warehouse,location,Sheffield,Owston's Warehouse
+Owston's Warehouse,architect,"Flockitt, G.",Owston's Warehouse
+Owston's Warehouse,builtIn,1830s,Owston's Warehouse
+Owston's Warehouse,listedGrade,Grade II*,Owston's Warehouse
+Owston's Warehouse,use,warehouse,Owston's Warehouse
+subject,predicate,object,Pilagás Department
+Gutsbezirk Reinhardswald,instanceOf,Gutsbezirk,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,locatedIn,Hessen,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,locatedIn,Germany,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,hasArea,67.3 km²,Gutsbezirk Reinhardswald
+Colin Lundstrum,instanceOf,Person,Colin Lundstrum
+Colin Lundstrum,playsPosition,Linebacker,Colin Lundstrum
+Colin Lundstrum,playsFor,Chicago Bears,Colin Lundstrum
+Colin Lundstrum,bornIn,"Cedar Rapids, Iowa",Colin Lundstrum
+Colin Lundstrum,attended,University of Illinois,Colin Lundstrum
+subject,predicate,object,North Carolina Highway 125
+White-headed wren,instanceOf,Species,White-headed wren
+White-headed wren,classifiesAs,Bird,White-headed wren
+White-headed wren,scientificName,Tolmomyias albiventris,White-headed wren
+White-headed wren,family,Tyrannidae,White-headed wren
+White-headed wren,genus,Tolmomyias,White-headed wren
+subject,predicate,object,Linlithgow Sheriff Court
+subject,predicate,object,1988 NCAA Division II football season
+"St John the Evangelist's Church, Abram",instanceOf,Church building,"St John the Evangelist's Church, Abram"
+"St John the Evangelist's Church, Abram",locatedIn,"Abram, Greater Manchester","St John the Evangelist's Church, Abram"
+"St John the Evangelist's Church, Abram",denomination,Anglican,"St John the Evangelist's Church, Abram"
+"St John the Evangelist's Church, Abram",country,United Kingdom,"St John the Evangelist's Church, Abram"
+If there is more information available,I can try to provide it. If not,I will let you know that I couldn't find any additional information.,Jeanette Rodríguez (actress)
+Bembidion carolinense,instanceOf,Species,Bembidion carolinense
+Bembidion carolinense,partOf,Bembidion,Bembidion carolinense
+Bembidion carolinense,classification,Insecta,Bembidion carolinense
+Bembidion carolinense,classification,Coleoptera,Bembidion carolinense
+Bembidion carolinense,classification,Carabidae,Bembidion carolinense
+200 (film),instanceOf,Film,200 (film)
+200 (film),genre,War film,200 (film)
+200 (film),director,A. K. Gopan,200 (film)
+200 (film),releaseDate,1993-10-28,200 (film)
+200 (film),country,India,200 (film)
+200 (film),language,Malayalam,200 (film)
+Hardcore Never Dies,instanceOf,album,Hardcore Never Dies
+Hardcore Never Dies,released,2001-10-01,Hardcore Never Dies
+Hardcore Never Dies,performer,Laibee,Hardcore Never Dies
+Hardcore Never Dies,genre,hardcore punk,Hardcore Never Dies
+Hardcore Never Dies,producer,Laibee,Hardcore Never Dies
+Anna Glasier,instanceOf,Human,Anna Glasier
+Anna Glasier,is,Professor of Pharmacology,Anna Glasier
+Anna Glasier,hasAcademicDegree,D.Phil.,Anna Glasier
+Anna Glasier,worksAt,University of Oxford,Anna Glasier
+Anna Glasier,isMemberOf,Faculty of Medical Sciences,Anna Glasier
+Lycosoura Artemis,instanceOf,Greek deity,Lycosoura Artemis
+Lycosoura Artemis,namedAfter,Lycosoura,Lycosoura Artemis
+Lycosoura Artemis,worshipLocation,Lycosoura,Lycosoura Artemis
+Lycosoura Artemis,type,Artemis local form,Lycosoura Artemis
+Georg Christoph Strattner,instanceOf,Person,Georg Christoph Strattner
+Georg Christoph Strattner,birthDate,1665-05-15,Georg Christoph Strattner
+Georg Christoph Strattner,deathDate,1726-04-23,Georg Christoph Strattner
+Georg Christoph Strattner,occupation,composer,Georg Christoph Strattner
+Georg Christoph Strattner,occupation,organist,Georg Christoph Strattner
+Georg Christoph Strattner,instrument,organ,Georg Christoph Strattner
+subject,predicate,object,Leh–Manali Highway
+Jean Jaurès,instanceOf,Person,Jean Jaurès
+Jean Jaurès,birthDate,1859-09-03,Jean Jaurès
+Jean Jaurès,deathDate,1914-07-31,Jean Jaurès
+Jean Jaurès,nationality,French,Jean Jaurès
+Jean Jaurès,occupation,politician,Jean Jaurès
+Jean Jaurès,occupation,journalist,Jean Jaurès
+Jean Jaurès,founded,L'Humanité,Jean Jaurès
+Jean Jaurès,party,French Section of the Workers' International,Jean Jaurès
+Jean Jaurès,killedIn,assassination,Jean Jaurès
+Knight Moves (video game),instanceOf,video game,Knight Moves (video game)
+Knight Moves (video game),genre,puzzle video game,Knight Moves (video game)
+Knight Moves (video game),developer,U.S. Gold,Knight Moves (video game)
+Knight Moves (video game),publisher,U.S. Gold,Knight Moves (video game)
+Knight Moves (video game),releaseDate,1992-08,Knight Moves (video game)
+Knight Moves (video game),platform,Sega Genesis,Knight Moves (video game)
+Knight Moves (video game),platform,Amiga,Knight Moves (video game)
+Knight Moves (video game),platform,Atari ST,Knight Moves (video game)
+Knight Moves (video game),platform,MS-DOS,Knight Moves (video game)
+If I don't have more information,the list will be short,but I can try to find more facts if you'd like.,Leucadendron salicifolium
+Anna Fontcuberta i Morral,instanceOf,Human,Anna Fontcuberta i Morral
+Anna Fontcuberta i Morral,birthPlace,Barcelona,Anna Fontcuberta i Morral
+Anna Fontcuberta i Morral,birthDate,1961,Anna Fontcuberta i Morral
+Anna Fontcuberta i Morral,occupation,Politician,Anna Fontcuberta i Morral
+Anna Fontcuberta i Morral,party,CiU,Anna Fontcuberta i Morral
+subject,predicate,object,Cyprus Volleyball Division 1
+subject,predicate,object,"Mount Holly (Foote, Mississippi)"
+"Mount Holly (Foote, Mississippi)",instanceOf,unincorporated community,"Mount Holly (Foote, Mississippi)"
+"Mount Holly (Foote, Mississippi)",locatedIn,Mississippi,"Mount Holly (Foote, Mississippi)"
+"Mount Holly (Foote, Mississippi)",locatedIn,Foote,"Mount Holly (Foote, Mississippi)"
+"Mount Holly (Foote, Mississippi)",hasPart,Hickahala Creek,"Mount Holly (Foote, Mississippi)"
+subject,predicate,object,Munsey's Magazine
+Munsey's Magazine,instanceOf,magazine,Munsey's Magazine
+Munsey's Magazine,publisher,Munsey's,Munsey's Magazine
+Munsey's Magazine,foundedBy,Frank Munsey,Munsey's Magazine
+Munsey's Magazine,countryOfOrigin,United States,Munsey's Magazine
+Munsey's Magazine,genre,fiction,Munsey's Magazine
+Munsey's Magazine,startedPublication,1893-01,Munsey's Magazine
+Munsey's Magazine,endedPublication,1929-12,Munsey's Magazine
+subject,predicate,object,Johnny Test (2021 TV series)
+subject,predicate,object,Sandro Puppo
+subject,predicate,object,Wiener Gruppe
+Calpionellid,instanceOf,Species,Calpionellid
+Calpionellid,isA,Microfossil,Calpionellid
+Calpionellid,foundIn,Cretaceous Period,Calpionellid
+Calpionellid,characterizedBy,Calcareous Shell,Calpionellid
+2023 Slough Borough Council election,instanceOf,local election,2023 Slough Borough Council election
+2023 Slough Borough Council election,startDate,2023-05-04,2023 Slough Borough Council election
+2023 Slough Borough Council election,endDate,2023-05-04,2023 Slough Borough Council election
+2023 Slough Borough Council election,partOf,Slough,2023 Slough Borough Council election
+2023 Slough Borough Council election,partOf,Borough of Slough,2023 Slough Borough Council election
+2023 Slough Borough Council election,hasPart,2023 Slough Borough Council election results,2023 Slough Borough Council election
+Hof HaSharon Regional Council,instanceOf,Regional Council,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,locatedIn,Central District,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,headquarters,Kfar Yona,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,borderedBy,Petah Tikva,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,borderedBy,Taybeh,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,borderedBy,Kafr Qasim,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,partOf,Israel,Hof HaSharon Regional Council
+Rajakilpakkam,instanceOf,Suburb,Rajakilpakkam
+Rajakilpakkam,locatedIn,Chennai,Rajakilpakkam
+Rajakilpakkam,locatedIn,Tamil Nadu,Rajakilpakkam
+Rajakilpakkam,isPartOf,Chennai District,Rajakilpakkam
+Zenon Kasprzak,instanceOf,Human,Zenon Kasprzak
+Zenon Kasprzak,birthDate,1965-02-09,Zenon Kasprzak
+Zenon Kasprzak,country,Poland,Zenon Kasprzak
+Zenon Kasprzak,occupation,Road bicycle racer,Zenon Kasprzak
+Acer oligocarpum,instanceOf,species,Acer oligocarpum
+Acer oligocarpum,genus,Acer,Acer oligocarpum
+Acer oligocarpum,family,Sapindaceae,Acer oligocarpum
+Acer oligocarpum,classification, Plantae,Acer oligocarpum
+Acer oligocarpum,type,tree,Acer oligocarpum
+Changhe station (Hangzhou Metro),instanceOf,metro station,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),locatedIn,Hangzhou,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),partOf,Hangzhou Metro,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),serves,Changhe,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),openedOn,2018-12-27,Changhe station (Hangzhou Metro)
+subject,predicate,object,Nigel Foster (kayaker)
+Nigel Foster (kayaker),instanceOf,Human,Nigel Foster (kayaker)
+Nigel Foster (kayaker),birthDate,1958,Nigel Foster (kayaker)
+Nigel Foster (kayaker),nationality,British,Nigel Foster (kayaker)
+Nigel Foster (kayaker),occupation,Kayaker,Nigel Foster (kayaker)
+Nigel Foster (kayaker),sport,Whitewater kayaking,Nigel Foster (kayaker)
+Ahmed Abbes,instanceOf,Mathematician,Ahmed Abbes
+Ahmed Abbes,bornAt,Tunisia,Ahmed Abbes
+Ahmed Abbes,worksAt,University of Paris,Ahmed Abbes
+Ahmed Abbes,researches,Mathematics,Ahmed Abbes
+Ahmed Abbes,awardedBy,French National Center for Scientific Research,Ahmed Abbes
+subject,predicate,object,Patagonian red octopus
+subject,predicate,object,United Nations Security Council Resolution 1426
+Breakout (Miley Cyrus album),instanceOf,album,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),artist,Miley Cyrus,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),releaseDate,2008-07-22,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),genre,pop,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),genre,rock,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),producer,Antonina Armato,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),producer,Tim James,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),previousWork,Hannah Montana 2: Meet Miley Cyrus,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),subsequentWork,The Time of Our Lives,Breakout (Miley Cyrus album)
+Thornton Carle Fry,instanceOf,Person,Thornton Carle Fry
+Thornton Carle Fry,bornIn,Chicago,Thornton Carle Fry
+Thornton Carle Fry,diedIn,Chicago,Thornton Carle Fry
+Thornton Carle Fry,occupation,Engineer,Thornton Carle Fry
+Thornton Carle Fry,knownFor,Inventor,Thornton Carle Fry
+Nyamiviridae,instanceOf,virus family,Nyamiviridae
+Nyamiviridae,composedOf,Nyamivirus,Nyamiviridae
+Nyamiviridae,familyRank,family,Nyamiviridae
+Nyamiviridae,taxonomyRank,family,Nyamiviridae
+Nyamiviridae,genus,Nyavirus,Nyamiviridae
+Wat Prasert Sutthawat,instanceOf,Buddhist temple,Wat Prasert Sutthawat
+Wat Prasert Sutthawat,location,Bangkok,Wat Prasert Sutthawat
+Wat Prasert Sutthawat,location,Thailand,Wat Prasert Sutthawat
+Wat Prasert Sutthawat,hasFeature,Buddha image,Wat Prasert Sutthawat
+George Desmond Hodnett,instanceOf,Human,George Desmond Hodnett
+George Desmond Hodnett,givenName,George,George Desmond Hodnett
+George Desmond Hodnett,familyName,Hodnett,George Desmond Hodnett
+George Desmond Hodnett,birthName,George Desmond Hodnett,George Desmond Hodnett
+George Desmond Hodnett,type,Person,George Desmond Hodnett
+We'll Be Together Again (Pat Martino album),instanceOf,album,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),namedAfter,We'll Be Together Again,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),artist,Pat Martino,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),releaseDate,1992-10-27,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),genre,jazz,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),genre,instrumental,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),producer,Dennis Sand,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),recordLabel, Warner Bros. Records,We'll Be Together Again (Pat Martino album)
+2003–04 Georgia Tech Yellow Jackets men's basketball team,instanceOf,College basketball team,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,partOf,2003-04 NCAA Division I men's basketball season,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,basedIn,Georgia Tech,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,coach,Bobby Cremins,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,league,Atlantic Coast Conference,2003–04 Georgia Tech Yellow Jackets men's basketball team
+Novo Celje Mansion,instanceOf,mansion,Novo Celje Mansion
+Novo Celje Mansion,location,Celje,Novo Celje Mansion
+Novo Celje Mansion,location,Slovenia,Novo Celje Mansion
+Novo Celje Mansion,architecturalStyle,Baroque architecture,Novo Celje Mansion
+Novo Celje Mansion,hasOwner,Celje County,Novo Celje Mansion
+Novo Celje Mansion,use,museum,Novo Celje Mansion
+subject,predicate,object,Dwarf paradise fish
+Karakum (film),instanceOf,Film,Karakum (film)
+Karakum (film),hasGenre,Horror,Karakum (film)
+Karakum (film),hasGenre,Thriller,Karakum (film)
+Karakum (film),releaseDate,2018,Karakum (film)
+Karakum (film),director,Johan Brück,Karakum (film)
+Karakum (film),starring,Tilda Giménez Bergsten,Karakum (film)
+Karakum (film),countryOfOrigin,Sweden,Karakum (film)
+subject,predicate,object,Hatice Ozer Balli
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,instanceOf,Duchess,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,bornAt,Mecklenburg-Schwerin,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,givenName,Elisabeth Alexandrine,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,familyName,Mecklenburg-Schwerin,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,house,House of Mecklenburg-Schwerin,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,marriedTo,Prince Louis Charles of Prussia,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,child,Prince Frederick of Prussia,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,child,Princess Frederica of Prussia,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,child,Prince Charles of Prussia,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+Bette Otto-Bliesner,instanceOf,Scientist,Bette Otto-Bliesner
+Bette Otto-Bliesner,instanceOf,Researcher,Bette Otto-Bliesner
+Bette Otto-Bliesner,fieldOfWork,Climate Science,Bette Otto-Bliesner
+Bette Otto-Bliesner,fieldOfWork,Geology,Bette Otto-Bliesner
+Bette Otto-Bliesner,employedBy,National Center for Atmospheric Research,Bette Otto-Bliesner
+Waste Connections of Canada,instanceOf,Waste Management Company,Waste Connections of Canada
+Waste Connections of Canada,headquarteredIn,Canada,Waste Connections of Canada
+Waste Connections of Canada,industry,Waste Management,Waste Connections of Canada
+Waste Connections of Canada,parentCompany,Waste Connections,Waste Connections of Canada
+Waste Connections of Canada,operatesIn,Canada,Waste Connections of Canada
+St. Spyridon Choir,instanceOf,Choir,St. Spyridon Choir
+St. Spyridon Choir,namedAfter,Spyridon,St. Spyridon Choir
+St. Spyridon Choir,origin,Serbia,St. Spyridon Choir
+St. Spyridon Choir,recordLabel,Serbian Record Label,St. Spyridon Choir
+subject,predicate,object,Thurnen railway station
+Castle of Ugento,instanceOf,Castle,Castle of Ugento
+Castle of Ugento,locatedIn,Italy,Castle of Ugento
+Castle of Ugento,locatedIn,Apulia,Castle of Ugento
+Castle of Ugento,hasName,Castel del Rio,Castle of Ugento
+Castle of Ugento,hasAlternativeName,Castello di Ugento,Castle of Ugento
+"Us, Ours and Yours (TV series)",instanceOf,TV series,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",creator,Julie Bunbury,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",starring,Felicity Jones,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",starring,Michael Peňa,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",countryOfOrigin,United States,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",genre,Comedy,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",numberOfSeasons,1,"Us, Ours and Yours (TV series)"
+"Us, Ours and Yours (TV series)",numberOfEpisodes,13,"Us, Ours and Yours (TV series)"
+Cesante (film),instanceOf,film,Cesante (film)
+Cesante (film),title,Cesante,Cesante (film)
+Cesante (film),language,Spanish,Cesante (film)
+Cesante (film),countryOfOrigin,Spain,Cesante (film)
+Cesante (film),director,Roberto Díaz,Cesante (film)
+subject,predicate,object,Kaniama Airport
+If the response appears,it means I was able to find at least some information; if the list appears empty,it means I wasn't able to find any structured information.,Kaniama Airport
+Free Fire (film),instanceOf,Film,Free Fire (film)
+Free Fire (film),genre,Action film,Free Fire (film)
+Free Fire (film),genre,Comedy film,Free Fire (film)
+Free Fire (film),director,Ben Wheatley,Free Fire (film)
+Free Fire (film),starring,Guillaume Canet,Free Fire (film)
+Free Fire (film),starring,Molly Quinn,Free Fire (film)
+Free Fire (film),starring,Ralph Fiennes,Free Fire (film)
+Free Fire (film),releaseDate,2016-04-29,Free Fire (film)
+Free Fire (film),country,United Kingdom,Free Fire (film)
+Free Fire (film),language,English,Free Fire (film)
+subject,predicate,object,German submarine U-854
+Wish You Were Here (Barbara Mandrell song),instanceOf,song,Wish You Were Here (Barbara Mandrell song)
+Wish You Were Here (Barbara Mandrell song),artist,Barbara Mandrell,Wish You Were Here (Barbara Mandrell song)
+Wish You Were Here (Barbara Mandrell song),genre,country music,Wish You Were Here (Barbara Mandrell song)
+Wish You Were Here (Barbara Mandrell song),partOf,Nobleza,Wish You Were Here (Barbara Mandrell song)
+If there are not many facts available,the list might be short. In this case,I can still provide what I have.,Owen Wright (guitarist)
+subject,predicate,object,Costa Verde (Peru)
+Tropical Storm Arlene (2011),instanceOf,Tropical Storm,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),partOf,2011 Atlantic hurricane season,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),namedAfter,Arlene,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),dissipatedOn,"July 18, 2011",Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),formedOn,"June 18, 2011",Tropical Storm Arlene (2011)
+subject,predicate,object,"Enfield, Victoria"
+Klagetoh (Leegito) Chapter House,instanceOf,Chapter House,Klagetoh (Leegito) Chapter House
+Klagetoh (Leegito) Chapter House,location,Leegito,Klagetoh (Leegito) Chapter House
+Klagetoh (Leegito) Chapter House,partOf,The Church of Jesus Christ of Latter-day Saints,Klagetoh (Leegito) Chapter House
+Klagetoh (Leegito) Chapter House,architecturalStyle,B Nauvoo Temple,Klagetoh (Leegito) Chapter House
+School-Live! (film),instanceOf,Film,School-Live! (film)
+School-Live! (film),basedOn,School-Live!,School-Live! (film)
+School-Live! (film),director,Munehisa Oishi,School-Live! (film)
+School-Live! (film),starring,Aki Toyama,School-Live! (film)
+School-Live! (film),releaseDate,2015-11-07,School-Live! (film)
+School-Live! (film),genre,Horror film,School-Live! (film)
+Hayao Kawai,instanceOf,Human,Hayao Kawai
+Hayao Kawai,birthDate,1937,Hayao Kawai
+Hayao Kawai,field,Psychology,Hayao Kawai
+Hayao Kawai,field,Philosophy,Hayao Kawai
+Hayao Kawai,nationality,Japanese,Hayao Kawai
+subject,predicate,object,Üç Şerefeli Mosque
+Sandy scops owl,instanceOf,Species,Sandy scops owl
+Sandy scops owl,subClassOf,Scops owl,Sandy scops owl
+Sandy scops owl,scientific name,Otus sandycensis,Sandy scops owl
+Sandy scops owl,taxonomy rank,Species,Sandy scops owl
+Sandy scops owl,origin,Hawaii,Sandy scops owl
+2009 World Rhythmic Gymnastics Championships,instanceOf,World Rhythmic Gymnastics Championships,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,year,2009,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,sport,Rhythmic Gymnastics,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,instanceOf,International Sports Competition,2009 World Rhythmic Gymnastics Championships
+subject,predicate,object,Crystal chemistry
+George Henry Hall (artist),instanceOf,Human,George Henry Hall (artist)
+George Henry Hall (artist),instanceOf,Artist,George Henry Hall (artist)
+George Henry Hall (artist),birthDate,1820-10-04,George Henry Hall (artist)
+George Henry Hall (artist),deathDate,1894-07-21,George Henry Hall (artist)
+George Henry Hall (artist),nationality,American,George Henry Hall (artist)
+George Henry Hall (artist),occupation,Painter,George Henry Hall (artist)
+George Henry Hall (artist),fieldOfWork,Painting,George Henry Hall (artist)
+Raleigh DeGeer Amyx,instanceOf,Person,Raleigh DeGeer Amyx
+Raleigh DeGeer Amyx,birthDate,1911-10-11,Raleigh DeGeer Amyx
+Raleigh DeGeer Amyx,deathDate,1983,Raleigh DeGeer Amyx
+Raleigh DeGeer Amyx,occupation,Entomologist,Raleigh DeGeer Amyx
+Kolpino railway station,instanceOf,railway station,Kolpino railway station
+Kolpino railway station,locatedIn,Russia,Kolpino railway station
+Kolpino railway station,locatedIn,Saint Petersburg,Kolpino railway station
+Kolpino railway station,serves,Kolpino,Kolpino railway station
+Kolpino railway station,partOf,Oktyabrskaya Railway,Kolpino railway station
+subject,predicate,object,Deerfield Dam
+subject,predicate,object,Tibetan serin
+Gracie Mansion Gallery,instanceOf,art museum,Gracie Mansion Gallery
+Gracie Mansion Gallery,locatedIn,New York City,Gracie Mansion Gallery
+Gracie Mansion Gallery,namedAfter,Gracie Mansion,Gracie Mansion Gallery
+Gracie Mansion Gallery,hasCollection,American art,Gracie Mansion Gallery
+Gracie Mansion Gallery,hasCollection,European art,Gracie Mansion Gallery
+Gracie Mansion Gallery,features, rotating exhibits,Gracie Mansion Gallery
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,instanceOf,Swimming event,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,partOf,2013 World Aquatics Championships,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,hasGender,Men,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,hasDiscipline,Backstroke,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,hasDistance,50 metre,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+subject,predicate,object,Nagao Station (Kagawa)
+Homocitrulline,instanceOf,Amino acid,Homocitrulline
+Homocitrulline,chemicalFormula,C6H13NO3,Homocitrulline
+Homocitrulline,isIsomerOf,Citrulline,Homocitrulline
+Homocitrulline,hasPart,Carboxyl group,Homocitrulline
+Homocitrulline,hasPart,Amino group,Homocitrulline
+subject,predicate,object,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,instanceOf,government agency,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,location,Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,wildlife conservation,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,fisheries management,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,partOf,Wyoming state government,Wyoming Game and Fish Department
+subject,predicate,object,Rocket.Chat
+subject,predicate,object,Boomerang (2015 film)
+Boomerang (2015 film),instanceOf,film,Boomerang (2015 film)
+Boomerang (2015 film),releaseDate,2015,Boomerang (2015 film)
+Boomerang (2015 film),director,R. Balki,Boomerang (2015 film)
+Boomerang (2015 film),starring,Robert Downey Jr.,Boomerang (2015 film)
+Boomerang (2015 film),genre,Comedy,Boomerang (2015 film)
+Boomerang (2015 film),country,United States,Boomerang (2015 film)
+Vila Real railway station,instanceOf,Railway station,Vila Real railway station
+Vila Real railway station,locatedIn,Vila Real,Vila Real railway station
+Vila Real railway station,locatedIn,Portugal,Vila Real railway station
+Vila Real railway station,serves,Vila Real,Vila Real railway station
+Vila Real railway station,isPartOf,Porto District,Vila Real railway station
+subject,predicate,object,Brackwede station
+Commandant (rank),instanceOf,Military rank,Commandant (rank)
+Commandant (rank),subordinateTo,Colonel,Commandant (rank)
+Commandant (rank),superiorTo,Major,Commandant (rank)
+Commandant (rank),usedIn,Canadian Army,Commandant (rank)
+Commandant (rank),usedIn,British Army,Commandant (rank)
+Commandant (rank),equivalentTo,Lieutenant Colonel,Commandant (rank)
+1997–98 Országos Bajnokság I (men's water polo),instanceOf,sports season,1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),competition,Országos Bajnokság I (men's water polo),1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),startDate,1997,1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),endDate,1998,1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),seasonOf,1997-98,1997–98 Országos Bajnokság I (men's water polo)
+subject,predicate,object,Tulane Green Wave women's basketball
+Martin Hume Johnson,instanceOf,Person,Martin Hume Johnson
+Martin Hume Johnson,birthDate,1884,Martin Hume Johnson
+Martin Hume Johnson,deathDate,1962,Martin Hume Johnson
+Martin Hume Johnson,nationality,British,Martin Hume Johnson
+Peter Laurence (diplomat),instanceOf,Diplomat,Peter Laurence (diplomat)
+Peter Laurence (diplomat),nationality,British,Peter Laurence (diplomat)
+Peter Laurence (diplomat),position,British Ambassador to Lebanon,Peter Laurence (diplomat)
+Peter Laurence (diplomat),position,British Ambassador to Syria,Peter Laurence (diplomat)
+Henriette Hansen (handballer),instanceOf,handball player,Henriette Hansen (handballer)
+Henriette Hansen (handballer),birthDate,1990-10-23,Henriette Hansen (handballer)
+Henriette Hansen (handballer),birthPlace,Denmark,Henriette Hansen (handballer)
+Henriette Hansen (handballer),position,left back,Henriette Hansen (handballer)
+Henriette Hansen (handballer),playsFor,Denmark women's national handball team,Henriette Hansen (handballer)
+subject,predicate,object,Never Never (TV series)
+subject,predicate,object,Ismael Edwards Matte
+subject,predicate,object,Bayerisches Armeemuseum
+Llansantffraid railway station,instanceOf,railway station,Llansantffraid railway station
+Llansantffraid railway station,locatedIn,Llansantffraid,Llansantffraid railway station
+Llansantffraid railway station,serves,Llansantffraid,Llansantffraid railway station
+Llansantffraid railway station,country,Wales,Llansantffraid railway station
+Llansantffraid railway station,hasOperator,Arriva Rail London,Llansantffraid railway station
+subject,predicate,object,Ten Ren Tea
+Alex Allan (footballer),instanceOf,Footballer,Alex Allan (footballer)
+Alex Allan (footballer),birthDate,1990-10-01,Alex Allan (footballer)
+Alex Allan (footballer),birthPlace,Glasgow,Alex Allan (footballer)
+Alex Allan (footballer),position,Midfielder,Alex Allan (footballer)
+Alex Allan (footballer),teams,Dunfermline Athletic F.C.,Alex Allan (footballer)
+Alex Allan (footballer),teams,Kilmarnock F.C.,Alex Allan (footballer)
+Alex Allan (footballer),teams,Ayr United F.C.,Alex Allan (footballer)
+Church of St. Elizabeth of Hungary in Łódź,instanceOf,church,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,locatedIn,Łódź,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,dedicatedTo,Elizabeth of Hungary,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,hasDenomination,Catholic,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,hasArchitecturalStyle,modern architecture,Church of St. Elizabeth of Hungary in Łódź
+subject,predicate,object,Dorothea Waley Singer
+Dorothea Waley Singer,instanceOf,Person,Dorothea Waley Singer
+Dorothea Waley Singer,givenName,Dorothea,Dorothea Waley Singer
+Dorothea Waley Singer,familyName,Singer,Dorothea Waley Singer
+Dorothea Waley Singer,birthName,Dorothea Waley,Dorothea Waley Singer
+Dorothea Waley Singer,spouse,Charles Singer,Dorothea Waley Singer
+Anne Buttimer,instanceOf,Human,Anne Buttimer
+Anne Buttimer,birthDate,1936-03-30,Anne Buttimer
+Anne Buttimer,deathDate,2014-12-15,Anne Buttimer
+Anne Buttimer,field,Geography,Anne Buttimer
+Anne Buttimer,educatedAt,University College London,Anne Buttimer
+Anne Buttimer,awarded,Viking Medal,Anne Buttimer
+Anne Buttimer,presidentOf,International Geographical Union,Anne Buttimer
+Anne Buttimer,memberOf,Royal Geographical Society,Anne Buttimer
+Anne Buttimer,nationality,Irish,Anne Buttimer
+1995–96 Arkansas Razorbacks men's basketball team,instanceOf,Basketball team,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,season,1995-96 NCAA Division I men's basketball season,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,coach,Stan Heath,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,team,Arkansas Razorbacks men's basketball,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,league,Southeastern Conference,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,conference,Southeastern Conference,1995–96 Arkansas Razorbacks men's basketball team
+2011–12 Harvard Crimson men's basketball team,instanceOf,NCAA Division I men's basketball team,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,partOf,Harvard Crimson men's basketball,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,hasHeadCoach,Timmy O'Donnell,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,season,2011-12,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,league,NCAA Division I,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,conference,Ivory League,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,record,23-6,2011–12 Harvard Crimson men's basketball team
+subject,predicate,object,Luis González Maté
+If I don't have more information,the list will be short. If I have a lot of info,the list can grow quite long.,Judo at the 2023 Pan American Games – Women's 63 kg
+subject,predicate,object,Serikbolsyn Abdildin
+subject,predicate,object,Ross Barkley
+subject,predicate,object,E. Talbot Donaldson
+subject,predicate,object,The Adventures of Nicholas Nickleby

@@ -4,7 +4,7 @@ import functools
 from loguru import logger
 
 def network_retry(
-    max_retries: int = 6,
+    max_retries: int = 10,
     initial_delay: float = 1.0,
     max_delay: float = 120.0,
     exponential_base: float = 2.0,

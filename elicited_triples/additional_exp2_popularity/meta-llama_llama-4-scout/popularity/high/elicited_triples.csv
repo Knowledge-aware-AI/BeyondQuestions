@@ -1,0 +1,1431 @@
+subject,predicate,object,subject_name
+Alexei Navalny,instanceOf,Human,Alexei Navalny
+Alexei Navalny,instanceOf,Politician,Alexei Navalny
+Alexei Navalny,birthDate,1976-06-04,Alexei Navalny
+Alexei Navalny,birthPlace,"Butyn, Russia",Alexei Navalny
+Alexei Navalny,nationality,Russian,Alexei Navalny
+Alexei Navalny,education,Peoples' Friendship University of Russia,Alexei Navalny
+Alexei Navalny,occupation,Lawyer,Alexei Navalny
+Alexei Navalny,occupation,Politician,Alexei Navalny
+Alexei Navalny,knownFor,Anti-corruption activism,Alexei Navalny
+Alexei Navalny,knownFor,Opposition to Vladimir Putin,Alexei Navalny
+Alexei Navalny,award,Human Rights Defenders' Award,Alexei Navalny
+Alexei Navalny,award,Alternative Nobel Prize,Alexei Navalny
+Alexei Navalny,opponentOf,Vladimir Putin,Alexei Navalny
+Alexei Navalny,opponentOf,Corruption in Russia,Alexei Navalny
+Alexei Navalny,arrestedBy,Russian Police,Alexei Navalny
+Alexei Navalny,chargedWith,Embezzlement,Alexei Navalny
+Alexei Navalny,chargedWith,Corruption,Alexei Navalny
+Alexei Navalny,imprisonedAt,Penal Colony No. 6,Alexei Navalny
+Alexei Navalny,subjectedTo,Poisoning,Alexei Navalny
+Alexei Navalny,poisonedWith,Novichok,Alexei Navalny
+Alexei Navalny,treatedAt,Charité Hospital,Alexei Navalny
+Alexei Navalny,treatedAt,Berlin Hospital,Alexei Navalny
+Alexei Navalny,supporterOf,Democracy in Russia,Alexei Navalny
+Alexei Navalny,supporterOf,Free Elections in Russia,Alexei Navalny
+Karl May,instanceOf,Person,Karl May
+Karl May,givenName,Karl,Karl May
+Karl May,familyName,May,Karl May
+Karl May,birthDate,1842-02-25,Karl May
+Karl May,deathDate,1912-03-30,Karl May
+Karl May,birthPlace,Hohenstein-Ernstthal,Karl May
+Karl May,deathPlace,Radebeul,Karl May
+Karl May,occupation,Writer,Karl May
+Karl May,occupation,Novelist,Karl May
+Karl May,language,German,Karl May
+Karl May,influencedBy,Alexandre Dumas,Karl May
+Karl May,influencedBy,Friedrich Gerstäcker,Karl May
+Karl May,notableWork,Winnetou,Karl May
+Karl May,notableWork,Old Shatterhand,Karl May
+Karl May,notableWork,The Treasure of the Silver Lake,Karl May
+Karl May,hasWrittenInLanguage,German,Karl May
+Karl May,movement,German-language literature,Karl May
+Karl May,movement,Adventure fiction,Karl May
+Karl May,award,Adelung Prize,Karl May
+Karl May,award,Golden Albert Medal,Karl May
+Karl May,influenced,Rex Stout,Karl May
+Karl May,influenced,Tony Hillerman,Karl May
+Karl May,hasMuseum,Karl-May-Museum,Karl May
+subject,predicate,object,"Tyler, the Creator"
+subject,predicate,object,Prunus avium
+subject,predicate,object,Jennifer Connelly
+subject,predicate,object,Loreen
+subject,predicate,object,Iron Man 3
+To the Wonder,instanceOf,film,To the Wonder
+To the Wonder,director,Michelangelo Antonioni,To the Wonder
+To the Wonder,starring,Jack Nicholson,To the Wonder
+To the Wonder,starring,Jennifer Jason Leigh,To the Wonder
+To the Wonder,starring,Ed Harris,To the Wonder
+To the Wonder,starring,Sam Shepard,To the Wonder
+To the Wonder,releaseDate,1984-05-23,To the Wonder
+To the Wonder,country,United States,To the Wonder
+To the Wonder,language,English,To the Wonder
+To the Wonder,runtime,120 minutes,To the Wonder
+To the Wonder,award,Academy Award for Best Cinematography,To the Wonder
+To the Wonder,nominatedFor,Academy Award for Best Director,To the Wonder
+To the Wonder,filmBasedOn,Antonioni's earlier short film,To the Wonder
+To the Wonder,filmedIn,Rome,To the Wonder
+To the Wonder,filmedIn,Tuscany,To the Wonder
+To the Wonder,cinematography,Ennio Guarnieri,To the Wonder
+Albert Dauzat,instanceOf,Human,Albert Dauzat
+Albert Dauzat,birthDate,1874-07-19,Albert Dauzat
+Albert Dauzat,birthPlace,Loury,Albert Dauzat
+Albert Dauzat,deathDate,1956-07-31,Albert Dauzat
+Albert Dauzat,deathPlace,Paris,Albert Dauzat
+Albert Dauzat,occupation,Linguist,Albert Dauzat
+Albert Dauzat,occupation,Philologist,Albert Dauzat
+Albert Dauzat,field,Onomastics,Albert Dauzat
+Albert Dauzat,field,Etymology,Albert Dauzat
+Albert Dauzat,influencedBy,Anatole Dauzat,Albert Dauzat
+Albert Dauzat,influencedBy,Marius Roques,Albert Dauzat
+Albert Dauzat,wrote,Dictionnaire étymologique de la langue française,Albert Dauzat
+Albert Dauzat,hasNickname,The father of French onomastics,Albert Dauzat
+The Little Prince (2015 film),instanceOf,film,The Little Prince (2015 film)
+The Little Prince (2015 film),basedOn,The Little Prince,The Little Prince (2015 film)
+The Little Prince (2015 film),director,Mark Osborne,The Little Prince (2015 film)
+The Little Prince (2015 film),starring,Judi Dench,The Little Prince (2015 film)
+The Little Prince (2015 film),starring,Matt Damon,The Little Prince (2015 film)
+The Little Prince (2015 film),starring,J.K. Simmons,The Little Prince (2015 film)
+The Little Prince (2015 film),starring,James Corden,The Little Prince (2015 film)
+The Little Prince (2015 film),releaseDate,2015-09-18,The Little Prince (2015 film)
+The Little Prince (2015 film),runtime,108 minutes,The Little Prince (2015 film)
+The Little Prince (2015 film),countryOfOrigin,France,The Little Prince (2015 film)
+The Little Prince (2015 film),language,English,The Little Prince (2015 film)
+The Little Prince (2015 film),language,French,The Little Prince (2015 film)
+The Little Prince (2015 film),musicComposer,Harold and Maude,The Little Prince (2015 film)
+The Little Prince (2015 film),producer,Aidan O'Brien,The Little Prince (2015 film)
+The Little Prince (2015 film),productionCompany,Method Animation,The Little Prince (2015 film)
+The Little Prince (2015 film),productionCompany,ON Animation Studios,The Little Prince (2015 film)
+Sea of Stars,instanceOf,video game,Sea of Stars
+Sea of Stars,developer,Sabotage Studio,Sea of Stars
+Sea of Stars,publisher,Sabotage Studio,Sea of Stars
+Sea of Stars,releaseDate,2023-08-29,Sea of Stars
+Sea of Stars,genre,role-playing game,Sea of Stars
+Sea of Stars,platform,PC,Sea of Stars
+Sea of Stars,platform,PlayStation 4,Sea of Stars
+Sea of Stars,platform,PlayStation 5,Sea of Stars
+Sea of Stars,platform,Nintendo Switch,Sea of Stars
+Sea of Stars,setting,fantasy world,Sea of Stars
+Sea of Stars,inspiredBy,The Legend of Zelda,Sea of Stars
+Sea of Stars,inspiredBy,Dark Souls,Sea of Stars
+Renée Sintenis,instanceOf,Human,Renée Sintenis
+Renée Sintenis,instanceOf,Sculptor,Renée Sintenis
+Renée Sintenis,birthDate,1907-05-26,Renée Sintenis
+Renée Sintenis,deathDate,2002-10-22,Renée Sintenis
+Renée Sintenis,birthPlace,Berlin,Renée Sintenis
+Renée Sintenis,nationality,German,Renée Sintenis
+Renée Sintenis,spouse,Emil Sintenis,Renée Sintenis
+Renée Sintenis,movement,Modern Art,Renée Sintenis
+Renée Sintenis,movement,Figuration,Renée Sintenis
+Monster Hunter Rise,instanceOf,video game,Monster Hunter Rise
+Monster Hunter Rise,developer,Capcom,Monster Hunter Rise
+Monster Hunter Rise,publisher,Capcom,Monster Hunter Rise
+Monster Hunter Rise,released,2021-03-26,Monster Hunter Rise
+Monster Hunter Rise,platform,Nintendo Switch,Monster Hunter Rise
+Monster Hunter Rise,genre,action role-playing game,Monster Hunter Rise
+Monster Hunter Rise,series,Monster Hunter,Monster Hunter Rise
+Monster Hunter Rise,setting,fictional world,Monster Hunter Rise
+Monster Hunter Rise,mode,single-player,Monster Hunter Rise
+Monster Hunter Rise,mode,multiplayer,Monster Hunter Rise
+Monster Hunter Rise,rating,T for Teen,Monster Hunter Rise
+Monster Hunter Rise,critic score,89/100,Monster Hunter Rise
+Monster Hunter Rise,sales,over 4 million copies sold,Monster Hunter Rise
+subject,predicate,object,The Elder Scrolls IV: Oblivion
+Franz Krüger,instanceOf,Human,Franz Krüger
+Franz Krüger,born,1787-11-24,Franz Krüger
+Franz Krüger,died,1843-01-13,Franz Krüger
+Franz Krüger,birthPlace,Potsdam,Franz Krüger
+Franz Krüger,deathPlace,Berlin,Franz Krüger
+Franz Krüger,nationality,German,Franz Krüger
+Franz Krüger,occupation,Painter,Franz Krüger
+Franz Krüger,knownFor,Portrait painting,Franz Krüger
+Franz Krüger,style,Romanticism,Franz Krüger
+Franz Krüger,influencedBy,Jean-Baptiste Greuze,Franz Krüger
+Franz Krüger,influencedBy,Anton Raphael Mengs,Franz Krüger
+Franz Krüger,hasNotableWork,Portrait of Alexander von Humboldt,Franz Krüger
+Franz Krüger,hasNotableWork,Portrait of Friedrich II of Prussia,Franz Krüger
+Franz Krüger,awarded,Order of the Red Eagle,Franz Krüger
+subject,predicate,object,Antoine Griezmann
+Challengers (film),instanceOf,film,Challengers (film)
+Challengers (film),genre,tennis film,Challengers (film)
+Challengers (film),director,Luca Guadagnino,Challengers (film)
+Challengers (film),starring,Zendaya,Challengers (film)
+Challengers (film),starring,Timothée Chalamet,Challengers (film)
+Challengers (film),starring,Oscar Isaac,Challengers (film)
+Challengers (film),basedOn,Challengers (novel),Challengers (film)
+Challengers (film),productionCompany,Metro-Goldwyn-Mayer,Challengers (film)
+Challengers (film),distributor,Amazon Prime Video,Challengers (film)
+Challengers (film),releaseDate,2024-04-26,Challengers (film)
+subject,predicate,object,Super Mario 3D Land
+Super Mario 3D Land,instanceOf,video game,Super Mario 3D Land
+Super Mario 3D Land,partOf,Super Mario series,Super Mario 3D Land
+Super Mario 3D Land,releasedOn,2011-11-03,Super Mario 3D Land
+Super Mario 3D Land,releasedFor,Nintendo 3DS,Super Mario 3D Land
+Super Mario 3D Land,genre,platformer,Super Mario 3D Land
+Super Mario 3D Land,developer,Nintendo,Super Mario 3D Land
+Super Mario 3D Land,publisher,Nintendo,Super Mario 3D Land
+Super Mario 3D Land,director,Shigeyuki Asuke,Super Mario 3D Land
+Super Mario 3D Land,producer,Shigeru Miyamoto,Super Mario 3D Land
+Super Mario 3D Land,musicBy,Asuka Hayazaki,Super Mario 3D Land
+Super Mario 3D Land,criticScore,80%,Super Mario 3D Land
+Super Mario 3D Land,receivedAward,Game of the Year,Super Mario 3D Land
+Super Mario 3D Land,hasPowerUp,Mushroom,Super Mario 3D Land
+Super Mario 3D Land,hasPowerUp,Fire Flower,Super Mario 3D Land
+Super Mario 3D Land,hasPowerUp,Tanooki Suit,Super Mario 3D Land
+Josep Pla,instanceOf,Human,Josep Pla
+Josep Pla,instanceOf,Writer,Josep Pla
+Josep Pla,birthDate,1897-03-08,Josep Pla
+Josep Pla,deathDate,1982-01-23,Josep Pla
+Josep Pla,birthPlace,Palafrugell,Josep Pla
+Josep Pla,nationality,Spanish,Josep Pla
+Josep Pla,language,Catalan,Josep Pla
+Josep Pla,language,Spanish,Josep Pla
+Josep Pla,occupation,Journalist,Josep Pla
+Josep Pla,occupation,Essayist,Josep Pla
+Josep Pla,notableWork,Coses vistes,Josep Pla
+Josep Pla,notableWork,El Quim de la Boqueria,Josep Pla
+Josep Pla,award,Premi d'Honor de les Lletres Catalanes,Josep Pla
+Josep Pla,influencedBy,Marius Torres,Josep Pla
+Josep Pla,influencedBy,Carles Riba,Josep Pla
+The Banner Saga,instanceOf,video game,The Banner Saga
+The Banner Saga,instanceOf,tactical role-playing game,The Banner Saga
+The Banner Saga,developer,Stoic,The Banner Saga
+The Banner Saga,publisher,Paradox Interactive,The Banner Saga
+The Banner Saga,releaseDate,2014-04-15,The Banner Saga
+The Banner Saga,platform,Microsoft Windows,The Banner Saga
+The Banner Saga,platform,OS X,The Banner Saga
+The Banner Saga,platform,Linux,The Banner Saga
+The Banner Saga,genre,strategy video game,The Banner Saga
+The Banner Saga,genre,role-playing video game,The Banner Saga
+The Banner Saga,setting,fantasy world,The Banner Saga
+The Banner Saga,setting,Viking Age,The Banner Saga
+The Banner Saga,narrative,High Fantasy,The Banner Saga
+The Banner Saga,gameplay,turn-based strategy,The Banner Saga
+The Banner Saga,gameplay,party-based game,The Banner Saga
+The Banner Saga,criticScore,91%,The Banner Saga
+The Banner Saga,awards,Independent Games Summit's Excellence in Design Award,The Banner Saga
+The Banner Saga, sequel,The Banner Saga 2,The Banner Saga
+The Banner Saga, sequel,The Banner Saga 3,The Banner Saga
+The Call of the Wild (2020 film),instanceOf,film,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),basedOn,The Call of the Wild,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),director,Chris Sanders,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),starring,Harrison Ford,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),starring,Omar Sy,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),releaseDate,2020-02-21,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),runtime,112 minutes,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),genre,adventure film,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),genre,family film,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),productionCompany,20th Century Studios,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),distributor,20th Century Studios,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),country,United States,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),language,English,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),budget,40 million USD,The Call of the Wild (2020 film)
+The Call of the Wild (2020 film),boxOffice,47.7 million USD,The Call of the Wild (2020 film)
+A Fantastic Woman,instanceOf,Film,A Fantastic Woman
+A Fantastic Woman,director,Matías Piñeiro,A Fantastic Woman
+A Fantastic Woman,starring,Daniela Areiza,A Fantastic Woman
+A Fantastic Woman,starring,Mario Sironi,A Fantastic Woman
+A Fantastic Woman,releaseYear,2017,A Fantastic Woman
+A Fantastic Woman,country,Chile,A Fantastic Woman
+A Fantastic Woman,language,Spanish,A Fantastic Woman
+A Fantastic Woman,genre,Drama,A Fantastic Woman
+A Fantastic Woman,genre,Romance,A Fantastic Woman
+A Fantastic Woman,award,Academy Award for Best Foreign Language Film,A Fantastic Woman
+A Fantastic Woman,nominatedFor,Goya Award for Best New Director,A Fantastic Woman
+At Eternity's Gate (film),instanceOf,film,At Eternity's Gate (film)
+At Eternity's Gate (film),title,At Eternity's Gate,At Eternity's Gate (film)
+At Eternity's Gate (film),director,Julian Schnabel,At Eternity's Gate (film)
+At Eternity's Gate (film),starring,Vince Giron,At Eternity's Gate (film)
+At Eternity's Gate (film),starring,Steven Van Zandt,At Eternity's Gate (film)
+At Eternity's Gate (film),starring,Sienna Miller,At Eternity's Gate (film)
+At Eternity's Gate (film),releaseYear,2018,At Eternity's Gate (film)
+At Eternity's Gate (film),genre,biographical drama,At Eternity's Gate (film)
+At Eternity's Gate (film),genre,art film,At Eternity's Gate (film)
+At Eternity's Gate (film),basedOn,The Dying of the Light: Van Gogh in Auvers,At Eternity's Gate (film)
+At Eternity's Gate (film),basedOn,Letters to Theo,At Eternity's Gate (film)
+At Eternity's Gate (film),producer,Arnon Milchan,At Eternity's Gate (film)
+At Eternity's Gate (film),producer,Steve Golin,At Eternity's Gate (film)
+At Eternity's Gate (film),distributor,Bleecker Street,At Eternity's Gate (film)
+At Eternity's Gate (film),runtime,133 minutes,At Eternity's Gate (film)
+At Eternity's Gate (film),countryOfOrigin,United States,At Eternity's Gate (film)
+At Eternity's Gate (film),language,English,At Eternity's Gate (film)
+At Eternity's Gate (film),award,National Board of Review Award for Best Film,At Eternity's Gate (film)
+At Eternity's Gate (film),award,National Board of Review Award for Best Director,At Eternity's Gate (film)
+At Eternity's Gate (film),nominatedFor,Academy Award for Best Painting,At Eternity's Gate (film)
+At Eternity's Gate (film),nominatedFor,Golden Globe Award for Best Motion Picture – Drama,At Eternity's Gate (film)
+It Comes at Night,instanceOf,Film,It Comes at Night
+It Comes at Night,releaseYear,2017,It Comes at Night
+It Comes at Night,director,Trey Edward Shults,It Comes at Night
+It Comes at Night,starring,Joel Edgerton,It Comes at Night
+It Comes at Night,starring,Shaila Sanders,It Comes at Night
+It Comes at Night,starring,Kirsten Dunst,It Comes at Night
+It Comes at Night,genre,Drama,It Comes at Night
+It Comes at Night,genre,Horror,It Comes at Night
+It Comes at Night,runtime,91 minutes,It Comes at Night
+It Comes at Night,country,United States,It Comes at Night
+It Comes at Night,language,English,It Comes at Night
+It Comes at Night,budget,5000000,It Comes at Night
+It Comes at Night,boxOffice,16232154,It Comes at Night
+subject,predicate,object,Juncus inflexus
+subject,predicate,object,Meg 2: The Trench
+William Copley (artist),instanceOf,Human,William Copley (artist)
+William Copley (artist),instanceOf,Artist,William Copley (artist)
+William Copley (artist),birthDate,1903-07-20,William Copley (artist)
+William Copley (artist),deathDate,1979-07-19,William Copley (artist)
+William Copley (artist),birthPlace,London,William Copley (artist)
+William Copley (artist),nationality,British,William Copley (artist)
+William Copley (artist),knownFor,Surrealist art,William Copley (artist)
+William Copley (artist),movement,Surrealism,William Copley (artist)
+William Copley (artist),influ,Salvador Dalí,William Copley (artist)
+William Copley (artist),influencedBy,Max Ernst,William Copley (artist)
+opley (artist),created,The Temptation of Saint Anthony,William Copley (artist)
+William Copley (artist),created,La femme 100 têtes,William Copley (artist)
+William Copley (artist),exhibitedAt,Tate Gallery,William Copley (artist)
+William Copley (artist),exhibitedAt,Centre Pompidou,William Copley (artist)
+William Copley (artist),hasOccupation,Painter,William Copley (artist)
+William Copley (artist),hasOccupation,Printmaker,William Copley (artist)
+William Copley (artist),associatedWith,Surréalisme,William Copley (artist)
+William Copley (artist),memberOf,The Surrealist Group,William Copley (artist)
+subject,predicate,object,Pieter van der Borcht the Elder
+Flatliners (2017 film),instanceOf,film,Flatliners (2017 film)
+Flatliners (2017 film),basedOn,Flatliners,Flatliners (2017 film)
+Flatliners (2017 film),director,Joey Travolta,Flatliners (2017 film)
+Flatliners (2017 film),starring,Ellen Page,Flatliners (2017 film)
+Flatliners (2017 film),starring,Kiefer Sutherland,Flatliners (2017 film)
+Flatliners (2017 film),starring,Diego Luna,Flatliners (2017 film)
+Flatliners (2017 film),starring,Julia Garner,Flatliners (2017 film)
+Flatliners (2017 film),starring,James McAvoy,Flatliners (2017 film)
+Flatliners (2017 film),releaseDate,2017-09-08,Flatliners (2017 film)
+Flatliners (2017 film),genre,science fiction film,Flatliners (2017 film)
+Flatliners (2017 film),genre,thriller film,Flatliners (2017 film)
+Flatliners (2017 film),countryOfOrigin,United States,Flatliners (2017 film)
+Flatliners (2017 film),language,English,Flatliners (2017 film)
+Flatliners (2017 film),budget,50000000,Flatliners (2017 film)
+Flatliners (2017 film),boxOffice,58593750,Flatliners (2017 film)
+Free Fire (film),instanceOf,film,Free Fire (film)
+Free Fire (film),releaseYear,2016,Free Fire (film)
+Free Fire (film),director,Guillaume Canet,Free Fire (film)
+Free Fire (film),starring,Robert De Niro,Free Fire (film)
+Free Fire (film),starring,Sam Shepard,Free Fire (film)
+Free Fire (film),starring,Naomie Harris,Free Fire (film)
+Free Fire (film),starring,Joey Slotnick,Free Fire (film)
+Free Fire (film),genre,action film,Free Fire (film)
+Free Fire (film),genre,comedy film,Free Fire (film)
+Free Fire (film),runtime,101 minutes,Free Fire (film)
+Free Fire (film),country,United Kingdom,Free Fire (film)
+Free Fire (film),country,United States,Free Fire (film)
+Free Fire (film),language,English,Free Fire (film)
+Free Fire (film),basedOn,Free Fire,Free Fire (film)
+subject,predicate,object,Louis de Jaucourt
+subject,predicate,object,Verbascum phlomoides
+subject,predicate,object,Celeste Ng
+subject,predicate,object,Johann Peter Krafft
+Hedi (film),instanceOf,film,Hedi (film)
+Hedi (film),releaseDate,2021-09-15,Hedi (film)
+Hedi (film),director,Moufida Tlatli,Hedi (film)
+Hedi (film),countryOfOrigin,Tunisia,Hedi (film)
+Hedi (film),language,Arabic,Hedi (film)
+Hedi (film),basedOn,The Book of Hédi,Hedi (film)
+Hedi (film),starring,Maya Kaouane,Hedi (film)
+Hedi (film),genre,drama,Hedi (film)
+Hedi (film),runtime,110 minutes,Hedi (film)
+subject,predicate,object,PlayStation 2
+subject,predicate,object,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,instanceOf,video game,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,partOf,Fire Emblem Warriors series,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,partOf,Fire Emblem series,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,releasedOn,"June 23, 2020",Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,releasedOn,"July 10, 2020",Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,releasedOn,"June 26, 2020",Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,platform,Nintendo Switch,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,genre,action role-playing game,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,genre,hack and slash,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,basedOn,Fire Emblem: Three Houses,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,developer,Koei Tecmo Games,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,publisher,Nintendo,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,director,Yasuki Suzuki,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,producer,Hiroaki Yura,Fire Emblem Warriors: Three Hopes
+Fire Emblem Warriors: Three Hopes,composer,Tetsukazu Nakanishi,Fire Emblem Warriors: Three Hopes
+Adrien Proust,instanceOf,Human,Adrien Proust
+Adrien Proust,givenName,Adrien,Adrien Proust
+Adrien Proust,familyName,Proust,Adrien Proust
+Adrien Proust,birthDate,1841-03-12,Adrien Proust
+Adrien Proust,deathDate,1905-11-26,Adrien Proust
+Adrien Proust,occupation,Physician,Adrien Proust
+Adrien Proust,nationality,French,Adrien Proust
+Adrien Proust,spouse,Jeanne Proust,Adrien Proust
+Adrien Proust,parent,Marie Proust,Adrien Proust
+Adrien Proust,child,Marcel Proust,Adrien Proust
+Adrien Proust,child,Madeleine Proust,Adrien Proust
+Adrien Proust,child,Robert Proust,Adrien Proust
+Adrien Proust,residence,Paris,Adrien Proust
+Adolphe Jullien,instanceOf,Person,Adolphe Jullien
+Adolphe Jullien,bornIn,France,Adolphe Jullien
+Adolphe Jullien,diedIn,France,Adolphe Jullien
+Adolphe Jullien,occupation,Musicologist,Adolphe Jullien
+Adolphe Jullien,occupation,Conductor,Adolphe Jullien
+Adolphe Jullien,notableWork,opera,Adolphe Jullien
+Adolphe Jullien,givenName,Adolphe,Adolphe Jullien
+Adolphe Jullien,familyName,Jullien,Adolphe Jullien
+Adolphe Jullien,dateOfBirth,1825-05-21,Adolphe Jullien
+Adolphe Jullien,dateOfDeath,1874-02-01,Adolphe Jullien
+Whiskered tern,instanceOf,Species,Whiskered tern
+Whiskered tern,scientificName,Chlidonias hybrida,Whiskered tern
+Whiskered tern,class,Aves,Whiskered tern
+Whiskered tern,order,Charadriiformes,Whiskered tern
+Whiskered tern,family,Laridae,Whiskered tern
+Whiskered tern,genus,Chlidonias,Whiskered tern
+Whiskered tern,habitat,Wetlands,Whiskered tern
+Whiskered tern,distribution,Africa,Whiskered tern
+Whiskered tern,distribution,Asia,Whiskered tern
+Whiskered tern,distribution,Europe,Whiskered tern
+Whiskered tern,conservationStatus,Least Concern,Whiskered tern
+Whiskered tern,length,25-30 cm,Whiskered tern
+Whiskered tern,wingspan,70-80 cm,Whiskered tern
+Whiskered tern,weight,60-80 g,Whiskered tern
+Ángel Valbuena Prat,instanceOf,Person,Ángel Valbuena Prat
+Ángel Valbuena Prat,birthPlace,Spain,Ángel Valbuena Prat
+Ángel Valbuena Prat,occupation,Writer,Ángel Valbuena Prat
+Ángel Valbuena Prat,occupation,Critic,Ángel Valbuena Prat
+Ángel Valbuena Prat,fieldOfWork,Literature,Ángel Valbuena Prat
+Ángel Valbuena Prat,fieldOfWork,Criticism,Ángel Valbuena Prat
+Ángel Valbuena Prat,diedIn,Madrid,Ángel Valbuena Prat
+Ángel Valbuena Prat,diedOn,1977,Ángel Valbuena Prat
+subject,predicate,object,Rotala ramosior
+The Hole in the Ground (2019 film),instanceOf,film,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),releaseYear,2019,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),director,Sean Byrne,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),starring,Seána Kerslake,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),starring,James Quinn Markey,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),genre,drama,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),genre,horror,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),country,Ireland,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),language,English,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),screenplay,Sean Byrne,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),producer,Ben Lovell,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),producer,Sean Byrne,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),productionCompany,Boulder Media,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),distributor,Universal Pictures,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),runtime,91 minutes,The Hole in the Ground (2019 film)
+The Hole in the Ground (2019 film),basedOn,The Hole in the Ground,The Hole in the Ground (2019 film)
+subject,predicate,object,Clémence de Grandval
+subject,predicate,object,The Marvelous Mrs. Maisel
+subject,predicate,object,Edward Julius Detmold
+subject,predicate,object,South Asia
+The Jungle Bunch (film),instanceOf,film,The Jungle Bunch (film)
+The Jungle Bunch (film),title,The Jungle Bunch,The Jungle Bunch (film)
+The Jungle Bunch (film),releaseYear,2017,The Jungle Bunch (film)
+The Jungle Bunch (film),genre,animated film,The Jungle Bunch (film)
+The Jungle Bunch (film),genre,comedy film,The Jungle Bunch (film)
+The Jungle Bunch (film),director,Jean Flynn,The Jungle Bunch (film)
+The Jungle Bunch (film),starring,Boulbi,The Jungle Bunch (film)
+The Jungle Bunch (film),starring,Cabu,The Jungle Bunch (film)
+The Jungle Bunch (film),starring,Dubois,The Jungle Bunch (film)
+The Jungle Bunch (film),countryOfOrigin,France,The Jungle Bunch (film)
+The Jungle Bunch (film),countryOfOrigin,Belgium,The Jungle Bunch (film)
+The Jungle Bunch (film),language,French,The Jungle Bunch (film)
+Sonic Origins,instanceOf,video game compilation,Sonic Origins
+Sonic Origins,releaseDate,2020-06-23,Sonic Origins
+Sonic Origins,developer,Sega,Sonic Origins
+Sonic Origins,publisher,Sega,Sonic Origins
+Sonic Origins,platform,Nintendo Switch,Sonic Origins
+Sonic Origins,platform,PlayStation 4,Sonic Origins
+Sonic Origins,platform,Xbox One,Sonic Origins
+Sonic Origins,platform,PC,Sonic Origins
+Sonic Origins,partOf,Sonic the Hedgehog,Sonic Origins
+Sonic Origins,contains,Sonic the Hedgehog (1991),Sonic Origins
+Sonic Origins,contains,Sonic the Hedgehog 2 (1992),Sonic Origins
+Sonic Origins,contains,Sonic the Hedgehog CD (1993),Sonic Origins
+Sonic Origins,contains,Sonic the Hedgehog 3 (1994),Sonic Origins
+Sonic Origins,contains,Sonic & Knuckles (1994),Sonic Origins
+subject,predicate,object,Double Dragon Gaiden: Rise of the Dragons
+Ornella Volta,instanceOf,Human,Ornella Volta
+Ornella Volta,bornIn,Italy,Ornella Volta
+Ornella Volta,occupation,Writer,Ornella Volta
+Ornella Volta,occupation,Film Director,Ornella Volta
+Ornella Volta,knownFor,Documentary Film,Ornella Volta
+Ornella Volta,knownFor,Biographical Film,Ornella Volta
+subject,predicate,object,Hostiles (film)
+Shield of Straw,instanceOf,Artwork,Shield of Straw
+Shield of Straw,creator,Kiki Smith,Shield of Straw
+Shield of Straw,material,Straw,Shield of Straw
+Shield of Straw,material,Wire,Shield of Straw
+Shield of Straw,exhibition,Whitney Biennial,Shield of Straw
+Shield of Straw,year,1987,Shield of Straw
+Shield of Straw,description,A sculpture of a shield made of straw,Shield of Straw
+Shield of Straw,location,Whitney Museum of American Art,Shield of Straw
+Shield of Straw,type,Sculpture,Shield of Straw
+The Queen's Gambit (miniseries),instanceOf,miniseries,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),basedOn,The Queen's Gambit,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),creator,Scott Frank,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),starring,Anya Taylor-Joy,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),starring,Bill Nighy,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),starring,Marielle Heller,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),starring,Jacob Fortune-Lloyd,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),starring,Martha Cope,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),releaseDate,2020-10-23,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),numberOfEpisodes,7,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),genre,drama,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),genre,period drama,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),award,Golden Globe Award,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),award,Screen Actors Guild Award,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),platform,Netflix,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),setIn,1950s,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),setIn,Cold War,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),setIn,orphanage,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),setIn,Moscow,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),setIn,New York City,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),about,chess,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),about,orphan,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),about,addiction,The Queen's Gambit (miniseries)
+The Queen's Gambit (miniseries),about,female protagonist,The Queen's Gambit (miniseries)
+Jean-Pierre Laurens,instanceOf,Human,Jean-Pierre Laurens
+Jean-Pierre Laurens,givenName,Jean-Pierre,Jean-Pierre Laurens
+Jean-Pierre Laurens,familyName,Laurens,Jean-Pierre Laurens
+Jean-Pierre Laurens,birthDate,1868-02-18,Jean-Pierre Laurens
+Jean-Pierre Laurens,deathDate,1956-01-19,Jean-Pierre Laurens
+Jean-Pierre Laurens,birthPlace,Toulouse,Jean-Pierre Laurens
+Jean-Pierre Laurens,deathPlace,Paris,Jean-Pierre Laurens
+Jean-Pierre Laurens,occupation,painter,Jean-Pierre Laurens
+Jean-Pierre Laurens,fieldOfWork,art,Jean-Pierre Laurens
+Jean-Pierre Laurens,movement,Symbolism,Jean-Pierre Laurens
+Jean-Pierre Laurens,influencedBy,Gustave Moreau,Jean-Pierre Laurens
+Jean-Pierre Laurens,influencedBy,Maurice Marinot,Jean-Pierre Laurens
+Enrique Fuentes Quintana,instanceOf,Human,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,givenName,Enrique,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,familyName,Fuentes Quintana,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,birthDate,1958-12-30,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,birthPlace,Mexico City,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,nationality,Mexican,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,occupation,Economist,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,occupation,Academic,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,almaMater,Harvard University,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,almaMater,Instituto Politécnico Nacional,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,thesisTitle,Essays on the Mexican Business Cycle,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,award,National Prize for Economics,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,memberOf,Mexican Academy of Sciences,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,memberOf,Academia Nacional de Economía de México,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,pastMemberOf,Banco de México,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,pastPosition,Deputy Governor of Banco de México,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,pastPosition,Secretary of Finance of Mexico City,Enrique Fuentes Quintana
+Enrique Fuentes Quintana,relatedTo,Mexico,Enrique Fuentes Quintana
+Escape to Nowhere (1973 film),instanceOf,film,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),year,1973,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),director,Giorgio Ferroni,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),starring,Tomas Milian,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),genre,war film,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),country,Italy,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),alsoKnownAs,La grande fuga,Escape to Nowhere (1973 film)
+Escape to Nowhere (1973 film),runtime,105 minutes,Escape to Nowhere (1973 film)
+Johannes Loccenius,instanceOf,Human,Johannes Loccenius
+Johannes Loccenius,birthDate,1640-01-13,Johannes Loccenius
+Johannes Loccenius,deathDate,1711-07-20,Johannes Loccenius
+Johannes Loccenius,birthPlace,Amsterdam,Johannes Loccenius
+Johannes Loccenius,nationality,Dutch,Johannes Loccenius
+Johannes Loccenius,occupation,Jurist,Johannes Loccenius
+Johannes Loccenius,occupation,Historian,Johannes Loccenius
+Johannes Loccenius,occupation,Professor,Johannes Loccenius
+Johannes Loccenius,worksIn,University of Franeker,Johannes Loccenius
+Johannes Loccenius,worksIn,University of Groningen,Johannes Loccenius
+Johannes Loccenius,hasWritten,Historiae Batavicae,Johannes Loccenius
+Johannes Loccenius,hasWritten,Rerum Danicarum,Johannes Loccenius
+Johannes Loccenius,languageSpoken,Latin,Johannes Loccenius
+Johannes Loccenius,languageSpoken,Dutch,Johannes Loccenius
+Charles François Antoine Morren,instanceOf,Human,Charles François Antoine Morren
+Charles François Antoine Morren,birthDate,1804-02-23,Charles François Antoine Morren
+Charles François Antoine Morren,deathDate,1880-02-27,Charles François Antoine Morren
+Charles François Antoine Morren,nationality,Belgian,Charles François Antoine Morren
+Charles François Antoine Morren,occupation,Botanist,Charles François Antoine Morren
+Charles François Antoine Morren,occupation,Horticulturist,Charles François Antoine Morren
+Charles François Antoine Morren,knownFor,Morrenia,Charles François Antoine Morren
+Charles François Antoine Morren,hasPosition,President of the Royal Botanical Society of Belgium,Charles François Antoine Morren
+Charles François Antoine Morren,awardReceived,Baron,Charles François Antoine Morren
+Charles François Antoine Morren,hasRelative,Charles Morren,Charles François Antoine Morren
+Charles François Antoine Morren,educatedAt,University of Ghent,Charles François Antoine Morren
+Charles-Joseph Traviès de Villers,instanceOf,Human,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,birthDate,1773-03-29,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,deathDate,1836-05-15,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,occupation,Politician,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,position,Member of the Chamber of Deputies,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,countryOfCitizenship,France,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,givenName,Charles-Joseph,Charles-Joseph Traviès de Villers
+Charles-Joseph Traviès de Villers,familyName,Traviès de Villers,Charles-Joseph Traviès de Villers
+Gian Piero Brunetta,instanceOf,Q2156275,Gian Piero Brunetta
+Gian Piero Brunetta,type,Italian film critic,Gian Piero Brunetta
+Gian Piero Brunetta,type,film historian,Gian Piero Brunetta
+Gian Piero Brunetta,nationality,Italian,Gian Piero Brunetta
+Gian Piero Brunetta,occupation,film critic,Gian Piero Brunetta
+Gian Piero Brunetta,occupation,film historian,Gian Piero Brunetta
+Gian Piero Brunetta,known for,Storia del cinema italiano,Gian Piero Brunetta
+subject,predicate,object,Giselher Wirsing
+subject,predicate,object,John Postgate (microbiologist)
+Ocellus Lucanus,instanceOf,Species,Ocellus Lucanus
+Ocellus Lucanus,isA,Beetle,Ocellus Lucanus
+Ocellus Lucanus,isA,Insect,Ocellus Lucanus
+Ocellus Lucanus,isA,Arthropod,Ocellus Lucanus
+Ocellus Lucanus,scientificName,Ocellus lucanus,Ocellus Lucanus
+Ocellus Lucanus,family,Lucanidae,Ocellus Lucanus
+Ocellus Lucanus,habitat,Europe,Ocellus Lucanus
+Ocellus Lucanus,habitat,Asia,Ocellus Lucanus
+Ocellus Lucanus,habitat,North Africa,Ocellus Lucanus
+Ocellus Lucanus,typeSpecies,Lucanus,Ocellus Lucanus
+subject,predicate,object,Jacob Georg Christian Adler
+José Casado del Alisal,instanceOf,Human,José Casado del Alisal
+José Casado del Alisal,birthDate,1859-03-04,José Casado del Alisal
+José Casado del Alisal,deathDate,1930-03-16,José Casado del Alisal
+José Casado del Alisal,nationality,Spanish,José Casado del Alisal
+José Casado del Alisal,occupation,painter,José Casado del Alisal
+José Casado del Alisal,movement,Impressionism,José Casado del Alisal
+José Casado del Alisal,influencedBy,Joaquín Sorolla,José Casado del Alisal
+José Casado del Alisal,influencedBy,John Singer Sargent,José Casado del Alisal
+José Casado del Alisal,hasStyle,landscape painting,José Casado del Alisal
+José Casado del Alisal,hasStyle,portrait painting,José Casado del Alisal
+José Casado del Alisal,educatedAt,Academia de Bellas Artes de San Fernando,José Casado del Alisal
+The Station (video game),instanceOf,video game,The Station (video game)
+The Station (video game),developer,SomaSim,The Station (video game)
+The Station (video game),publisher,SomaSim,The Station (video game)
+The Station (video game),releaseDate,2015-04-22,The Station (video game)
+The Station (video game),genre,city-building game,The Station (video game)
+The Station (video game),genre,space-themed game,The Station (video game)
+The Station (video game),platform,Microsoft Windows,The Station (video game)
+The Station (video game),platform,macOS,The Station (video game)
+The Station (video game),platform,Linux,The Station (video game)
+The Station (video game),gameplay,management game,The Station (video game)
+The Station (video game),gameplay,simulation game,The Station (video game)
+The Station (video game),setting,space station,The Station (video game)
+The Station (video game),setting,science fiction,The Station (video game)
+subject,predicate,object,Jan Josef Horemans the Elder
+The Bear (TV series),instanceOf,Television series,The Bear (TV series)
+The Bear (TV series),creator,Christopher Storer,The Bear (TV series)
+The Bear (TV series),starring,Jeremy Allen White,The Bear (TV series)
+The Bear (TV series),starring,Ebon Moss-Bachrach,The Bear (TV series)
+The Bear (TV series),starring,Alinea,The Bear (TV series)
+The Bear (TV series),genre,Comedy-drama,The Bear (TV series)
+The Bear (TV series),genre,Comedy,The Bear (TV series)
+The Bear (TV series),countryOfOrigin,United States,The Bear (TV series)
+The Bear (TV series),language,English,The Bear (TV series)
+The Bear (TV series),network,FX on Hulu,The Bear (TV series)
+The Bear (TV series),premiereDate,2022-06-23,The Bear (TV series)
+The Bear (TV series),award,Emmy Award,The Bear (TV series)
+The Bear (TV series),award,Golden Globe Award,The Bear (TV series)
+The Bear (TV series),nominatedFor,Primetime Emmy Award for Outstanding Comedy Series,The Bear (TV series)
+The Bear (TV series),productionCompany,The Collective,The Bear (TV series)
+The Bear (TV series),productionCompany,Matterhorn,The Bear (TV series)
+The Bear (TV series),distributor,Hulu,The Bear (TV series)
+The Bear (TV series),runtime,30 minutes,The Bear (TV series)
+Fights in Tight Spaces,instanceOf,video game,Fights in Tight Spaces
+Fights in Tight Spaces,genre,fighting game,Fights in Tight Spaces
+Fights in Tight Spaces,developer,Minit,Fights in Tight Spaces
+Fights in Tight Spaces,publisher,Minit,Fights in Tight Spaces
+Fights in Tight Spaces,releaseDate,2020,Fights in Tight Spaces
+Fights in Tight Spaces,platform,Microsoft Windows,Fights in Tight Spaces
+Fights in Tight Spaces,platform,Nintendo Switch,Fights in Tight Spaces
+Fights in Tight Spaces,platform,PlayStation 4,Fights in Tight Spaces
+Fights in Tight Spaces,platform,Xbox One,Fights in Tight Spaces
+Fights in Tight Spaces,mode,single-player video game,Fights in Tight Spaces
+Fights in Tight Spaces,mode,multiplayer video game,Fights in Tight Spaces
+subject,predicate,object,Expeditions: Viking
+Sampo (film),instanceOf,film,Sampo (film)
+Sampo (film),title,Sampo,Sampo (film)
+Sampo (film),releaseYear,1959,Sampo (film)
+Sampo (film),director,Auli Mantylä,Sampo (film)
+Sampo (film),countryOfOrigin,Finland,Sampo (film)
+Sampo (film),genre,fantasy,Sampo (film)
+Sampo (film),genre,adventure,Sampo (film)
+Sampo (film),basedOn,Kalevala,Sampo (film)
+Sampo (film),language,Finnish,Sampo (film)
+Felony (film),instanceOf,film,Felony (film)
+Felony (film),releaseDate,1992-10-09,Felony (film)
+Felony (film),director,Joel Coen,Felony (film)
+Felony (film),director,Ethan Coen,Felony (film)
+Felony (film),starring,John Turturro,Felony (film)
+Felony (film),starring,Tim Blake Nelson,Felony (film)
+Felony (film),starring,J.D. Williams,Felony (film)
+Felony (film),genre,crime film,Felony (film)
+Felony (film),genre,drama,Felony (film)
+Felony (film),runtime,118 minutes,Felony (film)
+Felony (film),award,Academy Award for Best Supporting Actor,Felony (film)
+subject,predicate,object,Rusty Lake Hotel
+Rusty Lake Hotel,instanceOf,Hotel,Rusty Lake Hotel
+Rusty Lake Hotel,location,Finland,Rusty Lake Hotel
+Rusty Lake Hotel,partOf,Rusty Lake,Rusty Lake Hotel
+Rusty Lake Hotel,game,Rusty Lake,Rusty Lake Hotel
+Rusty Lake Hotel,developer,Rusty Lake,Rusty Lake Hotel
+Rusty Lake Hotel,releaseDate,2018-02-22,Rusty Lake Hotel
+Rusty Lake Hotel,genre,Point-and-click adventure,Rusty Lake Hotel
+Rusty Lake Hotel,platform,Windows,Rusty Lake Hotel
+Rusty Lake Hotel,platform,macOS,Rusty Lake Hotel
+Rusty Lake Hotel,platform,iOS,Rusty Lake Hotel
+Rusty Lake Hotel,platform,Android,Rusty Lake Hotel
+Rusty Lake Hotel,followedBy,Rusty Lake: Paradise Island,Rusty Lake Hotel
+Rusty Lake Hotel,precededBy,Rusty Lake: The Boarding House,Rusty Lake Hotel
+Halfway (video game),instanceOf,video game,Halfway (video game)
+Halfway (video game),genre,stealth game,Halfway (video game)
+Halfway (video game),genre,action game,Halfway (video game)
+Halfway (video game),developer,Saffire Corporation,Halfway (video game)
+Halfway (video game),publisher,Saffire Corporation,Halfway (video game)
+Halfway (video game),releaseDate,1999-09-30,Halfway (video game)
+Halfway (video game),platform,Nintendo 64,Halfway (video game)
+Halfway (video game),mode,single-player video game,Halfway (video game)
+Halfway (video game),mode,multiplayer video game,Halfway (video game)
+subject,predicate,object,Martin Koolhoven
+subject,predicate,object,Robert Aldrich (historian)
+Search Party (film),instanceOf,film,Search Party (film)
+Search Party (film),genre,comedy film,Search Party (film)
+Search Party (film),genre,thriller film,Search Party (film)
+Search Party (film),director,Charles Sturridge,Search Party (film)
+Search Party (film),starring,John Hannah,Search Party (film)
+Search Party (film),starring,Julianne Regan,Search Party (film)
+Search Party (film),starring,Matthew Goode,Search Party (film)
+Search Party (film),starring,Mark Strong,Search Party (film)
+Search Party (film),starring,Katherine Parkinson,Search Party (film)
+Search Party (film),releaseYear,2014,Search Party (film)
+Search Party (film),countryOfOrigin,United Kingdom,Search Party (film)
+Search Party (film),language,English,Search Party (film)
+Buddleja lindleyana,instanceOf,species,Buddleja lindleyana
+Buddleja lindleyana,genus,Buddleja,Buddleja lindleyana
+Buddleja lindleyana,family,Buddlejaceae,Buddleja lindleyana
+Buddleja lindleyana,nativeTo,Mexico,Buddleja lindleyana
+Buddleja lindleyana,isEvergreen,true,Buddleja lindleyana
+Buddleja lindleyana,isShrub,true,Buddleja lindleyana
+Buddleja lindleyana,hasFlowers,true,Buddleja lindleyana
+Buddleja lindleyana,hasFlowersColor,purple,Buddleja lindleyana
+Buddleja lindleyana,hasFlowersColor,white,Buddleja lindleyana
+Buddleja lindleyana,attracts,butterflies,Buddleja lindleyana
+Buddleja lindleyana,usedIn,gardening,Buddleja lindleyana
+Bud lindleyana,cultivatedIn,gardens,Buddleja lindleyana
+subject,predicate,object,The Marine 3: Homefront
+The Marine 3: Homefront,instanceOf,Film,The Marine 3: Homefront
+The Marine 3: Homefront,title,The Marine 3: Homefront,The Marine 3: Homefront
+The Marine 3: Homefront,genre,Action Film,The Marine 3: Homefront
+The Marine 3: Homefront,genre,Thriller Film,The Marine 3: Homefront
+The Marine 3: Homefront,director,W.S. Price,The Marine 3: Homefront
+The Marine 3: Homefront,starring,Jason Statham,The Marine 3: Homefront
+The Marine 3: Homefront,releaseYear,2013,The Marine 3: Homefront
+The Marine 3: Homefront,releaseDate,"January 11, 2013",The Marine 3: Homefront
+The Marine 3: Homefront,countryOfOrigin,United States,The Marine 3: Homefront
+The Marine 3: Homefront,language,English,The Marine 3: Homefront
+Friday the 13th: Killer Puzzle,instanceOf,Video Game,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,genre,Puzzle,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,developer,Blue Isle Studios,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,publisher,Blue Isle Studios,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,releaseDate,2019-05-30,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,platform,PC,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,platform,Mac,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,platform,Linux,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,basedOn,Friday the 13th,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,gameplay,puzzle-solving,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,gameplay,survival,Friday the 13th: Killer Puzzle
+Friday the 13th: Killer Puzzle,setting,Camp Crystal Lake,Friday the 13th: Killer Puzzle
+Exploratorium,instanceOf,science museum,Exploratorium
+Exploratorium,locatedIn,San Francisco,Exploratorium
+Exploratorium,foundedBy,Frank Oppenheimer,Exploratorium
+Exploratorium,opened,1969-09-13,Exploratorium
+Exploratorium,namedAfter,James Franck,Exploratorium
+Exploratorium,type,public museum,Exploratorium
+Exploratorium,visitorCount,1.5 million,Exploratorium
+Exploratorium,exhibitCount,650,Exploratorium
+Exploratorium,area,"330,000 sq ft",Exploratorium
+Exploratorium,reopened,2013-04-17,Exploratorium
+Exploratorium,architect,Renzo Piano,Exploratorium
+Exploratorium,locatedAt,Pier 15,Exploratorium
+Exploratorium,partner,"University of California, Berkeley",Exploratorium
+Exploratorium,award,American Institute of Physics,Exploratorium
+Exploratorium,award,ASTM Current Events Award,Exploratorium
+subject,predicate,object,The Man from Toronto (2022 film)
+John White Abbott,instanceOf,Person,John White Abbott
+John White Abbott,birthDate,1761-08-27,John White Abbott
+John White Abbott,deathDate,1817-06-30,John White Abbott
+John White Abbott,nationality,British,John White Abbott
+John White Abbott,occupation,painter,John White Abbott
+John White Abbott,fieldOfWork,art,John White Abbott
+John White Abbott,movement,Romanticism,John White Abbott
+John White Abbott,influencedBy,Thomas Gainsborough,John White Abbott
+John White Abbott,influencedBy,J.M.W. Turner,John White Abbott
+John White Abbott,hasWorkInCollection,Tate,John White Abbott
+John White Abbott,hasWorkInCollection,British Museum,John White Abbott
+John White Abbott,created,Landscape with Cottage and Haywain,John White Abbott
+John White Abbott,created,The Hay Wain,John White Abbott
+subject,predicate,object,Karl Friedrich von Klöden
+Karol Estreicher (junior),instanceOf,Human,Karol Estreicher (junior)
+Karol Estreicher (junior),givenName,Karol,Karol Estreicher (junior)
+Karol Estreicher (junior),familyName,Estreicher,Karol Estreicher (junior)
+Karol Estreicher (junior),birthDate,1906-12-24,Karol Estreicher (junior)
+Karol Estreicher (junior),deathDate,1988-01-01,Karol Estreicher (junior)
+Karol Estreicher (junior),nationality,Polish,Karol Estreicher (junior)
+Karol Estreicher (junior),occupation,Historian,Karol Estreicher (junior)
+Karol Estreicher (junior),occupation,Art Historian,Karol Estreicher (junior)
+Karol Estreicher (junior),almaMater,Jagiellonian University,Karol Estreicher (junior)
+Karol Estreicher (junior),childOf,Karol Estreicher (senior),Karol Estreicher (junior)
+Karol Estreicher (junior),knownFor,Polish art history,Karol Estreicher (junior)
+Noah Lyles,instanceOf,Human,Noah Lyles
+Noah Lyles,birthDate,1997-07-18,Noah Lyles
+Noah Lyles,birthPlace,"Tampa, Florida",Noah Lyles
+Noah Lyles,nationality,American,Noah Lyles
+Noah Lyles,occupation,Sprinter,Noah Lyles
+Noah Lyles,sport,Track and field,Noah Lyles
+Noah Lyles,event,100 metres,Noah Lyles
+Noah Lyles,event,200 metres,Noah Lyles
+Noah Lyles,award,World Champion,Noah Lyles
+Noah Lyles,award,NCAA Champion,Noah Lyles
+Noah Lyles,educatedAt,Tennessee Technological University,Noah Lyles
+Noah Lyles,coachedBy,Justin Gatlin,Noah Lyles
+Noah Lyles,coachedBy,Renauski,Noah Lyles
+Noah Lyles,medalFor,2019 World Athletics Championships,Noah Lyles
+Noah,medalFor,2020 Summer Olympics,Noah Lyles
+Noah Lyles,medalInEvent,2020 Summer Olympics 4 × 100 metres relay,Noah Lyles
+Noah Lyles,medalInEvent,2019 World Athletics Championships – Men's 200 metres,Noah Lyles
+subject,predicate,object,Niklas Süle
+Niklas Süle,instanceOf,Person,Niklas Süle
+Niklas Süle,birthDate,1995-09-03,Niklas Süle
+Niklas Süle,birthPlace,Ingolstadt,Niklas Süle
+Niklas Süle,nationality,German,Niklas Süle
+Niklas Süle,occupation,Football Player,Niklas Süle
+Niklas Süle,playsFor,Bayern Munich,Niklas Süle
+Niklas Süle,playsFor,Hoffenheim,Niklas Süle
+Niklas Süle,position,Defender,Niklas Süle
+Niklas Süle,hasHeight,1.95 m,Niklas Süle
+Niklas Süle,hasWeight,90 kg,Niklas Süle
+Niklas Süle,dateOfBirth,1995-09-03T00:00:00Z,Niklas Süle
+subject,predicate,object,The Beach (1954 film)
+subject,predicate,object,Andrew George Little
+subject,predicate,object,Ralph Nicholson Wornum
+Viburnum carlesii,instanceOf,Species,Viburnum carlesii
+Viburnum carlesii,genus,Viburnum,Viburnum carlesii
+Viburnum carlesii,family,Adoxaceae,Viburnum carlesii
+Viburnum carlesii,commonName,Korean Spice Viburnum,Viburnum carlesii
+Viburnum carlesii,nativeTo,Asia,Viburnum carlesii
+Viburnum carlesii,type,Deciduous shrub,Viburnum carlesii
+Viburnum carlesii,hasFragrance,Yes,Viburnum carlesii
+Viburnum carlesii,flowerColor,White,Viburnum carlesii
+Viburnum carlesii,bloomTime,Spring,Viburnum carlesii
+Viburnum carlesii,soilPreference,Well-drained,Viburnum carlesii
+Viburnum carlesii,sunlightPreference,Full sun to partial shade,Viburnum carlesii
+Viburnum carlesii,growthRate,Medium,Viburnum carlesii
+Viburnum carlesii,maxHeight,6 feet,Viburnum carlesii
+Viburnum carlesii,maxSpread,4 feet,Viburnum carlesii
+Viburnum carlesii,hardinessZone,4-8,Viburnum carlesii
+Viburnum carlesii,attracts,"Butterflies, bees, and birds",Viburnum carlesii
+Ross Barkley,instanceOf,Human,Ross Barkley
+Ross Barkley,instanceOf,Footballer,Ross Barkley
+Ross Barkley,birthDate,1998-12-15,Ross Barkley
+Ross Barkley,birthPlace,"Leverstock Green, Hertfordshire, England",Ross Barkley
+Ross Barkley,nationality,English,Ross Barkley
+Ross Barkley,plays,Attacking midfielder,Ross Barkley
+Ross Barkley,currentClub,Chelsea FC,Ross Barkley
+Ross Barkley,currentClub,Aston Villa FC (on loan),Ross Barkley
+Ross Barkley,previousClubs,Everton FC,Ross Barkley
+Ross Barkley,previousClubs,Leek Town FC,Ross Barkley
+Ross Barkley,position,Midfielder,Ross Barkley
+Ross Barkley,shirtNumber,8,Ross Barkley
+Ross Barkley,hasRepresented,England national football team,Ross Barkley
+Ross Barkley,hasRepresented,England national under-21 football team,Ross Barkley
+Ross Barkley,hasRepresented,England national under-19 football team,Ross Barkley
+Ross Barkley,UEFA Euro,2016,Ross Barkley
+Ross Barkley,FIFA World Cup,2018,Ross Barkley
+Ross Barkley,goalScorer,yes,Ross Barkley
+Ross Barkley,assists,many,Ross Barkley
+Ross Barkley,transferFee,£20 million,Ross Barkley
+Ross Barkley,transferFee,£40 million,Ross Barkley
+subject,predicate,object,"Francis Curzon, 5th Earl Howe"
+Masquerade (1965 film),instanceOf,film,Masquerade (1965 film)
+Masquerade (1965 film),releaseDate,1965,Masquerade (1965 film)
+Masquerade (1965 film),director,Michael Relph,Masquerade (1965 film)
+Masquerade (1965 film),producer,Michael Relph,Masquerade (1965 film)
+Masquerade (1965 film),starring,Rita Hayworth,Masquerade (1965 film)
+Masquerade (1965 film),starring,Peter Jay Fernandez,Masquerade (1965 film)
+Masquerade (1965 film),starring,Diana Hyams,Masquerade (1965 film)
+Masquerade (1965 film),genre,drama,Masquerade (1965 film)
+Masquerade (1965 film),country,United Kingdom,Masquerade (1965 film)
+Masquerade (1965 film),language,English,Masquerade (1965 film)
+subject,predicate,object,Lila & Eve
+Birthmarked (film),instanceOf,film,Birthmarked (film)
+Birthmarked (film),title,Birthmarked,Birthmarked (film)
+Birthmarked (film),releaseYear,2017,Birthmarked (film)
+Birthmarked (film),genre,Science fiction,Birthmarked (film)
+Birthmarked (film),genre,Thriller,Birthmarked (film)
+Birthmarked (film),director,Lars Klevberg,Birthmarked (film)
+Birthmarked (film),starring,Emma Greenwell,Birthmarked (film)
+Birthmarked (film),starring,Marilyn Manson,Birthmarked (film)
+Birthmarked (film),countryOfOrigin,United States,Birthmarked (film)
+Birthmarked (film),language,English,Birthmarked (film)
+Tainá: An Adventure in the Amazon,instanceOf,Film,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,releaseYear,2000,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,genre,Adventure,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,genre,Family,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,director,Marcus Baldini,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,starring,Wesley Singerman,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,starring,Paulo Lins,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,countryOfOrigin,Brazil,Tainá: An Adventure in the Amazon
+Tainá: An Adventure in the Amazon,language,Portuguese,Tainá: An Adventure in the Amazon
+subject,predicate,object,Wargroove 2
+subject,predicate,object,Alberto Siliotti
+Katsuo Ohno,instanceOf,Human,Katsuo Ohno
+Katsuo Ohno,birthDate,1935-07-17,Katsuo Ohno
+Katsuo Ohno,birthPlace,Japan,Katsuo Ohno
+Katsuo Ohno,occupation,Seiyū,Katsuo Ohno
+Katsuo Ohno,voiceActorFor,Pikachu,Katsuo Ohno
+Katsuo Ohno,voiceActorFor,Ash Ketchum,Katsuo Ohno
+Katsuo Ohno,memberOf,Tokyo Actor's Consumer's Cooperative Society,Katsuo Ohno
+Katsuo Ohno,awardReceived,Seiyu Award,Katsuo Ohno
+Katsuo Ohno,awardReceived,Japan Record Awards,Katsuo Ohno
+Katsuo Ohno,deathDate,2019-10-01,Katsuo Ohno
+Katsuo Ohno,deathPlace,Japan,Katsuo Ohno
+Katsuo Ohno,spouse,Akiko Kojima,Katsuo Ohno
+subject,predicate,object,Dickinson (TV series)
+subject,predicate,object,Mohammad Ali Amir-Moezzi
+subject,predicate,object,Marie-Françoise Plissart
+Marie-Françoise Plissart,instanceOf,Human,Marie-Françoise Plissart
+Marie-Françoise Plissart,bornAt,Brussels,Marie-Françoise Plissart
+Marie-Françoise Plissart,hasNationality,Belgian,Marie-Françoise Plissart
+Marie-Françoise Plissart,isFemale,true,Marie-Françoise Plissart
+Marie-Françoise Plissart,occupation,Politician,Marie-Françoise Plissart
+Marie-Françoise Plissart,position,Governor of Flemish Brabant,Marie-Françoise Plissart
+Marie-Françoise Plissart,term,2013-2015,Marie-Françoise Plissart
+Marie-Françoise Plissart,party,CD&V,Marie-Françoise Plissart
+Marie-Françoise Plissart,education,Vrije Universiteit Brussel,Marie-Françoise Plissart
+Marie-Françoise Plissart,memberOf,Flemish Government,Marie-Françoise Plissart
+Marie-Françoise Plissart,minister,"Minister of Economy, Public Works and Agriculture",Marie-Françoise Plissart
+Marie-Françoise Plissart,chairperson,Open VLD,Marie-Françoise Plissart
+Marie-Françoise Plissart,successor,Lode Van Den Bergh,Marie-Françoise Plissart
+Marie-Françoise Plissart,precededBy,Steve Stevaert,Marie-Françoise Plissart
+Father (1966 film),instanceOf,film,Father (1966 film)
+Father (1966 film),releaseYear,1966,Father (1966 film)
+Father (1966 film),director,Mirosław Żuławski,Father (1966 film)
+Father (1966 film),countryOfOrigin,Poland,Father (1966 film)
+Father (1966 film),language,Polish,Father (1966 film)
+Father (1966 film),genre,drama,Father (1966 film)
+Father (1966 film),basedOn,novel,Father (1966 film)
+Father (1966 film),starring,Wojciech Pszoniak,Father (1966 film)
+Father (1966 film),cinematography,Janusz Piekarski,Father (1966 film)
+Father (1966 film),runtime,90 minutes,Father (1966 film)
+subject,predicate,object,Robocraft
+Jeanne Favret-Saada,instanceOf,Human,Jeanne Favret-Saada
+Jeanne Favret-Saada,birthDate,1938-01-14,Jeanne Favret-Saada
+Jeanne Favret-Saada,birthPlace,Paris,Jeanne Favret-Saada
+Jeanne Favret-Saada,fieldOfWork,Anthropology,Jeanne Favret-Saada
+Jeanne Favret-Saada,fieldOfWork,Sociology,Jeanne Favret-Saada
+Jeanne Favret-Saada,occupation,Anthropologist,Jeanne Favret-Saada
+Jeanne Favret-Saada,occupation,Sociologist,Jeanne Favret-Saada
+Jeanne Favret-Saada,award,Goncourt Prize,Jeanne Favret-Saada
+Jeanne Favret-Saada,award,Prix Goncourt,Jeanne Favret-Saada
+Jeanne Favret-Saada,nationality,French,Jeanne Favret-Saada
+Jeanne Favret-Saada,languageSpoken,French,Jeanne Favret-Saada
+Crulic: The Path to Beyond,instanceOf,Film,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,genre,Drama,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,genre,Biography,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,director,Marius Olteanu,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,starring,Bogdan Dumitru,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,starring,Mădălina Ghenea,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,releaseYear,2016,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,countryOfOrigin,Romania,Crulic: The Path to Beyond
+Crulic: The Path to Beyond,language,Romanian,Crulic: The Path to Beyond
+subject,predicate,object,Moto Racer 4
+subject,predicate,object,Marseille (2004 film)
+subject,predicate,object,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,instanceOf,Human,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,birthDate,1776-08-21,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,deathDate,1843-05-28,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,givenName,Adélaïde,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,familyName,Clermont-Tonnerre,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,title,Duchess,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,spouse,Aimé de Clermont-Tonnerre,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,child,Aimé Emmanuel de Clermont-Tonnerre,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,relative,Stanislas de Clermont-Tonnerre,Adélaïde de Clermont-Tonnerre
+Adélaïde de Clermont-Tonnerre,relative,François de Clermont-Tonnerre,Adélaïde de Clermont-Tonnerre
+subject,predicate,object,RB Leipzig
+subject,predicate,object,Justus Knecht
+Der Rosenkavalier (1926 film),instanceOf,film,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),basedOn,Der Rosenkavalier,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),director,Ernst Lubitsch,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),releaseYear,1926,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),countryOfOrigin,Germany,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),language,German,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),genre,Romantic comedy,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),starring,Oskar Werner,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),starring,Grete Schröder,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),starring,Ruth Landshoff,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),runtime,107 minutes,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),productionCompany,Ufa,Der Rosenkavalier (1926 film)
+Der Rosenkavalier (1926 film),distribution,Ufa,Der Rosenkavalier (1926 film)
+subject,predicate,object,Silene italica
+Johann Tobias Lowitz,instanceOf,Person,Johann Tobias Lowitz
+Johann Tobias Lowitz,bornAt,Göttingen,Johann Tobias Lowitz
+Johann Tobias Lowitz,diedAt,St. Petersburg,Johann Tobias Lowitz
+Johann Tobias Lowitz,givenName,Johann Tobias,Johann Tobias Lowitz
+Johann Tobias Lowitz,familyName,Lowitz,Johann Tobias Lowitz
+Johann Tobias Lowitz,occupation,Astronomer,Johann Tobias Lowitz
+Johann Tobias Lowitz,occupation,Mathematician,Johann Tobias Lowitz
+Johann Tobias Lowitz,activeAt,Russia,Johann Tobias Lowitz
+Johann Tobias Lowitz,activeAt,St. Petersburg,Johann Tobias Lowitz
+Johann Tobias Lowitz,educatedAt,University of Göttingen,Johann Tobias Lowitz
+Johann Tobias Lowitz,influencedBy,Leonhard Euler,Johann Tobias Lowitz
+Johann Tobias Lowitz,madeContributionsTo,Astronomy,Johann Tobias Lowitz
+Johann Tobias Lowitz,madeContributionsTo,Mathematics,Johann Tobias Lowitz
+Johann Tobias Lowitz,discovered,Lowitz's Comet,Johann Tobias Lowitz
+Johann Tobias Lowitz,publishedIn,Journal für die reine und angewandte Mathematik,Johann Tobias Lowitz
+Christoph Kramer,instanceOf,Human,Christoph Kramer
+Christoph Kramer,instanceOf,Football Player,Christoph Kramer
+Christoph Kramer,birthDate,1995-08-21,Christoph Kramer
+Christoph Kramer,birthPlace,"Bonn, Germany",Christoph Kramer
+Christoph Kramer,nationality,German,Christoph Kramer
+Christoph Kramer,plays,Borussia Mönchengladbach,Christoph Kramer
+Christoph Kramer,plays,Bayer 04 Leverkusen,Christoph Kramer
+Christoph Kramer,plays,Fortuna Düsseldorf,Christoph Kramer
+Christoph Kramer,position,Defensive Midfielder,Christoph Kramer
+Christoph Kramer,height,1.86 m,Christoph Kramer
+Christoph Kramer,hasNumber,23,Christoph Kramer
+Christoph Kramer,hasNumber,8,Christoph Kramer
+Christoph Kramer,transferFrom,Borussia Mönchengladbach,Christoph Kramer
+Christoph Kramer,transferTo,Borussia Mönchengladbach,Christoph Kramer
+Christoph Kramer,transferFee,30 million,Christoph Kramer
+Christoph Kramer,UEFA Europa League,2014-15,Christoph Kramer
+Christoph Kramer,DFB-Pokal,2011-12,Christoph Kramer
+Christoph Kramer,FIFA World Cup,2014,Christoph Kramer
+Christoph Kramer,marriedTo,Svenja Kramer,Christoph Kramer
+Danielle Bradbery,instanceOf,Human,Danielle Bradbery
+Danielle Bradbery,instanceOf,Singer,Danielle Bradbery
+Danielle Bradbery,birthDate,1996-07-29,Danielle Bradbery
+Danielle Bradbery,birthPlace,"Blythe, Texas",Danielle Bradbery
+Danielle Bradbery,nationality,American,Danielle Bradbery
+Danielle Bradbery,genre,Country music,Danielle Bradbery
+Danielle Bradbery,genre,Pop music,Danielle Bradbery
+Danielle Bradbery,occupation,Singer-songwriter,Danielle Bradbery
+Danielle Bradbery,award,Academy of Country Music Awards,Danielle Bradbery
+Danielle Bradbery,award,Country Music Association Awards,Danielle Bradbery
+Danielle Bradbery,recordLabel,BME Recordings,Danielle Bradbery
+Danielle Bradbery,recordLabel,Big Machine Records,Danielle Bradbery
+Danielle Bradbery,album,The Heart of Dixie,Danielle Bradbery
+Danielle Bradbery,album,Never Fear,Danielle Bradbery
+Danielle Bradbery,album,I Don't Want to Be,Danielle Bradbery
+Danielle Bradbery,song,The Heart of Dixie,Danielle Bradbery
+Danielle Bradbery,song,Sway,Danielle Bradbery
+Danielle Bradbery,song,I Don't Want to Be,Danielle Bradbery
+Danielle Bradbery,song,What If I Did,Danielle Bradbery
+Danielle Bradbery,participatedIn,The Voice (season 4),Danielle Bradbery
+Danielle Bradbery,participatedIn,The Voice (season 7),Danielle Bradbery
+subject,predicate,object,Georg von Hauberrisser
+subject,predicate,object,"Neuville, Quebec"
+Hwang Hee-chan,instanceOf,Person,Hwang Hee-chan
+Hwang Hee-chan,instanceOf,FootballPlayer,Hwang Hee-chan
+Hwang Hee-chan,bornIn,1996-01-29,Hwang Hee-chan
+Hwang Hee-chan,bornAt,Chuncheon,Hwang Hee-chan
+Hwang Hee-chan,nationality,South Korean,Hwang Hee-chan
+Hwang Hee-chan,plays,Forward,Hwang Hee-chan
+Hwang Hee-chan,playsFor,Wolverhampton Wanderers,Hwang Hee-chan
+Hwang Hee-chan,playsFor,Red Bull Salzburg,Hwang Hee-chan
+Hwang Hee-chan,playsFor,South Korea national football team,Hwang Hee-chan
+Hwang Hee-chan,hasGoalScored,yes,Hwang Hee-chan
+Hwang Hee-chan,transferFee,£1.6 million,Hwang Hee-chan
+Hwang Hee-chan,transferDate,2020-08-01,Hwang Hee-chan
+Hwang Hee-chan,previousTeam,Red Bull Salzburg,Hwang Hee-chan
+Hwang Hee-chan,previousTeam,Olympiacos,Hwang Hee-chan
+Hwang Hee-chan,position,Winger,Hwang Hee-chan
+Hwang Hee-chan,shirtNumber,11,Hwang Hee-chan
+Rebecca Makkai,instanceOf,Human,Rebecca Makkai
+Rebecca Makkai,birthDate,1978-04-20,Rebecca Makkai
+Rebecca Makkai,birthPlace,Illinois,Rebecca Makkai
+Rebecca Makkai,residence,Chicago,Rebecca Makkai
+Rebecca Makkai,occupation,Novelist,Rebecca Makkai
+Rebecca Makkai,occupation,Short story writer,Rebecca Makkai
+Rebecca Makkai,award,Lambda Literary Award,Rebecca Makkai
+Rebecca Makkai,award,National Book Award,Rebecca Makkai
+Rebecca Makkai,notableWork,The Bear and the Nightingale,Rebecca Makkai
+Rebecca Makkai,notableWork,The House of Shattered Wings,Rebecca Makkai
+Rebecca Makkai,education,University of Chicago,Rebecca Makkai
+Rebecca Makkai,education,MFA,Rebecca Makkai
+Rebecca Makkai,genre,Fantasy,Rebecca Makkai
+Rebecca Makkai,genre,Horror,Rebecca Makkai
+Rebecca Makkai,genre,Science fiction,Rebecca Makkai
+Rebecca Makkai,influencedBy,Tolkien,Rebecca Makkai
+Rebecca Makkai,influencedBy,Ursula K. Le Guin,Rebecca Makkai
+"Please, Don't Touch Anything",instanceOf,video game,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",developer,GrapeGames,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",publisher,GrapeGames,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",releaseDate,2016-07-28,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",platform,Microsoft Windows,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",platform,macOS,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",platform,Linux,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",genre,puzzle game,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",genre,point-and-click adventure game,"Please, Don't Touch Anything"
+"Please, Don't Touch Anything",language,English,"Please, Don't Touch Anything"
+Big Brain Academy: Brain vs. Brain,instanceOf,Video Game,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,partOfSeries,Big Brain Academy,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,releaseDate,2020-11-13,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,platform,Nintendo Switch,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,genre,Educational,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,genre,Puzzle,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,developer,Nintendo,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,publisher,Nintendo,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,mode,Single-player,Big Brain Academy: Brain vs. Brain
+Big Brain Academy: Brain vs. Brain,mode,Multiplayer,Big Brain Academy: Brain vs. Brain
+Kataoka Ainosuke VI,instanceOf,Human,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,birthDate,1981-03-31,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,occupation,Actor,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,nationality,Japanese,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,roleIn,Naruto,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,roleIn,Naruto Shippuden,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,voicedCharacter,Kiba Inuzuka,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,worksFor,Toei Animation,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,hasVoiceActingRoleIn,Digimon Adventure,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,hasVoiceActingRoleIn,Digimon Adventure 02,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,family,Kataoka Ainosuke,Kataoka Ainosuke VI
+Kataoka Ainosuke VI,isAlsoKnownAs,Kataoka Ainosuke VI,Kataoka Ainosuke VI
+Norn9,instanceOf,Visual Novel,Norn9
+Norn9,instanceOf,Game,Norn9
+Norn9,developer,Minori Games,Norn9
+Norn9,released,2006-07-27,Norn9
+Norn9,genre,Science Fiction,Norn9
+Norn9,genre,Drama,Norn9
+Norn9,genre,Romance,Norn9
+Norn9,platform,PC,Norn9
+Norn9,platform,Windows,Norn9
+Norn9,narrativeType,Interactive Story,Norn9
+Norn9,playerCharacter,Kakeru,Norn9
+Norn9,playerCharacter,Kaito,Norn9
+Norn9,playerCharacter,Sakuya,Norn9
+Norn9,setting,Japan,Norn9
+Norn9,setting,Space,Norn9
+Norn9,theme,Space Exploration,Norn9
+Norn9,theme,Love,Norn9
+Norn9,theme,Friendship,Norn9
+Martina Colombari,instanceOf,Human,Martina Colombari
+Martina Colombari,birthDate,1975-07-10,Martina Colombari
+Martina Colombari,birthPlace,"Lodi, Italy",Martina Colombari
+Martina Colombari,occupation,Model,Martina Colombari
+Martina Colombari,occupation,Actress,Martina Colombari
+Martina Colombari,title,Miss Italy 1991,Martina Colombari
+Martina Colombari,spouse,Alessandro Gassmann,Martina Colombari
+Nelke & the Legendary Alchemists: Ateliers of the New World,instanceOf,video game,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,partOf,Atelier series,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,releasedOn,"March 20, 2019",Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,developedBy,Gust Co. Ltd,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,publishedBy,NIS America,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,genre,role-playing video game,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,platform,Nintendo Switch,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,platform,PlayStation 4,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,platform,Microsoft Windows,Nelke & the Legendary Alchemists: Ateliers of the New World
+Nelke & the Legendary Alchemists: Ateliers of the New World,setting,fantasy world,Nelke & the Legendary Alchemists: Ateliers of the New World
+Marques Brownlee,instanceOf,Person,Marques Brownlee
+Marques Brownlee,alsoKnownAs,MKBHD,Marques Brownlee
+Marques Brownlee,bornOn,"March 3, 1993",Marques Brownlee
+Marques Brownlee,nationality,American,Marques Brownlee
+Marques Brownlee,occupation,YouTube personality,Marques Brownlee
+Marques Brownlee,occupation,Technology reviewer,Marques Brownlee
+Marques Brownlee,knownFor,Tech review YouTube channel,Marques Brownlee
+Marques Brownlee,channelName,MKBHD,Marques Brownlee
+Marques Brownlee,YouTubeChannel,MKBHD,Marques Brownlee
+Marques Brownlee,hasCollaboratedWith,Unbox Therapy,Marques Brownlee
+Marques Brownlee,hasCollaboratedWith,Other reviewers,Marques Brownlee
+Marques Brownlee,interviewed,Elon Musk,Marques Brownlee
+Marques Brownlee,interviewed,Jeff Williams,Marques Brownlee
+Marques Brownlee,interviewed,Jony Ive,Marques Brownlee
+Marques Brownlee,awarded,Daytime Emmy Award,Marques Brownlee
+Marques Brownlee,nominated,Streamy Awards,Marques Brownlee
+Marques Brownlee,featuredIn,Forbes,Marques Brownlee
+Marques Brownlee,featuredIn,The Verge,Marques Brownlee
+Marques Brownlee,featuredIn,Wired,Marques Brownlee
+Marques Brownlee,educatedAt,Stevens Institute of Technology,Marques Brownlee
+subject,predicate,object,No Hard Feelings (2020 film)
+Nikolai Khardzhiev,instanceOf,Human,Nikolai Khardzhiev
+Nikolai Khardzhiev,bornAt,Bulgaria,Nikolai Khardzhiev
+Nikolai Khardzhiev,bornIn,1893,Nikolai Khardzhiev
+Nikolai Khardzhiev,diedIn,1951,Nikolai Khardzhiev
+Nikolai Khardzhiev,diedAt,Moscow,Nikolai Khardzhiev
+Nikolai Khardzhiev,occupation,Art collector,Nikolai Khardzhiev
+Nikolai Khardzhiev,occupation,Art historian,Nikolai Khardzhiev
+Nikolai Khardzhiev,nationality,Bulgarian,Nikolai Khardzhiev
+Nikolai Khardzhiev,nationality,Russian,Nikolai Khardzhiev
+Nikolai Khardzhiev,collection,Russian avant-garde art,Nikolai Khardzhiev
+Nikolai Khardzhiev,collection,Kazimir Malevich,Nikolai Khardzhiev
+Nikolai Khardzhiev,collection,Lyubov Popova,Nikolai Khardzhiev
+Nikolai Khardzhiev,associateWith,Kazimir Malevich,Nikolai Khardzhiev
+Nikolai Khardzhiev,associateWith,Suprematism,Nikolai Khardzhiev
+Nikolai Khardzhiev,hasInfluence,Russian art,Nikolai Khardzhiev
+Nikolai Khardzhiev,influencedBy,Suprematism,Nikolai Khardzhiev
+subject,predicate,object,Verbascum sinuatum
+All About Me (film),instanceOf,film,All About Me (film)
+All About Me (film),releaseYear,1990,All About Me (film)
+All About Me (film),director,Marvin Kaplan,All About Me (film)
+All About Me (film),starring,Harry Belafonte,All About Me (film)
+All About Me (film),starring,Raul Julia,All About Me (film)
+All About Me (film),genre,comedy,All About Me (film)
+All About Me (film),runtime,90 minutes,All About Me (film)
+All About Me (film),basedOn,The Brothers,All About Me (film)
+All About Me (film),productionCompany,Tribune Entertainment Company,All About Me (film)
+subject,predicate,object,E. Talbot Donaldson
+E. Talbot Donaldson,instanceOf,Person,E. Talbot Donaldson
+E. Talbot Donaldson,name,E. Talbot Donaldson,E. Talbot Donaldson
+E. Talbot Donaldson,birthDate,1918-08-26,E. Talbot Donaldson
+E. Talbot Donaldson,deathDate,2009-12-23,E. Talbot Donaldson
+E. Talbot Donaldson,birthPlace,"Newark, New Jersey",E. Talbot Donaldson
+E. Talbot Donaldson,nationality,American,E. Talbot Donaldson
+E. Talbot Donaldson,occupation,Literary critic,E. Talbot Donaldson
+E. Talbot Donaldson,occupation,Scholar,E. Talbot Donaldson
+E. Talbot Donaldson,almaMater,Harvard University,E. Talbot Donaldson
+E. Talbot Donaldson,award,Guggenheim Fellowship,E. Talbot Donaldson
+E. Talbot Donaldson,authorOf,The Rhetoric of Freemasonry,E. Talbot Donaldson
+E. Talbot Donaldson,authorOf,The Medieval German Epigram,E. Talbot Donaldson
+E. Talbot Donaldson,translatorOf,Sir Gawain and the Green Knight,E. Talbot Donaldson
+E. Talbot Donaldson,translatorOf,The Canterbury Tales,E. Talbot Donaldson
+subject,predicate,object,William Davidson Niven
+The Adventurers (2017 film),instanceOf,film,The Adventurers (2017 film)
+The Adventurers (2017 film),releaseYear,2017,The Adventurers (2017 film)
+The Adventurers (2017 film),director,Guo Fan,The Adventurers (2017 film)
+The Adventurers (2017 film),starring,Liu Yifei,The Adventurers (2017 film)
+The Adventurers (2017 film),starring,Jing Tian,The Adventurers (2017 film)
+The Adventurers (2017 film),starring,Wu Jing,The Adventurers (2017 film)
+The Adventurers (2017 film),genre,action film,The Adventurers (2017 film)
+The Adventurers (2017 film),genre,adventure film,The Adventurers (2017 film)
+The Adventurers (2017 film),basedOn,The Adventurers of China,The Adventurers (2017 film)
+The Adventurers (2017 film),country,China,The Adventurers (2017 film)
+The Adventurers (2017 film),language,Mandarin Chinese,The Adventurers (2017 film)
+subject,predicate,object,"Beaufort, Savoie"
+subject,predicate,object,Joël Veltman
+subject,predicate,object,Jurriaan Schrofer
+There's No Place Like Home (film),instanceOf,film,There's No Place Like Home (film)
+There's No Place Like Home (film),director,Garry Marshall,There's No Place Like Home (film)
+There's No Place Like Home (film),starring,Bette Midler,There's No Place Like Home (film)
+There's No Place Like Home (film),starring,Bette Midler's friend,There's No Place Like Home (film)
+There's No Place Like Home (film),releaseYear,1988,There's No Place Like Home (film)
+There's No Place Like Home (film),genre,Comedy,There's No Place Like Home (film)
+There's No Place Like Home (film),runtime,100 minutes,There's No Place Like Home (film)
+There's No Place Like Home (film),country,United States,There's No Place Like Home (film)
+There's No Place Like Home (film),language,English,There's No Place Like Home (film)
+subject,predicate,object,Ivanovo State University
+subject,predicate,object,A Violent Prosecutor
+subject,predicate,object,Abdellatif Ben Ammar
+Saint-Clair-sur-Epte,instanceOf,commune,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,locatedIn,France,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,locatedIn,Île-de-France,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,locatedIn,Val-d'Oise,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,capitalOf,Canton of Magny-en-Vexin,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,partOf,arrondissement of Pontoise,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,partOf,canton of Vexin-sur-Epte,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,hasPopulation,215,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,hasArea,11.3,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,isNamedAfter,Clair of Vouillé,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,hasAbbey,Epte Abbey,Saint-Clair-sur-Epte
+Saint-Clair-sur-Epte,features,Église Saint-Clair de Saint-Clair-sur-Epte,Saint-Clair-sur-Epte
+Samir (filmmaker),instanceOf,Filmmaker,Samir (filmmaker)
+Samir (filmmaker),nationality,Egyptian,Samir (filmmaker)
+Samir (filmmaker),birthName,Samir Abdel Aziz,Samir (filmmaker)
+Samir (filmmaker),birthDate,1960,Samir (filmmaker)
+Samir (filmmaker),birthPlace,Egypt,Samir (filmmaker)
+Samir (filmmaker),occupation,Film director,Samir (filmmaker)
+Samir (filmmaker),occupation,Screenwriter,Samir (filmmaker)
+Samir (filmmaker),film,The Yacoubian Building,Samir (filmmaker)
+Samir (filmmaker),film,Hassan and Saraha,Samir (filmmaker)
+Samir (filmmaker),film,Ahwak,Samir (filmmaker)
+Samir (filmmaker),award,Egyptian State Prize for Literature and the Arts,Samir (filmmaker)
+Sold (2014 film),instanceOf,film,Sold (2014 film)
+Sold (2014 film),releaseYear,2014,Sold (2014 film)
+Sold (2014 film),director,Harriet Constantine,Sold (2014 film)
+Sold (2014 film),starring,Lake Bell,Sold (2014 film)
+Sold (2014 film),starring,Sasha Luss,Sold (2014 film)
+Sold (2014 film),genre,drama,Sold (2014 film)
+Sold (2014 film),genre,thriller,Sold (2014 film)
+Sold (2014 film),basedOn,Sold: The Story of an American Sex Slave,Sold (2014 film)
+Sold (2014 film),countryOfOrigin,United States,Sold (2014 film)
+Sold (2014 film),language,English,Sold (2014 film)
+Sold (2014 film),runtime,104 minutes,Sold (2014 film)
+Henri van Kol,instanceOf,Human,Henri van Kol
+Henri van Kol,birthDate,1851-04-18,Henri van Kol
+Henri van Kol,deathDate,1925-11-17,Henri van Kol
+Henri van Kol,nationality,Dutch,Henri van Kol
+Henri van Kol,occupation,Politician,Henri van Kol
+Henri van Kol,occupation,Engineer,Henri van Kol
+Henri van Kol,memberOf,Social Democratic Workers' Party,Henri van Kol
+Henri van Kol,position,Member of the Dutch House of Representatives,Henri van Kol
+Henri van Kol,position,Senator,Henri van Kol
+Henri van Kol,almaMater,Delft University of Technology,Henri van Kol
+A Christmas Prince: The Royal Wedding,instanceOf,Netflix original film,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,instanceOf,Romantic comedy film,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,releaseDate,2020-12-11,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,director,Martin Wood,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,screenplay,Karen van der Beek,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,starring,Rose McIver,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,starring,Ben Lamb,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,partOf,A Christmas Prince series,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,precededBy,A Christmas Prince: The Royal Baby,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,followedBy,A Christmas Prince: The Royal Family,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,countryOfOrigin,United States,A Christmas Prince: The Royal Wedding
+A Christmas Prince: The Royal Wedding,language,English,A Christmas Prince: The Royal Wedding
+subject,predicate,object,Hugh Murray (geographer)
+subject,predicate,object,Cuscuta coryli
+subject,predicate,object,Maryse Wolinski
+After the Fall (2014 film),instanceOf,film,After the Fall (2014 film)
+After the Fall (2014 film),title,After the Fall,After the Fall (2014 film)
+After the Fall (2014 film),year,2014,After the Fall (2014 film)
+After the Fall (2014 film),director,Tushar Mehta,After the Fall (2014 film)
+After the Fall (2014 film),starring,Rohan Chand,After the Fall (2014 film)
+After the Fall (2014 film),starring,Cameron Monaghan,After the Fall (2014 film)
+After the Fall (2014 film),starring,Zoe Kravitz,After the Fall (2014 film)
+After the Fall (2014 film),,Joey King,After the Fall (2014 film)
+After the Fall (2014 film),genre,Drama,After the Fall (2014 film)
+After the Fall (2014 film),genre,Thriller,After the Fall (2014 film)
+After the Fall (2014 film),runtime,90 minutes,After the Fall (2014 film)
+After the Fall (2014 film),country,United States,After the Fall (2014 film)
+After the Fall (2014 film),language,English,After the Fall (2014 film)
+Godzilla: City on of Battle,instanceOf,manga,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,author,Yu Tomofuji,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,genre,science fiction,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,genre,action,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,publishedIn,Shueisha,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,partOfSeries,Godzilla,Godzilla: City on the Edge of Battle
+Godzilla: City on the Edge of Battle,mediaType,manga series,Godzilla: City on the Edge of Battle
+Donald Truhlar,instanceOf,Person,Donald Truhlar
+Donald Truhlar,givenName,Donald,Donald Truhlar
+Donald Truhlar,familyName,Truhlar,Donald Truhlar
+Donald Truhlar,birthYear,1944,Donald Truhlar
+Donald Truhlar,nationality,American,Donald Truhlar
+Donald Truhlar,occupation,Chemist,Donald Truhlar
+Donald Truhlar,institution,University of Minnesota,Donald Truhlar
+Donald Truhlar,award,National Medal of Science,Donald Truhlar
+Donald Truhlar,field,Theoretical chemistry,Donald Truhlar
+Donald Truhlar,field,Physical chemistry,Donald Truhlar
+Bruna Marquezine,instanceOf,Human,Bruna Marquezine
+Bruna Marquezine,birthPlace,São Paulo,Bruna Marquezine
+Bruna Marquezine,givenName,Bruna,Bruna Marquezine
+Bruna Marquezine,familyName,Marquezine,Bruna Marquezine
+Bruna Marquezine,dateOfBirth,1995-06-10,Bruna Marquezine
+Bruna Marquezine,occupation,Actor,Bruna Marquezine
+Bruna Marquezine,occupation,Model,Bruna Marquezine
+Bruna Marquezine,activeIn,Brazil,Bruna Marquezine
+Bruna Marquezine,knownFor,Salve Jorge,Bruna Marquezine
+Bruna Marquezine,knownFor,Avenida Brasil,Bruna Marquezine
+Bruna Marquezine,knownFor,Benzinho,Bruna Marquezine
+Bruna Marquezine,award,Melhor Atriz,Bruna Marquezine
+Bruna Marquezine,award,Prêmio Extra de Televisão,Bruna Marquezine
+More than Just a Game,instanceOf,TV series,More than Just a Game
+More than Just a Game,genre,Reality TV,More than Just a Game
+More than Just a Game,countryOfOrigin,South Korea,More than Just a Game
+More than Just a Game,creator,Kim Jong-hyuk,More than Just a Game
+More than Just a Game,premiereDate,2020-08-30,More than Just a Game
+More than Just a Game,numberOfEpisodes,8,More than Just a Game
+More than Just a Game,broadcastNetwork,SBS,More than Just a Game
+Vladimir Megre,instanceOf,Human,Vladimir Megre
+Vladimir Megre,birthDate,1950-05-23,Vladimir Megre
+Vladimir Megre,birthPlace,"Novosibirsk, Russia",Vladimir Megre
+Vladimir Megre,nationality,Russian,Vladimir Megre
+Vladimir Megre,occupation,Writer,Vladimir Megre
+Vladimir Megre,occupation,Entrepreneur,Vladimir Megre
+Vladimir Megre,knownFor,Ringing Cedars of Russia,Vladimir Megre
+Vladimir Megre,knownFor,Anastasia,Vladimir Megre
+Vladimir Megre,authorOf,The Ringing Cedars of Russia,Vladimir Megre
+Vladimir Megre,authorOf,Anastasia (book),Vladimir Megre
+Vladimir Megre,authorOf,The Way of the Ringing Cedars,Vladimir Megre
+Vladimir Megre,website,http://www.ringingcedars.org/,Vladimir Megre
+subject,predicate,object,Shlomo Hillel
+subject,predicate,object,Lucie Hradecká
+Pokémon Origins,instanceOf,TV series,Pokémon Origins
+Pokémon Origins,basedOn,Pokémon,Pokémon Origins
+Pokémon Origins,releaseDate,October 2023,Pokémon Origins
+Pokémon Origins,numberOfEpisodes,4,Pokémon Origins
+Pokémon Origins,productionCompany,OLM,Pokémon Origins
+Pokémon Origins,distributor,Netflix,Pokémon Origins
+Pokémon Origins,musicComposer,Tetsuya Shibata,Pokémon Origins
+Pokémon Origins,narrator,Takahiro Sakurai,Pokémon Origins
+Pokémon Origins,partOf,Pokémon franchise,Pokémon Origins
+Pokémon Origins,genre,Action-adventure,Pokémon Origins
+Pokémon Origins,targetAudience,Children,Pokémon Origins
+Pokémon Origins,countryOfOrigin,Japan,Pokémon Origins
+Pokémon Origins,language,Japanese,Pokémon Origins
+"Sir John Ellerman, 2nd Baronet",instanceOf,Human,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",instanceOf,Baronet,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",givenName,John,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",familyName,Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",title,Sir,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",birthDate,1879-05-15,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",deathDate,1962-11-26,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",occupation,Businessperson,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",child,John Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",child,Thomas Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",heir,John Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",heir,Thomas Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",successor,John Ellerman,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",residence,Yorkshire,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",nationality,British,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",knownFor,Ellerman Lines,"Sir John Ellerman, 2nd Baronet"
+"Sir John Ellerman, 2nd Baronet",knownFor,Ellerman's,"Sir John Ellerman, 2nd Baronet"
+Kode9,instanceOf,Human,Kode9
+Kode9,instanceOf,Music Producer,Kode9
+Kode9,instanceOf,DJ,Kode9
+Kode9,birthName,Andrew Cowan,Kode9
+Kode9,birthDate,1973-01-18,Kode9
+Kode9,nationality,British,Kode9
+Kode9,genre,Electronic Music,Kode9
+Kode9,genre,Dubstep,Kode9
+Kode9,label,Boy Better Know,Kode9
+Kode9,co-founded,Boy Better Know,Kode9
+Kode9,co-foundedWith,JME,Kode9
+Wilhelm Hauchecorne,instanceOf,Human,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,birthDate,1842-12-23,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,deathDate,1926-05-25,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,nationality,German,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,occupation,Geologist,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,fieldOfWork,Geology,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,educatedAt,University of Heidelberg,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,influencedBy,Eduard Suess,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,knownFor,Tectonic theory,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,memberOf,Deutsche Geologische Gesellschaft,Wilhelm Hauchecorne
+Wilhelm Hauchecorne,awarded,Prussian Crown Order,Wilhelm Hauchecorne
+Gabriel Landeskog,instanceOf,Human,Gabriel Landeskog
+Gabriel Landeskog,instanceOf,Ice Hockey Player,Gabriel Landeskog
+Gabriel Landeskog,birthDate,1992-08-23,Gabriel Landeskog
+Gabriel Landeskog,birthPlace,"Mölndal, Sweden",Gabriel Landeskog
+Gabriel Landeskog,nationality,Swedish,Gabriel Landeskog
+Gabriel Landeskog,playsFor,Colorado Avalanche,Gabriel Landeskog
+Gabriel Landeskog,playsFor,Frölunda HC,Gabriel Landeskog
+Gabriel Landeskog,position,Left Wing,Gabriel Landeskog
+Gabriel Landeskog,draftedBy,Colorado Avalanche,Gabriel Landeskog
+Gabriel Landeskog,draftedIn,2011,Gabriel Landeskog
+Gabriel Landeskog,draftedRound,1,Gabriel Landeskog
+Gabriel Landeskog,draftedPick,2,Gabriel Landeskog
+Gabriel Landeskog,won,Stanley Cup,Gabriel Landeskog
+Gabriel Landeskog,won,Hart Memorial Trophy,Gabriel Landeskog
+Gabriel Landeskog,won,Art Ross Trophy,Gabriel Landeskog
+Gabriel Landeskog,teamCaptain,Colorado Avalanche,Gabriel Landeskog
+subject,predicate,object,Father Stu
+Father Stu,instanceOf,Catholic Priest,Father Stu
+Father Stu,instanceOf,American Person,Father Stu
+Father Stu,hasNickname,The Priest Who Danced,Father Stu
+Father Stu,bornIn,"Spokane, Washington",Father Stu
+Father Stu,diedIn,"Seattle, Washington",Father Stu
+Father Stu,knownFor,Dancing,Father Stu
+Father Stu,knownFor,Inspirational Story,Father Stu
+Father Stu,subjectOf,Book,Father Stu
+Father Stu,subjectOf,Movie,Father Stu
+Father Stu,playedBy,Mark Wahlberg,Father Stu
+Father Stu,hasSpouse,Marie Long,Father Stu
+Father Stu,hasChild,Patrick Long,Father Stu
+Clematis ligusticifolia,instanceOf,Species,Clematis ligusticifolia
+Clematis ligusticifolia,partOf,Clematis,Clematis ligusticifolia
+Clematis ligusticifolia,classification,Ranunculaceae,Clematis ligusticifolia
+Clematis ligusticifolia,commonName,Western Clematis,Clematis ligusticifolia
+Clematis ligusticifolia,commonName,Peppervine,Clematis ligusticifolia
+Clematis ligusticifolia,nativeTo,North America,Clematis ligusticifolia
+Clematis ligusticifolia,habitat,Dry to moist habitats,Clematis ligusticifolia
+Clematis ligusticifolia,habitat,Woodland edges,Clematis ligusticifolia
+Clematis ligusticifolia,habitat,Streamsides,Clematis ligusticifolia
+Clematis ligusticifolia,flowerColor,White,Clematis ligusticifolia
+Clematis ligusticifolia,flowerColor,Greenish,Clematis ligusticifolia
+Clematis ligusticifolia,bloomTime,Summer,Clematis ligusticifolia
+Clematis ligusticifolia,growthHabit,Vine,Clematis ligusticifolia
+Clematis ligusticifolia,growthHabit,Climber,Clematis ligusticifolia
+subject,predicate,object,David Henry Souter
+David Henry Souter,instanceOf,Human,David Henry Souter
+David Henry Souter,givenName,David,David Henry Souter
+David Henry Souter,familyName,Souter,David Henry Souter
+David Henry Souter,birthDate,1939-09-11,David Henry Souter
+David Henry Souter,birthPlace,"Melrose, Massachusetts",David Henry Souter
+David Henry Souter,nationality,American,David Henry Souter
+David Henry Souter,occupation,Judge,David Henry Souter
+David Henry Souter,occupation,Lawyer,David Henry Souter
+David Henry Souter,position,Associate Justice of the Supreme Court of the United States,David Henry Souter
+David Henry Souter,position,Judge of the United States Court of Appeals for the First Circuit,David Henry Souter
+David Henry Souter,almaMater,Harvard University,David Henry Souter
+David Henry Souter,almaMater,Oxford University,David Henry Souter
+David Henry Souter,award,James Smith Memorial Award,David Henry Souter
+subject,predicate,object,Rubia peregrina
+subject,predicate,object,Bliss (1985 film)

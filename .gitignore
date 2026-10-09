@@ -1,1 +1,5 @@
 .experiment_tracking.json
+__pycache__/
+*.pyc
+*.log
+reasoning_traces.jsonl

@@ -1,0 +1,75 @@
+{
+  "custom_id": {{ subject_name|tojson }},
+  "method": "POST",
+  "url": "/v1/chat/completions",
+  "body": {
+    "model": "{{ model }}",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Given a subject entity, return all facts that you know for the subject in the form of a text. You have no upper or lower limit to the length of the text, but you must write everything you know. Do not skip mentioning any fact about the entity. \n\nImportant: \n- If you don't know the subject, return an empty string. \n- If the subject is not a named entity, return an empty string.\n- If the subject is a named entity, you must start the text with "[ENTITY] is"."
+      },
+      {
+        "role": "user",
+        "content": {{ subject_name|tojson }}
+      }
+    ],
+    {%- if reasoning_effort %}
+    "max_completion_tokens": {{ max_completion_tokens[reasoning_effort] }},
+    "reasoning_effort": "{{ reasoning_effort }}"
+    {%- elif use_max_completion_tokens %}
+    "max_completion_tokens": {{ max_tokens }}
+    {%- else %}
+    "max_tokens": {{ max_tokens }},
+    "top_p": {{ top_p }},
+    "temperature": {{ temperature }},
+    "frequency_penalty": {{ frequency_penalty }},
+    "presence_penalty": {{ presence_penalty }}
+    {%- endif %},
+    {%- if use_json_schema %}
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "triple_array_response",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "facts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "subject": {
+                    "type": "string"
+                  },
+                  "predicate": {
+                    "type": "string"
+                  },
+                  "object": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "subject",
+                  "predicate",
+                  "object"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "facts"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+    {%- else %}
+    "response_format": {
+      "type": "json_object"
+    }
+    {%- endif %}
+  }
+}

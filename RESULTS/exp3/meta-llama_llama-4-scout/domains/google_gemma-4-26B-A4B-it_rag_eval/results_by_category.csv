@@ -1,0 +1,21 @@
+Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
+person,229,118,219,0.4045936395759717,0.20848056537102475,0.3869257950530035,566,Precision (Wikipedia-Category),elicited_triples
+organization,289,72,278,0.4522691705790297,0.11267605633802817,0.4350547730829421,639,Precision (Wikipedia-Category),elicited_triples
+location,183,60,176,0.43675417661097854,0.1431980906921241,0.4200477326968974,419,Precision (Wikipedia-Category),elicited_triples
+event,350,102,331,0.44699872286079184,0.13026819923371646,0.4227330779054917,783,Precision (Wikipedia-Category),elicited_triples
+work_of_art,260,191,331,0.33248081841432225,0.2442455242966752,0.42327365728900257,782,Precision (Wikipedia-Category),elicited_triples
+artifact,236,152,333,0.3273231622746186,0.21081830790568654,0.4618585298196949,721,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,254,79,229,0.45195729537366547,0.14056939501779359,0.40747330960854095,562,Precision (Wikipedia-Category),elicited_triples
+cultural_concept,282,86,379,0.37751004016064255,0.11512717536813923,0.5073627844712182,747,Precision (Wikipedia-Category),elicited_triples
+animal,308,53,125,0.6337448559670782,0.10905349794238683,0.257201646090535,486,Precision (Wikipedia-Category),elicited_triples
+plant,229,31,144,0.5668316831683168,0.07673267326732673,0.3564356435643564,404,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,61,40,899,0.061,0.04,0.899,1000,Recall (Wikipedia-Category),elicited_triples
+cultural_concept,28,23,948,0.028028028028028028,0.023023023023023025,0.948948948948949,999,Recall (Wikipedia-Category),elicited_triples
+location,47,39,914,0.047,0.039,0.914,1000,Recall (Wikipedia-Category),elicited_triples
+event,101,88,811,0.101,0.088,0.811,1000,Recall (Wikipedia-Category),elicited_triples
+work_of_art,54,89,857,0.054,0.089,0.857,1000,Recall (Wikipedia-Category),elicited_triples
+animal,34,20,946,0.034,0.02,0.946,1000,Recall (Wikipedia-Category),elicited_triples
+artifact,45,86,869,0.045,0.086,0.869,1000,Recall (Wikipedia-Category),elicited_triples
+person,22,37,941,0.022,0.037,0.941,1000,Recall (Wikipedia-Category),elicited_triples
+organization,48,29,923,0.048,0.029,0.923,1000,Recall (Wikipedia-Category),elicited_triples
+plant,33,14,953,0.033,0.014,0.953,1000,Recall (Wikipedia-Category),elicited_triples

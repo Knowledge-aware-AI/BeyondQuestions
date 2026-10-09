@@ -29,6 +29,10 @@ def main_elicitation_other(
         prompt_template_dir_elicitation:str=None,
         use_all_prompts:bool=False,
         prompt_templates:str=None,
+        nthreads:int=10,
+        multi_turn_elicitation:bool=False,
+        multi_turn_max_turns:int=6,
+        multi_turn_min_new_triples:int=2,
     ):
 
     """
@@ -46,10 +50,20 @@ def main_elicitation_other(
             When None, a default built-in prompt is used.
         use_all_prompts (bool): When True, run elicitation for every .jinja file in the template directory.
         prompt_templates (str, optional): Comma-separated list of specific .jinja filenames to use.
+        nthreads (int): Number of entities to query concurrently per batch (default: 10).
+            Lower this if you hit per-key rate limits (e.g. scads.ai token/min limits).
+        multi_turn_elicitation (bool): When True, after the initial (standard) elicitation turn,
+            keep the same chat going with bias-free follow-up nudges (e.g. "Anything else?"),
+            accumulating unique triples across turns. Not supported together with two-step
+            templates (those are skipped when this is enabled). Default: False.
+        multi_turn_max_turns (int): Hard cap on the number of turns per entity, including the
+            initial one, when multi_turn_elicitation is True (default: 6).
+        multi_turn_min_new_triples (int): Stop the conversation once a turn yields fewer than this
+            many new unique triples (default: 2). A turn returning zero triples (explicit "nothing
+            more" via an empty JSON array) always stops the conversation.
     """
     # === CONFIGURATION ===
     verbose = True
-    nthreads = 10
 
     # === LOGGING SETUP ===
     logging.basicConfig(
@@ -64,25 +78,30 @@ def main_elicitation_other(
     # === LLM WRAPPER ===
     @network_retry(max_retries=5, initial_delay=1.0)
     def promptLLMLocal(message):
+        """message may be a plain string (single user turn) or a list of
+        chat-message dicts (for multi-turn conversations)."""
         client = OpenAI(base_url=api_url_elicitation, api_key=api_key_elicitation)
-        
+        messages = message if isinstance(message, list) else [{"role": "user", "content": message}]
+
         if reasoning_effort_elicitation:
             logging.info(f"Prompting LLM with reasoning effort: {reasoning_effort_elicitation}")
             r = client.chat.completions.create(
-                messages=[{"role": "user", "content": message}],
+                messages=messages,
                 model=model_elicitation,
                 temperature=0,
                 extra_body={"reasoning": {"enabled": True, "effort": reasoning_effort_elicitation}},
             )
-            return r.choices[0].message.content
+            message_obj = r.choices[0].message
+            reasoning = getattr(message_obj, "reasoning", None) or getattr(message_obj, "reasoning_content", None)
+            return message_obj.content, reasoning
         else:
             logging.info(f"Prompting LLM without reasoning effort")
             r = client.chat.completions.create(
-                messages=[{"role": "user", "content": message}],
+                messages=messages,
                 model=model_elicitation,
                 temperature=0
             )
-            return r.choices[0].message.content
+            return r.choices[0].message.content, None
 
     # === FILE UTILS ===
     def append_to_jsonl_file(file_path, new_data):
@@ -282,15 +301,21 @@ def main_elicitation_other(
     def _prompt_output_dir(base_dir, template_path):
         """Return per-template subdirectory when multi-prompt mode is active."""
         if template_path is None:
-            return base_dir
+            result = base_dir
         # Always use subdirectory for TwoStepTemplate
-        if isinstance(template_path, TwoStepTemplate):
-            return os.path.join(base_dir, template_path.name)
+        elif isinstance(template_path, TwoStepTemplate):
+            result = os.path.join(base_dir, template_path.name)
         # For single-step templates, only use subdirectory if multi_prompt is True
-        if not multi_prompt:
-            return base_dir
-        stem = Path(template_path).stem
-        return os.path.join(base_dir, stem)
+        elif not multi_prompt:
+            result = base_dir
+        else:
+            stem = Path(template_path).stem
+            result = os.path.join(base_dir, stem)
+        # Keep multi-turn output separate from standard single-turn output
+        # for the same template so results don't collide.
+        if multi_turn_elicitation and not isinstance(template_path, TwoStepTemplate):
+            result = os.path.join(result, "multi_turn")
+        return result
 
     def _get_two_step_system_prompt(two_step_template, step):
         """Extract system prompt from two-step template."""
@@ -339,7 +364,7 @@ def main_elicitation_other(
         return sys_prompt
 
     # === TRIPLE EXTRACTION ===
-    def getTriples(entity, result_queue, errorQueue, pop_range, lt_range, parse_errors_path, empty_results_path, system_prompt=None):
+    def getTriples(entity, result_queue, errorQueue, pop_range, lt_range, parse_errors_path, empty_results_path, system_prompt=None, reasoning_traces_path=None):
         # Build the prompt.
         # When a system_prompt is provided (from a jinja template), use it directly
         # and append the entity.  Otherwise fall back to the built-in hardcoded prompt.
@@ -364,7 +389,9 @@ def main_elicitation_other(
         
         logging.info(f"Querying entity: {entity}")
         try:
-            output_string = promptLLMLocal(prompt)
+            output_string, reasoning = promptLLMLocal(prompt)
+            if reasoning and reasoning_traces_path:
+                append_to_jsonl_file(reasoning_traces_path, {"entity": entity, "reasoning": reasoning})
             try:
                 #clean = remove_json_delimiters(output_string)
                 #json_str = extract_json_array(clean)
@@ -422,6 +449,99 @@ def main_elicitation_other(
             errorQueue.put(e)
             logging.exception(f"Exception during prompt for entity: {entity}")
 
+
+    # === MULTI-TURN ELICITATION ===
+    # Bias-free follow-up nudges: no mention of the entity or any category
+    # (e.g. education, career) so they don't steer the model toward a
+    # particular kind of fact and don't need per-entity adaptation.
+    FOLLOWUP_PROMPTS = [
+        "Anything else?",
+        "Do you know more?",
+        "Please continue. Is there more?",
+        "Any additional facts?",
+        "What else can you tell me?",
+    ]
+
+    def getTriplesMultiTurn(entity, result_queue, errorQueue, pop_range, lt_range, parse_errors_path,
+                             empty_results_path, max_turns, min_new_triples, system_prompt=None,
+                             reasoning_traces_path=None):
+        if system_prompt is not None:
+            initial_prompt = f"{system_prompt}\n\nSubject: \"{entity}\""
+        else:
+            initial_prompt = (
+                f"You are a knowledge base construction expert. Given a subject entity, "
+                f"return all facts that you know for the subject as a JSON array of "
+                f"triples. Each triple must be a JSON object with exactly these keys: "
+                f'"subject" (string), "predicate" (string), "object" (string). '
+                f"If there are multiple objects for the same predicate, return them as "
+                f"separate triple objects (one object per triple). The number of facts may be very high, between {pop_range} for very popular subjects. For less popular subjects, the number of facts can be very low, like {lt_range}.\n\n"
+                f"Important rules (must follow exactly):\n"
+                f"- Output MUST be valid JSON and nothing else (no explanatory text).\n"
+                f"- The top-level JSON value MUST be an array (e.g. []).\n"
+                f"- If you don't know the subject or it is not a named entity, return [] (empty array).\n"
+                f"- If the subject is a named entity include at least one triple with predicate \"instanceOf\".\n"
+                f"- Keep properties concise; do not include nested objects or arrays inside triple fields.\n\n"
+                f"Subject: \"{entity}\""
+            )
+
+        logging.info(f"Querying entity (multi-turn): {entity}")
+        messages = [{"role": "user", "content": initial_prompt}]
+        seen_keys = set()
+        accumulated_triples = []
+
+        try:
+            for turn_idx in range(max_turns):
+                output_string, reasoning = promptLLMLocal(messages)
+                if reasoning and reasoning_traces_path:
+                    append_to_jsonl_file(reasoning_traces_path, {"entity": entity, "turn": turn_idx, "reasoning": reasoning})
+                messages.append({"role": "assistant", "content": output_string})
+
+                linetriples = extract_json_array(output_string)
+                new_count = 0
+
+                if linetriples:
+                    if isinstance(linetriples[0], list):
+                        keys = ("subject", "predicate", "object")
+                        normalized = []
+                        for item in linetriples:
+                            if isinstance(item, list) and len(item) == 3:
+                                normalized.append(dict(zip(keys, [str(v) for v in item])))
+                        if normalized:
+                            linetriples = normalized
+
+                    valid, reason = validate_triples(linetriples)
+                    if valid:
+                        for t in linetriples:
+                            key = (str(t.get('subject', '')).strip(), str(t.get('predicate', '')).strip(), str(t.get('object', '')).strip())
+                            if key not in seen_keys:
+                                seen_keys.add(key)
+                                accumulated_triples.append(t)
+                                new_count += 1
+                    else:
+                        append_to_jsonl_file(parse_errors_path, {"error": reason, "entity": entity, "turn": turn_idx, "response": str(output_string)[:500]})
+                        logging.warning(f"   [{entity}] turn {turn_idx + 1}: validation failed -- {reason}")
+                else:
+                    append_to_jsonl_file(empty_results_path, {"entity": entity, "turn": turn_idx, "message": "No triples parsed (explicit stop or parse failure)"})
+
+                logging.info(f"   [{entity}] turn {turn_idx + 1}: {new_count} new unique triples (total {len(accumulated_triples)})")
+
+                if new_count < min_new_triples:
+                    logging.info(f"   [{entity}] Stopping after turn {turn_idx + 1}: new triples ({new_count}) below threshold ({min_new_triples})")
+                    break
+
+                if turn_idx == max_turns - 1:
+                    logging.info(f"   [{entity}] Reached max turns ({max_turns})")
+                    break
+
+                followup = FOLLOWUP_PROMPTS[turn_idx % len(FOLLOWUP_PROMPTS)]
+                messages.append({"role": "user", "content": followup})
+
+            result_queue.put((entity, accumulated_triples))
+            logging.info(f"   [{entity}] Multi-turn elicitation complete: {len(accumulated_triples)} total unique triples")
+
+        except Exception as e:
+            errorQueue.put(e)
+            logging.exception(f"Exception during multi-turn prompt for entity: {entity}")
 
     def validate_triples(triples):
         """Return (True, '') if triples is a valid list of triple dicts.
@@ -493,19 +613,25 @@ def main_elicitation_other(
             os.makedirs(csv_dir, exist_ok=True)
         # Check if file exists to determine if we need to write headers
         file_exists = os.path.isfile(triples_output_path)
+        has_confidence = any('confidence' in triple for triple in unique_triples)
         with open(triples_output_path, 'a', newline='', encoding='utf-8') as csvfile:
             # Match the schema used by gpt_kbc.py: include subject_name column
             fieldnames = ['subject', 'predicate', 'object', 'subject_name']
+            if has_confidence:
+                fieldnames.append('confidence')
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             if not file_exists:
                 writer.writeheader()
             for triple in unique_triples:
-                writer.writerow({
+                row = {
                     'subject': triple.get('subject', ''),
                     'predicate': triple.get('predicate', ''),
                     'object': triple.get('object', ''),
                     'subject_name': entity
-                })
+                }
+                if has_confidence:
+                    row['confidence'] = triple.get('confidence', '')
+                writer.writerow(row)
         return len(unique_triples)
 
     # === LOAD ENTITIES ===
@@ -526,9 +652,57 @@ def main_elicitation_other(
 
     # === MAIN EXECUTION ===
 
-    # Helper: run threaded batch for a list of entities, writing to given paths
+    # Helper: run threaded pool for a list of entities, writing to given paths.
+    # Rolling pool: nthreads entities are always in flight, so one slow entity never holds up
+    # the others. Each entity's triples are written as soon as it finishes. An entity whose
+    # request fails (after retries) is logged and left unrecorded, so a later run can fill it in;
+    # it never discards the results of other entities.
     def _run_batch_loop(entities, triples_output_path, parse_errors_path, empty_results_path,
-                        pop_range, lt_range, system_prompt=None):
+                        pop_range, lt_range, system_prompt=None, reasoning_traces_path=None):
+        from concurrent.futures import ThreadPoolExecutor
+        totals = {"triples": 0, "processed": 0, "failed": 0}
+        write_lock = threading.Lock()
+
+        def process_entity(entity):
+            if isinstance(entity, dict):
+                entity_name = entity.get('label') or entity.get('name') or entity.get('id') or str(entity)
+            else:
+                entity_name = str(entity)
+            result_queue = queue.Queue()
+            errorQueue = queue.Queue()
+            getTriples(entity_name, result_queue, errorQueue, pop_range, lt_range,
+                       parse_errors_path, empty_results_path, system_prompt, reasoning_traces_path)
+            if not errorQueue.empty():
+                error_msg = str(errorQueue.get())[:100]
+                logging.error(f"Error in thread processing ({entity_name}, left for a later run): {error_msg}")
+                with write_lock:
+                    totals["failed"] += 1
+                time.sleep(60)  # same back-off as before, now only for this slot
+                return
+            with write_lock:
+                while not result_queue.empty():
+                    name, triples = result_queue.get()
+                    totals["triples"] += storeTriplesInCSV(name, triples, triples_output_path)
+                    totals["processed"] += 1
+                done = totals["processed"] + totals["failed"]
+                if done % nthreads == 0:
+                    logging.info(f"Progress: processed {totals['processed']}, failed {totals['failed']}, "
+                                 f"of {len(entities)}; total triples: {totals['triples']}  {time.strftime('%X %x %Z')}")
+
+        logging.info(f"Processing {len(entities)} entities, {nthreads} at a time (rolling)")
+        with ThreadPoolExecutor(max_workers=nthreads) as pool:
+            for future in [pool.submit(process_entity, e) for e in entities]:
+                try:
+                    future.result()
+                except Exception as e:
+                    logging.exception(f"Unexpected error in entity worker: {e}")
+        logging.info(f"All entities done. Processed: {totals['processed']}/{len(entities)}, "
+                     f"failed (left for a later run): {totals['failed']}, Total triples: {totals['triples']}")
+        return totals["triples"], totals["processed"]
+
+    def _run_multi_turn_batch_loop(entities, triples_output_path, parse_errors_path, empty_results_path,
+                                    pop_range, lt_range, max_turns, min_new_triples, system_prompt=None,
+                                    reasoning_traces_path=None):
         total_triples = 0
         processed_count = 0
         for batch_start in range(0, len(entities), nthreads):
@@ -537,16 +711,17 @@ def main_elicitation_other(
             threads = []
             result_queue = queue.Queue()
             errorQueue = queue.Queue()
-            logging.info(f"Processing batch {batch_start // nthreads + 1} (entities {batch_start + 1} to {batch_end})")
+            logging.info(f"Processing multi-turn batch {batch_start // nthreads + 1} (entities {batch_start + 1} to {batch_end})")
             for entity in batch:
                 if isinstance(entity, dict):
                     entity_name = entity.get('label') or entity.get('name') or entity.get('id') or str(entity)
                 else:
                     entity_name = str(entity)
                 thread = threading.Thread(
-                    target=getTriples,
+                    target=getTriplesMultiTurn,
                     args=(entity_name, result_queue, errorQueue, pop_range, lt_range,
-                          parse_errors_path, empty_results_path, system_prompt)
+                          parse_errors_path, empty_results_path, max_turns, min_new_triples,
+                          system_prompt, reasoning_traces_path)
                 )
                 threads.append(thread)
                 thread.start()
@@ -566,195 +741,170 @@ def main_elicitation_other(
             logging.info(f"{time.strftime('%X %x %Z')}\n")
             time.sleep(1)
         return total_triples, processed_count
-    
+
     def _run_two_step_loop(entities, two_step_template, output_dir):
-        """Run two-step elicitation locally (predicate -> objects)."""
+        """Run two-step elicitation locally (predicates -> objects).
+
+        Incremental and resumable: each entity is processed end to end (predicates, then all its
+        objects) and its triples are appended to elicited_triples.csv as soon as it finishes.
+        Entities with no predicates go to empty_entity_results.jsonl, unparseable predicate
+        responses to entity_extraction_errors.jsonl. An entity hit by a request failure (after
+        retries) is not recorded at all, so a later run over the missing entities redoes it whole.
+        Entities run in parallel (nthreads), and each entity's object calls run 4 at a time."""
         import requests
-        
+        from concurrent.futures import ThreadPoolExecutor
+
         os.makedirs(output_dir, exist_ok=True)
         logging.info(f"Starting two-step: {two_step_template.name}")
-        
-        # Get prompts
+
         pred_system = _get_two_step_system_prompt(two_step_template, "predicates")
         obj_system = _get_two_step_system_prompt(two_step_template, "objects")
-        
-        # Step 1: Get predicates
-        entity_to_predicates = {}
-        
+
+        csv_path = os.path.join(output_dir, "elicited_triples.csv")
+        parse_errors_path = os.path.join(output_dir, "entity_extraction_errors.jsonl")
+        empty_results_path = os.path.join(output_dir, "empty_entity_results.jsonl")
+        write_lock = threading.Lock()
+        OBJECT_WORKERS = 4
+
+        def post(system_prompt, user_content):
+            """One chat call. Raises on any request failure so @network_retry retries it."""
+            chat_url = api_url_elicitation.rstrip('/') + "/chat/completions"
+            r = requests.post(
+                chat_url,
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key_elicitation}" if api_key_elicitation else ""
+                },
+                json={
+                    "model": model_elicitation,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_content}
+                    ],
+                    "temperature": 0
+                },
+                timeout=120
+            )
+            if r.status_code != 200:
+                raise RuntimeError(f"Non-200 response: status={r.status_code}, body={r.text[:300]}")
+            return r.json()["choices"][0]["message"]["content"]
+
+        def strip_wrappers(content):
+            cleaned = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
+            cleaned = re.sub(r"^```+\s*(?:json)?\s*\n?", "", cleaned, flags=re.IGNORECASE)
+            return re.sub(r"\n?```+\s*$", "", cleaned).strip()
+
         @network_retry(max_retries=5, initial_delay=1.0)
         def get_predicates(entity):
-            user_content = entity
-            chat_url = api_url_elicitation.rstrip('/') + "/chat/completions"
+            """Returns (predicates, None) or (None, raw_content) when the response can't be parsed."""
+            content = post(pred_system, entity)
+            logging.debug(f"Raw predicate response for {entity}: {content[:200]}...")
+            result = extract_json_array(content)
+            if result is not None:
+                if all(isinstance(p, str) for p in result):
+                    logging.info(f"Extracted {len(result)} predicates for {entity}")
+                    return result, None
+                if all(isinstance(p, dict) for p in result):
+                    predicates = [p.get("predicate") or p.get("name") or p.get("label") or str(p)
+                                  for p in result if p]
+                    predicates = [p for p in predicates if p]
+                    logging.info(f"Extracted {len(predicates)} predicates (from dicts) for {entity}")
+                    return predicates, None
             try:
-                r = requests.post(
-                    chat_url,
-                    headers={
-                        "Content-Type": "application/json",
-                        "Authorization": f"Bearer {api_key_elicitation}" if api_key_elicitation else ""
-                    },
-                    json={
-                        "model": model_elicitation,
-                        "messages": [
-                            {"role": "system", "content": pred_system},
-                            {"role": "user", "content": user_content}
-                        ],
-                        "temperature": 0
-                    },
-                    timeout=120
-                )
+                obj = json.loads(strip_wrappers(content))
+                if isinstance(obj, dict) and "predicates" in obj:
+                    predicates = [str(p) for p in obj["predicates"] if p]
+                    logging.info(f"Extracted {len(predicates)} predicates (dict wrapper) for {entity}")
+                    return predicates, None
+            except json.JSONDecodeError:
+                pass
+            logging.warning(f"Could not extract predicates for {entity}: {content[:300]}")
+            return None, content
 
-                if r.status_code != 200:
-                    logging.warning(f"Non-200 response for {entity}: status={r.status_code}, body={r.text[:500]}")
-                    return []
-
-                content = r.json()["choices"][0]["message"]["content"]
-                logging.debug(f"Raw predicate response for {entity}: {content[:200]}...")
-
-                # Use the robust extractor — handles bare lists, {"predicates": [...]},
-                # markdown fences, <think> blocks, etc.
-                result = extract_json_array(content)
-
-                if result is not None:
-                    # Bare list of predicate strings: ["foo", "bar"]
-                    if all(isinstance(p, str) for p in result):
-                        logging.info(f"Extracted {len(result)} predicates for {entity}")
-                        return result
-
-                    # List of objects: [{"predicate": "foo"}, ...] — some models do this
-                    if all(isinstance(p, dict) for p in result):
-                        predicates = [p.get("predicate") or p.get("name") or p.get("label") or str(p)
-                                    for p in result if p]
-                        predicates = [p for p in predicates if p]
-                        logging.info(f"Extracted {len(predicates)} predicates (from dicts) for {entity}")
-                        return predicates
-
-                # Fallback: try {"predicates": [...]} top-level object
-                # (extract_json_array won't reach this, but some models skip the array entirely)
-                try:
-                    cleaned = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
-                    cleaned = re.sub(r"^```+\s*(?:json)?\s*\n?", "", cleaned, flags=re.IGNORECASE)
-                    cleaned = re.sub(r"\n?```+\s*$", "", cleaned).strip()
-                    obj = json.loads(cleaned)
-                    if isinstance(obj, dict) and "predicates" in obj:
-                        predicates = [str(p) for p in obj["predicates"] if p]
-                        logging.info(f"Extracted {len(predicates)} predicates (dict wrapper) for {entity}")
-                        return predicates
-                except json.JSONDecodeError:
-                    pass
-
-                logging.warning(f"Could not extract predicates for {entity}: {content[:300]}")
-                return []
-
-            except requests.exceptions.Timeout:
-                logging.warning(f"Timeout fetching predicates for {entity}")
-                return []
-            except Exception as e:
-                logging.warning(f"Error fetching predicates for {entity}: {e}")
-                return []
-        
-        for i, entity in enumerate(entities):
-            if i % 10 == 0:
-                logging.info(f"Step 1: {i}/{len(entities)}")
-            name = entity.get('label') or entity.get('name') or entity.get('id') or str(entity) if isinstance(entity, dict) else str(entity)
-            entity_to_predicates[name] = get_predicates(name)
-        
-        logging.info(f"Step 1 done: {len(entity_to_predicates)} entities")
-        
-        # Step 2: Get objects
-        all_triples = []
-        all_pairs = [(e, p) for e, preds in entity_to_predicates.items() for p in preds]
-        logging.info(f"Step 2: {len(all_pairs)} pairs")
-        
         @network_retry(max_retries=5, initial_delay=1.0)
         def get_objects(entity, predicate):
-            user_content = f"Subject: {entity}\nPredicate: {predicate}"
-            chat_url = api_url_elicitation.rstrip('/') + "/chat/completions"
+            """Returns the triples for one (entity, predicate); [] when the response can't be parsed."""
+            content = post(obj_system, f"Subject: {entity}\nPredicate: {predicate}")
+            logging.debug(f"Raw objects response for {entity}/{predicate}: {content[:200]}...")
+
+            def make_triples(objects):
+                return [
+                    {"subject": entity, "predicate": predicate, "object": str(o), "subject_name": entity}
+                    for o in objects if o
+                ]
+
+            result = extract_json_array(content)
+            if result is not None:
+                if all(isinstance(o, str) for o in result):
+                    triples = make_triples(result)
+                    logging.info(f"Extracted {len(triples)} objects for {entity}/{predicate}")
+                    return triples
+                if all(isinstance(o, dict) for o in result):
+                    objects = [o.get("object") or o.get("value") or o.get("name") or str(o)
+                               for o in result if o]
+                    objects = [o for o in objects if o]
+                    triples = make_triples(objects)
+                    logging.info(f"Extracted {len(triples)} objects (from dicts) for {entity}/{predicate}")
+                    return triples
             try:
-                r = requests.post(
-                    chat_url,
-                    headers={
-                        "Content-Type": "application/json",
-                        "Authorization": f"Bearer {api_key_elicitation}" if api_key_elicitation else ""
-                    },
-                    json={
-                        "model": model_elicitation,
-                        "messages": [
-                            {"role": "system", "content": obj_system},
-                            {"role": "user", "content": user_content}
-                        ],
-                        "temperature": 0
-                    },
-                    timeout=120
-                )
+                obj = json.loads(strip_wrappers(content))
+                if isinstance(obj, dict) and "objects" in obj:
+                    triples = make_triples(obj["objects"])
+                    logging.info(f"Extracted {len(triples)} objects (dict wrapper) for {entity}/{predicate}")
+                    return triples
+            except json.JSONDecodeError:
+                pass
+            logging.warning(f"Could not extract objects for {entity}/{predicate}: {content[:300]}")
+            return []
 
-                if r.status_code != 200:
-                    logging.warning(f"Non-200 response for {entity}/{predicate}: status={r.status_code}, body={r.text[:500]}")
-                    return []
+        def write_entity(triples):
+            with write_lock:
+                new_file = not os.path.isfile(csv_path)
+                with open(csv_path, "a", newline="") as f:
+                    writer = csv.DictWriter(f, fieldnames=["subject", "predicate", "object", "subject_name"])
+                    if new_file:
+                        writer.writeheader()
+                    writer.writerows(triples)
 
-                content = r.json()["choices"][0]["message"]["content"]
-                logging.debug(f"Raw objects response for {entity}/{predicate}: {content[:200]}...")
+        def record(path, data):
+            with write_lock:
+                append_to_jsonl_file(path, data)
 
-                def make_triples(objects):
-                    return [
-                        {"subject": entity, "predicate": predicate, "object": str(o), "subject_name": entity}
-                        for o in objects if o
-                    ]
+        names = [e.get('label') or e.get('name') or e.get('id') or str(e) if isinstance(e, dict) else str(e)
+                 for e in entities]
+        done = {'entities': 0, 'triples': 0}
 
-                result = extract_json_array(content)
-
-                if result is not None:
-                    # Bare list of object strings: ["foo", "bar"]
-                    if all(isinstance(o, str) for o in result):
-                        triples = make_triples(result)
-                        logging.info(f"Extracted {len(triples)} objects for {entity}/{predicate}")
-                        return triples
-
-                    # List of objects: [{"object": "foo"}, ...] — some models do this
-                    if all(isinstance(o, dict) for o in result):
-                        objects = [o.get("object") or o.get("value") or o.get("name") or str(o)
-                                for o in result if o]
-                        objects = [o for o in objects if o]
-                        triples = make_triples(objects)
-                        logging.info(f"Extracted {len(triples)} objects (from dicts) for {entity}/{predicate}")
-                        return triples
-
-                # Fallback: {"objects": [...]} top-level wrapper
-                try:
-                    cleaned = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
-                    cleaned = re.sub(r"^```+\s*(?:json)?\s*\n?", "", cleaned, flags=re.IGNORECASE)
-                    cleaned = re.sub(r"\n?```+\s*$", "", cleaned).strip()
-                    obj = json.loads(cleaned)
-                    if isinstance(obj, dict) and "objects" in obj:
-                        triples = make_triples(obj["objects"])
-                        logging.info(f"Extracted {len(triples)} objects (dict wrapper) for {entity}/{predicate}")
-                        return triples
-                except json.JSONDecodeError:
-                    pass
-
-                logging.warning(f"Could not extract objects for {entity}/{predicate}: {content[:300]}")
-                return []
-
-            except requests.exceptions.Timeout:
-                logging.warning(f"Timeout fetching objects for {entity}/{predicate}")
-                return []
+        def process_entity(name):
+            try:
+                predicates, raw = get_predicates(name)
+                if predicates is None:
+                    record(parse_errors_path, {"error": "Failed to extract predicates", "entity": name, "response": str(raw)[:500]})
+                    return
+                if not predicates:
+                    record(empty_results_path, {"entity": name, "message": "Empty result (no predicates)"})
+                    return
+                with ThreadPoolExecutor(max_workers=OBJECT_WORKERS) as pool:
+                    per_predicate = list(pool.map(lambda p: get_objects(name, p), predicates))
+                triples = [t for ts in per_predicate for t in ts]
+                if triples:
+                    write_entity(triples)
+                else:
+                    record(empty_results_path, {"entity": name, "message": f"Empty result ({len(predicates)} predicates, no objects)"})
+                with write_lock:
+                    done['entities'] += 1
+                    done['triples'] += len(triples)
+                    logging.info(f"Two-step [{two_step_template.name}] {name}: {len(predicates)} predicates, "
+                                 f"{len(triples)} triples ({done['entities']}/{len(names)} entities done)")
             except Exception as e:
-                logging.warning(f"Error fetching objects for {entity}/{predicate}: {e}")
-                return []
-        
-        for i, (entity, predicate) in enumerate(all_pairs):
-            if i % 50 == 0:
-                logging.info(f"Step 2: {i}/{len(all_pairs)}")
-            all_triples.extend(get_objects(entity, predicate))
-        
-        # Write CSV
-        csv_path = os.path.join(output_dir, "elicited_triples.csv")
-        with open(csv_path, "w", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=["subject", "predicate", "object", "subject_name"])
-            writer.writeheader()
-            writer.writerows(all_triples)
-        
-        logging.info(f"Written {len(all_triples)} triples to {csv_path}")
-        return len(all_triples), len(entities)
+                logging.error(f"Two-step [{two_step_template.name}] {name}: not recorded after retries, "
+                              f"will be redone by a run over the missing entities: {e}")
+
+        with ThreadPoolExecutor(max_workers=nthreads) as pool:
+            list(pool.map(process_entity, names))
+
+        logging.info(f"Two-step [{two_step_template.name}] finished: {done['entities']}/{len(names)} entities, "
+                     f"{done['triples']} triples appended to {csv_path}")
+        return done['triples'], len(names)
     
     if different_elicitation_triple_ranges:
         assert len(popular_ranges) == len(longtail_ranges), "Popular and long-tail ranges must have the same length."
@@ -781,6 +931,7 @@ def main_elicitation_other(
                 triples_output_path = os.path.join(tmpl_base_dir, range_tag, "elicited_triples.csv")
                 parse_errors_path = os.path.join(tmpl_base_dir, range_tag, "entity_extraction_errors.jsonl")
                 empty_results_path = os.path.join(tmpl_base_dir, range_tag, "empty_entity_results.jsonl")
+                reasoning_traces_path = os.path.join(tmpl_base_dir, range_tag, "reasoning_traces.jsonl")
 
                 entities = loadEntities()
                 if not entities:
@@ -788,10 +939,17 @@ def main_elicitation_other(
                     continue
                 logging.info(f"Loaded {len(entities)} entities for processing")
 
-                total_triples, processed_count = _run_batch_loop(
-                    entities, triples_output_path, parse_errors_path, empty_results_path,
-                    pop_range, lt_range, system_prompt
-                )
+                if multi_turn_elicitation:
+                    total_triples, processed_count = _run_multi_turn_batch_loop(
+                        entities, triples_output_path, parse_errors_path, empty_results_path,
+                        pop_range, lt_range, multi_turn_max_turns, multi_turn_min_new_triples,
+                        system_prompt, reasoning_traces_path
+                    )
+                else:
+                    total_triples, processed_count = _run_batch_loop(
+                        entities, triples_output_path, parse_errors_path, empty_results_path,
+                        pop_range, lt_range, system_prompt, reasoning_traces_path
+                    )
                 logging.info(f"==== Finished [{tmpl_label}] range {range_tag} ====")
                 logging.info(f"Total entities processed: {processed_count}")
                 logging.info(f"Total triples extracted: {total_triples}")
@@ -839,11 +997,19 @@ def main_elicitation_other(
                 triples_output_path = os.path.join(tmpl_base_dir, bucket, "elicited_triples.csv")
                 parse_errors_path = os.path.join(tmpl_base_dir, bucket, "entity_extraction_errors.jsonl")
                 empty_results_path = os.path.join(tmpl_base_dir, bucket, "empty_entity_results.jsonl")
+                reasoning_traces_path = os.path.join(tmpl_base_dir, bucket, "reasoning_traces.jsonl")
 
-                total_triples, processed_count = _run_batch_loop(
-                    entities, triples_output_path, parse_errors_path, empty_results_path,
-                    popular_ranges[4], longtail_ranges[4], system_prompt
-                )
+                if multi_turn_elicitation:
+                    total_triples, processed_count = _run_multi_turn_batch_loop(
+                        entities, triples_output_path, parse_errors_path, empty_results_path,
+                        popular_ranges[4], longtail_ranges[4], multi_turn_max_turns, multi_turn_min_new_triples,
+                        system_prompt, reasoning_traces_path
+                    )
+                else:
+                    total_triples, processed_count = _run_batch_loop(
+                        entities, triples_output_path, parse_errors_path, empty_results_path,
+                        popular_ranges[4], longtail_ranges[4], system_prompt, reasoning_traces_path
+                    )
                 total_triples_grand += total_triples
                 processed_count_grand += processed_count
                 logging.info(f"==== Finished [{tmpl_label}] bucket {bucket} ====")
@@ -885,11 +1051,19 @@ def main_elicitation_other(
             triples_output_path = os.path.join(tmpl_base_dir, "elicited_triples.csv")
             parse_errors_path = os.path.join(tmpl_base_dir, "entity_extraction_errors.jsonl")
             empty_results_path = os.path.join(tmpl_base_dir, "empty_entity_results.jsonl")
+            reasoning_traces_path = os.path.join(tmpl_base_dir, "reasoning_traces.jsonl")
 
-            total_triples, processed_count = _run_batch_loop(
-                entities, triples_output_path, parse_errors_path, empty_results_path,
-                popular_ranges[4], longtail_ranges[4], system_prompt
-            )
+            if multi_turn_elicitation:
+                total_triples, processed_count = _run_multi_turn_batch_loop(
+                    entities, triples_output_path, parse_errors_path, empty_results_path,
+                    popular_ranges[4], longtail_ranges[4], multi_turn_max_turns, multi_turn_min_new_triples,
+                    system_prompt, reasoning_traces_path
+                )
+            else:
+                total_triples, processed_count = _run_batch_loop(
+                    entities, triples_output_path, parse_errors_path, empty_results_path,
+                    popular_ranges[4], longtail_ranges[4], system_prompt, reasoning_traces_path
+                )
             logging.info(f"==== Entity-based Triple Extraction Pipeline Finished [{tmpl_label}] ====")
             logging.info(f"Total entities processed: {processed_count}")
             logging.info(f"Total triples extracted: {total_triples}")
