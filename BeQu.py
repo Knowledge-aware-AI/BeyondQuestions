@@ -145,12 +145,12 @@ def BeQu(
         results_dir_path:str = None,
         prompt_template_dir_elicitation:str = None,
         reasoning_effort_elicitation:Literal["low", "medium", "high"] = None,
-        llm_judge:str = "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        llm_judge:str = "google/gemma-4-26B-A4B-it",
         llm_judge_api:Literal["scads", "openrouter"] = "scads",
         seed:int = 42,
-        sample_size:int = 500,
+        sample_size:int = 1000,
         evaluate_by_category:bool = False,
-        triples_per_category:int = 500,
+        triples_per_category:int = 1000,
         non_existing_entities:bool = False,
         different_elicitation_triple_ranges:bool = False,
         evaluate_by_popularity:bool = False,
@@ -163,10 +163,17 @@ def BeQu(
         prompt_templates: str = None,
         web_results_count: int = 20,
         web_docs_for_eval: int = 20,
+        disable_web_results_topup: bool = False,
         evaluate_all_models: bool = False,
         top_k: int = 10,
         recover_errors: bool = False,
         recover_errors_dir: str = None,
+        nthreads: int = 10,
+        min_confidence: float = None,
+        multi_turn_elicitation: bool = False,
+        multi_turn_max_turns: int = 6,
+        multi_turn_min_new_triples: int = 2,
+        max_workers_jobs: int = 2,
         ):
 
         """
@@ -183,9 +190,9 @@ def BeQu(
                 llm_judge (str): Name of the model to use as judge in the evaluation
                 llm_judge_api (Literal["scads", "openrouter"]): API backend for the LLM judge. Use "openrouter" to route judge calls through OpenRouter instead of ScadsAI (default: "scads")
                 seed (int): Random seed for sampling in evaluation (default: 42)
-                sample_size (int): Number of triples to sample for evaluation (default: 100)
+                sample_size (int): Number of triples to sample for evaluation (default: 1000)
                 evaluate_by_category (bool): Whether to evaluate by category (default: False)
-                triples_per_category (int): Number of triples to sample per category if evaluate_by_category is True (default: 500)
+                triples_per_category (int): Number of triples to sample per category if evaluate_by_category is True (default: 1000)
                 skip_if_exists (bool): Skip experiment if same config was already run (default: True)
                 different_elicitation_triple_ranges (bool): Whether to use different triple ranges for popular vs long-tail entities during elicitation (default: False)
                 evaluate_by_popularity (bool): Whether to evaluate results by entity popularity (default: False)
@@ -200,9 +207,29 @@ def BeQu(
                 prompt_templates (str): Comma-separated list of specific .jinja filenames (e.g. "prompt_a.jinja,prompt_b.jinja") to use for elicitation. Overrides use_all_prompts when set (default: None).
                  web_results_count (int): Number of Brave Search results to fetch during ground truth construction (default: 20). Maximum is 20 due to Brave API limits.
                  web_docs_for_eval (int): Number of web documents/results to use during evaluation (default: 20). Must be <= web_results_count.
+                 disable_web_results_topup (bool): When True, skip "topping up" cached entities whose cached web_search_results count is below web_results_count (i.e. use whatever is already cached as-is, without further Brave Search calls) (default: False).
                  evaluate_all_models (bool): When True, automatically discover all models and subdirectories in elicited_triples_dir that contain elicited_triples.csv and run evaluation for each. Results directories will mirror the elicited_triples structure (default: False). Uses skip_if_exists to avoid re-running evaluations.
                   top_k (int): Number of top passages to retrieve in RAG-based precision evaluation (default: 10).
-         
+                  nthreads (int): Number of entities to query concurrently per batch during elicitation (default: 10).
+                      Lower this if you hit per-key rate limits (e.g. scads.ai token/min limits) on the elicitation model.
+                  min_confidence (float): If set, elicited triples with a 'confidence' column value below this
+                      threshold are excluded from evaluation. Triples elicited without a 'confidence' column
+                      (i.e. from templates other than GPTKB_confidence.jinja) are always kept (default: None).
+                  multi_turn_elicitation (bool): When True, keeps the elicitation chat going after the initial
+                      (standard) turn with bias-free follow-up nudges (e.g. "Anything else?"), accumulating
+                      unique triples across turns until a stopping criterion is hit. Only supported with the
+                      "scads"/"openrouter" APIs (not "openai_batched"), and not combined with two-step
+                      templates. Results are written to a "multi_turn" subdirectory (default: False).
+                  multi_turn_max_turns (int): Hard cap on turns per entity, including the initial one,
+                      when multi_turn_elicitation is True (default: 6).
+                  multi_turn_min_new_triples (int): Stop the conversation once a turn yields fewer than this
+                      many new unique triples (default: 2). A turn with zero new triples always stops it.
+                  max_workers_jobs (int): Max number of models to process concurrently in the multi-job
+                      (non-evaluate_all_models) path, i.e. when running several models in one BeQu.py call
+                      that isn't evaluate_all_models=True (default: 2). Set higher for elicitation-only runs
+                      (--skip_evaluation=True), which aren't bottlenecked by the judge model's rate limit,
+                      and keep it low (default) for evaluation-only or combined elicit+eval runs.
+
         Evaluation approach:
                 Precision is computed using RAG-based evaluation: for each elicited triple, the top-k passages (configurable via top_k parameter)
                 are retrieved from the full ground truth (Wikipedia article + all web documents)
@@ -400,6 +427,7 @@ def BeQu(
                         evaluate_by_popularity=evaluate_by_popularity,
                         triples_per_popularity_bucket=triples_per_category,
                         web_results_count=web_results_count,
+                        disable_web_results_topup=disable_web_results_topup,
                         web_docs_for_eval=web_docs_for_eval,
                         build_ground_truth_only=True,
                         top_k=top_k,
@@ -446,13 +474,15 @@ def BeQu(
                                 evaluate_by_popularity=config["evaluate_by_popularity"],
                                 triples_per_popularity_bucket=triples_per_category,
                                 web_results_count=web_results_count,
+                                disable_web_results_topup=disable_web_results_topup,
                                 web_docs_for_eval=web_docs_for_eval,
                                 build_ground_truth_only=False,
                                 top_k=top_k,
                                 judge_api_url=judge_api_url,
                                 judge_api_key=judge_api_key,
+                                min_confidence=min_confidence,
                         )
-                        
+
                         tracker.register_experiment(config, results_path=config["results_dir_path"])
                         print(f"Completed evaluation {i}/{total}")
                         return (model_name, config["results_dir_path"])
@@ -462,8 +492,11 @@ def BeQu(
                 completed_count = 0
                 failed_count = 0
                 
-                with ThreadPoolExecutor(max_workers=5) as executor:
-                        future_to_config = {executor.submit(evaluate_single_config, (i, mc, total)): (i, mc) 
+                # settings evaluated at once; BEQU_EVAL_ALL_WORKERS overrides the default of 4
+                eval_all_workers = int(os.getenv("BEQU_EVAL_ALL_WORKERS", "4"))
+                print(f"Evaluating {total} configurations, {eval_all_workers} at a time")
+                with ThreadPoolExecutor(max_workers=eval_all_workers) as executor:
+                        future_to_config = {executor.submit(evaluate_single_config, (i, mc, total)): (i, mc)
                                             for i, mc in configs_with_index}
                         for future in as_completed(future_to_config):
                                 i, (model, config) = future_to_config[future]
@@ -623,6 +656,9 @@ def BeQu(
                         "evaluate_by_popularity": evaluate_by_popularity,
                         "use_all_prompts": use_all_prompts,
                         "prompt_templates": prompt_templates,
+                        "multi_turn_elicitation": multi_turn_elicitation,
+                        "multi_turn_max_turns": multi_turn_max_turns if multi_turn_elicitation else None,
+                        "multi_turn_min_new_triples": multi_turn_min_new_triples if multi_turn_elicitation else None,
                 }
 
                 # Check if experiment already exists
@@ -643,6 +679,11 @@ def BeQu(
                 # Skip elicitation if skip_elicitation is True or if building ground truth only
                 if not skip_elicitation and not build_ground_truth_only:
                         if api == "openai_batched":
+                                if multi_turn_elicitation:
+                                        print("multi_turn_elicitation is not supported with api='openai_batched' "
+                                              "(each turn depends on the previous response, which the batch API can't express). "
+                                              "Use api='scads' or 'openrouter' instead.")
+                                        return None
                                 print(f"Starting elicitation with OpenAI Batch API for model: {model} ...")
                                 main_elicitation_openai_batched(
                                         entities_file_path=entities_file_path,
@@ -673,6 +714,10 @@ def BeQu(
                                         prompt_template_dir_elicitation=prompt_template_dir_elicitation,
                                         use_all_prompts=use_all_prompts,
                                         prompt_templates=prompt_templates,
+                                        nthreads=nthreads,
+                                        multi_turn_elicitation=multi_turn_elicitation,
+                                        multi_turn_max_turns=multi_turn_max_turns,
+                                        multi_turn_min_new_triples=multi_turn_min_new_triples,
                                 )
                         else:
                                 print(f"Unsupported API choice: {api}. Please choose 'openai_batched', 'scads', or 'openrouter'.")
@@ -746,13 +791,15 @@ def BeQu(
                                                 evaluate_by_popularity=evaluate_by_popularity,
                                                 triples_per_popularity_bucket=triples_per_category,
                                                 web_results_count=web_results_count,
+                                                disable_web_results_topup=disable_web_results_topup,
                                                 web_docs_for_eval=web_docs_for_eval,
                                                 build_ground_truth_only=build_ground_truth_only,
                                                 top_k=top_k,
                                                 judge_api_url=judge_api_url,
                                                 judge_api_key=judge_api_key,
+                                                min_confidence=min_confidence,
                                         )
-                                        
+
                                         if not build_ground_truth_only:
                                                 tracker.register_experiment(subdir_config, results_path=subdir_results)
                                                 print(f"Completed evaluation for prompt template: {subdir_name}")
@@ -778,15 +825,17 @@ def BeQu(
                                         evaluate_by_popularity=evaluate_by_popularity,
                                         triples_per_popularity_bucket=triples_per_category,
                                         web_results_count=web_results_count,
+                                        disable_web_results_topup=disable_web_results_topup,
                                         web_docs_for_eval=web_docs_for_eval,
                                         build_ground_truth_only=True,
                                         top_k=top_k,
                                         judge_api_url=judge_api_url,
                                         judge_api_key=judge_api_key,
+                                        min_confidence=min_confidence,
                                 )
                                 print(f"Ground truth ready. Running {len(prompts_subdirs)} prompt evaluations in parallel...")
 
-                                max_workers_prompts = min(len(prompts_subdirs), 5)
+                                max_workers_prompts = min(len(prompts_subdirs), 2)
                                 with ThreadPoolExecutor(max_workers=max_workers_prompts) as executor:
                                         futures = {executor.submit(evaluate_prompt_subdir, subdir): subdir for subdir in prompts_subdirs}
                                         completed = 0
@@ -818,11 +867,13 @@ def BeQu(
                                         evaluate_by_popularity=evaluate_by_popularity,
                                         triples_per_popularity_bucket=triples_per_category,
                                         web_results_count=web_results_count,
+                                        disable_web_results_topup=disable_web_results_topup,
                                         web_docs_for_eval=web_docs_for_eval,
                                         build_ground_truth_only=build_ground_truth_only,
                                         top_k=top_k,
                                         judge_api_url=judge_api_url,
                                         judge_api_key=judge_api_key,
+                                        min_confidence=min_confidence,
                                 )
 
                                 if not build_ground_truth_only:
@@ -862,13 +913,15 @@ def BeQu(
                         evaluate_by_popularity=evaluate_by_popularity,
                         triples_per_popularity_bucket=triples_per_category,
                         web_results_count=web_results_count,
+                        disable_web_results_topup=disable_web_results_topup,
                         web_docs_for_eval=web_docs_for_eval,
                         build_ground_truth_only=True,
                         top_k=top_k,
                         judge_api_url=judge_api_url,
                         judge_api_key=judge_api_key,
+                        min_confidence=min_confidence,
                 )
-                
+
                 print(f"\n{'='*70}")
                 print(f"Ground truth built and saved to: {ground_truth_dir_path}")
                 print(f"{'='*70}\n")
@@ -891,30 +944,38 @@ def BeQu(
         else:
                 # Multiple jobs: pre-build ground truth once before parallel execution
                 # to avoid all workers racing to fetch the same Brave Search results.
-                print(f"\n{'='*70}")
-                print("Pre-building ground truth before parallel elicitation/evaluation...")
-                print(f"{'='*70}\n")
-                main_evaluation(
-                        entities_file_path=entities_file_path,
-                        elicited_triples_dir=elicited_triples_dir,
-                        ground_truth_dir_path=ground_truth_dir_path,
-                        results_dir_path=None,
-                        llm_judge=llm_judge,
-                        seed=seed,
-                        sample_size=sample_size,
-                        evaluate_by_category=evaluate_by_category,
-                        triples_per_category=triples_per_category,
-                        evaluate_by_popularity=evaluate_by_popularity,
-                        triples_per_popularity_bucket=triples_per_category,
-                        web_results_count=web_results_count,
-                        web_docs_for_eval=web_docs_for_eval,
-                        build_ground_truth_only=True,
-                        top_k=top_k,
-                        judge_api_url=judge_api_url,
-                        judge_api_key=judge_api_key,
-                )
-                print(f"Ground truth ready. Running {len(jobs)} evaluation jobs in parallel...")
-                with ThreadPoolExecutor(max_workers=len(jobs)) as executor:
+                # Skipped when there's no evaluation to run (non-existing entities have
+                # no ground truth, or evaluation was explicitly disabled).
+                if non_existing_entities or skip_evaluation:
+                        print("Skipping ground truth pre-build (non_existing_entities or skip_evaluation set).")
+                else:
+                        print(f"\n{'='*70}")
+                        print("Pre-building ground truth before parallel elicitation/evaluation...")
+                        print(f"{'='*70}\n")
+                        main_evaluation(
+                                entities_file_path=entities_file_path,
+                                elicited_triples_dir=elicited_triples_dir,
+                                ground_truth_dir_path=ground_truth_dir_path,
+                                results_dir_path=None,
+                                llm_judge=llm_judge,
+                                seed=seed,
+                                sample_size=sample_size,
+                                evaluate_by_category=evaluate_by_category,
+                                triples_per_category=triples_per_category,
+                                evaluate_by_popularity=evaluate_by_popularity,
+                                triples_per_popularity_bucket=triples_per_category,
+                                web_results_count=web_results_count,
+                                disable_web_results_topup=disable_web_results_topup,
+                                web_docs_for_eval=web_docs_for_eval,
+                                build_ground_truth_only=True,
+                                top_k=top_k,
+                                judge_api_url=judge_api_url,
+                                judge_api_key=judge_api_key,
+                                min_confidence=min_confidence,
+                        )
+                        print("Ground truth ready.")
+                print(f"Running {len(jobs)} evaluation jobs in parallel...")
+                with ThreadPoolExecutor(max_workers=min(len(jobs), max_workers_jobs)) as executor:
                         future_to_job = {executor.submit(run_single_model, m, e): (m, e) for m, e in jobs}
                         for future in as_completed(future_to_job):
                                 model, _ = future_to_job[future]

@@ -22,12 +22,16 @@ class GroundTruthRAG:
     def __init__(self, embedding_model: str = "text-embedding-3-small"):
         """
         Initialize the RAG system.
-        
+
         Args:
-            embedding_model: OpenAI embedding model to use (default: text-embedding-3-small)
+            embedding_model: Embedding model to use, routed through OpenRouter
+                (default: text-embedding-3-small, auto-prefixed with "openai/")
         """
-        self.embedding_model = embedding_model
-        self.client = OpenAI()
+        self.embedding_model = embedding_model if "/" in embedding_model else f"openai/{embedding_model}"
+        self.client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=os.getenv("OPENROUTER_API_KEY"),
+        )
         self.passages = []
         self.embeddings = None
         
@@ -109,7 +113,7 @@ class GroundTruthRAG:
         
         return [self.passages[i] for i in top_indices]
     
-    @network_retry(max_retries=6, max_delay=120)
+    @network_retry(max_retries=10, max_delay=120)
     def _get_embedding(self, text: str, max_length: int = 500) -> List[float]:
         """
         Get embedding for text using OpenAI embeddings API.

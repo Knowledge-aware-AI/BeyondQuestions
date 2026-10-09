@@ -68,7 +68,7 @@ if good_entities:
 
 
 # LLM client
-client = openai.OpenAI(base_url="", api_key='')
+client = openai.OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
 
 with tqdm(total=TOTAL_TITLES, desc="Collecting and evaluating entities", initial=len(good_entities)) as pbar:
     while len(good_entities) < TOTAL_TITLES:
@@ -200,10 +200,34 @@ Respond ONLY with valid JSON in this exact format, no extra text:
     "reason": "string"
 }}"""
 
+            response_schema = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "EntityEvaluation",
+                    "description": "Informativeness/ambiguity/suitability evaluation of a candidate entity",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "informativeness": {"type": "integer"},
+                            "ambiguity": {"type": "integer"},
+                            "suitability": {"type": "integer"},
+                            "problematic": {"type": "boolean"},
+                            "reason": {"type": "string"},
+                        },
+                        "required": ["informativeness", "ambiguity", "suitability", "problematic", "reason"],
+                    },
+                },
+            }
+
             try:
                 response = client.chat.completions.create(
-                    model="meta-llama/Llama-4-Scout-17B-16E-Instruct",
-                    messages=[{"role": "user", "content": prompt}]
+                    model="google/gemma-4-26B-A4B-it",
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=3000,
+                    temperature=0.0,
+                    top_p=1.0,
+                    seed=42,
+                    response_format=response_schema,
                 )
                 content = response.choices[0].message.content.strip("```json").strip("```")
                 if not content:

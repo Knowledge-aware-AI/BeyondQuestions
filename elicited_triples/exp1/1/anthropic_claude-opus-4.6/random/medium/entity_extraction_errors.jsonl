@@ -1,0 +1,1 @@
+{"error": "Failed to extract JSON array from response", "entity": "Trichosanthin", "response": "```json\n[\n  [\"Trichosanthin\", \"instanceOf\", \"ribosome-inactivating protein\"],\n  [\"Trichosanthin\", \"instanceOf\", \"protein\"],\n  [\"Trichosanthin\", \"alsoKnownAs\", \"T"}

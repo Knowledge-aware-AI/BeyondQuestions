@@ -1,0 +1,2072 @@
+subject,predicate,object,subject_name
+Whitmell P. Martin,instanceOf,Person,Whitmell P. Martin
+SM UB-74,instanceOf,submarine,SM UB-74
+Little Brosna River,instanceOf,River,Little Brosna River
+Little Brosna River,locatedIn,Ireland,Little Brosna River
+Little Brosna River,tributaryOf,Brosna River,Little Brosna River
+Katie Kitamura,instanceOf,person,Katie Kitamura
+Katie Kitamura,occupation,writer,Katie Kitamura
+Katie Kitamura,occupation,novelist,Katie Kitamura
+Katie Kitamura,notableWork,A Separation,Katie Kitamura
+Vida Movahed,instanceOf,Person,Vida Movahed
+Vida Movahed,nationality,Iranian,Vida Movahed
+Vida Movahed,occupation,activist,Vida Movahed
+Vida Movahed,alias,The Girl of Enghelab Street,Vida Movahed
+Vida Movahed,alias,Girl of Enghelab Street,Vida Movahed
+Vida Movahed,notableFor,Publicly removing her headscarf in Tehran on Enghelab Street in December 2017,Vida Movahed
+Vida Movahed,gender,Female,Vida Movahed
+Survivor: Kaôh Rōng,instanceOf,season of the American reality television show Survivor,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,host,Jeff Probst,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,location,"Koh Rong, Cambodia",Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,network,CBS,Survivor: Kaôh Rōng
+Survivor: Kaôh Rōng,winner,Tony Vlachos,Survivor: Kaôh Rōng
+Bueng Kan province,instanceOf,Province,Bueng Kan province
+Bueng Kan province,country,Thailand,Bueng Kan province
+Bueng Kan province,region,Isan,Bueng Kan province
+Bueng Kan province,capital,Bueng Kan,Bueng Kan province
+Bueng Kan province,establishedDate,2010-03-23,Bueng Kan province
+Bueng Kan province,timezone,Asia/Bangkok,Bueng Kan province
+Bueng Kan province,geographicFeature,Mekong River,Bueng Kan province
+Bueng Kan province,borderingCountry,Lao PDR,Bueng Kan province
+Bueng Kan province,officialLanguage,Thai,Bueng Kan province
+Bueng Kan province,countryCode,TH,Bueng Kan province
+Schizonycha ruficollis,instanceOf,Species,Schizonycha ruficollis
+Horten Church,instanceOf,Church,Horten Church
+Horten Church,locatedIn,Horten,Horten Church
+Horten Church,locatedIn,Vestfold og Telemark,Horten Church
+Horten Church,locatedInCountry,Norway,Horten Church
+Horten Church,denomination,Church of Norway,Horten Church
+Tixpéhual Municipality,instanceOf,Municipality,Tixpéhual Municipality
+Tixpéhual Municipality,locatedInState,Yucatán,Tixpéhual Municipality
+Tixpéhual Municipality,locatedInCountry,Mexico,Tixpéhual Municipality
+USS Lorain (PF-93),instanceOf,Tacoma-class frigate,USS Lorain (PF-93)
+USS Lorain (PF-93),namedAfter,"Lorain, Ohio",USS Lorain (PF-93)
+USS Lorain (PF-93),hullNumber,PF-93,USS Lorain (PF-93)
+USS Lorain (PF-93),serviceBranch,United States Navy,USS Lorain (PF-93)
+Jorge Verstrynge,instanceOf,Person,Jorge Verstrynge
+Jorge Verstrynge,nationality,Spanish,Jorge Verstrynge
+Jorge Verstrynge,occupation,political scientist,Jorge Verstrynge
+Jorge Verstrynge,occupation,politician,Jorge Verstrynge
+Jorge Verstrynge,fieldOfStudy,Political science,Jorge Verstrynge
+Brand USA,instanceOf,Organization,Brand USA
+Brand USA,purpose,Promote travel to the United States,Brand USA
+Brand USA,establishedBy,Travel Promotion Act,Brand USA
+Brand USA,fundingModel,Public-private partnership funding,Brand USA
+Brand USA,legalStatus,nonprofit organization,Brand USA
+Brand USA,mission,Increase international visitation to the United States and generate economic impact,Brand USA
+Brand USA,officialWebsite,brandusa.com,Brand USA
+Brand USA,activity,Marketing and promotion of U.S. travel and tourism,Brand USA
+Brand USA,governanceModel,Public-private partnership,Brand USA
+Counter-Terrorism and Border Security Act 2019,instanceOf,UK Act of Parliament,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,jurisdiction,United Kingdom,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,type,legislation,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,shortTitle,Counter-Terrorism and Border Security Act 2019,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,longTitle,An Act to make provision about counter-terrorism and border security,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,enactedYear,2019,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,status,in force,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,purpose,to strengthen counter-terrorism measures and border security,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,subjectArea,National security,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,subjectArea,Immigration and border control,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,origin,Parliament of the United Kingdom,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,enactedBy,UK Parliament,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,scope,Public general act applying to the United Kingdom,Counter-Terrorism and Border Security Act 2019
+Counter-Terrorism and Border Security Act 2019,mainArea,Counter-terrorism,Counter-Terrorism and Border Security Act 2019
+Ministry of Justice (Niger),instanceOf,government ministry of Niger,Ministry of Justice (Niger)
+Ministry of Justice (Niger),country,Niger,Ministry of Justice (Niger)
+Ministry of Justice (Niger),parentOrganization,Government of Niger,Ministry of Justice (Niger)
+Ministry of Justice (Niger),responsibleFor,administration of justice in Niger,Ministry of Justice (Niger)
+Ministry of Justice (Niger),domain,justice system in Niger,Ministry of Justice (Niger)
+2019 AQ3,instanceOf,asteroid,2019 AQ3
+Cartagena Cathedral,instanceOf,Cathedral,Cartagena Cathedral
+Cartagena Cathedral,locatedIn,Cartagena,Cartagena Cathedral
+Cartagena Cathedral,dedication,Saint Catherine of Alexandria,Cartagena Cathedral
+Cartagena Cathedral,seatOf,Archdiocese of Cartagena,Cartagena Cathedral
+Cartagena Cathedral,religion,Roman Catholic,Cartagena Cathedral
+2016 FIFA U-17 Women's World Cup,instanceOf,FIFA U-17 Women's World Cup,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,startDate,2016-09-30,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,endDate,2016-10-21,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,hostCountry,Jordan,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,sport,Football (soccer),2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,gender,women,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,ageGroup,Under-17,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,numberOfTeams,16,2016 FIFA U-17 Women's World Cup
+2016 FIFA U-17 Women's World Cup,organizingBody,FIFA,2016 FIFA U-17 Women's World Cup
+Ohio State Route 292,instanceOf,State Route,Ohio State Route 292
+Ohio State Route 292,locatedInState,Ohio,Ohio State Route 292
+Ohio State Route 292,locatedInCountry,United States,Ohio State Route 292
+Ohio State Route 292,alternateName,SR 292,Ohio State Route 292
+"Milbank Arms, Barningham",instanceOf,Public house,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",locatedIn,Barningham,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",locatedIn,North Yorkshire,"Milbank Arms, Barningham"
+"Milbank Arms, Barningham",locatedIn,England,"Milbank Arms, Barningham"
+Draupner wave,instanceOf,rogue wave,Draupner wave
+Draupner wave,alsoKnownAs,New Year's Wave,Draupner wave
+Draupner wave,observedAt,"Draupner oil platform, North Sea",Draupner wave
+Draupner wave,dateOfObservation,1995-01-01,Draupner wave
+Draupner wave,crestHeight,25.6 meters,Draupner wave
+Draupner wave,heightAboveMeanSeaLevel,25.6 meters,Draupner wave
+Draupner wave,significantWaveHeightThatDay,approximately 12 meters,Draupner wave
+Draupner wave,location,North Sea,Draupner wave
+Draupner wave,notableFact,first confirmed direct measurement of a rogue wave,Draupner wave
+Draupner wave,contributedTo,advancement of rogue wave research and probabilistic models,Draupner wave
+Draupner wave,observedBy,onboard instruments on the Draupner S platform,Draupner wave
+Draupner wave,epoch,New Year's Day 1995,Draupner wave
+Draupner wave,impact,validated theories of rogue waves and spurred further research,Draupner wave
+Draupner wave,type,single high-energy wave within a sea state,Draupner wave
+Draupner wave,historicalSignificance,pivotal case in the study of ocean rogue waves,Draupner wave
+Nuraghe Genna Maria,instanceOf,Nuraghe,Nuraghe Genna Maria
+Nuraghe Genna Maria,locatedIn,Sardinia,Nuraghe Genna Maria
+Park Ji-hyun (curler),instanceOf,Person,Park Ji-hyun (curler)
+Durga Shanker Mishra,instanceOf,person,Durga Shanker Mishra
+WeTransfer,instanceOf,Organization,WeTransfer
+WeTransfer,countryOfOrigin,Netherlands,WeTransfer
+WeTransfer,foundedYear,2009,WeTransfer
+WeTransfer,headquartersLocation,"Amsterdam, Netherlands",WeTransfer
+WeTransfer,website,https://wetransfer.com,WeTransfer
+WeTransfer,domain,wetransfer.com,WeTransfer
+WeTransfer,serviceType,Online file transfer service,WeTransfer
+WeTransfer,industry,Technology,WeTransfer
+WeTransfer,hasProduct,WeTransfer Free,WeTransfer
+WeTransfer,hasProduct,WeTransfer Pro,WeTransfer
+WeTransfer,headquartersCity,Amsterdam,WeTransfer
+WeTransfer,headquartersCountry,Netherlands,WeTransfer
+WeTransfer,regionServed,Global,WeTransfer
+2012 World Junior Ice Hockey Championships,instanceOf,IIHF World U20 Championship,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,sport,Ice hockey,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,organizer,International Ice Hockey Federation,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,hostCountry,Canada,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,startDate,2011-12-26,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,endDate,2012-01-05,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,hostCity,Edmonton,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,hostCity,Calgary,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,venues,Rexall Place,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,venues,Scotiabank Saddledome,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,numParticipatingTeams,10,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,previousEdition,2011 World Junior Ice Hockey Championships,2012 World Junior Ice Hockey Championships
+2012 World Junior Ice Hockey Championships,nextEdition,2013 World Junior Ice Hockey Championships,2012 World Junior Ice Hockey Championships
+The Squeaker (1963 film),instanceOf,Film,The Squeaker (1963 film)
+Großkrotzenburg,instanceOf,Municipality,Großkrotzenburg
+Großkrotzenburg,locatedInState,Hesse,Großkrotzenburg
+Großkrotzenburg,locatedInCountry,Germany,Großkrotzenburg
+Großkrotzenburg,locatedInDistrict,Main-Kinzig-Kreis,Großkrotzenburg
+Großkrotzenburg,locatedOn,Main,Großkrotzenburg
+Großkrotzenburg,locatedInRegion,Frankfurt-Rhine-Main,Großkrotzenburg
+Rodriguésia (journal),instanceOf,academic journal,Rodriguésia (journal)
+Saxton Oval,instanceOf,cricket ground,Saxton Oval
+Saxton Oval,locatedInCity,Nelson,Saxton Oval
+Saxton Oval,locatedInCountry,New Zealand,Saxton Oval
+Saxton Oval,primaryUse,cricket,Saxton Oval
+Saxton Oval,hasHosted,One Day International matches,Saxton Oval
+North Central Hardwood Forests,instanceOf,ecoregion,North Central Hardwood Forests
+Zapolyariye,instanceOf,geographic region,Zapolyariye
+Zapolyariye,locatedIn,Russia,Zapolyariye
+Zapolyariye,description,the polar/arctic region of Russia,Zapolyariye
+Zapolyariye,alternativeName,Заполярье,Zapolyariye
+Zapolyariye,regionType,Arctic region,Zapolyariye
+Zapolyariye,commonLanguage,Russian,Zapolyariye
+Zapolyariye,partOf,the Russian Arctic,Zapolyariye
+2012 Stockport Metropolitan Borough Council election,instanceOf,local election in England,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,location,"Stockport, Greater Manchester, England",2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,country,United Kingdom,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,date,2012-05-03,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,partOf,2012 United Kingdom local elections,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,organizingBody,Stockport Metropolitan Borough Council,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,electoralSystem,First past the post,2012 Stockport Metropolitan Borough Council election
+2012 Stockport Metropolitan Borough Council election,council,Stockport Metropolitan Borough Council,2012 Stockport Metropolitan Borough Council election
+Misfat al Abriyeen,instanceOf,village,Misfat al Abriyeen
+Misfat al Abriyeen,locatedInCountry,Oman,Misfat al Abriyeen
+Misfat al Abriyeen,locatedInGovernorate,Ad Dakhiliyah Governorate,Misfat al Abriyeen
+Misfat al Abriyeen,locatedInWilayat,Al Hamra,Misfat al Abriyeen
+Misfat al Abriyeen,type,mountain village,Misfat al Abriyeen
+Misfat al Abriyeen,famousFor,terraced gardens,Misfat al Abriyeen
+Misfat al Abriyeen,famousFor,mud-brick houses,Misfat al Abriyeen
+Misfat al Abriyeen,hasIrrigationSystem,falaj (ancient irrigation system),Misfat al Abriyeen
+Misfat al Abriyeen,architecture,traditional mud-brick houses,Misfat al Abriyeen
+Misfat al Abriyeen,alternativeName,Misfat al-Abriyeen,Misfat al Abriyeen
+Misfat al Abriyeen,isTouristDestination,true,Misfat al Abriyeen
+Misfat al Abriyeen,language,Arabic,Misfat al Abriyeen
+2010–11 Kent State Golden Flashes men's basketball team,instanceOf,NCAA Division I men's basketball team,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,university,Kent State University,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,conference,Mid-American Conference,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,homeArena,Memorial Athletic and Convocation Center,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,headCoach,Geno Ford,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,season,2010–11,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,sport,basketball,2010–11 Kent State Golden Flashes men's basketball team
+2010–11 Kent State Golden Flashes men's basketball team,gender,men,2010–11 Kent State Golden Flashes men's basketball team
+Lesser amberjack,instanceOf,fish,Lesser amberjack
+Lesser amberjack,family,Carangidae,Lesser amberjack
+Lesser amberjack,genus,Seriola,Lesser amberjack
+Lesser amberjack,scientificName,Seriola fasciata,Lesser amberjack
+Lesser amberjack,habitat,marine,Lesser amberjack
+Lesser amberjack,habitat,reef-associated,Lesser amberjack
+Lesser amberjack,diet,carnivorous,Lesser amberjack
+Lesser amberjack,distribution,Western Atlantic Ocean,Lesser amberjack
+Black-capped foliage-gleaner,instanceOf,Bird,Black-capped foliage-gleaner
+Rådmandsgade,instanceOf,Street,Rådmandsgade
+Rådmandsgade,locatedInCity,Copenhagen,Rådmandsgade
+Rådmandsgade,locatedInCountry,Denmark,Rådmandsgade
+Rådmandsgade,locatedInDistrict,Nørrebro,Rådmandsgade
+Rådmandsgade,partOfMunicipality,Copenhagen Municipality,Rådmandsgade
+Études (journal),instanceOf,academic journal,Études (journal)
+National Route 306 (Costa Rica),instanceOf,NationalRoute,National Route 306 (Costa Rica)
+National Route 306 (Costa Rica),locatedIn,Costa Rica,National Route 306 (Costa Rica)
+National Route 306 (Costa Rica),routeNumber,306,National Route 306 (Costa Rica)
+2–8a Rutland Gate,instanceOf,Building,2–8a Rutland Gate
+Haris Hajradinović,instanceOf,Person,Haris Hajradinović
+Arp 273,instanceOf,Galaxy,Arp 273
+Arp 273,catalog,Atlas of Peculiar Galaxies,Arp 273
+Arp 273,classification,Peculiar Galaxy,Arp 273
+Chengdu J-20,instanceOf,fighter aircraft,Chengdu J-20
+Chengdu J-20,generation,fifth generation,Chengdu J-20
+Chengdu J-20,countryOfOrigin,China,Chengdu J-20
+Chengdu J-20,manufacturer,Chengdu Aircraft Industry Group,Chengdu J-20
+Chengdu J-20,operator,People's Liberation Army Air Force,Chengdu J-20
+Chengdu J-20,firstFlight,2011-01-11,Chengdu J-20
+Chengdu J-20,publicReveal,Air Show China 2016,Chengdu J-20
+Chengdu J-20,enteredService,2017,Chengdu J-20
+Chengdu J-20,designPurpose,air superiority,Chengdu J-20
+Chengdu J-20,propulsion,twin-engine,Chengdu J-20
+Chengdu J-20,enginesUsed,WS-10B; WS-15,Chengdu J-20
+Chengdu J-20,weaponsBays,internal weapon bays,Chengdu J-20
+Chengdu J-20,armament,air-to-air missiles,Chengdu J-20
+Chengdu J-20,primaryMissile,PL-15,Chengdu J-20
+Chengdu J-20,radar,AESA radar,Chengdu J-20
+Chengdu J-20,stealthFeatures,low-observable airframe,Chengdu J-20
+Chengdu J-20,crew,1,Chengdu J-20
+Chengdu J-20,designation,J-20,Chengdu J-20
+Chengdu J-20,role,stealth fighter,Chengdu J-20
+"Friary Church of St Francis and St Anthony, Crawley",instanceOf,Roman Catholic church,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",location,"Crawley, West Sussex, England","Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",denomination,Roman Catholic,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",diocese,Diocese of Arundel and Brighton,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",patronSaint,St Francis,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",patronSaint,St Anthony,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",dedication,St Francis,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",dedication,St Anthony,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",country,England,"Friary Church of St Francis and St Anthony, Crawley"
+"Friary Church of St Francis and St Anthony, Crawley",region,South East England,"Friary Church of St Francis and St Anthony, Crawley"
+Salmo ciscaucasicus,instanceOf,Species,Salmo ciscaucasicus
+Salmo ciscaucasicus,genus,Salmo,Salmo ciscaucasicus
+Salmo ciscaucasicus,family,Salmonidae,Salmo ciscaucasicus
+Salmo ciscaucasicus,order,Salmoniformes,Salmo ciscaucasicus
+Salmo ciscaucasicus,class,Actinopterygii,Salmo ciscaucasicus
+Salmo ciscaucasicus,phylum,Chordata,Salmo ciscaucasicus
+Salmo ciscaucasicus,kingdom,Animalia,Salmo ciscaucasicus
+Salmo ciscaucasicus,habitat,freshwater rivers and streams,Salmo ciscaucasicus
+Salmo ciscaucasicus,distribution,Caucasus region,Salmo ciscaucasicus
+Salmo ciscaucasicus,conservationStatus,Unknown,Salmo ciscaucasicus
+HMS Reindeer (1883),instanceOf,Royal Navy ship,HMS Reindeer (1883)
+Qihoo 360,instanceOf,company,Qihoo 360
+Qihoo 360,fullName,"Qihoo 360 Technology Co., Ltd.",Qihoo 360
+Qihoo 360,foundedYear,2005,Qihoo 360
+Qihoo 360,headquarters,"Beijing, China",Qihoo 360
+Qihoo 360,countryOfOrigin,China,Qihoo 360
+Qihoo 360,industry,Internet security,Qihoo 360
+Qihoo 360,founder,Zhou Hongyi,Qihoo 360
+Qihoo 360,ceo,Zhou Hongyi,Qihoo 360
+Qihoo 360,website,https://www.360.cn,Qihoo 360
+Qihoo 360,product,360 Safe (360 Safeguard) Antivirus,Qihoo 360
+Qihoo 360,product,360 Total Security,Qihoo 360
+Qihoo 360,product,360 Browser,Qihoo 360
+Qihoo 360,product,360 Mobile Security,Qihoo 360
+Qihoo 360,product,360 Cloud Drive,Qihoo 360
+Qihoo 360,product,360 Secure Browser,Qihoo 360
+Qihoo 360,brand,360 Security,Qihoo 360
+Qihoo 360,areaOfOperation,China,Qihoo 360
+Qihoo 360,notableFact,Known for antivirus software and internet security services,Qihoo 360
+Chief Justice of Hungary,instanceOf,Title,Chief Justice of Hungary
+Chief Justice of Hungary,partOf,Judiciary of Hungary,Chief Justice of Hungary
+Chief Justice of Hungary,locatedIn,Hungary,Chief Justice of Hungary
+Telefónica Argentina,instanceOf,company,Telefónica Argentina
+Telefónica Argentina,locatedIn,Argentina,Telefónica Argentina
+Telefónica Argentina,industry,telecommunications,Telefónica Argentina
+Telefónica Argentina,parentCompany,Telefónica S.A.,Telefónica Argentina
+Telefónica Argentina,brand,Movistar,Telefónica Argentina
+Telefónica Argentina,serviceArea,Argentina,Telefónica Argentina
+Wimalaratne Kumaragama,instanceOf,Person,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,nationality,Sri Lankan,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,language,Sinhala,Wimalaratne Kumaragama
+Wimalaratne Kumaragama,occupation,poet,Wimalaratne Kumaragama
+Saxifraga rufescens,instanceOf,species,Saxifraga rufescens
+Saxifraga rufescens,genus,Saxifraga,Saxifraga rufescens
+Saxifraga rufescens,family,Saxifragaceae,Saxifraga rufescens
+Saxifraga rufescens,order,Saxifragales,Saxifraga rufescens
+Saxifraga rufescens,kingdom,Plantae,Saxifraga rufescens
+Saxifraga rufescens,clade,Angiosperms,Saxifraga rufescens
+Saxifraga rufescens,clade,Eudicots,Saxifraga rufescens
+Glières-Val-de-Borne,instanceOf,Commune,Glières-Val-de-Borne
+Glières-Val-de-Borne,locatedInCountry,France,Glières-Val-de-Borne
+Glières-Val-de-Borne,locatedInRegion,Auvergne-Rhône-Alpes,Glières-Val-de-Borne
+Glières-Val-de-Borne,locatedInDepartment,Haute-Savoie,Glières-Val-de-Borne
+Trimbach railway station,instanceOf,Railway station,Trimbach railway station
+Trimbach railway station,locatedIn,Trimbach,Trimbach railway station
+Trimbach railway station,locatedIn,Canton Solothurn,Trimbach railway station
+Trimbach railway station,locatedInCountry,Switzerland,Trimbach railway station
+Trimbach railway station,operator,Swiss Federal Railways,Trimbach railway station
+Broch of Culswick,instanceOf,Broch,Broch of Culswick
+Broch of Culswick,location,"Culswick, West Mainland, Shetland, Scotland",Broch of Culswick
+Broch of Culswick,region,Shetland,Broch of Culswick
+Broch of Culswick,country,Scotland,Broch of Culswick
+Broch of Culswick,era,Iron Age,Broch of Culswick
+Broch of Culswick,material,stone,Broch of Culswick
+"Alan Franco (footballer, born 1996)",instanceOf,Footballer,"Alan Franco (footballer, born 1996)"
+Esporte Clube São Luiz,instanceOf,Football club,Esporte Clube São Luiz
+Esporte Clube São Luiz,country,Brazil,Esporte Clube São Luiz
+Esporte Clube São Luiz,sport,Football,Esporte Clube São Luiz
+Armadillidae,instanceOf,family,Armadillidae
+Armadillidae,belongsTo,Oniscidea,Armadillidae
+Armadillidae,belongsTo,Isopoda,Armadillidae
+Armadillidae,belongsTo,Malacostraca,Armadillidae
+Armadillidae,belongsTo,Crustacea,Armadillidae
+Armadillidae,belongsTo,Arthropoda,Armadillidae
+Armadillidae,belongsTo,Animalia,Armadillidae
+Armadillidae,habitat,terrestrial,Armadillidae
+Armadillidae,diet,detritivore,Armadillidae
+Armadillidae,reproduction,sexual,Armadillidae
+Armadillidae,numberOfLegs,7,Armadillidae
+Armadillidae,defense,conglobation,Armadillidae
+Armadillidae,distribution,cosmopolitan,Armadillidae
+Armadillidae,group,woodlice,Armadillidae
+Armadillidae,commonName,pill woodlice,Armadillidae
+Armadillidae,characteristic,isopod crustacean,Armadillidae
+Line S4 (Milan suburban railway service),instanceOf,Milan suburban railway line,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),locatedIn,Lombardy,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),country,Italy,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),operator,Trenord,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),partOf,Milan suburban railway service,Line S4 (Milan suburban railway service)
+Line S4 (Milan suburban railway service),serviceType,suburban rail,Line S4 (Milan suburban railway service)
+Municipality of Izola,instanceOf,municipality,Municipality of Izola
+Municipality of Izola,locatedInCountry,Slovenia,Municipality of Izola
+Municipality of Izola,locatedInTraditionalRegion,Slovenian Istria,Municipality of Izola
+Municipality of Izola,locatedInStatisticalRegion,Coastal-Karst,Municipality of Izola
+Municipality of Izola,seat,Izola,Municipality of Izola
+Municipality of Izola,coastsOn,Adriatic Sea,Municipality of Izola
+Municipality of Izola,officialLanguage,Slovene,Municipality of Izola
+Municipality of Izola,alternativeItalianName,Isola d'Istria,Municipality of Izola
+Casey Crawford (American football),instanceOf,Person,Casey Crawford (American football)
+Casey Crawford (American football),occupation,American football player,Casey Crawford (American football)
+"Baranovka, Narimanovsky District, Astrakhan Oblast",instanceOf,rural locality,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",locatedIn,Narimanovsky District,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",locatedIn,Astrakhan Oblast,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",locatedIn,Russia,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+"Baranovka, Narimanovsky District, Astrakhan Oblast",country,Russia,"Baranovka, Narimanovsky District, Astrakhan Oblast"
+West Thurrock Lagoon and Marshes,instanceOf,Nature Reserve,West Thurrock Lagoon and Marshes
+West Thurrock Lagoon and Marshes,instanceOf,Site of Special Scientific Interest,West Thurrock Lagoon and Marshes
+West Thurrock Lagoon and Marshes,locatedIn,Essex,West Thurrock Lagoon and Marshes
+West Thurrock Lagoon and Marshes,locatedInCountry,United Kingdom,West Thurrock Lagoon and Marshes
+West Thurrock Lagoon and Marshes,hasHabitat,Salt marsh,West Thurrock Lagoon and Marshes
+West Thurrock Lagoon and Marshes,hasHabitat,Wetland,West Thurrock Lagoon and Marshes
+"Lille Kamøya, Nordkapp",instanceOf,Island,"Lille Kamøya, Nordkapp"
+"Lille Kamøya, Nordkapp",locatedInMunicipality,Nordkapp,"Lille Kamøya, Nordkapp"
+"Lille Kamøya, Nordkapp",locatedInCounty,Troms og Finnmark,"Lille Kamøya, Nordkapp"
+"Lille Kamøya, Nordkapp",locatedInCountry,Norway,"Lille Kamøya, Nordkapp"
+House-Museum of Samad Vurgun,instanceOf,Museum,House-Museum of Samad Vurgun
+Black-throated magpie-jay,instanceOf,Bird,Black-throated magpie-jay
+Black-throated magpie-jay,scientificName,Calocitta colliei,Black-throated magpie-jay
+Black-throated magpie-jay,commonName,Black-throated magpie-jay,Black-throated magpie-jay
+Black-throated magpie-jay,taxonRank,species,Black-throated magpie-jay
+Black-throated magpie-jay,genus,Calocitta,Black-throated magpie-jay
+Black-throated magpie-jay,family,Corvidae,Black-throated magpie-jay
+Black-throated magpie-jay,order,Passeriformes,Black-throated magpie-jay
+Black-throated magpie-jay,class,Aves,Black-throated magpie-jay
+Black-throated magpie-jay,habitat,forest,Black-throated magpie-jay
+Black-throated magpie-jay,habitat,woodland,Black-throated magpie-jay
+Black-throated magpie-jay,diet,omnivorous,Black-throated magpie-jay
+Black-throated magpie-jay,vocalization,loud calls,Black-throated magpie-jay
+Black-throated magpie-jay,behavior,social (often in pairs or small groups),Black-throated magpie-jay
+Black-throated magpie-jay,distribution,Mexico,Black-throated magpie-jay
+Black-throated magpie-jay,distribution,Central America,Black-throated magpie-jay
+Black-throated magpie-jay,conservationStatus,Least Concern,Black-throated magpie-jay
+Anacamptis collina,instanceOf,Plant,Anacamptis collina
+Anacamptis collina,taxonRank,Species,Anacamptis collina
+Anacamptis collina,belongsToGenus,Anacamptis,Anacamptis collina
+Anacamptis collina,belongsToFamily,Orchidaceae,Anacamptis collina
+Anacamptis collina,order,Asparagales,Anacamptis collina
+Anacamptis collina,class,Monocotyledons,Anacamptis collina
+Le Bal (novella),instanceOf,novella,Le Bal (novella)
+Research in Developmental Disabilities,instanceOf,Journal,Research in Developmental Disabilities
+Research in Developmental Disabilities,publisher,Elsevier,Research in Developmental Disabilities
+Research in Developmental Disabilities,language,English,Research in Developmental Disabilities
+BET Awards 2011,instanceOf,BET Awards ceremony,BET Awards 2011
+BET Awards 2011,edition,11th,BET Awards 2011
+BET Awards 2011,organisingBody,BET Networks,BET Awards 2011
+BET Awards 2011,country,United States,BET Awards 2011
+BET Awards 2011,format,televised award ceremony,BET Awards 2011
+"Rodrigo Alonso (footballer, born 1982)",instanceOf,Footballer,"Rodrigo Alonso (footballer, born 1982)"
+USS LST-952,instanceOf,United States Navy ship,USS LST-952
+Desmodus draculae,instanceOf,species,Desmodus draculae
+Desmodus draculae,genus,Desmodus,Desmodus draculae
+Desmodus draculae,family,Phyllostomidae,Desmodus draculae
+Desmodus draculae,order,Chiroptera,Desmodus draculae
+Desmodus draculae,class,Mammalia,Desmodus draculae
+Desmodus draculae,phylum,Chordata,Desmodus draculae
+Desmodus draculae,domain,Eukaryota,Desmodus draculae
+Desmodus draculae,kingdom,Animalia,Desmodus draculae
+Desmodus draculae,extinct,true,Desmodus draculae
+Desmodus draculae,diet,hematophagous,Desmodus draculae
+Desmodus draculae,isA,vampire bat,Desmodus draculae
+Desmodus draculae,size,large,Desmodus draculae
+Desmodus draculae,largerThan,Desmodus rotundus,Desmodus draculae
+Desmodus draculae,geographicDistribution,South America,Desmodus draculae
+Desmodus draculae,closestLivingRelative,Desmodus rotundus,Desmodus draculae
+Desmodus draculae,knownFrom,fossil remains,Desmodus draculae
+Giovanni Maria da Varano,instanceOf,Person,Giovanni Maria da Varano
+Serious Sam,instanceOf,Video game character,Serious Sam
+Serious Sam,genre,First-person shooter,Serious Sam
+Serious Sam,developedBy,Croteam,Serious Sam
+Serious Sam,appearsIn,Serious Sam: The First Encounter,Serious Sam
+Serious Sam,appearsIn,Serious Sam: The Second Encounter,Serious Sam
+Serious Sam,appearsIn,Serious Sam 3: BFE,Serious Sam
+Serious Sam,appearsIn,Serious Sam 4,Serious Sam
+Serious Sam,inSeries,Serious Sam series,Serious Sam
+Ascanio della Corgna,instanceOf,Person,Ascanio della Corgna
+Kenneth Binmoeller,instanceOf,Person,Kenneth Binmoeller
+Remscheid Hauptbahnhof,instanceOf,Bahnhof,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedInCity,Remscheid,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedInState,North Rhine-Westphalia,Remscheid Hauptbahnhof
+Remscheid Hauptbahnhof,locatedInCountry,Germany,Remscheid Hauptbahnhof
+Better Late Than Never (1979 film),instanceOf,Film,Better Late Than Never (1979 film)
+Piponisiw River,instanceOf,River,Piponisiw River
+Tingel-Tangel (1930 film),instanceOf,Film,Tingel-Tangel (1930 film)
+American College of Greece,instanceOf,educational institution,American College of Greece
+American College of Greece,location,"Athens, Greece",American College of Greece
+American College of Greece,country,Greece,American College of Greece
+American College of Greece,type,private higher education institution,American College of Greece
+American College of Greece,alsoKnownAs,DEREE - The American College of Greece,American College of Greece
+American College of Greece,hasCampus,Athens campus,American College of Greece
+American College of Greece,accreditation,New England Association of Schools and Colleges (NEASC),American College of Greece
+American College of Greece,offersProgram,Bachelor's degrees,American College of Greece
+American College of Greece,offersProgram,Master's degrees,American College of Greece
+"Ternovoye, Podgorensky District, Voronezh Oblast",instanceOf,selo,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",locatedIn,Podgorensky District,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",locatedIn,Voronezh Oblast,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Ternovoye, Podgorensky District, Voronezh Oblast",country,Russia,"Ternovoye, Podgorensky District, Voronezh Oblast"
+"Borisoglebsky, Murmansk Oblast",instanceOf,inhabited locality,"Borisoglebsky, Murmansk Oblast"
+Sandaker senter tram stop,instanceOf,tramStop,Sandaker senter tram stop
+Sandaker senter tram stop,locatedIn,Oslo,Sandaker senter tram stop
+Sandaker senter tram stop,country,Norway,Sandaker senter tram stop
+Sandaker senter tram stop,transitMode,tram,Sandaker senter tram stop
+Jatt & Juliet 2,instanceOf,film,Jatt & Juliet 2
+Jatt & Juliet 2,title,Jatt & Juliet 2,Jatt & Juliet 2
+Jatt & Juliet 2,language,Punjabi,Jatt & Juliet 2
+Jatt & Juliet 2,country,India,Jatt & Juliet 2
+Jatt & Juliet 2,releaseYear,2013,Jatt & Juliet 2
+Jatt & Juliet 2,director,Anurag Singh,Jatt & Juliet 2
+Jatt & Juliet 2,starring,Diljit Dosanjh,Jatt & Juliet 2
+Jatt & Juliet 2,starring,Neeru Bajwa,Jatt & Juliet 2
+Jatt & Juliet 2,sequelTo,Jatt & Juliet,Jatt & Juliet 2
+Jatt & Juliet 2,genre,Romantic comedy,Jatt & Juliet 2
+Ife National Museum,instanceOf,Museum,Ife National Museum
+Ife National Museum,locatedIn,Ile-Ife,Ife National Museum
+Ife National Museum,country,Nigeria,Ife National Museum
+Voyant Tools,instanceOf,web-based text analysis environment,Voyant Tools
+Voyant Tools,instanceOf,software tool,Voyant Tools
+Voyant Tools,creator,Stéfan Sinclair,Voyant Tools
+Voyant Tools,creator,Geoffrey Rockwell,Voyant Tools
+Voyant Tools,developedBy,Stéfan Sinclair and Geoffrey Rockwell,Voyant Tools
+Voyant Tools,website,https://voyant-tools.org/,Voyant Tools
+Voyant Tools,purpose,to analyze and visualize text data,Voyant Tools
+Voyant Tools,domain,digital humanities,Voyant Tools
+Voyant Tools,platform,web browser,Voyant Tools
+Voyant Tools,license,open-source,Voyant Tools
+Voyant Tools,feature,Cirrus (word cloud),Voyant Tools
+Voyant Tools,feature,Trends (word frequency over time),Voyant Tools
+Voyant Tools,feature,Keywords in Context (KWIC),Voyant Tools
+Voyant Tools,feature,WordTree (contextual exploration),Voyant Tools
+Voyant Tools,feature,statistical summaries,Voyant Tools
+Voyant Tools,inputSupport,plain text documents,Voyant Tools
+Voyant Tools,inputSupport,HTML content,Voyant Tools
+Voyant Tools,hosting,voyant-tools.org,Voyant Tools
+Voyant Tools,status,active/maintained project,Voyant Tools
+Voyant Tools,usage,used in digital humanities teaching and research,Voyant Tools
+Voyant Tools,documentation,online documentation available,Voyant Tools
+Voyant Tools,repository,open-source code on GitHub,Voyant Tools
+Wendy Mogel,instanceOf,Person,Wendy Mogel
+Wendy Mogel,occupation,Psychologist,Wendy Mogel
+Wendy Mogel,field,Psychology,Wendy Mogel
+Wendy Mogel,authorOf,The Blessing of a Skinned Knee,Wendy Mogel
+Wendy Mogel,notableWork,The Blessing of a Skinned Knee,Wendy Mogel
+China Railway CR400AF,instanceOf,High-speed train,China Railway CR400AF
+China Railway CR400AF,instanceOf,CR400Fuxing family train,China Railway CR400AF
+China Railway CR400AF,manufacturer,CRRC,China Railway CR400AF
+China Railway CR400AF,operator,China Railway,China Railway CR400AF
+China Railway CR400AF,serviceRegion,China,China Railway CR400AF
+China Railway CR400AF,lineOperatedOn,Beijing–Shanghai High-Speed Railway,China Railway CR400AF
+China Railway CR400AF,energySource,Electric,China Railway CR400AF
+China Railway CR400AF,trainType,EMU,China Railway CR400AF
+China Railway CR400AF,maximumSpeed,350 km/h,China Railway CR400AF
+China Railway CR400AF,countryOfOrigin,China,China Railway CR400AF
+China Railway CR400AF,operationalStatus,In service,China Railway CR400AF
+China Railway CR400AF,series,CR400,China Railway CR400AF
+"Dmytrivka, Chernihiv Oblast",instanceOf,village,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedInCountry,Ukraine,"Dmytrivka, Chernihiv Oblast"
+"Dmytrivka, Chernihiv Oblast",locatedInRegion,Chernihiv Oblast,"Dmytrivka, Chernihiv Oblast"
+"Sipesville, Pennsylvania",instanceOf,unincorporated community,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",locatedInState,Pennsylvania,"Sipesville, Pennsylvania"
+"Sipesville, Pennsylvania",locatedInCountry,United States,"Sipesville, Pennsylvania"
+Mionnay station,instanceOf,Railway station,Mionnay station
+Mionnay station,locatedIn,Mionnay,Mionnay station
+Mionnay station,locatedIn,Ain,Mionnay station
+Mionnay station,locatedIn,Auvergne-Rhône-Alpes,Mionnay station
+Mionnay station,locatedIn,France,Mionnay station
+Mionnay station,operator,SNCF,Mionnay station
+Philip Adolphe Klier,instanceOf,Person,Philip Adolphe Klier
+Bailey's Dam,instanceOf,dam,Bailey's Dam
+Day of Reckoning (1933 film),instanceOf,Film,Day of Reckoning (1933 film)
+Day of Reckoning (1933 film),releaseYear,1933,Day of Reckoning (1933 film)
+Gordon Jackson Rees,instanceOf,Person,Gordon Jackson Rees
+Otakar Šín,instanceOf,Person,Otakar Šín
+Danny Abeckaser,instanceOf,Person,Danny Abeckaser
+Danny Abeckaser,name,Danny Abeckaser,Danny Abeckaser
+Danny Abeckaser,alternateName,Danny A.,Danny Abeckaser
+Danny Abeckaser,occupation,actor,Danny Abeckaser
+Danny Abeckaser,occupation,film director,Danny Abeckaser
+Staphylococcus schleiferi,instanceOf,Species,Staphylococcus schleiferi
+Staphylococcus schleiferi,genus,Staphylococcus,Staphylococcus schleiferi
+Staphylococcus schleiferi,family,Staphylococcaceae,Staphylococcus schleiferi
+Staphylococcus schleiferi,order,Bacillales,Staphylococcus schleiferi
+Staphylococcus schleiferi,class,Bacilli,Staphylococcus schleiferi
+Staphylococcus schleiferi,phylum,Firmicutes,Staphylococcus schleiferi
+Staphylococcus schleiferi,domain,Bacteria,Staphylococcus schleiferi
+Staphylococcus schleiferi,gramStain,Gram-positive,Staphylococcus schleiferi
+Staphylococcus schleiferi,cellMorphology,cocci in grape-like clusters,Staphylococcus schleiferi
+Staphylococcus schleiferi,catalaseStatus,positive,Staphylococcus schleiferi
+Staphylococcus schleiferi subsp. schleiferi,instanceOf,Subspecies,Staphylococcus schleiferi
+Staphylococcus schleiferi subsp. coagulans,instanceOf,Subspecies,Staphylococcus schleiferi
+Staphylococcus schleiferi subsp. schleiferi,coagulaseStatus,negative,Staphylococcus schleiferi
+Staphylococcus schleiferi subsp. coagulans,coagulaseStatus,positive,Staphylococcus schleiferi
+Staphylococcus schleiferi,hasSubspecies,Staphylococcus schleiferi subsp. schleiferi,Staphylococcus schleiferi
+Staphylococcus schleiferi,hasSubspecies,Staphylococcus schleiferi subsp. coagulans,Staphylococcus schleiferi
+Staphylococcus schleiferi,typicalHost,Dogs,Staphylococcus schleiferi
+Staphylococcus schleiferi,habitat,canine skin and ear canal,Staphylococcus schleiferi
+Staphylococcus schleiferi,causes,canine otitis externa,Staphylococcus schleiferi
+Staphylococcus schleiferi,causes,canine dermatitis,Staphylococcus schleiferi
+Staphylococcus schleiferi,pathogenicity,opportunistic pathogen,Staphylococcus schleiferi
+Staphylococcus schleiferi,motility,non-motile,Staphylococcus schleiferi
+Staphylococcus schleiferi,sporeFormation,non-spore-forming,Staphylococcus schleiferi
+Staphylococcus schleiferi,oxygenRequirement,facultative anaerobe,Staphylococcus schleiferi
+Mucuri Airport,instanceOf,Airport,Mucuri Airport
+Puente Genil-Herrera railway station,instanceOf,railway station,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,locatedIn,Puente Genil,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,locatedInCountry,Spain,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,locatedInRegion,Andalusia,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,locatedInProvince,Córdoba,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,ownedBy,Adif,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,operatedBy,Renfe,Puente Genil-Herrera railway station
+Puente Genil-Herrera railway station,status,active,Puente Genil-Herrera railway station
+Oregon Route 569,instanceOf,state highway in Oregon,Oregon Route 569
+Òran Mór,instanceOf,music venue,Òran Mór
+Òran Mór,instanceOf,restaurant,Òran Mór
+Òran Mór,instanceOf,bar,Òran Mór
+Òran Mór,locatedInCity,Glasgow,Òran Mór
+Òran Mór,locatedInCountry,United Kingdom,Òran Mór
+Òran Mór,locatedInRegion,Scotland,Òran Mór
+Òran Mór,etymology,Gaelic for 'great song',Òran Mór
+Òran Mór,nameOrigin,Gaelic,Òran Mór
+Òran Mór,hosts,live music performances,Òran Mór
+Òran Mór,website,oranmor.co.uk,Òran Mór
+American Society of Magazine Editors,instanceOf,nonprofit organization,American Society of Magazine Editors
+American Society of Magazine Editors,instanceOf,professional association,American Society of Magazine Editors
+American Society of Magazine Editors,organizes,National Magazine Awards for Editorial Excellence,American Society of Magazine Editors
+American Society of Magazine Editors,promotes,editorial excellence in magazines,American Society of Magazine Editors
+To the Wonder,instanceOf,film,To the Wonder
+To the Wonder,director,Terrence Malick,To the Wonder
+To the Wonder,writer,Terrence Malick,To the Wonder
+To the Wonder,producer,Nicolas Gonda,To the Wonder
+To the Wonder,producer,Sarah Green,To the Wonder
+To the Wonder,producer,Terrence Malick,To the Wonder
+To the Wonder,starring,Ben Affleck,To the Wonder
+To the Wonder,starring,Olga Kurylenko,To the Wonder
+To the Wonder,starring,Javier Bardem,To the Wonder
+To the Wonder,starring,Rachel McAdams,To the Wonder
+To the Wonder,genre,romantic drama,To the Wonder
+To the Wonder,country,United States,To the Wonder
+To the Wonder,language,English,To the Wonder
+To the Wonder,releaseYear,2012,To the Wonder
+To the Wonder,runtime,112 minutes,To the Wonder
+Juncus inflexus,instanceOf,species,Juncus inflexus
+Juncus inflexus,kingdom,Plantae,Juncus inflexus
+Juncus inflexus,phylum,Tracheophyta,Juncus inflexus
+Juncus inflexus,class,Liliopsida,Juncus inflexus
+Juncus inflexus,order,Poales,Juncus inflexus
+Juncus inflexus,family,Juncaceae,Juncus inflexus
+Juncus inflexus,genus,Juncus,Juncus inflexus
+Juncus inflexus,nativeRange,Europe,Juncus inflexus
+Juncus inflexus,nativeRange,Asia,Juncus inflexus
+Juncus inflexus,habitat,wetlands,Juncus inflexus
+Juncus inflexus,habitat,damp meadows,Juncus inflexus
+Juncus inflexus,habitat,moist grasslands,Juncus inflexus
+Juncus inflexus,growthForm,perennial herb,Juncus inflexus
+Juncus inflexus,lifeCycle,perennial,Juncus inflexus
+Juncus inflexus,pollination,wind,Juncus inflexus
+Juncus inflexus,commonName,hard rush,Juncus inflexus
+Juncus inflexus,clade,Monocotyledons,Juncus inflexus
+Juncus inflexus,authority,L.,Juncus inflexus
+Lahore Se Aagey,instanceOf,film,Lahore Se Aagey
+Cazzano di Tramigna,instanceOf,Municipality,Cazzano di Tramigna
+Cazzano di Tramigna,locatedInRegion,Veneto,Cazzano di Tramigna
+Cazzano di Tramigna,locatedInProvince,Verona,Cazzano di Tramigna
+Cazzano di Tramigna,locatedInCountry,Italy,Cazzano di Tramigna
+Cap-Haïtien International Airport,instanceOf,Airport,Cap-Haïtien International Airport
+Cap-Haïtien International Airport,locatedInCity,Cap-Haïtien,Cap-Haïtien International Airport
+Cap-Haïtien International Airport,locatedInCountry,Haiti,Cap-Haïtien International Airport
+Cap-Haïtien International Airport,servesCity,Cap-Haïtien,Cap-Haïtien International Airport
+Cap-Haïtien International Airport,operator,Autorité Aéroportuaire Nationale,Cap-Haïtien International Airport
+AAPG Bulletin,instanceOf,Journal,AAPG Bulletin
+AAPG Bulletin,publisher,American Association of Petroleum Geologists,AAPG Bulletin
+AAPG Bulletin,language,English,AAPG Bulletin
+AAPG Bulletin,field,Geology,AAPG Bulletin
+AAPG Bulletin,scope,Petroleum Geology,AAPG Bulletin
+AAPG Bulletin,status,Active,AAPG Bulletin
+Megascolides,instanceOf,Genus,Megascolides
+Megascolides,taxonRank,genus,Megascolides
+Megascolides,family,Megascolecidae,Megascolides
+Megascolides,habitat,terrestrial,Megascolides
+Megascolides,nativeTo,Australia,Megascolides
+Megascolides,containsSpecies,Megascolides australis,Megascolides
+Megascolides,notableSpecies,Megascolides australis,Megascolides
+"Lubei Subdistrict, Taizhou, Zhejiang",instanceOf,Subdistrict,"Lubei Subdistrict, Taizhou, Zhejiang"
+"Lubei Subdistrict, Taizhou, Zhejiang",locatedInCity,Taizhou,"Lubei Subdistrict, Taizhou, Zhejiang"
+"Lubei Subdistrict, Taizhou, Zhejiang",locatedInProvince,Zhejiang,"Lubei Subdistrict, Taizhou, Zhejiang"
+"Lubei Subdistrict, Taizhou, Zhejiang",locatedInCountry,China,"Lubei Subdistrict, Taizhou, Zhejiang"
+The Rookie: Feds,instanceOf,TV series,The Rookie: Feds
+The Rookie: Feds,spinOffOf,The Rookie,The Rookie: Feds
+The Rookie: Feds,network,ABC,The Rookie: Feds
+The Rookie: Feds,countryOfOrigin,United States,The Rookie: Feds
+The Rookie: Feds,originalLanguage,English,The Rookie: Feds
+The Rookie: Feds,genre,crime drama,The Rookie: Feds
+The Rookie: Feds,leadCharacter,Simone Clark,The Rookie: Feds
+Dōjigiri,instanceOf,Japanese sword,Dōjigiri
+Dōjigiri,nameInKanji,童子切,Dōjigiri
+Dōjigiri,romanizedName,Dōjigiri,Dōjigiri
+Dōjigiri,associatedWith,Minamoto no Yorimitsu,Dōjigiri
+Dōjigiri,associatedWith,Shuten-dōji,Dōjigiri
+2017 Kurdistan Region independence referendum,instanceOf,referendum,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,date,"September 25, 2017",2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,location,"Kurdistan Region of Iraq and disputed areas with Kurdish majorities (Kirkuk, Diyala, Nineveh, Salahuddin)",2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,organizer,Kurdistan Regional Government (KRG),2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,scope,Kurdistan Region and disputed areas with Kurdish majorities,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,purpose,Determine whether the Kurdistan Region and areas with Kurdish majorities should become an independent state,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,question,Should Kurdistan Region and the areas in Iraq with Kurdish majorities become an independent state?,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,type,non-binding referendum,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,resultsDate,"September 28, 2017",2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,outcome,Yes votes majority,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,participatingRegions,"Kurdistan Region and disputed areas including Kirkuk, Diyala, Nineveh, and Salahuddin",2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,supporters,Kurdistan Democratic Party (KDP) and Patriotic Union of Kurdistan (PUK),2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,aftermath,Increased tensions between the Iraqi central government and Kurdish authorities,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,responseFromIraq,Iraqi government declared the referendum unconstitutional and illegal,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,internationalReaction,United States urged restraint and called for negotiations,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,internationalReaction,United Kingdom urged restraint,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,internationalReaction,Turkey expressed concerns about regional stability and Iraq's territorial integrity,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,aftermathNote,The referendum was followed by no immediate declaration of independence; focus shifted to negotiations,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,postVoteEvents,Iraqi forces moved into Kirkuk and other disputed areas after the vote,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,economicImpact,Budget payments from the Iraqi central government to the Kurdistan Region were suspended,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,legalStatus,Considered unconstitutional by Iraqi federal authorities,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,dateOfKirkukAction,October 2017 (Iraqi forces retook Kirkuk after the referendum),2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,leadersInvolved,Masoud Barzani supported the referendum as leader of the Kurdistan Region,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,impactOnOil,Control of oil-rich areas disputed between Erbil and Baghdad intensified after the vote,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,longTermGoal,Independence for the Kurdistan Region remained unresolved and paused for negotiations,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,votingMethod,In-person ballots across multiple provinces and the Kurdistan Region,2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,participatingVoters,Millions of eligible voters participated (approximate)},2017 Kurdistan Region independence referendum
+2017 Kurdistan Region independence referendum,criticalContext,Occurred amid ongoing conflict with ISIS and regional tensions,2017 Kurdistan Region independence referendum
+Soviet destroyer Nezamozhnik,instanceOf,destroyer,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,nationality,Soviet Union,Soviet destroyer Nezamozhnik
+Soviet destroyer Nezamozhnik,serviceBranch,Soviet Navy,Soviet destroyer Nezamozhnik
+Marie-Françoise Plissart,instanceOf,Photographer,Marie-Françoise Plissart
+Marie-Françoise Plissart,nationality,French,Marie-Françoise Plissart
+"Hill Point, Wisconsin",instanceOf,GeographicLocation,"Hill Point, Wisconsin"
+"Hill Point, Wisconsin",locatedInState,Wisconsin,"Hill Point, Wisconsin"
+"Hill Point, Wisconsin",locatedInCountry,United States,"Hill Point, Wisconsin"
+Three on a Honeymoon (1934 film),instanceOf,film,Three on a Honeymoon (1934 film)
+Three on a Honeymoon (1934 film),releaseYear,1934,Three on a Honeymoon (1934 film)
+MV Ganga Vilas,instanceOf,river cruise ship,MV Ganga Vilas
+MV Ganga Vilas,location,"Ganges River, India",MV Ganga Vilas
+Bangalore Days,instanceOf,film,Bangalore Days
+Bangalore Days,language,Malayalam,Bangalore Days
+Bangalore Days,country,India,Bangalore Days
+Bangalore Days,releaseYear,2014,Bangalore Days
+Bangalore Days,director,Anjali Menon,Bangalore Days
+Bangalore Days,genre,romantic comedy-drama,Bangalore Days
+Bangalore Days,composer,Gopi Sundar,Bangalore Days
+Bangalore Days,cinematography,Jomon T. John,Bangalore Days
+"2,3-Dimethylhexane",instanceOf,Organic compound,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",molecularFormula,C8H18,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",molarMass,114.23 g/mol,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",IUPACName,"2,3-dimethylhexane","2,3-Dimethylhexane"
+"2,3-Dimethylhexane",SMILES,CC(C)C(C)CCC,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",isomerOf,Octane,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",structuralFormula,CH3-CH(CH3)-CH(CH3)-CH2-CH2-CH3,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",numOfCarbons,8,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",numOfHydrogens,18,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",classification,branched alkane,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",parentChain,hexane,"2,3-Dimethylhexane"
+"2,3-Dimethylhexane",stateAtRoomTemp,liquid,"2,3-Dimethylhexane"
+Ada Iddings Gale,instanceOf,Person,Ada Iddings Gale
+IBTE Jefri Bolkiah Campus,instanceOf,Campus,IBTE Jefri Bolkiah Campus
+IBTE Jefri Bolkiah Campus,partOf,Institute of Brunei Technical Education,IBTE Jefri Bolkiah Campus
+Edward Magruder Tutwiler,instanceOf,Person,Edward Magruder Tutwiler
+Methacrylamide,instanceOf,Chemical compound,Methacrylamide
+Methacrylamide,IUPACName,2-methylprop-2-enamide,Methacrylamide
+Methacrylamide,chemicalFormula,C4H7NO,Methacrylamide
+Methacrylamide,molecularWeight,85.11 g/mol,Methacrylamide
+Methacrylamide,functionalGroup,amide,Methacrylamide
+Methacrylamide,functionalGroup,vinyl,Methacrylamide
+Methacrylamide,commonUse,monomer for polymerization,Methacrylamide
+2016–17 Segona Divisió,instanceOf,Season,2016–17 Segona Divisió
+Sphingomonas haloaromaticamans,instanceOf,species,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToGenus,Sphingomonas,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToFamily,Sphingomonadaceae,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToOrder,Sphingomonadales,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToClass,Alphaproteobacteria,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToPhylum,Proteobacteria,Sphingomonas haloaromaticamans
+Sphingomonas haloaromaticamans,belongsToDomain,Bacteria,Sphingomonas haloaromaticamans
+Inca finch,instanceOf,bird,Inca finch
+Dol pri Šmarju,instanceOf,settlement,Dol pri Šmarju
+Dol pri Šmarju,locatedInMunicipality,Šmarje pri Jelšah,Dol pri Šmarju
+Dol pri Šmarju,locatedInCountry,Slovenia,Dol pri Šmarju
+Dol pri Šmarju,traditionalRegion,Styria,Dol pri Šmarju
+Dol pri Šmarju,statisticalRegion,Savinja Statistical Region,Dol pri Šmarju
+Maurice Fatio,instanceOf,Architect,Maurice Fatio
+Mark Nepo,instanceOf,Person,Mark Nepo
+Mark Nepo,nationality,American,Mark Nepo
+Mark Nepo,profession,poet,Mark Nepo
+Mark Nepo,profession,author,Mark Nepo
+Mark Nepo,profession,spiritual teacher,Mark Nepo
+Mark Nepo,notableWork,The Book of Awakening,Mark Nepo
+Mark Nepo,notableWork,Seven Thousand Ways to Listen,Mark Nepo
+Live & More (Roberta Flack and Peabo Bryson album),instanceOf,Album,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),artist,Roberta Flack,Live & More (Roberta Flack and Peabo Bryson album)
+Live & More (Roberta Flack and Peabo Bryson album),artist,Peabo Bryson,Live & More (Roberta Flack and Peabo Bryson album)
+Westworld season 3,instanceOf,TelevisionSeason,Westworld season 3
+Westworld season 3,partOfSeries,Westworld (TV series),Westworld season 3
+Westworld season 3,network,HBO,Westworld season 3
+Westworld season 3,releaseDate,2020-03-15,Westworld season 3
+Westworld season 3,endDate,2020-05-03,Westworld season 3
+Westworld season 3,episodeCount,8,Westworld season 3
+Westworld season 3,countryOfOrigin,United States,Westworld season 3
+Westworld season 3,language,English,Westworld season 3
+Westworld season 3,genre,Science fiction,Westworld season 3
+Westworld season 3,castMember,Aaron Paul,Westworld season 3
+Westworld season 3,castMember,Jeffrey Wright,Westworld season 3
+Westworld season 3,castMember,Evan Rachel Wood,Westworld season 3
+Westworld season 3,castMember,Vincent Cassel,Westworld season 3
+Westworld season 3,writer,Lisa Joy,Westworld season 3
+Westworld season 3,writer,Jonathan Nolan,Westworld season 3
+Carmen (Stromae song),instanceOf,Song,Carmen (Stromae song)
+Carmen (Stromae song),artist,Stromae,Carmen (Stromae song)
+Carmen (Stromae song),title,Carmen,Carmen (Stromae song)
+Carmen (Stromae song),language,French,Carmen (Stromae song)
+Carmen (Stromae song),partOfAlbum,Racine Carrée,Carmen (Stromae song)
+Carmen (Stromae song),releaseDate,2015,Carmen (Stromae song)
+Carmen (Stromae song),producer,Stromae,Carmen (Stromae song)
+Carmen (Stromae song),genre,Electronic music,Carmen (Stromae song)
+2021 NCAA Division I baseball tournament,instanceOf,NCAA Division I Baseball Championship,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,format,Regionals → Super Regionals → College World Series,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,location,"TD Ameritrade Park, Omaha, Nebraska",2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,host,NCAA,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,champion,Mississippi State Bulldogs,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,runnerUp,Vanderbilt Commodores,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,MostOutstandingPlayer,Will Bednar,2021 NCAA Division I baseball tournament
+2021 NCAA Division I baseball tournament,championCoach,Chris Lemonis,2021 NCAA Division I baseball tournament
+Bopyridae,instanceOf,family,Bopyridae
+Bopyridae,belongsToOrder,Isopoda,Bopyridae
+Bopyridae,parasiteOf,decapod crustaceans,Bopyridae
+Bopyridae,hostLocation,branchial chambers of crustaceans,Bopyridae
+Bopyridae,hosts,shrimp,Bopyridae
+Bopyridae,hosts,crabs,Bopyridae
+Bopyridae,exampleGenus,Bopyrus,Bopyridae
+Bopyridae,habitat,marine environments,Bopyridae
+Dynatrace,instanceOf,company,Dynatrace
+Dynatrace,industry,software,Dynatrace
+Dynatrace,focus,observability,Dynatrace
+Dynatrace,providesProduct,Dynatrace Platform,Dynatrace
+Dynatrace,providesProduct,Davis AI,Dynatrace
+Dynatrace,category,observability platform,Dynatrace
+Dynatrace,usesTechnology,AI,Dynatrace
+Dynatrace,officialWebsite,https://www.dynatrace.com,Dynatrace
+Dynatrace,listedOn,NYSE,Dynatrace
+Dynatrace,tickerSymbol,DT,Dynatrace
+Dynatrace,status,public company,Dynatrace
+Dynatrace,operatesIn,global markets,Dynatrace
+Taisan-ji (Matsuyama),instanceOf,Temple,Taisan-ji (Matsuyama)
+Taisan-ji (Matsuyama),location,"Matsuyama, Ehime Prefecture, Japan",Taisan-ji (Matsuyama)
+Taisan-ji (Matsuyama),country,Japan,Taisan-ji (Matsuyama)
+Taisan-ji (Matsuyama),religion,Buddhism,Taisan-ji (Matsuyama)
+Connect (2022 film),instanceOf,Film,Connect (2022 film)
+1950 Dutch Grand Prix,instanceOf,Formula One World Championship race,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,location,Circuit Park Zandvoort,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,country,Netherlands,1950 Dutch Grand Prix
+1950 Dutch Grand Prix,season,1950 World Championship for Drivers,1950 Dutch Grand Prix
+Microcotyle tampicensis,instanceOf,Microcotyle,Microcotyle tampicensis
+Microcotyle tampicensis,belongsToFamily,Microcotylidae,Microcotyle tampicensis
+Microcotyle tampicensis,belongsToOrder,Monopisthocotylea,Microcotyle tampicensis
+Microcotyle tampicensis,belongsToClass,Monogenea,Microcotyle tampicensis
+Microcotyle tampicensis,belongsToPhylum,Platyhelminthes,Microcotyle tampicensis
+Microcotyle tampicensis,belongsToKingdom,Animalia,Microcotyle tampicensis
+Microcotyle tampicensis,habitat,gills of fish,Microcotyle tampicensis
+Microcotyle tampicensis,isParasitic,true,Microcotyle tampicensis
+Trichosanthin,instanceOf,ribosome-inactivating protein,Trichosanthin
+Trichosanthin,sourceOrganism,Trichosanthes kirilowii,Trichosanthin
+Trichosanthin,family,Cucurbitaceae,Trichosanthin
+Trichosanthin,molecularWeight,approximately 27-29 kDa,Trichosanthin
+Trichosanthin,structure,single-chain polypeptide,Trichosanthin
+Trichosanthin,enzymaticActivity,N-glycosidase activity on ribosomal RNA,Trichosanthin
+Trichosanthin,mechanismOfAction,depurinates adenine at position 4324 in 28S rRNA,Trichosanthin
+Trichosanthin,traditionalUse,abortifacient in traditional Chinese medicine,Trichosanthin
+Trichosanthin,bioactivity,antiviral activity reported in some studies,Trichosanthin
+Trichosanthin,cellularEffect,cytotoxic to mammalian cells in vitro,Trichosanthin
+Trichosanthin,isolationSource,root tuber of Trichosanthes kirilowii,Trichosanthin
+Trichosanthin,type,type I ribosome-inactivating protein,Trichosanthin
+Airdrieonians F.C.,instanceOf,Association football club,Airdrieonians F.C.
+Airdrieonians F.C.,country,Scotland,Airdrieonians F.C.
+Airdrieonians F.C.,basedIn,"Airdrie, North Lanarkshire",Airdrieonians F.C.
+Airdrieonians F.C.,formerName,Airdrie United F.C.,Airdrieonians F.C.
+Airdrieonians F.C.,nickname,The Diamonds,Airdrieonians F.C.
+Airdrieonians F.C.,colors,Blue and white,Airdrieonians F.C.
+Airdrieonians F.C.,homeGround,Excelsior Stadium,Airdrieonians F.C.
+Airdrieonians F.C.,league,Scottish Professional Football League (SPFL),Airdrieonians F.C.
+Airdrieonians F.C.,competitions,Scottish Cup,Airdrieonians F.C.
+Airdrieonians F.C.,competitions,Scottish League Cup,Airdrieonians F.C.
+Airdrieonians F.C.,officialWebsite,https://www.airdriefc.com/,Airdrieonians F.C.
+Airdrieonians F.C.,rival,Albion Rovers F.C.,Airdrieonians F.C.
+Stalag V-A,instanceOf,World War II German prisoner of war camp,Stalag V-A
+Stalag V-A,campDesignation,V-A,Stalag V-A
+Stalag V-A,alternativeName,Stammlager V-A Luckenwalde,Stalag V-A
+Stalag V-A,location,"Luckenwalde, Brandenburg, Germany",Stalag V-A
+Stalag V-A,region,Brandenburg,Stalag V-A
+Stalag V-A,opened,1940,Stalag V-A
+Stalag V-A,closed,1945,Stalag V-A
+Stalag V-A,operatedBy,Wehrmacht (German Army),Stalag V-A
+Stalag V-A,housed,Allied prisoners of war,Stalag V-A
+Stalag V-A,partOf,Stammlager system of Nazi Germany,Stalag V-A
+Stalag V-A,type,Stammlager (POW camp),Stalag V-A
+Stalag V-A,country,Germany,Stalag V-A
+Bitter Sweet (TV series),instanceOf,TV series,Bitter Sweet (TV series)
+So Fine (film),instanceOf,film,So Fine (film)
+Bellatrix Lestrange,instanceOf,witch,Bellatrix Lestrange
+Bellatrix Lestrange,birthName,Bellatrix Black,Bellatrix Lestrange
+Bellatrix Lestrange,bloodStatus,pure-blood,Bellatrix Lestrange
+Bellatrix Lestrange,house,Slytherin,Bellatrix Lestrange
+Bellatrix Lestrange,sisterOf,Narcissa Malfoy,Bellatrix Lestrange
+Bellatrix Lestrange,sisterOf,Andromeda Black Tonks,Bellatrix Lestrange
+Bellatrix Lestrange,spouse,Rodolphus Lestrange,Bellatrix Lestrange
+Bellatrix Lestrange,followerOf,Voldemort,Bellatrix Lestrange
+Bellatrix Lestrange,affiliation,Death Eaters,Bellatrix Lestrange
+Bellatrix Lestrange,participatedIn,First Wizarding War,Bellatrix Lestrange
+Bellatrix Lestrange,participatedIn,Second Wizarding War,Bellatrix Lestrange
+Bellatrix Lestrange,killed,Sirius Black,Bellatrix Lestrange
+Bellatrix Lestrange,deathDate,1998,Bellatrix Lestrange
+Bellatrix Lestrange,deathPlace,Battle of Hogwarts,Bellatrix Lestrange
+Bellatrix Lestrange,killedBy,Molly Weasley,Bellatrix Lestrange
+Bellatrix Lestrange,tortured,Alice Longbottom,Bellatrix Lestrange
+Bellatrix Lestrange,tortured,Frank Longbottom,Bellatrix Lestrange
+Bellatrix Lestrange,alias,Bellatrix Black,Bellatrix Lestrange
+Bellatrix Lestrange,auntOf,Nymphadora Tonks,Bellatrix Lestrange
+Bellatrix Lestrange,family,Black family,Bellatrix Lestrange
+Bellatrix Lestrange,notableAct,Killing Sirius Black,Bellatrix Lestrange
+National Route 217 (Costa Rica),instanceOf,road,National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),instanceOf,National Route (Costa Rica),National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),locatedIn,Costa Rica,National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),designation,217,National Route 217 (Costa Rica)
+National Route 217 (Costa Rica),partOf,Costa Rica national road network,National Route 217 (Costa Rica)
+Webtoon (platform),instanceOf,webtoon platform,Webtoon (platform)
+Webtoon (platform),instanceOf,digital distribution platform,Webtoon (platform)
+Webtoon (platform),ownedBy,NAVER Corporation,Webtoon (platform)
+Webtoon (platform),headquarteredIn,"Seoul, South Korea",Webtoon (platform)
+Webtoon (platform),officialWebsite,https://www.webtoons.com,Webtoon (platform)
+Webtoon (platform),availableOn,iOS,Webtoon (platform)
+Webtoon (platform),availableOn,Android,Webtoon (platform)
+Webtoon (platform),offersProduct,Webtoon Originals,Webtoon (platform)
+Webtoon (platform),formats,vertical scrolling,Webtoon (platform)
+Webtoon (platform),contentType,digital comics,Webtoon (platform)
+Webtoon (platform),languageSupport,multilingual,Webtoon (platform)
+Dushdi Mala Medal,instanceOf,Medal,Dushdi Mala Medal
+Dushdi Mala Medal,country,Sri Lanka,Dushdi Mala Medal
+Dushdi Mala Medal,established,1932,Dushdi Mala Medal
+Dushdi Mala Medal,awardedBy,Government of Ceylon (British colonial administration),Dushdi Mala Medal
+Dushdi Mala Medal,awardCategory,Civil decoration,Dushdi Mala Medal
+Dushdi Mala Medal,alsoKnownAs,Dushdi Mela Medal,Dushdi Mala Medal
+Towards Zero (TV series),instanceOf,TV series,Towards Zero (TV series)
+Replay (Zendaya song),instanceOf,Song,Replay (Zendaya song)
+Replay (Zendaya song),artist,Zendaya,Replay (Zendaya song)
+Replay (Zendaya song),releaseYear,2013,Replay (Zendaya song)
+Replay (Zendaya song),label,Hollywood Records,Replay (Zendaya song)
+Replay (Zendaya song),album,Zendaya (EP),Replay (Zendaya song)
+Replay (Zendaya song),genre,Dance-pop,Replay (Zendaya song)
+Replay (Zendaya song),genre,Pop,Replay (Zendaya song)
+Replay (Zendaya song),language,English,Replay (Zendaya song)
+Replay (Zendaya song),type,Single,Replay (Zendaya song)
+Replay (Zendaya song),musicVideo,Replay (music video),Replay (Zendaya song)
+Techniques (album),instanceOf,Album,Techniques (album)
+BMD-4,instanceOf,infantry fighting vehicle,BMD-4
+BMD-4,origin,Russia,BMD-4
+BMD-4,manufacturer,Kurganmashzavod,BMD-4
+BMD-4,operatedBy,Russian Airborne Forces (VDV),BMD-4
+BMD-4,role,airborne infantry fighting vehicle,BMD-4
+BMD-4,category,armored fighting vehicle,BMD-4
+"Nowa Góra, Lesser Poland Voivodeship",instanceOf,village,"Nowa Góra, Lesser Poland Voivodeship"
+"Nowa Góra, Lesser Poland Voivodeship",country,Poland,"Nowa Góra, Lesser Poland Voivodeship"
+"Nowa Góra, Lesser Poland Voivodeship",locatedInVoivodeship,Lesser Poland Voivodeship,"Nowa Góra, Lesser Poland Voivodeship"
+Bad Guy (Billie Eilish song),instanceOf,Song,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),artist,Billie Eilish,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),writer,Billie Eilish,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),writer,Finneas O'Connell,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),producer,Finneas O'Connell,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),releaseDate,2019-03-29,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),album,"When We All Fall Asleep, Where Do We Go?",Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),language,English,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),label,Darkroom,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),label,Interscope Records,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),isSingle,true,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),genre,electropop,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),genre,alternative pop,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),chartPeakUSHot100,1,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),chartPeakUKSingles,1,Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),award,Grammy Award for Best Pop Solo Performance (2020),Bad Guy (Billie Eilish song)
+Bad Guy (Billie Eilish song),musicVideoURL,https://www.youtube.com/watch?v=DyDfgtdlkh4,Bad Guy (Billie Eilish song)
+Port of Kherson,instanceOf,seaport,Port of Kherson
+Port of Kherson,portType,river port,Port of Kherson
+Port of Kherson,locatedInCountry,Ukraine,Port of Kherson
+Port of Kherson,locatedOnRiver,Dnieper River,Port of Kherson
+Port of Kherson,locatedNearCity,Kherson,Port of Kherson
+Port of Kherson,operator,Ukrainian Sea Ports Authority,Port of Kherson
+Port of Kherson,partOf,Ukrainian port system,Port of Kherson
+Nathan Stewart-Jarrett,instanceOf,human,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,nationality,British,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,occupation,actor,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,knownFor,Misfits,Nathan Stewart-Jarrett
+Nathan Stewart-Jarrett,role,Simon Bellamy,Nathan Stewart-Jarrett
+Harumafuji Kōhei,instanceOf,Person,Harumafuji Kōhei
+Harumafuji Kōhei,occupation,Sumo wrestler,Harumafuji Kōhei
+Harumafuji Kōhei,nationality,Mongolian,Harumafuji Kōhei
+Harumafuji Kōhei,gender,Male,Harumafuji Kōhei
+HD 103197,instanceOf,Star,HD 103197
+"Church of St Edmund, Sedgefield",instanceOf,Anglican church,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",instanceOf,parish church,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",dedication,St Edmund,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",locatedInCity,Sedgefield,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",locatedInCounty,County Durham,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",locatedInCountry,England,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",partOf,Diocese of Durham,"Church of St Edmund, Sedgefield"
+"Church of St Edmund, Sedgefield",partOf,Church of England,"Church of St Edmund, Sedgefield"
+USS Chester T. O'Brien,instanceOf,naval ship,USS Chester T. O'Brien
+Booker T (wrestler),instanceOf,Person,Booker T (wrestler)
+Booker T (wrestler),birthName,Booker Huffman,Booker T (wrestler)
+Booker T (wrestler),birthDate,1965-03-01,Booker T (wrestler)
+Booker T (wrestler),birthPlace,"Hempstead, Texas",Booker T (wrestler)
+Booker T (wrestler),nationality,American,Booker T (wrestler)
+Booker T (wrestler),occupation,Professional wrestler,Booker T (wrestler)
+Booker T (wrestler),ringName,Booker T,Booker T (wrestler)
+Booker T (wrestler),ringName,King Booker,Booker T (wrestler)
+Booker T (wrestler),spouse,Sharmell Huffman,Booker T (wrestler)
+Booker T (wrestler),founded,Reality of Wrestling,Booker T (wrestler)
+Reality of Wrestling,foundedBy,Booker T (wrestler),Booker T (wrestler)
+Reality of Wrestling,location,"Houston, Texas",Booker T (wrestler)
+Booker T (wrestler),memberOf,Harlem Heat,Booker T (wrestler)
+Harlem Heat,members,Booker T (wrestler),Booker T (wrestler)
+Harlem Heat,tagTeamChampionship,WCW World Tag Team Championship,Booker T (wrestler)
+Booker T (wrestler),associatedWith,World Championship Wrestling (WCW),Booker T (wrestler)
+Booker T (wrestler),associatedWith,World Wrestling Entertainment (WWE),Booker T (wrestler)
+Booker T (wrestler),notableGimmick,King Booker,Booker T (wrestler)
+Booker T (wrestler),influence,American professional wrestling,Booker T (wrestler)
+Booker T (wrestler),roleInMedia,Television personality and commentator,Booker T (wrestler)
+2016 Tajik constitutional referendum,instanceOf,Constitutional referendum,2016 Tajik constitutional referendum
+2016 Tajik constitutional referendum,tookPlaceIn,Tajikistan,2016 Tajik constitutional referendum
+2016 Tajik constitutional referendum,date,2016-05-22,2016 Tajik constitutional referendum
+2016 Tajik constitutional referendum,outcome,Amendments to the Constitution of Tajikistan approved,2016 Tajik constitutional referendum
+2016 Tajik constitutional referendum,affects,Constitution of Tajikistan,2016 Tajik constitutional referendum
+2016 Tajik constitutional referendum,purpose,Amend the constitution to allow the president to run for two additional seven-year terms after 2020,2016 Tajik constitutional referendum
+Gliese 536,instanceOf,Star,Gliese 536
+2018 Hualien earthquake,instanceOf,earthquake,2018 Hualien earthquake
+2018 Hualien earthquake,location,"Hualien County, Taiwan",2018 Hualien earthquake
+2018 Hualien earthquake,date,2018-02-06,2018 Hualien earthquake
+2018 Hualien earthquake,magnitude,6.4,2018 Hualien earthquake
+2018 Hualien earthquake,magnitudeType,moment magnitude,2018 Hualien earthquake
+2018 Hualien earthquake,feltIn,Taiwan,2018 Hualien earthquake
+2018 Hualien earthquake,aftershocks,yes,2018 Hualien earthquake
+2018 Hualien earthquake,impact,caused damage to buildings and infrastructure in Hualien and surrounding areas,2018 Hualien earthquake
+F.C. De Kampioenen (comic),instanceOf,Belgian comic series,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),language,Dutch,F.C. De Kampioenen (comic)
+F.C. De Kampioenen (comic),countryOfOrigin,Belgium,F.C. De Kampioenen (comic)
+Barbarano Mossano,instanceOf,Municipality,Barbarano Mossano
+Barbarano Mossano,locatedInRegion,Veneto,Barbarano Mossano
+Barbarano Mossano,locatedInProvince,Vicenza,Barbarano Mossano
+Barbarano Mossano,locatedInCountry,Italy,Barbarano Mossano
+Bacillus aminovorans,instanceOf,Bacteria,Bacillus aminovorans
+Bacillus aminovorans,partOfGenus,Bacillus,Bacillus aminovorans
+Bacillus aminovorans,partOfFamily,Bacillaceae,Bacillus aminovorans
+Bacillus aminovorans,partOfOrder,Bacillales,Bacillus aminovorans
+Bacillus aminovorans,partOfClass,Bacilli,Bacillus aminovorans
+Bacillus aminovorans,partOfPhylum,Firmicutes,Bacillus aminovorans
+Bacillus aminovorans,partOfDomain,Bacteria,Bacillus aminovorans
+Bacillus aminovorans,morphology,rod-shaped,Bacillus aminovorans
+Bacillus aminovorans,GramStain,Gram-positive,Bacillus aminovorans
+Bacillus aminovorans,ability,endospore-forming,Bacillus aminovorans
+Bacillus aminovorans,motility,motile,Bacillus aminovorans
+1942 Croatian First League,instanceOf,Football season of the Croatian First League,1942 Croatian First League
+1942 Croatian First League,sport,association football,1942 Croatian First League
+1942 Croatian First League,country,Independent State of Croatia,1942 Croatian First League
+1942 Croatian First League,year,1942,1942 Croatian First League
+1942 Croatian First League,seasonType,wartime edition,1942 Croatian First League
+1942 Croatian First League,organizer,Independent State of Croatia authorities,1942 Croatian First League
+1942 Croatian First League,context,World War II era,1942 Croatian First League
+1942 Croatian First League,partOf,Croatian football history,1942 Croatian First League
+1942 Croatian First League,status,historical sports competition,1942 Croatian First League
+Ivor Robinson (physicist),instanceOf,Person,Ivor Robinson (physicist)
+Ivor Robinson (physicist),field,Physics,Ivor Robinson (physicist)
+Ivor Robinson (physicist),knownFor,Robinson–Trautman spacetimes,Ivor Robinson (physicist)
+Ivor Robinson (physicist),coauthor,Werner Trautman,Ivor Robinson (physicist)
+Ivor Robinson (physicist),contributedTo,Exact solutions in general relativity,Ivor Robinson (physicist)
+Ivor Robinson (physicist),discovery,Robinson–Trautman spacetimes,Ivor Robinson (physicist)
+1940–41 Buffalo Bulls men's basketball team,instanceOf,college basketball season,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,sport,basketball,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,gender,men,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,season,1940–41,1940–41 Buffalo Bulls men's basketball team
+1940–41 Buffalo Bulls men's basketball team,teamName,Buffalo Bulls,1940–41 Buffalo Bulls men's basketball team
+1981 Soviet Cup,instanceOf,Football cup competition in the Soviet Union,1981 Soviet Cup
+1981 Soviet Cup,instanceOf,Soviet Cup edition,1981 Soviet Cup
+1981 Soviet Cup,year,1981,1981 Soviet Cup
+1981 Soviet Cup,country,Soviet Union,1981 Soviet Cup
+1981 Soviet Cup,format,knockout tournament,1981 Soviet Cup
+1981 Soviet Cup,organizingBody,Soviet football authorities,1981 Soviet Cup
+Legion (video game),instanceOf,video game,Legion (video game)
+Lactobacillus porci,instanceOf,species,Lactobacillus porci
+Lactobacillus porci,domain,Bacteria,Lactobacillus porci
+Lactobacillus porci,phylum,Firmicutes,Lactobacillus porci
+Lactobacillus porci,class,Bacilli,Lactobacillus porci
+Lactobacillus porci,order,Lactobacillales,Lactobacillus porci
+Lactobacillus porci,family,Lactobacillaceae,Lactobacillus porci
+Lactobacillus porci,genus,Lactobacillus,Lactobacillus porci
+Lactobacillus porci,gramStain,Gram-positive,Lactobacillus porci
+Lactobacillus porci,morphology,rod-shaped,Lactobacillus porci
+Lactobacillus porci,role,lactic acid bacterium,Lactobacillus porci
+Lactobacillus porci,isolationSource,porcine gut,Lactobacillus porci
+Gmina Bobowa,instanceOf,gmina,Gmina Bobowa
+Gmina Bobowa,country,Poland,Gmina Bobowa
+Gmina Bobowa,inVoivodeship,Lesser Poland Voivodeship,Gmina Bobowa
+Gmina Bobowa,inCounty,Gorlice County,Gmina Bobowa
+Gmina Bobowa,seat,Bobowa,Gmina Bobowa
+Gmina Bobowa,type,urban-rural gmina,Gmina Bobowa
+Gmina Bobowa,region,southern Poland,Gmina Bobowa
+Jerome Messam,instanceOf,Person,Jerome Messam
+Jerome Messam,nationality,Canadian,Jerome Messam
+Jerome Messam,occupation,Professional Canadian football player,Jerome Messam
+Jerome Messam,sport,Canadian football,Jerome Messam
+Jerome Messam,position,Running back,Jerome Messam
+Leonard Berkowitz,instanceOf,Person,Leonard Berkowitz
+Dharmapatni (1987 film),instanceOf,Film,Dharmapatni (1987 film)
+Dharmapatni (1987 film),title,Dharmapatni,Dharmapatni (1987 film)
+Dharmapatni (1987 film),releaseYear,1987,Dharmapatni (1987 film)
+Dharmapatni (1987 film),country,India,Dharmapatni (1987 film)
+Bert Wright (cricketer),instanceOf,Cricketer,Bert Wright (cricketer)
+Garcinia celebica,instanceOf,species,Garcinia celebica
+Garcinia celebica,genus,Garcinia,Garcinia celebica
+Garcinia celebica,family,Clusiaceae,Garcinia celebica
+Garcinia celebica,order,Malpighiales,Garcinia celebica
+Garcinia celebica,kingdom,Plantae,Garcinia celebica
+Alberto Siliotti,instanceOf,Person,Alberto Siliotti
+Col du Berthiand,instanceOf,Mountain pass,Col du Berthiand
+Col du Berthiand,locatedIn,France,Col du Berthiand
+Krzysztof Piątek,instanceOf,Person,Krzysztof Piątek
+Krzysztof Piątek,nationality,Polish,Krzysztof Piątek
+Krzysztof Piątek,occupation,professional footballer,Krzysztof Piątek
+Krzysztof Piątek,position,forward,Krzysztof Piątek
+Gran Turismo Sport,instanceOf,video game,Gran Turismo Sport
+Gran Turismo Sport,developer,Polyphony Digital,Gran Turismo Sport
+Gran Turismo Sport,publisher,Sony Interactive Entertainment,Gran Turismo Sport
+Gran Turismo Sport,platform,PlayStation 4,Gran Turismo Sport
+Gran Turismo Sport,series,Gran Turismo,Gran Turismo Sport
+Gran Turismo Sport,genre,racing,Gran Turismo Sport
+Gran Turismo Sport,mode,single-player,Gran Turismo Sport
+Gran Turismo Sport,mode,multiplayer,Gran Turismo Sport
+Gran Turismo Sport,releaseYear,2017,Gran Turismo Sport
+Gran Turismo Sport,officialWebsite,https://www.gran-turismo.com/,Gran Turismo Sport
+Gran Turismo Sport,feature,online multiplayer,Gran Turismo Sport
+Gran Turismo Sport,feature,licensed cars,Gran Turismo Sport
+Gran Turismo Sport,feature,realistic physics,Gran Turismo Sport
+Gran Turismo Sport,feature,various real-world tracks,Gran Turismo Sport
+Gran Turismo Sport,region,global,Gran Turismo Sport
+Tigrovaya Balka Nature Reserve,instanceOf,Nature Reserve,Tigrovaya Balka Nature Reserve
+Giubiasco–Locarno railway,instanceOf,railwayLine,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,locatedIn,Switzerland,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,locatedIn,Canton of Ticino,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,startPoint,Giubiasco,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,endPoint,Locarno,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,connects,Giubiasco,Giubiasco–Locarno railway
+Giubiasco–Locarno railway,connects,Locarno,Giubiasco–Locarno railway
+Herbert Von King Park,instanceOf,Park,Herbert Von King Park
+Herbert Von King Park,locatedIn,Brooklyn,Herbert Von King Park
+Herbert Von King Park,locatedInState,New York,Herbert Von King Park
+Herbert Von King Park,locatedInCountry,United States,Herbert Von King Park
+Herbert Von King Park,namedAfter,Herbert Von King,Herbert Von King Park
+1945 Giro di Lombardia,instanceOf,Giro di Lombardia edition,1945 Giro di Lombardia
+1945 Giro di Lombardia,year,1945,1945 Giro di Lombardia
+1945 Giro di Lombardia,location,"Lombardy, Italy",1945 Giro di Lombardia
+1945 Giro di Lombardia,sport,cycling,1945 Giro di Lombardia
+1945 Giro di Lombardia,raceType,one-day race,1945 Giro di Lombardia
+Canton of Le Diois,instanceOf,Canton,Canton of Le Diois
+Canton of Le Diois,locatedInCountry,France,Canton of Le Diois
+Canton of Le Diois,locatedInDepartment,Drôme,Canton of Le Diois
+Canton of Le Diois,seat,Die,Canton of Le Diois
+Canton of Le Diois,locatedInRegion,Rhône-Alpes,Canton of Le Diois
+Czech Republic Davis Cup team,instanceOf,national men's tennis team,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,competesIn,Davis Cup,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,memberOf,Czech Tennis Association,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,representsCountry,Czech Republic,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,hasMember,Tomas Berdych,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,hasMember,Radek Stepanek,Czech Republic Davis Cup team
+Czech Republic Davis Cup team,wonDavisCupInYear,2012,Czech Republic Davis Cup team
+Cap Blanc rock shelter,instanceOf,rock shelter,Cap Blanc rock shelter
+Trouble No More (Darden Smith album),instanceOf,Album,Trouble No More (Darden Smith album)
+Trouble No More (Darden Smith album),artist,Darden Smith,Trouble No More (Darden Smith album)
+Ali Abbasi (director),instanceOf,Person,Ali Abbasi (director)
+Ali Abbasi (director),occupation,film director,Ali Abbasi (director)
+Ali Abbasi (director),occupation,screenwriter,Ali Abbasi (director)
+Ali Abbasi (director),nationality,Swedish-Iranian,Ali Abbasi (director)
+Ali Abbasi (director),notableWork,Border (2018 film),Ali Abbasi (director)
+Ali Abbasi (director),notableWork,Holy Spider (2022 film),Ali Abbasi (director)
+Ali Abbasi (director),directorOf,Border (2018 film),Ali Abbasi (director)
+Ali Abbasi (director),directorOf,Holy Spider (2022 film),Ali Abbasi (director)
+Ali Abbasi (director),genre,thriller,Ali Abbasi (director)
+Kapelludden Lighthouse,instanceOf,Lighthouse,Kapelludden Lighthouse
+Kapelludden Lighthouse,locatedInCountry,Sweden,Kapelludden Lighthouse
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,instanceOf,Paralympic athletics event,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,sport,athletics,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,eventType,marathon,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,gender,female,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,classification,T12,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,partOf,2024 Summer Paralympics,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,season,Summer,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,year,2024,Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Athletics at the 2024 Summer Paralympics – Women's marathon T12,location,"Paris, France",Athletics at the 2024 Summer Paralympics – Women's marathon T12
+Salix pyrenaica,instanceOf,species,Salix pyrenaica
+Salix pyrenaica,family,Salicaceae,Salix pyrenaica
+Salix pyrenaica,genus,Salix,Salix pyrenaica
+Salix pyrenaica,nativeTo,Pyrenees,Salix pyrenaica
+Salix pyrenaica,growthForm,shrub,Salix pyrenaica
+Salix pyrenaica,habitat,alpine and subalpine habitats,Salix pyrenaica
+Flute Concerto No. 1 (Jolivet),instanceOf,musicalWork,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),composer,André Jolivet,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),instrumentation,flute and orchestra,Flute Concerto No. 1 (Jolivet)
+Flute Concerto No. 1 (Jolivet),form,concerto,Flute Concerto No. 1 (Jolivet)
+2024 United States Senate election in Florida,instanceOf,United States Senate election,2024 United States Senate election in Florida
+2024 United States Senate election in Florida,location,Florida,2024 United States Senate election in Florida
+2024 United States Senate election in Florida,heldOn,"November 5, 2024",2024 United States Senate election in Florida
+2024 United States Senate election in Florida,electionType,general election,2024 United States Senate election in Florida
+2024 United States Senate election in Florida,partOf,2024 United States elections,2024 United States Senate election in Florida
+2024 United States Senate election in Florida,status,completed,2024 United States Senate election in Florida
+German submarine U-106 (1940),instanceOf,German submarine,German submarine U-106 (1940)
+British Rail Class 505,instanceOf,electric multiple unit,British Rail Class 505
+Backstage (1927 film),instanceOf,film,Backstage (1927 film)
+Derozio Memorial College,instanceOf,College,Derozio Memorial College
+United Nations Security Council Resolution 1428,instanceOf,United Nations Security Council Resolution,United Nations Security Council Resolution 1428
+United Nations Security Council Resolution 1428,hasNumber,1428,United Nations Security Council Resolution 1428
+2011 European Wrestling Championships,instanceOf,European Wrestling Championships,2011 European Wrestling Championships
+"Ann, Lady Fanshawe",instanceOf,Person,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",nationality,English,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",spouse,Sir Richard Fanshawe,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",notableWork,Memoirs of the Lady Fanshawe,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",occupation,memoirist,"Ann, Lady Fanshawe"
+"Ann, Lady Fanshawe",gender,female,"Ann, Lady Fanshawe"
+Richard Worsley (cricketer),instanceOf,Cricketer,Richard Worsley (cricketer)
+HDMS Peder Skram (1864),instanceOf,warship,HDMS Peder Skram (1864)
+Walter Ross (boxer),instanceOf,Boxer,Walter Ross (boxer)
+Præstø Town Hall,instanceOf,Town hall,Præstø Town Hall
+Præstø Town Hall,locatedIn,Præstø,Præstø Town Hall
+Præstø Town Hall,locatedInCountry,Denmark,Præstø Town Hall
+Præstø Town Hall,locatedInRegion,Region Zealand,Præstø Town Hall
+Trinity Jo-Li Bliss,instanceOf,Human,Trinity Jo-Li Bliss
+1997 Singapore Open,instanceOf,Badminton tournament,1997 Singapore Open
+1997 Singapore Open,location,Singapore,1997 Singapore Open
+1997 Singapore Open,year,1997,1997 Singapore Open
+1997 Singapore Open,sport,Badminton,1997 Singapore Open
+1997 Singapore Open,partOf,IBF World Grand Prix,1997 Singapore Open
+1997 Singapore Open,organizer,Singapore Badminton Association,1997 Singapore Open
+Callicrates of Samos,instanceOf,Architect,Callicrates of Samos
+Callicrates of Samos,nationality,Greek,Callicrates of Samos
+Callicrates of Samos,knownFor,Co-architect of the Parthenon (Athens),Callicrates of Samos
+Callicrates of Samos,collaborator,Iktinos,Callicrates of Samos
+Callicrates of Samos,workOn,Parthenon,Callicrates of Samos
+Callicrates of Samos,locationOfWork,Acropolis of Athens,Callicrates of Samos
+Callicrates of Samos,era,Classical Greece,Callicrates of Samos
+Callicrates of Samos,floruit,5th century BCE,Callicrates of Samos
+Callicrates of Samos,notableWork,Parthenon,Callicrates of Samos
+Creed II,instanceOf,film,Creed II
+Creed II,title,Creed II,Creed II
+Creed II,releaseDate,2018-11-21,Creed II
+Creed II,director,Steven Caple Jr.,Creed II
+Creed II,country,United States,Creed II
+Creed II,language,English,Creed II
+Creed II,genre,sports drama,Creed II
+Creed II,sequelTo,Creed (2015),Creed II
+Creed II,partOfSeries,Rocky film series,Creed II
+Creed II,distributor,Warner Bros. Pictures,Creed II
+Creed II,castMember,Michael B. Jordan,Creed II
+Creed II,castMember,Sylvester Stallone,Creed II
+Creed II,castMember,Tessa Thompson,Creed II
+Creed II,castMember,Phylicia Rashad,Creed II
+Creed II,castMember,Dolph Lundgren,Creed II
+Creed II,castMember,Florian Munteanu,Creed II
+Creed II,basedOnCharacter,Rocky Balboa,Creed II
+Creed II,relationshipToSeries,sequel in Rocky franchise,Creed II
+Creed II,rating,PG-13,Creed II
+Creed II,mainCharacter,Adonis Creed,Creed II
+Creed II,primaryAntagonist,Viktor Drago,Creed II
+Creed II,continuesFrom,Creed (2015),Creed II
+Forrest N. Iandola,instanceOf,Person,Forrest N. Iandola
+Forrest N. Iandola,authorOf,SqueezeNet: AlexNet-level accuracy with 50x fewer parameters,Forrest N. Iandola
+Forrest N. Iandola,knownFor,SqueezeNet,Forrest N. Iandola
+NGC 7812,instanceOf,Galaxy,NGC 7812
+Hovea montana,instanceOf,Plant,Hovea montana
+Hovea montana,genus,Hovea,Hovea montana
+Hovea montana,family,Fabaceae,Hovea montana
+Hovea montana,order,Fabales,Hovea montana
+Hovea montana,kingdom,Plantae,Hovea montana
+Hovea montana,nativeTo,Australia,Hovea montana
+Ignacy Tłoczyński,instanceOf,Person,Ignacy Tłoczyński
+Microsoft Band 2,instanceOf,fitness tracker,Microsoft Band 2
+Microsoft Band 2,instanceOf,wearable device,Microsoft Band 2
+Microsoft Band 2,manufacturer,Microsoft,Microsoft Band 2
+Microsoft Band 2,releaseYear,2015,Microsoft Band 2
+Microsoft Band 2,compatibleWith,Windows Phone,Microsoft Band 2
+Microsoft Band 2,compatibleWith,Android,Microsoft Band 2
+Microsoft Band 2,compatibleWith,iOS,Microsoft Band 2
+Microsoft Band 2,hasSensor,heart rate monitor,Microsoft Band 2
+Microsoft Band 2,hasSensor,accelerometer,Microsoft Band 2
+Microsoft Band 2,hasSensor,gyroscope,Microsoft Band 2
+Microsoft Band 2,hasConnectivity,Bluetooth,Microsoft Band 2
+Microsoft Band 2,associatedApp,Microsoft Health,Microsoft Band 2
+Israel Abanikanda,instanceOf,Person,Israel Abanikanda
+Israel Abanikanda,occupation,American football player,Israel Abanikanda
+Israel Abanikanda,position,Running back,Israel Abanikanda
+Israel Abanikanda,college,University of Pittsburgh,Israel Abanikanda
+Israel Abanikanda,collegeTeam,Pittsburgh Panthers,Israel Abanikanda
+Israel Abanikanda,draftedBy,New York Jets,Israel Abanikanda
+Israel Abanikanda,draftYear,2023,Israel Abanikanda
+Israel Abanikanda,draftRound,5,Israel Abanikanda
+Israel Abanikanda,draftPick,143,Israel Abanikanda
+Israel Abanikanda,currentTeam,New York Jets,Israel Abanikanda
+Israel Abanikanda,birthDate,2002-12-02,Israel Abanikanda
+Israel Abanikanda,nationality,American,Israel Abanikanda
+1892 United States presidential election in New York,instanceOf,"state-level presidential election in New York, United States, 1892",1892 United States presidential election in New York
+1892 United States presidential election in New York,type,presidential election,1892 United States presidential election in New York
+1892 United States presidential election in New York,location,New York,1892 United States presidential election in New York
+1892 United States presidential election in New York,heldOn,"November 8, 1892",1892 United States presidential election in New York
+1892 United States presidential election in New York,partOf,1892 United States presidential election,1892 United States presidential election in New York
+1892 United States presidential election in New York,winner,Grover Cleveland,1892 United States presidential election in New York
+1892 United States presidential election in New York,winnerParty,Democratic Party,1892 United States presidential election in New York
+1892 United States presidential election in New York,runnerUp,Benjamin Harrison,1892 United States presidential election in New York
+1892 United States presidential election in New York,runnerUpParty,Republican Party,1892 United States presidential election in New York
+1892 United States presidential election in New York,thirdPartyCandidate,James B. Weaver,1892 United States presidential election in New York
+1892 United States presidential election in New York,thirdParty,People's Party,1892 United States presidential election in New York
+1892 United States presidential election in New York,notes,Cleveland won the state; Weaver also appeared on the ballot in New York.,1892 United States presidential election in New York
+Zhongyuan Bank,instanceOf,Bank,Zhongyuan Bank
+Zhongyuan Bank,nativeName,中原银行,Zhongyuan Bank
+Zhongyuan Bank,country,China,Zhongyuan Bank
+Zhongyuan Bank,headquartersLocation,Zhengzhou,Zhongyuan Bank
+Leverkusen Mitte station,instanceOf,Railway station,Leverkusen Mitte station
+Leverkusen Mitte station,locatedInCity,Leverkusen,Leverkusen Mitte station
+Leverkusen Mitte station,locatedInState,North Rhine-Westphalia,Leverkusen Mitte station
+Leverkusen Mitte station,locatedInCountry,Germany,Leverkusen Mitte station
+Leverkusen Mitte station,countryCode,DE,Leverkusen Mitte station
+Leverkusen Mitte station,operator,Deutsche Bahn,Leverkusen Mitte station
+Cilejit railway station,instanceOf,Railway station,Cilejit railway station
+H-class container ship,instanceOf,class of container ships,H-class container ship
+"3,4-Dihydroxybenzaldehyde",instanceOf,Organic compound,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",IUPACName,"3,4-dihydroxybenzaldehyde","3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",commonName,Protocatechualdehyde,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",synonym,Protocatechualdehyde,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",molecularFormula,C7H6O3,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",molarMass,138.12 g/mol,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",functionalGroup,aldehyde,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",numberOfHydroxylGroups,2,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",substituentPositions,3 and 4,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",structureDescription,aromatic benzene ring with an aldehyde substituent at position 1 and hydroxyl groups at positions 3 and 4,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",ringSystem,benzene,"3,4-Dihydroxybenzaldehyde"
+"3,4-Dihydroxybenzaldehyde",chemicalClass,Hydroxybenzaldehyde,"3,4-Dihydroxybenzaldehyde"
+"Hôtel de Ville, Angers",instanceOf,City hall,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",locatedInCity,Angers,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",locatedInRegion,Pays de la Loire,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",locatedInDepartment,Maine-et-Loire,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",locatedInCountry,France,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",alternateName,Mairie d'Angers,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",function,Seat of the municipal government of Angers,"Hôtel de Ville, Angers"
+"Hôtel de Ville, Angers",governingBody,City of Angers,"Hôtel de Ville, Angers"
+Naranjito District,instanceOf,district,Naranjito District
+Canton of Nomeny,instanceOf,Canton,Canton of Nomeny
+Canton of Nomeny,locatedInDepartment,Meurthe-et-Moselle,Canton of Nomeny
+Canton of Nomeny,seat,Nomeny,Canton of Nomeny
+Portsmouth Historic Dockyard,instanceOf,Historic Site,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,locatedIn,Portsmouth,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,locatedIn,England,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,partOf,National Museum of the Royal Navy,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,HMS Victory,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,HMS Warrior,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,Mary Rose Museum,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,Royal Navy Submarine Museum,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,Action Stations,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,contains,HMS Alliance,Portsmouth Historic Dockyard
+HMS Victory,instanceOf,Warship,Portsmouth Historic Dockyard
+HMS Victory,launched,1765,Portsmouth Historic Dockyard
+HMS Victory,notableFor,Nelson's flagship,Portsmouth Historic Dockyard
+HMS Warrior,instanceOf,Warship,Portsmouth Historic Dockyard
+HMS Warrior,launched,1860,Portsmouth Historic Dockyard
+Mary Rose Museum,instanceOf,Museum,Portsmouth Historic Dockyard
+Mary Rose Museum,houses,Mary Rose,Portsmouth Historic Dockyard
+Royal Navy Submarine Museum,instanceOf,Museum,Portsmouth Historic Dockyard
+Royal Navy Submarine Museum,locatedIn,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+HMS Alliance,instanceOf,Submarine,Portsmouth Historic Dockyard
+HMS Alliance,locatedIn,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+HMS Victory,locatedIn,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+HMS Warrior,locatedIn,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+Mary Rose Museum,locatedIn,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+Action Stations,instanceOf,Exhibition,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,openTo,Public,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,attracts,Tourists,Portsmouth Historic Dockyard
+National Museum of the Royal Navy,hasSite,Portsmouth Historic Dockyard,Portsmouth Historic Dockyard
+Portsmouth Historic Dockyard,near,Portsmouth Harbour,Portsmouth Historic Dockyard
+RAF Montford Bridge,instanceOf,Royal Air Force station,RAF Montford Bridge
+RAF Montford Bridge,locatedIn,"Montford Bridge, Shropshire, England",RAF Montford Bridge
+USS W. S. Sims,instanceOf,United States Navy ship,USS W. S. Sims
+"Meadowbank, Tasmania",instanceOf,locality,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",locatedInState,Tasmania,"Meadowbank, Tasmania"
+"Meadowbank, Tasmania",locatedInCountry,Australia,"Meadowbank, Tasmania"
+Lulu (1953 film),instanceOf,Film,Lulu (1953 film)
+MV American Courage,instanceOf,Motor Vessel,MV American Courage
+Double Concerto (Lutosławski),instanceOf,Musical work,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),genre,Concerto,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),composedBy,Witold Lutosławski,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),instrumentation,Violin and Cello with Orchestra,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),soloists,Violin,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),soloists,Cello,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),nationalityOfComposer,Polish,Double Concerto (Lutosławski)
+Double Concerto (Lutosławski),composedInCentury,20th century,Double Concerto (Lutosławski)
+Eristalini,instanceOf,Tribe,Eristalini
+Eristalini,rank,tribe,Eristalini
+Eristalini,subfamily,Eristalinae,Eristalini
+Eristalini,family,Syrphidae,Eristalini
+Eristalini,order,Diptera,Eristalini
+Eristalini,class,Insecta,Eristalini
+Eristalini,phylum,Arthropoda,Eristalini
+Eristalini,kingdom,Animalia,Eristalini
+Eristalini,description,A tribe of hoverflies in the family Syrphidae.,Eristalini
+The Three Witches,instanceOf,fictional character,The Three Witches
+The Three Witches,alternativeName,the Weird Sisters,The Three Witches
+The Three Witches,appearsIn,Macbeth (a tragedy by William Shakespeare),The Three Witches
+The Three Witches,author,William Shakespeare,The Three Witches
+The Three Witches,type,witches,The Three Witches
+The Three Witches,nature,supernatural,The Three Witches
+The Three Witches,number,three,The Three Witches
+The Three Witches,firstAppearance,"Act 1, Scene 1",The Three Witches
+The Three Witches,location,a heath with thunder and lightning,The Three Witches
+The Three Witches,speakingStyle,rhymed verse (often in rhymed couplets),The Three Witches
+The Three Witches,openingLine,"Fair is foul, and foul is fair",The Three Witches
+The Three Witches,prophecy,Macbeth will be thane of Cawdor,The Three Witches
+The Three Witches,prophecy,Macbeth will be king,The Three Witches
+The Three Witches,prophecy,Banquo's descendants will be kings,The Three Witches
+The Three Witches,interactWith,Macbeth,The Three Witches
+The Three Witches,interactWith,Banquo,The Three Witches
+The Three Witches,influence,Macbeth's ambition and actions,The Three Witches
+The Three Witches,themesInWork,"fate, ambition, and the supernatural",The Three Witches
+The Three Witches,disappearance,vanish after delivering prophecies,The Three Witches
+The Three Witches,genre,tragedy,The Three Witches
+Wang Tong (basketball),instanceOf,BasketballPlayer,Wang Tong (basketball)
+Audio Publishers Association,instanceOf,organization,Audio Publishers Association
+Audio Publishers Association,type,non-profit organization,Audio Publishers Association
+Audio Publishers Association,focusOn,audiobook publishing,Audio Publishers Association
+Audio Publishers Association,purpose,represent audiobook publishers and promote high standards in audio publishing,Audio Publishers Association
+Audio Publishers Association,organizes,Audies Awards,Audio Publishers Association
+Audio Publishers Association,provides,industry statistics and market data for audio publishing,Audio Publishers Association
+Audio Publishers Association,basedIn,United States,Audio Publishers Association
+Trustfall (song),instanceOf,song,Trustfall (song)
+Trustfall (song),artist,Pink,Trustfall (song)
+Trustfall (song),album,Trustfall (album),Trustfall (song)
+Hideaway (1937 film),instanceOf,Film,Hideaway (1937 film)
+Take You Down (Illenium song),instanceOf,Song,Take You Down (Illenium song)
+Take You Down (Illenium song),artist,Illenium,Take You Down (Illenium song)
+"Rodrigo de Sousa Coutinho, 1st Count of Linhares",instanceOf,Person,"Rodrigo de Sousa Coutinho, 1st Count of Linhares"
+"Billy Little (rugby league, born 1911)",instanceOf,Person,"Billy Little (rugby league, born 1911)"
+"Billy Little (rugby league, born 1911)",instanceOf,Rugby league footballer,"Billy Little (rugby league, born 1911)"
+Starsector,instanceOf,VideoGame,Starsector
+Starsector,alias,Starfarer,Starsector
+Starsector,developer,Fractal Softworks,Starsector
+Starsector,publisher,Fractal Softworks,Starsector
+Starsector,officialWebsite,https://fractalsoftworks.com/,Starsector
+Starsector,platform,Windows,Starsector
+Starsector,platform,macOS,Starsector
+Starsector,platform,Linux,Starsector
+Starsector,genre,Space trading and combat simulation,Starsector
+Starsector,status,In development,Starsector
+Robbie Ryan (cinematographer),instanceOf,Person,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),instanceOf,Cinematographer,Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),workedOn,The Favourite (2018),Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),workedOn,American Honey (2016),Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),workedOn,Fish Tank (2009),Robbie Ryan (cinematographer)
+Robbie Ryan (cinematographer),workedOn,Wuthering Heights (2011),Robbie Ryan (cinematographer)
+Acta Zoologica Cracoviensia,instanceOf,academic journal,Acta Zoologica Cracoviensia
+Hirudinaria (annelid),instanceOf,Genus,Hirudinaria (annelid)
+Hirudinaria (annelid),phylum,Annelida,Hirudinaria (annelid)
+Hirudinaria (annelid),habitat,Freshwater,Hirudinaria (annelid)
+Hirudinaria (annelid),isA,leech,Hirudinaria (annelid)
+Huepetuche District,instanceOf,district,Huepetuche District
+Dmitry Petrovich Dokhturov,instanceOf,Person,Dmitry Petrovich Dokhturov
+Dmitry Petrovich Dokhturov,nationality,Russian,Dmitry Petrovich Dokhturov
+Pennsylvania Railroad class C1,instanceOf,locomotive class,Pennsylvania Railroad class C1
+Pennsylvania Railroad class C1,operatedBy,Pennsylvania Railroad,Pennsylvania Railroad class C1
+Jim Cox (baseball),instanceOf,BaseballPlayer,Jim Cox (baseball)
+Tamil Times,instanceOf,newspaper,Tamil Times
+Brian Altman (poker player),instanceOf,Person,Brian Altman (poker player)
+Brian Altman (poker player),occupation,Professional poker player,Brian Altman (poker player)
+Brian Altman (poker player),nationality,American,Brian Altman (poker player)
+United States Department of Justice Criminal Division,instanceOf,Division,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,partOf,United States Department of Justice,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,headquarters,"Washington, D.C.",United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,jurisdiction,United States federal criminal law,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,primaryFunction,Prosecute federal criminal offenses and provide policy guidance on federal criminal matters,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,leadership,Assistant Attorney General for the Criminal Division,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,type,Federal government agency,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,role,Enforce federal criminal laws,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,collaborationWith,U.S. Attorneys' Offices and other federal law enforcement agencies,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,focus,Criminal enforcement of federal law,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,budget,Funded through the Department of Justice budget,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,establishedIn,Within the United States Department of Justice,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,locationCountry,United States,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,description,A division within the U.S. Department of Justice responsible for federal criminal enforcement,United States Department of Justice Criminal Division
+United States Department of Justice Criminal Division,website,justice.gov/criminal-div,United States Department of Justice Criminal Division
+Peking University First Hospital,instanceOf,Hospital,Peking University First Hospital
+Peking University First Hospital,locatedIn,"Beijing, China",Peking University First Hospital
+Peking University First Hospital,country,China,Peking University First Hospital
+Peking University First Hospital,city,Beijing,Peking University First Hospital
+Peking University First Hospital,affiliatedWith,Peking University Health Science Center,Peking University First Hospital
+Peking University First Hospital,affiliatedWith,Peking University,Peking University First Hospital
+Peking University First Hospital,isTeachingHospitalOf,Peking University Health Science Center,Peking University First Hospital
+Peking University First Hospital,type,Teaching hospital,Peking University First Hospital
+John Ireland (cricketer),instanceOf,Person,John Ireland (cricketer)
+John Ireland (cricketer),instanceOf,Cricketer,John Ireland (cricketer)
+Roman amphitheatre of Italica,instanceOf,Roman amphitheatre,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,locatedIn,Santiponce,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,near,Seville,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,country,Spain,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,constructionDate,circa 1st century CE,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,constructedBy,Romans,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,purpose,gladiatorial games,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,purpose,beast hunts,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,isPartOf,Italica archaeological site,Roman amphitheatre of Italica
+Italica archaeological site,location,"Santiponce, near Seville, Spain",Roman amphitheatre of Italica
+Roman amphitheatre of Italica,material,stone and brick,Roman amphitheatre of Italica
+Roman amphitheatre of Italica,era,Imperial era,Roman amphitheatre of Italica
+2012 OFC Nations Cup final,instanceOf,football match,2012 OFC Nations Cup final
+NGC 4999,instanceOf,Galaxy,NGC 4999
+Marcell Ateman,instanceOf,Person,Marcell Ateman
+Marcell Ateman,nationality,American,Marcell Ateman
+Marcell Ateman,occupation,American football player,Marcell Ateman
+Marcell Ateman,sport,American football,Marcell Ateman
+Marcell Ateman,position,Wide receiver,Marcell Ateman
+Marcell Ateman,educatedAt,Oklahoma State University,Marcell Ateman
+Marcell Ateman,almaMater,Oklahoma State University,Marcell Ateman
+Marcell Ateman,collegeTeam,Oklahoma State Cowboys football,Marcell Ateman
+Marcell Ateman,memberOf,Oklahoma State Cowboys football,Marcell Ateman
+Never Worn White,instanceOf,Song,Never Worn White
+Never Worn White,artist,Katy Perry,Never Worn White
+Louth Museum,instanceOf,Museum,Louth Museum
+Louth Museum,locatedIn,Louth,Louth Museum
+Louth Museum,locatedInCounty,Lincolnshire,Louth Museum
+Louth Museum,locatedInCountry,United Kingdom,Louth Museum
+Brown-snouted blind snake,instanceOf,blind snake,Brown-snouted blind snake
+Brown-snouted blind snake,instanceOf,snake,Brown-snouted blind snake
+Brown-snouted blind snake,instanceOf,reptile,Brown-snouted blind snake
+"St Peter Parmentergate, Norwich",instanceOf,Church,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",location,Norwich,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",locatedIn,Norfolk,"St Peter Parmentergate, Norwich"
+"St Peter Parmentergate, Norwich",locatedIn,England,"St Peter Parmentergate, Norwich"
+Vipera berus sachalinensis,instanceOf,Subspecies,Vipera berus sachalinensis
+Vipera berus sachalinensis,taxonRank,subspecies,Vipera berus sachalinensis
+Vipera berus sachalinensis,parentTaxon,Vipera berus,Vipera berus sachalinensis
+Vipera berus sachalinensis,scientificName,Vipera berus sachalinensis,Vipera berus sachalinensis
+Vipera berus sachalinensis,kingdom,Animalia,Vipera berus sachalinensis
+Vipera berus sachalinensis,phylum,Chordata,Vipera berus sachalinensis
+Vipera berus sachalinensis,class,Reptilia,Vipera berus sachalinensis
+Vipera berus sachalinensis,order,Squamata,Vipera berus sachalinensis
+Vipera berus sachalinensis,family,Viperidae,Vipera berus sachalinensis
+Vipera berus sachalinensis,genus,Vipera,Vipera berus sachalinensis
+Vipera berus sachalinensis,species,Vipera berus,Vipera berus sachalinensis
+Vipera berus sachalinensis,geographicDistribution,"Sakhalin Island, Russian Far East",Vipera berus sachalinensis
+Vipera berus sachalinensis,isVenomous,True,Vipera berus sachalinensis
+Vipera berus sachalinensis,subspeciesOf,Vipera berus,Vipera berus sachalinensis
+Lesser prairie-chicken,instanceOf,Tympanuchus pallidicinctus,Lesser prairie-chicken
+Lesser prairie-chicken,scientificName,Tympanuchus pallidicinctus,Lesser prairie-chicken
+Lesser prairie-chicken,order,Galliformes,Lesser prairie-chicken
+Lesser prairie-chicken,class,Aves,Lesser prairie-chicken
+Lesser prairie-chicken,family,Phasianidae,Lesser prairie-chicken
+Lesser prairie-chicken,genus,Tympanuchus,Lesser prairie-chicken
+Lesser prairie-chicken,habitat,grassland and shrubland; ground-dwelling,Lesser prairie-chicken
+Lesser prairie-chicken,matingSystem,lek,Lesser prairie-chicken
+Lesser prairie-chicken,reproduction,males perform in leks; females select mates,Lesser prairie-chicken
+Lesser prairie-chicken,diet,seeds of grasses and forbs,Lesser prairie-chicken
+Lesser prairie-chicken,diet,insects for chicks,Lesser prairie-chicken
+Lesser prairie-chicken,range,Great Plains region of the United States,Lesser prairie-chicken
+Lesser prairie-chicken,historicRangeState,Colorado,Lesser prairie-chicken
+Lesser prairie-chicken,historicRangeState,Kansas,Lesser prairie-chicken
+Lesser prairie-chicken,historicRangeState,New Mexico,Lesser prairie-chicken
+Lesser prairie-chicken,historicRangeState,Oklahoma,Lesser prairie-chicken
+Lesser prairie-chicken,historicRangeState,Texas,Lesser prairie-chicken
+Lesser prairie-chicken,conservationStatus,Threatened,Lesser prairie-chicken
+Lesser prairie-chicken,statusSystem,ESA,Lesser prairie-chicken
+Lesser prairie-chicken,majorThreats,habitat loss and fragmentation due to energy development and agriculture,Lesser prairie-chicken
+Lesser prairie-chicken,nestingLocation,ground nests in prairie grasses,Lesser prairie-chicken
+Lesser prairie-chicken,breedingSeason,spring to early summer,Lesser prairie-chicken
+Lesser prairie-chicken,rangeNote,range is fragmented and reduced in many areas,Lesser prairie-chicken
+Lesser prairie-chicken,relatedSpecies,Greater prairie-chicken (Tympanuchus cupido),Lesser prairie-chicken
+Lesser prairie-chicken,nativeTo,North America,Lesser prairie-chicken
+Lesser prairie-chicken,inCountry,United States,Lesser prairie-chicken
+Lesser prairie-chicken,conservationMeasures,habitat restoration and management programs,Lesser prairie-chicken
+Lesser prairie-chicken,call,calls during mating displays,Lesser prairie-chicken
+Lesser prairie-chicken,physicalCharacteristic,cryptic brown and tan plumage,Lesser prairie-chicken
+Lesser prairie-chicken,endemicTo,North American grasslands,Lesser prairie-chicken
+Australia at the 2018 Winter Olympics,instanceOf,National team at the Winter Olympics representing Australia,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,country,Australia,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,hostCity,PyeongChang,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,hostCountry,South Korea,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,hostYear,2018,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,season,Winter,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,event,Winter Olympic Games,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,location,"PyeongChang, South Korea",Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,governingBody,Australian Olympic Committee,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,nationalOlympicCommittee,Australian Olympic Committee,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,startDate,2018-02-09,Australia at the 2018 Winter Olympics
+Australia at the 2018 Winter Olympics,endDate,2018-02-25,Australia at the 2018 Winter Olympics
+1971 Tour of Flanders,instanceOf,cycling race,1971 Tour of Flanders
+1971 Tour of Flanders,location,Belgium,1971 Tour of Flanders
+1971 Tour of Flanders,date,1971,1971 Tour of Flanders
+1971 Tour of Flanders,type,one-day cycling classic,1971 Tour of Flanders
+1971 Tour of Flanders,isAnnualEvent,true,1971 Tour of Flanders
+Arnold Juklerød,instanceOf,Person,Arnold Juklerød
+2010 Rochdale Metropolitan Borough Council election,instanceOf,local government election,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,date,2010-05-06,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,location,"Rochdale, Greater Manchester, England",2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,electionFor,Rochdale Metropolitan Borough Council,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,electionType,local council election,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,partOf,2010 United Kingdom local elections,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,country,England,2010 Rochdale Metropolitan Borough Council election
+2010 Rochdale Metropolitan Borough Council election,organisedBy,Rochdale Metropolitan Borough Council,2010 Rochdale Metropolitan Borough Council election
+Jeanette Rodríguez (actress),instanceOf,Person,Jeanette Rodríguez (actress)
+2003 Sundance Film Festival,instanceOf,Film Festival,2003 Sundance Film Festival
+2003 Sundance Film Festival,location,"Park City, Utah",2003 Sundance Film Festival
+2003 Sundance Film Festival,organizer,Sundance Institute,2003 Sundance Film Festival
+Pilagás Department,instanceOf,Department,Pilagás Department
+Pilagás Department,locatedIn,Formosa Province,Pilagás Department
+Pilagás Department,locatedIn,Argentina,Pilagás Department
+Pilagás Department,namedAfter,Pilagá people,Pilagás Department
+White-headed wren,instanceOf,Bird,White-headed wren
+North Carolina Highway 125,instanceOf,State highway,North Carolina Highway 125
+North Carolina Highway 125,locatedInState,North Carolina,North Carolina Highway 125
+North Carolina Highway 125,maintainedBy,North Carolina Department of Transportation,North Carolina Highway 125
+North Carolina Highway 125,partOf,North Carolina state highway system,North Carolina Highway 125
+North Carolina Highway 125,designatedAs,NC 125,North Carolina Highway 125
+North Carolina Highway 125,hasRouteNumber,125,North Carolina Highway 125
+North Carolina Highway 125,locatedInCountry,United States,North Carolina Highway 125
+"St John the Evangelist's Church, Abram",instanceOf,Church,"St John the Evangelist's Church, Abram"
+Gutsbezirk Reinhardswald,instanceOf,Gutsbezirk,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,locatedIn,Hesse,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,locatedInCountry,Germany,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,partOf,Landkreis Kassel,Gutsbezirk Reinhardswald
+Gutsbezirk Reinhardswald,includes,Reinhardswald forest,Gutsbezirk Reinhardswald
+1988 NCAA Division II football season,instanceOf,NCAA Division II football season,1988 NCAA Division II football season
+1988 NCAA Division II football season,sport,American football,1988 NCAA Division II football season
+1988 NCAA Division II football season,level,Division II,1988 NCAA Division II football season
+1988 NCAA Division II football season,country,United States,1988 NCAA Division II football season
+1988 NCAA Division II football season,organization,NCAA,1988 NCAA Division II football season
+1988 NCAA Division II football season,startYear,1988,1988 NCAA Division II football season
+Knight Moves (video game),instanceOf,video game,Knight Moves (video game)
+Bembidion carolinense,instanceOf,species,Bembidion carolinense
+Bembidion carolinense,belongsToGenus,Bembidion,Bembidion carolinense
+Bembidion carolinense,belongsToFamily,Carabidae,Bembidion carolinense
+Bembidion carolinense,belongsToOrder,Coleoptera,Bembidion carolinense
+Bembidion carolinense,belongsToClass,Insecta,Bembidion carolinense
+Bembidion carolinense,belongsToPhylum,Arthropoda,Bembidion carolinense
+Bembidion carolinense,belongsToKingdom,Animalia,Bembidion carolinense
+Bembidion carolinense,isA,ground beetle,Bembidion carolinense
+200 (film),instanceOf,Film,200 (film)
+2022 Colombian presidential election,instanceOf,presidentialElection,2022 Colombian presidential election
+2022 Colombian presidential election,country,Colombia,2022 Colombian presidential election
+2022 Colombian presidential election,startDate,2022-05-29,2022 Colombian presidential election
+2022 Colombian presidential election,endDate,2022-06-19,2022 Colombian presidential election
+2022 Colombian presidential election,firstRoundDate,2022-05-29,2022 Colombian presidential election
+2022 Colombian presidential election,secondRoundDate,2022-06-19,2022 Colombian presidential election
+2022 Colombian presidential election,organizer,Registraduría Nacional del Estado Civil,2022 Colombian presidential election
+2022 Colombian presidential election,winner,Gustavo Petro,2022 Colombian presidential election
+2022 Colombian presidential election,runnerUp,Rodolfo Hernández Suárez,2022 Colombian presidential election
+Gustavo Petro,party,Pacto Histórico,2022 Colombian presidential election
+Gustavo Petro,nationality,Colombian,2022 Colombian presidential election
+Gustavo Petro,role,president-elect,2022 Colombian presidential election
+Rodolfo Hernández Suárez,party,Liga de Gobernantes Anticorrupción,2022 Colombian presidential election
+Rodolfo Hernández Suárez,nationality,Colombian,2022 Colombian presidential election
+Francia Márquez,role,vice president-elect,2022 Colombian presidential election
+Francia Márquez,party,Pacto Histórico,2022 Colombian presidential election
+Francia Márquez,nationality,Colombian,2022 Colombian presidential election
+Gustavo Petro,inaugurationDate,2022-08-07,2022 Colombian presidential election
+Francia Márquez,inaugurationDate,2022-08-07,2022 Colombian presidential election
+Registraduría Nacional del Estado Civil,type,electionOrganizer,2022 Colombian presidential election
+Lycosoura Artemis,instanceOf,statue,Lycosoura Artemis
+Johnny Test (2021 TV series),instanceOf,TVSeries,Johnny Test (2021 TV series)
+Calpionellid,instanceOf,fossil organism,Calpionellid
+Linlithgow Sheriff Court,instanceOf,Sheriff Court,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,locatedIn,Linlithgow,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,locatedIn,West Lothian,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,locatedInCountry,Scotland,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,partOf,Scottish Courts and Tribunals Service,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,jurisdictionFor,Civil cases,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,jurisdictionFor,Criminal cases (summary proceedings),Linlithgow Sheriff Court
+Linlithgow Sheriff Court,jurisdictionFor,Criminal cases (solemn proceedings when applicable),Linlithgow Sheriff Court
+Linlithgow Sheriff Court,type,Public building,Linlithgow Sheriff Court
+Linlithgow Sheriff Court,partOf,Judiciary of Scotland,Linlithgow Sheriff Court
+Sandro Puppo,instanceOf,Person,Sandro Puppo
+Hof HaSharon Regional Council,instanceOf,Regional Council,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,locatedIn,Central District,Hof HaSharon Regional Council
+Hof HaSharon Regional Council,locatedInCountry,Israel,Hof HaSharon Regional Council
+Leucadendron salicifolium,instanceOf,species,Leucadendron salicifolium
+Leucadendron salicifolium,belongsToGenus,Leucadendron,Leucadendron salicifolium
+Leucadendron salicifolium,belongsToFamily,Proteaceae,Leucadendron salicifolium
+Leucadendron salicifolium,nativeTo,South Africa,Leucadendron salicifolium
+Leucadendron salicifolium,nativeToRegion,Western Cape,Leucadendron salicifolium
+Leucadendron salicifolium,nativeToRegion,Eastern Cape,Leucadendron salicifolium
+Leucadendron salicifolium,habitat,fynbos,Leucadendron salicifolium
+Leucadendron salicifolium,growthForm,shrub,Leucadendron salicifolium
+Leucadendron salicifolium,leafShape,linear-lanceolate,Leucadendron salicifolium
+Leucadendron salicifolium,leafArrangement,alternate,Leucadendron salicifolium
+Leucadendron salicifolium,inflorescenceType,cone,Leucadendron salicifolium
+Leucadendron salicifolium,uses,ornamental plant,Leucadendron salicifolium
+Leucadendron salicifolium,uses,floristry,Leucadendron salicifolium
+Leucadendron salicifolium,cultivationStatus,cultivated,Leucadendron salicifolium
+Cyprus Volleyball Division 1,instanceOf,Volleyball league in Cyprus,Cyprus Volleyball Division 1
+Wiener Gruppe,instanceOf,Austrian literary group,Wiener Gruppe
+Wiener Gruppe,location,"Vienna, Austria",Wiener Gruppe
+Wiener Gruppe,formedIn,1950s,Wiener Gruppe
+Wiener Gruppe,focus,experimental poetry and language play,Wiener Gruppe
+Wiener Gruppe,hasMember,H. C. Artmann,Wiener Gruppe
+Wiener Gruppe,hasMember,Konrad Bayer,Wiener Gruppe
+Wiener Gruppe,hasMember,Gerhard Rühm,Wiener Gruppe
+Wiener Gruppe,hasMember,Oswald Wiener,Wiener Gruppe
+H. C. Artmann,instanceOf,Austrian poet,Wiener Gruppe
+H. C. Artmann,memberOf,Wiener Gruppe,Wiener Gruppe
+Konrad Bayer,instanceOf,Austrian poet,Wiener Gruppe
+Konrad Bayer,memberOf,Wiener Gruppe,Wiener Gruppe
+Gerhard Rühm,instanceOf,Austrian writer,Wiener Gruppe
+Gerhard Rühm,memberOf,Wiener Gruppe,Wiener Gruppe
+Oswald Wiener,instanceOf,Austrian writer,Wiener Gruppe
+Oswald Wiener,memberOf,Wiener Gruppe,Wiener Gruppe
+Munsey's Magazine,instanceOf,Magazine,Munsey's Magazine
+Munsey's Magazine,publisher,Frank Munsey,Munsey's Magazine
+Munsey's Magazine,founder,Frank Munsey,Munsey's Magazine
+Munsey's Magazine,language,English,Munsey's Magazine
+Munsey's Magazine,country,United States,Munsey's Magazine
+Munsey's Magazine,genre,general-interest magazine,Munsey's Magazine
+Patagonian red octopus,instanceOf,Enteroctopus megalocyathus,Patagonian red octopus
+2023 Slough Borough Council election,instanceOf,local election,2023 Slough Borough Council election
+2023 Slough Borough Council election,location,"Slough, Berkshire, England, United Kingdom",2023 Slough Borough Council election
+2023 Slough Borough Council election,date,2023-05-04,2023 Slough Borough Council election
+2023 Slough Borough Council election,country,United Kingdom,2023 Slough Borough Council election
+2023 Slough Borough Council election,governingBody,Slough Borough Council,2023 Slough Borough Council election
+2023 Slough Borough Council election,electoralSystem,First-past-the-post,2023 Slough Borough Council election
+2023 Slough Borough Council election,purpose,to elect councillors to Slough Borough Council,2023 Slough Borough Council election
+United Nations Security Council Resolution 1426,instanceOf,UN Security Council Resolution,United Nations Security Council Resolution 1426
+Rajakilpakkam,instanceOf,Neighborhood,Rajakilpakkam
+Rajakilpakkam,locatedInState,Tamil Nadu,Rajakilpakkam
+Rajakilpakkam,locatedInCountry,India,Rajakilpakkam
+Zenon Kasprzak,instanceOf,Person,Zenon Kasprzak
+Acer oligocarpum,instanceOf,PlantSpecies,Acer oligocarpum
+Acer oligocarpum,taxonRank,species,Acer oligocarpum
+Acer oligocarpum,genus,Acer,Acer oligocarpum
+Acer oligocarpum,family,Sapindaceae,Acer oligocarpum
+Acer oligocarpum,order,Sapindales,Acer oligocarpum
+Acer oligocarpum,clade,Angiosperms,Acer oligocarpum
+Acer oligocarpum,clade,Eudicots,Acer oligocarpum
+Acer oligocarpum,kingdom,Plantae,Acer oligocarpum
+Nigel Foster (kayaker),instanceOf,Person,Nigel Foster (kayaker)
+Nigel Foster (kayaker),occupation,kayaker,Nigel Foster (kayaker)
+Breakout (Miley Cyrus album),instanceOf,Studio album,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),artist,Miley Cyrus,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),releaseDate,"July 22, 2008",Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),recordLabel,Hollywood Records,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),language,English,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),genre,Pop rock,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),country,United States,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),precededBy,Hannah Montana 2: Meet Miley Cyrus,Breakout (Miley Cyrus album)
+Breakout (Miley Cyrus album),followedBy,Can't Be Tamed,Breakout (Miley Cyrus album)
+Jean Jaurès,instanceOf,Person,Jean Jaurès
+Jean Jaurès,birthDate,1859-09-03,Jean Jaurès
+Jean Jaurès,birthPlace,"Castres, Tarn, France",Jean Jaurès
+Jean Jaurès,deathDate,1914-07-31,Jean Jaurès
+Jean Jaurès,deathPlace,"Paris, France",Jean Jaurès
+Jean Jaurès,nationality,French,Jean Jaurès
+Jean Jaurès,occupation,politician,Jean Jaurès
+Jean Jaurès,occupation,journalist,Jean Jaurès
+Jean Jaurès,occupation,philosopher,Jean Jaurès
+Jean Jaurès,occupation,pacifist,Jean Jaurès
+Jean Jaurès,founded,L'Humanité (1904),Jean Jaurès
+Jean Jaurès,memberOf,French Section of the Workers' International (SFIO),Jean Jaurès
+Jean Jaurès,notableIdea,internationalism,Jean Jaurès
+Jean Jaurès,opposed,war,Jean Jaurès
+Jean Jaurès,advocated,universal suffrage,Jean Jaurès
+Jean Jaurès,advocated,public education,Jean Jaurès
+Jean Jaurès,influenced,French socialist movement,Jean Jaurès
+Jean Jaurès,almaMater,University of Toulouse,Jean Jaurès
+Jean Jaurès,deathEvent,"Assassination in Paris on July 31, 1914",Jean Jaurès
+Jean Jaurès,assassinatedBy,Raoul Villain,Jean Jaurès
+Raoul Villain,notableFor,Assassination of Jean Jaurès,Jean Jaurès
+Jean Jaurès,diedAtLocation,"Café Le Croissant, Paris",Jean Jaurès
+Jean Jaurès,legacy,Influenced anti-war and socialist movements in France,Jean Jaurès
+Jean Jaurès,servedAs,Deputy in the French Parliament,Jean Jaurès
+Jean Jaurès,contributedTo,L'Humanité newspaper,Jean Jaurès
+Leh–Manali Highway,instanceOf,highway,Leh–Manali Highway
+Leh–Manali Highway,country,India,Leh–Manali Highway
+Leh–Manali Highway,connects,Leh and Manali,Leh–Manali Highway
+Leh–Manali Highway,traversesRegion,Ladakh,Leh–Manali Highway
+Leh–Manali Highway,traversesRegion,Himachal Pradesh,Leh–Manali Highway
+Leh–Manali Highway,partOf,National Highway network,Leh–Manali Highway
+Leh–Manali Highway,passesThrough,Rohtang Pass,Leh–Manali Highway
+Leh–Manali Highway,passesThrough,Baralacha La,Leh–Manali Highway
+Leh–Manali Highway,passesThrough,Lachulung La,Leh–Manali Highway
+Leh–Manali Highway,passesThrough,Tanglang La,Leh–Manali Highway
+Leh–Manali Highway,length,approximately 490 kilometers,Leh–Manali Highway
+Leh–Manali Highway,openMonths,June to September,Leh–Manali Highway
+Leh–Manali Highway,seasonality,seasonally open; closed in winter,Leh–Manali Highway
+Leh–Manali Highway,uses,strategic supply route for the Indian Army,Leh–Manali Highway
+Leh–Manali Highway,locatedIn,Ladakh,Leh–Manali Highway
+Leh–Manali Highway,locatedIn,Himachal Pradesh,Leh–Manali Highway
+Leh–Manali Highway,alsoKnownAs,Leh–Manali Road,Leh–Manali Highway
+Leh–Manali Highway,landmarksAlong,Sarchu,Leh–Manali Highway
+Leh–Manali Highway,landmarksAlong,Keylong,Leh–Manali Highway
+Leh–Manali Highway,landmarksAlong,Pang,Leh–Manali Highway
+Leh–Manali Highway,landmarksAlong,Jispa,Leh–Manali Highway
+Leh–Manali Highway,scenic,noted for Himalayan scenery,Leh–Manali Highway
+Leh–Manali Highway,highestPassAlongRoute,Tanglang La,Leh–Manali Highway
+Leh–Manali Highway,condition,high altitude mountainous road with variable conditions,Leh–Manali Highway
+Leh–Manali Highway,alternatives,Lahaul and Spiti road network,Leh–Manali Highway
+Changhe station (Hangzhou Metro),instanceOf,Hangzhou Metro station,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),locatedInCity,Hangzhou,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),locatedInCountry,China,Changhe station (Hangzhou Metro)
+Changhe station (Hangzhou Metro),operator,Hangzhou Metro,Changhe station (Hangzhou Metro)
+Karakum (film),instanceOf,film,Karakum (film)
+Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin,instanceOf,Person,Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin
+George Desmond Hodnett,instanceOf,Human,George Desmond Hodnett
+We'll Be Together Again (Pat Martino album),instanceOf,Album,We'll Be Together Again (Pat Martino album)
+We'll Be Together Again (Pat Martino album),artist,Pat Martino,We'll Be Together Again (Pat Martino album)
+Nyamiviridae,instanceOf,virus family,Nyamiviridae
+German submarine U-854,instanceOf,U-boat,German submarine U-854
+Waste Connections of Canada,instanceOf,Company,Waste Connections of Canada
+2003–04 Georgia Tech Yellow Jackets men's basketball team,instanceOf,NCAA Division I men's basketball team,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,affiliatedWith,Georgia Institute of Technology,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,basedIn,"Atlanta, Georgia",2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,homeArena,Alexander Memorial Coliseum,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,season,2003–04,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,headCoach,Paul Hewitt,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,competesIn,Atlantic Coast Conference,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,conference,Atlantic Coast Conference,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,sport,men's basketball,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,teamNickname,Yellow Jackets,2003–04 Georgia Tech Yellow Jackets men's basketball team
+2003–04 Georgia Tech Yellow Jackets men's basketball team,homeCity,Atlanta,2003–04 Georgia Tech Yellow Jackets men's basketball team
+Castle of Ugento,instanceOf,castle,Castle of Ugento
+Castle of Ugento,locatedIn,Ugento,Castle of Ugento
+Castle of Ugento,locatedInProvince,Province of Lecce,Castle of Ugento
+Castle of Ugento,locatedInRegion,Apulia,Castle of Ugento
+Castle of Ugento,locatedInCountry,Italy,Castle of Ugento
+Castle of Ugento,era,medieval,Castle of Ugento
+Thurnen railway station,instanceOf,railway_station,Thurnen railway station
+Bette Otto-Bliesner,instanceOf,Person,Bette Otto-Bliesner
+Bette Otto-Bliesner,occupation,Scientist,Bette Otto-Bliesner
+Bette Otto-Bliesner,field,Climate science,Bette Otto-Bliesner
+Bette Otto-Bliesner,specialization,Climate modeling,Bette Otto-Bliesner
+Bette Otto-Bliesner,affiliation,National Center for Atmospheric Research (NCAR),Bette Otto-Bliesner
+Bette Otto-Bliesner,organization,National Center for Atmospheric Research (NCAR),Bette Otto-Bliesner
+Bette Otto-Bliesner,researchArea,Paleoclimate,Bette Otto-Bliesner
+Bette Otto-Bliesner,researchTool,Community Earth System Model (CESM),Bette Otto-Bliesner
+Bette Otto-Bliesner,knownFor,Paleoclimate modeling using CESM,Bette Otto-Bliesner
+Wish You Were Here (Barbara Mandrell song),instanceOf,Song,Wish You Were Here (Barbara Mandrell song)
+Wish You Were Here (Barbara Mandrell song),artist,Barbara Mandrell,Wish You Were Here (Barbara Mandrell song)
+"Enfield, Victoria",instanceOf,locality,"Enfield, Victoria"
+"Enfield, Victoria",locatedInState,Victoria,"Enfield, Victoria"
+"Enfield, Victoria",locatedInCountry,Australia,"Enfield, Victoria"
+Free Fire (film),instanceOf,film,Free Fire (film)
+Free Fire (film),directedBy,Ben Wheatley,Free Fire (film)
+Free Fire (film),writtenBy,Amy Jump,Free Fire (film)
+Free Fire (film),yearOfRelease,2016,Free Fire (film)
+Free Fire (film),setting,"1978 Boston, in a warehouse during a gun deal",Free Fire (film)
+Free Fire (film),language,English,Free Fire (film)
+Free Fire (film),premieredAt,Toronto International Film Festival,Free Fire (film)
+Free Fire (film),genre,action comedy crime film,Free Fire (film)
+Costa Verde (Peru),instanceOf,geographic region,Costa Verde (Peru)
+Costa Verde (Peru),locatedIn,Peru,Costa Verde (Peru)
+Costa Verde (Peru),borders,Pacific Ocean,Costa Verde (Peru)
+Costa Verde (Peru),hasGeographicFeature,coastal cliffs along the Pacific coast,Costa Verde (Peru)
+Costa Verde (Peru),hasGeographicFeature,beaches along the coast,Costa Verde (Peru)
+Costa Verde (Peru),isKnownFor,scenic coastal views,Costa Verde (Peru)
+Tropical Storm Arlene (2011),instanceOf,Tropical Storm,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),partOfSeason,2011 Atlantic hurricane season,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),name,Arlene,Tropical Storm Arlene (2011)
+Tropical Storm Arlene (2011),formed,April 2011,Tropical Storm Arlene (2011)
+Üç Şerefeli Mosque,instanceOf,Mosque,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,location,"Edirne, Turkey",Üç Şerefeli Mosque
+Üç Şerefeli Mosque,city,Edirne,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,country,Turkey,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,minaretsCount,3,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,nameMeaning,Three Balconies,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,alternativeName,Üç Şerefeli Camii,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,constructionPeriod,15th century (late 1400s),Üç Şerefeli Mosque
+Üç Şerefeli Mosque,architecturalStyle,Ottoman architecture (early/transition to classical),Üç Şerefeli Mosque
+Üç Şerefeli Mosque,significance,Early example of Ottoman architecture with multiple minarets,Üç Şerefeli Mosque
+Üç Şerefeli Mosque,dome,Large central dome,Üç Şerefeli Mosque
+George Henry Hall (artist),instanceOf,artist,George Henry Hall (artist)
+George Henry Hall (artist),occupation,painter,George Henry Hall (artist)
+Nagao Station (Kagawa),instanceOf,Railway Station,Nagao Station (Kagawa)
+Nagao Station (Kagawa),locatedIn,Kagawa Prefecture,Nagao Station (Kagawa)
+Nagao Station (Kagawa),locatedInCountry,Japan,Nagao Station (Kagawa)
+Nagao Station (Kagawa),hasAlternateName,Nagao-eki,Nagao Station (Kagawa)
+Tibetan serin,instanceOf,bird,Tibetan serin
+Kolpino railway station,instanceOf,railway station,Kolpino railway station
+Kolpino railway station,locatedIn,Kolpinsky District,Kolpino railway station
+Kolpino railway station,locatedIn,Saint Petersburg,Kolpino railway station
+Kolpino railway station,locatedIn,Russia,Kolpino railway station
+2009 World Rhythmic Gymnastics Championships,instanceOf,WorldRhythmicGymnasticsChampionships,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,location,"Ise, Mie Prefecture, Japan",2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,hostCity,Ise,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,hostCountry,Japan,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,organizer,FIG,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,sport,Rhythmic gymnastics,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,level,Senior,2009 World Rhythmic Gymnastics Championships
+2009 World Rhythmic Gymnastics Championships,year,2009,2009 World Rhythmic Gymnastics Championships
+Crystal chemistry,instanceOf,fieldOfScience,Crystal chemistry
+Crystal chemistry,definedAs,study of crystal structures and properties of crystalline solids,Crystal chemistry
+Crystal chemistry,focusesOn,arrangement of ions in crystals and their lattice structures,Crystal chemistry
+Crystal chemistry,relatedTo,crystallography,Crystal chemistry
+Crystal chemistry,relatedTo,solidStateChemistry,Crystal chemistry
+Crystal chemistry,usesInstrument,X-ray crystallography,Crystal chemistry
+Crystal chemistry,usesInstrument,neutron diffraction,Crystal chemistry
+Crystal chemistry,usesInstrument,electron diffraction,Crystal chemistry
+Crystal chemistry,investigates,lattice energy,Crystal chemistry
+Crystal chemistry,investigates,space group symmetry,Crystal chemistry
+Crystal chemistry,includes,polymorphism,Crystal chemistry
+Crystal chemistry,studies,ionic crystals,Crystal chemistry
+Crystal chemistry,studies,covalent crystals,Crystal chemistry
+Crystal chemistry,studies,metallic crystals,Crystal chemistry
+Crystal chemistry,studies,molecular crystals,Crystal chemistry
+Crystal chemistry,concerns,unit cell,Crystal chemistry
+Crystal chemistry,concerns,crystal lattice,Crystal chemistry
+Crystal chemistry,isA,discipline,Crystal chemistry
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,instanceOf,Swimming event,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,partOf,2013 World Aquatics Championships,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,location,"Barcelona, Spain",Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,city,Barcelona,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,country,Spain,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,sport,Swimming,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,discipline,Backstroke,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,distance,50 metres,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke,gender,Men,Swimming at the 2013 World Aquatics Championships – Men's 50 metre backstroke
+1997–98 Országos Bajnokság I (men's water polo),instanceOf,season of Hungarian OB I (men's water polo),1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),startYear,1997,1997–98 Országos Bajnokság I (men's water polo)
+1997–98 Országos Bajnokság I (men's water polo),endYear,1998,1997–98 Országos Bajnokság I (men's water polo)
+Brackwede station,instanceOf,railway station,Brackwede station
+Brackwede station,locatedIn,Brackwede,Brackwede station
+Brackwede station,locatedInAdministrativeEntity,Bielefeld,Brackwede station
+Brackwede station,locatedInState,North Rhine-Westphalia,Brackwede station
+Brackwede station,locatedInCountry,Germany,Brackwede station
+Brackwede station,operator,DB Station&Service,Brackwede station
+Vila Real railway station,instanceOf,Railway station,Vila Real railway station
+Vila Real railway station,locatedInCity,Vila Real,Vila Real railway station
+Vila Real railway station,locatedInCountry,Portugal,Vila Real railway station
+Vila Real railway station,operator,Comboios de Portugal,Vila Real railway station
+Vila Real railway station,onLine,Linha do Douro,Vila Real railway station
+Commandant (rank),instanceOf,militaryRank,Commandant (rank)
+Commandant (rank),englishEquivalent,Major,Commandant (rank)
+Commandant (rank),ranksAbove,Capitaine,Commandant (rank)
+Commandant (rank),ranksBelow,Lieutenant-Colonel,Commandant (rank)
+Commandant (rank),countryUsage,France,Commandant (rank)
+Commandant (rank),etymology,From French commandant meaning commander,Commandant (rank)
+Boomerang (2015 film),instanceOf,Film,Boomerang (2015 film)
+Henriette Hansen (handballer),instanceOf,HandballPlayer,Henriette Hansen (handballer)
+Alex Allan (footballer),instanceOf,Person,Alex Allan (footballer)
+Bayerisches Armeemuseum,instanceOf,Museum,Bayerisches Armeemuseum
+Bayerisches Armeemuseum,locatedIn,Germany,Bayerisches Armeemuseum
+Tulane Green Wave women's basketball,instanceOf,NCAA Division I women's basketball team,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,gender,women,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,sport,basketball,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,level,NCAA Division I,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,affiliatedWith,Tulane University,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,location,"New Orleans, Louisiana",Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,homeArena,Devlin Fieldhouse,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,conference,American Athletic Conference,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,joinedConferenceYear,2014,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,headCoach,Lisa Stockton,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,colors,olive green and sky blue,Tulane Green Wave women's basketball
+Tulane Green Wave women's basketball,university,Tulane University,Tulane Green Wave women's basketball
+Rocket.Chat,instanceOf,open-source software,Rocket.Chat
+Rocket.Chat,instanceOf,team collaboration platform,Rocket.Chat
+Rocket.Chat,hasClient,web client,Rocket.Chat
+Rocket.Chat,hasClient,iOS mobile client,Rocket.Chat
+Rocket.Chat,hasClient,Android mobile client,Rocket.Chat
+Rocket.Chat,hasClient,desktop client (Electron),Rocket.Chat
+Rocket.Chat,runsOnServer,Node.js,Rocket.Chat
+Rocket.Chat,usesDatabase,MongoDB,Rocket.Chat
+Rocket.Chat,hostingSelfHosted,true,Rocket.Chat
+Rocket.Chat,hostingCloud,true,Rocket.Chat
+Rocket.Chat,canIntegrate,apps and bots,Rocket.Chat
+Rocket.Chat,hasAPI,REST API,Rocket.Chat
+Rocket.Chat,hasRealtimeAPI,WebSocket-based API,Rocket.Chat
+Rocket.Chat,supportsOAuth,true,Rocket.Chat
+Rocket.Chat,supportsLDAP,true,Rocket.Chat
+Rocket.Chat,supportsSAML,true,Rocket.Chat
+Rocket.Chat,supports2FA,true,Rocket.Chat
+Rocket.Chat,supportsPushNotifications,true,Rocket.Chat
+Rocket.Chat,supportsFileSharing,true,Rocket.Chat
+Rocket.Chat,supportsDirectMessages,true,Rocket.Chat
+Rocket.Chat,supportsGroupChats,true,Rocket.Chat
+Rocket.Chat,supportsPublicChannels,true,Rocket.Chat
+Rocket.Chat,supportsPrivateChannels,true,Rocket.Chat
+Rocket.Chat,supportsThreadedConversations,true,Rocket.Chat
+Rocket.Chat,supportsMessageEditing,true,Rocket.Chat
+Rocket.Chat,supportsMessageDeletion,true,Rocket.Chat
+Rocket.Chat,supportsReactions,true,Rocket.Chat
+Rocket.Chat,supportsMentions,true,Rocket.Chat
+Rocket.Chat,supportsEmoji,true,Rocket.Chat
+Rocket.Chat,supportsPolls,true,Rocket.Chat
+Rocket.Chat,supportsSearch,true,Rocket.Chat
+Rocket.Chat,supportsVideoCalls,true,Rocket.Chat
+Rocket.Chat,supportsVoiceCalls,true,Rocket.Chat
+Rocket.Chat,supportsJitsiIntegration,true,Rocket.Chat
+Rocket.Chat,supportsScreenSharing,true,Rocket.Chat
+Rocket.Chat,hasModerationFeatures,true,Rocket.Chat
+Rocket.Chat,hasAuditLogs,true,Rocket.Chat
+Rocket.Chat,hasUserRoles,true,Rocket.Chat
+Rocket.Chat,hasPermissions,true,Rocket.Chat
+Rocket.Chat,hasPublicAPI,true,Rocket.Chat
+Rocket.Chat,supportsLocalization,true,Rocket.Chat
+Rocket.Chat,hasDocumentation,true,Rocket.Chat
+Rocket.Chat,hasCommunityEdition,true,Rocket.Chat
+Rocket.Chat,hasEnterpriseEdition,true,Rocket.Chat
+Rocket.Chat,repository,GitHub,Rocket.Chat
+Rocket.Chat,officialWebsite,https://rocket.chat,Rocket.Chat
+Rocket.Chat,builtWith,Node.js,Rocket.Chat
+Rocket.Chat,supportsMultiPlatform,true,Rocket.Chat
+Rocket.Chat,supportsMultiTenant,true,Rocket.Chat
+Rocket.Chat,supportsSSOProviders,"Google, GitHub, GitLab, Microsoft",Rocket.Chat
+Rocket.Chat,hasWebhookSupport,true,Rocket.Chat
+Rocket.Chat,supportsDataExport,true,Rocket.Chat
+Rocket.Chat,supportsDataImport,true,Rocket.Chat
+Rocket.Chat,hasOfficialDocumentation,true,Rocket.Chat
+Rocket.Chat,hasMarketplace,true,Rocket.Chat
+Rocket.Chat,hasAppEngine,true,Rocket.Chat
+Rocket.Chat,runsOnLinux,true,Rocket.Chat
+Rocket.Chat,runsOnWindows,true,Rocket.Chat
+Rocket.Chat,runsOnmacOS,true,Rocket.Chat
+Rocket.Chat,isOpenSourceProject,true,Rocket.Chat
+Rocket.Chat,isMultiTenant,true,Rocket.Chat
+Rocket.Chat,supportsOAuthProviders,"Google, GitHub, GitLab, Facebook, Microsoft",Rocket.Chat
+Wyoming Game and Fish Department,instanceOf,state government agency,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,instanceOf,government agency,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,hasGoverningBody,Wyoming Game and Fish Commission,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,mission,conserve and manage Wyoming's wildlife resources,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,managing wildlife resources in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,issuing hunting licenses in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,issuing fishing licenses in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,setting hunting seasons in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,setting fishing seasons in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,responsibleFor,enforcing wildlife laws in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,operates,fish hatcheries in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,conducts,wildlife habitat conservation programs in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,provides,hunter education programs,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,collects,license fees,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,collaboratesWith,other state and federal agencies on wildlife management,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,oversees,wildlife research and monitoring in Wyoming,Wyoming Game and Fish Department
+Wyoming Game and Fish Department,publishes,wildlife regulations and rules,Wyoming Game and Fish Department
+Church of St. Elizabeth of Hungary in Łódź,instanceOf,Church,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,locatedIn,Łódź,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,locatedIn,Poland,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,denomination,Roman Catholic,Church of St. Elizabeth of Hungary in Łódź
+Church of St. Elizabeth of Hungary in Łódź,dedicatedTo,Saint Elizabeth of Hungary,Church of St. Elizabeth of Hungary in Łódź
+Homocitrulline,instanceOf,Non-proteinogenic amino acid,Homocitrulline
+Homocitrulline,hasSynonym,N6-carbamyl-L-lysine,Homocitrulline
+Homocitrulline,chemicalName,N6-carbamyl-lysine,Homocitrulline
+Homocitrulline,chemicalClass,Carbamylated amino acid,Homocitrulline
+Homocitrulline,formedBy,carbamylation of lysine residues in proteins,Homocitrulline
+Homocitrulline,formedFrom,cyanate + lysine epsilon-amino group,Homocitrulline
+Homocitrulline,foundIn,urine,Homocitrulline
+Homocitrulline,foundIn,plasma,Homocitrulline
+Homocitrulline,biomarkerFor,kidney disease,Homocitrulline
+Homocitrulline,biomarkerFor,uremia,Homocitrulline
+Homocitrulline,detectedBy,LC-MS/MS,Homocitrulline
+Homocitrulline,relatedTo,citrulline,Homocitrulline
+Homocitrulline,abbreviation,HCit,Homocitrulline
+Homocitrulline,associatedWith,anti-carbamylated protein antibodies (anti-CarP) in rheumatoid arthritis,Homocitrulline
+Homocitrulline,occurrence,present in humans at low levels,Homocitrulline
+Homocitrulline,studyArea,metabolomics of protein carbamylation,Homocitrulline
+Homocitrulline,role,post-translational modification product,Homocitrulline
+Homocitrulline,clinicalNote,indicator of protein carbamylation in chronic kidney disease,Homocitrulline
+Homocitrulline,presenceInHealthyIndividuals,low baseline levels,Homocitrulline
+Homocitrulline,analyticalMethod,LC-MS/MS-based quantification,Homocitrulline
+Dorothea Waley Singer,instanceOf,Person,Dorothea Waley Singer
+Ten Ren Tea,instanceOf,brand,Ten Ren Tea
+Ten Ren Tea,instanceOf,company,Ten Ren Tea
+Ten Ren Tea,produces,tea,Ten Ren Tea
+Llansantffraid railway station,instanceOf,railway station,Llansantffraid railway station
+Llansantffraid railway station,location,Llansantffraid-ym-Mechain,Llansantffraid railway station
+Llansantffraid railway station,country,United Kingdom,Llansantffraid railway station
+Llansantffraid railway station,region,Wales,Llansantffraid railway station
+Llansantffraid railway station,administrativeArea,Powys,Llansantffraid railway station
+Llansantffraid railway station,line,Oswestry to Welshpool line,Llansantffraid railway station
+Llansantffraid railway station,status,disused,Llansantffraid railway station
+Serikbolsyn Abdildin,instanceOf,Human,Serikbolsyn Abdildin
+Serikbolsyn Abdildin,occupation,Politician,Serikbolsyn Abdildin
+Serikbolsyn Abdildin,nationality,Kazakh,Serikbolsyn Abdildin
+Serikbolsyn Abdildin,notableRole,Leader of the Communist People's Party of Kazakhstan,Serikbolsyn Abdildin
+Serikbolsyn Abdildin,role,Chairman of the Communist People's Party of Kazakhstan,Serikbolsyn Abdildin
+Judo at the 2023 Pan American Games – Women's 63 kg,instanceOf,sporting event,Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,partOf,2023 Pan American Games,Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,hasSport,Judo,Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,hasGenderCategory,Women,Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,weightClass,63 kg,Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,location,"Santiago, Chile",Judo at the 2023 Pan American Games – Women's 63 kg
+Judo at the 2023 Pan American Games – Women's 63 kg,date,October 2023,Judo at the 2023 Pan American Games – Women's 63 kg
+Ross Barkley,instanceOf,Person,Ross Barkley
+Ross Barkley,dateOfBirth,1993-12-05,Ross Barkley
+Ross Barkley,placeOfBirth,"Liverpool, England",Ross Barkley
+Ross Barkley,nationality,English,Ross Barkley
+Ross Barkley,occupation,Professional footballer,Ross Barkley
+Ross Barkley,position,Midfielder,Ross Barkley
+Ross Barkley,youthClub,Everton,Ross Barkley
+Ross Barkley,firstSeniorClub,Everton,Ross Barkley
+Ross Barkley,nationalTeam,England,Ross Barkley
+1995–96 Arkansas Razorbacks men's basketball team,instanceOf,NCAA Division I men's basketball team,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,represents,University of Arkansas,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,coach,Nolan Richardson,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,conference,Southeastern Conference,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,homeArena,Bud Walton Arena,1995–96 Arkansas Razorbacks men's basketball team
+1995–96 Arkansas Razorbacks men's basketball team,season,1995–96 NCAA men's basketball season,1995–96 Arkansas Razorbacks men's basketball team
+2011–12 Harvard Crimson men's basketball team,instanceOf,College basketball team,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,affiliation,Harvard University,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,conference,Ivy League,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,division,NCAA Division I,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,headCoach,Tommy Amaker,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,homeVenue,Lavietes Pavilion,2011–12 Harvard Crimson men's basketball team
+Lavietes Pavilion,location,"Cambridge, Massachusetts",2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,season,2011–12,2011–12 Harvard Crimson men's basketball team
+2011–12 Harvard Crimson men's basketball team,university,Harvard University,2011–12 Harvard Crimson men's basketball team
+The Adventures of Nicholas Nickleby,instanceOf,novel,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,author,Charles Dickens,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,serializedIn,Bentley's Miscellany,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,serializedStartYear,1838,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,serializedEndYear,1839,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,publicationStartYear,1840,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,publicationEndYear,1840,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,publisher,Chapman & Hall,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,numberOfVolumes,3,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,language,English,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,setting,England,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,genre,social novel,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,mainCharacter,Nicholas Nickleby,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,mainCharacter,Ralph Nickleby,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,mainCharacter,Smike,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,mainCharacter,Kate Nickleby,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,mainCharacter,Mrs. Nickleby,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,notableSetting,Dotheboys Hall,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,theme,social critique,The Adventures of Nicholas Nickleby
+The Adventures of Nicholas Nickleby,theme,poverty,The Adventures of Nicholas Nickleby

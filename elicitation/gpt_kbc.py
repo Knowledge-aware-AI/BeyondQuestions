@@ -282,7 +282,9 @@ class GPTKBCRunner:
         try:
             with open(input_file_path, mode = 'w', newline='', encoding = 'utf-8') as csv_file:
                 fieldnames = ["subject", "predicate", "object", "subject_name"]
-                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                if any('confidence' in triple for triple in raw_triples):
+                    fieldnames.append('confidence')
+                writer = csv.DictWriter(csv_file, fieldnames=fieldnames, extrasaction='ignore')
                 writer.writeheader()
                 writer.writerows(raw_triples)
                 logger.info("Data written to CSV succesfully ...")

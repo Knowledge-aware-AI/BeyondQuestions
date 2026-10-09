@@ -45,10 +45,11 @@ class ProcessRequest:
                 top_k: int = 10,
                 judge_api_url: str = None,
                 judge_api_key: str = None,
+                min_confidence: float = None,
         ):
         """
         Initialize the ProcessRequest handler.
-        
+
         Args:
             llm_judge: Name of the LLM model to use as judge
             elicited_triples_dir: Directory path where elicited triples are stored
@@ -60,6 +61,9 @@ class ProcessRequest:
             web_docs_for_eval: Number of web documents to use in evaluation (default: 30)
             rag_cache_dir: Directory path for caching RAG indices (default: None)
             top_k: Number of top passages to retrieve in RAG-based precision evaluation (default: 10)
+            min_confidence: If set, elicited triples with a 'confidence' column value below this
+                threshold are dropped before evaluation. Triples without a 'confidence' column
+                (i.e. from templates that don't elicit one) are always kept. (default: None)
         """
 
 
@@ -107,6 +111,19 @@ class ProcessRequest:
         self.top_k = top_k
         self.judge_api_url = judge_api_url
         self.judge_api_key = judge_api_key
+        self.min_confidence = min_confidence
+
+    def _passes_confidence_filter(self, row):
+        """Keep rows with no 'confidence' column, or whose confidence meets self.min_confidence."""
+        if self.min_confidence is None:
+            return True
+        confidence = row.get("confidence")
+        if confidence is None or confidence == "":
+            return True
+        try:
+            return float(confidence) >= self.min_confidence
+        except (TypeError, ValueError):
+            return True
 
     def verify_triples(self, raw_triples):
 
@@ -263,7 +280,7 @@ class ProcessRequest:
                             file_path = os.path.join(subdir_path, file)
                             with open(file_path, mode='r', newline='', encoding='utf-8') as f:
                                 csv_reader = csv.DictReader(f)
-                                all_rows.extend([row for row in csv_reader])
+                                all_rows.extend([row for row in csv_reader if self._passes_confidence_filter(row)])
                 if all_rows:
                     raw_triples["elicited_triples"] = all_rows
                 return raw_triples
@@ -277,7 +294,7 @@ class ProcessRequest:
 
                 with open(file_path, mode='r', newline='', encoding='utf-8') as f:
                     csv_reader = csv.DictReader(f)
-                    raw_triples[file_key] = [row for row in csv_reader]
+                    raw_triples[file_key] = [row for row in csv_reader if self._passes_confidence_filter(row)]
 
         # return type is a dict with key as filename and value as rows read from that file
         return raw_triples
@@ -420,12 +437,78 @@ class ProcessRequest:
 
         return self.stratified_sample_from_grouped(subj_to_triples, m)
 
+    # --- resuming an interrupted evaluation -------------------------------------------------
+    # A setting that was stopped before writing its final results keeps its per-triple judgments:
+    # the partial results_detailed.csv is renamed to results_detailed.interrupted_<time>.csv instead
+    # of being overwritten, and every judgment in it (entailment / contradiction / neutral; errors
+    # are judged again) is reused for the same triple instead of calling the judge again. The
+    # sample is identical on every run (same seed, same elicited triples). Partial files older
+    # than the elicited triples are ignored, since recall judgments depend on them. Once the final
+    # results are written, the interrupted files are removed (the new results_detailed.csv holds
+    # every row).
+    FINAL_RESULT_FILES = ("results.csv", "results_by_category.csv", "results_by_popularity.csv")
+
+    def _load_resume_cache(self, results_dir):
+        import glob
+        csv.field_size_limit(10**9)
+        self._resume_cache = {}
+        self._resume_reused = 0
+        self._resume_files = sorted(glob.glob(os.path.join(results_dir, "results_detailed.interrupted_*.csv")))
+        if not self._resume_files:
+            return
+        elicited = [os.path.join(self.elicited_triples_dir, f) for f in os.listdir(self.elicited_triples_dir)
+                    if f.endswith(".csv")] if os.path.isdir(self.elicited_triples_dir) else []
+        elicited_mtime = max((os.path.getmtime(f) for f in elicited), default=float("inf"))
+        for path in self._resume_files:  # oldest first; a newer file overrides what it contains
+            if os.path.getmtime(path) < elicited_mtime:
+                logger.warning(f"Not reusing {path}: older than the elicited triples")
+                continue
+            rows = defaultdict(list)
+            try:
+                with open(path, newline='', encoding='utf-8') as fh:
+                    for row in csv.DictReader(fh, escapechar='\\'):
+                        if row.get('result') in ('a', 'b', 'c') and row.get('metric'):
+                            key = (row['metric'], row.get('subject', ''), row.get('predicate', ''), row.get('object', ''))
+                            rows[key].append(row)
+            except Exception as e:  # e.g. a half-written last line after a kill
+                logger.warning(f"Stopped reading {path} early ({e}); using the rows read so far")
+            self._resume_cache.update(rows)
+        n = sum(len(v) for v in self._resume_cache.values())
+        logger.info(f"Resuming: {n} judged triples from {len(self._resume_files)} interrupted file(s) will be reused")
+
+    def _take_cached(self, metric, subject, predicate, obj):
+        """Return (and consume) a saved judgment for this triple, or None."""
+        rows = getattr(self, '_resume_cache', {}).get((metric, subject, predicate, obj))
+        if not rows:
+            return None
+        self._resume_reused += 1
+        return rows.pop(0)
+
+    def _finish_resume(self):
+        """Called once the final results file is written."""
+        if getattr(self, '_resume_reused', 0):
+            logger.info(f"Resumed evaluation: reused {self._resume_reused} saved judgments")
+        for path in getattr(self, '_resume_files', []):
+            try:
+                os.remove(path)
+            except OSError:
+                pass
+        self._resume_files = []
+
     def init_detailed_results_file(self, filename):
         """Initialize the detailed results CSV file for incremental writing."""
         headers = [
             'subject', 'predicate', 'object', 'result', 'result_category',
             'reasoning', 'metric', 'source_file', 'retrieved_passages'
         ]
+        results_dir = os.path.dirname(filename)
+        finished = any(os.path.exists(os.path.join(results_dir, f)) for f in self.FINAL_RESULT_FILES)
+        if os.path.exists(filename) and not finished:
+            os.rename(filename, os.path.join(results_dir, f"results_detailed.interrupted_{time.strftime('%Y%m%d_%H%M%S')}.csv"))
+        if finished:
+            self._resume_cache, self._resume_reused, self._resume_files = {}, 0, []
+        else:
+            self._load_resume_cache(results_dir)
         self.detailed_csv_file = open(filename, mode='w', newline='', encoding='utf-8')
         self.detailed_csv_writer = csv.DictWriter(
             self.detailed_csv_file, fieldnames=headers, quoting=csv.QUOTE_MINIMAL, escapechar='\\'
@@ -528,7 +611,8 @@ class ProcessRequest:
             writer.writeheader()
             for row in data:
                 writer.writerow(row)
-    
+        self._finish_resume()
+
     def write_detailed_results_to_csv(self, filename, detailed_results):
         """
         Write detailed results (each triple with its classification and reasoning) to CSV.
@@ -713,11 +797,18 @@ class ProcessRequest:
                     predicate = each_triple.get('predicate', '')
                     obj = each_triple.get('object', '')
                     elicited_triple_str = f"({subject}, {predicate}, {obj})"
-                    
+
+                    # judged before an interruption: reuse instead of asking the judge again
+                    cached = self._take_cached(f"Precision ({self.metric_name})", subject, predicate, obj)
+                    if cached is not None:
+                        results[cached['result']].append(each_triple)
+                        self.append_detailed_result(cached)
+                        continue
+
                     try:
                         # Retrieve top-k relevant passages using pre-built index
                         retrieved_passages = rag.retrieve_top_k(elicited_triple_str, k=self.top_k)
-                        
+
                         if not retrieved_passages:
                             final_category = "c"
                             final_reasoning = "No relevant passages found in ground truth"
@@ -725,7 +816,7 @@ class ProcessRequest:
                         else:
                             # Format passages for LLM (truncated to 500 chars per passage)
                             passages_text = "\n\n".join([
-                                f"[{p['source'].upper()}] {p['content'][:500]}" 
+                                f"[{p['source'].upper()}] {p['content'][:500]}"
                                 for p in retrieved_passages
                             ])
                             
@@ -813,7 +904,9 @@ class ProcessRequest:
             # Collect ALL ground truth triples by subject (Wikipedia + Web)
             # Use all sources for recall computation
             wiki_facts_per_subject = {}
-            for subject, wiki_value in wikipedia_triples_dict.items():
+            # sorted: the dict is filled in thread-completion order, which would make the seeded recall
+            # sample differ between otherwise identical runs (and break resuming an interrupted run)
+            for subject, wiki_value in sorted(wikipedia_triples_dict.items(), key=lambda kv: kv[0]):
                 all_facts_for_subject = []
                 
                 if isinstance(wiki_value, dict):
@@ -864,12 +957,19 @@ class ProcessRequest:
                     })
                     continue
                 
+                # judged before an interruption: reuse instead of asking the judge again
+                cached = self._take_cached("Recall (Wikipedia+Web)", subject, predicate, obj)
+                if cached is not None:
+                    results[cached['result']].append(wiki_fact)
+                    self.append_detailed_result(cached)
+                    continue
+
                 # Convert elicited triples to string format
                 elicited_triples_str = ", ".join(elicited_triples_for_subject)
-                
+
                 # Convert Wikipedia triple to string
                 wiki_fact_str = f"({subject}, {predicate}, {obj})"
-                
+
                 # Ask LLM to judge
                 try:
                     output = request.verify_triple_lm_wikidata(wiki_fact_str, elicited_triples_str)
@@ -2058,5 +2158,6 @@ class ProcessRequest:
                 for row in data:
                     writer.writerow(row)
             logger.info(f"Categorical results written to {filename}")
+            self._finish_resume()
         except Exception as e:
             logger.error(f"Error writing categorical results to CSV: {e}", exc_info=True)

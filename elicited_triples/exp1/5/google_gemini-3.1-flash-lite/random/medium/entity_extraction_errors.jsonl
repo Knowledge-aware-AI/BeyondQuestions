@@ -1,0 +1,6 @@
+{"error": "Failed to extract JSON array from response", "entity": "Brand USA", "response": "None"}
+{"error": "Failed to extract JSON array from response", "entity": "Counter-Terrorism and Border Security Act 2019", "response": "None"}
+{"error": "Failed to extract JSON array from response", "entity": "Robert Hurley (swimmer)", "response": "None"}
+{"error": "Failed to extract JSON array from response", "entity": "Matraman railway station", "response": "None"}
+{"error": "Failed to extract JSON array from response", "entity": "Allegory of Happiness", "response": "[\n  [\"Allegory of Happiness\", \"instanceOf\", \"painting\"],\n  [\"Allegory of Happiness\", \"instanceOf\", \"artwork\"],\n  [\"Allegory of Happiness\", \"creator\", \"Agnolo Bronzino\"],\n  [\"Allegory of Happiness\", \"creationDate\", \"1564\"],\n  [\"Allegory of Happiness\", \"movement\", \"Mannerism\"],\n  [\"Allegory of Happiness\", \"genre\", \"allegory\"],\n  [\"Allegory of Happiness\", \"medium\", \"oil on wood\"],\n  [\"Alleg"}
+{"error": "Failed to extract JSON array from response", "entity": "200 (film)", "response": "None"}

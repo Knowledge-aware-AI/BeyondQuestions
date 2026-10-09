@@ -1277,7 +1277,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         <div>
           <div class="hero-tags">
             <span class="tag accent">Anonymous submission · ARR May 2026</span>
-            <span class="tag dot">Live · v1.0</span>
+            <span class="tag dot">Live · v2.0</span>
           </div>
           <h1 class="title">Beyond <em>questions</em>.</h1>
           <div class="title-sub">Evaluating what language models (actually) know.</div>
@@ -1371,7 +1371,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         </div>
         <div class="section-h-right">
           Verified against per-entity reference corpora<br/>
-          <b>Wikipedia + web · Llama 4 Scout NLI judge</b>
+          <b>Wikipedia + web · Gemma 4 26B-A4B-it NLI judge</b>
         </div>
       </div>
 
@@ -1387,13 +1387,13 @@ table.compare-tbl tr.result-N { background: var(--card); }
       <div class="exp-meta" id="exp-meta">
         <div>
           <div class="label">Setting</div>
-          <div class="value">GPTKB prompt · medium reasoning</div>
+          <div class="value">GPTKB prompt · medium reasoning · 5 runs</div>
         </div>
         <div>
           <div class="label">Dataset</div>
-          <div class="value">200 random entities</div>
+          <div class="value">500 random entities</div>
         </div>
-        <div class="desc">All 20 models evaluated on the same set of randomly sampled entities. This scenario produces the primary BeQu ranking.</div>
+        <div class="desc">All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.018 F1). This scenario produces the primary BeQu ranking.</div>
       </div>
 
       <div class="filters-row">
@@ -1448,22 +1448,22 @@ table.compare-tbl tr.result-N { background: var(--card); }
             <div class="finding-item">
               <div class="finding-num">FINDING 01</div>
               <div class="finding-title">Benchmark durability</div>
-              <div class="finding-text">All models are far from saturating open-ended knowledge generation — F1 spans <b>0.171–0.473</b> — and open-source models are competitive with commercial ones: Kimi K2.5 ranks <b>2nd</b> overall.</div>
+              <div class="finding-text">All models are far from saturating open-ended knowledge generation — F1 spans <b>0.086–0.378</b> — and open-weight models are competitive with commercial ones: Kimi K2.5 ranks <b>4th</b> overall.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 02</div>
               <div class="finding-title">"Unreasonable" task</div>
-              <div class="finding-text">Unlike most NLP tasks, reasoning has negligible benefit for open-ended knowledge expression. All nine model–effort combinations cluster within just <b>F1 0.400–0.484</b>.</div>
+              <div class="finding-text">Unlike most NLP tasks, reasoning effort barely matters for open-ended knowledge expression: GPT-5.4 and Gemini 3.1 Pro change by less than <b>0.03 F1</b>. The exception, Claude Opus 4.6 (<b>0.277 → 0.391</b>), mainly becomes more willing to answer.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 03</div>
               <div class="finding-title">Schemas vs. creativity</div>
-              <div class="finding-text">Schema enforcement boosts precision — Schema.org reaches <b>77.2%</b> — but significantly lowers recall to only <b>14.0%</b>. Open-ended prompts consistently win on F1.</div>
+              <div class="finding-text">Schema enforcement boosts precision — Schema.org reaches <b>77.3%</b> for GPT-5.4 — but significantly lowers recall, to only <b>11.7%</b>. Open-ended prompts consistently win on F1.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 04</div>
               <div class="finding-title">Hard-wired operating points</div>
-              <div class="finding-text">Explicit precision–recall steering is possible only to a limited extent. Prompt repetition (3×) gives a modest recall gain (<b>27.2 → 31.6%</b>), but further repetitions (5×, 10×) steeply degrade performance.</div>
+              <div class="finding-text">Explicit precision–recall steering is possible only to a limited extent: requesting 20× more triples changes GPT-5.4's output only 2.3× (<b>11 → 26</b> triples per entity) and its F1 by at most <b>0.05</b>.</div>
             </div>
           </div>
         </div>
@@ -1503,7 +1503,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         BeQu evaluates models along two complementary axes: <em>precision</em> — how well the
         elicited triples are supported by the reference corpus — and <em>recall</em> — how much of the
         reference corpus the model surfaces. Both directions are framed as textual entailment
-        and judged by a locally hosted Llama 4 Scout.
+        and judged by Gemma 4 26B-A4B-it.
       </p>
 
       <div class="method-grid">
@@ -1515,7 +1515,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         <div class="method-step">
           <div class="method-step-num">ii.</div>
           <h3>Knowledge elicitation</h3>
-          <p>The model under test is prompted to freely emit (subject, predicate, object) triples about each entity. We use the GPTKB prompt by default, plus seven variations for prompt-sensitivity analysis.</p>
+          <p>The model under test is prompted to freely emit (subject, predicate, object) triples about each entity. We use the GPTKB prompt by default, plus five prompt-format variations and seven requested triple-count ranges.</p>
         </div>
         <div class="method-step">
           <div class="method-step-num">iii.</div>
@@ -1560,12 +1560,12 @@ table.compare-tbl tr.result-N { background: var(--card); }
           <div class="panel" style="padding: 18px;">
             <div class="panel-title" style="font-size: 14px; margin-bottom: 12px;">Evaluation scale</div>
             <div style="display: flex; flex-direction: column; gap: 12px; font-size: 13px;">
-              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Sampled triples per model</span><span style="font-family: var(--mono);">500 × 2 dirs</span></div>
+              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Sampled triples per model</span><span style="font-family: var(--mono);">1,000 × 2 dirs</span></div>
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Stratification</span><span style="font-family: var(--mono);">entity-then-triple</span></div>
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">RAG retrieval (precision)</span><span style="font-family: var(--mono);">top-10</span></div>
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Embedding model</span><span style="font-family: var(--mono);">text-embed-3-small</span></div>
-              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">NLI judge</span><span style="font-family: var(--mono);">Llama 4 Scout</span></div>
-              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Judge agreement (manual)</span><span style="font-family: var(--mono);">90%</span></div>
+              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">NLI judge</span><span style="font-family: var(--mono);">Gemma 4 26B-A4B-it</span></div>
+              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Judge agreement (manual)</span><span style="font-family: var(--mono);">83%</span></div>
             </div>
           </div>
         </div>
@@ -1599,7 +1599,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
           <p>Randomly sampled Wikipedia article titles passing hard filters (length, Wikidata coverage, non-ambiguity) plus an LLM judge for informativeness and suitability. The primary benchmark dataset.</p>
           <div class="dataset-tags">
             <span class="dataset-tag">Hard filters</span>
-            <span class="dataset-tag">Llama 4 judged</span>
+            <span class="dataset-tag">Gemma 4 judged</span>
             <span class="dataset-tag">Likert ≥ 3 on all axes</span>
           </div>
         </div>
@@ -1616,7 +1616,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
 
         <div class="dataset-card">
           <div class="ds-num">DATASET 03</div>
-          <h3>Non-existent entities <span class="count">10</span></h3>
+          <h3>Non-existent entities <span class="count">100</span></h3>
           <p>Hand-crafted plausible and absurd fictions — <em>Valdora Strait, U-Bahn Dresden, iPhone 19 Pro, Helios Prize for Digital Arts, Gulf of Varennes</em>. No reference corpus; the test is whether models abstain from generating triples at all.</p>
           <div class="dataset-tags">
             <span class="dataset-tag">Hallucination probe</span>
@@ -1628,7 +1628,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         <div class="dataset-card" style="border-style: dashed; opacity: 0.8;">
           <div class="ds-num">APPENDIX E</div>
           <h3>Popularity tiers <span class="count">3 × 200</span></h3>
-          <p>The random subset partitioned into low / mid / high popularity buckets by Wikidata statement count. Used in a supplementary experiment — GPT-5.4's F1 jumps 0.085 from mid to high popularity, Llama 4 Scout shows no trend.</p>
+          <p>The random subset partitioned into low / mid / high popularity buckets by Wikidata statement count. Used in a supplementary experiment — GPT-5.4's F1 jumps 0.092 from mid to high popularity, Llama 4 Scout shows no trend.</p>
           <div class="dataset-tags">
             <span class="dataset-tag">Wikidata statement count</span>
             <span class="dataset-tag">Equal-sized buckets</span>
@@ -1640,24 +1640,25 @@ table.compare-tbl tr.result-N { background: var(--card); }
       <div class="panel" style="margin-top: 28px;">
         <div class="panel-h">
           <div class="panel-title">Hallucination on non-existent entities</div>
-          <div class="panel-meta">Lower is better · 10 fake entities</div>
+          <div class="panel-meta">Lower is better · 100 fake entities</div>
         </div>
-        <div class="panel-sub">GPT-5.4 alone fully abstains. Open-weight models hallucinate readily.</div>
+        <div class="panel-sub">No model consistently abstains. GPT-5.4 abstains most (78 of 100 entities empty); DeepSeek V3.2 hallucinates the most triples; Llama 4 Scout answers 91 of 100.</div>
         <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 6px;">
-          <div style="display: grid; grid-template-columns: 160px 1fr 80px; gap: 14px; align-items: center; font-size: 13px;">
-            <span>GPT-5.4</span>
-            <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 0%; height: 100%; background: var(--positive);"></div></div>
-            <span style="font-family: var(--mono); text-align: right;">0 triples</span>
-          </div>
-          <div style="display: grid; grid-template-columns: 160px 1fr 80px; gap: 14px; align-items: center; font-size: 13px;">
-            <span>Llama 4 Scout 17B</span>
-            <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 24%; height: 100%; background: var(--warn);"></div></div>
-            <span style="font-family: var(--mono); text-align: right;">32 / 7&nbsp;ent.</span>
-          </div>
-          <div style="display: grid; grid-template-columns: 160px 1fr 80px; gap: 14px; align-items: center; font-size: 13px;">
-            <span>DeepSeek V3.2</span>
-            <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 100%; height: 100%; background: var(--accent);"></div></div>
-            <span style="font-family: var(--mono); text-align: right;">131 / 4&nbsp;ent.</span>
+            <div style="display: grid; grid-template-columns: 160px 1fr 140px; gap: 14px; align-items: center; font-size: 13px;">
+              <span>GPT-5.4</span>
+              <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 11%; height: 100%; background: var(--positive);"></div></div>
+              <span style="font-family: var(--mono); text-align: right;">213 / 22&nbsp;ent.</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 160px 1fr 140px; gap: 14px; align-items: center; font-size: 13px;">
+              <span>Llama 4 Scout 17B</span>
+              <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 32%; height: 100%; background: var(--warn);"></div></div>
+              <span style="font-family: var(--mono); text-align: right;">617 / 91&nbsp;ent.</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 160px 1fr 140px; gap: 14px; align-items: center; font-size: 13px;">
+              <span>DeepSeek V3.2</span>
+              <div style="height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden;"><div style="width: 100%; height: 100%; background: var(--accent);"></div></div>
+              <span style="font-family: var(--mono); text-align: right;">1,944 / 43&nbsp;ent.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1734,8 +1735,8 @@ table.compare-tbl tr.result-N { background: var(--card); }
       </div>
 
       <div class="corpus-card-grid">
-        <button class="corpus-card" data-corpus="random200" onclick="corpusSelect('random200')">
-          <h3>Random (sample – 200)</h3>
+        <button class="corpus-card" data-corpus="random500" onclick="corpusSelect('random500')">
+          <h3>Random (sample – 500)</h3>
         </button>
         <button class="corpus-card" data-corpus="random10k" onclick="corpusSelect('random10k')">
           <h3>Random (full – 10K)</h3>
@@ -1781,7 +1782,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         </button>
         <button class="entity-dataset-card" data-ds="nonexistent" onclick="entitySelectDataset('nonexistent')">
           <div class="ds-num">Dataset 03</div>
-          <h3>Non-existent entities <span class="count">10</span></h3>
+          <h3>Non-existent entities <span class="count">100</span></h3>
         </button>
       </div>
 
@@ -1839,7 +1840,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         <div class="section-h-right">Pick a setting, a metric, and up to 3 models to compare. Then choose an entity to see each model's sampled triples colored by NLI judgment: <span style="color:#155724;font-weight:600;">green = entailed</span>, <span style="color:#721c24;font-weight:600;">red = contradiction</span>, grey = neutral.</div>
       </div>
       <div style="margin: 0.75rem 0 1.25rem; padding: 0.65rem 1rem; background:#fff8e1; border:1px solid #ffe082; border-radius:6px; font-size:0.88rem; color:#5d4037; line-height:1.5;">
-        <strong>Note:</strong> During evaluation 500 triples were sampled respectively for precision and recall, so neither all entities nor all triples for the entities are shown here. For the full list of entities visit the <a href="#" onclick="showView('entities'); return false;" style="color:#5d4037; text-decoration:underline;">Entity Lists</a> section, and for the full list of triples elicited for each entity visit the <a href="#" onclick="showView('triples'); return false;" style="color:#5d4037; text-decoration:underline;">Elicited Triples</a> section.
+        <strong>Note:</strong> During evaluation 1,000 triples were sampled respectively for precision and recall, so neither all entities nor all triples for the entities are shown here. For the full list of entities visit the <a href="#" onclick="showView('entities'); return false;" style="color:#5d4037; text-decoration:underline;">Entity Lists</a> section, and for the full list of triples elicited for each entity visit the <a href="#" onclick="showView('triples'); return false;" style="color:#5d4037; text-decoration:underline;">Elicited Triples</a> section.
       </div>
 
       <div class="compare-layout">
@@ -1895,212 +1896,220 @@ table.compare-tbl tr.result-N { background: var(--card); }
    (Entailment F1 / Precision / Recall + Contradiction rate)
 ============================================================ */
 
-// EXPERIMENT 1 — All 20 models on 200 random entities
+// EXPERIMENT 1 — All 20 models on 500 random entities (mean over 5 runs)
 const MODELS = [
-  { name: "Claude Opus 4.6",       org: "Anthropic",       f1: 0.4729, p: 59.6, r: 39.2, c: 0.2, open: false, family: "anthropic" },
-  { name: "Kimi K2.5",             org: "Moonshot AI",     f1: 0.4502, p: 54.4, r: 38.4, c: 1.6, open: true,  family: "other" },
-  { name: "Gemini 3 Flash",        org: "Google DeepMind", f1: 0.4437, p: 47.8, r: 41.4, c: 1.2, open: false, family: "google" },
-  { name: "Claude Sonnet 4.6",     org: "Anthropic",       f1: 0.4316, p: 64.6, r: 32.4, c: 1.0, open: false, family: "anthropic" },
-  { name: "GPT-5.4",               org: "OpenAI",          f1: 0.4207, p: 76.6, r: 29.0, c: 1.0, open: false, family: "openai" },
-  { name: "Gemini 3.1 Pro",        org: "Google DeepMind", f1: 0.4005, p: 79.2, r: 26.8, c: 1.0, open: false, family: "google" },
-  { name: "Mistral Large",         org: "Mistral AI",      f1: 0.3955, p: 53.4, r: 31.4, c: 0.8, open: true,  family: "other" },
-  { name: "Gemini 3.1 Flash Lite", org: "Google DeepMind", f1: 0.3828, p: 64.6, r: 27.2, c: 1.6, open: false, family: "google" },
-  { name: "DeepSeek V3.2",         org: "DeepSeek",        f1: 0.3718, p: 46.0, r: 31.2, c: 0.4, open: true,  family: "other" },
-  { name: "GPT-5 Mini",            org: "OpenAI",          f1: 0.3532, p: 62.6, r: 24.6, c: 0.0, open: false, family: "openai" },
-  { name: "Grok 4.1 Fast",         org: "xAI",             f1: 0.3383, p: 53.2, r: 24.8, c: 3.8, open: false, family: "other" },
-  { name: "MiniMax M2.5",          org: "MiniMax",         f1: 0.3231, p: 60.8, r: 22.0, c: 2.8, open: true,  family: "other" },
-  { name: "GPT-OSS-120B",          org: "OpenAI",          f1: 0.3175, p: 41.8, r: 25.6, c: 1.4, open: true,  family: "openai" },
-  { name: "Claude Haiku 4.5",      org: "Anthropic",       f1: 0.2994, p: 61.4, r: 19.8, c: 4.0, open: false, family: "anthropic" },
-  { name: "Qwen3.5 27B",           org: "Alibaba",         f1: 0.2960, p: 49.0, r: 21.2, c: 3.2, open: true,  family: "other" },
-  { name: "Gemma 3 27B",           org: "Google",          f1: 0.2820, p: 33.4, r: 24.4, c: 5.2, open: true,  family: "google" },
-  { name: "GPT-5 Nano",            org: "OpenAI",          f1: 0.2708, p: 88.0, r: 16.0, c: 0.6, open: false, family: "openai" },
-  { name: "Gemma 3 12B",           org: "Google",          f1: 0.2542, p: 38.4, r: 19.0, c: 4.4, open: true,  family: "google" },
-  { name: "Llama 4 Scout 17B",     org: "Meta AI",         f1: 0.2528, p: 63.2, r: 15.8, c: 4.6, open: true,  family: "other" },
-  { name: "Gemma 3 4B",            org: "Google",          f1: 0.1713, p: 36.4, r: 11.2, c: 3.6, open: true,  family: "google" }
+  { name: "GPT-5.4", org: "OpenAI", f1: 0.3784, p: 67.1, r: 26.4, c: 4.7, open: false, family: "openai" },
+  { name: "Gemini 3.1 Pro", org: "Google DeepMind", f1: 0.3697, p: 70.9, r: 25.0, c: 2.8, open: false, family: "google" },
+  { name: "Gemini 3 Flash", org: "Google DeepMind", f1: 0.3696, p: 39.3, r: 34.9, c: 4.1, open: false, family: "google" },
+  { name: "Kimi K2.5", org: "Moonshot AI", f1: 0.3558, p: 52.8, r: 26.9, c: 5.9, open: true, family: "other" },
+  { name: "Claude Opus 4.6", org: "Anthropic", f1: 0.3445, p: 58.2, r: 24.5, c: 5.8, open: false, family: "anthropic" },
+  { name: "Claude Sonnet 4.6", org: "Anthropic", f1: 0.3275, p: 60.2, r: 22.5, c: 7.0, open: false, family: "anthropic" },
+  { name: "Gemini 3.1 Flash Lite", org: "Google DeepMind", f1: 0.3233, p: 59.6, r: 22.2, c: 5.9, open: false, family: "google" },
+  { name: "Mistral Large 3", org: "Mistral AI", f1: 0.3073, p: 46.9, r: 22.9, c: 7.6, open: true, family: "other" },
+  { name: "DeepSeek V3.2", org: "DeepSeek", f1: 0.2957, p: 37.5, r: 24.6, c: 7.4, open: true, family: "other" },
+  { name: "GPT-5 Mini", org: "OpenAI", f1: 0.2920, p: 61.2, r: 19.2, c: 2.0, open: false, family: "openai" },
+  { name: "Grok 4.3", org: "xAI", f1: 0.2343, p: 73.2, r: 14.0, c: 4.2, open: false, family: "other" },
+  { name: "MiniMax M2.5", org: "MiniMax", f1: 0.2321, p: 52.3, r: 14.9, c: 8.5, open: true, family: "other" },
+  { name: "GPT-OSS-120B", org: "OpenAI", f1: 0.2225, p: 21.7, r: 22.8, c: 8.0, open: true, family: "openai" },
+  { name: "Qwen3.5 27B", org: "Alibaba", f1: 0.2204, p: 33.1, r: 16.6, c: 10.5, open: true, family: "other" },
+  { name: "Claude Haiku 4.5", org: "Anthropic", f1: 0.2075, p: 64.8, r: 12.4, c: 7.2, open: false, family: "anthropic" },
+  { name: "Gemma 3 27B", org: "Google", f1: 0.1919, p: 22.3, r: 16.9, c: 10.2, open: true, family: "google" },
+  { name: "Gemma 3 12B", org: "Google", f1: 0.1617, p: 16.4, r: 16.1, c: 7.4, open: true, family: "google" },
+  { name: "GPT-5 Nano", org: "OpenAI", f1: 0.1602, p: 82.7, r: 8.9, c: 2.5, open: false, family: "openai" },
+  { name: "Llama 4 Scout 17B", org: "Meta AI", f1: 0.1167, p: 44.5, r: 6.7, c: 18.2, open: true, family: "other" },
+  { name: "Gemma 3 4B", org: "Google", f1: 0.0862, p: 18.7, r: 5.6, c: 10.8, open: true, family: "google" }
 ];
 
 // EXPERIMENT 2 — Reasoning effort (Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro × low/medium/high)
 const REASONING = [
-  { name: "Claude Opus 4.6 (low)",    org: "Anthropic · low",         f1: 0.4835, p: 63.6, r: 39.0, c: 0.8, open: false, family: "anthropic" },
-  { name: "Claude Opus 4.6 (high)",   org: "Anthropic · high",        f1: 0.4783, p: 58.6, r: 40.4, c: 0.8, open: false, family: "anthropic" },
-  { name: "Claude Opus 4.6 (medium)", org: "Anthropic · medium",      f1: 0.4729, p: 59.6, r: 39.2, c: 0.2, open: false, family: "anthropic" },
-  { name: "GPT-5.4 (high)",           org: "OpenAI · high",           f1: 0.4536, p: 71.6, r: 33.2, c: 0.6, open: false, family: "openai" },
-  { name: "Gemini 3.1 Pro (high)",    org: "Google DeepMind · high",  f1: 0.4339, p: 73.4, r: 30.8, c: 0.6, open: false, family: "google" },
-  { name: "Gemini 3.1 Pro (low)",     org: "Google DeepMind · low",   f1: 0.4235, p: 81.6, r: 28.6, c: 0.6, open: false, family: "google" },
-  { name: "GPT-5.4 (medium)",         org: "OpenAI · medium",         f1: 0.4207, p: 76.6, r: 29.0, c: 1.0, open: false, family: "openai" },
-  { name: "GPT-5.4 (low)",            org: "OpenAI · low",            f1: 0.4109, p: 68.2, r: 29.4, c: 0.8, open: false, family: "openai" },
-  { name: "Gemini 3.1 Pro (medium)",  org: "Google DeepMind · medium",f1: 0.4005, p: 79.2, r: 26.8, c: 1.0, open: false, family: "google" }
+  { name: "Claude Opus 4.6 (high)", org: "Anthropic \u00b7 high", f1: 0.3912, p: 54.2, r: 30.6, c: 5.0, open: false, family: "anthropic" },
+  { name: "Gemini 3.1 Pro (medium)", org: "Google DeepMind \u00b7 medium", f1: 0.3814, p: 70.1, r: 26.2, c: 3.2, open: false, family: "google" },
+  { name: "GPT-5.4 (medium)", org: "OpenAI \u00b7 medium", f1: 0.3806, p: 67.5, r: 26.5, c: 4.7, open: false, family: "openai" },
+  { name: "GPT-5.4 (high)", org: "OpenAI \u00b7 high", f1: 0.3738, p: 66.5, r: 26.0, c: 3.5, open: false, family: "openai" },
+  { name: "Gemini 3.1 Pro (high)", org: "Google DeepMind \u00b7 high", f1: 0.3642, p: 70.9, r: 24.5, c: 2.4, open: false, family: "google" },
+  { name: "Gemini 3.1 Pro (low)", org: "Google DeepMind \u00b7 low", f1: 0.3595, p: 76.5, r: 23.5, c: 3.0, open: false, family: "google" },
+  { name: "GPT-5.4 (low)", org: "OpenAI \u00b7 low", f1: 0.3545, p: 64.8, r: 24.4, c: 4.0, open: false, family: "openai" },
+  { name: "Claude Opus 4.6 (medium)", org: "Anthropic \u00b7 medium", f1: 0.3520, p: 61.2, r: 24.7, c: 4.4, open: false, family: "anthropic" },
+  { name: "Claude Opus 4.6 (low)", org: "Anthropic \u00b7 low", f1: 0.2768, p: 70.8, r: 17.2, c: 5.5, open: false, family: "anthropic" }
 ];
 
-// EXPERIMENT 5 — Prompt format (Kimi K2.5 × 8 prompt variations)
+// EXPERIMENT 4 — Prompt format (GPT-5.4, DeepSeek V3.2, Llama 4 Scout × 6 prompts; API default = no reasoning)
 const PROMPT = [
-  { name: "GPTKB (3× repetition)",          org: "Kimi K2.5 · open-ended",         f1: 0.3965, p: 53.2, r: 31.6, c: 1.2, open: true, family: "other" },
-  { name: "LMCRAWL",                        org: "Kimi K2.5 · open-ended",         f1: 0.3805, p: 51.4, r: 30.2, c: 2.2, open: true, family: "other" },
-  { name: "GPTKB (2× repetition)",          org: "Kimi K2.5 · open-ended",         f1: 0.3719, p: 50.0, r: 29.6, c: 1.4, open: true, family: "other" },
-  { name: "GPTKB",                          org: "Kimi K2.5 · open-ended",         f1: 0.3604, p: 53.4, r: 27.2, c: 1.0, open: true, family: "other" },
-  { name: "Wikidata Schema (no constr.)",   org: "Kimi K2.5 · schema, no preds",   f1: 0.3328, p: 61.6, r: 22.8, c: 1.4, open: true, family: "other" },
-  { name: "Schema.org Schema (no constr.)", org: "Kimi K2.5 · schema, no preds",   f1: 0.3180, p: 56.0, r: 22.2, c: 1.0, open: true, family: "other" },
-  { name: "Wikidata Schema",                org: "Kimi K2.5 · schema + preds",     f1: 0.3021, p: 70.8, r: 19.2, c: 2.0, open: true, family: "other" },
-  { name: "Schema.org Schema",              org: "Kimi K2.5 · schema + preds",     f1: 0.2370, p: 77.2, r: 14.0, c: 0.4, open: true, family: "other" },
-  { name: "GPTKB (10× repetition)",         org: "Kimi K2.5 · open-ended (side)",  f1: 0.1760, p: 47.4, r: 10.8, c: 4.8, open: true, family: "other" },
-  { name: "GPTKB (5× repetition)",          org: "Kimi K2.5 · open-ended (side)",  f1: 0.1560, p: 45.0, r:  9.4, c: 5.6, open: true, family: "other" }
+  { name: "GPT-5.4 \u00b7 GPTKB", org: "OpenAI \u00b7 open-ended", f1: 0.3398, p: 54.9, r: 24.6, c: 6.2, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Schema.org Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.3191, p: 56.7, r: 22.2, c: 6.8, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 GPTKB", org: "DeepSeek \u00b7 open-ended", f1: 0.2998, p: 34.5, r: 26.5, c: 7.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Schema.org Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.2975, p: 42.8, r: 22.8, c: 5.3, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Wikidata Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.2951, p: 59.7, r: 19.6, c: 7.0, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 LMCRAWL", org: "OpenAI \u00b7 open-ended", f1: 0.2695, p: 38.6, r: 20.7, c: 9.8, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 LMCRAWL", org: "DeepSeek \u00b7 open-ended", f1: 0.2549, p: 26.0, r: 25.0, c: 7.8, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Wikidata Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.2236, p: 36.1, r: 16.2, c: 7.1, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Wikidata Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2169, p: 74.2, r: 12.7, c: 7.9, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Schema.org Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.2124, p: 67.6, r: 12.6, c: 6.7, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Schema.org Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2032, p: 77.3, r: 11.7, c: 5.9, open: false, family: "openai" },
+  { name: "Llama 4 Scout \u00b7 LMCRAWL", org: "Meta AI \u00b7 open-ended", f1: 0.1905, p: 37.2, r: 12.8, c: 15.1, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Wikidata Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.1847, p: 60.5, r: 10.9, c: 8.6, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Schema.org Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1586, p: 45.6, r: 9.6, c: 12.0, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Wikidata Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1415, p: 37.9, r: 8.7, c: 11.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Wikidata Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1374, p: 52.6, r: 7.9, c: 16.0, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Schema.org Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1233, p: 57.9, r: 6.9, c: 13.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 GPTKB", org: "Meta AI \u00b7 open-ended", f1: 0.1115, p: 43.1, r: 6.4, c: 17.6, open: true, family: "other" }
 ];
 
-// EXPERIMENT 6 — Triple count range (GPT-5.4, DeepSeek V3.2, Llama 4 Scout × 6 ranges)
+// EXPERIMENT 5 — Triple count range (GPT-5.4, DeepSeek V3.2, Llama 4 Scout × 7 ranges; API default = no reasoning)
 const RANGE = [
-  { name: "GPT-5.4 · 75–150 / 8–15",         org: "OpenAI · range",   f1: 0.4889, p: 72.8, r: 36.8, c: 0.8, open: false, family: "openai" },
-  { name: "GPT-5.4 · 100–200 / 10–20",       org: "OpenAI · range",   f1: 0.4880, p: 76.6, r: 35.8, c: 1.0, open: false, family: "openai" },
-  { name: "GPT-5.4 · 33–66 / 3–7",           org: "OpenAI · range",   f1: 0.4429, p: 74.0, r: 31.6, c: 0.8, open: false, family: "openai" },
-  { name: "GPT-5.4 · 25–50 / 3–5",           org: "OpenAI · range",   f1: 0.4175, p: 72.0, r: 29.4, c: 0.2, open: false, family: "openai" },
-  { name: "GPT-5.4 · 10–20 / 1–2",           org: "OpenAI · range",   f1: 0.3980, p: 84.8, r: 26.0, c: 0.2, open: false, family: "openai" },
-  { name: "GPT-5.4 · 5–10 / 1",               org: "OpenAI · range",   f1: 0.3911, p: 82.8, r: 25.6, c: 0.8, open: false, family: "openai" },
-  { name: "DeepSeek · 100–200 / 10–20",      org: "DeepSeek · range", f1: 0.3799, p: 44.4, r: 33.2, c: 1.6, open: true,  family: "other" },
-  { name: "DeepSeek · 25–50 / 3–5",          org: "DeepSeek · range", f1: 0.3722, p: 48.0, r: 30.4, c: 3.0, open: true,  family: "other" },
-  { name: "DeepSeek · 5–10 / 1",              org: "DeepSeek · range", f1: 0.3711, p: 70.4, r: 25.2, c: 3.2, open: true,  family: "other" },
-  { name: "DeepSeek · 33–66 / 3–7",          org: "DeepSeek · range", f1: 0.3575, p: 38.2, r: 33.6, c: 1.4, open: true,  family: "other" },
-  { name: "DeepSeek · 10–20 / 1–2",          org: "DeepSeek · range", f1: 0.3575, p: 65.4, r: 24.6, c: 1.8, open: true,  family: "other" },
-  { name: "DeepSeek · 75–150 / 8–15",        org: "DeepSeek · range", f1: 0.3298, p: 41.4, r: 27.4, c: 2.4, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 75–150 / 8–15",   org: "Meta AI · range",  f1: 0.2884, p: 64.2, r: 18.6, c: 4.4, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 25–50 / 3–5",     org: "Meta AI · range",  f1: 0.2480, p: 63.6, r: 15.4, c: 5.8, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 33–66 / 3–7",     org: "Meta AI · range",  f1: 0.2390, p: 65.8, r: 14.6, c: 6.2, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 5–10 / 1",         org: "Meta AI · range",  f1: 0.2216, p: 69.0, r: 13.2, c: 4.8, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 10–20 / 1–2",     org: "Meta AI · range",  f1: 0.2138, p: 64.8, r: 12.8, c: 6.0, open: true,  family: "other" },
-  { name: "Llama 4 Scout · 100–200 / 10–20", org: "Meta AI · range",  f1: 0.1322, p: 61.8, r:  7.4, c: 5.6, open: true,  family: "other" }
+  { name: "GPT-5.4 \u00b7 33\u201366 / 3\u20137", org: "OpenAI \u00b7 range", f1: 0.3672, p: 53.7, r: 27.9, c: 6.4, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 100\u2013200 / 10\u201320", org: "OpenAI \u00b7 range", f1: 0.3660, p: 55.1, r: 27.4, c: 6.8, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 50\u2013100 / 5\u201310", org: "OpenAI \u00b7 range", f1: 0.3520, p: 54.9, r: 25.9, c: 8.2, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 75\u2013150 / 8\u201315", org: "OpenAI \u00b7 range", f1: 0.3515, p: 52.2, r: 26.5, c: 7.0, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 25\u201350 / 3\u20135", org: "OpenAI \u00b7 range", f1: 0.3459, p: 58.8, r: 24.5, c: 7.5, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 5\u201310 / 1", org: "OpenAI \u00b7 range", f1: 0.3150, p: 65.9, r: 20.7, c: 7.4, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 10\u201320 / 1\u20132", org: "OpenAI \u00b7 range", f1: 0.3123, p: 65.5, r: 20.5, c: 5.6, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 33\u201366 / 3\u20137", org: "DeepSeek \u00b7 range", f1: 0.3107, p: 34.9, r: 28.0, c: 8.5, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 25\u201350 / 3\u20135", org: "DeepSeek \u00b7 range", f1: 0.2996, p: 35.9, r: 25.7, c: 7.9, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 50\u2013100 / 5\u201310", org: "DeepSeek \u00b7 range", f1: 0.2995, p: 34.1, r: 26.7, c: 7.4, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 100\u2013200 / 10\u201320", org: "DeepSeek \u00b7 range", f1: 0.2945, p: 32.1, r: 27.2, c: 6.9, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 10\u201320 / 1\u20132", org: "DeepSeek \u00b7 range", f1: 0.2930, p: 49.0, r: 20.9, c: 8.8, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 5\u201310 / 1", org: "DeepSeek \u00b7 range", f1: 0.2898, p: 55.6, r: 19.6, c: 11.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 75\u2013150 / 8\u201315", org: "DeepSeek \u00b7 range", f1: 0.2850, p: 30.7, r: 26.6, c: 5.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 50\u2013100 / 5\u201310", org: "Meta AI \u00b7 range", f1: 0.1267, p: 43.9, r: 7.4, c: 18.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 33\u201366 / 3\u20137", org: "Meta AI \u00b7 range", f1: 0.1249, p: 47.1, r: 7.2, c: 17.4, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 75\u2013150 / 8\u201315", org: "Meta AI \u00b7 range", f1: 0.1177, p: 40.0, r: 6.9, c: 17.6, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 5\u201310 / 1", org: "Meta AI \u00b7 range", f1: 0.1126, p: 53.1, r: 6.3, c: 18.5, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 100\u2013200 / 10\u201320", org: "Meta AI \u00b7 range", f1: 0.1010, p: 44.2, r: 5.7, c: 17.2, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 25\u201350 / 3\u20135", org: "Meta AI \u00b7 range", f1: 0.0979, p: 44.7, r: 5.5, c: 18.6, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 10\u201320 / 1\u20132", org: "Meta AI \u00b7 range", f1: 0.0972, p: 48.7, r: 5.4, c: 18.1, open: true, family: "other" }
 ];
 
-// EXPERIMENT 7 — Entity popularity (3 models × low/mid/high buckets)
+// ADDITIONAL EXPERIMENT — Entity popularity (3 models × low/mid/high buckets; as in the paper's appendix)
 const POPULARITY = [
-  { name: "GPT-5.4 (high pop.)",          org: "OpenAI · popularity",  f1: 0.5246, p: 71.0, r: 41.6, c: 0.6, open: false, family: "openai" },
-  { name: "GPT-5.4 (mid pop.)",           org: "OpenAI · popularity",  f1: 0.4396, p: 72.2, r: 31.6, c: 0.4, open: false, family: "openai" },
-  { name: "GPT-5.4 (low pop.)",           org: "OpenAI · popularity",  f1: 0.4306, p: 75.0, r: 30.2, c: 0.6, open: false, family: "openai" },
-  { name: "DeepSeek V3.2 (low pop.)",     org: "DeepSeek · popularity",f1: 0.3830, p: 48.6, r: 31.6, c: 2.2, open: true,  family: "other" },
-  { name: "DeepSeek V3.2 (high pop.)",    org: "DeepSeek · popularity",f1: 0.3758, p: 46.8, r: 31.4, c: 2.0, open: true,  family: "other" },
-  { name: "DeepSeek V3.2 (mid pop.)",     org: "DeepSeek · popularity",f1: 0.3470, p: 43.2, r: 29.0, c: 2.6, open: true,  family: "other" },
-  { name: "Llama 4 Scout 17B (low pop.)", org: "Meta AI · popularity", f1: 0.2031, p: 66.0, r: 12.0, c: 4.8, open: true,  family: "other" },
-  { name: "Llama 4 Scout 17B (high pop.)",org: "Meta AI · popularity", f1: 0.1710, p: 48.0, r: 10.4, c: 7.4, open: true,  family: "other" },
-  { name: "Llama 4 Scout 17B (mid pop.)", org: "Meta AI · popularity", f1: 0.1628, p: 60.6, r:  9.4, c: 4.8, open: true,  family: "other" }
+  { name: "GPT-5.4 (high pop.)", org: "OpenAI \u00b7 popularity", f1: 0.5367, p: 62.2, r: 47.2, c: 0.2, open: false, family: "openai" },
+  { name: "GPT-5.4 (low pop.)", org: "OpenAI \u00b7 popularity", f1: 0.4555, p: 69.0, r: 34.0, c: 0.6, open: false, family: "openai" },
+  { name: "GPT-5.4 (mid pop.)", org: "OpenAI \u00b7 popularity", f1: 0.4446, p: 64.2, r: 34.0, c: 0.2, open: false, family: "openai" },
+  { name: "DeepSeek V3.2 (high pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.4760, p: 48.0, r: 47.2, c: 0.0, open: true, family: "other" },
+  { name: "DeepSeek V3.2 (mid pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3957, p: 42.8, r: 36.8, c: 0.0, open: true, family: "other" },
+  { name: "DeepSeek V3.2 (low pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3637, p: 37.4, r: 35.4, c: 0.8, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (low pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1536, p: 46.4, r: 9.2, c: 1.6, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (mid pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1516, p: 43.0, r: 9.2, c: 2.8, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (high pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1436, p: 43.4, r: 8.6, c: 3.0, open: true, family: "other" }
 ];
 
 // EXPERIMENT 3 — Per-domain F1/P/R for three models
 const DOMAINS = {
   "GPT-5.4": {
-    "Event":            { f1: 0.5459, p: 64.0, r: 47.6 },
-    "Scientific":       { f1: 0.5090, p: 70.6, r: 39.8 },
-    "Organization":     { f1: 0.4776, p: 73.4, r: 35.4 },
-    "Cultural concept": { f1: 0.4499, p: 66.2, r: 34.1 },
-    "Work of art":      { f1: 0.4390, p: 67.2, r: 32.6 },
-    "Location":         { f1: 0.4279, p: 74.6, r: 30.0 },
-    "Animal":           { f1: 0.4033, p: 78.0, r: 27.2 },
-    "Artifact":         { f1: 0.3985, p: 79.4, r: 26.6 },
-    "Plant":            { f1: 0.3639, p: 75.2, r: 24.0 },
-    "Person":           { f1: 0.2959, p: 69.4, r: 18.8 }
+    "Event":            { f1: 0.4693, p: 57.6, r: 39.6 },
+    "Scientific":       { f1: 0.4032, p: 65.6, r: 29.1 },
+    "Organization":     { f1: 0.3898, p: 69.4, r: 27.1 },
+    "Work of art":      { f1: 0.3861, p: 63.7, r: 27.7 },
+    "Cultural concept": { f1: 0.3532, p: 61.2, r: 24.8 },
+    "Animal":           { f1: 0.3395, p: 72.1, r: 22.2 },
+    "Location":         { f1: 0.3178, p: 68.4, r: 20.7 },
+    "Artifact":         { f1: 0.3099, p: 68.8, r: 20.0 },
+    "Plant":            { f1: 0.2725, p: 72.1, r: 16.8 },
+    "Person":           { f1: 0.2259, p: 69.1, r: 13.5 }
   },
   "DeepSeek V3.2": {
-    "Animal":           { f1: 0.4639, p: 55.6, r: 39.8 },
-    "Scientific":       { f1: 0.4574, p: 50.2, r: 42.0 },
-    "Event":            { f1: 0.4520, p: 48.4, r: 42.4 },
-    "Organization":     { f1: 0.4012, p: 44.4, r: 36.6 },
-    "Plant":            { f1: 0.4001, p: 47.8, r: 34.4 },
-    "Cultural concept": { f1: 0.3627, p: 46.2, r: 29.9 },
-    "Artifact":         { f1: 0.3536, p: 36.6, r: 34.2 },
-    "Work of art":      { f1: 0.3528, p: 40.6, r: 31.2 },
-    "Location":         { f1: 0.3437, p: 45.0, r: 27.8 },
-    "Person":           { f1: 0.2594, p: 37.6, r: 19.8 }
+    "Event":            { f1: 0.3803, p: 39.0, r: 37.1 },
+    "Scientific":       { f1: 0.3768, p: 39.9, r: 35.7 },
+    "Animal":           { f1: 0.3667, p: 46.2, r: 30.4 },
+    "Plant":            { f1: 0.3013, p: 44.8, r: 22.7 },
+    "Artifact":         { f1: 0.2788, p: 32.0, r: 24.7 },
+    "Cultural concept": { f1: 0.2754, p: 36.8, r: 22.0 },
+    "Organization":     { f1: 0.2706, p: 36.8, r: 21.4 },
+    "Location":         { f1: 0.2564, p: 38.6, r: 19.2 },
+    "Work of art":      { f1: 0.2548, p: 31.7, r: 21.3 },
+    "Person":           { f1: 0.1751, p: 28.7, r: 12.6 }
   },
   "Llama 4 Scout 17B": {
-    "Event":            { f1: 0.2543, p: 68.8, r: 15.6 },
-    "Scientific":       { f1: 0.2281, p: 61.5, r: 14.0 },
-    "Animal":           { f1: 0.2125, p: 82.4, r: 12.2 },
-    "Artifact":         { f1: 0.2064, p: 53.2, r: 12.8 },
-    "Location":         { f1: 0.2034, p: 66.7, r: 12.0 },
-    "Organization":     { f1: 0.1851, p: 64.6, r: 10.8 },
-    "Plant":            { f1: 0.1850, p: 83.5, r: 10.4 },
-    "Cultural concept": { f1: 0.1740, p: 52.6, r: 10.4 },
-    "Work of art":      { f1: 0.1285, p: 41.6, r:  7.6 },
-    "Person":           { f1: 0.0783, p: 57.6, r:  4.2 }
+    "Event":            { f1: 0.1648, p: 44.7, r: 10.1 },
+    "Scientific":       { f1: 0.1075, p: 45.2, r: 6.1 },
+    "Work of art":      { f1: 0.0929, p: 33.2, r: 5.4 },
+    "Organization":     { f1: 0.0868, p: 45.2, r: 4.8 },
+    "Location":         { f1: 0.0849, p: 43.7, r: 4.7 },
+    "Artifact":         { f1: 0.0791, p: 32.7, r: 4.5 },
+    "Animal":           { f1: 0.0645, p: 63.4, r: 3.4 },
+    "Plant":            { f1: 0.0624, p: 56.7, r: 3.3 },
+    "Cultural concept": { f1: 0.0522, p: 37.8, r: 2.8 },
+    "Person":           { f1: 0.0417, p: 40.5, r: 2.2 }
   }
 };
 
 // EXPERIMENT 3 — By domain: 3 models × 10 domains = 30 rows (Table 3, final paper)
-// Contradiction rate = C_P (precision direction), all values from Table 3
+// EXPERIMENT 3 — By domain: 3 models × 10 domains = 30 rows (contradiction rate = precision side)
 const DOMAIN = [
-  // GPT-5.4 — ranked by F1
-  { name: "GPT-5.4 · Event",            org: "OpenAI",   f1: 0.5459, p: 64.0, r: 47.6, c: 0.2, open: false, family: "openai" },
-  { name: "GPT-5.4 · Scientific",       org: "OpenAI",   f1: 0.5090, p: 70.6, r: 39.8, c: 0.6, open: false, family: "openai" },
-  { name: "GPT-5.4 · Organization",     org: "OpenAI",   f1: 0.4776, p: 73.4, r: 35.4, c: 0.6, open: false, family: "openai" },
-  { name: "GPT-5.4 · Cultural concept", org: "OpenAI",   f1: 0.4499, p: 66.2, r: 34.1, c: 0.0, open: false, family: "openai" },
-  { name: "GPT-5.4 · Work of art",      org: "OpenAI",   f1: 0.4390, p: 67.2, r: 32.6, c: 1.0, open: false, family: "openai" },
-  { name: "GPT-5.4 · Location",         org: "OpenAI",   f1: 0.4279, p: 74.6, r: 30.0, c: 1.2, open: false, family: "openai" },
-  { name: "GPT-5.4 · Animal",           org: "OpenAI",   f1: 0.4033, p: 78.0, r: 27.2, c: 1.2, open: false, family: "openai" },
-  { name: "GPT-5.4 · Artifact",         org: "OpenAI",   f1: 0.3985, p: 79.4, r: 26.6, c: 0.4, open: false, family: "openai" },
-  { name: "GPT-5.4 · Plant",            org: "OpenAI",   f1: 0.3639, p: 75.2, r: 24.0, c: 0.6, open: false, family: "openai" },
-  { name: "GPT-5.4 · Person",           org: "OpenAI",   f1: 0.2959, p: 69.4, r: 18.8, c: 2.8, open: false, family: "openai" },
-  // DeepSeek V3.2
-  { name: "DeepSeek · Animal",          org: "DeepSeek", f1: 0.4639, p: 55.6, r: 39.8, c: 2.0, open: true,  family: "other" },
-  { name: "DeepSeek · Scientific",      org: "DeepSeek", f1: 0.4574, p: 50.2, r: 42.0, c: 1.8, open: true,  family: "other" },
-  { name: "DeepSeek · Event",           org: "DeepSeek", f1: 0.4520, p: 48.4, r: 42.4, c: 1.2, open: true,  family: "other" },
-  { name: "DeepSeek · Organization",    org: "DeepSeek", f1: 0.4012, p: 44.4, r: 36.6, c: 0.8, open: true,  family: "other" },
-  { name: "DeepSeek · Plant",           org: "DeepSeek", f1: 0.4001, p: 47.8, r: 34.4, c: 4.0, open: true,  family: "other" },
-  { name: "DeepSeek · Cultural concept",org: "DeepSeek", f1: 0.3627, p: 46.2, r: 29.9, c: 0.8, open: true,  family: "other" },
-  { name: "DeepSeek · Artifact",        org: "DeepSeek", f1: 0.3536, p: 36.6, r: 34.2, c: 2.8, open: true,  family: "other" },
-  { name: "DeepSeek · Work of art",     org: "DeepSeek", f1: 0.3528, p: 40.6, r: 31.2, c: 1.2, open: true,  family: "other" },
-  { name: "DeepSeek · Location",        org: "DeepSeek", f1: 0.3437, p: 45.0, r: 27.8, c: 2.0, open: true,  family: "other" },
-  { name: "DeepSeek · Person",          org: "DeepSeek", f1: 0.2594, p: 37.6, r: 19.8, c: 5.0, open: true,  family: "other" },
-  // Llama 4 Scout 17B
-  { name: "Llama 4 Scout · Event",            org: "Meta AI",  f1: 0.2543, p: 68.8, r: 15.6, c: 4.0, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Scientific",       org: "Meta AI",  f1: 0.2281, p: 61.5, r: 14.0, c: 6.3, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Animal",           org: "Meta AI",  f1: 0.2125, p: 82.4, r: 12.2, c: 6.2, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Artifact",         org: "Meta AI",  f1: 0.2064, p: 53.2, r: 12.8, c: 6.0, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Location",         org: "Meta AI",  f1: 0.2034, p: 66.7, r: 12.0, c: 4.1, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Organization",     org: "Meta AI",  f1: 0.1851, p: 64.6, r: 10.8, c: 2.2, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Plant",            org: "Meta AI",  f1: 0.1850, p: 83.5, r: 10.4, c: 3.6, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Cultural concept", org: "Meta AI",  f1: 0.1740, p: 52.6, r: 10.4, c: 1.8, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Work of art",      org: "Meta AI",  f1: 0.1285, p: 41.6, r:  7.6, c: 8.8, open: true,  family: "other" },
-  { name: "Llama 4 Scout · Person",           org: "Meta AI",  f1: 0.0783, p: 57.6, r:  4.2, c: 7.4, open: true,  family: "other" }
+  { name: "GPT-5.4 \u00b7 Event", org: "OpenAI", f1: 0.4693, p: 57.6, r: 39.6, c: 3.1, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Scientific", org: "OpenAI", f1: 0.4032, p: 65.6, r: 29.1, c: 3.0, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Organization", org: "OpenAI", f1: 0.3898, p: 69.4, r: 27.1, c: 3.2, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Work of art", org: "OpenAI", f1: 0.3861, p: 63.7, r: 27.7, c: 2.7, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Cultural concept", org: "OpenAI", f1: 0.3532, p: 61.2, r: 24.8, c: 2.3, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Animal", org: "OpenAI", f1: 0.3395, p: 72.1, r: 22.2, c: 3.5, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Location", org: "OpenAI", f1: 0.3178, p: 68.4, r: 20.7, c: 7.5, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Artifact", org: "OpenAI", f1: 0.3099, p: 68.8, r: 20.0, c: 4.7, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Plant", org: "OpenAI", f1: 0.2725, p: 72.1, r: 16.8, c: 2.3, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Person", org: "OpenAI", f1: 0.2259, p: 69.1, r: 13.5, c: 5.0, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Event", org: "DeepSeek", f1: 0.3803, p: 39.0, r: 37.1, c: 5.1, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Scientific", org: "DeepSeek", f1: 0.3768, p: 39.9, r: 35.7, c: 5.9, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Animal", org: "DeepSeek", f1: 0.3667, p: 46.2, r: 30.4, c: 6.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Plant", org: "DeepSeek", f1: 0.3013, p: 44.8, r: 22.7, c: 8.2, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Artifact", org: "DeepSeek", f1: 0.2788, p: 32.0, r: 24.7, c: 11.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Cultural concept", org: "DeepSeek", f1: 0.2754, p: 36.8, r: 22.0, c: 5.4, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Organization", org: "DeepSeek", f1: 0.2706, p: 36.8, r: 21.4, c: 5.2, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Location", org: "DeepSeek", f1: 0.2564, p: 38.6, r: 19.2, c: 8.0, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Work of art", org: "DeepSeek", f1: 0.2548, p: 31.7, r: 21.3, c: 12.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Person", org: "DeepSeek", f1: 0.1751, p: 28.7, r: 12.6, c: 9.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Event", org: "Meta AI", f1: 0.1648, p: 44.7, r: 10.1, c: 13.0, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Scientific", org: "Meta AI", f1: 0.1075, p: 45.2, r: 6.1, c: 14.1, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Work of art", org: "Meta AI", f1: 0.0929, p: 33.2, r: 5.4, c: 24.4, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Organization", org: "Meta AI", f1: 0.0868, p: 45.2, r: 4.8, c: 11.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Location", org: "Meta AI", f1: 0.0849, p: 43.7, r: 4.7, c: 14.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Artifact", org: "Meta AI", f1: 0.0791, p: 32.7, r: 4.5, c: 21.1, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Animal", org: "Meta AI", f1: 0.0645, p: 63.4, r: 3.4, c: 10.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Plant", org: "Meta AI", f1: 0.0624, p: 56.7, r: 3.3, c: 7.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Cultural concept", org: "Meta AI", f1: 0.0522, p: 37.8, r: 2.8, c: 11.5, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Person", org: "Meta AI", f1: 0.0417, p: 40.5, r: 2.2, c: 20.8, open: true, family: "other" }
 ];
 
 // Experiment metadata
 const EXPERIMENTS = {
   overall: {
     title: "Overall model ranking",
-    setting: "GPTKB prompt · medium reasoning",
-    dataset: "200 random entities",
-    desc: "All 20 models evaluated on the same set of randomly sampled entities. This scenario produces the primary BeQu ranking.",
+    setting: "GPTKB prompt · medium reasoning · 5 runs",
+    dataset: "500 random entities",
+    desc: "All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.018 F1). This scenario produces the primary BeQu ranking.",
     data: MODELS
   },
   reasoning: {
     title: "Reasoning effort",
     setting: "low / medium / high effort",
-    dataset: "200 random entities · 3 models",
-    desc: "Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro evaluated at three reasoning effort levels. Extended chain-of-thought yields negligible F1 gains.",
+    dataset: "500 random entities · 3 models",
+    desc: "Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro evaluated at three reasoning effort levels. Only Claude Opus 4.6 responds: F1 rises from 0.277 (low) to 0.391 (high), driven by recall, as more effort makes it answer more entities. GPT-5.4 and Gemini 3.1 Pro change by less than 0.03 F1.",
     data: REASONING
   },
   domain: {
     title: "By knowledge domain",
     setting: "3 models × 10 domains",
     dataset: "100 entities per domain · 1,000 total",
-    desc: "GPT-5.4, DeepSeek V3.2, and Llama 4 Scout evaluated on 100 entities per domain. Model ranking is transitive across all domains. Person is the weakest for all three models; Event and Scientific Concept are consistently the strongest for GPT-5.4.",
+    desc: "GPT-5.4, DeepSeek V3.2, and Llama 4 Scout evaluated on 100 entities per domain. GPT-5.4 beats DeepSeek V3.2 in 8 of 10 domains, DeepSeek beats Llama 4 Scout in all 10. Event is the strongest domain and Person the weakest for all three models; GPT-5.4 answers a third of the people with an empty list.",
     data: DOMAIN
   },
   prompt: {
     title: "Prompt format",
-    setting: "6 main + 4 repetition variations",
-    dataset: "200 random entities · Kimi K2.5",
-    desc: "Six prompt format variations: GPTKB, LMCRAWL, Wikidata and Schema.org schemas (with and without predicate constraints). As a side experiment, GPTKB repetitions (2×/3×/5×/10×) are also shown — 3× gives the best F1, while 5× and 10× steeply degrade.",
+    setting: "6 prompt variations · API default reasoning (none)",
+    dataset: "500 random entities · 3 models",
+    desc: "GPTKB, LMCRAWL, and Wikidata / Schema.org schemas with and without a predefined predicate list. Predicate lists raise precision but always lower F1; the best F1 comes from an open-ended prompt for every model. Run without a reasoning parameter (API default: no reasoning), so absolute scores are not comparable to the overall ranking.",
     data: PROMPT
   },
   range: {
     title: "Triple count range",
-    setting: "6 prompt-requested ranges",
-    dataset: "200 random entities · 3 models",
-    desc: "Varying the requested number of triples per entity. GPT-5.4 peaks at Pop: 75–150 / LT: 8–15, demonstrating latent knowledge unlocked by requesting more triples. Llama 4 Scout collapses at the largest range, producing hallucinated content.",
+    setting: "7 prompt-requested ranges · API default reasoning (none)",
+    dataset: "500 random entities · 3 models",
+    desc: "Varying the requested number of triples per entity. Models follow the requested numbers only loosely; more triples raise recall and lower precision, so F1 changes little (GPT-5.4: 0.315–0.367). Run without a reasoning parameter (API default: no reasoning).",
     data: RANGE
   },
   popularity: {
     title: "Entity popularity",
     setting: "low / mid / high buckets",
-    dataset: "200 entities/bucket · 3 models",
-    desc: "Entities partitioned by Wikidata statement count. Popularity raises recall meaningfully only for strong models; weak models show no consistent trend.",
+    dataset: "3 popularity buckets · 3 models",
+    desc: "Entities partitioned by Wikidata statement count. Popularity raises recall meaningfully only for strong models (GPT-5.4: 34% → 47%); Llama 4 Scout shows no consistent trend.",
     data: POPULARITY
   }
 };
@@ -2302,11 +2311,11 @@ function renderDomains() {
 
   const sub = document.getElementById("domain-sub");
   if (model === "GPT-5.4") {
-    sub.innerHTML = `Showing <b>GPT-5.4</b>. Event and Scientific Concept are strongest; Person is the weakest (driven by low recall on biographical detail).`;
+    sub.innerHTML = `Showing <b>GPT-5.4</b>. Event and Scientific Concept are strongest; Person is the weakest (a third of the people get an empty answer).`;
   } else if (model === "DeepSeek V3.2") {
-    sub.innerHTML = `Showing <b>DeepSeek V3.2</b>. Animal and Scientific Concept lead; absolute F1 spans 0.26–0.46 across domains. Person remains the floor.`;
+    sub.innerHTML = `Showing <b>DeepSeek V3.2</b>. Event, Scientific Concept and Animal lead; F1 spans 0.175–0.380 across domains. Person remains the floor.`;
   } else {
-    sub.innerHTML = `Showing <b>Llama 4 Scout 17B</b>. All domains depressed; Person collapses to F1 = 0.078 due to near-zero recall.`;
+    sub.innerHTML = `Showing <b>Llama 4 Scout 17B</b>. All domains depressed (F1 0.042–0.165); Person collapses to F1 = 0.042 due to near-zero recall.`;
   }
 }
 
@@ -2428,7 +2437,7 @@ window.addEventListener("resize", renderScatter);
    REFERENCE CORPORA BROWSER
 ============================================================ */
 const CORPUS_INDEX = {
-  random200:  { path: "REFERENCE_CORPUS/random/200/index.json",    rawPath: "REFERENCE_CORPUS/random/200/GT.json.gz",    subsets: null },
+  random500:  { path: "REFERENCE_CORPUS/random/500/index.json",    rawPath: "REFERENCE_CORPUS/random/500/GT.json.gz",    subsets: null },
   random10k:  { path: "REFERENCE_CORPUS/random/10k/index.json",    rawPath: "REFERENCE_CORPUS/random/10k/GT.json.gz",    subsets: null },
   domains:    { path: "REFERENCE_CORPUS/domains/index.json",        rawPath: "REFERENCE_CORPUS/domains/GT.json.gz",        subsets: ["person","organization","location","event","work_of_art","artifact","scientific_concept","cultural_concept","animal","plant"] },
   popularity: { path: "REFERENCE_CORPUS/popularity/index.json",     rawPath: "REFERENCE_CORPUS/popularity/GT.json.gz",     subsets: ["66-100%","33-66%","0-33%"] }
@@ -2724,7 +2733,7 @@ const ENTITY_DATASETS = {
     columns: ["title", "wikidata_statements", "wikidata_id"]
   },
   nonexistent: {
-    path: "ENTITY_LISTS/DOMAINS/wikipedia_entities_non_existent_10.json",
+    path: "ENTITY_LISTS/DOMAINS/wikipedia_entities_non_existent_100.json",
     label: "Non-existent entities",
     subsets: null,
     columns: ["title"]
@@ -2918,132 +2927,248 @@ async function entitySelectDataset(dsId) {
    TRIPLES BROWSER
 ============================================================ */
 const TRIPLES_INDEX = [
-  { id: "anthropic_claude-haiku-4.5",   display: "Claude Haiku 4.5",      org: "Anthropic",
+  { id: "anthropic_claude-haiku-4.5", display: "Claude Haiku 4.5", org: "Anthropic",
     experiments: [
-      { label: "Random",  path: "elicited_triples/anthropic_claude-haiku-4.5/random/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/anthropic_claude-haiku-4.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/anthropic_claude-haiku-4.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/anthropic_claude-haiku-4.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/anthropic_claude-haiku-4.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/anthropic_claude-haiku-4.5/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "anthropic_claude-opus-4.6",    display: "Claude Opus 4.6",       org: "Anthropic",
+  { id: "anthropic_claude-opus-4.6", display: "Claude Opus 4.6", org: "Anthropic",
     experiments: [
-      { label: "Random · Low",    path: "elicited_triples/anthropic_claude-opus-4.6/random/low/elicited_triples.csv" },
-      { label: "Random · Medium", path: "elicited_triples/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
-      { label: "Random · High",   path: "elicited_triples/anthropic_claude-opus-4.6/random/high/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 low effort", path: "elicited_triples/exp2/anthropic_claude-opus-4.6/random/low/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 medium effort", path: "elicited_triples/exp2/anthropic_claude-opus-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 high effort", path: "elicited_triples/exp2/anthropic_claude-opus-4.6/random/high/elicited_triples.csv" }
     ]
   },
-  { id: "anthropic_claude-sonnet-4.6",  display: "Claude Sonnet 4.6",     org: "Anthropic",
+  { id: "anthropic_claude-sonnet-4.6", display: "Claude Sonnet 4.6", org: "Anthropic",
     experiments: [
-      { label: "Random · Medium", path: "elicited_triples/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/anthropic_claude-sonnet-4.6/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "deepseek-ai_DeepSeek-V3.2",    display: "DeepSeek V3.2",         org: "DeepSeek",
+  { id: "deepseek_deepseek-v3.2", display: "DeepSeek V3.2", org: "DeepSeek",
     experiments: [
-      { label: "Random",                      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/random/elicited_triples.csv" },
-      { label: "Domains",                     path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/domains/elicited_triples.csv" },
-      { label: "Domains · Non-existent",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/domains/non-existent/elicited_triples.csv" },
-      { label: "Popularity 0–33%",            path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/0-33%/elicited_triples.csv" },
-      { label: "Popularity 33–66%",           path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/33-66%/elicited_triples.csv" },
-      { label: "Popularity 66–100%",          path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/popularity/66-100%/elicited_triples.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_5_10_lt_1/elicited_triples.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/deepseek-ai_DeepSeek-V3.2/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/deepseek_deepseek-v3.2/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/deepseek_deepseek-v3.2/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/deepseek_deepseek-v3.2/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/deepseek_deepseek-v3.2/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/deepseek_deepseek-v3.2/random/medium/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 domains", path: "elicited_triples/exp3/deepseek_deepseek-v3.2/domains/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 non-existent", path: "elicited_triples/exp3/deepseek_deepseek-v3.2/non-existent/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 GPTKB", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/GPTKB/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 LMCRAWL", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/LMCRAWL/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/wikidata_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema (no constr.)", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/wikidata_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/schemaorg_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema (no constr.)", path: "elicited_triples/exp4/deepseek_deepseek-v3.2/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 5\u201310 / 1", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 10\u201320 / 1\u20132", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 25\u201350 / 3\u20135", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 33\u201366 / 3\u20137", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 50\u2013100 / 5\u201310", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_50_100_lt_5_10/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 75\u2013150 / 8\u201315", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 100\u2013200 / 10\u201320", path: "elicited_triples/exp5/deepseek_deepseek-v3.2/ranges/pop_100_200_lt_10_20/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity low", path: "elicited_triples/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/low/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity mid", path: "elicited_triples/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/mid/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity high", path: "elicited_triples/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/high/elicited_triples.csv" }
     ]
   },
-  { id: "google_gemini-3.1-flash-lite-preview", display: "Gemini 3.1 Flash Lite", org: "Google DeepMind",
+  { id: "openai_gpt-5-mini", display: "GPT-5 Mini", org: "OpenAI",
     experiments: [
-      { label: "Random · Medium", path: "elicited_triples/google_gemini-3.1-flash-lite-preview/random/medium/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/openai_gpt-5-mini/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/openai_gpt-5-mini/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/openai_gpt-5-mini/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/openai_gpt-5-mini/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/openai_gpt-5-mini/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "google_gemini-3.1-pro-preview", display: "Gemini 3.1 Pro",       org: "Google DeepMind",
+  { id: "openai_gpt-5-nano", display: "GPT-5 Nano", org: "OpenAI",
     experiments: [
-      { label: "Random · Low",    path: "elicited_triples/google_gemini-3.1-pro-preview/random/low/elicited_triples.csv" },
-      { label: "Random · Medium", path: "elicited_triples/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
-      { label: "Random · High",   path: "elicited_triples/google_gemini-3.1-pro-preview/random/high/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/openai_gpt-5-nano/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/openai_gpt-5-nano/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/openai_gpt-5-nano/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/openai_gpt-5-nano/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/openai_gpt-5-nano/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "google_gemini-3-flash-preview",  display: "Gemini 3 Flash",      org: "Google DeepMind",
+  { id: "openai_gpt-5.4", display: "GPT-5.4", org: "OpenAI",
     experiments: [
-      { label: "Random · Medium", path: "elicited_triples/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 low effort", path: "elicited_triples/exp2/openai_gpt-5.4/random/low/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 medium effort", path: "elicited_triples/exp2/openai_gpt-5.4/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 high effort", path: "elicited_triples/exp2/openai_gpt-5.4/random/high/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 domains", path: "elicited_triples/exp3/openai_gpt-5.4/domains/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 non-existent", path: "elicited_triples/exp3/openai_gpt-5.4/non-existent/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 GPTKB", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/GPTKB/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 LMCRAWL", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/LMCRAWL/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/wikidata_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema (no constr.)", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/wikidata_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/schemaorg_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema (no constr.)", path: "elicited_triples/exp4/openai_gpt-5.4/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 5\u201310 / 1", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 10\u201320 / 1\u20132", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 25\u201350 / 3\u20135", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 33\u201366 / 3\u20137", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 50\u2013100 / 5\u201310", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_50_100_lt_5_10/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 75\u2013150 / 8\u201315", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 100\u2013200 / 10\u201320", path: "elicited_triples/exp5/openai_gpt-5.4/ranges/pop_100_200_lt_10_20/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity low", path: "elicited_triples/additional_exp2_popularity/openai_gpt-5.4/popularity/low/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity mid", path: "elicited_triples/additional_exp2_popularity/openai_gpt-5.4/popularity/mid/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity high", path: "elicited_triples/additional_exp2_popularity/openai_gpt-5.4/popularity/high/elicited_triples.csv" }
     ]
   },
-  { id: "google_gemma-3-12b-it",   display: "Gemma 3 12B",       org: "Google",
-    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-12b-it/random/elicited_triples.csv" }]
-  },
-  { id: "google_gemma-3-27b-it",   display: "Gemma 3 27B",       org: "Google",
-    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-27b-it/random/elicited_triples.csv" }]
-  },
-  { id: "google_gemma-3-4b-it",    display: "Gemma 3 4B",        org: "Google",
-    experiments: [{ label: "Random", path: "elicited_triples/google_gemma-3-4b-it/random/elicited_triples.csv" }]
-  },
-  { id: "gpt-5.4-2026-03-05",      display: "GPT-5.4",           org: "OpenAI",
+  { id: "openai_gpt-oss-120b", display: "GPT-OSS-120B", org: "OpenAI",
     experiments: [
-      { label: "Random · Low",            path: "elicited_triples/gpt-5.4-2026-03-05/random/low/elicited_triples_1773057497.csv" },
-      { label: "Random · Medium",         path: "elicited_triples/gpt-5.4-2026-03-05/random/medium/elicited_triples_1773056495.csv" },
-      { label: "Random · High",           path: "elicited_triples/gpt-5.4-2026-03-05/random/high/elicited_triples_1773057545.csv" },
-      { label: "Domains",                 path: "elicited_triples/gpt-5.4-2026-03-05/domains/elicited_triples_1773057744.csv" },
-      { label: "Domains · Non-existent",  path: "elicited_triples/gpt-5.4-2026-03-05/domains/non-existent/elicited_triples_1773058061.csv" },
-      { label: "Popularity 0–33%",        path: "elicited_triples/gpt-5.4-2026-03-05/popularity/0-33%/elicited_triples_1773058409.csv" },
-      { label: "Popularity 33–66%",       path: "elicited_triples/gpt-5.4-2026-03-05/popularity/33-66%/elicited_triples_1773058407.csv" },
-      { label: "Popularity 66–100%",      path: "elicited_triples/gpt-5.4-2026-03-05/popularity/66-100%/elicited_triples_1773058406.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_5_10_lt_1/elicited_triples_1773058330.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_10_20_lt_1_2/elicited_triples_1773058332.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_25_50_lt_3_5/elicited_triples_1773058333.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_33_66_lt_3_7/elicited_triples_1773058334.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_75_150_lt_8_15/elicited_triples_1773058336.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/gpt-5.4-2026-03-05/ranges/pop_100_200_lt_10_20/elicited_triples_1773058338.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/openai_gpt-oss-120b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/openai_gpt-oss-120b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/openai_gpt-oss-120b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/openai_gpt-oss-120b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/openai_gpt-oss-120b/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "gpt-5-mini-2025-08-07",   display: "GPT-5 Mini",        org: "OpenAI",
-    experiments: [{ label: "Random · Medium", path: "elicited_triples/gpt-5-mini-2025-08-07/random/medium/elicited_triples_1772642378.csv" }]
-  },
-  { id: "gpt-5-nano-2025-08-07",   display: "GPT-5 Nano",        org: "OpenAI",
-    experiments: [{ label: "Random · Medium", path: "elicited_triples/gpt-5-nano-2025-08-07/random/medium/elicited_triples_1772649352.csv" }]
-  },
-  { id: "meta-llama_Llama-4-Scout-17B-16E-Instruct", display: "Llama 4 Scout 17B", org: "Meta AI",
+  { id: "google_gemini-3-flash-preview", display: "Gemini 3 Flash", org: "Google DeepMind",
     experiments: [
-      { label: "Random",                      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/random/elicited_triples.csv" },
-      { label: "Domains",                     path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/elicited_triples.csv" },
-      { label: "Domains · Non-existent",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/domains/non-existent/elicited_triples.csv" },
-      { label: "Popularity 0–33%",            path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/0-33%/elicited_triples.csv" },
-      { label: "Popularity 33–66%",           path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/33-66%/elicited_triples.csv" },
-      { label: "Popularity 66–100%",          path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/popularity/66-100%/elicited_triples.csv" },
-      { label: "Range pop 5–10 lt 1",         path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_5_10_lt_1/elicited_triples.csv" },
-      { label: "Range pop 10–20 lt 1–2",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
-      { label: "Range pop 25–50 lt 3–5",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
-      { label: "Range pop 33–66 lt 3–7",      path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
-      { label: "Range pop 75–150 lt 8–15",    path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
-      { label: "Range pop 100–200 lt 10–20",  path: "elicited_triples/meta-llama_Llama-4-Scout-17B-16E-Instruct/ranges/pop_100_200_lt_10_20/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemini-3-flash-preview/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "MiniMaxAI_MiniMax-M2.5",  display: "MiniMax M2.5",       org: "MiniMax",
-    experiments: [{ label: "Random", path: "elicited_triples/MiniMaxAI_MiniMax-M2.5/random/elicited_triples.csv" }]
-  },
-  { id: "mistralai_mistral-large-2512", display: "Mistral Large",  org: "Mistral AI",
-    experiments: [{ label: "Random", path: "elicited_triples/mistralai_mistral-large-2512/random/elicited_triples.csv" }]
-  },
-  { id: "moonshotai_kimi-k2.5",    display: "Kimi K2.5",          org: "Moonshot AI",
+  { id: "google_gemini-3.1-flash-lite", display: "Gemini 3.1 Flash Lite", org: "Google DeepMind",
     experiments: [
-      { label: "Random",                          path: "elicited_triples/moonshotai_kimi-k2.5/random/elicited_triples.csv" },
-      { label: "Prompt: LMCRAWL",                 path: "elicited_triples/moonshotai_kimi-k2.5/prompts/LMCRAWL/elicited_triples.csv" },
-      { label: "Prompt: GPTKB",                   path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB/elicited_triples.csv" },
-      { label: "Prompt: GPTKB 2× rep.",           path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB_2x_repetition/elicited_triples.csv" },
-      { label: "Prompt: GPTKB 3× rep.",           path: "elicited_triples/moonshotai_kimi-k2.5/prompts/GPTKB_3x_repetition/elicited_triples.csv" },
-      { label: "Prompt: Schema.org",              path: "elicited_triples/moonshotai_kimi-k2.5/prompts/schemaorg_schema/elicited_triples.csv" },
-      { label: "Prompt: Schema.org (no constr.)", path: "elicited_triples/moonshotai_kimi-k2.5/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
-      { label: "Prompt: Wikidata schema",         path: "elicited_triples/moonshotai_kimi-k2.5/prompts/wikidata_schema/elicited_triples.csv" },
-      { label: "Prompt: Wikidata (no constr.)",   path: "elicited_triples/moonshotai_kimi-k2.5/prompts/wikidata_schema_no_constraints/elicited_triples.csv" }
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemini-3.1-flash-lite/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemini-3.1-flash-lite/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemini-3.1-flash-lite/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemini-3.1-flash-lite/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemini-3.1-flash-lite/random/medium/elicited_triples.csv" }
     ]
   },
-  { id: "openai_gpt-oss-120b",     display: "GPT-OSS-120B",       org: "OpenAI",
-    experiments: [{ label: "Random", path: "elicited_triples/openai_gpt-oss-120b/random/elicited_triples.csv" }]
+  { id: "google_gemini-3.1-pro-preview", display: "Gemini 3.1 Pro", org: "Google DeepMind",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 low effort", path: "elicited_triples/exp2/google_gemini-3.1-pro-preview/random/low/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 medium effort", path: "elicited_triples/exp2/google_gemini-3.1-pro-preview/random/medium/elicited_triples.csv" },
+      { label: "Exp2 \u00b7 high effort", path: "elicited_triples/exp2/google_gemini-3.1-pro-preview/random/high/elicited_triples.csv" }
+    ]
   },
-  { id: "qwen_qwen3.5-27b",        display: "Qwen3.5 27B",        org: "Alibaba",
-    experiments: [{ label: "Random", path: "elicited_triples/qwen_qwen3.5-27b/random/elicited_triples.csv" }]
+  { id: "google_gemma-3-12b-it", display: "Gemma 3 12B", org: "Google",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemma-3-12b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemma-3-12b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemma-3-12b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemma-3-12b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemma-3-12b-it/random/medium/elicited_triples.csv" }
+    ]
   },
-  { id: "x-ai_grok-4.1-fast",      display: "Grok 4.1 Fast",      org: "xAI",
-    experiments: [{ label: "Random", path: "elicited_triples/x-ai_grok-4.1-fast/random/elicited_triples.csv" }]
+  { id: "google_gemma-3-27b-it", display: "Gemma 3 27B", org: "Google",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemma-3-27b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemma-3-27b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemma-3-27b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemma-3-27b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemma-3-27b-it/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "google_gemma-3-4b-it", display: "Gemma 3 4B", org: "Google",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/google_gemma-3-4b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/google_gemma-3-4b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/google_gemma-3-4b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/google_gemma-3-4b-it/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/google_gemma-3-4b-it/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "x-ai_grok-4.3", display: "Grok 4.3", org: "xAI",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/x-ai_grok-4.3/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/x-ai_grok-4.3/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/x-ai_grok-4.3/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/x-ai_grok-4.3/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/x-ai_grok-4.3/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "moonshotai_kimi-k2.5", display: "Kimi K2.5", org: "Moonshot AI",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/moonshotai_kimi-k2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/moonshotai_kimi-k2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/moonshotai_kimi-k2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/moonshotai_kimi-k2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/moonshotai_kimi-k2.5/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "meta-llama_llama-4-scout", display: "Llama 4 Scout 17B", org: "Meta AI",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/meta-llama_llama-4-scout/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/meta-llama_llama-4-scout/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/meta-llama_llama-4-scout/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/meta-llama_llama-4-scout/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/meta-llama_llama-4-scout/random/medium/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 domains", path: "elicited_triples/exp3/meta-llama_llama-4-scout/domains/elicited_triples.csv" },
+      { label: "Exp3 \u00b7 non-existent", path: "elicited_triples/exp3/meta-llama_llama-4-scout/non-existent/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 GPTKB", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/GPTKB/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 LMCRAWL", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/LMCRAWL/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/wikidata_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Wikidata Schema (no constr.)", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/wikidata_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/schemaorg_schema/elicited_triples.csv" },
+      { label: "Exp4 \u00b7 Schema.org Schema (no constr.)", path: "elicited_triples/exp4/meta-llama_llama-4-scout/prompts/schemaorg_schema_no_constraints/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 5\u201310 / 1", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_5_10_lt_1/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 10\u201320 / 1\u20132", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_10_20_lt_1_2/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 25\u201350 / 3\u20135", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_25_50_lt_3_5/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 33\u201366 / 3\u20137", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_33_66_lt_3_7/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 50\u2013100 / 5\u201310", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_50_100_lt_5_10/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 75\u2013150 / 8\u201315", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_75_150_lt_8_15/elicited_triples.csv" },
+      { label: "Exp5 \u00b7 range 100\u2013200 / 10\u201320", path: "elicited_triples/exp5/meta-llama_llama-4-scout/ranges/pop_100_200_lt_10_20/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity low", path: "elicited_triples/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/low/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity mid", path: "elicited_triples/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/mid/elicited_triples.csv" },
+      { label: "Appendix \u00b7 popularity high", path: "elicited_triples/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/high/elicited_triples.csv" }
+    ]
+  },
+  { id: "minimax_minimax-m2.5", display: "MiniMax M2.5", org: "MiniMax",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/minimax_minimax-m2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/minimax_minimax-m2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/minimax_minimax-m2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/minimax_minimax-m2.5/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/minimax_minimax-m2.5/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "mistralai_mistral-large-2512", display: "Mistral Large 3", org: "Mistral AI",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/mistralai_mistral-large-2512/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/mistralai_mistral-large-2512/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/mistralai_mistral-large-2512/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/mistralai_mistral-large-2512/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/mistralai_mistral-large-2512/random/medium/elicited_triples.csv" }
+    ]
+  },
+  { id: "qwen_qwen3.5-27b", display: "Qwen3.5 27B", org: "Alibaba",
+    experiments: [
+      { label: "Exp1 \u00b7 run 1", path: "elicited_triples/exp1/1/qwen_qwen3.5-27b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 2", path: "elicited_triples/exp1/2/qwen_qwen3.5-27b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 3", path: "elicited_triples/exp1/3/qwen_qwen3.5-27b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 4", path: "elicited_triples/exp1/4/qwen_qwen3.5-27b/random/medium/elicited_triples.csv" },
+      { label: "Exp1 \u00b7 run 5", path: "elicited_triples/exp1/5/qwen_qwen3.5-27b/random/medium/elicited_triples.csv" }
+    ]
   }
 ];
 
@@ -3264,154 +3389,238 @@ function triplesSelectExp(modelId, idx) {
 /* ============================================================
    DETAILED RESULTS
 ============================================================ */
-const EVAL_FOLDER = "meta-llama_Llama-4-Scout-17B-16E-Instruct_rag_eval";
+// each EXPERIMENT_GROUPS entry gives the full results folder (judge: Gemma 4 26B-A4B-it; appendix popularity: Llama 4 Scout)
 
 // Display info keyed by resultsFolder
 const RESULTS_MODELS = {
-  "anthropic_claude-haiku-4.5":            { display: "Claude Haiku 4.5" },
-  "anthropic_claude-opus-4.6":             { display: "Claude Opus 4.6" },
-  "anthropic_claude-sonnet-4.6":           { display: "Claude Sonnet 4.6" },
-  "deepseek-ai_deepseek-v3.2":             { display: "DeepSeek V3.2" },
-  "google_gemini-3.1-flash-lite-preview":  { display: "Gemini 3.1 Flash Lite" },
-  "google_gemini-3.1-pro-preview":         { display: "Gemini 3.1 Pro" },
-  "google_gemini-3-flash-preview":         { display: "Gemini 3 Flash" },
-  "google_gemma-3-12b-it":                 { display: "Gemma 3 12B" },
-  "google_gemma-3-27b-it":                 { display: "Gemma 3 27B" },
-  "google_gemma-3-4b-it":                  { display: "Gemma 3 4B" },
-  "gpt-5.4-2026-03-05":                    { display: "GPT-5.4" },
-  "gpt-5-mini-2025-08-07":                 { display: "GPT-5 Mini" },
-  "gpt-5-nano-2025-08-07":                 { display: "GPT-5 Nano" },
-  "meta-llama_llama-4-scout-17b-16e-instruct": { display: "Llama 4 Scout 17B" },
-  "minimaxai_minimax-m2.5":                { display: "MiniMax M2.5" },
-  "mistralai_mistral-large-2512":          { display: "Mistral Large" },
-  "moonshotai_kimi-k2.5":                  { display: "Kimi K2.5" },
-  "openai_gpt-oss-120b":                   { display: "GPT-OSS-120B" },
-  "qwen_qwen3.5-27b":                      { display: "Qwen3.5 27B" },
-  "x-ai_grok-4.1-fast":                   { display: "Grok 4.1 Fast" }
+  "anthropic_claude-haiku-4.5": { display: "Claude Haiku 4.5" },
+  "anthropic_claude-opus-4.6": { display: "Claude Opus 4.6" },
+  "anthropic_claude-sonnet-4.6": { display: "Claude Sonnet 4.6" },
+  "deepseek_deepseek-v3.2": { display: "DeepSeek V3.2" },
+  "google_gemini-3-flash-preview": { display: "Gemini 3 Flash" },
+  "google_gemini-3.1-flash-lite": { display: "Gemini 3.1 Flash Lite" },
+  "google_gemini-3.1-pro-preview": { display: "Gemini 3.1 Pro" },
+  "google_gemma-3-12b-it": { display: "Gemma 3 12B" },
+  "google_gemma-3-27b-it": { display: "Gemma 3 27B" },
+  "google_gemma-3-4b-it": { display: "Gemma 3 4B" },
+  "meta-llama_llama-4-scout": { display: "Llama 4 Scout 17B" },
+  "minimax_minimax-m2.5": { display: "MiniMax M2.5" },
+  "mistralai_mistral-large-2512": { display: "Mistral Large 3" },
+  "moonshotai_kimi-k2.5": { display: "Kimi K2.5" },
+  "openai_gpt-5-mini": { display: "GPT-5 Mini" },
+  "openai_gpt-5-nano": { display: "GPT-5 Nano" },
+  "openai_gpt-5.4": { display: "GPT-5.4" },
+  "openai_gpt-oss-120b": { display: "GPT-OSS-120B" },
+  "qwen_qwen3.5-27b": { display: "Qwen3.5 27B" },
+  "x-ai_grok-4.3": { display: "Grok 4.3" }
 };
 
 // Experiment groups: each entry maps a folder to its actual file path
 const EXPERIMENT_GROUPS = [
-  { value: "random", label: "Random", entries: [
-    { folder: "anthropic_claude-haiku-4.5",           expPath: "random" },
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "random" },
-    { folder: "google_gemma-3-12b-it",                expPath: "random" },
-    { folder: "google_gemma-3-27b-it",                expPath: "random" },
-    { folder: "google_gemma-3-4b-it",                 expPath: "random" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "random" },
-    { folder: "minimaxai_minimax-m2.5",               expPath: "random" },
-    { folder: "mistralai_mistral-large-2512",         expPath: "random" },
-    { folder: "moonshotai_kimi-k2.5",                 expPath: "random" },
-    { folder: "openai_gpt-oss-120b",                  expPath: "random" },
-    { folder: "qwen_qwen3.5-27b",                     expPath: "random" },
-    { folder: "x-ai_grok-4.1-fast",                  expPath: "random" },
-    { folder: "anthropic_claude-opus-4.6",            expPath: "random/medium" },
-    { folder: "anthropic_claude-sonnet-4.6",          expPath: "random/medium" },
-    { folder: "google_gemini-3-flash-preview",        expPath: "random/medium" },
-    { folder: "google_gemini-3.1-flash-lite-preview", expPath: "random/medium" },
-    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/medium" },
-    { folder: "gpt-5-mini-2025-08-07",                expPath: "random/medium" },
-    { folder: "gpt-5-nano-2025-08-07",                expPath: "random/medium" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/medium" }
+  { value: "exp1/1", label: "Exp1 \u00b7 run 1", entries: [
+    { folder: "anthropic_claude-haiku-4.5", expPath: "RESULTS/exp1/1/anthropic_claude-haiku-4.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp1/1/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-sonnet-4.6", expPath: "RESULTS/exp1/1/anthropic_claude-sonnet-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp1/1/deepseek_deepseek-v3.2/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3-flash-preview", expPath: "RESULTS/exp1/1/google_gemini-3-flash-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-flash-lite", expPath: "RESULTS/exp1/1/google_gemini-3.1-flash-lite/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp1/1/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-12b-it", expPath: "RESULTS/exp1/1/google_gemma-3-12b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-27b-it", expPath: "RESULTS/exp1/1/google_gemma-3-27b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-4b-it", expPath: "RESULTS/exp1/1/google_gemma-3-4b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp1/1/meta-llama_llama-4-scout/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "minimax_minimax-m2.5", expPath: "RESULTS/exp1/1/minimax_minimax-m2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "mistralai_mistral-large-2512", expPath: "RESULTS/exp1/1/mistralai_mistral-large-2512/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "moonshotai_kimi-k2.5", expPath: "RESULTS/exp1/1/moonshotai_kimi-k2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-mini", expPath: "RESULTS/exp1/1/openai_gpt-5-mini/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-nano", expPath: "RESULTS/exp1/1/openai_gpt-5-nano/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp1/1/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-oss-120b", expPath: "RESULTS/exp1/1/openai_gpt-oss-120b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "qwen_qwen3.5-27b", expPath: "RESULTS/exp1/1/qwen_qwen3.5-27b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "x-ai_grok-4.3", expPath: "RESULTS/exp1/1/x-ai_grok-4.3/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "random/low", label: "Random · Low", entries: [
-    { folder: "anthropic_claude-opus-4.6",            expPath: "random/low" },
-    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/low" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/low" }
+  { value: "exp1/2", label: "Exp1 \u00b7 run 2", entries: [
+    { folder: "anthropic_claude-haiku-4.5", expPath: "RESULTS/exp1/2/anthropic_claude-haiku-4.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp1/2/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-sonnet-4.6", expPath: "RESULTS/exp1/2/anthropic_claude-sonnet-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp1/2/deepseek_deepseek-v3.2/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3-flash-preview", expPath: "RESULTS/exp1/2/google_gemini-3-flash-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-flash-lite", expPath: "RESULTS/exp1/2/google_gemini-3.1-flash-lite/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp1/2/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-12b-it", expPath: "RESULTS/exp1/2/google_gemma-3-12b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-27b-it", expPath: "RESULTS/exp1/2/google_gemma-3-27b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-4b-it", expPath: "RESULTS/exp1/2/google_gemma-3-4b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp1/2/meta-llama_llama-4-scout/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "minimax_minimax-m2.5", expPath: "RESULTS/exp1/2/minimax_minimax-m2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "mistralai_mistral-large-2512", expPath: "RESULTS/exp1/2/mistralai_mistral-large-2512/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "moonshotai_kimi-k2.5", expPath: "RESULTS/exp1/2/moonshotai_kimi-k2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-mini", expPath: "RESULTS/exp1/2/openai_gpt-5-mini/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-nano", expPath: "RESULTS/exp1/2/openai_gpt-5-nano/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp1/2/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-oss-120b", expPath: "RESULTS/exp1/2/openai_gpt-oss-120b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "qwen_qwen3.5-27b", expPath: "RESULTS/exp1/2/qwen_qwen3.5-27b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "x-ai_grok-4.3", expPath: "RESULTS/exp1/2/x-ai_grok-4.3/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "random/medium", label: "Random · Medium", entries: [
-    { folder: "anthropic_claude-opus-4.6",            expPath: "random/medium" },
-    { folder: "anthropic_claude-sonnet-4.6",          expPath: "random/medium" },
-    { folder: "google_gemini-3-flash-preview",        expPath: "random/medium" },
-    { folder: "google_gemini-3.1-flash-lite-preview", expPath: "random/medium" },
-    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/medium" },
-    { folder: "gpt-5-mini-2025-08-07",                expPath: "random/medium" },
-    { folder: "gpt-5-nano-2025-08-07",                expPath: "random/medium" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/medium" }
+  { value: "exp1/3", label: "Exp1 \u00b7 run 3", entries: [
+    { folder: "anthropic_claude-haiku-4.5", expPath: "RESULTS/exp1/3/anthropic_claude-haiku-4.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp1/3/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-sonnet-4.6", expPath: "RESULTS/exp1/3/anthropic_claude-sonnet-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp1/3/deepseek_deepseek-v3.2/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3-flash-preview", expPath: "RESULTS/exp1/3/google_gemini-3-flash-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-flash-lite", expPath: "RESULTS/exp1/3/google_gemini-3.1-flash-lite/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp1/3/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-12b-it", expPath: "RESULTS/exp1/3/google_gemma-3-12b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-27b-it", expPath: "RESULTS/exp1/3/google_gemma-3-27b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-4b-it", expPath: "RESULTS/exp1/3/google_gemma-3-4b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp1/3/meta-llama_llama-4-scout/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "minimax_minimax-m2.5", expPath: "RESULTS/exp1/3/minimax_minimax-m2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "mistralai_mistral-large-2512", expPath: "RESULTS/exp1/3/mistralai_mistral-large-2512/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "moonshotai_kimi-k2.5", expPath: "RESULTS/exp1/3/moonshotai_kimi-k2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-mini", expPath: "RESULTS/exp1/3/openai_gpt-5-mini/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-nano", expPath: "RESULTS/exp1/3/openai_gpt-5-nano/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp1/3/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-oss-120b", expPath: "RESULTS/exp1/3/openai_gpt-oss-120b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "qwen_qwen3.5-27b", expPath: "RESULTS/exp1/3/qwen_qwen3.5-27b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "x-ai_grok-4.3", expPath: "RESULTS/exp1/3/x-ai_grok-4.3/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "random/high", label: "Random · High", entries: [
-    { folder: "anthropic_claude-opus-4.6",            expPath: "random/high" },
-    { folder: "google_gemini-3.1-pro-preview",        expPath: "random/high" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "random/high" }
+  { value: "exp1/4", label: "Exp1 \u00b7 run 4", entries: [
+    { folder: "anthropic_claude-haiku-4.5", expPath: "RESULTS/exp1/4/anthropic_claude-haiku-4.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp1/4/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-sonnet-4.6", expPath: "RESULTS/exp1/4/anthropic_claude-sonnet-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp1/4/deepseek_deepseek-v3.2/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3-flash-preview", expPath: "RESULTS/exp1/4/google_gemini-3-flash-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-flash-lite", expPath: "RESULTS/exp1/4/google_gemini-3.1-flash-lite/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp1/4/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-12b-it", expPath: "RESULTS/exp1/4/google_gemma-3-12b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-27b-it", expPath: "RESULTS/exp1/4/google_gemma-3-27b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-4b-it", expPath: "RESULTS/exp1/4/google_gemma-3-4b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp1/4/meta-llama_llama-4-scout/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "minimax_minimax-m2.5", expPath: "RESULTS/exp1/4/minimax_minimax-m2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "mistralai_mistral-large-2512", expPath: "RESULTS/exp1/4/mistralai_mistral-large-2512/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "moonshotai_kimi-k2.5", expPath: "RESULTS/exp1/4/moonshotai_kimi-k2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-mini", expPath: "RESULTS/exp1/4/openai_gpt-5-mini/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-nano", expPath: "RESULTS/exp1/4/openai_gpt-5-nano/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp1/4/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-oss-120b", expPath: "RESULTS/exp1/4/openai_gpt-oss-120b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "qwen_qwen3.5-27b", expPath: "RESULTS/exp1/4/qwen_qwen3.5-27b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "x-ai_grok-4.3", expPath: "RESULTS/exp1/4/x-ai_grok-4.3/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "domains", label: "Domains", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "domains" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "domains" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "domains" }
+  { value: "exp1/5", label: "Exp1 \u00b7 run 5", entries: [
+    { folder: "anthropic_claude-haiku-4.5", expPath: "RESULTS/exp1/5/anthropic_claude-haiku-4.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp1/5/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "anthropic_claude-sonnet-4.6", expPath: "RESULTS/exp1/5/anthropic_claude-sonnet-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp1/5/deepseek_deepseek-v3.2/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3-flash-preview", expPath: "RESULTS/exp1/5/google_gemini-3-flash-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-flash-lite", expPath: "RESULTS/exp1/5/google_gemini-3.1-flash-lite/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp1/5/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-12b-it", expPath: "RESULTS/exp1/5/google_gemma-3-12b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-27b-it", expPath: "RESULTS/exp1/5/google_gemma-3-27b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemma-3-4b-it", expPath: "RESULTS/exp1/5/google_gemma-3-4b-it/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp1/5/meta-llama_llama-4-scout/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "minimax_minimax-m2.5", expPath: "RESULTS/exp1/5/minimax_minimax-m2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "mistralai_mistral-large-2512", expPath: "RESULTS/exp1/5/mistralai_mistral-large-2512/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "moonshotai_kimi-k2.5", expPath: "RESULTS/exp1/5/moonshotai_kimi-k2.5/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-mini", expPath: "RESULTS/exp1/5/openai_gpt-5-mini/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5-nano", expPath: "RESULTS/exp1/5/openai_gpt-5-nano/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp1/5/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-oss-120b", expPath: "RESULTS/exp1/5/openai_gpt-oss-120b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "qwen_qwen3.5-27b", expPath: "RESULTS/exp1/5/qwen_qwen3.5-27b/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "x-ai_grok-4.3", expPath: "RESULTS/exp1/5/x-ai_grok-4.3/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "popularity/0-33%", label: "Popularity 0–33%", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/0-33%" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/0-33%" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/0-33%" }
+  { value: "exp2/low", label: "Exp2 \u00b7 low effort", entries: [
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp2/anthropic_claude-opus-4.6/random/low/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp2/google_gemini-3.1-pro-preview/random/low/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp2/openai_gpt-5.4/random/low/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "popularity/33-66%", label: "Popularity 33–66%", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/33-66%" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/33-66%" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/33-66%" }
+  { value: "exp2/medium", label: "Exp2 \u00b7 medium effort", entries: [
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp2/anthropic_claude-opus-4.6/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp2/google_gemini-3.1-pro-preview/random/medium/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp2/openai_gpt-5.4/random/medium/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "popularity/66-100%", label: "Popularity 66–100%", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "popularity/66-100%" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "popularity/66-100%" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "popularity/66-100%" }
+  { value: "exp2/high", label: "Exp2 \u00b7 high effort", entries: [
+    { folder: "anthropic_claude-opus-4.6", expPath: "RESULTS/exp2/anthropic_claude-opus-4.6/random/high/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "google_gemini-3.1-pro-preview", expPath: "RESULTS/exp2/google_gemini-3.1-pro-preview/random/high/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp2/openai_gpt-5.4/random/high/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_5_10_lt_1", label: "Range pop 5–10 lt 1", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_5_10_lt_1" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_5_10_lt_1" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_5_10_lt_1" }
+  { value: "exp3/domains", label: "Exp3 \u00b7 domains", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp3/openai_gpt-5.4/domains/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp3/deepseek_deepseek-v3.2/domains/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp3/meta-llama_llama-4-scout/domains/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_10_20_lt_1_2", label: "Range pop 10–20 lt 1–2", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_10_20_lt_1_2" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_10_20_lt_1_2" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_10_20_lt_1_2" }
+  { value: "exp4/GPTKB", label: "Exp4 \u00b7 GPTKB", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/GPTKB/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/GPTKB/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/GPTKB/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_25_50_lt_3_5", label: "Range pop 25–50 lt 3–5", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_25_50_lt_3_5" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_25_50_lt_3_5" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_25_50_lt_3_5" }
+  { value: "exp4/LMCRAWL", label: "Exp4 \u00b7 LMCRAWL", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/LMCRAWL/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/LMCRAWL/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/LMCRAWL/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_33_66_lt_3_7", label: "Range pop 33–66 lt 3–7", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_33_66_lt_3_7" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_33_66_lt_3_7" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_33_66_lt_3_7" }
+  { value: "exp4/wikidata_schema", label: "Exp4 \u00b7 Wikidata Schema", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/wikidata_schema/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/wikidata_schema/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/wikidata_schema/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_75_150_lt_8_15", label: "Range pop 75–150 lt 8–15", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_75_150_lt_8_15" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_75_150_lt_8_15" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_75_150_lt_8_15" }
+  { value: "exp4/wikidata_schema_no_constraints", label: "Exp4 \u00b7 Wikidata Schema (no constr.)", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/wikidata_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/wikidata_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/wikidata_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "ranges/pop_100_200_lt_10_20", label: "Range pop 100–200 lt 10–20", entries: [
-    { folder: "deepseek-ai_deepseek-v3.2",            expPath: "ranges/pop_100_200_lt_10_20" },
-    { folder: "gpt-5.4-2026-03-05",                   expPath: "ranges/pop_100_200_lt_10_20" },
-    { folder: "meta-llama_llama-4-scout-17b-16e-instruct", expPath: "ranges/pop_100_200_lt_10_20" }
+  { value: "exp4/schemaorg_schema", label: "Exp4 \u00b7 Schema.org Schema", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/schemaorg_schema/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/schemaorg_schema/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/schemaorg_schema/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/LMCRAWL", label: "Prompt: LMCRAWL", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/LMCRAWL" }
+  { value: "exp4/schemaorg_schema_no_constraints", label: "Exp4 \u00b7 Schema.org Schema (no constr.)", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp4/openai_gpt-5.4/prompts/schemaorg_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp4/deepseek_deepseek-v3.2/prompts/schemaorg_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp4/meta-llama_llama-4-scout/prompts/schemaorg_schema_no_constraints/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/GPTKB", label: "Prompt: GPTKB", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB" }
+  { value: "exp5/pop_5_10_lt_1", label: "Exp5 \u00b7 range 5\u201310 / 1", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_5_10_lt_1/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_5_10_lt_1/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_5_10_lt_1/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/GPTKB_2x_repetition", label: "Prompt: GPTKB 2× rep.", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB_2x_repetition" }
+  { value: "exp5/pop_10_20_lt_1_2", label: "Exp5 \u00b7 range 10\u201320 / 1\u20132", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_10_20_lt_1_2/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_10_20_lt_1_2/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_10_20_lt_1_2/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/GPTKB_3x_repetition", label: "Prompt: GPTKB 3× rep.", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/GPTKB_3x_repetition" }
+  { value: "exp5/pop_25_50_lt_3_5", label: "Exp5 \u00b7 range 25\u201350 / 3\u20135", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_25_50_lt_3_5/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_25_50_lt_3_5/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_25_50_lt_3_5/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/schemaorg_schema", label: "Prompt: Schema.org", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/schemaorg_schema" }
+  { value: "exp5/pop_33_66_lt_3_7", label: "Exp5 \u00b7 range 33\u201366 / 3\u20137", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_33_66_lt_3_7/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_33_66_lt_3_7/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_33_66_lt_3_7/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/schemaorg_schema_no_constraints", label: "Prompt: Schema.org (no constr.)", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/schemaorg_schema_no_constraints" }
+  { value: "exp5/pop_50_100_lt_5_10", label: "Exp5 \u00b7 range 50\u2013100 / 5\u201310", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_50_100_lt_5_10/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_50_100_lt_5_10/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_50_100_lt_5_10/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/wikidata_schema", label: "Prompt: Wikidata schema", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/wikidata_schema" }
+  { value: "exp5/pop_75_150_lt_8_15", label: "Exp5 \u00b7 range 75\u2013150 / 8\u201315", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_75_150_lt_8_15/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_75_150_lt_8_15/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_75_150_lt_8_15/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
-  { value: "prompts/wikidata_schema_no_constraints", label: "Prompt: Wikidata (no constr.)", entries: [
-    { folder: "moonshotai_kimi-k2.5", expPath: "prompts/wikidata_schema_no_constraints" }
+  { value: "exp5/pop_100_200_lt_10_20", label: "Exp5 \u00b7 range 100\u2013200 / 10\u201320", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/exp5/openai_gpt-5.4/ranges/pop_100_200_lt_10_20/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/exp5/deepseek_deepseek-v3.2/ranges/pop_100_200_lt_10_20/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_100_200_lt_10_20/google_gemma-4-26B-A4B-it_rag_eval" }
+  ]},
+  { value: "appendix/popularity", label: "Appendix \u00b7 popularity (all buckets)", entries: [
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/additional_exp2_popularity/openai_gpt-5.4/popularity/meta-llama_llama-4-scout_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/meta-llama_llama-4-scout_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/meta-llama_llama-4-scout_rag_eval" }
   ]}
 ];
 
 function compareResultsIndexPath(folder, expPath) {
-  return `RESULTS/${folder}/${expPath}/${EVAL_FOLDER}/results_index.json`;
+  return `${expPath}/results_index.json`;
 }
 
 function compareExpPathForFolder(group, folder) {

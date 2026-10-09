@@ -70,12 +70,14 @@ def main_evaluation(
         triples_per_popularity_bucket: int = 100,
         web_results_count: int = 20,
         web_docs_for_eval: int = 20,
+        disable_web_results_topup: bool = False,
         build_ground_truth_only: bool = False,
         max_workers: int = 5,
         top_k: int = 10,
         judge_api_url: str = None,
         judge_api_key: str = None,
-):  
+        min_confidence: float = None,
+):
     """
     Main function to run the evaluation pipeline for the elicited triples.
     
@@ -100,9 +102,13 @@ def main_evaluation(
     triples_per_popularity_bucket (int): Number of triples to sample per popularity bucket if evaluate_by_popularity is True
      web_results_count (int): Number of Brave Search results to fetch during ground truth construction (default: 20).
      web_docs_for_eval (int): Number of web documents/results to use during evaluation (default: 20).
+     disable_web_results_topup (bool): When True, skip topping up cached entities whose cached web_search_results count is below web_results_count (default: False).
      build_ground_truth_only (bool): When True, only builds ground truth and skips evaluation (default: False)
      max_workers (int): Maximum number of parallel workers for ground truth building (default: 10).
      top_k (int): Number of top passages to retrieve in RAG-based precision evaluation (default: 10).
+     min_confidence (float): If set, elicited triples with a 'confidence' column value below this
+        threshold are excluded from evaluation. Triples without a 'confidence' column are always
+        kept. Used to evaluate confidence-filtered precision/recall (default: None).
     """
     # Create results directory and setup logging only if results_dir_path is provided
     if results_dir_path is not None:
@@ -118,6 +124,8 @@ def main_evaluation(
         logger.info(f"Seed: {seed}")
         logger.info(f"Sample size: {sample_size}")
         logger.info(f"Results directory: {results_dir_path}")
+        if min_confidence is not None:
+            logger.info(f"Confidence filter: keeping triples with confidence >= {min_confidence}")
     else:
         # Remove default handler and add console-only logging for ground truth only mode
         logger.remove()
@@ -159,7 +167,7 @@ def main_evaluation(
     """
     
     # Step 1: Initialize Wikipedia triple extractor
-    extractor = WikipediaTripleExtractor(llm_judge=llm_judge, ground_truth_dir_path=ground_truth_dir_path, web_results_count=web_results_count, max_workers=max_workers, judge_api_url=judge_api_url, judge_api_key=judge_api_key)
+    extractor = WikipediaTripleExtractor(llm_judge=llm_judge, ground_truth_dir_path=ground_truth_dir_path, web_results_count=web_results_count, disable_web_results_topup=disable_web_results_topup, max_workers=max_workers, judge_api_url=judge_api_url, judge_api_key=judge_api_key)
     
     # Step 2: Process entities and extract triples from Wikipedia
     logger.info(f"Processing {len(all_entities)} entities...")
@@ -202,6 +210,7 @@ def main_evaluation(
         top_k=top_k,
         judge_api_url=judge_api_url,
         judge_api_key=judge_api_key,
+        min_confidence=min_confidence,
     )
 
     ret_triples = process_request.read_triples_dir()

@@ -83,7 +83,140 @@ class Request:
         else:
             self.client = OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
 
-    @network_retry(max_retries=6, initial_delay=1.0)
+        # Dedicated client/model for novel-triple dedup checkpointing, always via ScadsAI
+        # regardless of which model is used as the main llm_judge.
+        self.dedup_model = "google/gemma-4-26B-A4B-it"
+        self.dedup_client = OpenAI(base_url=os.getenv("SCADSAI_BASE_URL"), api_key=os.getenv("SCADSAI_API_KEY"))
+
+    @staticmethod
+    def _triple_to_str(t: Dict) -> str:
+        return f"({t.get('subject', '')}, {t.get('predicate', '')}, {t.get('object', '')})"
+
+    @network_retry(max_retries=10, initial_delay=1.0)
+    def dedup_triples_llm(self, known_triples: List[Dict], candidate_triples: List[Dict]) -> List[bool]:
+        """
+        Judge which candidate triples convey NEW factual information not already
+        present (semantically, not just verbatim) in known_triples.
+
+        Used to build a novel-triple-count checkpoint curve as more web documents
+        are added to the ground truth corpus (does raw triple count grow because of
+        genuinely new information, or just redundant restatements?).
+
+        Args:
+            known_triples: RDF triples already accepted as "known" so far (e.g. from
+                the Wikipedia article and/or previously processed batches of web docs).
+            candidate_triples: New RDF triples extracted from the latest batch of documents.
+
+        Returns:
+            List[bool] of the same length/order as candidate_triples; True = novel
+            (not already covered by known_triples), False = duplicate/redundant.
+        """
+        if not candidate_triples:
+            return []
+        if not known_triples:
+            return [True] * len(candidate_triples)
+
+        known_str = "\n".join(f"{i}. {self._triple_to_str(t)}" for i, t in enumerate(known_triples))
+        candidates_str = "\n".join(f"{i}. {self._triple_to_str(t)}" for i, t in enumerate(candidate_triples))
+
+        # Ask for explicit {index, novel} pairs rather than a bare positional boolean
+        # array: long candidate lists make LLMs prone to dropping/merging entries, and
+        # index-tagging lets us map results back correctly (or spot gaps) instead of
+        # silently misaligning a positional list.
+        response_schema = {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "TripleDedup",
+                "description": "Novelty classification of candidate triples against known triples",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "results": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "index": {"type": "integer"},
+                                    "novel": {"type": "boolean"},
+                                },
+                                "required": ["index", "novel"],
+                            },
+                            "description": "One entry per candidate triple, tagged with its index, "
+                                           "novel=true if it conveys new factual information not already "
+                                           "present (even paraphrased) in the known triples list."
+                        }
+                    },
+                    "required": ["results"]
+                }
+            }
+        }
+
+        messages = [
+            {"role": "user", "content": (
+                "You are given a list of KNOWN RDF triples already established about an entity, and a "
+                "list of CANDIDATE RDF triples (each with an index number) extracted from additional documents.\n"
+                "For each candidate, decide whether it conveys NEW factual information that is not already "
+                "present (even if paraphrased, reordered, or using different wording) in the known triples. "
+                "Mark it novel=true only if it adds genuinely new information; mark novel=false if it is a "
+                "duplicate or near-duplicate of something already in the known list.\n"
+                f"You MUST respond with JSON: {{\"results\": [{{\"index\": <int>, \"novel\": <bool>}}, ...]}} "
+                f"with exactly one entry for EVERY one of the {len(candidate_triples)} candidates below, "
+                f"using their given index numbers.\n\n"
+                f"KNOWN triples:\n{known_str}\n\n"
+                f"CANDIDATE triples:\n{candidates_str}"
+            )}
+        ]
+
+        logger.debug(f"=== LLM CALL: dedup_triples_llm === known={len(known_triples)} candidates={len(candidate_triples)} model={self.dedup_model}")
+
+        response = self.dedup_client.chat.completions.create(
+            messages=messages,
+            model=self.dedup_model,
+            # 8000 (not the uniform 3000 used for the actual judge calls): candidate_triples
+            # batches here can run into the hundreds (e.g. a page_size=20 web-document batch),
+            # each needing its own {"index", "novel"} entry in the output array.
+            max_tokens=8000,
+            temperature=0.0,
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
+        )
+
+        message = response.choices[0].message
+        response_text = message.content or getattr(message, "reasoning_content", None)
+        if not response_text:
+            finish_reason = response.choices[0].finish_reason
+            raise ValueError(
+                f"Empty dedup response from {self.dedup_model} (finish_reason={finish_reason}); "
+                f"likely ran out of tokens on reasoning before producing content"
+            )
+        result = _parse_json(response_text)
+
+        entries = result.get("results") if isinstance(result, dict) else None
+        if not isinstance(entries, list) or not entries:
+            raise ValueError(f"Invalid dedup response: expected a 'results' list, got {result}")
+
+        novel_by_index = {}
+        for entry in entries:
+            if not isinstance(entry, dict) or "index" not in entry or "novel" not in entry:
+                continue
+            try:
+                idx = int(entry["index"])
+            except (TypeError, ValueError):
+                continue
+            if 0 <= idx < len(candidate_triples):
+                novel_by_index[idx] = bool(entry["novel"])
+
+        missing = [i for i in range(len(candidate_triples)) if i not in novel_by_index]
+        if missing:
+            logger.warning(
+                f"dedup_triples_llm: model returned {len(novel_by_index)}/{len(candidate_triples)} entries "
+                f"({len(missing)} missing indices); defaulting missing entries to novel=True"
+            )
+
+        return [novel_by_index.get(i, True) for i in range(len(candidate_triples))]
+
+    @network_retry(max_retries=10, initial_delay=1.0)
     def verify_triple_lm_snippet(self, triple, snippet):
         """
         Verify an RDF triple against a text snippet.
@@ -132,6 +265,7 @@ class Request:
                             a) The snippet entails the RDF triple.\
                             b) The snippet contradicts the RDF triple. \
                             c) The truth of the given RDF triple cannot be determined from the snippet alone. \
+                            If the provided evidence is internally CONFLICTING (i.e., it contains information that both supports AND contradicts the statement), you MUST answer 'c' (neutral), rather than picking a side. \
                             Respond with JSON containing 'answer' (one of a/b/c) and 'reasoning'."},
             {"role": "user", "content": triple_prompt_str},
             {"role": "user", "content": snippet_prompt_str},
@@ -145,11 +279,13 @@ class Request:
         response = self.client.chat.completions.create(
             messages=messages,
             model=self.llm_judge,
-            max_tokens=self.max_tokens,
+            max_tokens=3000,
             temperature=0.0,
-            response_format={"type": "json_object"}
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
         )
-        
+
         response_text = response.choices[0].message.content
         result = _parse_json(response_text)
 
@@ -162,7 +298,7 @@ class Request:
         return result
     
 
-    @network_retry(max_retries=6, initial_delay=1.0)
+    @network_retry(max_retries=10, initial_delay=1.0)
     def verify_triple_lm_wikidata(self, triple, gold_triples):
         """
         Verify an RDF triple against a list of Wikidata triples.
@@ -211,6 +347,7 @@ class Request:
                             a) The list of triples entails the given RDF triple.\
                             b) The list of triples contradicts the given RDF triple. \
                             c) The truth of the given RDF triple cannot be determined from the list of triples alone. \
+                            If the provided evidence is internally CONFLICTING (i.e., it contains information that both supports AND contradicts the statement), you MUST answer 'c' (neutral), rather than picking a side. \
                             Respond with JSON containing 'answer' (one of a/b/c) and 'reasoning'."},
             {"role": "user", "content": triple_prompt_str},
             {"role": "user", "content": gold_prompt_str},
@@ -224,11 +361,13 @@ class Request:
         response = self.client.chat.completions.create(
             messages=messages,
             model=self.llm_judge,
-            max_tokens=self.max_tokens,
+            max_tokens=3000,
             temperature=0.0,
-            response_format={"type": "json_object"}
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
         )
-        
+
         response_text = response.choices[0].message.content
         result = _parse_json(response_text)
 
@@ -266,10 +405,12 @@ class Request:
             response = self.client.chat.completions.create(
                 messages=messages,
                 model=self.llm_judge,
-                max_tokens=max_words + 200,  # Allow some buffer
-                temperature=0.3,
+                max_tokens=3000,
+                temperature=0.0,
+                top_p=1.0,
+                seed=42,
             )
-            
+
             result = response.choices[0].message.content
             output_word_count = len(result.split())
             # logger.debug(f"Output text length: {len(result)} characters, {output_word_count} words")
@@ -307,10 +448,12 @@ class Request:
             response = self.client.chat.completions.create(
                 messages=messages,
                 model=self.llm_judge,
-                max_tokens=max_words + 200,  # Allow some buffer
-                temperature=0.3,
+                max_tokens=3000,
+                temperature=0.0,
+                top_p=1.0,
+                seed=42,
             )
-            
+
             result = response.choices[0].message.content
             output_word_count = len(result.split())
             logger.debug(f"Web document text shortened: {input_word_count} => {output_word_count} words")
@@ -343,15 +486,46 @@ Text:
 
         logger.debug(f"=== LLM CALL: extract_triples_from_text === Entity: {entity_name}, model: {self.llm_judge}")
 
+        response_schema = {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "TripleExtraction",
+                "description": "RDF triples extracted from text about a given entity",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "triples": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "subject": {"type": "string"},
+                                    "predicate": {"type": "string"},
+                                    "object": {"type": "string"},
+                                },
+                                "required": ["subject", "predicate", "object"],
+                            },
+                        }
+                    },
+                    "required": ["triples"],
+                },
+            },
+        }
+
         max_attempts = 4
         for attempt in range(1, max_attempts + 1):
             try:
                 response = self.client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
                     model=self.llm_judge,
-                    max_tokens=2000,
+                    # 8000 (not the uniform 3000 used for the actual judge calls): this can be
+                    # called on a full, unshortened Wikipedia article (see caller), which may
+                    # yield 50-150+ triples in one JSON array response.
+                    max_tokens=8000,
                     temperature=0.0,
-                    response_format={"type": "json_object"},
+                    top_p=1.0,
+                    seed=42,
+                    response_format=response_schema,
                 )
                 response_text = response.choices[0].message.content
                 result = _parse_json(response_text)
@@ -455,6 +629,7 @@ Text:
                             a) The ground truth entails the RDF triple.\
                             b) The ground truth contradicts the RDF triple. \
                             c) The truth of the given RDF triple cannot be determined from the ground truth alone. \
+                            If the provided evidence is internally CONFLICTING (i.e., it contains information that both supports AND contradicts the statement), you MUST answer 'c' (neutral), rather than picking a side. \
                             Respond with JSON containing 'answer' (one of a/b/c) and 'reasoning'."},
             {"role": "user", "content": triple_prompt_str},
             {"role": "user", "content": context_prompt_str},
@@ -468,11 +643,13 @@ Text:
         response = self.client.chat.completions.create(
             messages=messages,
             model=self.llm_judge,
-            max_tokens=self.max_tokens,
+            max_tokens=3000,
             temperature=0.0,
-            response_format={"type": "json_object"}
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
         )
-        
+
         response_text = response.choices[0].message.content
         result = _parse_json(response_text)
 
@@ -484,7 +661,7 @@ Text:
         
         return result
     
-    @network_retry(max_retries=6, initial_delay=1.0)
+    @network_retry(max_retries=10, initial_delay=1.0)
     def verify_triple_with_rag(self, triple: str, rag_context: str, sources: list) -> dict:
         """
         Verify an RDF triple against retrieved RAG passages in a single LLM call.
@@ -536,6 +713,7 @@ Text:
                             a) The passages entail the RDF triple.\
                             b) The passages contradict the RDF triple. \
                             c) The truth of the given RDF triple cannot be determined from the passages alone. \
+                            If the provided evidence is internally CONFLICTING (i.e., it contains information that both supports AND contradicts the statement), you MUST answer 'c' (neutral), rather than picking a side. \
                             Respond with JSON containing 'answer' (one of a/b/c) and 'reasoning'."},
             {"role": "user", "content": triple_prompt_str},
             {"role": "user", "content": context_prompt_str},
@@ -549,11 +727,13 @@ Text:
         response = self.client.chat.completions.create(
             messages=messages,
             model=self.llm_judge,
-            max_tokens=self.max_tokens,
+            max_tokens=3000,
             temperature=0.0,
-            response_format={"type": "json_object"}
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
         )
-        
+
         response_text = response.choices[0].message.content
         result = _parse_json(response_text)
 

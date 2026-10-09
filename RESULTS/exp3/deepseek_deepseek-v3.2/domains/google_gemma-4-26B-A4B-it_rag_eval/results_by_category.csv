@@ -1,0 +1,21 @@
+Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
+person,287,99,614,0.287,0.099,0.614,1000,Precision (Wikipedia-Category),elicited_triples
+organization,368,52,580,0.368,0.052,0.58,1000,Precision (Wikipedia-Category),elicited_triples
+location,386,80,534,0.386,0.08,0.534,1000,Precision (Wikipedia-Category),elicited_triples
+event,390,51,559,0.39,0.051,0.559,1000,Precision (Wikipedia-Category),elicited_triples
+work_of_art,317,123,560,0.317,0.123,0.56,1000,Precision (Wikipedia-Category),elicited_triples
+artifact,320,113,567,0.32,0.113,0.567,1000,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,399,59,542,0.399,0.059,0.542,1000,Precision (Wikipedia-Category),elicited_triples
+cultural_concept,368,54,578,0.368,0.054,0.578,1000,Precision (Wikipedia-Category),elicited_triples
+animal,462,67,471,0.462,0.067,0.471,1000,Precision (Wikipedia-Category),elicited_triples
+plant,448,82,470,0.448,0.082,0.47,1000,Precision (Wikipedia-Category),elicited_triples
+animal,304,59,637,0.304,0.059,0.637,1000,Recall (Wikipedia-Category),elicited_triples
+artifact,247,142,611,0.247,0.142,0.611,1000,Recall (Wikipedia-Category),elicited_triples
+person,126,77,797,0.126,0.077,0.797,1000,Recall (Wikipedia-Category),elicited_triples
+scientific_concept,357,73,570,0.357,0.073,0.57,1000,Recall (Wikipedia-Category),elicited_triples
+cultural_concept,220,34,746,0.22,0.034,0.746,1000,Recall (Wikipedia-Category),elicited_triples
+work_of_art,213,103,684,0.213,0.103,0.684,1000,Recall (Wikipedia-Category),elicited_triples
+organization,214,51,735,0.214,0.051,0.735,1000,Recall (Wikipedia-Category),elicited_triples
+location,192,80,728,0.192,0.08,0.728,1000,Recall (Wikipedia-Category),elicited_triples
+event,371,101,528,0.371,0.101,0.528,1000,Recall (Wikipedia-Category),elicited_triples
+plant,227,52,721,0.227,0.052,0.721,1000,Recall (Wikipedia-Category),elicited_triples

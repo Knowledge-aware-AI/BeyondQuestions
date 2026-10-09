@@ -192,10 +192,35 @@ Respond ONLY with valid JSON in this exact format, no extra text:
     "reason": "string",
     "domain": "one of the domain strings from the list"
 }}"""
+    response_schema = {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "EntityEvaluation",
+            "description": "Informativeness/ambiguity/suitability evaluation and domain classification of a candidate entity",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "informativeness": {"type": "integer"},
+                    "ambiguity": {"type": "integer"},
+                    "suitability": {"type": "integer"},
+                    "problematic": {"type": "boolean"},
+                    "reason": {"type": "string"},
+                    "domain": {"type": "string", "enum": DOMAINS},
+                },
+                "required": ["informativeness", "ambiguity", "suitability", "problematic", "reason", "domain"],
+            },
+        },
+    }
+
     try:
         response = client.chat.completions.create(
-            model="meta-llama/Llama-4-Scout-17B-16E-Instruct",
-            messages=[{"role": "user", "content": prompt}]
+            model="google/gemma-4-26B-A4B-it",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=3000,
+            temperature=0.0,
+            top_p=1.0,
+            seed=42,
+            response_format=response_schema,
         )
         content = response.choices[0].message.content.strip("```json").strip("```")
         if not content:
@@ -234,7 +259,7 @@ def finalize_selection():
 # The entities must be obviously fictional (not real people, places, companies, works, etc.)."""
 #     try:
 #         response = client.chat.completions.create(
-#             model="meta-llama/Llama-4-Scout-17B-16E-Instruct",
+#             model="google/gemma-4-26B-A4B-it",
 #             messages=[{"role": "user", "content": prompt}],
 #             max_tokens=800,
 #         )

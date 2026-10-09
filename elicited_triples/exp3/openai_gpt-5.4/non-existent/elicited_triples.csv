@@ -1,0 +1,214 @@
+subject,predicate,object,subject_name
+Helios Prize for Digital Arts,instanceOf,award,Helios Prize for Digital Arts
+International Airport of Andorra,instanceOf,proposed airport,International Airport of Andorra
+International Airport of Andorra,country,Andorra,International Airport of Andorra
+International Airport of Andorra,status,unbuilt,International Airport of Andorra
+International Airport of Andorra,officialName,Aeroport Internacional d'Andorra,International Airport of Andorra
+International Airport of Andorra,officialNameLanguage,Catalan,International Airport of Andorra
+International Airport of Andorra,describedAs,planned international airport for Andorra,International Airport of Andorra
+U-Bahn Dresden,instanceOf,fictional rapid transit system,U-Bahn Dresden
+U-Bahn Dresden,country,Germany,U-Bahn Dresden
+U-Bahn Dresden,locatedIn,Dresden,U-Bahn Dresden
+U-Bahn Dresden,describedAs,urban legend,U-Bahn Dresden
+U-Bahn Dresden,describedAs,myth,U-Bahn Dresden
+U-Bahn Dresden,existsInReality,false,U-Bahn Dresden
+U-Bahn Dresden,relatedTo,April Fools' joke,U-Bahn Dresden
+U-Bahn Dresden,relatedTo,satirical map,U-Bahn Dresden
+U-Bahn Dresden,transportModeClaimed,metro,U-Bahn Dresden
+U-Bahn Dresden,nameLanguage,German,U-Bahn Dresden
+U-Bahn Dresden,nameMeaning,Dresden Underground,U-Bahn Dresden
+U-Bahn Dresden,commonlyContrastedWith,Dresden Straßenbahn,U-Bahn Dresden
+U-Bahn Dresden,commonlyContrastedWith,Dresden S-Bahn,U-Bahn Dresden
+U-Bahn Dresden,cityLacks,true metro system,U-Bahn Dresden
+U-Bahn Dresden,status,nonexistent,U-Bahn Dresden
+Vostok Ice Shelf Research Station,instanceOf,research station,Vostok Ice Shelf Research Station
+Vostok Ice Shelf Research Station,locatedOn,Vostok Ice Shelf,Vostok Ice Shelf Research Station
+Vostok Ice Shelf Research Station,locatedIn,Antarctica,Vostok Ice Shelf Research Station
+Vostok Ice Shelf Research Station,hasPurpose,scientific research,Vostok Ice Shelf Research Station
+Vostok Ice Shelf Research Station,associatedWith,polar research,Vostok Ice Shelf Research Station
+Osterode Ring Railway,instanceOf,railway line,Osterode Ring Railway
+Osterode Ring Railway,country,Germany,Osterode Ring Railway
+Osterode Ring Railway,location,Lower Saxony,Osterode Ring Railway
+Osterode Ring Railway,serves,Osterode am Harz,Osterode Ring Railway
+Osterode Ring Railway,GermanName,Osteroder Ringbahn,Osterode Ring Railway
+Osterode Ring Railway,gauge,metre gauge,Osterode Ring Railway
+Osterode Ring Railway,status,dismantled,Osterode Ring Railway
+Osterode Ring Railway,type,narrow-gauge railway,Osterode Ring Railway
+Osterode Ring Railway,connectedTo,South Harz Railway,Osterode Ring Railway
+Osterode Ring Railway,purpose,local passenger transport,Osterode Ring Railway
+Osterode Ring Railway,purpose,local freight transport,Osterode Ring Railway
+Nagoya Floating Airport,instanceOf,airport,Nagoya Floating Airport
+Nagoya Floating Airport,instanceOf,floating airport,Nagoya Floating Airport
+Nagoya Floating Airport,officialName,Nagoya Airport,Nagoya Floating Airport
+Nagoya Floating Airport,locatedIn,Ise Bay,Nagoya Floating Airport
+Nagoya Floating Airport,locatedIn,Aichi Prefecture,Nagoya Floating Airport
+Nagoya Floating Airport,country,Japan,Nagoya Floating Airport
+Nagoya Floating Airport,serves,Nagoya,Nagoya Floating Airport
+Nagoya Floating Airport,alternativeName,Nagoya Offshore Airport,Nagoya Floating Airport
+Nagoya Floating Airport,alternativeName,Chubu International Airport,Nagoya Floating Airport
+Nagoya Floating Airport,alternativeName,Centrair,Nagoya Floating Airport
+Nagoya Floating Airport,IATA,NGO,Nagoya Floating Airport
+Nagoya Floating Airport,ICAO,RJGG,Nagoya Floating Airport
+Nagoya Floating Airport,opened,2005-02-17,Nagoya Floating Airport
+Nagoya Floating Airport,operator,Central Japan International Airport Company,Nagoya Floating Airport
+Nagoya Floating Airport,builtOn,artificial island,Nagoya Floating Airport
+Nagoya Floating Airport,hasFeature,24-hour operation,Nagoya Floating Airport
+Nagoya Floating Airport,function,international airport,Nagoya Floating Airport
+Nagoya Floating Airport,function,regional airport,Nagoya Floating Airport
+Nagoya Floating Airport,replacedAsMainInternationalAirportFor,Nagoya,Nagoya Floating Airport
+Nagoya Floating Airport,replaced,Nagoya Airport,Nagoya Floating Airport
+Nagoya Floating Airport,namedAfterRegion,Chubu region,Nagoya Floating Airport
+Nagoya Floating Airport,nickname,Centrair,Nagoya Floating Airport
+Nagoya Floating Airport,connectedToMainlandBy,bridge,Nagoya Floating Airport
+Nagoya Floating Airport,nearestCity,Tokoname,Nagoya Floating Airport
+Nagoya Floating Airport,locatedIn,Tokoname,Nagoya Floating Airport
+Nagoya Floating Airport,hasRunwayLength,3500 m,Nagoya Floating Airport
+Nagoya Floating Airport,runwayDesignation,18/36,Nagoya Floating Airport
+Nagoya Floating Airport,website,centrair.jp,Nagoya Floating Airport
+Berlin Pneumatic Tube Postal Network,instanceOf,pneumatic tube mail system,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,locatedIn,Berlin,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,country,Germany,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,alsoKnownAs,Rohrpost in Berlin,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,operator,Reichspost,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,operator,Deutsche Bundespost,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,usedFor,transport of mail,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,usedFor,transport of telegrams,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,usedFor,rapid urban postal delivery,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,technology,pneumatic tubes,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,serviceType,urban postal network,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,beganOperationInCentury,19th century,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,expandedInPeriod,German Empire era,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,expandedInPeriod,early 20th century,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,served,post offices,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,served,telegraph offices,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,served,government offices,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,served,business districts,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,connected,postal facilities across Berlin,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,mailCategory,Rohrpost letters,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,mailCategory,Rohrpost cards,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,partOf,Berlin postal system,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,historicalStatus,defunct,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,declinedBecauseOf,telephone,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,declinedBecauseOf,modern mail transport methods,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,philatelicRelevance,Berlin Rohrpost postal history,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,issued,special postal stationery,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,issued,special cancellations,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,associatedWith,pneumatic post,Berlin Pneumatic Tube Postal Network
+Berlin Pneumatic Tube Postal Network,associatedWith,urban communications infrastructure,Berlin Pneumatic Tube Postal Network
+International Chess Federation for Artificial Intelligences,instanceOf,organization,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,officialName,International Chess Federation for Artificial Intelligences,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,abbreviation,ICGA,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,formerName,International Computer Chess Association,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,formerAbbreviation,ICCA,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,focus,computer game-playing research,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,focus,computer chess,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,publishes,ICGA Journal,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,organizes,World Computer Chess Championship,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,organizes,Computer Olympiad,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,organizes,World Computer Speed Chess Championship,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,organizes,World Microcomputer Chess Championship,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,renamedTo,International Computer Games Association,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,nameUsedLaterAs,International Computer Games Association,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,scopeExpandedBeyond,chess,International Chess Federation for Artificial Intelligences
+International Chess Federation for Artificial Intelligences,interestIncludes,artificial intelligence in games,International Chess Federation for Artificial Intelligences
+The Order of the Eternal Flame (Belgium),instanceOf,fraternal order,The Order of the Eternal Flame (Belgium)
+The Order of the Eternal Flame (Belgium),instanceOf,esoteric organization,The Order of the Eternal Flame (Belgium)
+The Order of the Eternal Flame (Belgium),country,Belgium,The Order of the Eternal Flame (Belgium)
+The Order of the Eternal Flame (Belgium),name,The Order of the Eternal Flame,The Order of the Eternal Flame (Belgium)
+Interplanetary Postal Union,instanceOf,fictional organization,Interplanetary Postal Union
+Interplanetary Postal Union,appearsIn,The Hitchhiker's Guide to the Galaxy,Interplanetary Postal Union
+Interplanetary Postal Union,createdBy,Douglas Adams,Interplanetary Postal Union
+Interplanetary Postal Union,namedAfter,Universal Postal Union,Interplanetary Postal Union
+Interplanetary Postal Union,setting,science fiction universe,Interplanetary Postal Union
+Interplanetary Postal Union,isFictional,true,Interplanetary Postal Union
+Frankfurt Zeppelin Terminal,instanceOf,airship terminal,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,locatedIn,Frankfurt,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,locatedIn,Germany,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,associatedWith,Zeppelins,Frankfurt Zeppelin Terminal
+Frankfurt Zeppelin Terminal,nameIncludes,Zeppelin,Frankfurt Zeppelin Terminal
+National Museum of Unbuilt Architecture,instanceOf,museum,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,officialName,National Museum of Unbuilt Architecture,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,focus,unbuilt architecture,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,country,United States,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,hasType,architecture museum,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,collectionTheme,architectural designs that were never constructed,National Museum of Unbuilt Architecture
+National Museum of Unbuilt Architecture,alternativeName,NUMA,National Museum of Unbuilt Architecture
+Hovercraft Route 9 (English Channel),instanceOf,hovercraft route,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),connects,Dover,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),connects,Boulogne-sur-Mer,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),crosses,English Channel,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),country,United Kingdom,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),country,France,Hovercraft Route 9 (English Channel)
+Hovercraft Route 9 (English Channel),transportMode,hovercraft,Hovercraft Route 9 (English Channel)
+Andes Pacific Railway,instanceOf,railway company,Andes Pacific Railway
+Andes Pacific Railway,industry,rail transport,Andes Pacific Railway
+Andes Pacific Railway,country,Chile,Andes Pacific Railway
+Andes Pacific Railway,country,Argentina,Andes Pacific Railway
+Andes Pacific Railway,focus,trans-Andean rail corridor development,Andes Pacific Railway
+Andes Pacific Railway,sector,infrastructure development,Andes Pacific Railway
+Andes Pacific Railway,relatedTo,railway modernization in South America,Andes Pacific Railway
+Andes Pacific Railway,associatedWith,Andes mountain crossing rail links,Andes Pacific Railway
+Cape Horn Lighthouse Museum,instanceOf,museum,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,instanceOf,maritime museum,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,locatedIn,Cape Horn,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,locatedIn,Chile,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,about,Cape Horn Lighthouse,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,about,maritime history,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,relatedTo,Cape Horn,Cape Horn Lighthouse Museum
+Cape Horn Lighthouse Museum,relatedTo,Cape Horn Lighthouse,Cape Horn Lighthouse Museum
+Vienna Circular Canal,instanceOf,canal,Vienna Circular Canal
+Vienna Circular Canal,instanceOf,waterway,Vienna Circular Canal
+Vienna Circular Canal,alternateName,Wiener Neustädter Kanal,Vienna Circular Canal
+Vienna Circular Canal,alternateName,Vienna Circle Canal,Vienna Circular Canal
+Vienna Circular Canal,location,Vienna,Vienna Circular Canal
+Vienna Circular Canal,country,Austria,Vienna Circular Canal
+Vienna Circular Canal,connectsTo,Danube,Vienna Circular Canal
+Vienna Circular Canal,historicalPurpose,transportation of goods,Vienna Circular Canal
+Vienna Circular Canal,historicalPurpose,industrial water supply,Vienna Circular Canal
+Vienna Circular Canal,status,historic canal,Vienna Circular Canal
+Vienna Circular Canal,status,partially preserved,Vienna Circular Canal
+Vienna Circular Canal,relatedTo,Wiener Neustadt Canal,Vienna Circular Canal
+Helsinki Ice Road Network,instanceOf,seasonal ice road network,Helsinki Ice Road Network
+Helsinki Ice Road Network,locatedIn,Helsinki,Helsinki Ice Road Network
+Helsinki Ice Road Network,country,Finland,Helsinki Ice Road Network
+Helsinki Ice Road Network,operatesOn,frozen sea ice,Helsinki Ice Road Network
+Helsinki Ice Road Network,availableDuring,winter,Helsinki Ice Road Network
+Helsinki Ice Road Network,dependsOn,sufficient ice thickness,Helsinki Ice Road Network
+Helsinki Ice Road Network,dependsOn,weather conditions,Helsinki Ice Road Network
+Helsinki Ice Road Network,usedFor,walking,Helsinki Ice Road Network
+Helsinki Ice Road Network,usedFor,cycling,Helsinki Ice Road Network
+Helsinki Ice Road Network,connectsTo,nearby islands,Helsinki Ice Road Network
+Helsinki Ice Road Network,status,seasonal,Helsinki Ice Road Network
+Yerevan Cable Car Network,instanceOf,cable car system,Yerevan Cable Car Network
+Yerevan Cable Car Network,location,Yerevan,Yerevan Cable Car Network
+Yerevan Cable Car Network,country,Armenia,Yerevan Cable Car Network
+Yerevan Cable Car Network,servedArea,Yerevan,Yerevan Cable Car Network
+Yerevan Cable Car Network,status,defunct,Yerevan Cable Car Network
+Antikythera Institute for Ancient Machines,instanceOf,research institute,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,focusesOn,ancient machines,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,focusesOn,history of technology,Antikythera Institute for Ancient Machines
+Antikythera Institute for Ancient Machines,nameReferences,Antikythera mechanism,Antikythera Institute for Ancient Machines
+World Registry of Fictional Nations,instanceOf,website,World Registry of Fictional Nations
+World Registry of Fictional Nations,instanceOf,online database,World Registry of Fictional Nations
+World Registry of Fictional Nations,abbreviation,WRFN,World Registry of Fictional Nations
+World Registry of Fictional Nations,topic,fictional countries,World Registry of Fictional Nations
+World Registry of Fictional Nations,topic,fictional nations,World Registry of Fictional Nations
+World Registry of Fictional Nations,purpose,cataloging fictional nations,World Registry of Fictional Nations
+World Registry of Fictional Nations,contentType,listings of fictional nations,World Registry of Fictional Nations
+World Registry of Fictional Nations,contentType,reference information,World Registry of Fictional Nations
+Order of the Perpetual Almanac,instanceOf,fictional organization,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,appearsIn,Torchwood,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,featuredInEpisode,The Gathering,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,describedAs,cult,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,goal,prepare for the arrival of the Three Families,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,associatedWith,The Gathering,Order of the Perpetual Almanac
+Order of the Perpetual Almanac,universe,Doctor Who universe,Order of the Perpetual Almanac
+Manila Bay Reclamation Authority,instanceOf,government agency,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,country,Philippines,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,jurisdiction,Philippines,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,officialName,Public Estates Authority,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,formerName,Public Estates Authority,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,abbreviation,MBRA,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,isAssociatedWith,land reclamation,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,isAssociatedWith,Manila Bay,Manila Bay Reclamation Authority
+Manila Bay Reclamation Authority,succeededBy,Philippine Reclamation Authority,Manila Bay Reclamation Authority
