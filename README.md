@@ -4,7 +4,7 @@
 
 BeQu evaluates what LLMs *actually know* by prompting them to freely surface structured knowledge about entities, then verifying every generated statement against a reference corpus built from Wikipedia and the web. Unlike fixed Q&A benchmarks, BeQu measures both **precision** (are the elicited triples correct?) and **recall** (how much of the reference knowledge does the model cover?).
 
-> Paper under peer review at ARR May 2026. All data, code, and elicited triples are available in this repository.
+> Paper under peer review. All data, code, and elicited triples are available in this repository.
 > **v2.0 (October 2026):** all experiments were rerun on 500 random entities (Exp1: 5 independent runs), every setting is evaluated on 1,000 sampled triples per direction, and the judge is now Gemma 4 26B-A4B-it. The results of the earlier version (200 entities, Llama 4 Scout judge) are in the git history.
 
 ---
@@ -189,7 +189,7 @@ All models were queried through OpenRouter.
 ## Setup and usage
 
 ```bash
-git clone https://github.com/Knowledge-aware-AI/BeyondQuestions.git
+git clone [ANONYMIZED]
 cd BeyondQuestions
 git lfs pull
 pip install openai requests pandas loguru tqdm sentence-transformers torch jinja2 fire
@@ -214,7 +214,7 @@ python BeQu.py --skip_elicitation --elicited_triples_dir elicited_triples \
   --ground_truth_dir_path REFERENCE_CORPUS/random/500 --results_dir_path RESULTS
 ```
 
-API keys are read from the environment: `OPENROUTER_API_KEY` (elicitation and embeddings), `SCADSAI_API_KEY` + `SCADSAI_BASE_URL` for the default judge endpoint (or `--llm_judge_api openrouter`), `OPENAI_API_KEY` for the OpenAI Batch API, and `BRAVE_API_KEY` only for building new reference corpora.
+API keys are read from the environment: `OPENROUTER_API_KEY` (elicitation and embeddings), the judge endpoint's key and base URL (default: a university-hosted inference service; or `--llm_judge_api openrouter`), `OPENAI_API_KEY` for the OpenAI Batch API, and `BRAVE_API_KEY` only for building new reference corpora.
 
 ---
 
