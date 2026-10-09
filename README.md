@@ -92,8 +92,8 @@ Sampling: 1,000 triples per direction per setting (entity first, then triple; se
 | Exp3 | Knowledge domains, hallucination | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 10 domains × 100, + 100 non-existent | medium reasoning |
 | Exp4 | Prompt format | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 500 random | 6 prompts: GPTKB, LMCRAWL, Wikidata / Schema.org schema with and without predicate list |
 | Exp5 | Requested number of triples | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 500 random | 7 ranges (e.g. 50–100 triples for popular entities, 5–10 for less popular) |
-| Add. 1 | Evolution across the GPT family | GPT-3.5 … GPT-5.5 | random | see paper appendix |
-| Add. 2 | Entity popularity | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 3 buckets by Wikidata statement count | judged by Llama 4 Scout |
+| Add. 1 | Evolution across the GPT family | 9 GPT models, GPT-3.5 Turbo … GPT-5.5 | 200 random | GPTKB prompt; judged by Llama 4 Scout, 500 triples per direction (run in June 2026, before the main rerun) |
+| Add. 2 | Entity popularity | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 3 buckets × 200, by Wikidata statement count | judged by Llama 4 Scout, 500 triples per direction and bucket (June 2026) |
 
 **Reasoning setting of Exp4 and Exp5.** These two experiments were run without a reasoning parameter, i.e. at the API default, which is *no reasoning* for GPT-5.4 and DeepSeek V3.2 (Llama 4 Scout does not reason). Comparisons inside Exp4 or Exp5 are fair; their absolute scores are not directly comparable with Exp1 (GPT-5.4 with the same GPTKB prompt: F1 0.340 in Exp4 vs 0.378 in Exp1).
 
