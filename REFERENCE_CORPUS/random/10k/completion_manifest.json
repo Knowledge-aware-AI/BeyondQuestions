@@ -1,0 +1,89 @@
+{
+  "purpose": "complete REFERENCE_CORPUS/random/10k: missing entities and empty Wikipedia triples",
+  "model": "meta-llama/llama-4-scout",
+  "api_url": "https://openrouter.ai/api/v1",
+  "provider_routing": {
+    "order": [
+      "deepinfra/fp8"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true
+  },
+  "prompt_and_parsing": "eval/request.py Request.extract_triples_from_text (same as the paper's corpora)",
+  "web_results_per_entity": 20,
+  "sessions": [
+    {
+      "step": "missing",
+      "started": "2026-11-19T14:14:46+0100",
+      "finished": "2026-11-19T14:16:34+0100",
+      "requested": 3,
+      "brave_requests": 3,
+      "no_wikipedia_article": []
+    },
+    {
+      "step": "repair",
+      "started": "2026-11-19T14:16:57+0100",
+      "finished": "2026-11-19T14:17:10+0100",
+      "requested": 5,
+      "still_empty": []
+    },
+    {
+      "step": "repair",
+      "started": "2026-11-19T14:17:42+0100",
+      "finished": "2026-11-19T14:44:01+0100",
+      "requested": 2043,
+      "still_empty": [
+        "Omni San Francisco Hotel",
+        "Third cabinet of John Vorster"
+      ]
+    },
+    {
+      "step": "missing",
+      "started": "2026-11-19T14:17:23+0100",
+      "finished": "2026-11-19T14:55:57+0100",
+      "requested": 387,
+      "brave_requests": 386,
+      "no_wikipedia_article": []
+    },
+    {
+      "step": "merge",
+      "started": "2026-11-19T15:28:06+0100",
+      "finished": "2026-11-19T15:28:06+0100",
+      "written": 10000,
+      "repaired": 2046,
+      "added": 387,
+      "final": {
+        "entities": 10000,
+        "missing": [],
+        "no_wikipedia_triples": [
+          "Omni San Francisco Hotel",
+          "Third cabinet of John Vorster"
+        ],
+        "no_web_documents": [
+          "Acacia Cottage"
+        ]
+      }
+    }
+  ],
+  "calls": {
+    "missing_calls.jsonl": {
+      "calls": 7767,
+      "errors": 0,
+      "cut_off": 0,
+      "providers_seen": {
+        "DeepInfra": 7767
+      },
+      "cost_usd": 0.4816
+    },
+    "repair_calls.jsonl": {
+      "calls": 2049,
+      "errors": 0,
+      "cut_off": 1,
+      "providers_seen": {
+        "DeepInfra": 2049
+      },
+      "cost_usd": 0.666
+    }
+  },
+  "total_cost_usd": 1.1476
+}
