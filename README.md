@@ -75,7 +75,7 @@ Each elicited-triples folder holds `elicited_triples.csv`, plus `empty_entity_re
 ## Pipeline
 
 1. **Elicitation.** Each model is prompted (via OpenRouter) to emit (subject, predicate, object) triples about an entity. The default prompt is GPTKB; the templates are Jinja2 files in `elicitation/templates/prompts/`.
-2. **Reference corpus.** For each entity: the full Wikipedia article plus up to 20 web documents (Brave Search API). An LLM extracts reference triples from all sources; the full texts are split into passages and serve as the retrieval corpus.
+2. **Reference corpus.** For each entity: the full Wikipedia article plus up to 20 web documents (Brave Search API). An LLM extracts reference triples from all sources; the full texts are split into passages of at most 500 characters and serve as the retrieval corpus.
 3. **Precision.** For each sampled elicited triple, the top-10 passages are retrieved (`text-embedding-3-small`), and the judge labels the triple **entailed** / **contradicted** / **neutral**.
 4. **Recall.** For each sampled reference triple, the judge checks whether the model's full set of elicited triples entails it.
 
@@ -92,10 +92,10 @@ Sampling: 1,000 triples per direction per setting (entity first, then triple; se
 | Exp3 | Knowledge domains, hallucination | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 10 domains × 100, + 100 non-existent | medium reasoning |
 | Exp4 | Prompt format | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 500 random | 6 prompts: GPTKB, LMCRAWL, Wikidata / Schema.org schema with and without predicate list |
 | Exp5 | Requested number of triples | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 500 random | 7 ranges (e.g. 50–100 triples for popular entities, 5–10 for less popular) |
-| Add. 1 | Evolution across the GPT family | 9 GPT models, GPT-3.5 Turbo … GPT-5.5 | 200 random | GPTKB prompt; judged by Llama 4 Scout, 500 triples per direction (run in June 2026, before the main rerun) |
-| Add. 2 | Entity popularity | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 3 buckets × 200, by Wikidata statement count | judged by Llama 4 Scout, 500 triples per direction and bucket (June 2026) |
+| Add. 1 | Evolution across the GPT family | 9 GPT models, GPT-3.5 Turbo … GPT-5.5 | 200 random | GPTKB prompt; elicited in June 2026, before the main rerun |
+| Add. 2 | Entity popularity | GPT-5.4, DeepSeek V3.2, Llama 4 Scout | 3 buckets × 200, by Wikidata statement count | elicited in June 2026; 1,000 triples per direction and bucket |
 
-**Reasoning setting of Exp4 and Exp5.** These two experiments were run without a reasoning parameter, i.e. at the API default, which is *no reasoning* for GPT-5.4 and DeepSeek V3.2 (Llama 4 Scout does not reason). Comparisons inside Exp4 or Exp5 are fair; their absolute scores are not directly comparable with Exp1 (GPT-5.4 with the same GPTKB prompt: F1 0.340 in Exp4 vs 0.378 in Exp1).
+**Reasoning setting of Exp4 and Exp5.** These two experiments were run without a reasoning parameter, i.e. at the API default, which is *no reasoning* for GPT-5.4 and DeepSeek V3.2 (Llama 4 Scout does not reason). Comparisons inside Exp4 or Exp5 are fair; their absolute scores are not directly comparable with Exp1 (GPT-5.4 with the same GPTKB prompt: F1 0.366 in Exp4 vs 0.402 in Exp1).
 
 ---
 
@@ -141,10 +141,10 @@ All models were queried through OpenRouter.
 
 ## Key findings
 
-1. **Benchmark durability.** No model saturates open-ended knowledge generation: mean F1 spans 0.086–0.378. Open-weight models are competitive (Kimi K2.5 ranks 4th).
-2. **Reasoning effort barely matters.** GPT-5.4 and Gemini 3.1 Pro change by less than 0.03 F1 between low and high effort. Claude Opus 4.6 is the exception (0.277 → 0.391), mainly because it answers more entities at higher effort.
-3. **Schemas vs. creativity.** Predicate lists raise precision (Schema.org: 77.3% for GPT-5.4) but cut recall (11.7%); open-ended prompts give the best F1 for every model.
-4. **Hard-wired operating points.** Requesting 20× more triples changes GPT-5.4's output only 2.3× (11 → 26 triples per entity) and its F1 by at most 0.05.
+1. **Benchmark durability.** No model saturates open-ended knowledge generation: mean F1 spans 0.093–0.452. Open-weight models are competitive (Kimi K2.5 ranks 4th).
+2. **Reasoning effort barely matters.** GPT-5.4 and Gemini 3.1 Pro change by at most 0.03 F1 between low and high effort. Claude Opus 4.6 is the exception (0.286 → 0.438), mainly because it answers more entities at higher effort.
+3. **Schemas vs. creativity.** Predicate lists raise precision (Schema.org: 83.9% for GPT-5.4) but cut recall (11.7%); open-ended prompts give the best F1 for every model.
+4. **Hard-wired operating points.** Requesting 20× more triples changes GPT-5.4's output only 2.3× (11 → 26 triples per entity) and its F1 by at most 0.08.
 5. **No model consistently abstains on non-existent entities.** GPT-5.4 answers 22 of 100 (213 triples), DeepSeek V3.2 43 (1,944 triples), Llama 4 Scout 91 (617 triples).
 
 ---
@@ -157,31 +157,31 @@ All models were queried through OpenRouter.
 
 | Rank | Model | F1 | Precision | Recall | Contradiction |
 |---|---|---|---|---|---|
-| 1 | GPT-5.4 | 0.378 ± 0.010 | 67.1% | 26.4% | 4.7% |
-| 2 | Gemini 3.1 Pro | 0.370 ± 0.017 | 70.9% | 25.0% | 2.8% |
-| 3 | Gemini 3 Flash | 0.370 ± 0.008 | 39.3% | 34.9% | 4.1% |
-| 4 | Kimi K2.5 | 0.356 ± 0.009 | 52.8% | 26.9% | 5.9% |
-| 5 | Claude Opus 4.6 | 0.345 ± 0.017 | 58.2% | 24.5% | 5.8% |
-| 6 | Claude Sonnet 4.6 | 0.328 ± 0.018 | 60.2% | 22.5% | 7.0% |
-| 7 | Gemini 3.1 Flash Lite | 0.323 ± 0.016 | 59.6% | 22.2% | 5.9% |
-| 8 | Mistral Large 3 | 0.307 ± 0.006 | 46.9% | 22.9% | 7.6% |
-| 9 | DeepSeek V3.2 | 0.296 ± 0.012 | 37.5% | 24.6% | 7.4% |
-| 10 | GPT-5 Mini | 0.292 ± 0.006 | 61.2% | 19.2% | 2.0% |
-| 11 | Grok 4.3 | 0.234 ± 0.013 | 73.2% | 14.0% | 4.2% |
-| 12 | MiniMax M2.5 | 0.232 ± 0.013 | 52.3% | 14.9% | 8.5% |
-| 13 | GPT-OSS-120B | 0.222 ± 0.007 | 21.7% | 22.8% | 8.0% |
-| 14 | Qwen3.5 27B | 0.220 ± 0.012 | 33.1% | 16.6% | 10.5% |
-| 15 | Claude Haiku 4.5 | 0.207 ± 0.010 | 64.8% | 12.4% | 7.2% |
-| 16 | Gemma 3 27B | 0.192 ± 0.009 | 22.3% | 16.9% | 10.2% |
-| 17 | Gemma 3 12B | 0.162 ± 0.009 | 16.4% | 16.1% | 7.4% |
-| 18 | GPT-5 Nano | 0.160 ± 0.017 | 82.7% | 8.9% | 2.5% |
-| 19 | Llama 4 Scout 17B | 0.117 ± 0.010 | 44.5% | 6.7% | 18.2% |
-| 20 | Gemma 3 4B | 0.086 ± 0.004 | 18.7% | 5.6% | 10.8% |
+| 1 | Gemini 3 Flash | 0.452 ± 0.011 | 64.0% | 34.9% | 8.8% |
+| 2 | GPT-5.4 | 0.402 ± 0.012 | 84.4% | 26.4% | 6.7% |
+| 3 | Gemini 3.1 Pro | 0.390 ± 0.020 | 88.7% | 25.0% | 4.4% |
+| 4 | Kimi K2.5 | 0.389 ± 0.006 | 70.2% | 26.9% | 9.9% |
+| 5 | Claude Opus 4.6 | 0.374 ± 0.017 | 79.1% | 24.5% | 8.7% |
+| 6 | Claude Sonnet 4.6 | 0.348 ± 0.018 | 76.7% | 22.5% | 9.5% |
+| 7 | Gemini 3.1 Flash Lite | 0.343 ± 0.018 | 75.5% | 22.2% | 9.1% |
+| 8 | DeepSeek V3.2 | 0.340 ± 0.020 | 55.1% | 24.6% | 14.4% |
+| 9 | Mistral Large 3 | 0.337 ± 0.010 | 63.8% | 22.9% | 14.7% |
+| 10 | GPT-5 Mini | 0.311 ± 0.007 | 82.3% | 19.2% | 3.1% |
+| 11 | GPT-OSS-120B | 0.279 ± 0.008 | 35.9% | 22.8% | 16.6% |
+| 12 | Qwen3.5 27B | 0.243 ± 0.014 | 45.9% | 16.6% | 17.6% |
+| 13 | MiniMax M2.5 | 0.243 ± 0.015 | 64.9% | 14.9% | 14.1% |
+| 14 | Grok 4.3 | 0.241 ± 0.014 | 88.7% | 14.0% | 4.9% |
+| 15 | Gemma 3 27B | 0.224 ± 0.008 | 33.5% | 16.9% | 19.4% |
+| 16 | Claude Haiku 4.5 | 0.213 ± 0.011 | 77.4% | 12.4% | 9.1% |
+| 17 | Gemma 3 12B | 0.203 ± 0.011 | 27.7% | 16.1% | 13.3% |
+| 18 | GPT-5 Nano | 0.162 ± 0.017 | 92.8% | 8.9% | 3.1% |
+| 19 | Llama 4 Scout 17B | 0.119 ± 0.010 | 52.1% | 6.7% | 25.3% |
+| 20 | Gemma 3 4B | 0.093 ± 0.004 | 27.6% | 5.6% | 18.1% |
 
 ### Notes on the data
 - `results_detailed.csv` omits the retrieved passages (to keep the repository small); passages can be regenerated from the reference corpus with `--top_k 10`.
 - Reasoning traces are not included.
-- Six settings have 1,999 instead of 2,000 judged rows: one triple containing an invalid Unicode character could not be written. Their `results.csv` metrics are computed on all 2,000.
+- Nine settings have 1,999 instead of 2,000 judged rows (Exp3 GPT-5.4: 19,999 of 20,000): one triple containing an invalid Unicode character could not be written. Their `results.csv` metrics are computed on all 2,000.
 - `REFERENCE_CORPUS/*/GT.json.gz` are stored with Git LFS (`git lfs pull`).
 
 ---

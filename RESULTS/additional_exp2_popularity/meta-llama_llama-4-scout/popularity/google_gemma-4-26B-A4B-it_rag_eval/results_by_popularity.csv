@@ -1,0 +1,7 @@
+Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
+high,542,207,251,0.542,0.207,0.251,1000,Precision (Wikipedia-Popularity),elicited_triples
+mid,533,248,219,0.533,0.248,0.219,1000,Precision (Wikipedia-Popularity),elicited_triples
+low,511,261,228,0.511,0.261,0.228,1000,Precision (Wikipedia-Popularity),elicited_triples
+high,81,41,878,0.081,0.041,0.878,1000,Recall (Wikipedia-Popularity),elicited_triples
+mid,59,51,890,0.059,0.051,0.89,1000,Recall (Wikipedia-Popularity),elicited_triples
+low,75,48,877,0.075,0.048,0.877,1000,Recall (Wikipedia-Popularity),elicited_triples

@@ -7,6 +7,31 @@ import pickle
 import json
 from .network_utils import network_retry
 
+# Passages are cut into chunks of at most CHUNK_CHARS characters at word boundaries, so that the embedding (first
+# 500 characters) and the judge prompt (first 500 characters per passage) see every chunk in full.
+# Indexes record CHUNK_CHARS; an index built with another passage setup is rebuilt.
+CHUNK_CHARS = 500
+
+
+def _chunk(text, limit):
+    pieces, current = [], ""
+    for word in text.split(" "):
+        while len(word) > limit:  # a single overlong token (URLs, tables without spaces)
+            if current:
+                pieces.append(current)
+                current = ""
+            pieces.append(word[:limit])
+            word = word[limit:]
+        if current and len(current) + 1 + len(word) > limit:
+            pieces.append(current)
+            current = word
+        else:
+            current = f"{current} {word}" if current else word
+    if current:
+        pieces.append(current)
+    return pieces
+
+
 class GroundTruthRAG:
     """
     Dense (embedding-based) RAG system for ground truth retrieval.
@@ -40,8 +65,9 @@ class GroundTruthRAG:
         Build passage index from ground truth data.
         
         Creates passages from:
-        - Wikipedia article: each paragraph becomes a passage
-        - Web documents: each paragraph becomes a passage with title prefix
+        - Wikipedia article: each paragraph (longer than 50 characters), cut into chunks of at most CHUNK_CHARS
+        - Web documents: each paragraph, cut into chunks of at most CHUNK_CHARS including the "title: " prefix
+        Chunks end at word boundaries; no text is dropped, so retrieval and the judge see the whole corpus.
         
         Args:
             wiki_data: Dictionary containing ground truth with keys:
@@ -56,11 +82,12 @@ class GroundTruthRAG:
             for para in paragraphs:
                 para = para.strip()
                 if len(para) > 50:
-                    passages.append({
-                        'content': para,
-                        'source': 'wikipedia',
-                        'metadata': {'type': 'article_paragraph'}
-                    })
+                    for piece in _chunk(para, CHUNK_CHARS):
+                        passages.append({
+                            'content': piece,
+                            'source': 'wikipedia',
+                            'metadata': {'type': 'article_paragraph'}
+                        })
         
         web_docs = wiki_data.get('web_full_documents', [])
         for doc in web_docs:
@@ -69,14 +96,16 @@ class GroundTruthRAG:
             if content:
                 # Split web document into paragraphs, just like Wikipedia
                 paragraphs = content.split('\n\n')
+                prefix = f"{title[:100]}: "
                 for para in paragraphs:
                     para = para.strip()
                     if para:
-                        passages.append({
-                            'content': f"{title}: {para}",
-                            'source': 'web',
-                            'metadata': {'type': 'document_paragraph', 'url': doc.get('url', ''), 'title': title}
-                        })
+                        for piece in _chunk(para, CHUNK_CHARS - len(prefix)):
+                            passages.append({
+                                'content': prefix + piece,
+                                'source': 'web',
+                                'metadata': {'type': 'document_paragraph', 'url': doc.get('url', ''), 'title': title}
+                            })
         
         self.passages = passages
         self.embeddings = None
@@ -224,7 +253,8 @@ class GroundTruthRAG:
         metadata = {
             "embedding_model": self.embedding_model,
             "num_passages": len(self.passages),
-            "num_embeddings": len(self.embeddings) if self.embeddings else 0
+            "num_embeddings": len(self.embeddings) if self.embeddings else 0,
+            "passage_chunk_chars": CHUNK_CHARS
         }
         with open(metadata_path, "w") as f:
             json.dump(metadata, f)
@@ -261,6 +291,9 @@ class GroundTruthRAG:
             with open(metadata_path, "r") as f:
                 metadata = json.load(f)
             
+            if metadata.get("passage_chunk_chars") != CHUNK_CHARS:
+                logger.info(f"RAG index at {cache_path} was built with another passage setup; it will be rebuilt")
+                return None
             instance = cls(embedding_model=metadata.get("embedding_model", "text-embedding-3-small"))
             instance.passages = passages
             instance.embeddings = embeddings

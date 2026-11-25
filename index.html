@@ -1390,7 +1390,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
           <div class="label">Dataset</div>
           <div class="value">500 random entities</div>
         </div>
-        <div class="desc">All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.018 F1). This scenario produces the primary BeQu ranking.</div>
+        <div class="desc">All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.020 F1). This scenario produces the primary BeQu ranking.</div>
       </div>
 
       <div class="filters-row">
@@ -1445,22 +1445,22 @@ table.compare-tbl tr.result-N { background: var(--card); }
             <div class="finding-item">
               <div class="finding-num">FINDING 01</div>
               <div class="finding-title">Benchmark durability</div>
-              <div class="finding-text">All models are far from saturating open-ended knowledge generation — F1 spans <b>0.086–0.378</b> — and open-weight models are competitive with commercial ones: Kimi K2.5 ranks <b>4th</b> overall.</div>
+              <div class="finding-text">All models are far from saturating open-ended knowledge generation — F1 spans <b>0.093–0.452</b> — and open-weight models are competitive with commercial ones: Kimi K2.5 ranks <b>4th</b> overall.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 02</div>
               <div class="finding-title">"Unreasonable" task</div>
-              <div class="finding-text">Unlike most NLP tasks, reasoning effort barely matters for open-ended knowledge expression: GPT-5.4 and Gemini 3.1 Pro change by less than <b>0.03 F1</b>. The exception, Claude Opus 4.6 (<b>0.277 → 0.391</b>), mainly becomes more willing to answer.</div>
+              <div class="finding-text">Unlike most NLP tasks, reasoning effort barely matters for open-ended knowledge expression: GPT-5.4 and Gemini 3.1 Pro change by at most <b>0.03 F1</b>. The exception, Claude Opus 4.6 (<b>0.286 → 0.438</b>), mainly becomes more willing to answer.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 03</div>
               <div class="finding-title">Schemas vs. creativity</div>
-              <div class="finding-text">Schema enforcement boosts precision — Schema.org reaches <b>77.3%</b> for GPT-5.4 — but significantly lowers recall, to only <b>11.7%</b>. Open-ended prompts consistently win on F1.</div>
+              <div class="finding-text">Schema enforcement boosts precision — Schema.org reaches <b>83.9%</b> for GPT-5.4 — but significantly lowers recall, to only <b>11.7%</b>. Open-ended prompts consistently win on F1.</div>
             </div>
             <div class="finding-item">
               <div class="finding-num">FINDING 04</div>
               <div class="finding-title">Hard-wired operating points</div>
-              <div class="finding-text">Explicit precision–recall steering is possible only to a limited extent: requesting 20× more triples changes GPT-5.4's output only 2.3× (<b>11 → 26</b> triples per entity) and its F1 by at most <b>0.05</b>.</div>
+              <div class="finding-text">Explicit precision–recall steering is possible only to a limited extent: requesting 20× more triples changes GPT-5.4's output only 2.3× (<b>11 → 26</b> triples per entity) and its F1 by at most <b>0.08</b>.</div>
             </div>
           </div>
         </div>
@@ -1562,7 +1562,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">RAG retrieval (precision)</span><span style="font-family: var(--mono);">top-10</span></div>
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Embedding model</span><span style="font-family: var(--mono);">text-embed-3-small</span></div>
               <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">NLI judge</span><span style="font-family: var(--mono);">Gemma 4 26B-A4B-it</span></div>
-              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Judge agreement (manual)</span><span style="font-family: var(--mono);">83%</span></div>
+              <div style="display: flex; justify-content: space-between;"><span style="color: var(--ink-3);">Judge agreement (manual)</span><span style="font-family: var(--mono);">80%</span></div>
             </div>
           </div>
         </div>
@@ -1625,7 +1625,7 @@ table.compare-tbl tr.result-N { background: var(--card); }
         <div class="dataset-card" style="border-style: dashed; opacity: 0.8;">
           <div class="ds-num">APPENDIX E</div>
           <h3>Popularity tiers <span class="count">3 × 200</span></h3>
-          <p>The random subset partitioned into low / mid / high popularity buckets by Wikidata statement count. Used in a supplementary experiment — GPT-5.4's F1 jumps 0.092 from mid to high popularity, Llama 4 Scout shows no trend.</p>
+          <p>The random subset partitioned into low / mid / high popularity buckets by Wikidata statement count. Used in a supplementary experiment — GPT-5.4's F1 jumps 0.108 from mid to high popularity, Llama 4 Scout shows no trend.</p>
           <div class="dataset-tags">
             <span class="dataset-tag">Wikidata statement count</span>
             <span class="dataset-tag">Equal-sized buckets</span>
@@ -1896,174 +1896,174 @@ table.compare-tbl tr.result-N { background: var(--card); }
 
 // EXPERIMENT 1 — All 20 models on 500 random entities (mean over 5 runs)
 const MODELS = [
-  { name: "GPT-5.4", org: "OpenAI", f1: 0.3784, p: 67.1, r: 26.4, c: 4.7, open: false, family: "openai" },
-  { name: "Gemini 3.1 Pro", org: "Google DeepMind", f1: 0.3697, p: 70.9, r: 25.0, c: 2.8, open: false, family: "google" },
-  { name: "Gemini 3 Flash", org: "Google DeepMind", f1: 0.3696, p: 39.3, r: 34.9, c: 4.1, open: false, family: "google" },
-  { name: "Kimi K2.5", org: "Moonshot AI", f1: 0.3558, p: 52.8, r: 26.9, c: 5.9, open: true, family: "other" },
-  { name: "Claude Opus 4.6", org: "Anthropic", f1: 0.3445, p: 58.2, r: 24.5, c: 5.8, open: false, family: "anthropic" },
-  { name: "Claude Sonnet 4.6", org: "Anthropic", f1: 0.3275, p: 60.2, r: 22.5, c: 7.0, open: false, family: "anthropic" },
-  { name: "Gemini 3.1 Flash Lite", org: "Google DeepMind", f1: 0.3233, p: 59.6, r: 22.2, c: 5.9, open: false, family: "google" },
-  { name: "Mistral Large 3", org: "Mistral AI", f1: 0.3073, p: 46.9, r: 22.9, c: 7.6, open: true, family: "other" },
-  { name: "DeepSeek V3.2", org: "DeepSeek", f1: 0.2957, p: 37.5, r: 24.6, c: 7.4, open: true, family: "other" },
-  { name: "GPT-5 Mini", org: "OpenAI", f1: 0.2920, p: 61.2, r: 19.2, c: 2.0, open: false, family: "openai" },
-  { name: "Grok 4.3", org: "xAI", f1: 0.2343, p: 73.2, r: 14.0, c: 4.2, open: false, family: "other" },
-  { name: "MiniMax M2.5", org: "MiniMax", f1: 0.2321, p: 52.3, r: 14.9, c: 8.5, open: true, family: "other" },
-  { name: "GPT-OSS-120B", org: "OpenAI", f1: 0.2225, p: 21.7, r: 22.8, c: 8.0, open: true, family: "openai" },
-  { name: "Qwen3.5 27B", org: "Alibaba", f1: 0.2204, p: 33.1, r: 16.6, c: 10.5, open: true, family: "other" },
-  { name: "Claude Haiku 4.5", org: "Anthropic", f1: 0.2075, p: 64.8, r: 12.4, c: 7.2, open: false, family: "anthropic" },
-  { name: "Gemma 3 27B", org: "Google", f1: 0.1919, p: 22.3, r: 16.9, c: 10.2, open: true, family: "google" },
-  { name: "Gemma 3 12B", org: "Google", f1: 0.1617, p: 16.4, r: 16.1, c: 7.4, open: true, family: "google" },
-  { name: "GPT-5 Nano", org: "OpenAI", f1: 0.1602, p: 82.7, r: 8.9, c: 2.5, open: false, family: "openai" },
-  { name: "Llama 4 Scout 17B", org: "Meta AI", f1: 0.1167, p: 44.5, r: 6.7, c: 18.2, open: true, family: "other" },
-  { name: "Gemma 3 4B", org: "Google", f1: 0.0862, p: 18.7, r: 5.6, c: 10.8, open: true, family: "google" }
+  { name: "Gemini 3 Flash", org: "Google DeepMind", f1: 0.4519, p: 64.0, r: 34.9, c: 8.8, open: false, family: "google" },
+  { name: "GPT-5.4", org: "OpenAI", f1: 0.4017, p: 84.4, r: 26.4, c: 6.7, open: false, family: "openai" },
+  { name: "Gemini 3.1 Pro", org: "Google DeepMind", f1: 0.3902, p: 88.7, r: 25.0, c: 4.4, open: false, family: "google" },
+  { name: "Kimi K2.5", org: "Moonshot AI", f1: 0.3885, p: 70.2, r: 26.9, c: 9.9, open: true, family: "other" },
+  { name: "Claude Opus 4.6", org: "Anthropic", f1: 0.3737, p: 79.1, r: 24.5, c: 8.7, open: false, family: "anthropic" },
+  { name: "Claude Sonnet 4.6", org: "Anthropic", f1: 0.3479, p: 76.7, r: 22.5, c: 9.5, open: false, family: "anthropic" },
+  { name: "Gemini 3.1 Flash Lite", org: "Google DeepMind", f1: 0.3430, p: 75.5, r: 22.2, c: 9.1, open: false, family: "google" },
+  { name: "DeepSeek V3.2", org: "DeepSeek", f1: 0.3398, p: 55.1, r: 24.6, c: 14.4, open: true, family: "other" },
+  { name: "Mistral Large 3", org: "Mistral AI", f1: 0.3367, p: 63.8, r: 22.9, c: 14.7, open: true, family: "other" },
+  { name: "GPT-5 Mini", org: "OpenAI", f1: 0.3110, p: 82.3, r: 19.2, c: 3.1, open: false, family: "openai" },
+  { name: "GPT-OSS-120B", org: "OpenAI", f1: 0.2789, p: 35.9, r: 22.8, c: 16.6, open: true, family: "openai" },
+  { name: "Qwen3.5 27B", org: "Alibaba", f1: 0.2432, p: 45.9, r: 16.6, c: 17.6, open: true, family: "other" },
+  { name: "MiniMax M2.5", org: "MiniMax", f1: 0.2428, p: 64.9, r: 14.9, c: 14.1, open: true, family: "other" },
+  { name: "Grok 4.3", org: "xAI", f1: 0.2411, p: 88.7, r: 14.0, c: 4.9, open: false, family: "other" },
+  { name: "Gemma 3 27B", org: "Google", f1: 0.2244, p: 33.5, r: 16.9, c: 19.4, open: true, family: "google" },
+  { name: "Claude Haiku 4.5", org: "Anthropic", f1: 0.2131, p: 77.4, r: 12.4, c: 9.1, open: false, family: "anthropic" },
+  { name: "Gemma 3 12B", org: "Google", f1: 0.2031, p: 27.7, r: 16.1, c: 13.3, open: true, family: "google" },
+  { name: "GPT-5 Nano", org: "OpenAI", f1: 0.1620, p: 92.8, r: 8.9, c: 3.1, open: false, family: "openai" },
+  { name: "Llama 4 Scout 17B", org: "Meta AI", f1: 0.1190, p: 52.1, r: 6.7, c: 25.3, open: true, family: "other" },
+  { name: "Gemma 3 4B", org: "Google", f1: 0.0930, p: 27.6, r: 5.6, c: 18.1, open: true, family: "google" }
 ];
 
 // EXPERIMENT 2 — Reasoning effort (Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro × low/medium/high)
 const REASONING = [
-  { name: "Claude Opus 4.6 (high)", org: "Anthropic \u00b7 high", f1: 0.3912, p: 54.2, r: 30.6, c: 5.0, open: false, family: "anthropic" },
-  { name: "Gemini 3.1 Pro (medium)", org: "Google DeepMind \u00b7 medium", f1: 0.3814, p: 70.1, r: 26.2, c: 3.2, open: false, family: "google" },
-  { name: "GPT-5.4 (medium)", org: "OpenAI \u00b7 medium", f1: 0.3806, p: 67.5, r: 26.5, c: 4.7, open: false, family: "openai" },
-  { name: "GPT-5.4 (high)", org: "OpenAI \u00b7 high", f1: 0.3738, p: 66.5, r: 26.0, c: 3.5, open: false, family: "openai" },
-  { name: "Gemini 3.1 Pro (high)", org: "Google DeepMind \u00b7 high", f1: 0.3642, p: 70.9, r: 24.5, c: 2.4, open: false, family: "google" },
-  { name: "Gemini 3.1 Pro (low)", org: "Google DeepMind \u00b7 low", f1: 0.3595, p: 76.5, r: 23.5, c: 3.0, open: false, family: "google" },
-  { name: "GPT-5.4 (low)", org: "OpenAI \u00b7 low", f1: 0.3545, p: 64.8, r: 24.4, c: 4.0, open: false, family: "openai" },
-  { name: "Claude Opus 4.6 (medium)", org: "Anthropic \u00b7 medium", f1: 0.3520, p: 61.2, r: 24.7, c: 4.4, open: false, family: "anthropic" },
-  { name: "Claude Opus 4.6 (low)", org: "Anthropic \u00b7 low", f1: 0.2768, p: 70.8, r: 17.2, c: 5.5, open: false, family: "anthropic" }
+  { name: "Claude Opus 4.6 (high)", org: "Anthropic \u00b7 high", f1: 0.4378, p: 76.9, r: 30.6, c: 9.0, open: false, family: "anthropic" },
+  { name: "Gemini 3.1 Pro (medium)", org: "Google DeepMind \u00b7 medium", f1: 0.4037, p: 87.9, r: 26.2, c: 4.7, open: false, family: "google" },
+  { name: "GPT-5.4 (medium)", org: "OpenAI \u00b7 medium", f1: 0.4031, p: 84.2, r: 26.5, c: 6.6, open: false, family: "openai" },
+  { name: "GPT-5.4 (high)", org: "OpenAI \u00b7 high", f1: 0.3983, p: 85.1, r: 26.0, c: 5.5, open: false, family: "openai" },
+  { name: "Gemini 3.1 Pro (high)", org: "Google DeepMind \u00b7 high", f1: 0.3839, p: 88.6, r: 24.5, c: 3.9, open: false, family: "google" },
+  { name: "GPT-5.4 (low)", org: "OpenAI \u00b7 low", f1: 0.3776, p: 83.5, r: 24.4, c: 6.7, open: false, family: "openai" },
+  { name: "Claude Opus 4.6 (medium)", org: "Anthropic \u00b7 medium", f1: 0.3771, p: 79.7, r: 24.7, c: 8.1, open: false, family: "anthropic" },
+  { name: "Gemini 3.1 Pro (low)", org: "Google DeepMind \u00b7 low", f1: 0.3745, p: 92.2, r: 23.5, c: 3.7, open: false, family: "google" },
+  { name: "Claude Opus 4.6 (low)", org: "Anthropic \u00b7 low", f1: 0.2863, p: 85.3, r: 17.2, c: 6.7, open: false, family: "anthropic" }
 ];
 
 // EXPERIMENT 4 — Prompt format (GPT-5.4, DeepSeek V3.2, Llama 4 Scout × 6 prompts; API default = no reasoning)
 const PROMPT = [
-  { name: "GPT-5.4 \u00b7 GPTKB", org: "OpenAI \u00b7 open-ended", f1: 0.3398, p: 54.9, r: 24.6, c: 6.2, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Schema.org Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.3191, p: 56.7, r: 22.2, c: 6.8, open: false, family: "openai" },
-  { name: "DeepSeek \u00b7 GPTKB", org: "DeepSeek \u00b7 open-ended", f1: 0.2998, p: 34.5, r: 26.5, c: 7.7, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Schema.org Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.2975, p: 42.8, r: 22.8, c: 5.3, open: true, family: "other" },
-  { name: "GPT-5.4 \u00b7 Wikidata Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.2951, p: 59.7, r: 19.6, c: 7.0, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 LMCRAWL", org: "OpenAI \u00b7 open-ended", f1: 0.2695, p: 38.6, r: 20.7, c: 9.8, open: false, family: "openai" },
-  { name: "DeepSeek \u00b7 LMCRAWL", org: "DeepSeek \u00b7 open-ended", f1: 0.2549, p: 26.0, r: 25.0, c: 7.8, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Wikidata Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.2236, p: 36.1, r: 16.2, c: 7.1, open: true, family: "other" },
-  { name: "GPT-5.4 \u00b7 Wikidata Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2169, p: 74.2, r: 12.7, c: 7.9, open: false, family: "openai" },
-  { name: "DeepSeek \u00b7 Schema.org Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.2124, p: 67.6, r: 12.6, c: 6.7, open: true, family: "other" },
-  { name: "GPT-5.4 \u00b7 Schema.org Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2032, p: 77.3, r: 11.7, c: 5.9, open: false, family: "openai" },
-  { name: "Llama 4 Scout \u00b7 LMCRAWL", org: "Meta AI \u00b7 open-ended", f1: 0.1905, p: 37.2, r: 12.8, c: 15.1, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Wikidata Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.1847, p: 60.5, r: 10.9, c: 8.6, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Schema.org Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1586, p: 45.6, r: 9.6, c: 12.0, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Wikidata Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1415, p: 37.9, r: 8.7, c: 11.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Wikidata Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1374, p: 52.6, r: 7.9, c: 16.0, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Schema.org Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1233, p: 57.9, r: 6.9, c: 13.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 GPTKB", org: "Meta AI \u00b7 open-ended", f1: 0.1115, p: 43.1, r: 6.4, c: 17.6, open: true, family: "other" }
+  { name: "GPT-5.4 \u00b7 GPTKB", org: "OpenAI \u00b7 open-ended", f1: 0.3659, p: 71.4, r: 24.6, c: 11.4, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 GPTKB", org: "DeepSeek \u00b7 open-ended", f1: 0.3612, p: 56.7, r: 26.5, c: 13.2, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Schema.org Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.3381, p: 70.9, r: 22.2, c: 10.6, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Schema.org Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.3270, p: 57.8, r: 22.8, c: 10.0, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Wikidata Schema (no constr.)", org: "OpenAI \u00b7 schema, no preds", f1: 0.3097, p: 73.8, r: 19.6, c: 9.7, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 LMCRAWL", org: "DeepSeek \u00b7 open-ended", f1: 0.3053, p: 39.2, r: 25.0, c: 15.3, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 LMCRAWL", org: "OpenAI \u00b7 open-ended", f1: 0.2956, p: 51.7, r: 20.7, c: 14.6, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Wikidata Schema (no constr.)", org: "DeepSeek \u00b7 schema, no preds", f1: 0.2441, p: 49.5, r: 16.2, c: 13.3, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Wikidata Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2201, p: 82.5, r: 12.7, c: 9.1, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Schema.org Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.2158, p: 75.0, r: 12.6, c: 8.6, open: true, family: "other" },
+  { name: "GPT-5.4 \u00b7 Schema.org Schema", org: "OpenAI \u00b7 schema + preds", f1: 0.2054, p: 83.9, r: 11.7, c: 7.3, open: false, family: "openai" },
+  { name: "Llama 4 Scout \u00b7 LMCRAWL", org: "Meta AI \u00b7 open-ended", f1: 0.1982, p: 43.9, r: 12.8, c: 20.0, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Wikidata Schema", org: "DeepSeek \u00b7 schema + preds", f1: 0.1892, p: 71.5, r: 10.9, c: 12.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Schema.org Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1638, p: 55.7, r: 9.6, c: 18.2, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Wikidata Schema (no constr.)", org: "Meta AI \u00b7 schema, no preds", f1: 0.1474, p: 48.2, r: 8.7, c: 15.4, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Wikidata Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1392, p: 58.6, r: 7.9, c: 21.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Schema.org Schema", org: "Meta AI \u00b7 schema + preds", f1: 0.1245, p: 63.5, r: 6.9, c: 14.5, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 GPTKB", org: "Meta AI \u00b7 open-ended", f1: 0.1139, p: 51.7, r: 6.4, c: 26.0, open: true, family: "other" }
 ];
 
 // EXPERIMENT 5 — Triple count range (GPT-5.4, DeepSeek V3.2, Llama 4 Scout × 7 ranges; API default = no reasoning)
 const RANGE = [
-  { name: "GPT-5.4 \u00b7 33\u201366 / 3\u20137", org: "OpenAI \u00b7 range", f1: 0.3672, p: 53.7, r: 27.9, c: 6.4, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 100\u2013200 / 10\u201320", org: "OpenAI \u00b7 range", f1: 0.3660, p: 55.1, r: 27.4, c: 6.8, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 50\u2013100 / 5\u201310", org: "OpenAI \u00b7 range", f1: 0.3520, p: 54.9, r: 25.9, c: 8.2, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 75\u2013150 / 8\u201315", org: "OpenAI \u00b7 range", f1: 0.3515, p: 52.2, r: 26.5, c: 7.0, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 25\u201350 / 3\u20135", org: "OpenAI \u00b7 range", f1: 0.3459, p: 58.8, r: 24.5, c: 7.5, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 5\u201310 / 1", org: "OpenAI \u00b7 range", f1: 0.3150, p: 65.9, r: 20.7, c: 7.4, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 10\u201320 / 1\u20132", org: "OpenAI \u00b7 range", f1: 0.3123, p: 65.5, r: 20.5, c: 5.6, open: false, family: "openai" },
-  { name: "DeepSeek \u00b7 33\u201366 / 3\u20137", org: "DeepSeek \u00b7 range", f1: 0.3107, p: 34.9, r: 28.0, c: 8.5, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 25\u201350 / 3\u20135", org: "DeepSeek \u00b7 range", f1: 0.2996, p: 35.9, r: 25.7, c: 7.9, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 50\u2013100 / 5\u201310", org: "DeepSeek \u00b7 range", f1: 0.2995, p: 34.1, r: 26.7, c: 7.4, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 100\u2013200 / 10\u201320", org: "DeepSeek \u00b7 range", f1: 0.2945, p: 32.1, r: 27.2, c: 6.9, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 10\u201320 / 1\u20132", org: "DeepSeek \u00b7 range", f1: 0.2930, p: 49.0, r: 20.9, c: 8.8, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 5\u201310 / 1", org: "DeepSeek \u00b7 range", f1: 0.2898, p: 55.6, r: 19.6, c: 11.3, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 75\u2013150 / 8\u201315", org: "DeepSeek \u00b7 range", f1: 0.2850, p: 30.7, r: 26.6, c: 5.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 50\u2013100 / 5\u201310", org: "Meta AI \u00b7 range", f1: 0.1267, p: 43.9, r: 7.4, c: 18.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 33\u201366 / 3\u20137", org: "Meta AI \u00b7 range", f1: 0.1249, p: 47.1, r: 7.2, c: 17.4, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 75\u2013150 / 8\u201315", org: "Meta AI \u00b7 range", f1: 0.1177, p: 40.0, r: 6.9, c: 17.6, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 5\u201310 / 1", org: "Meta AI \u00b7 range", f1: 0.1126, p: 53.1, r: 6.3, c: 18.5, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 100\u2013200 / 10\u201320", org: "Meta AI \u00b7 range", f1: 0.1010, p: 44.2, r: 5.7, c: 17.2, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 25\u201350 / 3\u20135", org: "Meta AI \u00b7 range", f1: 0.0979, p: 44.7, r: 5.5, c: 18.6, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 10\u201320 / 1\u20132", org: "Meta AI \u00b7 range", f1: 0.0972, p: 48.7, r: 5.4, c: 18.1, open: true, family: "other" }
+  { name: "GPT-5.4 \u00b7 33\u201366 / 3\u20137", org: "OpenAI \u00b7 range", f1: 0.4022, p: 72.0, r: 27.9, c: 8.7, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 100\u2013200 / 10\u201320", org: "OpenAI \u00b7 range", f1: 0.3962, p: 71.5, r: 27.4, c: 10.8, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 75\u2013150 / 8\u201315", org: "OpenAI \u00b7 range", f1: 0.3867, p: 71.5, r: 26.5, c: 11.3, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 50\u2013100 / 5\u201310", org: "OpenAI \u00b7 range", f1: 0.3795, p: 71.0, r: 25.9, c: 11.4, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 25\u201350 / 3\u20135", org: "OpenAI \u00b7 range", f1: 0.3674, p: 73.4, r: 24.5, c: 12.3, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 5\u201310 / 1", org: "OpenAI \u00b7 range", f1: 0.3269, p: 77.7, r: 20.7, c: 10.4, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 10\u201320 / 1\u20132", org: "OpenAI \u00b7 range", f1: 0.3265, p: 80.1, r: 20.5, c: 8.0, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 33\u201366 / 3\u20137", org: "DeepSeek \u00b7 range", f1: 0.3711, p: 55.0, r: 28.0, c: 14.0, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 50\u2013100 / 5\u201310", org: "DeepSeek \u00b7 range", f1: 0.3582, p: 54.4, r: 26.7, c: 15.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 100\u2013200 / 10\u201320", org: "DeepSeek \u00b7 range", f1: 0.3508, p: 49.4, r: 27.2, c: 13.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 25\u201350 / 3\u20135", org: "DeepSeek \u00b7 range", f1: 0.3495, p: 54.6, r: 25.7, c: 16.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 75\u2013150 / 8\u201315", org: "DeepSeek \u00b7 range", f1: 0.3480, p: 50.3, r: 26.6, c: 12.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 10\u201320 / 1\u20132", org: "DeepSeek \u00b7 range", f1: 0.3149, p: 63.8, r: 20.9, c: 15.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 5\u201310 / 1", org: "DeepSeek \u00b7 range", f1: 0.3049, p: 68.6, r: 19.6, c: 15.4, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 50\u2013100 / 5\u201310", org: "Meta AI \u00b7 range", f1: 0.1297, p: 52.5, r: 7.4, c: 24.0, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 33\u201366 / 3\u20137", org: "Meta AI \u00b7 range", f1: 0.1271, p: 54.3, r: 7.2, c: 23.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 75\u2013150 / 8\u201315", org: "Meta AI \u00b7 range", f1: 0.1208, p: 48.4, r: 6.9, c: 27.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 5\u201310 / 1", org: "Meta AI \u00b7 range", f1: 0.1140, p: 60.1, r: 6.3, c: 23.3, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 100\u2013200 / 10\u201320", org: "Meta AI \u00b7 range", f1: 0.1028, p: 52.2, r: 5.7, c: 23.0, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 25\u201350 / 3\u20135", org: "Meta AI \u00b7 range", f1: 0.0997, p: 53.1, r: 5.5, c: 23.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 10\u201320 / 1\u20132", org: "Meta AI \u00b7 range", f1: 0.0984, p: 55.5, r: 5.4, c: 24.8, open: true, family: "other" }
 ];
 
 // ADDITIONAL EXPERIMENT — Entity popularity (3 models × low/mid/high buckets; as in the paper's appendix)
 const POPULARITY = [
-  { name: "GPT-5.4 (high pop.)", org: "OpenAI \u00b7 popularity", f1: 0.5367, p: 62.2, r: 47.2, c: 0.2, open: false, family: "openai" },
-  { name: "GPT-5.4 (low pop.)", org: "OpenAI \u00b7 popularity", f1: 0.4555, p: 69.0, r: 34.0, c: 0.6, open: false, family: "openai" },
-  { name: "GPT-5.4 (mid pop.)", org: "OpenAI \u00b7 popularity", f1: 0.4446, p: 64.2, r: 34.0, c: 0.2, open: false, family: "openai" },
-  { name: "DeepSeek V3.2 (high pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.4760, p: 48.0, r: 47.2, c: 0.0, open: true, family: "other" },
-  { name: "DeepSeek V3.2 (mid pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3957, p: 42.8, r: 36.8, c: 0.0, open: true, family: "other" },
-  { name: "DeepSeek V3.2 (low pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3637, p: 37.4, r: 35.4, c: 0.8, open: true, family: "other" },
-  { name: "Llama 4 Scout 17B (low pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1536, p: 46.4, r: 9.2, c: 1.6, open: true, family: "other" },
-  { name: "Llama 4 Scout 17B (mid pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1516, p: 43.0, r: 9.2, c: 2.8, open: true, family: "other" },
-  { name: "Llama 4 Scout 17B (high pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1436, p: 43.4, r: 8.6, c: 3.0, open: true, family: "other" }
+  { name: "GPT-5.4 (high pop.)", org: "OpenAI \u00b7 popularity", f1: 0.5199, p: 79.2, r: 38.7, c: 7.2, open: false, family: "openai" },
+  { name: "GPT-5.4 (mid pop.)", org: "OpenAI \u00b7 popularity", f1: 0.4123, p: 74.5, r: 28.5, c: 10.0, open: false, family: "openai" },
+  { name: "GPT-5.4 (low pop.)", org: "OpenAI \u00b7 popularity", f1: 0.3668, p: 75.7, r: 24.2, c: 12.3, open: false, family: "openai" },
+  { name: "DeepSeek V3.2 (high pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.4598, p: 63.0, r: 36.2, c: 6.7, open: true, family: "other" },
+  { name: "DeepSeek V3.2 (mid pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3590, p: 51.0, r: 27.7, c: 12.4, open: true, family: "other" },
+  { name: "DeepSeek V3.2 (low pop.)", org: "DeepSeek \u00b7 popularity", f1: 0.3484, p: 51.2, r: 26.4, c: 13.1, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (high pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1409, p: 54.2, r: 8.1, c: 20.7, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (low pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1308, p: 51.1, r: 7.5, c: 26.1, open: true, family: "other" },
+  { name: "Llama 4 Scout 17B (mid pop.)", org: "Meta AI \u00b7 popularity", f1: 0.1062, p: 53.3, r: 5.9, c: 24.8, open: true, family: "other" }
 ];
 
 // EXPERIMENT 3 — Per-domain F1/P/R for three models
 const DOMAINS = {
   "GPT-5.4": {
-    "Event":            { f1: 0.4693, p: 57.6, r: 39.6 },
-    "Scientific":       { f1: 0.4032, p: 65.6, r: 29.1 },
-    "Organization":     { f1: 0.3898, p: 69.4, r: 27.1 },
-    "Work of art":      { f1: 0.3861, p: 63.7, r: 27.7 },
-    "Cultural concept": { f1: 0.3532, p: 61.2, r: 24.8 },
-    "Animal":           { f1: 0.3395, p: 72.1, r: 22.2 },
-    "Location":         { f1: 0.3178, p: 68.4, r: 20.7 },
-    "Artifact":         { f1: 0.3099, p: 68.8, r: 20.0 },
-    "Plant":            { f1: 0.2725, p: 72.1, r: 16.8 },
-    "Person":           { f1: 0.2259, p: 69.1, r: 13.5 }
+    "Event":            { f1: 0.5417, p: 85.7, r: 39.6 },
+    "Scientific":       { f1: 0.4327, p: 84.3, r: 29.1 },
+    "Work of art":      { f1: 0.4228, p: 89.3, r: 27.7 },
+    "Organization":     { f1: 0.4139, p: 87.6, r: 27.1 },
+    "Cultural concept": { f1: 0.3832, p: 84.0, r: 24.8 },
+    "Animal":           { f1: 0.3541, p: 87.4, r: 22.2 },
+    "Location":         { f1: 0.3302, p: 81.6, r: 20.7 },
+    "Artifact":         { f1: 0.3230, p: 83.9, r: 20.0 },
+    "Plant":            { f1: 0.2842, p: 92.1, r: 16.8 },
+    "Person":           { f1: 0.2317, p: 81.6, r: 13.5 }
   },
   "DeepSeek V3.2": {
-    "Event":            { f1: 0.3803, p: 39.0, r: 37.1 },
-    "Scientific":       { f1: 0.3768, p: 39.9, r: 35.7 },
-    "Animal":           { f1: 0.3667, p: 46.2, r: 30.4 },
-    "Plant":            { f1: 0.3013, p: 44.8, r: 22.7 },
-    "Artifact":         { f1: 0.2788, p: 32.0, r: 24.7 },
-    "Cultural concept": { f1: 0.2754, p: 36.8, r: 22.0 },
-    "Organization":     { f1: 0.2706, p: 36.8, r: 21.4 },
-    "Location":         { f1: 0.2564, p: 38.6, r: 19.2 },
-    "Work of art":      { f1: 0.2548, p: 31.7, r: 21.3 },
-    "Person":           { f1: 0.1751, p: 28.7, r: 12.6 }
+    "Event":            { f1: 0.4760, p: 66.4, r: 37.1 },
+    "Scientific":       { f1: 0.4471, p: 59.8, r: 35.7 },
+    "Animal":           { f1: 0.4060, p: 61.1, r: 30.4 },
+    "Plant":            { f1: 0.3323, p: 62.0, r: 22.7 },
+    "Artifact":         { f1: 0.3217, p: 46.1, r: 24.7 },
+    "Cultural concept": { f1: 0.3165, p: 56.4, r: 22.0 },
+    "Organization":     { f1: 0.3083, p: 55.1, r: 21.4 },
+    "Work of art":      { f1: 0.2958, p: 48.4, r: 21.3 },
+    "Location":         { f1: 0.2782, p: 50.5, r: 19.2 },
+    "Person":           { f1: 0.1857, p: 35.3, r: 12.6 }
   },
   "Llama 4 Scout 17B": {
-    "Event":            { f1: 0.1648, p: 44.7, r: 10.1 },
-    "Scientific":       { f1: 0.1075, p: 45.2, r: 6.1 },
-    "Work of art":      { f1: 0.0929, p: 33.2, r: 5.4 },
-    "Organization":     { f1: 0.0868, p: 45.2, r: 4.8 },
-    "Location":         { f1: 0.0849, p: 43.7, r: 4.7 },
-    "Artifact":         { f1: 0.0791, p: 32.7, r: 4.5 },
-    "Animal":           { f1: 0.0645, p: 63.4, r: 3.4 },
-    "Plant":            { f1: 0.0624, p: 56.7, r: 3.3 },
-    "Cultural concept": { f1: 0.0522, p: 37.8, r: 2.8 },
-    "Person":           { f1: 0.0417, p: 40.5, r: 2.2 }
+    "Event":            { f1: 0.1721, p: 58.2, r: 10.1 },
+    "Scientific":       { f1: 0.1093, p: 52.7, r: 6.1 },
+    "Work of art":      { f1: 0.0951, p: 39.8, r: 5.4 },
+    "Organization":     { f1: 0.0880, p: 53.0, r: 4.8 },
+    "Location":         { f1: 0.0851, p: 44.9, r: 4.7 },
+    "Artifact":         { f1: 0.0805, p: 38.1, r: 4.5 },
+    "Animal":           { f1: 0.0649, p: 71.0, r: 3.4 },
+    "Plant":            { f1: 0.0631, p: 70.5, r: 3.3 },
+    "Cultural concept": { f1: 0.0529, p: 46.9, r: 2.8 },
+    "Person":           { f1: 0.0419, p: 42.9, r: 2.2 }
   }
 };
 
 // EXPERIMENT 3 — By domain: 3 models × 10 domains = 30 rows (Table 3, final paper)
 // EXPERIMENT 3 — By domain: 3 models × 10 domains = 30 rows (contradiction rate = precision side)
 const DOMAIN = [
-  { name: "GPT-5.4 \u00b7 Event", org: "OpenAI", f1: 0.4693, p: 57.6, r: 39.6, c: 3.1, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Scientific", org: "OpenAI", f1: 0.4032, p: 65.6, r: 29.1, c: 3.0, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Organization", org: "OpenAI", f1: 0.3898, p: 69.4, r: 27.1, c: 3.2, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Work of art", org: "OpenAI", f1: 0.3861, p: 63.7, r: 27.7, c: 2.7, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Cultural concept", org: "OpenAI", f1: 0.3532, p: 61.2, r: 24.8, c: 2.3, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Animal", org: "OpenAI", f1: 0.3395, p: 72.1, r: 22.2, c: 3.5, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Location", org: "OpenAI", f1: 0.3178, p: 68.4, r: 20.7, c: 7.5, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Artifact", org: "OpenAI", f1: 0.3099, p: 68.8, r: 20.0, c: 4.7, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Plant", org: "OpenAI", f1: 0.2725, p: 72.1, r: 16.8, c: 2.3, open: false, family: "openai" },
-  { name: "GPT-5.4 \u00b7 Person", org: "OpenAI", f1: 0.2259, p: 69.1, r: 13.5, c: 5.0, open: false, family: "openai" },
-  { name: "DeepSeek \u00b7 Event", org: "DeepSeek", f1: 0.3803, p: 39.0, r: 37.1, c: 5.1, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Scientific", org: "DeepSeek", f1: 0.3768, p: 39.9, r: 35.7, c: 5.9, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Animal", org: "DeepSeek", f1: 0.3667, p: 46.2, r: 30.4, c: 6.7, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Plant", org: "DeepSeek", f1: 0.3013, p: 44.8, r: 22.7, c: 8.2, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Artifact", org: "DeepSeek", f1: 0.2788, p: 32.0, r: 24.7, c: 11.3, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Cultural concept", org: "DeepSeek", f1: 0.2754, p: 36.8, r: 22.0, c: 5.4, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Organization", org: "DeepSeek", f1: 0.2706, p: 36.8, r: 21.4, c: 5.2, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Location", org: "DeepSeek", f1: 0.2564, p: 38.6, r: 19.2, c: 8.0, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Work of art", org: "DeepSeek", f1: 0.2548, p: 31.7, r: 21.3, c: 12.3, open: true, family: "other" },
-  { name: "DeepSeek \u00b7 Person", org: "DeepSeek", f1: 0.1751, p: 28.7, r: 12.6, c: 9.9, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Event", org: "Meta AI", f1: 0.1648, p: 44.7, r: 10.1, c: 13.0, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Scientific", org: "Meta AI", f1: 0.1075, p: 45.2, r: 6.1, c: 14.1, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Work of art", org: "Meta AI", f1: 0.0929, p: 33.2, r: 5.4, c: 24.4, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Organization", org: "Meta AI", f1: 0.0868, p: 45.2, r: 4.8, c: 11.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Location", org: "Meta AI", f1: 0.0849, p: 43.7, r: 4.7, c: 14.3, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Artifact", org: "Meta AI", f1: 0.0791, p: 32.7, r: 4.5, c: 21.1, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Animal", org: "Meta AI", f1: 0.0645, p: 63.4, r: 3.4, c: 10.9, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Plant", org: "Meta AI", f1: 0.0624, p: 56.7, r: 3.3, c: 7.7, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Cultural concept", org: "Meta AI", f1: 0.0522, p: 37.8, r: 2.8, c: 11.5, open: true, family: "other" },
-  { name: "Llama 4 Scout \u00b7 Person", org: "Meta AI", f1: 0.0417, p: 40.5, r: 2.2, c: 20.8, open: true, family: "other" }
+  { name: "GPT-5.4 \u00b7 Event", org: "OpenAI", f1: 0.5417, p: 85.7, r: 39.6, c: 6.7, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Scientific", org: "OpenAI", f1: 0.4327, p: 84.3, r: 29.1, c: 4.1, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Work of art", org: "OpenAI", f1: 0.4228, p: 89.3, r: 27.7, c: 2.8, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Organization", org: "OpenAI", f1: 0.4139, p: 87.6, r: 27.1, c: 3.8, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Cultural concept", org: "OpenAI", f1: 0.3832, p: 84.0, r: 24.8, c: 3.3, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Animal", org: "OpenAI", f1: 0.3541, p: 87.4, r: 22.2, c: 6.1, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Location", org: "OpenAI", f1: 0.3302, p: 81.6, r: 20.7, c: 9.2, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Artifact", org: "OpenAI", f1: 0.3230, p: 83.9, r: 20.0, c: 5.4, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Plant", org: "OpenAI", f1: 0.2842, p: 92.1, r: 16.8, c: 2.6, open: false, family: "openai" },
+  { name: "GPT-5.4 \u00b7 Person", org: "OpenAI", f1: 0.2317, p: 81.6, r: 13.5, c: 6.7, open: false, family: "openai" },
+  { name: "DeepSeek \u00b7 Event", org: "DeepSeek", f1: 0.4760, p: 66.4, r: 37.1, c: 12.3, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Scientific", org: "DeepSeek", f1: 0.4471, p: 59.8, r: 35.7, c: 11.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Animal", org: "DeepSeek", f1: 0.4060, p: 61.1, r: 30.4, c: 9.4, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Plant", org: "DeepSeek", f1: 0.3323, p: 62.0, r: 22.7, c: 11.8, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Artifact", org: "DeepSeek", f1: 0.3217, p: 46.1, r: 24.7, c: 20.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Cultural concept", org: "DeepSeek", f1: 0.3165, p: 56.4, r: 22.0, c: 9.8, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Organization", org: "DeepSeek", f1: 0.3083, p: 55.1, r: 21.4, c: 7.8, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Work of art", org: "DeepSeek", f1: 0.2958, p: 48.4, r: 21.3, c: 17.7, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Location", org: "DeepSeek", f1: 0.2782, p: 50.5, r: 19.2, c: 14.5, open: true, family: "other" },
+  { name: "DeepSeek \u00b7 Person", org: "DeepSeek", f1: 0.1857, p: 35.3, r: 12.6, c: 15.2, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Event", org: "Meta AI", f1: 0.1721, p: 58.2, r: 10.1, c: 20.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Scientific", org: "Meta AI", f1: 0.1093, p: 52.7, r: 6.1, c: 23.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Work of art", org: "Meta AI", f1: 0.0951, p: 39.8, r: 5.4, c: 30.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Organization", org: "Meta AI", f1: 0.0880, p: 53.0, r: 4.8, c: 14.1, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Location", org: "Meta AI", f1: 0.0851, p: 44.9, r: 4.7, c: 21.2, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Artifact", org: "Meta AI", f1: 0.0805, p: 38.1, r: 4.5, c: 37.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Animal", org: "Meta AI", f1: 0.0649, p: 71.0, r: 3.4, c: 14.6, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Plant", org: "Meta AI", f1: 0.0631, p: 70.5, r: 3.3, c: 8.9, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Cultural concept", org: "Meta AI", f1: 0.0529, p: 46.9, r: 2.8, c: 12.7, open: true, family: "other" },
+  { name: "Llama 4 Scout \u00b7 Person", org: "Meta AI", f1: 0.0419, p: 42.9, r: 2.2, c: 24.2, open: true, family: "other" }
 ];
 
 // Experiment metadata
@@ -2072,21 +2072,21 @@ const EXPERIMENTS = {
     title: "Overall model ranking",
     setting: "GPTKB prompt · medium reasoning · 5 runs",
     dataset: "500 random entities",
-    desc: "All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.018 F1). This scenario produces the primary BeQu ranking.",
+    desc: "All 20 models evaluated on the same 500 randomly sampled entities in 5 independent runs; scores are the mean over runs (run-to-run SD ≤ 0.020 F1). This scenario produces the primary BeQu ranking.",
     data: MODELS
   },
   reasoning: {
     title: "Reasoning effort",
     setting: "low / medium / high effort",
     dataset: "500 random entities · 3 models",
-    desc: "Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro evaluated at three reasoning effort levels. Only Claude Opus 4.6 responds: F1 rises from 0.277 (low) to 0.391 (high), driven by recall, as more effort makes it answer more entities. GPT-5.4 and Gemini 3.1 Pro change by less than 0.03 F1.",
+    desc: "Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro evaluated at three reasoning effort levels. Only Claude Opus 4.6 responds: F1 rises from 0.286 (low) to 0.438 (high), driven by recall, as more effort makes it answer more entities. GPT-5.4 and Gemini 3.1 Pro change by at most 0.03 F1.",
     data: REASONING
   },
   domain: {
     title: "By knowledge domain",
     setting: "3 models × 10 domains",
     dataset: "100 entities per domain · 1,000 total",
-    desc: "GPT-5.4, DeepSeek V3.2, and Llama 4 Scout evaluated on 100 entities per domain. GPT-5.4 beats DeepSeek V3.2 in 8 of 10 domains, DeepSeek beats Llama 4 Scout in all 10. Event is the strongest domain and Person the weakest for all three models; GPT-5.4 answers a third of the people with an empty list.",
+    desc: "GPT-5.4, DeepSeek V3.2, and Llama 4 Scout evaluated on 100 entities per domain. GPT-5.4 beats DeepSeek V3.2 in 7 of 10 domains, DeepSeek beats Llama 4 Scout in all 10. Event is the strongest domain and Person the weakest for all three models; GPT-5.4 answers a third of the people with an empty list.",
     data: DOMAIN
   },
   prompt: {
@@ -2100,14 +2100,14 @@ const EXPERIMENTS = {
     title: "Triple count range",
     setting: "7 prompt-requested ranges · API default reasoning (none)",
     dataset: "500 random entities · 3 models",
-    desc: "Varying the requested number of triples per entity. Models follow the requested numbers only loosely; more triples raise recall and lower precision, so F1 changes little (GPT-5.4: 0.315–0.367). Run without a reasoning parameter (API default: no reasoning).",
+    desc: "Varying the requested number of triples per entity. Models follow the requested numbers only loosely; more triples raise recall and lower precision, so F1 changes little (GPT-5.4: 0.327–0.402). Run without a reasoning parameter (API default: no reasoning).",
     data: RANGE
   },
   popularity: {
     title: "Entity popularity",
     setting: "low / mid / high buckets",
     dataset: "3 popularity buckets · 3 models",
-    desc: "Entities partitioned by Wikidata statement count. Popularity raises recall meaningfully only for strong models (GPT-5.4: 34% → 47%); Llama 4 Scout shows no consistent trend.",
+    desc: "Entities partitioned by Wikidata statement count. Popularity raises recall meaningfully only for strong models (GPT-5.4: 24% → 39%); Llama 4 Scout shows no consistent trend.",
     data: POPULARITY
   }
 };
@@ -3387,7 +3387,7 @@ function triplesSelectExp(modelId, idx) {
 /* ============================================================
    DETAILED RESULTS
 ============================================================ */
-// each EXPERIMENT_GROUPS entry gives the full results folder (judge: Gemma 4 26B-A4B-it; appendix popularity: Llama 4 Scout)
+// each EXPERIMENT_GROUPS entry gives the full results folder (judge: Gemma 4 26B-A4B-it)
 
 // Display info keyed by resultsFolder
 const RESULTS_MODELS = {
@@ -3611,9 +3611,9 @@ const EXPERIMENT_GROUPS = [
     { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/exp5/meta-llama_llama-4-scout/ranges/pop_100_200_lt_10_20/google_gemma-4-26B-A4B-it_rag_eval" }
   ]},
   { value: "appendix/popularity", label: "Appendix \u00b7 popularity (all buckets)", entries: [
-    { folder: "openai_gpt-5.4", expPath: "RESULTS/additional_exp2_popularity/openai_gpt-5.4/popularity/meta-llama_llama-4-scout_rag_eval" },
-    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/meta-llama_llama-4-scout_rag_eval" },
-    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/meta-llama_llama-4-scout_rag_eval" }
+    { folder: "openai_gpt-5.4", expPath: "RESULTS/additional_exp2_popularity/openai_gpt-5.4/popularity/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "deepseek_deepseek-v3.2", expPath: "RESULTS/additional_exp2_popularity/deepseek_deepseek-v3.2/popularity/google_gemma-4-26B-A4B-it_rag_eval" },
+    { folder: "meta-llama_llama-4-scout", expPath: "RESULTS/additional_exp2_popularity/meta-llama_llama-4-scout/popularity/google_gemma-4-26B-A4B-it_rag_eval" }
   ]}
 ];
 

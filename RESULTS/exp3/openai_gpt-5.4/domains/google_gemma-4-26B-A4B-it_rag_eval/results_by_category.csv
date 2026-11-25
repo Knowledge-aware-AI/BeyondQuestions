@@ -1,14 +1,14 @@
 Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
-person,691,50,259,0.691,0.05,0.259,1000,Precision (Wikipedia-Category),elicited_triples
-organization,694,32,274,0.694,0.032,0.274,1000,Precision (Wikipedia-Category),elicited_triples
-location,684,75,241,0.684,0.075,0.241,1000,Precision (Wikipedia-Category),elicited_triples
-event,576,31,393,0.576,0.031,0.393,1000,Precision (Wikipedia-Category),elicited_triples
-work_of_art,637,27,336,0.637,0.027,0.336,1000,Precision (Wikipedia-Category),elicited_triples
-artifact,688,47,265,0.688,0.047,0.265,1000,Precision (Wikipedia-Category),elicited_triples
-scientific_concept,656,30,314,0.656,0.03,0.314,1000,Precision (Wikipedia-Category),elicited_triples
-cultural_concept,612,23,365,0.612,0.023,0.365,1000,Precision (Wikipedia-Category),elicited_triples
-animal,721,35,244,0.721,0.035,0.244,1000,Precision (Wikipedia-Category),elicited_triples
-plant,721,23,256,0.721,0.023,0.256,1000,Precision (Wikipedia-Category),elicited_triples
+person,816,67,117,0.816,0.067,0.117,1000,Precision (Wikipedia-Category),elicited_triples
+organization,876,38,86,0.876,0.038,0.086,1000,Precision (Wikipedia-Category),elicited_triples
+location,816,92,92,0.816,0.092,0.092,1000,Precision (Wikipedia-Category),elicited_triples
+event,857,67,76,0.857,0.067,0.076,1000,Precision (Wikipedia-Category),elicited_triples
+work_of_art,893,28,79,0.893,0.028,0.079,1000,Precision (Wikipedia-Category),elicited_triples
+artifact,839,54,107,0.839,0.054,0.107,1000,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,843,41,116,0.843,0.041,0.116,1000,Precision (Wikipedia-Category),elicited_triples
+cultural_concept,840,33,127,0.84,0.033,0.127,1000,Precision (Wikipedia-Category),elicited_triples
+animal,874,61,65,0.874,0.061,0.065,1000,Precision (Wikipedia-Category),elicited_triples
+plant,921,26,53,0.921,0.026,0.053,1000,Precision (Wikipedia-Category),elicited_triples
 person,135,13,852,0.135,0.013,0.852,1000,Recall (Wikipedia-Category),elicited_triples
 artifact,200,28,772,0.2,0.028,0.772,1000,Recall (Wikipedia-Category),elicited_triples
 plant,168,11,821,0.168,0.011,0.821,1000,Recall (Wikipedia-Category),elicited_triples

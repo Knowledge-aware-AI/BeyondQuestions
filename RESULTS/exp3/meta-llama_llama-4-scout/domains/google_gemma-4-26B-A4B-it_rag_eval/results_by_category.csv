@@ -1,14 +1,14 @@
 Category,Entailment,Contradiction,Neutral,Entailment_ratio,Contradiction_ratio,Neutral_ratio,Total #Triples,Metric,Source Elicited File
-person,229,118,219,0.4045936395759717,0.20848056537102475,0.3869257950530035,566,Precision (Wikipedia-Category),elicited_triples
-organization,289,72,278,0.4522691705790297,0.11267605633802817,0.4350547730829421,639,Precision (Wikipedia-Category),elicited_triples
-location,183,60,176,0.43675417661097854,0.1431980906921241,0.4200477326968974,419,Precision (Wikipedia-Category),elicited_triples
-event,350,102,331,0.44699872286079184,0.13026819923371646,0.4227330779054917,783,Precision (Wikipedia-Category),elicited_triples
-work_of_art,260,191,331,0.33248081841432225,0.2442455242966752,0.42327365728900257,782,Precision (Wikipedia-Category),elicited_triples
-artifact,236,152,333,0.3273231622746186,0.21081830790568654,0.4618585298196949,721,Precision (Wikipedia-Category),elicited_triples
-scientific_concept,254,79,229,0.45195729537366547,0.14056939501779359,0.40747330960854095,562,Precision (Wikipedia-Category),elicited_triples
-cultural_concept,282,86,379,0.37751004016064255,0.11512717536813923,0.5073627844712182,747,Precision (Wikipedia-Category),elicited_triples
-animal,308,53,125,0.6337448559670782,0.10905349794238683,0.257201646090535,486,Precision (Wikipedia-Category),elicited_triples
-plant,229,31,144,0.5668316831683168,0.07673267326732673,0.3564356435643564,404,Precision (Wikipedia-Category),elicited_triples
+person,243,137,186,0.4293286219081272,0.2420494699646643,0.3286219081272085,566,Precision (Wikipedia-Category),elicited_triples
+organization,339,90,210,0.5305164319248826,0.14084507042253522,0.3286384976525822,639,Precision (Wikipedia-Category),elicited_triples
+location,188,89,142,0.4486873508353222,0.21241050119331742,0.33890214797136037,419,Precision (Wikipedia-Category),elicited_triples
+event,456,164,163,0.5823754789272031,0.20945083014048532,0.2081736909323116,783,Precision (Wikipedia-Category),elicited_triples
+work_of_art,311,242,229,0.3976982097186701,0.309462915601023,0.2928388746803069,782,Precision (Wikipedia-Category),elicited_triples
+artifact,275,272,174,0.3814147018030513,0.37725381414701803,0.24133148404993066,721,Precision (Wikipedia-Category),elicited_triples
+scientific_concept,296,133,133,0.5266903914590747,0.23665480427046262,0.23665480427046262,562,Precision (Wikipedia-Category),elicited_triples
+cultural_concept,350,95,302,0.4685408299866131,0.12717536813922356,0.4042838018741633,747,Precision (Wikipedia-Category),elicited_triples
+animal,345,71,70,0.7098765432098766,0.14609053497942387,0.1440329218106996,486,Precision (Wikipedia-Category),elicited_triples
+plant,285,36,83,0.7054455445544554,0.0891089108910891,0.20544554455445543,404,Precision (Wikipedia-Category),elicited_triples
 scientific_concept,61,40,899,0.061,0.04,0.899,1000,Recall (Wikipedia-Category),elicited_triples
 cultural_concept,28,23,948,0.028028028028028028,0.023023023023023025,0.948948948948949,999,Recall (Wikipedia-Category),elicited_triples
 location,47,39,914,0.047,0.039,0.914,1000,Recall (Wikipedia-Category),elicited_triples

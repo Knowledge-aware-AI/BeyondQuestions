@@ -1,6 +1,6 @@
 # exp3: 10 domains x 100 entities
 
-_Generated 2026-10-06 13:24 by ANALYSIS/make_all_tables.py. Precision / Recall = entailment ratio of the 1000-triple precision / recall sample (judge: gemma-4-26B-A4B-it, RAG); F1 = harmonic mean._
+_Generated 2026-11-25 19:42 by ANALYSIS/make_all_tables.py. Precision / Recall = entailment ratio of the 1000-triple precision / recall sample (judge: gemma-4-26B-A4B-it, RAG); F1 = harmonic mean._
 
 33 of 33 rows evaluated
 
@@ -10,17 +10,17 @@ _Generated 2026-10-06 13:24 by ANALYSIS/make_all_tables.py. Precision / Recall =
 
 | Model | animal | artifact | cultural_concept | event | location | organization | person | plant | scientific_concept | work_of_art | ALL |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| deepseek-v3.2 | 0.367 | 0.279 | 0.275 | 0.380 | 0.256 | 0.271 | 0.175 | 0.301 | 0.377 | 0.255 | 0.298 |
-| llama-4-scout | 0.065 | 0.079 | 0.052 | 0.165 | 0.085 | 0.087 | 0.042 | 0.062 | 0.107 | 0.093 | 0.085 |
-| gpt-5.4 | 0.340 | 0.310 | 0.353 | 0.469 | 0.318 | 0.390 | 0.226 | 0.273 | 0.403 | 0.386 | 0.355 |
+| deepseek-v3.2 | 0.406 | 0.322 | 0.317 | 0.476 | 0.278 | 0.308 | 0.186 | 0.332 | 0.447 | 0.296 | 0.339 |
+| llama-4-scout | 0.065 | 0.081 | 0.053 | 0.172 | 0.085 | 0.088 | 0.042 | 0.063 | 0.109 | 0.095 | 0.086 |
+| gpt-5.4 | 0.354 | 0.323 | 0.383 | 0.542 | 0.330 | 0.414 | 0.232 | 0.284 | 0.433 | 0.423 | 0.377 |
 
 ## Precision
 
 | Model | animal | artifact | cultural_concept | event | location | organization | person | plant | scientific_concept | work_of_art | ALL |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| deepseek-v3.2 | 0.462 | 0.320 | 0.368 | 0.390 | 0.386 | 0.368 | 0.287 | 0.448 | 0.399 | 0.317 | 0.374 |
-| llama-4-scout | 0.634 | 0.327 | 0.378 | 0.447 | 0.437 | 0.452 | 0.405 | 0.567 | 0.452 | 0.333 | 0.429 |
-| gpt-5.4 | 0.721 | 0.688 | 0.612 | 0.576 | 0.684 | 0.694 | 0.691 | 0.721 | 0.656 | 0.637 | 0.668 |
+| deepseek-v3.2 | 0.611 | 0.461 | 0.564 | 0.664 | 0.505 | 0.551 | 0.353 | 0.620 | 0.598 | 0.484 | 0.541 |
+| llama-4-scout | 0.710 | 0.381 | 0.469 | 0.582 | 0.449 | 0.530 | 0.429 | 0.705 | 0.527 | 0.398 | 0.505 |
+| gpt-5.4 | 0.874 | 0.839 | 0.840 | 0.857 | 0.816 | 0.876 | 0.816 | 0.921 | 0.843 | 0.893 | 0.858 |
 
 ## Recall
 
