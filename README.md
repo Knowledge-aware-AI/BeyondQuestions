@@ -4,9 +4,6 @@
 
 BeQu evaluates what LLMs *actually know* by prompting them to freely surface structured knowledge about entities, then verifying every generated statement against a reference corpus built from Wikipedia and the web. Unlike fixed Q&A benchmarks, BeQu measures both **precision** (are the elicited triples correct?) and **recall** (how much of the reference knowledge does the model cover?).
 
-> Paper under peer review. All data, code, and elicited triples are available in this repository.
-> **v2.0 (October 2026):** all experiments were rerun on 500 random entities (Exp1: 5 independent runs), every setting is evaluated on 1,000 sampled triples per direction, and the judge is now Gemma 4 26B-A4B-it. The results of the earlier version (200 entities, Llama 4 Scout judge) are in the git history.
-
 ---
 
 ## Table of Contents
