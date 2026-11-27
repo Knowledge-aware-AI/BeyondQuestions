@@ -217,7 +217,7 @@ API keys are read from the environment: `OPENROUTER_API_KEY` (elicitation and em
 
 ## Data formats
 
-**Entity list** (`ENTITY_LISTS/...json`): `[{"title": "Albert Einstein", "length": 5974, "wikidata_id": "Q937"}, ...]`. In the random lists, `wikidata_id` was looked up from the Wikipedia title in November 2026 (90 titles through a redirect); it is `null` for 14 of the 10,000 entities whose article no longer exists.
+**Entity list** (`ENTITY_LISTS/...json`): `[{"title": "Albert Einstein", "length": 5974, "wikidata_id": "Q937"}, ...]`. In the random lists, `wikidata_id` was looked up from the Wikipedia title in November 2026 (76 titles through a redirect to a renamed article); it is `null` for 28 of the 10,000 entities: 14 whose article no longer exists and 14 whose title now redirects to a different page (a disambiguation page, a list or a broader topic).
 
 **Elicited triples** (`elicited_triples.csv`): `subject,predicate,object,subject_name`
 
